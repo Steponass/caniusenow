@@ -596,7 +596,8 @@ async function writeOutput(
 
     const cleanedFeature = {
       ...feature,
-      support: cleanedSupport
+      support: cleanedSupport,
+      caniuseUrl: `https://caniuse.com/?search=${encodeURIComponent(id)}`
     };
 
     const featurePath = path.join(FEATURES_DIR, `${id}.json`);
