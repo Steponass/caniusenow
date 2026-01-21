@@ -4,356 +4,48 @@
   "name": "DOM",
   "description": "The DOM (Document Object Model) API represents HTML and XML documents as trees of nodes. You can use the API to inspect and modify the structure and content of a document.",
   "category": "Other",
-  "spec": [
-    "https://dom.spec.whatwg.org/",
-    "https://dom.spec.whatwg.org/#interface-attr",
-    "https://dom.spec.whatwg.org/#dom-attr-localname",
-    "https://dom.spec.whatwg.org/#dom-attr-name",
-    "https://dom.spec.whatwg.org/#dom-attr-namespaceuri",
-    "https://dom.spec.whatwg.org/#dom-attr-ownerelement",
-    "https://dom.spec.whatwg.org/#dom-attr-prefix",
-    "https://dom.spec.whatwg.org/#dom-attr-value",
-    "https://dom.spec.whatwg.org/#interface-cdatasection",
-    "https://dom.spec.whatwg.org/#interface-characterdata",
-    "https://dom.spec.whatwg.org/#ref-for-dom-childnode-after①",
-    "https://dom.spec.whatwg.org/#dom-characterdata-appenddata",
-    "https://dom.spec.whatwg.org/#ref-for-dom-childnode-before①",
-    "https://dom.spec.whatwg.org/#dom-characterdata-data",
-    "https://dom.spec.whatwg.org/#dom-characterdata-deletedata",
-    "https://dom.spec.whatwg.org/#dom-characterdata-insertdata",
-    "https://dom.spec.whatwg.org/#dom-characterdata-length",
-    "https://dom.spec.whatwg.org/#ref-for-dom-nondocumenttypechildnode-nextelementsibling②",
-    "https://dom.spec.whatwg.org/#ref-for-dom-nondocumenttypechildnode-previouselementsibling②",
-    "https://dom.spec.whatwg.org/#ref-for-dom-childnode-remove①",
-    "https://dom.spec.whatwg.org/#dom-characterdata-replacedata",
-    "https://dom.spec.whatwg.org/#ref-for-dom-childnode-replacewith①",
-    "https://dom.spec.whatwg.org/#dom-characterdata-substringdata",
-    "https://dom.spec.whatwg.org/#interface-comment",
-    "https://dom.spec.whatwg.org/#ref-for-dom-comment-comment①",
-    "https://webidl.spec.whatwg.org/#idl-DOMException",
-    "https://webidl.spec.whatwg.org/#dom-domexception-domexception",
-    "https://webidl.spec.whatwg.org/#dom-domexception-message",
-    "https://webidl.spec.whatwg.org/#dom-domexception-name",
-    "https://dom.spec.whatwg.org/#interface-domimplementation",
-    "https://dom.spec.whatwg.org/#ref-for-dom-domimplementation-createdocument②",
-    "https://dom.spec.whatwg.org/#ref-for-dom-domimplementation-createdocumenttype①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-domimplementation-createhtmldocument①",
-    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#the-domstringlist-interface",
-    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#dom-domstringlist-contains",
-    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#dom-domstringlist-item",
-    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#dom-domstringlist-length",
-    "https://dom.spec.whatwg.org/#interface-domtokenlist",
-    "https://dom.spec.whatwg.org/#ref-for-dom-domtokenlist-add①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-domtokenlist-contains①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-domtokenlist-item①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-domtokenlist-length①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-domtokenlist-remove①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-domtokenlist-replace①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-domtokenlist-supports①",
-    "https://dom.spec.whatwg.org/#DOMTokenList-stringification-behavior",
-    "https://dom.spec.whatwg.org/#ref-for-dom-domtokenlist-toggle①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-domtokenlist-value②",
-    "https://dom.spec.whatwg.org/#interface-document",
-    "https://html.spec.whatwg.org/multipage/dom.html#the-document-object",
-    "https://drafts.csswg.org/cssom-view/#extensions-to-the-document-interface",
-    "https://w3c.github.io/pointerlock/#extensions-to-the-document-interface",
-    "https://w3c.github.io/selection-api/#extensions-to-document-interface",
-    "https://html.spec.whatwg.org/multipage/parsing.html#stop-parsing",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-document①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-url①",
-    "https://html.spec.whatwg.org/multipage/interaction.html#dom-documentorshadowroot-activeelement-dev",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-adoptnode①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-append①",
-    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-body-dev",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-characterset①",
-    "https://dom.spec.whatwg.org/#dom-parentnode-childelementcount",
-    "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-children①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-compatmode①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-contenttype①",
-    "https://dom.spec.whatwg.org/#dom-document-createattribute",
-    "https://dom.spec.whatwg.org/#dom-document-createattributens",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-createcomment①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-createdocumentfragment①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-createelement①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-createelementns①",
-    "https://dom.spec.whatwg.org/#dom-document-createnodeiterator",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-createprocessinginstruction①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-createtextnode①",
-    "https://dom.spec.whatwg.org/#dom-document-createtreewalker",
-    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-currentscript-dev",
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-document-defaultview-dev",
-    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-dir",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-doctype①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-documentelement①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-documenturi①",
-    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-embeds-dev",
-    "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-firstelementchild①",
-    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-forms-dev",
-    "https://dom.spec.whatwg.org/#ref-for-dom-nonelementparentnode-getelementbyid②",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-getelementsbyclassname①",
-    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-getelementsbyname-dev",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-getelementsbytagname①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-getelementsbytagnamens①",
-    "https://html.spec.whatwg.org/multipage/interaction.html#dom-document-hasfocus-dev",
-    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-head-dev",
-    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-images-dev",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-implementation①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-document-importnode①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-lastelementchild①",
-    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-lastmodified-dev",
-    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-links-dev",
-    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-plugins-dev",
-    "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-prepend①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-queryselector①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-queryselectorall①",
-    "https://html.spec.whatwg.org/multipage/dom.html#current-document-readiness",
-    "https://html.spec.whatwg.org/multipage/indices.html#event-readystatechange",
-    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-referrer-dev",
-    "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-replacechildren①",
-    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-scripts-dev",
-    "https://html.spec.whatwg.org/multipage/dom.html#document.title",
-    "https://dom.spec.whatwg.org/#interface-documentfragment",
-    "https://dom.spec.whatwg.org/#ref-for-dom-documentfragment-documentfragment①",
-    "https://dom.spec.whatwg.org/#dom-nonelementparentnode-getelementbyid",
-    "https://dom.spec.whatwg.org/#interface-documenttype",
-    "https://dom.spec.whatwg.org/#dom-documenttype-name",
-    "https://dom.spec.whatwg.org/#dom-documenttype-publicid",
-    "https://dom.spec.whatwg.org/#dom-documenttype-systemid",
-    "https://dom.spec.whatwg.org/#interface-element",
-    "https://w3c.github.io/pointerevents/#extensions-to-the-element-interface",
-    "https://fullscreen.spec.whatwg.org/#api",
-    "https://w3c.github.io/DOM-Parsing/#extensions-to-the-element-interface",
-    "https://drafts.csswg.org/cssom-view/#extension-to-the-element-interface",
-    "https://dom.spec.whatwg.org/#dom-element-attributes",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-classlist①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-classname①",
-    "https://drafts.csswg.org/cssom-view/#dom-element-clientheight",
-    "https://drafts.csswg.org/cssom-view/#dom-element-clientleft",
-    "https://drafts.csswg.org/cssom-view/#dom-element-clienttop",
-    "https://drafts.csswg.org/cssom-view/#dom-element-clientwidth",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-closest①",
-    "https://drafts.csswg.org/cssom-view/#dom-element-currentcsszoom",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-getattribute①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-getattributens①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-getattributenames①",
-    "https://dom.spec.whatwg.org/#dom-element-getattributenode",
-    "https://dom.spec.whatwg.org/#dom-element-getattributenodens",
-    "https://drafts.csswg.org/cssom-view/#dom-element-getboundingclientrect",
-    "https://drafts.csswg.org/cssom-view/#dom-element-getclientrects",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-getelementsbyclassname",
-    "https://dom.spec.whatwg.org/#dom-element-getelementsbytagname",
-    "https://dom.spec.whatwg.org/#dom-element-getelementsbytagnamens",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-hasattribute①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-hasattributens①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-hasattributes①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-id①",
-    "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-innerhtml",
-    "https://dom.spec.whatwg.org/#dom-element-insertadjacentelement",
-    "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-insertadjacenthtml()-method",
-    "https://dom.spec.whatwg.org/#dom-element-insertadjacenttext",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-localname①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-matches①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-namespaceuri①",
-    "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-outerhtml",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-prefix①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-removeattribute①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-removeattributens①",
-    "https://dom.spec.whatwg.org/#dom-element-removeattributenode",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-setattribute①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-setattributens①",
-    "https://dom.spec.whatwg.org/#dom-element-setattributenode",
-    "https://dom.spec.whatwg.org/#dom-element-setattributenodens",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-tagname①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-element-toggleattribute①",
-    "https://dom.spec.whatwg.org/#interface-htmlcollection",
-    "https://dom.spec.whatwg.org/#ref-for-dom-htmlcollection-item①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-htmlcollection-length①",
-    "https://dom.spec.whatwg.org/#dom-htmlcollection-nameditem-key",
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#htmldocument",
-    "https://html.spec.whatwg.org/multipage/dom.html#htmlelement",
-    "https://html.spec.whatwg.org/multipage/dom.html#dom-dir",
-    "https://html.spec.whatwg.org/multipage/interaction.html#dom-hidden",
-    "https://html.spec.whatwg.org/multipage/dom.html#the-innertext-idl-attribute",
-    "https://w3c.github.io/uievents/#event-type-load",
-    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onload",
-    "https://html.spec.whatwg.org/multipage/indices.html#event-load",
-    "https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsetheight",
-    "https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsetleft",
-    "https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsetparent",
-    "https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsettop",
-    "https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsetwidth",
-    "https://html.spec.whatwg.org/multipage/dom.html#dom-outertext",
-    "https://dom.spec.whatwg.org/#interface-namednodemap",
-    "https://dom.spec.whatwg.org/#dom-namednodemap-getnameditem",
-    "https://dom.spec.whatwg.org/#dom-namednodemap-getnameditemns",
-    "https://dom.spec.whatwg.org/#dom-namednodemap-item",
-    "https://dom.spec.whatwg.org/#dom-namednodemap-length",
-    "https://dom.spec.whatwg.org/#dom-namednodemap-removenameditem",
-    "https://dom.spec.whatwg.org/#dom-namednodemap-removenameditemns",
-    "https://dom.spec.whatwg.org/#dom-namednodemap-setnameditem",
-    "https://dom.spec.whatwg.org/#dom-namednodemap-setnameditemns",
-    "https://dom.spec.whatwg.org/#interface-node",
-    "https://dom.spec.whatwg.org/#dom-node-appendchild",
-    "https://dom.spec.whatwg.org/#ref-for-dom-node-baseuri①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-node-childnodes①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-node-clonenode①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-node-comparedocumentposition①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-node-contains①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-node-firstchild①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-node-haschildnodes①",
-    "https://dom.spec.whatwg.org/#dom-node-insertbefore",
-    "https://dom.spec.whatwg.org/#dom-node-isdefaultnamespace",
-    "https://dom.spec.whatwg.org/#ref-for-dom-node-isequalnode①",
-    "https://dom.spec.whatwg.org/#dom-node-issamenode",
-    "https://dom.spec.whatwg.org/#ref-for-dom-node-lastchild①",
-    "https://dom.spec.whatwg.org/#dom-node-lookupnamespaceuri",
-    "https://dom.spec.whatwg.org/#dom-node-lookupprefix",
-    "https://dom.spec.whatwg.org/#ref-for-dom-node-nextsibling①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-node-nodename①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-node-nodetype①",
-    "https://dom.spec.whatwg.org/#dom-node-nodevalue",
-    "https://dom.spec.whatwg.org/#ref-for-dom-node-normalize①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-node-ownerdocument①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-node-parentelement①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-node-parentnode①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-node-previoussibling①",
-    "https://dom.spec.whatwg.org/#dom-node-removechild",
-    "https://dom.spec.whatwg.org/#dom-node-replacechild",
-    "https://dom.spec.whatwg.org/#dom-node-textcontent",
-    "https://dom.spec.whatwg.org/#interface-nodeiterator",
-    "https://dom.spec.whatwg.org/#dom-nodeiterator-filter",
-    "https://dom.spec.whatwg.org/#dom-nodeiterator-nextnode",
-    "https://dom.spec.whatwg.org/#dom-nodeiterator-pointerbeforereferencenode",
-    "https://dom.spec.whatwg.org/#dom-nodeiterator-previousnode",
-    "https://dom.spec.whatwg.org/#dom-nodeiterator-referencenode",
-    "https://dom.spec.whatwg.org/#dom-nodeiterator-root",
-    "https://dom.spec.whatwg.org/#dom-nodeiterator-whattoshow",
-    "https://dom.spec.whatwg.org/#interface-nodelist",
-    "https://dom.spec.whatwg.org/#ref-for-dom-nodelist-item①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-nodelist-length①",
-    "https://dom.spec.whatwg.org/#interface-processinginstruction",
-    "https://dom.spec.whatwg.org/#dom-processinginstruction-target",
-    "https://dom.spec.whatwg.org/#interface-text",
-    "https://dom.spec.whatwg.org/#ref-for-dom-text-text①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-text-splittext①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-text-wholetext①",
-    "https://dom.spec.whatwg.org/#interface-treewalker",
-    "https://dom.spec.whatwg.org/#dom-treewalker-currentnode",
-    "https://dom.spec.whatwg.org/#dom-treewalker-filter",
-    "https://dom.spec.whatwg.org/#dom-treewalker-firstchild",
-    "https://dom.spec.whatwg.org/#dom-treewalker-lastchild",
-    "https://dom.spec.whatwg.org/#dom-treewalker-nextnode",
-    "https://dom.spec.whatwg.org/#dom-treewalker-nextsibling",
-    "https://dom.spec.whatwg.org/#dom-treewalker-parentnode",
-    "https://dom.spec.whatwg.org/#dom-treewalker-previousnode",
-    "https://dom.spec.whatwg.org/#dom-treewalker-previoussibling",
-    "https://dom.spec.whatwg.org/#dom-treewalker-root",
-    "https://dom.spec.whatwg.org/#dom-treewalker-whattoshow",
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-document-dev",
-    "https://dom.spec.whatwg.org/#xmldocument"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/XMLDocument",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "firefox": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "safari": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "edge": {
       "current": "y",
-      "firstFull": "12",
-      "versions": [
-        {
-          "version": "12",
-          "status": "y"
-        }
-      ]
+      "firstFull": "12"
     },
     "opera": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "ie": {
       "current": "y",
-      "firstFull": "12",
-      "versions": [
-        {
-          "version": "12",
-          "status": "y"
-        }
-      ]
+      "firstFull": "12"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "and_ff": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     }
   },
   "usage": {
@@ -379,7 +71,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": "high",
   "sourceData": {
     "primary": {

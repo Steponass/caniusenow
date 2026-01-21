@@ -4,162 +4,48 @@
   "name": "ARIA attribute reflection",
   "description": "WAI-ARIA attributes have corresponding properties on Element and ElementInternals objects.",
   "category": "Other",
-  "spec": [
-    "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariaactivedescendantelement",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariaatomic",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariaautocomplete",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariabraillelabel",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariabrailleroledescription",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariabusy",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariachecked",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariacolcount",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariacolindex",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariacolindextext",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariacolspan",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariacontrolselements",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariacurrent",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariadescribedbyelements",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariadescription",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariadetailselements",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariadisabled",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariaerrormessageelements",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariaexpanded",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariaflowtoelements",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariahaspopup",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariahidden",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariainvalid",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariakeyshortcuts",
-    "https://w3c.github.io/aria/#dom-ariamixin-arialabel",
-    "https://w3c.github.io/aria/#dom-ariamixin-arialabelledbyelements",
-    "https://w3c.github.io/aria/#dom-ariamixin-arialevel",
-    "https://w3c.github.io/aria/#dom-ariamixin-arialive",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariamodal",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariamultiline",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariamultiselectable",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariaorientation",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariaownselements",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariaplaceholder",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariaposinset",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariapressed",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariareadonly",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariarequired",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariarowcount",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariarowindex",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariarowindextext",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariarowspan",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariaselected",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariasetsize",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariasort",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariavaluemax",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariavaluemin",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariavaluenow",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariavaluetext",
-    "https://w3c.github.io/aria/#dom-ariamixin-role",
-    "https://w3c.github.io/aria/#dom-ariamixin-ariaroledescription"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/ElementInternals/role",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "103",
-      "versions": [
-        {
-          "version": "103",
-          "status": "y"
-        }
-      ]
+      "firstFull": "103"
     },
     "firefox": {
       "current": "y",
-      "firstFull": "119",
-      "versions": [
-        {
-          "version": "119",
-          "status": "y"
-        }
-      ]
+      "firstFull": "119"
     },
     "safari": {
       "current": "y",
-      "firstFull": "16.4",
-      "versions": [
-        {
-          "version": "16.4",
-          "status": "y"
-        }
-      ]
+      "firstFull": "16.4"
     },
     "edge": {
       "current": "y",
-      "firstFull": "103",
-      "versions": [
-        {
-          "version": "103",
-          "status": "y"
-        }
-      ]
+      "firstFull": "103"
     },
     "opera": {
       "current": "y",
-      "firstFull": "103",
-      "versions": [
-        {
-          "version": "103",
-          "status": "y"
-        }
-      ]
+      "firstFull": "103"
     },
     "ie": {
       "current": "y",
-      "firstFull": "103",
-      "versions": [
-        {
-          "version": "103",
-          "status": "y"
-        }
-      ]
+      "firstFull": "103"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "16.4",
-      "versions": [
-        {
-          "version": "16.4",
-          "status": "y"
-        }
-      ]
+      "firstFull": "16.4"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "103",
-      "versions": [
-        {
-          "version": "103",
-          "status": "y"
-        }
-      ]
+      "firstFull": "103"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "103",
-      "versions": [
-        {
-          "version": "103",
-          "status": "y"
-        }
-      ]
+      "firstFull": "103"
     },
     "and_ff": {
       "current": "y",
-      "firstFull": "119",
-      "versions": [
-        {
-          "version": "119",
-          "status": "y"
-        }
-      ]
+      "firstFull": "119"
     }
   },
   "usage": {
@@ -184,7 +70,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": "low",
   "sourceData": {
     "primary": {

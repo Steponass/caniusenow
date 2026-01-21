@@ -4,195 +4,48 @@
   "name": "JavaScript (initial core language support)",
   "description": "JavaScript is a programming language that runs in browsers, usually through the <script> element. JavaScript has changed over many years. This feature represents the oldest language features, such as built-in objects, statements, and operators. Also known as ECMAScript.",
   "category": "Other",
-  "spec": [
-    "https://tc39.es/ecma262/multipage/#sec-intro",
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-boolean-objects",
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-boolean-constructor",
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-boolean.prototype.tostring",
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-boolean.prototype.valueof",
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error-objects",
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error-constructor",
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error.prototype.message",
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error.prototype.name",
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error.prototype.tostring",
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-evalerror",
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-nativeerror-constructors",
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-rangeerror",
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-referenceerror",
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-syntaxerror",
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-typeerror",
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-urierror",
-    "https://tc39.es/ecma262/multipage/global-object.html#sec-decodeuri-encodeduri",
-    "https://tc39.es/ecma262/multipage/global-object.html#sec-decodeuricomponent-encodeduricomponent",
-    "https://tc39.es/ecma262/multipage/global-object.html#sec-encodeuri-uri",
-    "https://tc39.es/ecma262/multipage/global-object.html#sec-encodeuricomponent-uricomponent",
-    "https://tc39.es/ecma262/multipage/global-object.html#sec-eval-x",
-    "https://tc39.es/ecma262/multipage/global-object.html#sec-isfinite-number",
-    "https://tc39.es/ecma262/multipage/global-object.html#sec-parsefloat-string",
-    "https://tc39.es/ecma262/multipage/global-object.html#sec-undefined",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#sec-boolean-literals",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#prod-HexEscapeSequence",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#sec-null-literals",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-Elision",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-ObjectLiteral",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-ArrayLiteral",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-Arguments",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#prod-FormalParameters",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-CoverParenthesizedExpressionAndArrowParameterList",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#prod-NamedImports",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#prod-NamedExports",
-    "https://tc39.es/ecma262/multipage/text-processing.html#prod-QuantifierPrefix",
-    "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#prod-annexB-InvalidBracedQuantifier",
-    "https://tc39.es/ecma262/multipage/structured-data.html#sec-unicodeescape",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-addition-operator-plus",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-BitwiseANDExpression",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-bitwise-not-operator",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-BitwiseORExpression",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-BitwiseXORExpression",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-comma-operator",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-conditional-operator",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-postfix-decrement-operator",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-delete-operator",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-multiplicative-operators",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-equality-operators",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-relational-operators",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-grouping-operator",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-postfix-increment-operator",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-left-shift-operator",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-LogicalANDExpression",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-logical-not-operator",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-LogicalORExpression",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-new-operator",
-    "https://tc39.es/ecma262/multipage/overview.html#sec-null-value",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-property-accessors",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-signed-right-shift-operator",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-subtraction-operator-minus",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-this-keyword",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-typeof-operator",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-unary-minus-operator",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-unary-plus-operator",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-unsigned-right-shift-operator",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-void-operator",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-block",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-break-statement",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-continue-statement",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-debugger-statement",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-do-while-statement",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-empty-statement",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-for-statement",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-for-in-and-for-of-statements",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-if-statement",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-labelled-statements",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-return-statement",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-switch-statement",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-throw-statement",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-try-statement",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-variable-statement",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-while-statement"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/while",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "5",
-      "versions": [
-        {
-          "version": "5",
-          "status": "y"
-        }
-      ]
+      "firstFull": "5"
     },
     "firefox": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "safari": {
       "current": "y",
-      "firstFull": "5",
-      "versions": [
-        {
-          "version": "5",
-          "status": "y"
-        }
-      ]
+      "firstFull": "5"
     },
     "edge": {
       "current": "y",
-      "firstFull": "12",
-      "versions": [
-        {
-          "version": "12",
-          "status": "y"
-        }
-      ]
+      "firstFull": "12"
     },
     "opera": {
       "current": "y",
-      "firstFull": "5",
-      "versions": [
-        {
-          "version": "5",
-          "status": "y"
-        }
-      ]
+      "firstFull": "5"
     },
     "ie": {
       "current": "y",
-      "firstFull": "12",
-      "versions": [
-        {
-          "version": "12",
-          "status": "y"
-        }
-      ]
+      "firstFull": "12"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "5",
-      "versions": [
-        {
-          "version": "5",
-          "status": "y"
-        }
-      ]
+      "firstFull": "5"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "5",
-      "versions": [
-        {
-          "version": "5",
-          "status": "y"
-        }
-      ]
+      "firstFull": "5"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "5",
-      "versions": [
-        {
-          "version": "5",
-          "status": "y"
-        }
-      ]
+      "firstFull": "5"
     },
     "and_ff": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     }
   },
   "usage": {
@@ -218,7 +71,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": "high",
   "sourceData": {
     "primary": {

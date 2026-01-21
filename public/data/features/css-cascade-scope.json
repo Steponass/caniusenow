@@ -4,13 +4,6 @@
   "name": "Scoped Styles: the @scope rule",
   "description": "Allows CSS rules to be scoped to part of the document, with upper and lower limits described by selectors.",
   "category": "CSS",
-  "spec": [
-    "https://drafts.csswg.org/css-cascade-6/#scoped-styles",
-    "https://drafts.csswg.org/css-cascade-6/#scope-atrule",
-    "https://drafts.csswg.org/css-cascade-6/#cssscoperule",
-    "https://drafts.csswg.org/css-cascade-6/#dom-cssscoperule-end",
-    "https://drafts.csswg.org/css-cascade-6/#dom-cssscoperule-start"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@scope",
   "links": [
     {
@@ -33,378 +26,42 @@
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "118",
-      "versions": [
-        {
-          "version": "137",
-          "status": "y"
-        },
-        {
-          "version": "138",
-          "status": "y"
-        },
-        {
-          "version": "139",
-          "status": "y"
-        },
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        },
-        {
-          "version": "144",
-          "status": "y"
-        },
-        {
-          "version": "145",
-          "status": "y"
-        },
-        {
-          "version": "146",
-          "status": "y"
-        }
-      ]
+      "firstFull": "118"
     },
     "firefox": {
       "current": "y",
-      "firstFull": "146",
-      "versions": [
-        {
-          "version": "140",
-          "status": "n"
-        },
-        {
-          "version": "141",
-          "status": "n"
-        },
-        {
-          "version": "142",
-          "status": "n"
-        },
-        {
-          "version": "143",
-          "status": "n"
-        },
-        {
-          "version": "144",
-          "status": "n"
-        },
-        {
-          "version": "145",
-          "status": "n"
-        },
-        {
-          "version": "146",
-          "status": "y"
-        },
-        {
-          "version": "147",
-          "status": "y"
-        },
-        {
-          "version": "148",
-          "status": "y"
-        },
-        {
-          "version": "149",
-          "status": "y"
-        }
-      ]
+      "firstFull": "146"
     },
     "safari": {
       "current": "y",
-      "firstFull": "17.4",
-      "versions": [
-        {
-          "version": "18.1",
-          "status": "y"
-        },
-        {
-          "version": "18.2",
-          "status": "y"
-        },
-        {
-          "version": "18.3",
-          "status": "y"
-        },
-        {
-          "version": "18.4",
-          "status": "y"
-        },
-        {
-          "version": "18.5-18.6",
-          "status": "y"
-        },
-        {
-          "version": "26.0",
-          "status": "y"
-        },
-        {
-          "version": "26.1",
-          "status": "y"
-        },
-        {
-          "version": "26.2",
-          "status": "y"
-        },
-        {
-          "version": "26.3",
-          "status": "y"
-        },
-        {
-          "version": "TP",
-          "status": "y"
-        }
-      ]
+      "firstFull": "17.4"
     },
     "edge": {
       "current": "y",
-      "firstFull": "118",
-      "versions": [
-        {
-          "version": "134",
-          "status": "y"
-        },
-        {
-          "version": "135",
-          "status": "y"
-        },
-        {
-          "version": "136",
-          "status": "y"
-        },
-        {
-          "version": "137",
-          "status": "y"
-        },
-        {
-          "version": "138",
-          "status": "y"
-        },
-        {
-          "version": "139",
-          "status": "y"
-        },
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        }
-      ]
+      "firstFull": "118"
     },
     "opera": {
       "current": "y",
-      "firstFull": "106",
-      "versions": [
-        {
-          "version": "116",
-          "status": "y"
-        },
-        {
-          "version": "117",
-          "status": "y"
-        },
-        {
-          "version": "118",
-          "status": "y"
-        },
-        {
-          "version": "119",
-          "status": "y"
-        },
-        {
-          "version": "120",
-          "status": "y"
-        },
-        {
-          "version": "121",
-          "status": "y"
-        },
-        {
-          "version": "122",
-          "status": "y"
-        },
-        {
-          "version": "123",
-          "status": "y"
-        },
-        {
-          "version": "124",
-          "status": "y"
-        },
-        {
-          "version": "125",
-          "status": "y"
-        }
-      ]
+      "firstFull": "106"
     },
     "ie": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "5.5",
-          "status": "n"
-        },
-        {
-          "version": "6",
-          "status": "n"
-        },
-        {
-          "version": "7",
-          "status": "n"
-        },
-        {
-          "version": "8",
-          "status": "n"
-        },
-        {
-          "version": "9",
-          "status": "n"
-        },
-        {
-          "version": "10",
-          "status": "n"
-        },
-        {
-          "version": "11",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "17.4",
-      "versions": [
-        {
-          "version": "18.0",
-          "status": "y"
-        },
-        {
-          "version": "18.1",
-          "status": "y"
-        },
-        {
-          "version": "18.2",
-          "status": "y"
-        },
-        {
-          "version": "18.3",
-          "status": "y"
-        },
-        {
-          "version": "18.4",
-          "status": "y"
-        },
-        {
-          "version": "18.5-18.7",
-          "status": "y"
-        },
-        {
-          "version": "26.0",
-          "status": "y"
-        },
-        {
-          "version": "26.1",
-          "status": "y"
-        },
-        {
-          "version": "26.2",
-          "status": "y"
-        },
-        {
-          "version": "26.3",
-          "status": "y"
-        }
-      ]
+      "firstFull": "17.4"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "143",
-      "versions": [
-        {
-          "version": "143",
-          "status": "y"
-        }
-      ]
+      "firstFull": "143"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "25",
-      "versions": [
-        {
-          "version": "20",
-          "status": "n"
-        },
-        {
-          "version": "21",
-          "status": "n"
-        },
-        {
-          "version": "22",
-          "status": "n"
-        },
-        {
-          "version": "23",
-          "status": "n"
-        },
-        {
-          "version": "24",
-          "status": "n"
-        },
-        {
-          "version": "25",
-          "status": "y"
-        },
-        {
-          "version": "26",
-          "status": "y"
-        },
-        {
-          "version": "27",
-          "status": "y"
-        },
-        {
-          "version": "28",
-          "status": "y"
-        },
-        {
-          "version": "29",
-          "status": "y"
-        }
-      ]
+      "firstFull": "25"
     },
     "and_ff": {
       "current": "y",
-      "firstFull": "146",
-      "versions": [
-        {
-          "version": "146",
-          "status": "y"
-        }
-      ]
+      "firstFull": "146"
     }
   },
   "usage": {
@@ -436,7 +93,6 @@
       "1": "Enabled in Chrome through the \"experimental Web Platform features\" flag in chrome://flags"
     }
   },
-  "status": "wd",
   "baseline": "low",
   "sourceData": {
     "primary": {

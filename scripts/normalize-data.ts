@@ -28,8 +28,6 @@ import {
   inferCategoryFromMdnPath,
   inferNameFromMdnPath,
   extractQuickSupport,
-  extractFirstSupport,
-  compareVersions
 } from "./helpers.js";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -160,9 +158,6 @@ function processCaniuse(
       // Calculate actual usage with browser breakdown
       const usageData = calculateActualUsage(feature, support, usage);
 
-      // Normalize spec URLs
-      const specUrls = Array.isArray(feature.spec) ? feature.spec : [feature.spec];
-
       // Create normalized feature
       const normalized: NormalizedFeature = {
         id,
@@ -171,7 +166,6 @@ function processCaniuse(
         description: feature.description || "",
         category: mapCaniuseCategory(feature.categories),
         
-        spec: specUrls.filter(Boolean),
         mdn: undefined,
         links: feature.links || [],
         
@@ -189,7 +183,6 @@ function processCaniuse(
         
         flags: undefined,
         
-        status: normalizeStatus(feature.status),
         baseline: false, // Will be updated by Web Features if available
         
         sourceData: {
@@ -206,15 +199,6 @@ function processCaniuse(
       stats.caniuse.errors++;
     }
   }
-}
-
-function normalizeStatus(status: string): NormalizedFeature["status"] {
-  const s = status.toLowerCase();
-  if (s === "cr" || s === "rec" || s === "wd" || s === "ls") {
-    return s as "cr" | "rec" | "wd" | "ls";
-  }
-  if (s === "unoff") return "unoff";
-  return "other";
 }
 
 // ============================================================================
@@ -277,14 +261,6 @@ function supplementWithWebFeatures(
     feature.baseline = wfFeature.status.baseline;
   }
 
-  // Add spec URLs if not already present
-  const wfSpecs = Array.isArray(wfFeature.spec) ? wfFeature.spec : [wfFeature.spec];
-  for (const spec of wfSpecs) {
-    if (spec && !feature.spec.includes(spec)) {
-      feature.spec.push(spec);
-    }
-  }
-
   // Record supplementary source
   feature.sourceData.supplementary.push({
     source: "webfeatures",
@@ -322,17 +298,12 @@ function createFeatureFromWebFeatures(
   // Estimate usage
   const usageData = estimateUsage(support, usage);
 
-  // Normalize spec URLs
-  const specUrls = Array.isArray(wfFeature.spec) ? wfFeature.spec : [wfFeature.spec];
-
   return {
     id: `wf-${wfId}`,
     source: "webfeatures",
     name: wfFeature.name,
     description: wfFeature.description || wfFeature.description_html || "",
     category: "Other", // Will try to infer from MDN if available
-    
-    spec: specUrls.filter(Boolean),
     mdn: undefined,
     links: [],
     
@@ -342,11 +313,8 @@ function createFeatureFromWebFeatures(
       ...usageData,
       type: "estimated"
     },
-    
     notes: undefined,
     flags: undefined,
-    
-    status: "other",
     baseline: wfFeature.status.baseline || false,
     
     sourceData: {
@@ -489,19 +457,6 @@ function supplementWithMdn(
     feature.mdn = compat.__compat.mdn_url;
   }
 
-  // Add spec URLs
-  if (compat.__compat.spec_url) {
-    const specs = Array.isArray(compat.__compat.spec_url) 
-      ? compat.__compat.spec_url 
-      : [compat.__compat.spec_url];
-    
-    for (const spec of specs) {
-      if (spec && !feature.spec.includes(spec)) {
-        feature.spec.push(spec);
-      }
-    }
-  }
-
   // Record supplementary source
   feature.sourceData.supplementary.push({
     source: "mdnbcd",
@@ -545,35 +500,22 @@ function createFeatureFromMdn(
   // Estimate usage
   const usageData = estimateUsage(support, usage);
 
-  // Normalize spec URLs
-  const specUrls = compat.__compat.spec_url
-    ? (Array.isArray(compat.__compat.spec_url) ? compat.__compat.spec_url : [compat.__compat.spec_url])
-    : [];
-
   return {
     id: `mdn-${mdnPath}`,
     source: "mdnbcd",
     name: compat.__compat.description || inferNameFromMdnPath(mdnPath),
     description: compat.__compat.description || "",
     category: inferCategoryFromMdnPath(mdnPath),
-    
-    spec: specUrls.filter(Boolean),
     mdn: compat.__compat.mdn_url,
     links: [],
-    
     support,
-    
     usage: {
       ...usageData,
       type: "estimated"
     },
-    
     notes: undefined,
     flags: undefined,
-    
-    status: "other",
     baseline: false,
-    
     sourceData: {
       primary: { source: "mdnbcd", id: mdnPath },
       supplementary: []
@@ -590,17 +532,23 @@ function generateIndex(
   sources: SourceFiles
 ): FeatureIndex[] {
   const index: FeatureIndex[] = [];
+  const EXCLUDED_BROWSERS = ['opera', 'ie', 'samsung', 'and_ff'];
 
   for (const [id, feature] of features) {
+    const quickSupport = extractQuickSupport(feature.support);
+
+    // Remove excluded browsers from the support object
+    for (const browser of EXCLUDED_BROWSERS) {
+      delete quickSupport[browser];
+    }
+
     index.push({
       id,
       name: feature.name,
-      description: feature.description.substring(0, 200), // Truncate for index
+      description: feature.description.substring(0, 120), // Truncate for index
       category: feature.category,
-      support: extractQuickSupport(feature.support),
-      firstSupport: extractFirstSupport(feature.support),
+      support: quickSupport,
       usage: feature.usage.global.total,
-      status: feature.status,
       baseline: feature.baseline
     });
   }
@@ -636,8 +584,23 @@ async function writeOutput(
   // Write individual feature files
   let written = 0;
   for (const [id, feature] of features) {
+    // Create a cleaned version of the feature without the versions array
+    const cleanedSupport: BrowserSupport = {};
+    for (const [browser, browserSupport] of Object.entries(feature.support)) {
+      cleanedSupport[browser] = {
+        current: browserSupport.current,
+        firstFull: browserSupport.firstFull,
+        firstPartial: browserSupport.firstPartial
+      };
+    }
+
+    const cleanedFeature = {
+      ...feature,
+      support: cleanedSupport
+    };
+
     const featurePath = path.join(FEATURES_DIR, `${id}.json`);
-    fs.writeFileSync(featurePath, JSON.stringify(feature, null, 2), "utf-8");
+    fs.writeFileSync(featurePath, JSON.stringify(cleanedFeature, null, 2), "utf-8");
     written++;
 
     if (written % 100 === 0) {

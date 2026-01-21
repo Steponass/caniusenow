@@ -12,7 +12,6 @@ export interface CaniuseData {
 export interface CaniuseFeature {
   title: string;
   description: string;
-  spec: string | string[];
   status: string;
   links: Array<{ url: string; title: string }>;
   categories: string[];
@@ -47,7 +46,6 @@ export interface WebFeature {
   name: string;
   description?: string;
   description_html?: string;
-  spec: string | string[];
   caniuse?: string | string[];
   compat_features?: string[];
   status: {
@@ -65,7 +63,6 @@ export interface WebFeatureGroup {
 }
 
 export interface WebFeatureSnapshot {
-  spec: string | string[];
   features: string[];
 }
 
@@ -84,7 +81,6 @@ export interface MdnCompatStatement {
   __compat?: {
     description?: string;
     mdn_url?: string;
-    spec_url?: string | string[];
     support: Record<string, MdnSupportStatement | MdnSupportStatement[]>;
     status?: {
       experimental?: boolean;
@@ -126,7 +122,6 @@ export interface NormalizedFeature {
   description: string;
   category: "CSS" | "HTML5" | "JS API" | "SVG" | "Other";
   
-  spec: string[];
   mdn?: string;
   links: Array<{ url: string; title: string }>;
   
@@ -145,12 +140,8 @@ export interface NormalizedFeature {
     general?: string;
     byNum?: Record<string, string>;
   };
-  
   flags?: Record<string, string>;
-  
-  status: "cr" | "rec" | "wd" | "ls" | "other" | "unoff";
   baseline: "high" | "low" | false;
-  
   sourceData: {
     primary: { source: string; id: string };
     supplementary: Array<{
@@ -169,7 +160,7 @@ export interface BrowserSupportDetail {
   current: SupportStatus;
   firstFull?: string;
   firstPartial?: string;
-  versions: VersionSupport[];
+  versions?: VersionSupport[];
 }
 
 export interface VersionSupport {
@@ -190,9 +181,7 @@ export interface FeatureIndex {
   support: {
     [browser: string]: "y" | "a" | "n" | "p";
   };
-  firstSupport: string;
   usage: number;
-  status: string;
   baseline: "high" | "low" | false;
 }
 

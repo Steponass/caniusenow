@@ -4,144 +4,48 @@
   "name": "Regular expressions",
   "description": "The RegExp object represents a regular expression, a notation for matching text patterns.",
   "category": "Other",
-  "spec": [
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp-regular-expression-objects",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.prototype-%symbol.match%",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp-prototype-%symbol.matchall%",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.prototype-%symbol.replace%",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.prototype-%symbol.search%",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp-%symbol.species%",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.prototype-%symbol.split%",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp-constructor",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.dotAll",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.prototype.exec",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.flags",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.global",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.hasIndices",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.ignorecase",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-properties-of-regexp-instances",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.multiline",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.source",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.sticky",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.prototype.test",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.prototype.tostring",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.unicode",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.unicodesets",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#sec-literals-regular-expression-literals",
-    "https://tc39.es/ecma262/multipage/text-processing.html#prod-DecimalEscape",
-    "https://tc39.es/ecma262/multipage/text-processing.html#prod-Atom",
-    "https://tc39.es/ecma262/multipage/text-processing.html#prod-CharacterClass",
-    "https://tc39.es/ecma262/multipage/text-processing.html#prod-CharacterClassEscape",
-    "https://tc39.es/ecma262/multipage/text-processing.html#prod-CharacterEscape",
-    "https://tc39.es/ecma262/multipage/text-processing.html#prod-Disjunction",
-    "https://tc39.es/ecma262/multipage/text-processing.html#prod-Assertion",
-    "https://tc39.es/ecma262/multipage/text-processing.html#prod-PatternCharacter",
-    "https://tc39.es/ecma262/multipage/text-processing.html#prod-RegularExpressionModifiers",
-    "https://tc39.es/ecma262/multipage/text-processing.html#prod-AtomEscape",
-    "https://tc39.es/ecma262/multipage/text-processing.html#prod-Quantifier"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Word_boundary_assertion",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "firefox": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "safari": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "edge": {
       "current": "y",
-      "firstFull": "12",
-      "versions": [
-        {
-          "version": "12",
-          "status": "y"
-        }
-      ]
+      "firstFull": "12"
     },
     "opera": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "ie": {
       "current": "y",
-      "firstFull": "12",
-      "versions": [
-        {
-          "version": "12",
-          "status": "y"
-        }
-      ]
+      "firstFull": "12"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "and_ff": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     }
   },
   "usage": {
@@ -167,7 +71,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": "high",
   "sourceData": {
     "primary": {

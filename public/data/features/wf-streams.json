@@ -4,165 +4,48 @@
   "name": "Streams",
   "description": "The streams API creates, composes, and consumes continuously generated data.",
   "category": "Other",
-  "spec": [
-    "https://streams.spec.whatwg.org/",
-    "https://streams.spec.whatwg.org/#blqs-class",
-    "https://streams.spec.whatwg.org/#blqs-constructor",
-    "https://streams.spec.whatwg.org/#ref-for-blqs-high-water-mark①",
-    "https://streams.spec.whatwg.org/#blqs-size",
-    "https://streams.spec.whatwg.org/#cqs-class",
-    "https://streams.spec.whatwg.org/#ref-for-cqs-constructor①",
-    "https://streams.spec.whatwg.org/#ref-for-cqs-high-water-mark①",
-    "https://streams.spec.whatwg.org/#ref-for-cqs-size②",
-    "https://streams.spec.whatwg.org/#rs-class",
-    "https://streams.spec.whatwg.org/#ref-for-rs-constructor⑤",
-    "https://streams.spec.whatwg.org/#ref-for-rs-cancel③",
-    "https://streams.spec.whatwg.org/#ref-for-rs-get-reader⑤",
-    "https://streams.spec.whatwg.org/#ref-for-rs-locked②",
-    "https://streams.spec.whatwg.org/#ref-for-rs-pipe-through②",
-    "https://streams.spec.whatwg.org/#ref-for-rs-pipe-to④",
-    "https://streams.spec.whatwg.org/#ref-for-rs-tee②",
-    "https://streams.spec.whatwg.org/#rs-default-controller-class",
-    "https://streams.spec.whatwg.org/#ref-for-rs-default-controller-close①",
-    "https://streams.spec.whatwg.org/#ref-for-rs-default-controller-desired-size②",
-    "https://streams.spec.whatwg.org/#ref-for-rs-default-controller-enqueue①",
-    "https://streams.spec.whatwg.org/#rs-default-controller-error",
-    "https://streams.spec.whatwg.org/#default-reader-class",
-    "https://streams.spec.whatwg.org/#ref-for-default-reader-constructor①",
-    "https://streams.spec.whatwg.org/#ref-for-generic-reader-cancel②",
-    "https://streams.spec.whatwg.org/#ref-for-generic-reader-closed②",
-    "https://streams.spec.whatwg.org/#ref-for-default-reader-read①",
-    "https://streams.spec.whatwg.org/#ref-for-default-reader-release-lock②",
-    "https://streams.spec.whatwg.org/#ts-class",
-    "https://streams.spec.whatwg.org/#ref-for-ts-constructor④",
-    "https://streams.spec.whatwg.org/#ref-for-ts-readable②",
-    "https://streams.spec.whatwg.org/#ref-for-ts-writable②",
-    "https://streams.spec.whatwg.org/#ts-default-controller-class",
-    "https://streams.spec.whatwg.org/#ts-default-controller-desired-size",
-    "https://streams.spec.whatwg.org/#ts-default-controller-enqueue",
-    "https://streams.spec.whatwg.org/#ts-default-controller-error",
-    "https://streams.spec.whatwg.org/#ts-default-controller-terminate",
-    "https://streams.spec.whatwg.org/#ws-class",
-    "https://streams.spec.whatwg.org/#ref-for-ws-constructor④",
-    "https://streams.spec.whatwg.org/#ref-for-ws-abort③",
-    "https://streams.spec.whatwg.org/#ref-for-ws-close①",
-    "https://streams.spec.whatwg.org/#ref-for-ws-get-writer①",
-    "https://streams.spec.whatwg.org/#ref-for-ws-locked②",
-    "https://streams.spec.whatwg.org/#ws-default-controller-class",
-    "https://streams.spec.whatwg.org/#ref-for-ws-default-controller-error①",
-    "https://streams.spec.whatwg.org/#ref-for-ws-default-controller-signal①",
-    "https://streams.spec.whatwg.org/#default-writer-class",
-    "https://streams.spec.whatwg.org/#ref-for-default-writer-constructor①",
-    "https://streams.spec.whatwg.org/#ref-for-default-writer-abort④",
-    "https://streams.spec.whatwg.org/#ref-for-default-writer-close⑦",
-    "https://streams.spec.whatwg.org/#ref-for-default-writer-closed②",
-    "https://streams.spec.whatwg.org/#ref-for-default-writer-desired-size⑥",
-    "https://streams.spec.whatwg.org/#ref-for-default-writer-ready⑨",
-    "https://streams.spec.whatwg.org/#ref-for-default-writer-release-lock②",
-    "https://streams.spec.whatwg.org/#ref-for-default-writer-write①②"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/write",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "67",
-      "versions": [
-        {
-          "version": "67",
-          "status": "y"
-        }
-      ]
+      "firstFull": "67"
     },
     "firefox": {
       "current": "y",
-      "firstFull": "102",
-      "versions": [
-        {
-          "version": "102",
-          "status": "y"
-        }
-      ]
+      "firstFull": "102"
     },
     "safari": {
       "current": "y",
-      "firstFull": "14.1",
-      "versions": [
-        {
-          "version": "14.1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "14.1"
     },
     "edge": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "opera": {
       "current": "y",
-      "firstFull": "67",
-      "versions": [
-        {
-          "version": "67",
-          "status": "y"
-        }
-      ]
+      "firstFull": "67"
     },
     "ie": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "14.1",
-      "versions": [
-        {
-          "version": "14.1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "14.1"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "67",
-      "versions": [
-        {
-          "version": "67",
-          "status": "y"
-        }
-      ]
+      "firstFull": "67"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "67",
-      "versions": [
-        {
-          "version": "67",
-          "status": "y"
-        }
-      ]
+      "firstFull": "67"
     },
     "and_ff": {
       "current": "y",
-      "firstFull": "102",
-      "versions": [
-        {
-          "version": "102",
-          "status": "y"
-        }
-      ]
+      "firstFull": "102"
     }
   },
   "usage": {
@@ -187,7 +70,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": "high",
   "sourceData": {
     "primary": {

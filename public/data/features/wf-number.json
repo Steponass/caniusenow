@@ -4,183 +4,48 @@
   "name": "Math and numbers",
   "description": "The number type (and Number object) represents floating-point numbers, such as 42 or -4.201, while the Math API contains mathematical functions and constants. JavaScript can also represent boundless negative and positive values as Infinity or not-a-number as NaN (as in 0 * Infinity).",
   "category": "Other",
-  "spec": [
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number-objects",
-    "https://tc39.es/ecma262/multipage/global-object.html#sec-value-properties-of-the-global-object-infinity",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math-object",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.e",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.ln10",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.ln2",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.log10e",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.log2e",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.pi",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.sqrt1_2",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.sqrt2",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.abs",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.acos",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.acosh",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.asin",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.asinh",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.atan",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.atan2",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.atanh",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.cbrt",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.ceil",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.clz32",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.cos",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.cosh",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.exp",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.expm1",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.floor",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.fround",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.hypot",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.imul",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.log",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.log10",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.log1p",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.log2",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.max",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.min",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.pow",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.random",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.round",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.sign",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.sin",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.sinh",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.sqrt",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.tan",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.tanh",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.trunc",
-    "https://tc39.es/ecma262/multipage/global-object.html#sec-value-properties-of-the-global-object-nan",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.epsilon",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.max_safe_integer",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.max_value",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.min_safe_integer",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.min_value",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.negative_infinity",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.nan",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number-constructor",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.positive_infinity",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.isfinite",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.isinteger",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.isnan",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.issafeinteger",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.parsefloat",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.parseint",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.prototype.toexponential",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.prototype.tofixed",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.prototype.toprecision",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.prototype.tostring",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.prototype.valueof",
-    "https://tc39.es/ecma262/multipage/global-object.html#sec-isnan-number",
-    "https://tc39.es/ecma262/multipage/global-object.html#sec-parseint-string-radix",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#prod-BinaryIntegerLiteral",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#prod-DecimalLiteral",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#prod-HexIntegerLiteral",
-    "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#prod-OctalIntegerLiteral"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar#octal",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "firefox": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "safari": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "edge": {
       "current": "y",
-      "firstFull": "12",
-      "versions": [
-        {
-          "version": "12",
-          "status": "y"
-        }
-      ]
+      "firstFull": "12"
     },
     "opera": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "ie": {
       "current": "y",
-      "firstFull": "12",
-      "versions": [
-        {
-          "version": "12",
-          "status": "y"
-        }
-      ]
+      "firstFull": "12"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "and_ff": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     }
   },
   "usage": {
@@ -206,7 +71,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": "high",
   "sourceData": {
     "primary": {

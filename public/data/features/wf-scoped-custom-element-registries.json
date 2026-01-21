@@ -4,68 +4,39 @@
   "name": "Scoped custom element registries",
   "description": "The CustomElementRegistry() constructor creates a new custom element registry that's separate from the global window.customElements registry. Creating more than one registry is useful for multiple custom elements that have the same tag name to coexist.",
   "category": "Other",
-  "spec": [
-    "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
-    "https://dom.spec.whatwg.org/#element-custom-element-registry",
-    "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry",
-    "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry-initialize",
-    "https://dom.spec.whatwg.org/#dom-documentorshadowroot-customelementregistry",
-    "https://dom.spec.whatwg.org/#dom-element-customelementregistry",
-    "https://html.spec.whatwg.org/multipage/scripting.html#dom-template-shadowrootcustomelementregistry"
-  ],
   "links": [],
   "support": {
     "safari": {
       "current": "y",
-      "firstFull": "26",
-      "versions": [
-        {
-          "version": "26",
-          "status": "y"
-        }
-      ]
+      "firstFull": "26"
     },
     "chrome": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "edge": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "ie": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "26",
-      "versions": [
-        {
-          "version": "26",
-          "status": "y"
-        }
-      ]
+      "firstFull": "26"
     },
     "and_chr": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "samsung": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -84,7 +55,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

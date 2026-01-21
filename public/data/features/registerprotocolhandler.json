@@ -4,9 +4,6 @@
   "name": "Custom protocol handling",
   "description": "Method of allowing a webpage to handle a given protocol using `navigator.registerProtocolHandler`. This allows certain URLs to be opened by a given web application, for example `mailto:` addresses can be opened by a webmail client.",
   "category": "HTML5",
-  "spec": [
-    "https://html.spec.whatwg.org/multipage/webappapis.html#custom-handlers"
-  ],
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/registerProtocolHandler",
@@ -15,461 +12,35 @@
   ],
   "support": {
     "chrome": {
-      "current": "u",
-      "versions": [
-        {
-          "version": "137",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "138",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "139",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "140",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "141",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "142",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "143",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "144",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "145",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "146",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        }
-      ]
+      "current": "u"
     },
     "firefox": {
       "current": "y",
-      "firstFull": "3",
-      "versions": [
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        },
-        {
-          "version": "144",
-          "status": "y"
-        },
-        {
-          "version": "145",
-          "status": "y"
-        },
-        {
-          "version": "146",
-          "status": "y"
-        },
-        {
-          "version": "147",
-          "status": "y"
-        },
-        {
-          "version": "148",
-          "status": "y"
-        },
-        {
-          "version": "149",
-          "status": "y"
-        }
-      ]
+      "firstFull": "3"
     },
     "safari": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "18.1",
-          "status": "n"
-        },
-        {
-          "version": "18.2",
-          "status": "n"
-        },
-        {
-          "version": "18.3",
-          "status": "n"
-        },
-        {
-          "version": "18.4",
-          "status": "n"
-        },
-        {
-          "version": "18.5-18.6",
-          "status": "n"
-        },
-        {
-          "version": "26.0",
-          "status": "n"
-        },
-        {
-          "version": "26.1",
-          "status": "n"
-        },
-        {
-          "version": "26.2",
-          "status": "n"
-        },
-        {
-          "version": "26.3",
-          "status": "n"
-        },
-        {
-          "version": "TP",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "edge": {
-      "current": "u",
-      "versions": [
-        {
-          "version": "134",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "135",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "136",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "137",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "138",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "139",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "140",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "141",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "142",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "143",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        }
-      ]
+      "current": "u"
     },
     "opera": {
-      "current": "u",
-      "versions": [
-        {
-          "version": "116",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "117",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "118",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "119",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "120",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "121",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "122",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "123",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "124",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "125",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        }
-      ]
+      "current": "u"
     },
     "ie": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "5.5",
-          "status": "n"
-        },
-        {
-          "version": "6",
-          "status": "n"
-        },
-        {
-          "version": "7",
-          "status": "n"
-        },
-        {
-          "version": "8",
-          "status": "n"
-        },
-        {
-          "version": "9",
-          "status": "n"
-        },
-        {
-          "version": "10",
-          "status": "n"
-        },
-        {
-          "version": "11",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "18.0",
-          "status": "n"
-        },
-        {
-          "version": "18.1",
-          "status": "n"
-        },
-        {
-          "version": "18.2",
-          "status": "n"
-        },
-        {
-          "version": "18.3",
-          "status": "n"
-        },
-        {
-          "version": "18.4",
-          "status": "n"
-        },
-        {
-          "version": "18.5-18.7",
-          "status": "n"
-        },
-        {
-          "version": "26.0",
-          "status": "n"
-        },
-        {
-          "version": "26.1",
-          "status": "n"
-        },
-        {
-          "version": "26.2",
-          "status": "n"
-        },
-        {
-          "version": "26.3",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "and_chr": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "143",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "samsung": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "20",
-          "status": "n"
-        },
-        {
-          "version": "21",
-          "status": "n"
-        },
-        {
-          "version": "22",
-          "status": "n"
-        },
-        {
-          "version": "23",
-          "status": "n"
-        },
-        {
-          "version": "24",
-          "status": "n"
-        },
-        {
-          "version": "25",
-          "status": "n"
-        },
-        {
-          "version": "26",
-          "status": "n"
-        },
-        {
-          "version": "27",
-          "status": "n"
-        },
-        {
-          "version": "28",
-          "status": "n"
-        },
-        {
-          "version": "29",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "and_ff": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "146",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     }
   },
   "usage": {
@@ -492,7 +63,6 @@
       "1": "Supports protocols `mailto`, `mms`, `nntp`, `rtsp`, and `webcal` but requires custom protocols to start with `web+`"
     }
   },
-  "status": "ls",
   "baseline": false,
   "sourceData": {
     "primary": {

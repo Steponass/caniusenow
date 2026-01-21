@@ -4,13 +4,6 @@
   "name": "CSS overflow-anchor (Scroll Anchoring)",
   "description": "Changes in DOM elements above the visible region of a scrolling box can result in the page moving while the user is in the middle of consuming the content.\r\nBy default, the value of  `overflow-anchor` is `auto`, it can mitigate this jarring user experience by keeping track of the position of an anchor node and adjusting the scroll offset accordingly",
   "category": "CSS",
-  "spec": [
-    "https://w3c.github.io/csswg-drafts/css-scroll-anchoring/",
-    "https://drafts.csswg.org/css-scroll-anchoring-1/#exclusion-api",
-    "https://drafts.csswg.org/css-scroll-anchoring/#exclusion-api",
-    "https://drafts.csswg.org/css-scroll-anchoring/#valdef-overflow-anchor-auto",
-    "https://drafts.csswg.org/css-scroll-anchoring/#valdef-overflow-anchor-none"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/overflow-anchor",
   "links": [
     {
@@ -29,376 +22,40 @@
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "56",
-      "versions": [
-        {
-          "version": "137",
-          "status": "y"
-        },
-        {
-          "version": "138",
-          "status": "y"
-        },
-        {
-          "version": "139",
-          "status": "y"
-        },
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        },
-        {
-          "version": "144",
-          "status": "y"
-        },
-        {
-          "version": "145",
-          "status": "y"
-        },
-        {
-          "version": "146",
-          "status": "y"
-        }
-      ]
+      "firstFull": "56"
     },
     "firefox": {
       "current": "y",
-      "firstFull": "66",
-      "versions": [
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        },
-        {
-          "version": "144",
-          "status": "y"
-        },
-        {
-          "version": "145",
-          "status": "y"
-        },
-        {
-          "version": "146",
-          "status": "y"
-        },
-        {
-          "version": "147",
-          "status": "y"
-        },
-        {
-          "version": "148",
-          "status": "y"
-        },
-        {
-          "version": "149",
-          "status": "y"
-        }
-      ]
+      "firstFull": "66"
     },
     "safari": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "18.1",
-          "status": "n"
-        },
-        {
-          "version": "18.2",
-          "status": "n"
-        },
-        {
-          "version": "18.3",
-          "status": "n"
-        },
-        {
-          "version": "18.4",
-          "status": "n"
-        },
-        {
-          "version": "18.5-18.6",
-          "status": "n"
-        },
-        {
-          "version": "26.0",
-          "status": "n"
-        },
-        {
-          "version": "26.1",
-          "status": "n"
-        },
-        {
-          "version": "26.2",
-          "status": "n"
-        },
-        {
-          "version": "26.3",
-          "status": "n"
-        },
-        {
-          "version": "TP",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "edge": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "134",
-          "status": "y"
-        },
-        {
-          "version": "135",
-          "status": "y"
-        },
-        {
-          "version": "136",
-          "status": "y"
-        },
-        {
-          "version": "137",
-          "status": "y"
-        },
-        {
-          "version": "138",
-          "status": "y"
-        },
-        {
-          "version": "139",
-          "status": "y"
-        },
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "opera": {
       "current": "y",
-      "firstFull": "43",
-      "versions": [
-        {
-          "version": "116",
-          "status": "y"
-        },
-        {
-          "version": "117",
-          "status": "y"
-        },
-        {
-          "version": "118",
-          "status": "y"
-        },
-        {
-          "version": "119",
-          "status": "y"
-        },
-        {
-          "version": "120",
-          "status": "y"
-        },
-        {
-          "version": "121",
-          "status": "y"
-        },
-        {
-          "version": "122",
-          "status": "y"
-        },
-        {
-          "version": "123",
-          "status": "y"
-        },
-        {
-          "version": "124",
-          "status": "y"
-        },
-        {
-          "version": "125",
-          "status": "y"
-        }
-      ]
+      "firstFull": "43"
     },
     "ie": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "5.5",
-          "status": "n"
-        },
-        {
-          "version": "6",
-          "status": "n"
-        },
-        {
-          "version": "7",
-          "status": "n"
-        },
-        {
-          "version": "8",
-          "status": "n"
-        },
-        {
-          "version": "9",
-          "status": "n"
-        },
-        {
-          "version": "10",
-          "status": "n"
-        },
-        {
-          "version": "11",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "18.0",
-          "status": "n"
-        },
-        {
-          "version": "18.1",
-          "status": "n"
-        },
-        {
-          "version": "18.2",
-          "status": "n"
-        },
-        {
-          "version": "18.3",
-          "status": "n"
-        },
-        {
-          "version": "18.4",
-          "status": "n"
-        },
-        {
-          "version": "18.5-18.7",
-          "status": "n"
-        },
-        {
-          "version": "26.0",
-          "status": "n"
-        },
-        {
-          "version": "26.1",
-          "status": "n"
-        },
-        {
-          "version": "26.2",
-          "status": "n"
-        },
-        {
-          "version": "26.3",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "143",
-      "versions": [
-        {
-          "version": "143",
-          "status": "y"
-        }
-      ]
+      "firstFull": "143"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "5.0-5.4",
-      "versions": [
-        {
-          "version": "20",
-          "status": "y"
-        },
-        {
-          "version": "21",
-          "status": "y"
-        },
-        {
-          "version": "22",
-          "status": "y"
-        },
-        {
-          "version": "23",
-          "status": "y"
-        },
-        {
-          "version": "24",
-          "status": "y"
-        },
-        {
-          "version": "25",
-          "status": "y"
-        },
-        {
-          "version": "26",
-          "status": "y"
-        },
-        {
-          "version": "27",
-          "status": "y"
-        },
-        {
-          "version": "28",
-          "status": "y"
-        },
-        {
-          "version": "29",
-          "status": "y"
-        }
-      ]
+      "firstFull": "5.0-5.4"
     },
     "and_ff": {
       "current": "y",
-      "firstFull": "146",
-      "versions": [
-        {
-          "version": "146",
-          "status": "y"
-        }
-      ]
+      "firstFull": "146"
     }
   },
   "usage": {
@@ -426,7 +83,6 @@
     "general": "",
     "byNum": {}
   },
-  "status": "wd",
   "baseline": false,
   "sourceData": {
     "primary": {

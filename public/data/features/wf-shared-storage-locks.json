@@ -4,96 +4,43 @@
   "name": "Shared storage locks",
   "description": "The withLock option to set(), append(), delete(), clear(), and batchUpdate() methods of the sharedStorage API prevents duplicate reporting from cross-site race conditions.",
   "category": "Other",
-  "spec": [
-    "https://wicg.github.io/shared-storage/#web-locks-integration",
-    "https://wicg.github.io/shared-storage/#dom-sharedstorage-batchupdate",
-    "https://wicg.github.io/shared-storage/#sharedstorageappendmethod",
-    "https://wicg.github.io/shared-storage/#dom-sharedstorageappendmethod-sharedstorageappendmethod",
-    "https://wicg.github.io/shared-storage/#sharedstorageclearmethod",
-    "https://wicg.github.io/shared-storage/#dom-sharedstorageclearmethod-sharedstorageclearmethod",
-    "https://wicg.github.io/shared-storage/#sharedstoragedeletemethod",
-    "https://wicg.github.io/shared-storage/#dom-sharedstoragedeletemethod-sharedstoragedeletemethod",
-    "https://wicg.github.io/shared-storage/#sharedstoragemodifiermethod",
-    "https://wicg.github.io/shared-storage/#sharedstoragesetmethod",
-    "https://wicg.github.io/shared-storage/#dom-sharedstoragesetmethod-sharedstoragesetmethod"
-  ],
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "134",
-      "versions": [
-        {
-          "version": "134",
-          "status": "y"
-        }
-      ]
+      "firstFull": "134"
     },
     "edge": {
       "current": "y",
-      "firstFull": "134",
-      "versions": [
-        {
-          "version": "134",
-          "status": "y"
-        }
-      ]
+      "firstFull": "134"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "safari": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
       "current": "y",
-      "firstFull": "134",
-      "versions": [
-        {
-          "version": "134",
-          "status": "y"
-        }
-      ]
+      "firstFull": "134"
     },
     "ie": {
       "current": "y",
-      "firstFull": "134",
-      "versions": [
-        {
-          "version": "134",
-          "status": "y"
-        }
-      ]
+      "firstFull": "134"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "134",
-      "versions": [
-        {
-          "version": "134",
-          "status": "y"
-        }
-      ]
+      "firstFull": "134"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "134",
-      "versions": [
-        {
-          "version": "134",
-          "status": "y"
-        }
-      ]
+      "firstFull": "134"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -113,7 +60,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

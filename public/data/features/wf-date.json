@@ -4,156 +4,48 @@
   "name": "Date",
   "description": "The Date object represents a single moment in time.",
   "category": "Other",
-  "spec": [
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date-objects",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype-%symbol.toprimitive%",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date-constructor",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.utc",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.getdate",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.getday",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.getfullyear",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.gethours",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.getmilliseconds",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.getminutes",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.getmonth",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.getseconds",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.gettime",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.gettimezoneoffset",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.getutcdate",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.getutcday",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.getutcfullyear",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.getutchours",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.getutcmilliseconds",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.getutcminutes",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.getutcmonth",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.getutcseconds",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.now",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.parse",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setdate",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setfullyear",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.sethours",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setmilliseconds",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setminutes",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setmonth",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setseconds",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.settime",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutcdate",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutcfullyear",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutchours",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutcmilliseconds",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutcminutes",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutcmonth",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutcseconds",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.todatestring",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.toisostring",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.tojson",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.tostring",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.totimestring",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.toutcstring",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.valueof"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/valueOf",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "firefox": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "safari": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "edge": {
       "current": "y",
-      "firstFull": "12",
-      "versions": [
-        {
-          "version": "12",
-          "status": "y"
-        }
-      ]
+      "firstFull": "12"
     },
     "opera": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "ie": {
       "current": "y",
-      "firstFull": "12",
-      "versions": [
-        {
-          "version": "12",
-          "status": "y"
-        }
-      ]
+      "firstFull": "12"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "and_ff": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     }
   },
   "usage": {
@@ -179,7 +71,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": "high",
   "sourceData": {
     "primary": {

@@ -4,120 +4,44 @@
   "name": "Presentation API",
   "description": "The Presentation API shows or controls content on another display, such as a network-connected TV or projector.",
   "category": "Other",
-  "spec": [
-    "https://w3c.github.io/presentation-api/",
-    "https://w3c.github.io/presentation-api/#dom-navigator-presentation",
-    "https://w3c.github.io/presentation-api/#interface-presentation",
-    "https://w3c.github.io/presentation-api/#dom-presentation-defaultrequest",
-    "https://w3c.github.io/presentation-api/#dom-presentation-receiver",
-    "https://w3c.github.io/presentation-api/#interface-presentationavailability",
-    "https://w3c.github.io/presentation-api/#dom-presentationavailability-onchange",
-    "https://w3c.github.io/presentation-api/#dom-presentationavailability-value",
-    "https://w3c.github.io/presentation-api/#interface-presentationconnection",
-    "https://w3c.github.io/presentation-api/#dom-presentationconnection-binarytype",
-    "https://w3c.github.io/presentation-api/#dom-presentationconnection-close",
-    "https://w3c.github.io/presentation-api/#dom-presentationconnection-id",
-    "https://w3c.github.io/presentation-api/#dom-presentationconnection-send",
-    "https://w3c.github.io/presentation-api/#dom-presentationconnection-state",
-    "https://w3c.github.io/presentation-api/#dom-presentationconnection-terminate",
-    "https://w3c.github.io/presentation-api/#dom-presentationconnection-url",
-    "https://w3c.github.io/presentation-api/#interface-presentationconnectionavailableevent",
-    "https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableevent-constructor",
-    "https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableevent-connection",
-    "https://w3c.github.io/presentation-api/#interface-presentationconnectioncloseevent",
-    "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseevent-constructor",
-    "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseevent-message",
-    "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseevent-reason",
-    "https://w3c.github.io/presentation-api/#interface-presentationconnectionlist",
-    "https://w3c.github.io/presentation-api/#dom-presentationconnectionlist-connections",
-    "https://w3c.github.io/presentation-api/#interface-presentationreceiver",
-    "https://w3c.github.io/presentation-api/#dom-presentationreceiver-connectionlist",
-    "https://w3c.github.io/presentation-api/#interface-presentationrequest",
-    "https://w3c.github.io/presentation-api/#constructing-a-presentationrequest",
-    "https://w3c.github.io/presentation-api/#dom-presentationrequest-onconnectionavailable",
-    "https://w3c.github.io/presentation-api/#getting-the-presentation-displays-availability-information",
-    "https://w3c.github.io/presentation-api/#reconnecting-to-a-presentation",
-    "https://w3c.github.io/presentation-api/#selecting-a-presentation-display",
-    "https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-presentation"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/PresentationRequest/start",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "47",
-      "versions": [
-        {
-          "version": "47",
-          "status": "y"
-        }
-      ]
+      "firstFull": "47"
     },
     "edge": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "safari": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
       "current": "y",
-      "firstFull": "47",
-      "versions": [
-        {
-          "version": "47",
-          "status": "y"
-        }
-      ]
+      "firstFull": "47"
     },
     "ie": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "47",
-      "versions": [
-        {
-          "version": "47",
-          "status": "y"
-        }
-      ]
+      "firstFull": "47"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "47",
-      "versions": [
-        {
-          "version": "47",
-          "status": "y"
-        }
-      ]
+      "firstFull": "47"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -138,7 +62,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

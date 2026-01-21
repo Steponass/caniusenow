@@ -4,211 +4,46 @@
   "name": "CSS typed object model",
   "description": "The CSSStyleValue and its subclasses represent CSS values as distinct types instead of only strings. Also known as typed OM.",
   "category": "Other",
-  "spec": [
-    "https://drafts.css-houdini.org/css-typed-om-1/",
-    "https://drafts.css-houdini.org/css-typed-om/#imagevalue-objects",
-    "https://drafts.css-houdini.org/css-typed-om/#keywordvalue-objects",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-csskeywordvalue-csskeywordvalue",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-csskeywordvalue-value",
-    "https://drafts.css-houdini.org/css-typed-om/#cssmathclamp",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathclamp-cssmathclamp",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathclamp-lower",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathclamp-upper",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathclamp-value",
-    "https://drafts.css-houdini.org/css-typed-om/#cssmathinvert",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathinvert-cssmathinvert",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathinvert-value",
-    "https://drafts.css-houdini.org/css-typed-om/#cssmathmax",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathmax-cssmathmax",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathmax-values",
-    "https://drafts.css-houdini.org/css-typed-om/#cssmathmin",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathmin-cssmathmin",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathmin-values",
-    "https://drafts.css-houdini.org/css-typed-om/#cssmathnegate",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathnegate-cssmathnegate",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathnegate-value",
-    "https://drafts.css-houdini.org/css-typed-om/#cssmathproduct",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathproduct-cssmathproduct",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathproduct-values",
-    "https://drafts.css-houdini.org/css-typed-om/#cssmathsum",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathsum-cssmathsum",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathsum-values",
-    "https://drafts.css-houdini.org/css-typed-om/#complex-numeric",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathvalue-operator",
-    "https://drafts.css-houdini.org/css-typed-om/#cssmatrixcomponent",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmatrixcomponent-cssmatrixcomponent",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmatrixcomponent-matrix",
-    "https://drafts.css-houdini.org/css-typed-om/#cssnumericarray",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericarray-length",
-    "https://drafts.css-houdini.org/css-typed-om/#numeric-value",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-add",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-div",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-equals",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-max",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-min",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-mul",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-parse",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-sub",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-to",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-tosum",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-type",
-    "https://drafts.css-houdini.org/css-typed-om/#cssperspective",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssperspective-cssperspective",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssperspective-length",
-    "https://drafts.css-houdini.org/css-typed-om/#cssrotate",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssrotate-cssrotate",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssrotate-cssrotate-x-y-z-angle",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssrotate-angle",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssrotate-x",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssrotate-y",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssrotate-z",
-    "https://drafts.css-houdini.org/css-typed-om/#cssscale",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssscale-cssscale",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssscale-x",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssscale-y",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssscale-z",
-    "https://drafts.css-houdini.org/css-typed-om/#cssskew",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssskew-cssskew",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssskew-ax",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssskew-ay",
-    "https://drafts.css-houdini.org/css-typed-om/#cssskewx",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssskewx-cssskewx",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssskewx-ax",
-    "https://drafts.css-houdini.org/css-typed-om/#cssskewy",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssskewy-cssskewy",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssskewy-ay",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssstylerule-stylemap",
-    "https://drafts.css-houdini.org/css-typed-om/#stylevalue-objects",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssstylevalue-parseall",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssstylevalue-parse",
-    "https://drafts.css-houdini.org/css-typed-om/#stylevalue-serialization",
-    "https://drafts.css-houdini.org/css-typed-om/#csstransformcomponent",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-csstransformcomponent-is2d",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-csstransformcomponent-tomatrix",
-    "https://drafts.css-houdini.org/css-typed-om/#CSSTransformComponent-stringification-behavior",
-    "https://drafts.css-houdini.org/css-typed-om/#transformvalue-objects",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-csstransformvalue-csstransformvalue",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-csstransformvalue-is2d",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-csstransformvalue-length",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-csstransformvalue-tomatrix",
-    "https://drafts.css-houdini.org/css-typed-om/#csstranslate",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-csstranslate-csstranslate",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-csstranslate-x",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-csstranslate-y",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-csstranslate-z",
-    "https://drafts.css-houdini.org/css-typed-om/#simple-numeric",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssunitvalue-cssunitvalue",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssunitvalue-unit",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssunitvalue-value",
-    "https://drafts.css-houdini.org/css-typed-om/#cssunparsedvalue",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssunparsedvalue-cssunparsedvalue",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssunparsedvalue-length",
-    "https://drafts.css-houdini.org/css-typed-om/#cssvariablereferencevalue",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssvariablereferencevalue-cssvariablereferencevalue",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssvariablereferencevalue-fallback",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-cssvariablereferencevalue-variable",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-element-computedstylemap",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-elementcssinlinestyle-attributestylemap",
-    "https://drafts.css-houdini.org/css-typed-om/#the-stylepropertymap",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymap-append",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymap-clear",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymap-delete",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymap-set",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymapreadonly-get",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymapreadonly-getall",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymapreadonly-has",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymapreadonly-size"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/StylePropertyMapReadOnly/values",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "66",
-      "versions": [
-        {
-          "version": "66",
-          "status": "y"
-        }
-      ]
+      "firstFull": "66"
     },
     "safari": {
       "current": "y",
-      "firstFull": "16.4",
-      "versions": [
-        {
-          "version": "16.4",
-          "status": "y"
-        }
-      ]
+      "firstFull": "16.4"
     },
     "edge": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
       "current": "y",
-      "firstFull": "66",
-      "versions": [
-        {
-          "version": "66",
-          "status": "y"
-        }
-      ]
+      "firstFull": "66"
     },
     "ie": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "16.4",
-      "versions": [
-        {
-          "version": "16.4",
-          "status": "y"
-        }
-      ]
+      "firstFull": "16.4"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "66",
-      "versions": [
-        {
-          "version": "66",
-          "status": "y"
-        }
-      ]
+      "firstFull": "66"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "66",
-      "versions": [
-        {
-          "version": "66",
-          "status": "y"
-        }
-      ]
+      "firstFull": "66"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -231,7 +66,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

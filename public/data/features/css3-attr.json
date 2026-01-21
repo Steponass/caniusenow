@@ -4,27 +4,6 @@
   "name": "CSS3 attr() function for all properties",
   "description": "While `attr()` is supported for effectively all browsers for the `content` property, CSS Values and Units Level 5 adds the ability to use `attr()` on **any** CSS property, and to use it for non-string values (e.g. numbers, colors).",
   "category": "CSS",
-  "spec": [
-    "https://w3c.github.io/csswg-drafts/css-values-5/#attr-notation",
-    "https://drafts.csswg.org/css-values-5/#attr-notation",
-    "https://drafts.csswg.org/css-values-5/#ref-for-typedef-declaration-value%E2%91%A1%E2%91%A3",
-    "https://drafts.csswg.org/css-values-5/#funcdef-attr-type",
-    "https://drafts.csswg.org/css-values-4/#angles",
-    "https://drafts.csswg.org/css-color/#color-syntax",
-    "https://drafts.csswg.org/css-values/#custom-idents",
-    "https://drafts.csswg.org/css-values/#typedef-ident",
-    "https://drafts.csswg.org/css-images/#image-values",
-    "https://drafts.csswg.org/css-values/#integers",
-    "https://drafts.csswg.org/css-values/#lengths",
-    "https://drafts.csswg.org/css-values/#mixed-percentages",
-    "https://drafts.csswg.org/css-values/#numbers",
-    "https://drafts.csswg.org/css-values/#percentages",
-    "https://drafts.csswg.org/css-values/#resolution",
-    "https://drafts.csswg.org/css-values/#strings",
-    "https://drafts.csswg.org/css-values/#time",
-    "https://drafts.csswg.org/css-transforms-2/#transform-functions",
-    "https://drafts.csswg.org/css-values/#url-value"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/url_value",
   "links": [
     {
@@ -47,372 +26,36 @@
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "133",
-      "versions": [
-        {
-          "version": "137",
-          "status": "y"
-        },
-        {
-          "version": "138",
-          "status": "y"
-        },
-        {
-          "version": "139",
-          "status": "y"
-        },
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        },
-        {
-          "version": "144",
-          "status": "y"
-        },
-        {
-          "version": "145",
-          "status": "y"
-        },
-        {
-          "version": "146",
-          "status": "y"
-        }
-      ]
+      "firstFull": "133"
     },
     "firefox": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "140",
-          "status": "n"
-        },
-        {
-          "version": "141",
-          "status": "n"
-        },
-        {
-          "version": "142",
-          "status": "n"
-        },
-        {
-          "version": "143",
-          "status": "n"
-        },
-        {
-          "version": "144",
-          "status": "n"
-        },
-        {
-          "version": "145",
-          "status": "n"
-        },
-        {
-          "version": "146",
-          "status": "n"
-        },
-        {
-          "version": "147",
-          "status": "n"
-        },
-        {
-          "version": "148",
-          "status": "n"
-        },
-        {
-          "version": "149",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "safari": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "18.1",
-          "status": "n"
-        },
-        {
-          "version": "18.2",
-          "status": "n"
-        },
-        {
-          "version": "18.3",
-          "status": "n"
-        },
-        {
-          "version": "18.4",
-          "status": "n"
-        },
-        {
-          "version": "18.5-18.6",
-          "status": "n"
-        },
-        {
-          "version": "26.0",
-          "status": "n"
-        },
-        {
-          "version": "26.1",
-          "status": "n"
-        },
-        {
-          "version": "26.2",
-          "status": "n"
-        },
-        {
-          "version": "26.3",
-          "status": "n"
-        },
-        {
-          "version": "TP",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "edge": {
       "current": "y",
-      "firstFull": "133",
-      "versions": [
-        {
-          "version": "134",
-          "status": "y"
-        },
-        {
-          "version": "135",
-          "status": "y"
-        },
-        {
-          "version": "136",
-          "status": "y"
-        },
-        {
-          "version": "137",
-          "status": "y"
-        },
-        {
-          "version": "138",
-          "status": "y"
-        },
-        {
-          "version": "139",
-          "status": "y"
-        },
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        }
-      ]
+      "firstFull": "133"
     },
     "opera": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "116",
-          "status": "n"
-        },
-        {
-          "version": "117",
-          "status": "n"
-        },
-        {
-          "version": "118",
-          "status": "n"
-        },
-        {
-          "version": "119",
-          "status": "n"
-        },
-        {
-          "version": "120",
-          "status": "n"
-        },
-        {
-          "version": "121",
-          "status": "n"
-        },
-        {
-          "version": "122",
-          "status": "n"
-        },
-        {
-          "version": "123",
-          "status": "n"
-        },
-        {
-          "version": "124",
-          "status": "n"
-        },
-        {
-          "version": "125",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "ie": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "5.5",
-          "status": "n"
-        },
-        {
-          "version": "6",
-          "status": "n"
-        },
-        {
-          "version": "7",
-          "status": "n"
-        },
-        {
-          "version": "8",
-          "status": "n"
-        },
-        {
-          "version": "9",
-          "status": "n"
-        },
-        {
-          "version": "10",
-          "status": "n"
-        },
-        {
-          "version": "11",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "18.0",
-          "status": "n"
-        },
-        {
-          "version": "18.1",
-          "status": "n"
-        },
-        {
-          "version": "18.2",
-          "status": "n"
-        },
-        {
-          "version": "18.3",
-          "status": "n"
-        },
-        {
-          "version": "18.4",
-          "status": "n"
-        },
-        {
-          "version": "18.5-18.7",
-          "status": "n"
-        },
-        {
-          "version": "26.0",
-          "status": "n"
-        },
-        {
-          "version": "26.1",
-          "status": "n"
-        },
-        {
-          "version": "26.2",
-          "status": "n"
-        },
-        {
-          "version": "26.3",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "143",
-      "versions": [
-        {
-          "version": "143",
-          "status": "y"
-        }
-      ]
+      "firstFull": "143"
     },
     "samsung": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "20",
-          "status": "n"
-        },
-        {
-          "version": "21",
-          "status": "n"
-        },
-        {
-          "version": "22",
-          "status": "n"
-        },
-        {
-          "version": "23",
-          "status": "n"
-        },
-        {
-          "version": "24",
-          "status": "n"
-        },
-        {
-          "version": "25",
-          "status": "n"
-        },
-        {
-          "version": "26",
-          "status": "n"
-        },
-        {
-          "version": "27",
-          "status": "n"
-        },
-        {
-          "version": "28",
-          "status": "n"
-        },
-        {
-          "version": "29",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "and_ff": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "146",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     }
   },
   "usage": {
@@ -436,7 +79,6 @@
     "general": "See the [generated content](/css-gencontent) table for support for `attr()` for the `content` property.",
     "byNum": {}
   },
-  "status": "unoff",
   "baseline": false,
   "sourceData": {
     "primary": {

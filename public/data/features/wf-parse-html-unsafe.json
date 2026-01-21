@@ -4,114 +4,48 @@
   "name": "Unsanitized HTML parsing methods",
   "description": "The Document.parseHTMLUnsafe() static method parses HTML into a DOM tree, while the setHTMLUnsafe() method of Element and ShadowRoot parses and inserts HTML into an existing tree. No sanitization applies to these methods, so never call them with user-provided HTML strings.",
   "category": "Other",
-  "spec": [
-    "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#unsafe-html-parsing-methods",
-    "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsehtmlunsafe",
-    "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-sethtmlunsafe",
-    "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-sethtmlunsafe"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/ShadowRoot/setHTMLUnsafe",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "124",
-      "versions": [
-        {
-          "version": "124",
-          "status": "y"
-        }
-      ]
+      "firstFull": "124"
     },
     "firefox": {
       "current": "y",
-      "firstFull": "128",
-      "versions": [
-        {
-          "version": "128",
-          "status": "y"
-        }
-      ]
+      "firstFull": "128"
     },
     "safari": {
       "current": "y",
-      "firstFull": "26",
-      "versions": [
-        {
-          "version": "26",
-          "status": "y"
-        }
-      ]
+      "firstFull": "26"
     },
     "edge": {
       "current": "y",
-      "firstFull": "124",
-      "versions": [
-        {
-          "version": "124",
-          "status": "y"
-        }
-      ]
+      "firstFull": "124"
     },
     "opera": {
       "current": "y",
-      "firstFull": "124",
-      "versions": [
-        {
-          "version": "124",
-          "status": "y"
-        }
-      ]
+      "firstFull": "124"
     },
     "ie": {
       "current": "y",
-      "firstFull": "124",
-      "versions": [
-        {
-          "version": "124",
-          "status": "y"
-        }
-      ]
+      "firstFull": "124"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "26",
-      "versions": [
-        {
-          "version": "26",
-          "status": "y"
-        }
-      ]
+      "firstFull": "26"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "124",
-      "versions": [
-        {
-          "version": "124",
-          "status": "y"
-        }
-      ]
+      "firstFull": "124"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "124",
-      "versions": [
-        {
-          "version": "124",
-          "status": "y"
-        }
-      ]
+      "firstFull": "124"
     },
     "and_ff": {
       "current": "y",
-      "firstFull": "128",
-      "versions": [
-        {
-          "version": "128",
-          "status": "y"
-        }
-      ]
+      "firstFull": "128"
     }
   },
   "usage": {
@@ -136,7 +70,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": "low",
   "sourceData": {
     "primary": {

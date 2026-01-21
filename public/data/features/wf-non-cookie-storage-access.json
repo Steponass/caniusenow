@@ -4,103 +4,42 @@
   "name": "Non-cookie storage access",
   "description": "Non-cookie storage access extends the requestStorageAccess() API to let content in cross-site iframes request access to first-party data beyond cookies.",
   "category": "Other",
-  "spec": [
-    "https://privacycg.github.io/saa-non-cookie-storage/",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-document-hasunpartitionedcookieaccess",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dictdef-storageaccesstypes",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-broadcastchannel",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-sharedworker",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-all",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-caches",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-cookies",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-createobjecturl",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-estimate",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-getdirectory",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-indexeddb",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-localstorage",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-locks",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-revokeobjecturl",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesstypes-sessionstorage",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-sharedworkeroptions-samesitecookies",
-    "https://privacycg.github.io/saa-non-cookie-storage/#storageaccesshandle",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-broadcastchannel",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-sharedworker",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-caches",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-createobjecturl",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-estimate",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-getdirectory",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-indexeddb",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-localstorage",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-locks",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-revokeobjecturl",
-    "https://privacycg.github.io/saa-non-cookie-storage/#dom-storageaccesshandle-sessionstorage"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/sessionStorage",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "125",
-      "versions": [
-        {
-          "version": "125",
-          "status": "y"
-        }
-      ]
+      "firstFull": "125"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "safari": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "edge": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
       "current": "y",
-      "firstFull": "125",
-      "versions": [
-        {
-          "version": "125",
-          "status": "y"
-        }
-      ]
+      "firstFull": "125"
     },
     "ie": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "125",
-      "versions": [
-        {
-          "version": "125",
-          "status": "y"
-        }
-      ]
+      "firstFull": "125"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "125",
-      "versions": [
-        {
-          "version": "125",
-          "status": "y"
-        }
-      ]
+      "firstFull": "125"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -120,7 +59,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

@@ -4,89 +4,43 @@
   "name": "Page lifecycle",
   "description": "The page lifecycle API helps you safely handle page suspensions or discards from memory. The freeze and resume events fire when the browser suspends or resumes a page from memory while the document.wasDiscarded property reports whether the page was reloaded after being dropped.",
   "category": "Other",
-  "spec": [
-    "https://wicg.github.io/page-lifecycle/",
-    "https://wicg.github.io/page-lifecycle/#dom-document-onfreeze",
-    "https://wicg.github.io/page-lifecycle/#dom-document-onresume",
-    "https://wicg.github.io/page-lifecycle/#dom-document-wasdiscarded"
-  ],
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "68",
-      "versions": [
-        {
-          "version": "68",
-          "status": "y"
-        }
-      ]
+      "firstFull": "68"
     },
     "edge": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "safari": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
       "current": "y",
-      "firstFull": "68",
-      "versions": [
-        {
-          "version": "68",
-          "status": "y"
-        }
-      ]
+      "firstFull": "68"
     },
     "ie": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "68",
-      "versions": [
-        {
-          "version": "68",
-          "status": "y"
-        }
-      ]
+      "firstFull": "68"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "68",
-      "versions": [
-        {
-          "version": "68",
-          "status": "y"
-        }
-      ]
+      "firstFull": "68"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -107,7 +61,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

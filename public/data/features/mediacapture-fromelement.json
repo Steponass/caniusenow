@@ -4,9 +4,6 @@
   "name": "Media Capture from DOM Elements API",
   "description": "API to capture Real-Time video and audio from a DOM element, such as a `<video>`, `<audio>`, or `<canvas>` element via the `captureStream` method, in the form of a `MediaStream`",
   "category": "Other",
-  "spec": [
-    "https://w3c.github.io/mediacapture-fromelement/"
-  ],
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/captureStream",
@@ -24,437 +21,38 @@
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "62",
-      "versions": [
-        {
-          "version": "137",
-          "status": "y"
-        },
-        {
-          "version": "138",
-          "status": "y"
-        },
-        {
-          "version": "139",
-          "status": "y"
-        },
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        },
-        {
-          "version": "144",
-          "status": "y"
-        },
-        {
-          "version": "145",
-          "status": "y"
-        },
-        {
-          "version": "146",
-          "status": "y"
-        }
-      ]
+      "firstFull": "62"
     },
     "firefox": {
-      "current": "u",
-      "versions": [
-        {
-          "version": "140",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "141",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "142",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "143",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "144",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "145",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "146",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "147",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "148",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "149",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        }
-      ]
+      "current": "u"
     },
     "safari": {
-      "current": "u",
-      "versions": [
-        {
-          "version": "18.1",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "18.2",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "18.3",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "18.4",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "18.5-18.6",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "26.0",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "26.1",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "26.2",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "26.3",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "TP",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        }
-      ]
+      "current": "u"
     },
     "edge": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "134",
-          "status": "y"
-        },
-        {
-          "version": "135",
-          "status": "y"
-        },
-        {
-          "version": "136",
-          "status": "y"
-        },
-        {
-          "version": "137",
-          "status": "y"
-        },
-        {
-          "version": "138",
-          "status": "y"
-        },
-        {
-          "version": "139",
-          "status": "y"
-        },
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "opera": {
       "current": "y",
-      "firstFull": "48",
-      "versions": [
-        {
-          "version": "116",
-          "status": "y"
-        },
-        {
-          "version": "117",
-          "status": "y"
-        },
-        {
-          "version": "118",
-          "status": "y"
-        },
-        {
-          "version": "119",
-          "status": "y"
-        },
-        {
-          "version": "120",
-          "status": "y"
-        },
-        {
-          "version": "121",
-          "status": "y"
-        },
-        {
-          "version": "122",
-          "status": "y"
-        },
-        {
-          "version": "123",
-          "status": "y"
-        },
-        {
-          "version": "124",
-          "status": "y"
-        },
-        {
-          "version": "125",
-          "status": "y"
-        }
-      ]
+      "firstFull": "48"
     },
     "ie": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "5.5",
-          "status": "n"
-        },
-        {
-          "version": "6",
-          "status": "n"
-        },
-        {
-          "version": "7",
-          "status": "n"
-        },
-        {
-          "version": "8",
-          "status": "n"
-        },
-        {
-          "version": "9",
-          "status": "n"
-        },
-        {
-          "version": "10",
-          "status": "n"
-        },
-        {
-          "version": "11",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "18.0",
-          "status": "n"
-        },
-        {
-          "version": "18.1",
-          "status": "n"
-        },
-        {
-          "version": "18.2",
-          "status": "n"
-        },
-        {
-          "version": "18.3",
-          "status": "n"
-        },
-        {
-          "version": "18.4",
-          "status": "n"
-        },
-        {
-          "version": "18.5-18.7",
-          "status": "n"
-        },
-        {
-          "version": "26.0",
-          "status": "n"
-        },
-        {
-          "version": "26.1",
-          "status": "n"
-        },
-        {
-          "version": "26.2",
-          "status": "n"
-        },
-        {
-          "version": "26.3",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "143",
-      "versions": [
-        {
-          "version": "143",
-          "status": "y"
-        }
-      ]
+      "firstFull": "143"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "8.2",
-      "versions": [
-        {
-          "version": "20",
-          "status": "y"
-        },
-        {
-          "version": "21",
-          "status": "y"
-        },
-        {
-          "version": "22",
-          "status": "y"
-        },
-        {
-          "version": "23",
-          "status": "y"
-        },
-        {
-          "version": "24",
-          "status": "y"
-        },
-        {
-          "version": "25",
-          "status": "y"
-        },
-        {
-          "version": "26",
-          "status": "y"
-        },
-        {
-          "version": "27",
-          "status": "y"
-        },
-        {
-          "version": "28",
-          "status": "y"
-        },
-        {
-          "version": "29",
-          "status": "y"
-        }
-      ]
+      "firstFull": "8.2"
     },
     "and_ff": {
-      "current": "u",
-      "versions": [
-        {
-          "version": "146",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        }
-      ]
+      "current": "u"
     }
   },
   "usage": {
@@ -483,7 +81,6 @@
       "2": "Capture from `<video>`/`<audio>` can be enabled via the Experimental Web Platform Features flag."
     }
   },
-  "status": "wd",
   "baseline": false,
   "sourceData": {
     "primary": {

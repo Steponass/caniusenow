@@ -4,89 +4,44 @@
   "name": "beforeinstallprompt",
   "description": "The beforeinstallprompt event fires when a Progressive Web App (PWA) is installable. You can cancel the event and later call event.prompt() to control when the installation prompt is shown. The appinstalled event fires when the PWA is successfully installed.",
   "category": "Other",
-  "spec": [
-    "https://wicg.github.io/manifest-incubations/#installation-events",
-    "https://wicg.github.io/manifest-incubations/#dom-window-onappinstalled",
-    "https://wicg.github.io/manifest-incubations/#onbeforeinstallprompt-attribute"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/Window/beforeinstallprompt_event",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "76",
-      "versions": [
-        {
-          "version": "76",
-          "status": "y"
-        }
-      ]
+      "firstFull": "76"
     },
     "edge": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "safari": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
       "current": "y",
-      "firstFull": "76",
-      "versions": [
-        {
-          "version": "76",
-          "status": "y"
-        }
-      ]
+      "firstFull": "76"
     },
     "ie": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "76",
-      "versions": [
-        {
-          "version": "76",
-          "status": "y"
-        }
-      ]
+      "firstFull": "76"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "76",
-      "versions": [
-        {
-          "version": "76",
-          "status": "y"
-        }
-      ]
+      "firstFull": "76"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -107,7 +62,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

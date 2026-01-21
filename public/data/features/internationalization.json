@@ -4,55 +4,6 @@
   "name": "Internationalization API",
   "description": "Locale-sensitive collation (string comparison), number formatting, and date and time formatting.",
   "category": "JS API",
-  "spec": [
-    "https://tc39.es/ecma402/",
-    "https://tc39.es/ecma402/#introduction",
-    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.tolocalestring",
-    "https://tc39.es/ecma402/#sup-array.prototype.tolocalestring",
-    "https://tc39.es/ecma402/#sup-bigint.prototype.tolocalestring",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.tolocaledatestring",
-    "https://tc39.es/ecma402/#sup-date.prototype.tolocaledatestring",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.tolocalestring",
-    "https://tc39.es/ecma402/#sup-date.prototype.tolocalestring",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.tolocaletimestring",
-    "https://tc39.es/ecma402/#sup-date.prototype.tolocaletimestring",
-    "https://tc39.es/ecma402/#intl-object",
-    "https://tc39.es/ecma402/#collator-objects",
-    "https://tc39.es/ecma402/#sec-intl-collator-constructor",
-    "https://tc39.es/ecma402/#sec-intl.collator.prototype.compare",
-    "https://tc39.es/ecma402/#sec-intl.collator.prototype.resolvedoptions",
-    "https://tc39.es/ecma402/#sec-intl.collator.supportedlocalesof",
-    "https://tc39.es/ecma402/#datetimeformat-objects",
-    "https://tc39.es/ecma402/#sec-intl-datetimeformat-constructor",
-    "https://tc39.es/ecma402/#sec-chaindatetimeformat",
-    "https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.format",
-    "https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.formatRange",
-    "https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatRangeToParts",
-    "https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatToParts",
-    "https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.resolvedoptions",
-    "https://tc39.es/ecma402/#sec-intl.datetimeformat.supportedlocalesof",
-    "https://tc39.es/ecma402/#numberformat-objects",
-    "https://tc39.es/ecma402/#sec-intl-numberformat-constructor",
-    "https://tc39.es/ecma402/#sec-chainnumberformat",
-    "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.format",
-    "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.formatrange",
-    "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.formatrangetoparts",
-    "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.formattoparts",
-    "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.resolvedoptions",
-    "https://tc39.es/ecma402/#sec-intl.numberformat.supportedlocalesof",
-    "https://tc39.es/ecma402/#sec-intl.getcanonicallocales",
-    "https://tc39.es/ecma402/#sec-intl.supportedvaluesof",
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.prototype.tolocalestring",
-    "https://tc39.es/ecma402/#sup-number.prototype.tolocalestring",
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.tolocalestring",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.localecompare",
-    "https://tc39.es/ecma402/#sup-String.prototype.localeCompare",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.tolocalelowercase",
-    "https://tc39.es/ecma402/#sup-string.prototype.tolocalelowercase",
-    "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.tolocaleuppercase",
-    "https://tc39.es/ecma402/#sup-string.prototype.tolocaleuppercase",
-    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.tolocalestring"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/toLocaleString",
   "links": [
     {
@@ -79,379 +30,43 @@
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "24",
-      "versions": [
-        {
-          "version": "137",
-          "status": "y"
-        },
-        {
-          "version": "138",
-          "status": "y"
-        },
-        {
-          "version": "139",
-          "status": "y"
-        },
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        },
-        {
-          "version": "144",
-          "status": "y"
-        },
-        {
-          "version": "145",
-          "status": "y"
-        },
-        {
-          "version": "146",
-          "status": "y"
-        }
-      ]
+      "firstFull": "24"
     },
     "firefox": {
       "current": "y",
-      "firstFull": "29",
-      "versions": [
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        },
-        {
-          "version": "144",
-          "status": "y"
-        },
-        {
-          "version": "145",
-          "status": "y"
-        },
-        {
-          "version": "146",
-          "status": "y"
-        },
-        {
-          "version": "147",
-          "status": "y"
-        },
-        {
-          "version": "148",
-          "status": "y"
-        },
-        {
-          "version": "149",
-          "status": "y"
-        }
-      ]
+      "firstFull": "29"
     },
     "safari": {
       "current": "y",
-      "firstFull": "10",
-      "versions": [
-        {
-          "version": "18.1",
-          "status": "y"
-        },
-        {
-          "version": "18.2",
-          "status": "y"
-        },
-        {
-          "version": "18.3",
-          "status": "y"
-        },
-        {
-          "version": "18.4",
-          "status": "y"
-        },
-        {
-          "version": "18.5-18.6",
-          "status": "y"
-        },
-        {
-          "version": "26.0",
-          "status": "y"
-        },
-        {
-          "version": "26.1",
-          "status": "y"
-        },
-        {
-          "version": "26.2",
-          "status": "y"
-        },
-        {
-          "version": "26.3",
-          "status": "y"
-        },
-        {
-          "version": "TP",
-          "status": "y"
-        }
-      ]
+      "firstFull": "10"
     },
     "edge": {
       "current": "y",
-      "firstFull": "12",
-      "versions": [
-        {
-          "version": "134",
-          "status": "y"
-        },
-        {
-          "version": "135",
-          "status": "y"
-        },
-        {
-          "version": "136",
-          "status": "y"
-        },
-        {
-          "version": "137",
-          "status": "y"
-        },
-        {
-          "version": "138",
-          "status": "y"
-        },
-        {
-          "version": "139",
-          "status": "y"
-        },
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        }
-      ]
+      "firstFull": "12"
     },
     "opera": {
       "current": "y",
-      "firstFull": "15",
-      "versions": [
-        {
-          "version": "116",
-          "status": "y"
-        },
-        {
-          "version": "117",
-          "status": "y"
-        },
-        {
-          "version": "118",
-          "status": "y"
-        },
-        {
-          "version": "119",
-          "status": "y"
-        },
-        {
-          "version": "120",
-          "status": "y"
-        },
-        {
-          "version": "121",
-          "status": "y"
-        },
-        {
-          "version": "122",
-          "status": "y"
-        },
-        {
-          "version": "123",
-          "status": "y"
-        },
-        {
-          "version": "124",
-          "status": "y"
-        },
-        {
-          "version": "125",
-          "status": "y"
-        }
-      ]
+      "firstFull": "15"
     },
     "ie": {
       "current": "y",
-      "firstFull": "11",
-      "versions": [
-        {
-          "version": "5.5",
-          "status": "n"
-        },
-        {
-          "version": "6",
-          "status": "n"
-        },
-        {
-          "version": "7",
-          "status": "n"
-        },
-        {
-          "version": "8",
-          "status": "n"
-        },
-        {
-          "version": "9",
-          "status": "n"
-        },
-        {
-          "version": "10",
-          "status": "n"
-        },
-        {
-          "version": "11",
-          "status": "y"
-        }
-      ]
+      "firstFull": "11"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "10.0-10.2",
-      "versions": [
-        {
-          "version": "18.0",
-          "status": "y"
-        },
-        {
-          "version": "18.1",
-          "status": "y"
-        },
-        {
-          "version": "18.2",
-          "status": "y"
-        },
-        {
-          "version": "18.3",
-          "status": "y"
-        },
-        {
-          "version": "18.4",
-          "status": "y"
-        },
-        {
-          "version": "18.5-18.7",
-          "status": "y"
-        },
-        {
-          "version": "26.0",
-          "status": "y"
-        },
-        {
-          "version": "26.1",
-          "status": "y"
-        },
-        {
-          "version": "26.2",
-          "status": "y"
-        },
-        {
-          "version": "26.3",
-          "status": "y"
-        }
-      ]
+      "firstFull": "10.0-10.2"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "143",
-      "versions": [
-        {
-          "version": "143",
-          "status": "y"
-        }
-      ]
+      "firstFull": "143"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "4",
-      "versions": [
-        {
-          "version": "20",
-          "status": "y"
-        },
-        {
-          "version": "21",
-          "status": "y"
-        },
-        {
-          "version": "22",
-          "status": "y"
-        },
-        {
-          "version": "23",
-          "status": "y"
-        },
-        {
-          "version": "24",
-          "status": "y"
-        },
-        {
-          "version": "25",
-          "status": "y"
-        },
-        {
-          "version": "26",
-          "status": "y"
-        },
-        {
-          "version": "27",
-          "status": "y"
-        },
-        {
-          "version": "28",
-          "status": "y"
-        },
-        {
-          "version": "29",
-          "status": "y"
-        }
-      ]
+      "firstFull": "4"
     },
     "and_ff": {
       "current": "y",
-      "firstFull": "146",
-      "versions": [
-        {
-          "version": "146",
-          "status": "y"
-        }
-      ]
+      "firstFull": "146"
     }
   },
   "usage": {
@@ -482,7 +97,6 @@
     "general": "",
     "byNum": {}
   },
-  "status": "other",
   "baseline": "high",
   "sourceData": {
     "primary": {

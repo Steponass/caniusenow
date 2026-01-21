@@ -4,118 +4,44 @@
   "name": "Background fetch",
   "description": "Background fetch downloads data in the background even when the web page is closed.",
   "category": "Other",
-  "spec": [
-    "https://wicg.github.io/background-fetch/",
-    "https://wicg.github.io/background-fetch/#background-fetch-event",
-    "https://wicg.github.io/background-fetch/#dom-backgroundfetchevent-backgroundfetchevent",
-    "https://wicg.github.io/background-fetch/#dom-backgroundfetchevent-registration",
-    "https://wicg.github.io/background-fetch/#background-fetch-manager",
-    "https://wicg.github.io/background-fetch/#background-fetch-manager-fetch",
-    "https://wicg.github.io/background-fetch/#background-fetch-manager-get",
-    "https://wicg.github.io/background-fetch/#background-fetch-manager-get-ids",
-    "https://wicg.github.io/background-fetch/#background-fetch-record-interface",
-    "https://wicg.github.io/background-fetch/#dom-backgroundfetchrecord-request",
-    "https://wicg.github.io/background-fetch/#dom-backgroundfetchrecord-responseready",
-    "https://wicg.github.io/background-fetch/#background-fetch-registration",
-    "https://wicg.github.io/background-fetch/#background-fetch-registration-abort",
-    "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-downloadtotal",
-    "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-downloaded",
-    "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-failurereason",
-    "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-id",
-    "https://wicg.github.io/background-fetch/#background-fetch-registration-match",
-    "https://wicg.github.io/background-fetch/#background-fetch-registration-match-all",
-    "https://wicg.github.io/background-fetch/#background-fetch-registration-events",
-    "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-recordsavailable",
-    "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-result",
-    "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-uploadtotal",
-    "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-uploaded",
-    "https://wicg.github.io/background-fetch/#background-fetch-update-ui-event",
-    "https://wicg.github.io/background-fetch/#dom-backgroundfetchupdateuievent-backgroundfetchupdateuievent",
-    "https://wicg.github.io/background-fetch/#background-fetch-update-ui-event-update-ui",
-    "https://wicg.github.io/background-fetch/#dom-serviceworkerglobalscope-onbackgroundfetchabort",
-    "https://wicg.github.io/background-fetch/#dom-serviceworkerglobalscope-onbackgroundfetchclick",
-    "https://wicg.github.io/background-fetch/#dom-serviceworkerglobalscope-onbackgroundfetchfail",
-    "https://wicg.github.io/background-fetch/#dom-serviceworkerglobalscope-onbackgroundfetchsuccess",
-    "https://wicg.github.io/background-fetch/#dom-serviceworkerregistration-backgroundfetch"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/backgroundFetch",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "74",
-      "versions": [
-        {
-          "version": "74",
-          "status": "y"
-        }
-      ]
+      "firstFull": "74"
     },
     "edge": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "safari": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
       "current": "y",
-      "firstFull": "74",
-      "versions": [
-        {
-          "version": "74",
-          "status": "y"
-        }
-      ]
+      "firstFull": "74"
     },
     "ie": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "74",
-      "versions": [
-        {
-          "version": "74",
-          "status": "y"
-        }
-      ]
+      "firstFull": "74"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "74",
-      "versions": [
-        {
-          "version": "74",
-          "status": "y"
-        }
-      ]
+      "firstFull": "74"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -136,7 +62,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

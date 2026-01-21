@@ -4,214 +4,48 @@
   "name": "DOM Geometry",
   "description": "The DOMMatrix, DOMPoint, DOMQuad and DOMRect APIs represent points, rectangles, quadrilaterals and transformation matrices within JavaScript. They can be used in transformations in CSS, <canvas>, and SVG.",
   "category": "Other",
-  "spec": [
-    "https://drafts.csswg.org/geometry-1/",
-    "https://drafts.csswg.org/geometry/#DOMMatrix",
-    "https://drafts.csswg.org/geometry/#dom-dommatrix-dommatrix",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-a",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-b",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-c",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-d",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-e",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-f",
-    "https://drafts.csswg.org/geometry/#dom-dommatrix-fromfloat32array",
-    "https://drafts.csswg.org/geometry/#dom-dommatrix-fromfloat64array",
-    "https://drafts.csswg.org/geometry/#dom-dommatrix-frommatrix",
-    "https://drafts.csswg.org/geometry/#dom-dommatrix-invertself",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m11",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m12",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m13",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m14",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m21",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m22",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m23",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m24",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m31",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m32",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m33",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m34",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m41",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m42",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m43",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m44",
-    "https://drafts.csswg.org/geometry/#dom-dommatrix-multiplyself",
-    "https://drafts.csswg.org/geometry/#dom-dommatrix-premultiplyself",
-    "https://drafts.csswg.org/geometry/#dom-dommatrix-rotateaxisangleself",
-    "https://drafts.csswg.org/geometry/#dom-dommatrix-rotatefromvectorself",
-    "https://drafts.csswg.org/geometry/#dom-dommatrix-rotateself",
-    "https://drafts.csswg.org/geometry/#dom-dommatrix-scale3dself",
-    "https://drafts.csswg.org/geometry/#dom-dommatrix-scaleself",
-    "https://drafts.csswg.org/geometry/#dom-dommatrix-setmatrixvalue",
-    "https://drafts.csswg.org/geometry/#dom-dommatrix-skewxself",
-    "https://drafts.csswg.org/geometry/#dom-dommatrix-skewyself",
-    "https://drafts.csswg.org/geometry/#dom-dommatrix-translateself",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-dommatrixreadonly",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-flipx",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-flipy",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-fromfloat32array",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-fromfloat64array",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-frommatrix",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-inverse",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-is2d",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-isidentity",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-multiply",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-rotate",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-rotateaxisangle",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-rotatefromvector",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-scale",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-scale3d",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-skewx",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-skewy",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-tofloat32array",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-tofloat64array",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-tojson",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-transformpoint",
-    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-translate",
-    "https://drafts.csswg.org/geometry/#DOMPoint",
-    "https://drafts.csswg.org/geometry/#dom-dompoint-dompoint",
-    "https://drafts.csswg.org/geometry/#dom-dompoint-frompoint",
-    "https://drafts.csswg.org/geometry/#dom-dompointreadonly-w",
-    "https://drafts.csswg.org/geometry/#dom-dompointreadonly-x",
-    "https://drafts.csswg.org/geometry/#dom-dompointreadonly-y",
-    "https://drafts.csswg.org/geometry/#dom-dompointreadonly-z",
-    "https://drafts.csswg.org/geometry/#dom-dompointreadonly-dompointreadonly",
-    "https://drafts.csswg.org/geometry/#dom-dompointreadonly-frompoint",
-    "https://drafts.csswg.org/geometry/#dom-dompointreadonly-matrixtransform",
-    "https://drafts.csswg.org/geometry/#dom-dompointreadonly-tojson",
-    "https://drafts.csswg.org/geometry/#DOMQuad",
-    "https://drafts.csswg.org/geometry/#dom-domquad-domquad",
-    "https://drafts.csswg.org/geometry/#dom-domquad-fromquad",
-    "https://drafts.csswg.org/geometry/#dom-domquad-fromrect",
-    "https://drafts.csswg.org/geometry/#dom-domquad-getbounds",
-    "https://drafts.csswg.org/geometry/#dom-domquad-p1",
-    "https://drafts.csswg.org/geometry/#dom-domquad-p2",
-    "https://drafts.csswg.org/geometry/#dom-domquad-p3",
-    "https://drafts.csswg.org/geometry/#dom-domquad-p4",
-    "https://drafts.csswg.org/geometry/#dom-domquad-tojson",
-    "https://drafts.csswg.org/geometry/#DOMRect",
-    "https://drafts.csswg.org/geometry/#dom-domrect-domrect",
-    "https://drafts.csswg.org/geometry/#dom-domrect-fromrect",
-    "https://drafts.csswg.org/geometry/#dom-domrect-height",
-    "https://drafts.csswg.org/geometry/#dom-domrect-width",
-    "https://drafts.csswg.org/geometry/#dom-domrect-x",
-    "https://drafts.csswg.org/geometry/#dom-domrect-y",
-    "https://drafts.csswg.org/geometry/#DOMRectList",
-    "https://drafts.csswg.org/geometry/#dom-domrectlist-item",
-    "https://drafts.csswg.org/geometry/#dom-domrectlist-length",
-    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-domrectreadonly",
-    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-bottom",
-    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-fromrect",
-    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-height",
-    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-left",
-    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-right",
-    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-tojson",
-    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-top",
-    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-width",
-    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-x",
-    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-y"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/y",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "61",
-      "versions": [
-        {
-          "version": "61",
-          "status": "y"
-        }
-      ]
+      "firstFull": "61"
     },
     "firefox": {
       "current": "y",
-      "firstFull": "33",
-      "versions": [
-        {
-          "version": "33",
-          "status": "y"
-        }
-      ]
+      "firstFull": "33"
     },
     "safari": {
       "current": "y",
-      "firstFull": "11",
-      "versions": [
-        {
-          "version": "11",
-          "status": "y"
-        }
-      ]
+      "firstFull": "11"
     },
     "edge": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "opera": {
       "current": "y",
-      "firstFull": "61",
-      "versions": [
-        {
-          "version": "61",
-          "status": "y"
-        }
-      ]
+      "firstFull": "61"
     },
     "ie": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "11",
-      "versions": [
-        {
-          "version": "11",
-          "status": "y"
-        }
-      ]
+      "firstFull": "11"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "61",
-      "versions": [
-        {
-          "version": "61",
-          "status": "y"
-        }
-      ]
+      "firstFull": "61"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "61",
-      "versions": [
-        {
-          "version": "61",
-          "status": "y"
-        }
-      ]
+      "firstFull": "61"
     },
     "and_ff": {
       "current": "y",
-      "firstFull": "33",
-      "versions": [
-        {
-          "version": "33",
-          "status": "y"
-        }
-      ]
+      "firstFull": "33"
     }
   },
   "usage": {
@@ -236,7 +70,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": "high",
   "sourceData": {
     "primary": {

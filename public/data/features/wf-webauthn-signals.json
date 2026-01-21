@@ -4,102 +4,46 @@
   "name": "Web authentication signal methods",
   "description": "The signalUnknownCredential(), signalAllAcceptedCredentials(), and signalCurrentUserDetails() methods of PublicKeyCredential inform authenticators of the state of public key credentials, so that incorrect or revoked credentials may be updated, removed, or hidden.",
   "category": "Other",
-  "spec": [
-    "https://w3c.github.io/webauthn/#sctn-signal-methods",
-    "https://w3c.github.io/webauthn/#dom-publickeycredential-signalallacceptedcredentials",
-    "https://w3c.github.io/webauthn/#dom-publickeycredential-signalcurrentuserdetails",
-    "https://w3c.github.io/webauthn/#dom-publickeycredential-signalunknowncredential"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/signalUnknownCredential_static",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "132",
-      "versions": [
-        {
-          "version": "132",
-          "status": "y"
-        }
-      ]
+      "firstFull": "132"
     },
     "safari": {
       "current": "y",
-      "firstFull": "26",
-      "versions": [
-        {
-          "version": "26",
-          "status": "y"
-        }
-      ]
+      "firstFull": "26"
     },
     "edge": {
       "current": "y",
-      "firstFull": "132",
-      "versions": [
-        {
-          "version": "132",
-          "status": "y"
-        }
-      ]
+      "firstFull": "132"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
       "current": "y",
-      "firstFull": "132",
-      "versions": [
-        {
-          "version": "132",
-          "status": "y"
-        }
-      ]
+      "firstFull": "132"
     },
     "ie": {
       "current": "y",
-      "firstFull": "132",
-      "versions": [
-        {
-          "version": "132",
-          "status": "y"
-        }
-      ]
+      "firstFull": "132"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "26",
-      "versions": [
-        {
-          "version": "26",
-          "status": "y"
-        }
-      ]
+      "firstFull": "26"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "132",
-      "versions": [
-        {
-          "version": "132",
-          "status": "y"
-        }
-      ]
+      "firstFull": "132"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "132",
-      "versions": [
-        {
-          "version": "132",
-          "status": "y"
-        }
-      ]
+      "firstFull": "132"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -121,7 +65,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

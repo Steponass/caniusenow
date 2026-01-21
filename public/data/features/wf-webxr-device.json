@@ -4,198 +4,44 @@
   "name": "WebXR",
   "description": "The navigator.xr API represents the browser's virtual reality or augmented reality system. You can use to request a WebXR session.",
   "category": "Other",
-  "spec": [
-    "https://immersive-web.github.io/webxr/",
-    "https://immersive-web.github.io/webxr/#navigator-xr-attribute",
-    "https://immersive-web.github.io/webxr/#dom-webglrenderingcontextbase-makexrcompatible",
-    "https://immersive-web.github.io/webxr/#xrboundedreferencespace-interface",
-    "https://immersive-web.github.io/webxr/#dom-xrboundedreferencespace-boundsgeometry",
-    "https://immersive-web.github.io/webxr/#xrframe-interface",
-    "https://immersive-web.github.io/webxr/#dom-xrframe-getpose",
-    "https://immersive-web.github.io/webxr/#dom-xrframe-getviewerpose",
-    "https://immersive-web.github.io/webxr/#dom-xrframe-session",
-    "https://immersive-web.github.io/webxr/#xrinputsource-interface",
-    "https://immersive-web.github.io/webxr/#dom-xrinputsource-gripspace",
-    "https://immersive-web.github.io/webxr/#dom-xrinputsource-handedness",
-    "https://immersive-web.github.io/webxr/#dom-xrinputsource-profiles",
-    "https://immersive-web.github.io/webxr/#dom-xrinputsource-targetraymode",
-    "https://immersive-web.github.io/webxr/#dom-xrinputsource-targetrayspace",
-    "https://immersive-web.github.io/webxr/#xrinputsourcearray-interface",
-    "https://immersive-web.github.io/webxr/#dom-xrinputsourcearray-length",
-    "https://immersive-web.github.io/webxr/#xrinputsourceevent-interface",
-    "https://immersive-web.github.io/webxr/#dom-xrinputsourceevent-xrinputsourceevent",
-    "https://immersive-web.github.io/webxr/#dom-xrinputsourceevent-frame",
-    "https://immersive-web.github.io/webxr/#dom-xrinputsourceevent-inputsource",
-    "https://immersive-web.github.io/webxr/#xrinputsourceschangeevent-interface",
-    "https://immersive-web.github.io/webxr/#dom-xrinputsourceschangeevent-xrinputsourceschangeevent",
-    "https://immersive-web.github.io/webxr/#dom-xrinputsourceschangeevent-added",
-    "https://immersive-web.github.io/webxr/#dom-xrinputsourceschangeevent-removed",
-    "https://immersive-web.github.io/webxr/#dom-xrinputsourceschangeevent-session",
-    "https://immersive-web.github.io/webxr/#xrlayer-interface",
-    "https://immersive-web.github.io/webxr/#xrpose-interface",
-    "https://immersive-web.github.io/webxr/#dom-xrpose-angularvelocity",
-    "https://immersive-web.github.io/webxr/#dom-xrpose-emulatedposition",
-    "https://immersive-web.github.io/webxr/#dom-xrpose-linearvelocity",
-    "https://immersive-web.github.io/webxr/#dom-xrpose-transform",
-    "https://immersive-web.github.io/webxr/#xrreferencespace-interface",
-    "https://immersive-web.github.io/webxr/#dom-xrreferencespace-getoffsetreferencespace",
-    "https://immersive-web.github.io/webxr/#eventdef-xrreferencespace-reset",
-    "https://immersive-web.github.io/webxr/#dom-xrreferencespace-onreset",
-    "https://immersive-web.github.io/webxr/#xrreferencespaceevent-interface",
-    "https://immersive-web.github.io/webxr/#dom-xrreferencespaceevent-xrreferencespaceevent",
-    "https://immersive-web.github.io/webxr/#dom-xrreferencespaceevent-referencespace",
-    "https://immersive-web.github.io/webxr/#dom-xrreferencespaceevent-transform",
-    "https://immersive-web.github.io/webxr/#xrrenderstate-interface",
-    "https://immersive-web.github.io/webxr/#dom-xrrenderstate-baselayer",
-    "https://immersive-web.github.io/webxr/#dom-xrrenderstate-depthfar",
-    "https://immersive-web.github.io/webxr/#dom-xrrenderstate-depthnear",
-    "https://immersive-web.github.io/webxr/#dom-xrrenderstate-inlineverticalfieldofview",
-    "https://immersive-web.github.io/webxr/#xrrigidtransform-interface",
-    "https://immersive-web.github.io/webxr/#dom-xrrigidtransform-xrrigidtransform",
-    "https://immersive-web.github.io/webxr/#dom-xrrigidtransform-inverse",
-    "https://immersive-web.github.io/webxr/#dom-xrrigidtransform-matrix",
-    "https://immersive-web.github.io/webxr/#dom-xrrigidtransform-orientation",
-    "https://immersive-web.github.io/webxr/#dom-xrrigidtransform-position",
-    "https://immersive-web.github.io/webxr/#xrsession-interface",
-    "https://immersive-web.github.io/webxr/#dom-xrsession-cancelanimationframe",
-    "https://immersive-web.github.io/webxr/#dom-xrsession-enabledfeatures",
-    "https://immersive-web.github.io/webxr/#dom-xrsession-end",
-    "https://immersive-web.github.io/webxr/#eventdef-xrsession-end",
-    "https://immersive-web.github.io/webxr/#dom-xrsession-onend",
-    "https://immersive-web.github.io/webxr/#dom-xrsession-inputsources",
-    "https://immersive-web.github.io/webxr/#eventdef-xrsession-inputsourceschange",
-    "https://immersive-web.github.io/webxr/#dom-xrsession-oninputsourceschange",
-    "https://immersive-web.github.io/webxr/#dom-xrsession-renderstate",
-    "https://immersive-web.github.io/webxr/#dom-xrsession-requestanimationframe",
-    "https://immersive-web.github.io/webxr/#dom-xrsession-requestreferencespace",
-    "https://immersive-web.github.io/webxr/#eventdef-xrsession-select",
-    "https://immersive-web.github.io/webxr/#dom-xrsession-onselect",
-    "https://immersive-web.github.io/webxr/#eventdef-xrsession-selectend",
-    "https://immersive-web.github.io/webxr/#dom-xrsession-onselectend",
-    "https://immersive-web.github.io/webxr/#eventdef-xrsession-selectstart",
-    "https://immersive-web.github.io/webxr/#dom-xrsession-onselectstart",
-    "https://immersive-web.github.io/webxr/#eventdef-xrsession-squeeze",
-    "https://immersive-web.github.io/webxr/#dom-xrsession-onsqueeze",
-    "https://immersive-web.github.io/webxr/#eventdef-xrsession-squeezeend",
-    "https://immersive-web.github.io/webxr/#dom-xrsession-onsqueezeend",
-    "https://immersive-web.github.io/webxr/#eventdef-xrsession-squeezestart",
-    "https://immersive-web.github.io/webxr/#dom-xrsession-onsqueezestart",
-    "https://immersive-web.github.io/webxr/#dom-xrsession-updaterenderstate",
-    "https://immersive-web.github.io/webxr/#dom-xrsession-visibilitystate",
-    "https://immersive-web.github.io/webxr/#eventdef-xrsession-visibilitychange",
-    "https://immersive-web.github.io/webxr/#dom-xrsession-onvisibilitychange",
-    "https://immersive-web.github.io/webxr/#xrsessionevent-interface",
-    "https://immersive-web.github.io/webxr/#dom-xrsessionevent-xrsessionevent",
-    "https://immersive-web.github.io/webxr/#dom-xrsessionevent-session",
-    "https://immersive-web.github.io/webxr/#xrspace-interface",
-    "https://immersive-web.github.io/webxr/#xrsystem-interface",
-    "https://immersive-web.github.io/webxr/#eventdef-xrsystem-devicechange",
-    "https://immersive-web.github.io/webxr/#dom-xrsystem-ondevicechange",
-    "https://immersive-web.github.io/webxr/#dom-xrsystem-issessionsupported",
-    "https://immersive-web.github.io/webxr/#dom-xrsystem-requestsession",
-    "https://immersive-web.github.io/webxr/#xrview-interface",
-    "https://immersive-web.github.io/webxr/#dom-xrview-eye",
-    "https://immersive-web.github.io/webxr/#dom-xrviewgeometry-projectionmatrix",
-    "https://immersive-web.github.io/webxr/#dom-xrview-recommendedviewportscale",
-    "https://immersive-web.github.io/webxr/#dom-xrview-requestviewportscale",
-    "https://immersive-web.github.io/webxr/#dom-xrviewgeometry-transform",
-    "https://immersive-web.github.io/webxr/#xrviewerpose-interface",
-    "https://immersive-web.github.io/webxr/#dom-xrviewerpose-views",
-    "https://immersive-web.github.io/webxr/#xrviewport-interface",
-    "https://immersive-web.github.io/webxr/#dom-xrviewport-height",
-    "https://immersive-web.github.io/webxr/#dom-xrviewport-width",
-    "https://immersive-web.github.io/webxr/#dom-xrviewport-x",
-    "https://immersive-web.github.io/webxr/#dom-xrviewport-y",
-    "https://immersive-web.github.io/webxr/#xrwebgllayer-interface",
-    "https://immersive-web.github.io/webxr/#dom-xrwebgllayer-xrwebgllayer",
-    "https://immersive-web.github.io/webxr/#dom-xrwebgllayer-antialias",
-    "https://immersive-web.github.io/webxr/#dom-xrwebgllayer-fixedfoveation",
-    "https://immersive-web.github.io/webxr/#dom-xrwebgllayer-framebuffer",
-    "https://immersive-web.github.io/webxr/#dom-xrwebgllayer-framebufferheight",
-    "https://immersive-web.github.io/webxr/#dom-xrwebgllayer-framebufferwidth",
-    "https://immersive-web.github.io/webxr/#dom-xrwebgllayer-getnativeframebufferscalefactor",
-    "https://immersive-web.github.io/webxr/#dom-xrwebgllayer-getviewport",
-    "https://immersive-web.github.io/webxr/#dom-xrwebgllayer-ignoredepthvalues",
-    "https://immersive-web.github.io/webxr/#permissions-policy"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/xr-spatial-tracking",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "edge": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "safari": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "ie": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -216,7 +62,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

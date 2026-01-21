@@ -4,110 +4,44 @@
   "name": "Web serial",
   "description": "The navigator.serial API communicates with devices over serial ports, such as microcontrollers.",
   "category": "Other",
-  "spec": [
-    "https://wicg.github.io/serial/",
-    "https://wicg.github.io/serial/#extensions-to-the-navigator-interface",
-    "https://wicg.github.io/serial/#serial-interface",
-    "https://wicg.github.io/serial/#dom-serial-getports",
-    "https://wicg.github.io/serial/#dom-serial-requestport",
-    "https://wicg.github.io/serial/#dom-serialportrequestoptions-allowedbluetoothserviceclassids",
-    "https://wicg.github.io/serial/#dom-serialportfilter-bluetoothserviceclassid",
-    "https://wicg.github.io/serial/#dom-serialport",
-    "https://wicg.github.io/serial/#dom-serialport-close",
-    "https://wicg.github.io/serial/#dfn-connect",
-    "https://wicg.github.io/serial/#dom-serialport-onconnect",
-    "https://wicg.github.io/serial/#dom-serialport-connected",
-    "https://wicg.github.io/serial/#dfn-disconnect",
-    "https://wicg.github.io/serial/#dom-serialport-ondisconnect",
-    "https://wicg.github.io/serial/#dom-serialport-forget",
-    "https://wicg.github.io/serial/#dom-serialport-getinfo",
-    "https://wicg.github.io/serial/#dom-serialportinfo-bluetoothserviceclassid",
-    "https://wicg.github.io/serial/#dom-serialport-getsignals",
-    "https://wicg.github.io/serial/#dom-serialport-open",
-    "https://wicg.github.io/serial/#dom-serialport-readable",
-    "https://wicg.github.io/serial/#dom-serialport-setsignals",
-    "https://wicg.github.io/serial/#dom-serialport-writable",
-    "https://wicg.github.io/serial/#dom-workernavigator-serial",
-    "https://wicg.github.io/serial/#permissions-policy"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/serial",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "89",
-      "versions": [
-        {
-          "version": "89",
-          "status": "y"
-        }
-      ]
+      "firstFull": "89"
     },
     "edge": {
       "current": "y",
-      "firstFull": "89",
-      "versions": [
-        {
-          "version": "89",
-          "status": "y"
-        }
-      ]
+      "firstFull": "89"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "safari": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
       "current": "y",
-      "firstFull": "89",
-      "versions": [
-        {
-          "version": "89",
-          "status": "y"
-        }
-      ]
+      "firstFull": "89"
     },
     "ie": {
       "current": "y",
-      "firstFull": "89",
-      "versions": [
-        {
-          "version": "89",
-          "status": "y"
-        }
-      ]
+      "firstFull": "89"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "89",
-      "versions": [
-        {
-          "version": "89",
-          "status": "y"
-        }
-      ]
+      "firstFull": "89"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "89",
-      "versions": [
-        {
-          "version": "89",
-          "status": "y"
-        }
-      ]
+      "firstFull": "89"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -128,7 +62,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

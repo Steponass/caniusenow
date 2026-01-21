@@ -4,96 +4,44 @@
   "name": "Background sync",
   "description": "The background synchronization API registers a service worker callback to run only when the device is no longer offline. You can use this to let users continue using your app while offline and synchronize with a server after reconnecting.",
   "category": "Other",
-  "spec": [
-    "https://wicg.github.io/background-sync/spec/",
-    "https://wicg.github.io/background-sync/spec/#dom-serviceworkerglobalscope-onsync",
-    "https://wicg.github.io/background-sync/spec/#dom-serviceworkerregistration-sync",
-    "https://wicg.github.io/background-sync/spec/#sync-event",
-    "https://wicg.github.io/background-sync/spec/#dom-syncevent-syncevent",
-    "https://wicg.github.io/background-sync/spec/#dom-syncevent-lastchance",
-    "https://wicg.github.io/background-sync/spec/#dom-syncevent-tag",
-    "https://wicg.github.io/background-sync/spec/#sync-manager-interface",
-    "https://wicg.github.io/background-sync/spec/#dom-syncmanager-gettags",
-    "https://wicg.github.io/background-sync/spec/#dom-syncmanager-register"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/SyncManager/register",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "49",
-      "versions": [
-        {
-          "version": "49",
-          "status": "y"
-        }
-      ]
+      "firstFull": "49"
     },
     "edge": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "safari": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
       "current": "y",
-      "firstFull": "49",
-      "versions": [
-        {
-          "version": "49",
-          "status": "y"
-        }
-      ]
+      "firstFull": "49"
     },
     "ie": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "49",
-      "versions": [
-        {
-          "version": "49",
-          "status": "y"
-        }
-      ]
+      "firstFull": "49"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "49",
-      "versions": [
-        {
-          "version": "49",
-          "status": "y"
-        }
-      ]
+      "firstFull": "49"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -114,7 +62,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

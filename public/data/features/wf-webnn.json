@@ -4,139 +4,37 @@
   "name": "WebNN",
   "description": "The WebNN API constructs and executes computational graphs of neural networks by making use of the various machine learning capabilities and hardware accelerators available on the device. Also known as Web Neural Network API.",
   "category": "Other",
-  "spec": [
-    "https://www.w3.org/TR/webnn/",
-    "https://www.w3.org/TR/webnn/#api-ml",
-    "https://www.w3.org/TR/webnn/#api-ml-createcontext",
-    "https://www.w3.org/TR/webnn/#api-mlcontext",
-    "https://www.w3.org/TR/webnn/#api-mlcontext-dispatch",
-    "https://www.w3.org/TR/webnn/#api-mlcontext-opsupportlimits",
-    "https://www.w3.org/TR/webnn/#api-mlgraph",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-constructor",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-abs",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-add",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-argminmax",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d-average",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-batchnorm",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-build",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-cast",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-ceil",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-clamp",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-concat",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-constant",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-cos",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-div",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-elu",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-equal",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-erf",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-exp",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-expand",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-floor",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gather",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gemm",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-greater",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-greaterorequal",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-gru",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-grucell",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-hard-sigmoid",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-hard-swish",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-identity",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-input",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-instancenorm",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d-l2",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-layernorm",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-leakyrelu",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-lesser",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-lesserorequal",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-linear",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-log",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-logicalnot",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstm",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-lstmcell",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-matmul",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-max",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d-max",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-min",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-mul",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-neg",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pad",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-pow",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-prelu",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reciprocal",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducel1",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducel2",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducelogsum",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducelogsumexp",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducemax",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducemean",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducemin",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reduceproduct",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducesum",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-reducesumsquare",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-relu-method",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-resample2d-method",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reshape-method",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-sigmoid-method",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-sin",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-slice",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softmax-method",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softplus-method",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softsign-method",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-split",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-sqrt",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-sub",
-    "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-tan",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-tanh-method",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-transpose",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-triangular",
-    "https://www.w3.org/TR/webnn/#api-mlgraphbuilder-where",
-    "https://www.w3.org/TR/webnn/#api-mloperand",
-    "https://www.w3.org/TR/webnn/#api-navigator-ml"
-  ],
   "links": [],
   "support": {
     "chrome": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "safari": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "edge": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "ie": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "and_chr": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "samsung": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -151,7 +49,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

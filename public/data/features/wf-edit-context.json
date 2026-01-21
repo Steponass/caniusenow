@@ -4,125 +4,44 @@
   "name": "EditContext",
   "description": "The EditContext API allows you to build rich text editors that support advanced text input, such as Input Method Editor (IME) composition, an emoji picker, or other platform-specific editing UI.",
   "category": "Other",
-  "spec": [
-    "https://w3c.github.io/edit-context/",
-    "https://w3c.github.io/edit-context/#dom-characterboundsupdateevent",
-    "https://w3c.github.io/edit-context/#dom-characterboundsupdateevent-constructor",
-    "https://w3c.github.io/edit-context/#dom-characterboundsupdateevent-rangestart",
-    "https://w3c.github.io/edit-context/#dom-editcontext",
-    "https://w3c.github.io/edit-context/#dom-editcontext-constructor",
-    "https://w3c.github.io/edit-context/#dom-editcontext-attachedelements",
-    "https://w3c.github.io/edit-context/#dom-editcontext-characterbounds",
-    "https://w3c.github.io/edit-context/#dom-editcontext-characterboundsrangestart",
-    "https://w3c.github.io/edit-context/#dom-editcontext-oncharacterboundsupdate",
-    "https://w3c.github.io/edit-context/#dom-editcontext-oncompositionend",
-    "https://w3c.github.io/edit-context/#dom-editcontext-oncompositionstart",
-    "https://w3c.github.io/edit-context/#dom-editcontextinit-selectionend",
-    "https://w3c.github.io/edit-context/#dom-editcontextinit-selectionstart",
-    "https://w3c.github.io/edit-context/#dom-editcontext-text",
-    "https://w3c.github.io/edit-context/#dom-editcontext-ontextformatupdate",
-    "https://w3c.github.io/edit-context/#dom-editcontext-ontextupdate",
-    "https://w3c.github.io/edit-context/#dom-editcontext-updatecharacterbounds",
-    "https://w3c.github.io/edit-context/#dom-editcontext-updatecontrolbounds",
-    "https://w3c.github.io/edit-context/#dom-editcontext-updateselection",
-    "https://w3c.github.io/edit-context/#dom-editcontext-updateselectionbounds",
-    "https://w3c.github.io/edit-context/#dom-editcontext-updatetext",
-    "https://w3c.github.io/edit-context/#dom-htmlelement-editcontext",
-    "https://w3c.github.io/edit-context/#dom-textformat",
-    "https://w3c.github.io/edit-context/#dom-textformat-constructor",
-    "https://w3c.github.io/edit-context/#dom-textformat-rangeend",
-    "https://w3c.github.io/edit-context/#dom-textformat-rangestart",
-    "https://w3c.github.io/edit-context/#dom-textformat-underlinestyle",
-    "https://w3c.github.io/edit-context/#dom-textformat-underlinethickness",
-    "https://w3c.github.io/edit-context/#dom-textformatupdateevent",
-    "https://w3c.github.io/edit-context/#dom-textformatupdateevent-constructor",
-    "https://w3c.github.io/edit-context/#dom-textformatupdateevent-gettextformats",
-    "https://w3c.github.io/edit-context/#dom-textupdateevent",
-    "https://w3c.github.io/edit-context/#dom-textupdateevent-constructor",
-    "https://w3c.github.io/edit-context/#dom-textupdateevent-selectionend",
-    "https://w3c.github.io/edit-context/#dom-textupdateevent-selectionstart",
-    "https://w3c.github.io/edit-context/#dom-textupdateevent-text",
-    "https://w3c.github.io/edit-context/#dom-textupdateevent-updaterangeend",
-    "https://w3c.github.io/edit-context/#dom-textupdateevent-updaterangestart"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/TextUpdateEvent/updateRangeStart",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "121",
-      "versions": [
-        {
-          "version": "121",
-          "status": "y"
-        }
-      ]
+      "firstFull": "121"
     },
     "edge": {
       "current": "y",
-      "firstFull": "121",
-      "versions": [
-        {
-          "version": "121",
-          "status": "y"
-        }
-      ]
+      "firstFull": "121"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "safari": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
       "current": "y",
-      "firstFull": "121",
-      "versions": [
-        {
-          "version": "121",
-          "status": "y"
-        }
-      ]
+      "firstFull": "121"
     },
     "ie": {
       "current": "y",
-      "firstFull": "121",
-      "versions": [
-        {
-          "version": "121",
-          "status": "y"
-        }
-      ]
+      "firstFull": "121"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "121",
-      "versions": [
-        {
-          "version": "121",
-          "status": "y"
-        }
-      ]
+      "firstFull": "121"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "121",
-      "versions": [
-        {
-          "version": "121",
-          "status": "y"
-        }
-      ]
+      "firstFull": "121"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -143,7 +62,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

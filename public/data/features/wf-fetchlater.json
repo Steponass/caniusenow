@@ -4,90 +4,44 @@
   "name": "fetchLater",
   "description": "The fetchLater() method requests a deferred fetch sent at an unknown time. The browser chooses a reliable time to send the request, ideally when the document is unloaded, and ignores the response. This API is useful for sending beacons to a server without expecting a particular response.",
   "category": "Other",
-  "spec": [
-    "https://fetch.spec.whatwg.org/#dom-window-fetchlater",
-    "https://fetch.spec.whatwg.org/#fetchlaterresult",
-    "https://fetch.spec.whatwg.org/#deferred-fetch",
-    "https://fetch.spec.whatwg.org/#available-deferred-fetch-quota"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/deferred-fetch-minimal",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "135",
-      "versions": [
-        {
-          "version": "135",
-          "status": "y"
-        }
-      ]
+      "firstFull": "135"
     },
     "edge": {
       "current": "y",
-      "firstFull": "135",
-      "versions": [
-        {
-          "version": "135",
-          "status": "y"
-        }
-      ]
+      "firstFull": "135"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "safari": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
       "current": "y",
-      "firstFull": "135",
-      "versions": [
-        {
-          "version": "135",
-          "status": "y"
-        }
-      ]
+      "firstFull": "135"
     },
     "ie": {
       "current": "y",
-      "firstFull": "135",
-      "versions": [
-        {
-          "version": "135",
-          "status": "y"
-        }
-      ]
+      "firstFull": "135"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "135",
-      "versions": [
-        {
-          "version": "135",
-          "status": "y"
-        }
-      ]
+      "firstFull": "135"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "135",
-      "versions": [
-        {
-          "version": "135",
-          "status": "y"
-        }
-      ]
+      "firstFull": "135"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -107,7 +61,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

@@ -4,104 +4,44 @@
   "name": "User agent client hints",
   "description": "The Sec-CH-UA HTTP request header and the navigator.userAgentData API expose browser and platform information used to vary responses and application logic. User agent client hints are similar to user agent strings but more privacy-preserving and safer to parse.",
   "category": "Other",
-  "spec": [
-    "https://wicg.github.io/ua-client-hints/",
-    "https://wicg.github.io/ua-client-hints/#dom-navigatorua-useragentdata",
-    "https://wicg.github.io/ua-client-hints/#navigatoruadata",
-    "https://wicg.github.io/ua-client-hints/#dom-navigatoruadata-brands",
-    "https://wicg.github.io/ua-client-hints/#dom-navigatoruadata-gethighentropyvalues",
-    "https://wicg.github.io/ua-client-hints/#dom-navigatoruadata-mobile",
-    "https://wicg.github.io/ua-client-hints/#dom-navigatoruadata-platform",
-    "https://wicg.github.io/ua-client-hints/#dom-navigatoruadata-tojson",
-    "https://wicg.github.io/ua-client-hints/#sec-ch-ua",
-    "https://wicg.github.io/ua-client-hints/#sec-ch-ua-arch",
-    "https://wicg.github.io/ua-client-hints/#sec-ch-ua-bitness",
-    "https://wicg.github.io/ua-client-hints/#sec-ch-ua-form-factors",
-    "https://wicg.github.io/ua-client-hints/#sec-ch-ua-full-version-list",
-    "https://wicg.github.io/ua-client-hints/#sec-ch-ua-mobile",
-    "https://wicg.github.io/ua-client-hints/#sec-ch-ua-model",
-    "https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform",
-    "https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform-version",
-    "https://wicg.github.io/ua-client-hints/#sec-ch-ua-wow64"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Sec-CH-UA-WoW64",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "90",
-      "versions": [
-        {
-          "version": "90",
-          "status": "y"
-        }
-      ]
+      "firstFull": "90"
     },
     "edge": {
       "current": "y",
-      "firstFull": "90",
-      "versions": [
-        {
-          "version": "90",
-          "status": "y"
-        }
-      ]
+      "firstFull": "90"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "safari": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
       "current": "y",
-      "firstFull": "90",
-      "versions": [
-        {
-          "version": "90",
-          "status": "y"
-        }
-      ]
+      "firstFull": "90"
     },
     "ie": {
       "current": "y",
-      "firstFull": "90",
-      "versions": [
-        {
-          "version": "90",
-          "status": "y"
-        }
-      ]
+      "firstFull": "90"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "90",
-      "versions": [
-        {
-          "version": "90",
-          "status": "y"
-        }
-      ]
+      "firstFull": "90"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "90",
-      "versions": [
-        {
-          "version": "90",
-          "status": "y"
-        }
-      ]
+      "firstFull": "90"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -122,7 +62,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

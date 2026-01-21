@@ -4,77 +4,6 @@
   "name": "Selection API",
   "description": "API for accessing selected content of a document, including the `window.getSelection()` method, as well as the `selectstart` & `selectionchange` events on `document`.",
   "category": "JS API",
-  "spec": [
-    "https://www.w3.org/TR/selection-api/",
-    "https://w3c.github.io/selection-api/",
-    "https://dom.spec.whatwg.org/#interface-abstractrange",
-    "https://dom.spec.whatwg.org/#ref-for-dom-range-collapsed①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-range-endcontainer①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-range-endoffset①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-range-startcontainer①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-range-startoffset①",
-    "https://dom.spec.whatwg.org/#dom-document-createrange",
-    "https://w3c.github.io/selection-api/#dom-document-getselection",
-    "https://w3c.github.io/selection-api/#selectionchange-event",
-    "https://w3c.github.io/selection-api/#dom-globaleventhandlers-onselectionchange",
-    "https://w3c.github.io/selection-api/#selectstart-event",
-    "https://w3c.github.io/selection-api/#dom-globaleventhandlers-onselectstart",
-    "https://dom.spec.whatwg.org/#interface-range",
-    "https://w3c.github.io/DOM-Parsing/#extensions-to-the-range-interface",
-    "https://drafts.csswg.org/cssom-view/#extensions-to-the-range-interface",
-    "https://dom.spec.whatwg.org/#ref-for-dom-range-range②",
-    "https://dom.spec.whatwg.org/#dom-range-clonecontents",
-    "https://dom.spec.whatwg.org/#dom-range-clonerange",
-    "https://dom.spec.whatwg.org/#dom-range-collapse",
-    "https://dom.spec.whatwg.org/#ref-for-dom-range-commonancestorcontainer②",
-    "https://dom.spec.whatwg.org/#dom-range-compareboundarypoints",
-    "https://dom.spec.whatwg.org/#ref-for-dom-range-comparepoint①",
-    "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-range-createcontextualfragment",
-    "https://dom.spec.whatwg.org/#dom-range-deletecontents",
-    "https://dom.spec.whatwg.org/#dom-range-detach",
-    "https://dom.spec.whatwg.org/#dom-range-extractcontents",
-    "https://drafts.csswg.org/cssom-view/#dom-range-getboundingclientrect",
-    "https://drafts.csswg.org/cssom-view/#dom-range-getclientrects",
-    "https://dom.spec.whatwg.org/#dom-range-insertnode",
-    "https://dom.spec.whatwg.org/#ref-for-dom-range-intersectsnode①",
-    "https://dom.spec.whatwg.org/#dom-range-ispointinrange",
-    "https://dom.spec.whatwg.org/#dom-range-selectnode",
-    "https://dom.spec.whatwg.org/#dom-range-selectnodecontents",
-    "https://dom.spec.whatwg.org/#dom-range-setend",
-    "https://dom.spec.whatwg.org/#dom-range-setendafter",
-    "https://dom.spec.whatwg.org/#dom-range-setendbefore",
-    "https://dom.spec.whatwg.org/#dom-range-setstart",
-    "https://dom.spec.whatwg.org/#dom-range-setstartafter",
-    "https://dom.spec.whatwg.org/#dom-range-setstartbefore",
-    "https://dom.spec.whatwg.org/#dom-range-surroundcontents",
-    "https://dom.spec.whatwg.org/#dom-range-stringifier",
-    "https://w3c.github.io/selection-api/#selection-interface",
-    "https://w3c.github.io/selection-api/#dom-selection-addrange",
-    "https://w3c.github.io/selection-api/#dom-selection-anchornode",
-    "https://w3c.github.io/selection-api/#dom-selection-anchoroffset",
-    "https://w3c.github.io/selection-api/#dom-selection-collapse",
-    "https://w3c.github.io/selection-api/#dom-selection-collapsetoend",
-    "https://w3c.github.io/selection-api/#dom-selection-collapsetostart",
-    "https://w3c.github.io/selection-api/#dom-selection-containsnode",
-    "https://w3c.github.io/selection-api/#dom-selection-deletefromdocument",
-    "https://w3c.github.io/selection-api/#dom-selection-direction",
-    "https://w3c.github.io/selection-api/#dom-selection-removeallranges",
-    "https://w3c.github.io/selection-api/#dom-selection-extend",
-    "https://w3c.github.io/selection-api/#dom-selection-focusnode",
-    "https://w3c.github.io/selection-api/#dom-selection-focusoffset",
-    "https://w3c.github.io/selection-api/#dom-selection-getrangeat",
-    "https://w3c.github.io/selection-api/#dom-selection-iscollapsed",
-    "https://w3c.github.io/selection-api/#dom-selection-modify",
-    "https://w3c.github.io/selection-api/#dom-selection-rangecount",
-    "https://w3c.github.io/selection-api/#dom-selection-removerange",
-    "https://w3c.github.io/selection-api/#dom-selection-selectallchildren",
-    "https://w3c.github.io/selection-api/#dom-selection-setbaseandextent",
-    "https://w3c.github.io/selection-api/#dom-selection-stringifier",
-    "https://w3c.github.io/selection-api/#dom-selection-type",
-    "https://dom.spec.whatwg.org/#interface-staticrange",
-    "https://dom.spec.whatwg.org/#ref-for-dom-staticrange-staticrange①",
-    "https://w3c.github.io/selection-api/#dom-window-getselection"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/Window/getSelection",
   "links": [
     {
@@ -85,417 +14,42 @@
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "15",
-      "versions": [
-        {
-          "version": "137",
-          "status": "y"
-        },
-        {
-          "version": "138",
-          "status": "y"
-        },
-        {
-          "version": "139",
-          "status": "y"
-        },
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        },
-        {
-          "version": "144",
-          "status": "y"
-        },
-        {
-          "version": "145",
-          "status": "y"
-        },
-        {
-          "version": "146",
-          "status": "y"
-        }
-      ]
+      "firstFull": "15"
     },
     "firefox": {
       "current": "y",
-      "firstFull": "52",
-      "versions": [
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        },
-        {
-          "version": "144",
-          "status": "y"
-        },
-        {
-          "version": "145",
-          "status": "y"
-        },
-        {
-          "version": "146",
-          "status": "y"
-        },
-        {
-          "version": "147",
-          "status": "y"
-        },
-        {
-          "version": "148",
-          "status": "y"
-        },
-        {
-          "version": "149",
-          "status": "y"
-        }
-      ]
+      "firstFull": "52"
     },
     "safari": {
       "current": "y",
-      "firstFull": "5.1",
-      "versions": [
-        {
-          "version": "18.1",
-          "status": "y"
-        },
-        {
-          "version": "18.2",
-          "status": "y"
-        },
-        {
-          "version": "18.3",
-          "status": "y"
-        },
-        {
-          "version": "18.4",
-          "status": "y"
-        },
-        {
-          "version": "18.5-18.6",
-          "status": "y"
-        },
-        {
-          "version": "26.0",
-          "status": "y"
-        },
-        {
-          "version": "26.1",
-          "status": "y"
-        },
-        {
-          "version": "26.2",
-          "status": "y"
-        },
-        {
-          "version": "26.3",
-          "status": "y"
-        },
-        {
-          "version": "TP",
-          "status": "y"
-        }
-      ]
+      "firstFull": "5.1"
     },
     "edge": {
       "current": "y",
-      "firstFull": "12",
-      "versions": [
-        {
-          "version": "134",
-          "status": "y"
-        },
-        {
-          "version": "135",
-          "status": "y"
-        },
-        {
-          "version": "136",
-          "status": "y"
-        },
-        {
-          "version": "137",
-          "status": "y"
-        },
-        {
-          "version": "138",
-          "status": "y"
-        },
-        {
-          "version": "139",
-          "status": "y"
-        },
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        }
-      ]
+      "firstFull": "12"
     },
     "opera": {
       "current": "y",
-      "firstFull": "15",
-      "versions": [
-        {
-          "version": "116",
-          "status": "y"
-        },
-        {
-          "version": "117",
-          "status": "y"
-        },
-        {
-          "version": "118",
-          "status": "y"
-        },
-        {
-          "version": "119",
-          "status": "y"
-        },
-        {
-          "version": "120",
-          "status": "y"
-        },
-        {
-          "version": "121",
-          "status": "y"
-        },
-        {
-          "version": "122",
-          "status": "y"
-        },
-        {
-          "version": "123",
-          "status": "y"
-        },
-        {
-          "version": "124",
-          "status": "y"
-        },
-        {
-          "version": "125",
-          "status": "y"
-        }
-      ]
+      "firstFull": "15"
     },
     "ie": {
       "current": "y",
-      "firstFull": "9",
-      "versions": [
-        {
-          "version": "5.5",
-          "status": "u"
-        },
-        {
-          "version": "6",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "7",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "8",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "9",
-          "status": "y"
-        },
-        {
-          "version": "10",
-          "status": "y"
-        },
-        {
-          "version": "11",
-          "status": "y"
-        }
-      ]
+      "firstFull": "9"
     },
     "ios_saf": {
-      "current": "u",
-      "versions": [
-        {
-          "version": "18.0",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "18.1",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "18.2",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "18.3",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "18.4",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "18.5-18.7",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "26.0",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "26.1",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "26.2",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "26.3",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        }
-      ]
+      "current": "u"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "143",
-      "versions": [
-        {
-          "version": "143",
-          "status": "y"
-        }
-      ]
+      "firstFull": "143"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "4",
-      "versions": [
-        {
-          "version": "20",
-          "status": "y"
-        },
-        {
-          "version": "21",
-          "status": "y"
-        },
-        {
-          "version": "22",
-          "status": "y"
-        },
-        {
-          "version": "23",
-          "status": "y"
-        },
-        {
-          "version": "24",
-          "status": "y"
-        },
-        {
-          "version": "25",
-          "status": "y"
-        },
-        {
-          "version": "26",
-          "status": "y"
-        },
-        {
-          "version": "27",
-          "status": "y"
-        },
-        {
-          "version": "28",
-          "status": "y"
-        },
-        {
-          "version": "29",
-          "status": "y"
-        }
-      ]
+      "firstFull": "4"
     },
     "and_ff": {
       "current": "y",
-      "firstFull": "146",
-      "versions": [
-        {
-          "version": "146",
-          "status": "y"
-        }
-      ]
+      "firstFull": "146"
     }
   },
   "usage": {
@@ -531,7 +85,6 @@
       "5": "Selection events are supported behind the `dom.select_events.enabled` flag"
     }
   },
-  "status": "wd",
   "baseline": "high",
   "sourceData": {
     "primary": {

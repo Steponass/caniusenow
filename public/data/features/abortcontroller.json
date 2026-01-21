@@ -4,22 +4,6 @@
   "name": "AbortController & AbortSignal",
   "description": "Controller object that allows you to abort one or more DOM requests made with the Fetch API.",
   "category": "JS API",
-  "spec": [
-    "https://dom.spec.whatwg.org/#abortsignal",
-    "https://dom.spec.whatwg.org/#aborting-ongoing-activities",
-    "https://dom.spec.whatwg.org/#interface-abortcontroller",
-    "https://dom.spec.whatwg.org/#ref-for-dom-abortcontroller-abortcontroller①",
-    "https://dom.spec.whatwg.org/#abortsignal-abort-reason",
-    "https://dom.spec.whatwg.org/#ref-for-dom-abortcontroller-signal②",
-    "https://dom.spec.whatwg.org/#interface-AbortSignal",
-    "https://dom.spec.whatwg.org/#eventdef-abortsignal-abort",
-    "https://dom.spec.whatwg.org/#abortsignal-onabort",
-    "https://dom.spec.whatwg.org/#ref-for-dom-abortsignal-abort①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-abortsignal-aborted①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-abortsignal-reason①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-abortsignal-throwifaborted①",
-    "https://dom.spec.whatwg.org/#ref-for-dom-abortsignal-timeout①"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/AbortSignal/timeout_static",
   "links": [
     {
@@ -38,378 +22,42 @@
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "66",
-      "versions": [
-        {
-          "version": "137",
-          "status": "y"
-        },
-        {
-          "version": "138",
-          "status": "y"
-        },
-        {
-          "version": "139",
-          "status": "y"
-        },
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        },
-        {
-          "version": "144",
-          "status": "y"
-        },
-        {
-          "version": "145",
-          "status": "y"
-        },
-        {
-          "version": "146",
-          "status": "y"
-        }
-      ]
+      "firstFull": "66"
     },
     "firefox": {
       "current": "y",
-      "firstFull": "57",
-      "versions": [
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        },
-        {
-          "version": "144",
-          "status": "y"
-        },
-        {
-          "version": "145",
-          "status": "y"
-        },
-        {
-          "version": "146",
-          "status": "y"
-        },
-        {
-          "version": "147",
-          "status": "y"
-        },
-        {
-          "version": "148",
-          "status": "y"
-        },
-        {
-          "version": "149",
-          "status": "y"
-        }
-      ]
+      "firstFull": "57"
     },
     "safari": {
       "current": "y",
-      "firstFull": "12.1",
-      "versions": [
-        {
-          "version": "18.1",
-          "status": "y"
-        },
-        {
-          "version": "18.2",
-          "status": "y"
-        },
-        {
-          "version": "18.3",
-          "status": "y"
-        },
-        {
-          "version": "18.4",
-          "status": "y"
-        },
-        {
-          "version": "18.5-18.6",
-          "status": "y"
-        },
-        {
-          "version": "26.0",
-          "status": "y"
-        },
-        {
-          "version": "26.1",
-          "status": "y"
-        },
-        {
-          "version": "26.2",
-          "status": "y"
-        },
-        {
-          "version": "26.3",
-          "status": "y"
-        },
-        {
-          "version": "TP",
-          "status": "y"
-        }
-      ]
+      "firstFull": "12.1"
     },
     "edge": {
       "current": "y",
-      "firstFull": "16",
-      "versions": [
-        {
-          "version": "134",
-          "status": "y"
-        },
-        {
-          "version": "135",
-          "status": "y"
-        },
-        {
-          "version": "136",
-          "status": "y"
-        },
-        {
-          "version": "137",
-          "status": "y"
-        },
-        {
-          "version": "138",
-          "status": "y"
-        },
-        {
-          "version": "139",
-          "status": "y"
-        },
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        }
-      ]
+      "firstFull": "16"
     },
     "opera": {
       "current": "y",
-      "firstFull": "53",
-      "versions": [
-        {
-          "version": "116",
-          "status": "y"
-        },
-        {
-          "version": "117",
-          "status": "y"
-        },
-        {
-          "version": "118",
-          "status": "y"
-        },
-        {
-          "version": "119",
-          "status": "y"
-        },
-        {
-          "version": "120",
-          "status": "y"
-        },
-        {
-          "version": "121",
-          "status": "y"
-        },
-        {
-          "version": "122",
-          "status": "y"
-        },
-        {
-          "version": "123",
-          "status": "y"
-        },
-        {
-          "version": "124",
-          "status": "y"
-        },
-        {
-          "version": "125",
-          "status": "y"
-        }
-      ]
+      "firstFull": "53"
     },
     "ie": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "5.5",
-          "status": "n"
-        },
-        {
-          "version": "6",
-          "status": "n"
-        },
-        {
-          "version": "7",
-          "status": "n"
-        },
-        {
-          "version": "8",
-          "status": "n"
-        },
-        {
-          "version": "9",
-          "status": "n"
-        },
-        {
-          "version": "10",
-          "status": "n"
-        },
-        {
-          "version": "11",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "11.3-11.4",
-      "versions": [
-        {
-          "version": "18.0",
-          "status": "y"
-        },
-        {
-          "version": "18.1",
-          "status": "y"
-        },
-        {
-          "version": "18.2",
-          "status": "y"
-        },
-        {
-          "version": "18.3",
-          "status": "y"
-        },
-        {
-          "version": "18.4",
-          "status": "y"
-        },
-        {
-          "version": "18.5-18.7",
-          "status": "y"
-        },
-        {
-          "version": "26.0",
-          "status": "y"
-        },
-        {
-          "version": "26.1",
-          "status": "y"
-        },
-        {
-          "version": "26.2",
-          "status": "y"
-        },
-        {
-          "version": "26.3",
-          "status": "y"
-        }
-      ]
+      "firstFull": "11.3-11.4"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "143",
-      "versions": [
-        {
-          "version": "143",
-          "status": "y"
-        }
-      ]
+      "firstFull": "143"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "9.2",
-      "versions": [
-        {
-          "version": "20",
-          "status": "y"
-        },
-        {
-          "version": "21",
-          "status": "y"
-        },
-        {
-          "version": "22",
-          "status": "y"
-        },
-        {
-          "version": "23",
-          "status": "y"
-        },
-        {
-          "version": "24",
-          "status": "y"
-        },
-        {
-          "version": "25",
-          "status": "y"
-        },
-        {
-          "version": "26",
-          "status": "y"
-        },
-        {
-          "version": "27",
-          "status": "y"
-        },
-        {
-          "version": "28",
-          "status": "y"
-        },
-        {
-          "version": "29",
-          "status": "y"
-        }
-      ]
+      "firstFull": "9.2"
     },
     "and_ff": {
       "current": "y",
-      "firstFull": "146",
-      "versions": [
-        {
-          "version": "146",
-          "status": "y"
-        }
-      ]
+      "firstFull": "146"
     }
   },
   "usage": {
@@ -441,7 +89,6 @@
       "1": "Safari has window.AbortController defined in the DOM but it's just a stub, it does not abort requests at all. The same issue also affects Chrome on IOS and Firefox on IOS because they use the same WebKit rendering engine as Safari."
     }
   },
-  "status": "ls",
   "baseline": "high",
   "sourceData": {
     "primary": {

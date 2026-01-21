@@ -4,14 +4,6 @@
   "name": "View Transitions (cross-document)",
   "description": "Provides a mechanism for easily creating animated transitions between different DOM states, while also updating the DOM contents in a single step. This API is specific to cross-document transitions.",
   "category": "CSS",
-  "spec": [
-    "https://www.w3.org/TR/css-view-transitions-2/",
-    "https://drafts.csswg.org/css-view-transitions-2/#cross-doc-opt-in",
-    "https://drafts.csswg.org/css-view-transitions-2/#cssviewtransitionrule",
-    "https://drafts.csswg.org/css-view-transitions-2/#dom-cssviewtransitionrule-navigation",
-    "https://drafts.csswg.org/css-view-transitions-2/#dom-cssviewtransitionrule-types",
-    "https://drafts.csswg.org/css-view-transitions-2/#view-transition-rule"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@view-transition",
   "links": [
     {
@@ -34,400 +26,39 @@
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "126",
-      "versions": [
-        {
-          "version": "137",
-          "status": "y"
-        },
-        {
-          "version": "138",
-          "status": "y"
-        },
-        {
-          "version": "139",
-          "status": "y"
-        },
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        },
-        {
-          "version": "144",
-          "status": "y"
-        },
-        {
-          "version": "145",
-          "status": "y"
-        },
-        {
-          "version": "146",
-          "status": "y"
-        }
-      ]
+      "firstFull": "126"
     },
     "firefox": {
-      "current": "u",
-      "versions": [
-        {
-          "version": "140",
-          "status": "n"
-        },
-        {
-          "version": "141",
-          "status": "n"
-        },
-        {
-          "version": "142",
-          "status": "n"
-        },
-        {
-          "version": "143",
-          "status": "u",
-          "flags": [
-            "disabled",
-            "footnote"
-          ]
-        },
-        {
-          "version": "144",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "145",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "146",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "147",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "148",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        },
-        {
-          "version": "149",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        }
-      ]
+      "current": "u"
     },
     "safari": {
       "current": "y",
-      "firstFull": "18.2",
-      "versions": [
-        {
-          "version": "18.1",
-          "status": "n"
-        },
-        {
-          "version": "18.2",
-          "status": "y"
-        },
-        {
-          "version": "18.3",
-          "status": "y"
-        },
-        {
-          "version": "18.4",
-          "status": "y"
-        },
-        {
-          "version": "18.5-18.6",
-          "status": "y"
-        },
-        {
-          "version": "26.0",
-          "status": "y"
-        },
-        {
-          "version": "26.1",
-          "status": "y"
-        },
-        {
-          "version": "26.2",
-          "status": "y"
-        },
-        {
-          "version": "26.3",
-          "status": "y"
-        },
-        {
-          "version": "TP",
-          "status": "y"
-        }
-      ]
+      "firstFull": "18.2"
     },
     "edge": {
       "current": "y",
-      "firstFull": "126",
-      "versions": [
-        {
-          "version": "134",
-          "status": "y"
-        },
-        {
-          "version": "135",
-          "status": "y"
-        },
-        {
-          "version": "136",
-          "status": "y"
-        },
-        {
-          "version": "137",
-          "status": "y"
-        },
-        {
-          "version": "138",
-          "status": "y"
-        },
-        {
-          "version": "139",
-          "status": "y"
-        },
-        {
-          "version": "140",
-          "status": "y"
-        },
-        {
-          "version": "141",
-          "status": "y"
-        },
-        {
-          "version": "142",
-          "status": "y"
-        },
-        {
-          "version": "143",
-          "status": "y"
-        }
-      ]
+      "firstFull": "126"
     },
     "opera": {
       "current": "y",
-      "firstFull": "112",
-      "versions": [
-        {
-          "version": "116",
-          "status": "y"
-        },
-        {
-          "version": "117",
-          "status": "y"
-        },
-        {
-          "version": "118",
-          "status": "y"
-        },
-        {
-          "version": "119",
-          "status": "y"
-        },
-        {
-          "version": "120",
-          "status": "y"
-        },
-        {
-          "version": "121",
-          "status": "y"
-        },
-        {
-          "version": "122",
-          "status": "y"
-        },
-        {
-          "version": "123",
-          "status": "y"
-        },
-        {
-          "version": "124",
-          "status": "y"
-        },
-        {
-          "version": "125",
-          "status": "y"
-        }
-      ]
+      "firstFull": "112"
     },
     "ie": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "5.5",
-          "status": "n"
-        },
-        {
-          "version": "6",
-          "status": "n"
-        },
-        {
-          "version": "7",
-          "status": "n"
-        },
-        {
-          "version": "8",
-          "status": "n"
-        },
-        {
-          "version": "9",
-          "status": "n"
-        },
-        {
-          "version": "10",
-          "status": "n"
-        },
-        {
-          "version": "11",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "18.2",
-      "versions": [
-        {
-          "version": "18.0",
-          "status": "n"
-        },
-        {
-          "version": "18.1",
-          "status": "n"
-        },
-        {
-          "version": "18.2",
-          "status": "y"
-        },
-        {
-          "version": "18.3",
-          "status": "y"
-        },
-        {
-          "version": "18.4",
-          "status": "y"
-        },
-        {
-          "version": "18.5-18.7",
-          "status": "y"
-        },
-        {
-          "version": "26.0",
-          "status": "y"
-        },
-        {
-          "version": "26.1",
-          "status": "y"
-        },
-        {
-          "version": "26.2",
-          "status": "y"
-        },
-        {
-          "version": "26.3",
-          "status": "y"
-        }
-      ]
+      "firstFull": "18.2"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "143",
-      "versions": [
-        {
-          "version": "143",
-          "status": "y"
-        }
-      ]
+      "firstFull": "143"
     },
     "samsung": {
-      "current": "n",
-      "versions": [
-        {
-          "version": "20",
-          "status": "n"
-        },
-        {
-          "version": "21",
-          "status": "n"
-        },
-        {
-          "version": "22",
-          "status": "n"
-        },
-        {
-          "version": "23",
-          "status": "n"
-        },
-        {
-          "version": "24",
-          "status": "n"
-        },
-        {
-          "version": "25",
-          "status": "n"
-        },
-        {
-          "version": "26",
-          "status": "n"
-        },
-        {
-          "version": "27",
-          "status": "n"
-        },
-        {
-          "version": "28",
-          "status": "n"
-        },
-        {
-          "version": "29",
-          "status": "n"
-        }
-      ]
+      "current": "n"
     },
     "and_ff": {
-      "current": "u",
-      "versions": [
-        {
-          "version": "146",
-          "status": "u",
-          "flags": [
-            "footnote"
-          ]
-        }
-      ]
+      "current": "u"
     }
   },
   "usage": {
@@ -457,7 +88,6 @@
       "2": "Partial support refers to only supporting [View Transitions Level 1](/view-transitions)"
     }
   },
-  "status": "wd",
   "baseline": false,
   "sourceData": {
     "primary": {

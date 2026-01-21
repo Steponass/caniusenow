@@ -4,123 +4,46 @@
   "name": "Reporting API",
   "description": "The Reporting-Endpoints HTTP header and ReportingObserver() API send reports of Content Security Policy (CSP) violations, Permissions-Policy violations, deprecated feature usage, browser interventions, and crashes to a nominated URL or callback function.",
   "category": "Other",
-  "spec": [
-    "https://w3c.github.io/reporting/",
-    "https://wicg.github.io/intervention-reporting/",
-    "https://wicg.github.io/deprecation-reporting/",
-    "https://w3c.github.io/webappsec-csp/#reporting",
-    "https://wicg.github.io/deprecation-reporting/#deprecationreportbody",
-    "https://wicg.github.io/deprecation-reporting/#dom-deprecationreportbody-anticipatedremoval",
-    "https://wicg.github.io/deprecation-reporting/#dom-deprecationreportbody-columnnumber",
-    "https://wicg.github.io/deprecation-reporting/#dom-deprecationreportbody-id",
-    "https://wicg.github.io/deprecation-reporting/#dom-deprecationreportbody-linenumber",
-    "https://wicg.github.io/deprecation-reporting/#dom-deprecationreportbody-message",
-    "https://wicg.github.io/deprecation-reporting/#dom-deprecationreportbody-sourcefile",
-    "https://wicg.github.io/deprecation-reporting/#dom-deprecationreportbody-tojson",
-    "https://wicg.github.io/intervention-reporting/#intervention-report",
-    "https://wicg.github.io/intervention-reporting/#dom-interventionreportbody-columnnumber",
-    "https://wicg.github.io/intervention-reporting/#dom-interventionreportbody-id",
-    "https://wicg.github.io/intervention-reporting/#dom-interventionreportbody-linenumber",
-    "https://wicg.github.io/intervention-reporting/#dom-interventionreportbody-message",
-    "https://wicg.github.io/intervention-reporting/#dom-interventionreportbody-sourcefile",
-    "https://wicg.github.io/intervention-reporting/#dom-interventionreportbody-tojson",
-    "https://w3c.github.io/reporting/#interface-reporting-observer",
-    "https://w3c.github.io/reporting/#dom-reportingobserver-reportingobserver",
-    "https://w3c.github.io/reporting/#dom-reportingobserver-disconnect",
-    "https://w3c.github.io/reporting/#dom-reportingobserver-observe",
-    "https://w3c.github.io/reporting/#dom-reportingobserver-takerecords",
-    "https://w3c.github.io/reporting/#header-field-registration"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Reporting-Endpoints",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "96",
-      "versions": [
-        {
-          "version": "96",
-          "status": "y"
-        }
-      ]
+      "firstFull": "96"
     },
     "safari": {
       "current": "y",
-      "firstFull": "16.4",
-      "versions": [
-        {
-          "version": "16.4",
-          "status": "y"
-        }
-      ]
+      "firstFull": "16.4"
     },
     "edge": {
       "current": "y",
-      "firstFull": "96",
-      "versions": [
-        {
-          "version": "96",
-          "status": "y"
-        }
-      ]
+      "firstFull": "96"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
       "current": "y",
-      "firstFull": "96",
-      "versions": [
-        {
-          "version": "96",
-          "status": "y"
-        }
-      ]
+      "firstFull": "96"
     },
     "ie": {
       "current": "y",
-      "firstFull": "96",
-      "versions": [
-        {
-          "version": "96",
-          "status": "y"
-        }
-      ]
+      "firstFull": "96"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "16.4",
-      "versions": [
-        {
-          "version": "16.4",
-          "status": "y"
-        }
-      ]
+      "firstFull": "16.4"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "96",
-      "versions": [
-        {
-          "version": "96",
-          "status": "y"
-        }
-      ]
+      "firstFull": "96"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "96",
-      "versions": [
-        {
-          "version": "96",
-          "status": "y"
-        }
-      ]
+      "firstFull": "96"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -143,7 +66,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

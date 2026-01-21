@@ -4,114 +4,38 @@
   "name": "Layers (WebXR)",
   "description": "WebXR layer types, such as XRCylinderLayer, XRCylinderLayer, XREquirectLayer, XRProjectionLayer or XRQuadLayer, are managed by the system compositor, to reduce latency or resampling.",
   "category": "Other",
-  "spec": [
-    "https://immersive-web.github.io/layers/",
-    "https://immersive-web.github.io/layers/#xrcompositionlayertype",
-    "https://immersive-web.github.io/layers/#dom-xrcompositionlayer-blendtexturesourcealpha",
-    "https://immersive-web.github.io/layers/#dom-xrcompositionlayer-destroy",
-    "https://immersive-web.github.io/layers/#dom-xrcompositionlayer-layout",
-    "https://immersive-web.github.io/layers/#dom-xrcompositionlayer-miplevels",
-    "https://immersive-web.github.io/layers/#dom-xrcompositionlayer-needsredraw",
-    "https://immersive-web.github.io/layers/#xcubelayertype",
-    "https://immersive-web.github.io/layers/#dom-xrcubelayer-orientation",
-    "https://immersive-web.github.io/layers/#dom-xrcubelayer-onredraw",
-    "https://immersive-web.github.io/layers/#dom-xrcubelayer-space",
-    "https://immersive-web.github.io/layers/#xrcylinderayertype",
-    "https://immersive-web.github.io/layers/#dom-xrcylinderlayer-aspectratio",
-    "https://immersive-web.github.io/layers/#dom-xrcylinderlayer-centralangle",
-    "https://immersive-web.github.io/layers/#dom-xrcylinderlayer-radius",
-    "https://immersive-web.github.io/layers/#dom-xrcylinderlayer-onredraw",
-    "https://immersive-web.github.io/layers/#dom-xrcylinderlayer-space",
-    "https://immersive-web.github.io/layers/#dom-xrcylinderlayer-transform",
-    "https://immersive-web.github.io/layers/#xrequirectlayertype",
-    "https://immersive-web.github.io/layers/#dom-xrequirectlayer-centralhorizontalangle",
-    "https://immersive-web.github.io/layers/#dom-xrequirectlayer-lowerverticalangle",
-    "https://immersive-web.github.io/layers/#dom-xrequirectlayer-radius",
-    "https://immersive-web.github.io/layers/#dom-xrequirectlayer-onredraw",
-    "https://immersive-web.github.io/layers/#dom-xrequirectlayer-space",
-    "https://immersive-web.github.io/layers/#dom-xrequirectlayer-transform",
-    "https://immersive-web.github.io/layers/#dom-xrequirectlayer-upperverticalangle",
-    "https://immersive-web.github.io/layers/#xrlayerevent-interface",
-    "https://immersive-web.github.io/layers/#dom-xrlayerevent-xrlayerevent",
-    "https://immersive-web.github.io/layers/#dom-xrlayerevent-layer",
-    "https://immersive-web.github.io/layers/#XRWebGLBindingtype",
-    "https://immersive-web.github.io/layers/#dom-xrmediabinding-xrmediabinding",
-    "https://immersive-web.github.io/layers/#dom-xrmediabinding-createcylinderlayer",
-    "https://immersive-web.github.io/layers/#dom-xrmediabinding-createequirectlayer",
-    "https://immersive-web.github.io/layers/#dom-xrmediabinding-createquadlayer",
-    "https://immersive-web.github.io/layers/#xrprojectionlayertype",
-    "https://immersive-web.github.io/layers/#dom-xrprojectionlayer-fixedfoveation",
-    "https://immersive-web.github.io/layers/#dom-xrprojectionlayer-ignoredepthvalues",
-    "https://immersive-web.github.io/layers/#dom-xrprojectionlayer-texturearraylength",
-    "https://immersive-web.github.io/layers/#dom-xrprojectionlayer-textureheight",
-    "https://immersive-web.github.io/layers/#dom-xrprojectionlayer-texturewidth",
-    "https://immersive-web.github.io/layers/#xrquadlayertype",
-    "https://immersive-web.github.io/layers/#dom-xrquadlayer-height",
-    "https://immersive-web.github.io/layers/#dom-xrquadlayer-onredraw",
-    "https://immersive-web.github.io/layers/#dom-xrquadlayer-space",
-    "https://immersive-web.github.io/layers/#dom-xrquadlayer-transform",
-    "https://immersive-web.github.io/layers/#dom-xrquadlayer-width",
-    "https://immersive-web.github.io/layers/#dom-xrrenderstate-layers",
-    "https://immersive-web.github.io/layers/#xrsubimagetype",
-    "https://immersive-web.github.io/layers/#dom-xrsubimage-viewport",
-    "https://immersive-web.github.io/layers/#dom-xrwebglbinding-xrwebglbinding",
-    "https://immersive-web.github.io/layers/#dom-xrwebglbinding-createcubelayer",
-    "https://immersive-web.github.io/layers/#dom-xrwebglbinding-createcylinderlayer",
-    "https://immersive-web.github.io/layers/#dom-xrwebglbinding-createequirectlayer",
-    "https://immersive-web.github.io/layers/#dom-xrwebglbinding-createprojectionlayer",
-    "https://immersive-web.github.io/layers/#dom-xrwebglbinding-createquadlayer",
-    "https://immersive-web.github.io/layers/#dom-xrwebglbinding-getsubimage",
-    "https://immersive-web.github.io/layers/#dom-xrwebglbinding-getviewsubimage",
-    "https://immersive-web.github.io/layers/#dom-xrwebglbinding-nativeprojectionscalefactor",
-    "https://immersive-web.github.io/layers/#xrwebglsubimagetype",
-    "https://immersive-web.github.io/layers/#dom-xrwebglsubimage-colortexture",
-    "https://immersive-web.github.io/layers/#dom-xrwebglsubimage-colortextureheight",
-    "https://immersive-web.github.io/layers/#dom-xrwebglsubimage-colortexturewidth",
-    "https://immersive-web.github.io/layers/#dom-xrwebglsubimage-depthstenciltexture",
-    "https://immersive-web.github.io/layers/#dom-xrwebglsubimage-imageindex"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/XRWebGLSubImage/imageIndex",
   "links": [],
   "support": {
     "chrome": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "safari": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "edge": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "ie": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "and_chr": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "samsung": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -126,7 +50,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

@@ -4,172 +4,48 @@
   "name": "<input>",
   "description": "The <input type=\"text\"> HTML element allows the user to enter information into a form. By default, an <input> element is a text input.",
   "category": "Other",
-  "spec": [
-    "https://html.spec.whatwg.org/multipage/input.html#the-input-element",
-    "https://html.spec.whatwg.org/multipage/input.html#htmlinputelement",
-    "https://html.spec.whatwg.org/multipage/input.html#dom-input-accept",
-    "https://html.spec.whatwg.org/multipage/input.html#dom-input-alt",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fe-autocomplete",
-    "https://html.spec.whatwg.org/multipage/indices.html#event-cancel",
-    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncancel",
-    "https://html.spec.whatwg.org/multipage/input.html#dom-input-checked",
-    "https://html.spec.whatwg.org/multipage/input.html#dom-input-defaultvalue",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fe-disabled",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fae-form-dev",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formaction",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formenctype",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formmethod",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formnovalidate",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formtarget",
-    "https://html.spec.whatwg.org/multipage/input.html#dom-input-height",
-    "https://html.spec.whatwg.org/multipage/indices.html#event-invalid",
-    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oninvalid",
-    "https://html.spec.whatwg.org/multipage/forms.html#dom-lfe-labels-dev",
-    "https://html.spec.whatwg.org/multipage/input.html#dom-input-list-dev",
-    "https://html.spec.whatwg.org/multipage/input.html#dom-input-maxlength",
-    "https://html.spec.whatwg.org/multipage/input.html#dom-input-minlength",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fe-name",
-    "https://html.spec.whatwg.org/multipage/input.html#dom-input-pattern",
-    "https://html.spec.whatwg.org/multipage/input.html#dom-input-placeholder",
-    "https://html.spec.whatwg.org/multipage/input.html#dom-input-readonly",
-    "https://html.spec.whatwg.org/multipage/input.html#dom-input-required",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-select",
-    "https://html.spec.whatwg.org/multipage/indices.html#event-select",
-    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onselect",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-selectiondirection-dev",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-selectionend",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-selectionstart",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-setrangetext-dev",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-setselectionrange-dev",
-    "https://html.spec.whatwg.org/multipage/input.html#dom-input-size",
-    "https://html.spec.whatwg.org/multipage/input.html#dom-input-type",
-    "https://html.spec.whatwg.org/multipage/input.html#dom-input-value",
-    "https://html.spec.whatwg.org/multipage/input.html#dom-input-width",
-    "https://html.spec.whatwg.org/multipage/input.html#attr-input-accept",
-    "https://html.spec.whatwg.org/multipage/input.html#attr-input-alt",
-    "https://html.spec.whatwg.org/multipage/input.html#attr-input-checked",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formaction",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formenctype",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formmethod",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formnovalidate",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formtarget",
-    "https://html.spec.whatwg.org/multipage/input.html#attr-input-list",
-    "https://html.spec.whatwg.org/multipage/input.html#attr-input-maxlength",
-    "https://html.spec.whatwg.org/multipage/input.html#attr-input-minlength",
-    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
-    "https://html.spec.whatwg.org/multipage/input.html#attr-input-pattern",
-    "https://html.spec.whatwg.org/multipage/input.html#attr-input-placeholder",
-    "https://html.spec.whatwg.org/multipage/input.html#attr-input-readonly",
-    "https://html.spec.whatwg.org/multipage/input.html#attr-input-required",
-    "https://html.spec.whatwg.org/multipage/input.html#attr-input-size",
-    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-size",
-    "https://html.spec.whatwg.org/multipage/input.html#attr-input-src",
-    "https://html.spec.whatwg.org/multipage/input.html#text-(type=text)-state-and-search-state-(type=search)"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/text",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "firefox": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "safari": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "edge": {
       "current": "y",
-      "firstFull": "12",
-      "versions": [
-        {
-          "version": "12",
-          "status": "y"
-        }
-      ]
+      "firstFull": "12"
     },
     "opera": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "ie": {
       "current": "y",
-      "firstFull": "12",
-      "versions": [
-        {
-          "version": "12",
-          "status": "y"
-        }
-      ]
+      "firstFull": "12"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     },
     "and_ff": {
       "current": "y",
-      "firstFull": "1",
-      "versions": [
-        {
-          "version": "1",
-          "status": "y"
-        }
-      ]
+      "firstFull": "1"
     }
   },
   "usage": {
@@ -195,7 +71,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": "high",
   "sourceData": {
     "primary": {

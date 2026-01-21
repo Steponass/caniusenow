@@ -608,24 +608,3 @@ export function extractQuickSupport(
   
   return quick;
 }
-
-/**
- * Extract first support date across all browsers
- */
-export function extractFirstSupport(support: BrowserSupport): string {
-  let earliestVersion = "";
-  let earliestBrowser = "";
-  
-  for (const browser of TARGET_BROWSERS) {
-    const browserSupport = support[browser];
-    
-    if (!browserSupport || !browserSupport.firstFull) continue;
-    
-    if (!earliestVersion || compareVersions(browserSupport.firstFull, earliestVersion) < 0) {
-      earliestVersion = browserSupport.firstFull;
-      earliestBrowser = browser;
-    }
-  }
-  
-  return earliestVersion ? `${earliestBrowser} ${earliestVersion}` : "Unknown";
-}

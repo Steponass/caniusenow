@@ -4,120 +4,48 @@
   "name": "Event timing",
   "description": "The event and first-input performance entries and the PerformanceEventTiming API measures the latency of user input events, such as mouse clicks or keypresses. They're used to calculate Interaction to Next Paint (INP), a common metric for perceived responsiveness.",
   "category": "Other",
-  "spec": [
-    "https://w3c.github.io/event-timing/",
-    "https://w3c.github.io/event-timing/#sec-event-counts",
-    "https://w3c.github.io/event-timing/#dom-performance-eventcounts",
-    "https://w3c.github.io/event-timing/#sec-performance-event-timing",
-    "https://w3c.github.io/event-timing/#dom-performanceeventtiming-cancelable",
-    "https://w3c.github.io/event-timing/#dom-performanceeventtiming-interactionid",
-    "https://w3c.github.io/event-timing/#dom-performanceeventtiming-processingend",
-    "https://w3c.github.io/event-timing/#dom-performanceeventtiming-processingstart",
-    "https://w3c.github.io/event-timing/#dom-performanceeventtiming-target",
-    "https://w3c.github.io/event-timing/#dom-performanceeventtiming-tojson"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/toJSON",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "76",
-      "versions": [
-        {
-          "version": "76",
-          "status": "y"
-        }
-      ]
+      "firstFull": "76"
     },
     "firefox": {
       "current": "y",
-      "firstFull": "89",
-      "versions": [
-        {
-          "version": "89",
-          "status": "y"
-        }
-      ]
+      "firstFull": "89"
     },
     "safari": {
       "current": "y",
-      "firstFull": "26.2",
-      "versions": [
-        {
-          "version": "26.2",
-          "status": "y"
-        }
-      ]
+      "firstFull": "26.2"
     },
     "edge": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "opera": {
       "current": "y",
-      "firstFull": "76",
-      "versions": [
-        {
-          "version": "76",
-          "status": "y"
-        }
-      ]
+      "firstFull": "76"
     },
     "ie": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "26.2",
-      "versions": [
-        {
-          "version": "26.2",
-          "status": "y"
-        }
-      ]
+      "firstFull": "26.2"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "76",
-      "versions": [
-        {
-          "version": "76",
-          "status": "y"
-        }
-      ]
+      "firstFull": "76"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "76",
-      "versions": [
-        {
-          "version": "76",
-          "status": "y"
-        }
-      ]
+      "firstFull": "76"
     },
     "and_ff": {
       "current": "y",
-      "firstFull": "89",
-      "versions": [
-        {
-          "version": "89",
-          "status": "y"
-        }
-      ]
+      "firstFull": "89"
     }
   },
   "usage": {
@@ -142,7 +70,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": "low",
   "sourceData": {
     "primary": {

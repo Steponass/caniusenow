@@ -4,296 +4,48 @@
   "name": "WebRTC statistics",
   "description": "The RTCPeerConnection.getStats(), RTCRtpSender.getStats(), and RTCRtpReceiver.getStats() methods return detailed information about the status, performance, network, and media for a given WebRTC connection.",
   "category": "Other",
-  "spec": [
-    "https://w3c.github.io/webrtc-stats/",
-    "https://w3c.github.io/webrtc-pc/#widl-RTCPeerConnection-getStats-Promise-RTCStatsReport--MediaStreamTrack-selector",
-    "https://w3c.github.io/webrtc-pc/#widl-RTCRtpReceiver-getStats-Promise-RTCStatsReport",
-    "https://w3c.github.io/webrtc-pc/#widl-RTCRtpSender-getStats-Promise-RTCStatsReport",
-    "https://w3c.github.io/webrtc-pc/#rtcstatsreport-object",
-    "https://w3c.github.io/webrtc-pc/#dom-rtcstatsreport",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-candidate-pair",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-availableoutgoingbitrate",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-bytesdiscardedonsend",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-bytesreceived",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-bytessent",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-consentrequestssent",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-currentroundtriptime",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcstats-id",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-lastpacketreceivedtimestamp",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-lastpacketsenttimestamp",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-localcandidateid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-nominated",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-packetsdiscardedonsend",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-packetsreceived",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-packetssent",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-remotecandidateid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-requestsreceived",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-requestssent",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-responsesreceived",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-responsessent",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-state",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcstats-timestamp",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-totalroundtriptime",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-transportid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcstats-type",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-certificate",
-    "https://w3c.github.io/webrtc-stats/#dom-rtccertificatestats-base64certificate",
-    "https://w3c.github.io/webrtc-stats/#dom-rtccertificatestats-fingerprint",
-    "https://w3c.github.io/webrtc-stats/#dom-rtccertificatestats-fingerprintalgorithm",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-codec",
-    "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats-channels",
-    "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats-clockrate",
-    "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats-mimetype",
-    "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats-payloadtype",
-    "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats-sdpfmtpline",
-    "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats-transportid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-data-channel",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-bytesreceived",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-bytessent",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-datachannelidentifier",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-label",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-messagesreceived",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-messagessent",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-protocol",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-state",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-inbound-rtp",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-audiolevel",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-bytesreceived",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcrtpstreamstats-codecid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-concealedsamples",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-concealmentevents",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-estimatedplayouttimestamp",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-fecpacketsdiscarded",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-fecpacketsreceived",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-frameheight",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-framewidth",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-framesassembledfrommultiplepackets",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-framesdecoded",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-framespersecond",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-framesreceived",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-freezecount",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-headerbytesreceived",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-insertedsamplesfordeceleration",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-jitter",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-jitterbufferdelay",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-jitterbufferemittedcount",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-jitterbufferminimumdelay",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-jitterbuffertargetdelay",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-keyframesdecoded",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcrtpstreamstats-kind",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-lastpacketreceivedtimestamp",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-mid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-nackcount",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-packetsdiscarded",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-packetslost",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-packetsreceived",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-pausecount",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-playoutid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-qpsum",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-remoteid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-removedsamplesforacceleration",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-silentconcealedsamples",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcrtpstreamstats-ssrc",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalassemblytime",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalaudioenergy",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totaldecodetime",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalfreezesduration",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalinterframedelay",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalpausesduration",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalprocessingdelay",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalsamplesduration",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalsamplesreceived",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalsquaredinterframedelay",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-trackidentifier",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcrtpstreamstats-transportid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-local-candidate",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-address",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-candidatetype",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-foundation",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-port",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-priority",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-protocol",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-transportid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-usernamefragment",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-media-playout",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-kind",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-synthesizedsamplesduration",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-synthesizedsamplesevents",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-totalplayoutdelay",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-totalsamplescount",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-totalsamplesduration",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-media-source",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosourcestats-audiolevel",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcvideosourcestats-frames",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcvideosourcestats-framespersecond",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcvideosourcestats-height",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcmediasourcestats-kind",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosourcestats-totalaudioenergy",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosourcestats-totalsamplesduration",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcmediasourcestats-trackidentifier",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcvideosourcestats-width",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-outbound-rtp",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-active",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcsentrtpstreamstats-bytessent",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-frameheight",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-framewidth",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-framesencoded",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-framespersecond",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-framessent",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-headerbytessent",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-keyframesencoded",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-mediasourceid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-mid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-nackcount",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcsentrtpstreamstats-packetssent",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-qpsum",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-qualitylimitationdurations",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-qualitylimitationreason",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-remoteid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-retransmittedbytessent",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-retransmittedpacketssent",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-rid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-scalabilitymode",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-targetbitrate",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-totalencodetime",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-totalencodedbytestarget",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-totalpacketsenddelay",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-peer-connection",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcpeerconnectionstats-datachannelsclosed",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcpeerconnectionstats-datachannelsopened",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-remote-candidate",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-remote-inbound-rtp",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-fractionlost",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-localid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-roundtriptime",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-roundtriptimemeasurements",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-totalroundtriptime",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-remote-outbound-rtp",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteoutboundrtpstreamstats-localid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteoutboundrtpstreamstats-remotetimestamp",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteoutboundrtpstreamstats-reportssent",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteoutboundrtpstreamstats-roundtriptimemeasurements",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteoutboundrtpstreamstats-totalroundtriptime",
-    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-transport",
-    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-bytesreceived",
-    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-bytessent",
-    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-dtlscipher",
-    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-dtlsrole",
-    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-dtlsstate",
-    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-icelocalusernamefragment",
-    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-icerole",
-    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-icestate",
-    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-localcertificateid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-packetsreceived",
-    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-packetssent",
-    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-remotecertificateid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-selectedcandidatepairchanges",
-    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-selectedcandidatepairid",
-    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-srtpcipher",
-    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-tlsversion"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/RTCStatsReport/values",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "58",
-      "versions": [
-        {
-          "version": "58",
-          "status": "y"
-        }
-      ]
+      "firstFull": "58"
     },
     "firefox": {
       "current": "y",
-      "firstFull": "44",
-      "versions": [
-        {
-          "version": "44",
-          "status": "y"
-        }
-      ]
+      "firstFull": "44"
     },
     "safari": {
       "current": "y",
-      "firstFull": "11",
-      "versions": [
-        {
-          "version": "11",
-          "status": "y"
-        }
-      ]
+      "firstFull": "11"
     },
     "edge": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "opera": {
       "current": "y",
-      "firstFull": "58",
-      "versions": [
-        {
-          "version": "58",
-          "status": "y"
-        }
-      ]
+      "firstFull": "58"
     },
     "ie": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "11",
-      "versions": [
-        {
-          "version": "11",
-          "status": "y"
-        }
-      ]
+      "firstFull": "11"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "58",
-      "versions": [
-        {
-          "version": "58",
-          "status": "y"
-        }
-      ]
+      "firstFull": "58"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "58",
-      "versions": [
-        {
-          "version": "58",
-          "status": "y"
-        }
-      ]
+      "firstFull": "58"
     },
     "and_ff": {
       "current": "y",
-      "firstFull": "44",
-      "versions": [
-        {
-          "version": "44",
-          "status": "y"
-        }
-      ]
+      "firstFull": "44"
     }
   },
   "usage": {
@@ -318,7 +70,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": "high",
   "sourceData": {
     "primary": {

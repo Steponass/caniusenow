@@ -4,96 +4,44 @@
   "name": "Long tasks",
   "description": "The longtask performance event type and the PerformanceLongTaskTiming API provides information about tasks that occupy the UI thread for 50 milliseconds or more, a metric for input latency, delayed animations, and other sources of \"jank.\"",
   "category": "Other",
-  "spec": [
-    "https://w3c.github.io/longtasks/",
-    "https://w3c.github.io/longtasks/#sec-PerformanceLongTaskTiming",
-    "https://w3c.github.io/longtasks/#dom-performancelongtasktiming-attribution",
-    "https://w3c.github.io/longtasks/#dom-performancelongtasktiming-tojson",
-    "https://w3c.github.io/longtasks/#sec-TaskAttributionTiming",
-    "https://w3c.github.io/longtasks/#dom-taskattributiontiming-containerid",
-    "https://w3c.github.io/longtasks/#dom-taskattributiontiming-containername",
-    "https://w3c.github.io/longtasks/#dom-taskattributiontiming-containersrc",
-    "https://w3c.github.io/longtasks/#dom-taskattributiontiming-containertype",
-    "https://w3c.github.io/longtasks/#dom-taskattributiontiming-tojson"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/TaskAttributionTiming/toJSON",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "58",
-      "versions": [
-        {
-          "version": "58",
-          "status": "y"
-        }
-      ]
+      "firstFull": "58"
     },
     "edge": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "safari": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
       "current": "y",
-      "firstFull": "58",
-      "versions": [
-        {
-          "version": "58",
-          "status": "y"
-        }
-      ]
+      "firstFull": "58"
     },
     "ie": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "ios_saf": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "58",
-      "versions": [
-        {
-          "version": "58",
-          "status": "y"
-        }
-      ]
+      "firstFull": "58"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "58",
-      "versions": [
-        {
-          "version": "58",
-          "status": "y"
-        }
-      ]
+      "firstFull": "58"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -114,7 +62,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {

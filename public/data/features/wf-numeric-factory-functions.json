@@ -4,162 +4,46 @@
   "name": "Numeric factory functions",
   "description": "The numeric factory functions, such as CSS.px() or CSS.kHz(), return a CSSUnitValue representing a CSS number value (as in 12px or 440kHz).",
   "category": "Other",
-  "spec": [
-    "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-hz",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-q",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-cap",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-ch",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-cm",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-cqb",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-cqh",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-cqi",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-cqmax",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-cqmin",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-cqw",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-deg",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-dpcm",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-dpi",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-dppx",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-dvb",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-dvh",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-dvi",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-dvmax",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-dvmin",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-dvw",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-em",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-ex",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-fr",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-grad",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-ic",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-in",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-khz",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-lh",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-lvb",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-lvh",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-lvi",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-lvmax",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-lvmin",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-lvw",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-mm",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-ms",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-number",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-pc",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-percent",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-pt",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-px",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-rad",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-rcap",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-rch",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-rem",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-rex",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-ric",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-rlh",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-s",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-svb",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-svh",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-svi",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-svmax",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-svmin",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-svw",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-turn",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-vb",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-vh",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-vi",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-vmax",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-vmin",
-    "https://drafts.css-houdini.org/css-typed-om/#dom-css-vw"
-  ],
   "mdn": "https://developer.mozilla.org/docs/Web/API/CSS/factory_functions_static",
   "links": [],
   "support": {
     "chrome": {
       "current": "y",
-      "firstFull": "66",
-      "versions": [
-        {
-          "version": "66",
-          "status": "y"
-        }
-      ]
+      "firstFull": "66"
     },
     "safari": {
       "current": "y",
-      "firstFull": "16.4",
-      "versions": [
-        {
-          "version": "16.4",
-          "status": "y"
-        }
-      ]
+      "firstFull": "16.4"
     },
     "edge": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "firefox": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     },
     "opera": {
       "current": "y",
-      "firstFull": "66",
-      "versions": [
-        {
-          "version": "66",
-          "status": "y"
-        }
-      ]
+      "firstFull": "66"
     },
     "ie": {
       "current": "y",
-      "firstFull": "79",
-      "versions": [
-        {
-          "version": "79",
-          "status": "y"
-        }
-      ]
+      "firstFull": "79"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "16.4",
-      "versions": [
-        {
-          "version": "16.4",
-          "status": "y"
-        }
-      ]
+      "firstFull": "16.4"
     },
     "and_chr": {
       "current": "y",
-      "firstFull": "66",
-      "versions": [
-        {
-          "version": "66",
-          "status": "y"
-        }
-      ]
+      "firstFull": "66"
     },
     "samsung": {
       "current": "y",
-      "firstFull": "66",
-      "versions": [
-        {
-          "version": "66",
-          "status": "y"
-        }
-      ]
+      "firstFull": "66"
     },
     "and_ff": {
-      "current": "n",
-      "versions": []
+      "current": "n"
     }
   },
   "usage": {
@@ -182,7 +66,6 @@
     },
     "type": "estimated"
   },
-  "status": "other",
   "baseline": false,
   "sourceData": {
     "primary": {
