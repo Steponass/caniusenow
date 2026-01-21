@@ -1,0 +1,163 @@
+{
+  "id": "wf-with",
+  "source": "webfeatures",
+  "name": "with",
+  "description": "The with JavaScript statement adds a given object to the chain of scopes used to evaluate names.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-with-statement",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype-%symbol.unscopables%",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.unscopables"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/with",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "38",
+      "versions": [
+        {
+          "version": "38",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "48",
+      "versions": [
+        {
+          "version": "48",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "10",
+      "versions": [
+        {
+          "version": "10",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "38",
+      "versions": [
+        {
+          "version": "38",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10",
+      "versions": [
+        {
+          "version": "10",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "38",
+      "versions": [
+        {
+          "version": "38",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "38",
+      "versions": [
+        {
+          "version": "38",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "48",
+      "versions": [
+        {
+          "version": "48",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.4,
+      "partial": 0,
+      "total": 92.4
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.76,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "with"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.@@unscopables",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.unscopables",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.with",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

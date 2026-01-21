@@ -1,0 +1,91 @@
+{
+  "id": "wf-getboxquads",
+  "source": "webfeatures",
+  "name": "getBoxQuads()",
+  "description": "The getBoxQuads() method, when called on a document, element, pseudo-element, or text node, returns the list of DOMQuad objects that represent the CSS boxes used to render the node.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/cssom-view-1/",
+    "https://drafts.csswg.org/cssom-view/#dom-geometryutils-getboxquads"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 0,
+      "total": 0
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "getboxquads"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.getBoxQuads",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.getBoxQuads",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Text.getBoxQuads",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

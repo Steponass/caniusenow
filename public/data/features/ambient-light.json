@@ -1,0 +1,629 @@
+{
+  "id": "ambient-light",
+  "source": "caniuse",
+  "name": "Ambient Light Sensor",
+  "description": "Defines a concrete sensor interface to monitor the ambient light level or illuminance of the device’s environment.",
+  "category": "JS API",
+  "spec": [
+    "https://www.w3.org/TR/ambient-light/",
+    "https://w3c.github.io/ambient-light/",
+    "https://w3c.github.io/ambient-light/#ambient-light-sensor-interface",
+    "https://w3c.github.io/ambient-light/#dom-ambientlightsensor-ambientlightsensor",
+    "https://w3c.github.io/ambient-light/#ambient-light-sensor-reading-attribute",
+    "https://w3c.github.io/sensors/#permissions-policy"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/ambient-light-sensor",
+  "links": [
+    {
+      "url": "https://intel.github.io/generic-sensor-demos/ambient-map/build/bundled/",
+      "title": "Demo"
+    },
+    {
+      "url": "https://developers.google.com/web/updates/2017/09/sensors-for-the-web",
+      "title": "Article"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Ambient_Light_Sensor_API",
+      "title": "MDN Web Docs - Ambient Light Sensor"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "137",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "138",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "139",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "144",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "145",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "firefox": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "144",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "145",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "147",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "148",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "149",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "n"
+        },
+        {
+          "version": "18.2",
+          "status": "n"
+        },
+        {
+          "version": "18.3",
+          "status": "n"
+        },
+        {
+          "version": "18.4",
+          "status": "n"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "n"
+        },
+        {
+          "version": "26.0",
+          "status": "n"
+        },
+        {
+          "version": "26.1",
+          "status": "n"
+        },
+        {
+          "version": "26.2",
+          "status": "n"
+        },
+        {
+          "version": "26.3",
+          "status": "n"
+        },
+        {
+          "version": "TP",
+          "status": "n"
+        }
+      ]
+    },
+    "edge": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "134",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "135",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "136",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "137",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "138",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "139",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "opera": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "116",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "117",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "118",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "119",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "120",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "121",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "122",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "123",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "124",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "125",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "n"
+        },
+        {
+          "version": "18.1",
+          "status": "n"
+        },
+        {
+          "version": "18.2",
+          "status": "n"
+        },
+        {
+          "version": "18.3",
+          "status": "n"
+        },
+        {
+          "version": "18.4",
+          "status": "n"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "n"
+        },
+        {
+          "version": "26.0",
+          "status": "n"
+        },
+        {
+          "version": "26.1",
+          "status": "n"
+        },
+        {
+          "version": "26.2",
+          "status": "n"
+        },
+        {
+          "version": "26.3",
+          "status": "n"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "samsung": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "20",
+          "status": "n"
+        },
+        {
+          "version": "21",
+          "status": "n"
+        },
+        {
+          "version": "22",
+          "status": "n"
+        },
+        {
+          "version": "23",
+          "status": "n"
+        },
+        {
+          "version": "24",
+          "status": "n"
+        },
+        {
+          "version": "25",
+          "status": "n"
+        },
+        {
+          "version": "26",
+          "status": "n"
+        },
+        {
+          "version": "27",
+          "status": "n"
+        },
+        {
+          "version": "28",
+          "status": "n"
+        },
+        {
+          "version": "29",
+          "status": "n"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0.31,
+      "partial": 0.04,
+      "total": 0.35
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Implements an [outdated version of the spec](https://www.w3.org/TR/2015/WD-ambient-light-20150903/).",
+      "2": "Available by enabling the \"Generic Sensor Extra Classes\" experimental flag in `about:flags`"
+    }
+  },
+  "status": "cr",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "ambient-light"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "ambient-light",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AmbientLightSensor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AmbientLightSensor.AmbientLightSensor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AmbientLightSensor.illuminance",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Permissions.permission_ambient-light-sensor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.ambient-light-sensor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.ambient-light-sensor",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

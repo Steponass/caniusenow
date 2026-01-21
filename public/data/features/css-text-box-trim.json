@@ -1,0 +1,568 @@
+{
+  "id": "css-text-box-trim",
+  "source": "caniuse",
+  "name": "CSS Text Box",
+  "description": "CSS `text-box` (and its longhands `text-box-trim` & `text-box-edge`) provide the ability to trim extra space over/under text glyphs at the start/end of a block to match specific font-provided metrics. This allows for more precise alignment and positioning of text. ",
+  "category": "CSS",
+  "spec": [
+    "https://w3c.github.io/csswg-drafts/css-inline-3/#propdef-leading-trim",
+    "https://drafts.csswg.org/css-inline-3/#leading-trim",
+    "https://drafts.csswg.org/css-inline-3/#text-box-shorthand",
+    "https://drafts.csswg.org/css-inline-3/#valdef-text-box-normal",
+    "https://drafts.csswg.org/css-inline-3/#text-box-edge",
+    "https://drafts.csswg.org/css-inline-3/#valdef-text-box-edge-auto",
+    "https://drafts.csswg.org/css-inline-3/#text-box-trim",
+    "https://drafts.csswg.org/css-inline-3/#valdef-text-box-trim-none",
+    "https://drafts.csswg.org/css-inline-3/#valdef-text-box-trim-trim-both",
+    "https://drafts.csswg.org/css-inline-3/#valdef-text-box-trim-trim-end",
+    "https://drafts.csswg.org/css-inline-3/#valdef-text-box-trim-trim-start",
+    "https://drafts.csswg.org/css-inline-3/#typedef-text-edge",
+    "https://drafts.csswg.org/css-inline-3/#valdef-line-fit-edge-alphabetic",
+    "https://drafts.csswg.org/css-inline-3/#valdef-line-fit-edge-cap",
+    "https://drafts.csswg.org/css-inline-3/#valdef-line-fit-edge-ex",
+    "https://drafts.csswg.org/css-inline-3/#valdef-line-fit-edge-text"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/text-edge",
+  "links": [
+    {
+      "url": "https://github.com/jantimon/text-box-trim-examples",
+      "title": "Document with examples of text-box-trim uses"
+    },
+    {
+      "url": "https://css-tricks.com/leading-trim-the-future-of-digital-typesetting/",
+      "title": "CSS Tricks article"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "140",
+          "status": "n"
+        },
+        {
+          "version": "141",
+          "status": "n"
+        },
+        {
+          "version": "142",
+          "status": "n"
+        },
+        {
+          "version": "143",
+          "status": "n"
+        },
+        {
+          "version": "144",
+          "status": "n"
+        },
+        {
+          "version": "145",
+          "status": "n"
+        },
+        {
+          "version": "146",
+          "status": "n"
+        },
+        {
+          "version": "147",
+          "status": "n"
+        },
+        {
+          "version": "148",
+          "status": "n"
+        },
+        {
+          "version": "149",
+          "status": "n"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "18.2",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "116",
+          "status": "n"
+        },
+        {
+          "version": "117",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "118",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "119",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "120",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "121",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "122",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "123",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "124",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "125",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "18.2",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "20",
+          "status": "n"
+        },
+        {
+          "version": "21",
+          "status": "n"
+        },
+        {
+          "version": "22",
+          "status": "n"
+        },
+        {
+          "version": "23",
+          "status": "n"
+        },
+        {
+          "version": "24",
+          "status": "n"
+        },
+        {
+          "version": "25",
+          "status": "n"
+        },
+        {
+          "version": "26",
+          "status": "n"
+        },
+        {
+          "version": "27",
+          "status": "n"
+        },
+        {
+          "version": "28",
+          "status": "n"
+        },
+        {
+          "version": "29",
+          "status": "n"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "146",
+          "status": "n"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 79.69,
+      "partial": 0,
+      "total": 79.69
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 19.95,
+        "safari": 0.71,
+        "edge": 4.15
+      },
+      "mobile": {
+        "ios_saf": 10.22,
+        "and_chr": 44.12
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Available behind a [Safari feature flag](https://developer.apple.com/documentation/safari-developer-tools/feature-flag-settings).",
+      "2": "Can be enabled via the `#text-box-trim` flag in `chrome://flags`"
+    }
+  },
+  "status": "wd",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-text-box-trim"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "text-box",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box.normal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box-edge",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box-edge.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box-trim",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box-trim.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box-trim.trim-both",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box-trim.trim-end",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box-trim.trim-start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.text-edge",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.text-edge.alphabetic",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.text-edge.cap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.text-edge.ex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.text-edge.text",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

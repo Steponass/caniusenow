@@ -1,0 +1,477 @@
+{
+  "id": "wordwrap",
+  "source": "caniuse",
+  "name": "CSS3 Overflow-wrap",
+  "description": "Allows lines to be broken within words if an otherwise unbreakable string is too long to fit. Currently mostly supported using the `word-wrap` property.",
+  "category": "CSS",
+  "spec": [
+    "https://www.w3.org/TR/css3-text/#overflow-wrap",
+    "https://drafts.csswg.org/css-text-4/#overflow-wrap-property",
+    "https://drafts.csswg.org/css-text/#overflow-wrap-property",
+    "https://drafts.csswg.org/css-text/#valdef-overflow-wrap-anywhere",
+    "https://drafts.csswg.org/css-text/#valdef-overflow-wrap-break-word",
+    "https://drafts.csswg.org/css-text/#valdef-overflow-wrap-normal"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/overflow-wrap",
+  "links": [
+    {
+      "url": "https://webplatform.github.io/docs/css/properties/word-wrap",
+      "title": "WebPlatform Docs"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=955857",
+      "title": "Bug on Firefox support"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap",
+      "title": "MDN Web Docs - CSS overflow-wrap"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "23",
+      "firstPartial": "4",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "49",
+      "firstPartial": "3.5",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "6.1",
+      "firstPartial": "3.1",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "18",
+      "firstPartial": "12",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "12.1",
+      "firstPartial": "10.5",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "a",
+      "firstPartial": "5.5",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "a"
+        },
+        {
+          "version": "6",
+          "status": "a"
+        },
+        {
+          "version": "7",
+          "status": "a"
+        },
+        {
+          "version": "8",
+          "status": "a"
+        },
+        {
+          "version": "9",
+          "status": "a"
+        },
+        {
+          "version": "10",
+          "status": "a"
+        },
+        {
+          "version": "11",
+          "status": "a"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "7.0-7.1",
+      "firstPartial": "3.2",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.37,
+      "partial": 0.59,
+      "total": 96.96
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91,
+        "ie": 0.43
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Partial support refers to requiring the legacy name \"word-wrap\" (rather than \"overflow-wrap\") to work.",
+    "byNum": {}
+  },
+  "status": "cr",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "wordwrap"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "overflow-wrap",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow-wrap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow-wrap.anywhere",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow-wrap.break-word",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow-wrap.normal",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

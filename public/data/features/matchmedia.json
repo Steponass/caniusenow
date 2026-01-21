@@ -1,0 +1,509 @@
+{
+  "id": "matchmedia",
+  "source": "caniuse",
+  "name": "matchMedia",
+  "description": "API for finding out whether or not a media query applies to the document.",
+  "category": "Other",
+  "spec": [
+    "https://www.w3.org/TR/cssom-view/#dom-window-matchmedia",
+    "https://drafts.csswg.org/cssom-view-1/#dom-window-matchmedia",
+    "https://drafts.csswg.org/cssom-view/#the-mediaquerylist-interface",
+    "https://drafts.csswg.org/cssom-view/#dom-mediaquerylist-onchange",
+    "https://drafts.csswg.org/cssom-view/#dom-mediaquerylist-matches",
+    "https://drafts.csswg.org/cssom-view/#dom-mediaquerylist-media",
+    "https://drafts.csswg.org/cssom-view/#dom-mediaquerylistevent-mediaquerylistevent",
+    "https://drafts.csswg.org/cssom-view/#dom-mediaquerylistevent-matches",
+    "https://drafts.csswg.org/cssom-view/#dom-mediaquerylistevent-media",
+    "https://drafts.csswg.org/cssom-view/#dom-window-matchmedia"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/matchMedia",
+  "links": [
+    {
+      "url": "https://github.com/paulirish/matchMedia.js/",
+      "title": "matchMedia.js polyfill"
+    },
+    {
+      "url": "https://developer.mozilla.org/en/DOM/window.matchMedia",
+      "title": "MDN Web Docs - matchMedia"
+    },
+    {
+      "url": "https://developer.mozilla.org/en/CSS/Using_media_queries_from_code",
+      "title": "MDN Web Docs - Using matchMedia"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/css/media_queries/apis/matchMedia",
+      "title": "WebPlatform Docs"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "9",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "6",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "5.1",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "12.1",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "10",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "y"
+        },
+        {
+          "version": "11",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "5.0-5.1",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.85,
+      "partial": 0,
+      "total": 96.85
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.82,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91,
+        "ie": 0.36
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "status": "wd",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "matchmedia"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "matchmedia",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaQueryList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaQueryList.EventTarget_inheritance",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaQueryList.change_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaQueryList.matches",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaQueryList.media",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaQueryListEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaQueryListEvent.MediaQueryListEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaQueryListEvent.matches",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaQueryListEvent.media",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.matchMedia",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

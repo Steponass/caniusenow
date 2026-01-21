@@ -1,0 +1,129 @@
+{
+  "id": "wf-wasm-branch-hinting",
+  "source": "webfeatures",
+  "name": "Branch hinting (WebAssembly)",
+  "description": "Branch hints in WebAssembly allows a browser to optimize performance when a branch is a likely to take a specific path.",
+  "category": "Other",
+  "spec": [
+    "https://github.com/WebAssembly/branch-hinting/blob/main/proposals/branch-hinting/Overview.md"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "137",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "16",
+      "versions": [
+        {
+          "version": "16",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "137",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "137",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "137",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16",
+      "versions": [
+        {
+          "version": "16",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "137",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "137",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 80.49,
+      "partial": 0,
+      "total": 80.49
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 19.47,
+        "safari": 1.27,
+        "edge": 4.1
+      },
+      "mobile": {
+        "ios_saf": 11.52,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "wasm-branch-hinting"
+    },
+    "supplementary": []
+  }
+}

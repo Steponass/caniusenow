@@ -1,0 +1,171 @@
+{
+  "id": "wf-array-findlast",
+  "source": "webfeatures",
+  "name": "Array findLast() and findLastIndex()",
+  "description": "The findLast() and findLastIndex() methods of arrays and typed arrays search an array in reverse order for the first item that satisfies a test function.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.findlast",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.findlastindex",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.findlast",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.findlastindex",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.findlast",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.findlastindex"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/findLastIndex",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "97",
+      "versions": [
+        {
+          "version": "97",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "15.4",
+      "versions": [
+        {
+          "version": "15.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "97",
+      "versions": [
+        {
+          "version": "97",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "97",
+      "versions": [
+        {
+          "version": "97",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "97",
+      "versions": [
+        {
+          "version": "97",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.4",
+      "versions": [
+        {
+          "version": "15.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "97",
+      "versions": [
+        {
+          "version": "97",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "97",
+      "versions": [
+        {
+          "version": "97",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.34,
+      "partial": 0,
+      "total": 91.34
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.93,
+        "firefox": 1.75,
+        "safari": 1.37,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.82,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "array-findlast"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.findLast",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.findLastIndex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.findLast",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.findLastIndex",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

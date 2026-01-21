@@ -1,0 +1,576 @@
+{
+  "id": "css-filters",
+  "source": "caniuse",
+  "name": "CSS Filter Effects",
+  "description": "Method of applying filter effects using the `filter` property to elements, matching filters available in SVG. Filter functions include blur, brightness, contrast, drop-shadow, grayscale, hue-rotate, invert, opacity, sepia and saturate.",
+  "category": "CSS",
+  "spec": [
+    "https://www.w3.org/TR/filter-effects-1/",
+    "https://drafts.csswg.org/filter-effects-1/#propdef-filter",
+    "https://drafts.csswg.org/filter-effects/#FilterProperty",
+    "https://drafts.csswg.org/filter-effects/#funcdef-filter-blur",
+    "https://drafts.csswg.org/filter-effects/#funcdef-filter-brightness",
+    "https://drafts.csswg.org/filter-effects/#funcdef-filter-contrast",
+    "https://drafts.csswg.org/filter-effects/#funcdef-filter-drop-shadow",
+    "https://drafts.csswg.org/filter-effects/#funcdef-filter-grayscale",
+    "https://drafts.csswg.org/filter-effects/#funcdef-filter-hue-rotate",
+    "https://drafts.csswg.org/filter-effects/#funcdef-filter-invert",
+    "https://drafts.csswg.org/filter-effects/#funcdef-filter-opacity",
+    "https://drafts.csswg.org/filter-effects/#funcdef-filter-saturate",
+    "https://drafts.csswg.org/filter-effects/#funcdef-filter-sepia",
+    "https://drafts.csswg.org/filter-effects/#typedef-filter-function"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/filter-function/sepia",
+  "links": [
+    {
+      "url": "https://fhtr.org/css-filters/",
+      "title": "Demo"
+    },
+    {
+      "url": "https://www.html5rocks.com/en/tutorials/filters/understanding-css/",
+      "title": "HTML5Rocks article"
+    },
+    {
+      "url": "https://web.archive.org/web/20160219005748/https://dl.dropboxusercontent.com/u/3260327/angular/CSS3ImageManipulation.html",
+      "title": "Filter editor"
+    },
+    {
+      "url": "https://web.archive.org/web/20160310041612/http://bennettfeely.com/filters/",
+      "title": "Filter Playground"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "18",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "35",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "6",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "6.0-6.1",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.41,
+      "partial": 0.08,
+      "total": 96.49
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Note that this property is significantly different from and incompatible with Microsoft's [older \"filter\" property](http://msdn.microsoft.com/en-us/library/ie/ms530752%28v=vs.85%29.aspx).",
+    "byNum": {
+      "1": "Supported in Firefox under the `layout.css.filters.enabled` flag.",
+      "2": "Supported in MS Edge under the \"Enable CSS filter property\" flag.",
+      "3": "Partial support in Firefox before version 34 [only implemented the url() function of the filter property](https://developer.mozilla.org/en-US/docs/Web/CSS/filter#Browser_compatibility)",
+      "4": "Partial support refers to supporting filter functions, but not the `url` function."
+    }
+  },
+  "status": "wd",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-filters"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "filter",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.blur",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.brightness",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.contrast",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.drop-shadow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.grayscale",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.hue-rotate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.invert",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.opacity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.saturate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.sepia",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.blur",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.brightness",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.contrast",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.drop-shadow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.grayscale",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.hue-rotate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.invert",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.opacity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.saturate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.sepia",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

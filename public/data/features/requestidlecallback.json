@@ -1,0 +1,550 @@
+{
+  "id": "requestidlecallback",
+  "source": "caniuse",
+  "name": "requestIdleCallback",
+  "description": "API allowing the execution of JavaScript to be queued to run in idle browser time, either at the end of a frame or when the user is inactive. Also covers support for `cancelIdleCallback`. The API has similarities with `requestAnimationFrame`.",
+  "category": "JS API",
+  "spec": [
+    "https://w3c.github.io/requestidlecallback/",
+    "https://w3c.github.io/requestidlecallback/#the-idledeadline-interface",
+    "https://w3c.github.io/requestidlecallback/#dom-idledeadline-didtimeout",
+    "https://w3c.github.io/requestidlecallback/#dom-idledeadline-timeremaining",
+    "https://w3c.github.io/requestidlecallback/#the-cancelidlecallback-method",
+    "https://w3c.github.io/requestidlecallback/#the-requestidlecallback-method"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback",
+      "title": "MDN Web Docs - requestIdleCallback"
+    },
+    {
+      "url": "https://developers.google.com/web/updates/2015/08/using-requestidlecallback",
+      "title": "Google Developers article"
+    },
+    {
+      "url": "https://gist.github.com/paullewis/55efe5d6f05434a96c36",
+      "title": "Shim"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "47",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "55",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "TP",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.3",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.4",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.0",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.1",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.2",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.3",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "34",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.3",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.4",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.0",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.1",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.2",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.3",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "5.0-5.4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 82.66,
+      "partial": 0,
+      "total": 82.66
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.34,
+        "firefox": 1.75,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Can be enabled via the `dom.requestIdleCallback.enabled` flag",
+      "2": "Can be enabled in Experimental (WebKit) Features"
+    }
+  },
+  "status": "wd",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "requestidlecallback"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "requestidlecallback",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IdleDeadline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IdleDeadline.didTimeout",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IdleDeadline.timeRemaining",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.cancelIdleCallback",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.requestIdleCallback",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "id": "wf-font-metric-overrides",
+  "source": "webfeatures",
+  "name": "Font metric overrides",
+  "description": "The ascent-override, descent-override, and line-gap-override descriptors adjust the display of a font declared in an @font-face statement. This can help make fallback fonts look the same size.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-fonts-4/#font-metrics-override-desc",
+    "https://drafts.csswg.org/css-font-loading/#dom-fontfacedescriptors-ascentoverride",
+    "https://drafts.csswg.org/css-font-loading/#dom-fontfacedescriptors-descentoverride",
+    "https://drafts.csswg.org/css-font-loading/#dom-fontfacedescriptors-linegapoverride",
+    "https://drafts.csswg.org/css-fonts/#font-metrics-override-desc"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@font-face/line-gap-override",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "87",
+      "versions": [
+        {
+          "version": "87",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "89",
+      "versions": [
+        {
+          "version": "89",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "87",
+      "versions": [
+        {
+          "version": "87",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "87",
+      "versions": [
+        {
+          "version": "87",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "87",
+      "versions": [
+        {
+          "version": "87",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "87",
+      "versions": [
+        {
+          "version": "87",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "87",
+      "versions": [
+        {
+          "version": "87",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "89",
+      "versions": [
+        {
+          "version": "89",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 78.34,
+      "partial": 0,
+      "total": 78.34
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.99,
+        "firefox": 1.75,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "font-metric-overrides"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.FontFace.ascentOverride",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FontFace.descentOverride",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FontFace.lineGapOverride",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.font-face.ascent-override",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.font-face.descent-override",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.font-face.line-gap-override",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

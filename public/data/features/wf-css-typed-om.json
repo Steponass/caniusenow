@@ -1,0 +1,904 @@
+{
+  "id": "wf-css-typed-om",
+  "source": "webfeatures",
+  "name": "CSS typed object model",
+  "description": "The CSSStyleValue and its subclasses represent CSS values as distinct types instead of only strings. Also known as typed OM.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.css-houdini.org/css-typed-om-1/",
+    "https://drafts.css-houdini.org/css-typed-om/#imagevalue-objects",
+    "https://drafts.css-houdini.org/css-typed-om/#keywordvalue-objects",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-csskeywordvalue-csskeywordvalue",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-csskeywordvalue-value",
+    "https://drafts.css-houdini.org/css-typed-om/#cssmathclamp",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathclamp-cssmathclamp",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathclamp-lower",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathclamp-upper",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathclamp-value",
+    "https://drafts.css-houdini.org/css-typed-om/#cssmathinvert",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathinvert-cssmathinvert",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathinvert-value",
+    "https://drafts.css-houdini.org/css-typed-om/#cssmathmax",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathmax-cssmathmax",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathmax-values",
+    "https://drafts.css-houdini.org/css-typed-om/#cssmathmin",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathmin-cssmathmin",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathmin-values",
+    "https://drafts.css-houdini.org/css-typed-om/#cssmathnegate",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathnegate-cssmathnegate",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathnegate-value",
+    "https://drafts.css-houdini.org/css-typed-om/#cssmathproduct",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathproduct-cssmathproduct",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathproduct-values",
+    "https://drafts.css-houdini.org/css-typed-om/#cssmathsum",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathsum-cssmathsum",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathsum-values",
+    "https://drafts.css-houdini.org/css-typed-om/#complex-numeric",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmathvalue-operator",
+    "https://drafts.css-houdini.org/css-typed-om/#cssmatrixcomponent",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmatrixcomponent-cssmatrixcomponent",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssmatrixcomponent-matrix",
+    "https://drafts.css-houdini.org/css-typed-om/#cssnumericarray",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericarray-length",
+    "https://drafts.css-houdini.org/css-typed-om/#numeric-value",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-add",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-div",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-equals",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-max",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-min",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-mul",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-parse",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-sub",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-to",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-tosum",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssnumericvalue-type",
+    "https://drafts.css-houdini.org/css-typed-om/#cssperspective",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssperspective-cssperspective",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssperspective-length",
+    "https://drafts.css-houdini.org/css-typed-om/#cssrotate",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssrotate-cssrotate",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssrotate-cssrotate-x-y-z-angle",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssrotate-angle",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssrotate-x",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssrotate-y",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssrotate-z",
+    "https://drafts.css-houdini.org/css-typed-om/#cssscale",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssscale-cssscale",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssscale-x",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssscale-y",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssscale-z",
+    "https://drafts.css-houdini.org/css-typed-om/#cssskew",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssskew-cssskew",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssskew-ax",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssskew-ay",
+    "https://drafts.css-houdini.org/css-typed-om/#cssskewx",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssskewx-cssskewx",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssskewx-ax",
+    "https://drafts.css-houdini.org/css-typed-om/#cssskewy",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssskewy-cssskewy",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssskewy-ay",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssstylerule-stylemap",
+    "https://drafts.css-houdini.org/css-typed-om/#stylevalue-objects",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssstylevalue-parseall",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssstylevalue-parse",
+    "https://drafts.css-houdini.org/css-typed-om/#stylevalue-serialization",
+    "https://drafts.css-houdini.org/css-typed-om/#csstransformcomponent",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-csstransformcomponent-is2d",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-csstransformcomponent-tomatrix",
+    "https://drafts.css-houdini.org/css-typed-om/#CSSTransformComponent-stringification-behavior",
+    "https://drafts.css-houdini.org/css-typed-om/#transformvalue-objects",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-csstransformvalue-csstransformvalue",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-csstransformvalue-is2d",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-csstransformvalue-length",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-csstransformvalue-tomatrix",
+    "https://drafts.css-houdini.org/css-typed-om/#csstranslate",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-csstranslate-csstranslate",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-csstranslate-x",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-csstranslate-y",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-csstranslate-z",
+    "https://drafts.css-houdini.org/css-typed-om/#simple-numeric",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssunitvalue-cssunitvalue",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssunitvalue-unit",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssunitvalue-value",
+    "https://drafts.css-houdini.org/css-typed-om/#cssunparsedvalue",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssunparsedvalue-cssunparsedvalue",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssunparsedvalue-length",
+    "https://drafts.css-houdini.org/css-typed-om/#cssvariablereferencevalue",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssvariablereferencevalue-cssvariablereferencevalue",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssvariablereferencevalue-fallback",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-cssvariablereferencevalue-variable",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-element-computedstylemap",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-elementcssinlinestyle-attributestylemap",
+    "https://drafts.css-houdini.org/css-typed-om/#the-stylepropertymap",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymap-append",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymap-clear",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymap-delete",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymap-set",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymapreadonly-get",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymapreadonly-getall",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymapreadonly-has",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-stylepropertymapreadonly-size"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/StylePropertyMapReadOnly/values",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.07,
+      "partial": 0,
+      "total": 89.07
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.2,
+        "safari": 1.23,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.35,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "css-typed-om"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSImageValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSKeywordValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSKeywordValue.CSSKeywordValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSKeywordValue.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathClamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathClamp.CSSMathClamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathClamp.lower",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathClamp.upper",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathClamp.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathInvert",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathInvert.CSSMathInvert",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathInvert.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathMax",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathMax.CSSMathMax",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathMax.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathMin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathMin.CSSMathMin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathMin.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathNegate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathNegate.CSSMathNegate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathNegate.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathProduct",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathProduct.CSSMathProduct",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathProduct.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathSum",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathSum.CSSMathSum",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathSum.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMathValue.operator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMatrixComponent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMatrixComponent.CSSMatrixComponent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMatrixComponent.matrix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericArray",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericArray.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericArray.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericArray.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericArray.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericArray.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericArray.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericValue.add",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericValue.div",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericValue.equals",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericValue.max",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericValue.min",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericValue.mul",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericValue.parse_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericValue.sub",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericValue.to",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericValue.toSum",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNumericValue.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPerspective",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPerspective.CSSPerspective",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPerspective.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSRotate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSRotate.CSSRotate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSRotate.angle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSRotate.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSRotate.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSRotate.z",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSScale",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSScale.CSSScale",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSScale.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSScale.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSScale.z",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSSkew",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSSkew.CSSSkew",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSSkew.ax",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSSkew.ay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSSkewX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSSkewX.CSSSkewX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSSkewX.ax",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSSkewY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSSkewY.CSSSkewY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSSkewY.ay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleRule.styleMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleValue.parseAll_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleValue.parse_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleValue.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTransformComponent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTransformComponent.is2D",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTransformComponent.toMatrix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTransformComponent.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTransformValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTransformValue.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTransformValue.CSSTransformValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTransformValue.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTransformValue.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTransformValue.is2D",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTransformValue.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTransformValue.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTransformValue.toMatrix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTransformValue.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTranslate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTranslate.CSSTranslate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTranslate.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTranslate.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSTranslate.z",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSUnitValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSUnitValue.CSSUnitValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSUnitValue.unit",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSUnitValue.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSUnparsedValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSUnparsedValue.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSUnparsedValue.CSSUnparsedValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSUnparsedValue.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSUnparsedValue.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSUnparsedValue.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSUnparsedValue.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSUnparsedValue.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSVariableReferenceValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSVariableReferenceValue.CSSVariableReferenceValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSVariableReferenceValue.fallback",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSVariableReferenceValue.variable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.computedStyleMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.attributeStyleMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StylePropertyMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StylePropertyMap.append",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StylePropertyMap.clear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StylePropertyMap.delete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StylePropertyMap.set",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StylePropertyMapReadOnly",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StylePropertyMapReadOnly.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StylePropertyMapReadOnly.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StylePropertyMapReadOnly.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StylePropertyMapReadOnly.get",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StylePropertyMapReadOnly.getAll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StylePropertyMapReadOnly.has",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StylePropertyMapReadOnly.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StylePropertyMapReadOnly.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StylePropertyMapReadOnly.values",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

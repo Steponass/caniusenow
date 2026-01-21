@@ -1,0 +1,109 @@
+{
+  "id": "wf-gpc",
+  "source": "webfeatures",
+  "name": "Global privacy control",
+  "description": "The Sec-GPC request header indicates that the user does not consent to a website or service selling or sharing their personal information with third parties.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/gpc/",
+    "https://w3c.github.io/gpc/#dom-globalprivacycontrol-globalprivacycontrol",
+    "https://w3c.github.io/gpc/#the-sec-gpc-header-field-for-http-requests"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Sec-GPC",
+  "links": [],
+  "support": {
+    "firefox": {
+      "current": "y",
+      "firstFull": "120",
+      "versions": [
+        {
+          "version": "120",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "120",
+      "versions": [
+        {
+          "version": "120",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 1.79,
+      "partial": 0,
+      "total": 1.79
+    },
+    "byBrowser": {
+      "desktop": {
+        "firefox": 1.48
+      },
+      "mobile": {
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "gpc"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.globalPrivacyControl",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.globalPrivacyControl",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Sec-GPC",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

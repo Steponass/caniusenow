@@ -1,0 +1,231 @@
+{
+  "id": "wf-html-wrapper-methods",
+  "source": "webfeatures",
+  "name": "HTML wrapper methods",
+  "description": "JavaScript built-in methods such as, String.bold() and String.italics(), wrap strings in (often historic) HTML.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-properties-of-the-string.prototype-object",
+    "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-string.prototype.anchor",
+    "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-string.prototype.big",
+    "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-string.prototype.blink",
+    "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-string.prototype.bold",
+    "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-string.prototype.fixed",
+    "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-string.prototype.fontcolor",
+    "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-string.prototype.fontsize",
+    "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-string.prototype.italics",
+    "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-string.prototype.link",
+    "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-string.prototype.small",
+    "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-string.prototype.strike",
+    "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-string.prototype.sub",
+    "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-string.prototype.substr",
+    "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-string.prototype.sup"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/sup",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "html-wrapper-methods"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.anchor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.big",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.blink",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.bold",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.fixed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.fontcolor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.fontsize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.italics",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.link",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.small",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.strike",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.sub",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.substr",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.sup",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,557 @@
+{
+  "id": "srcset",
+  "source": "caniuse",
+  "name": "Srcset and sizes attributes",
+  "description": "The `srcset` and `sizes` attributes on `img` (or `source`) elements allow authors to define various image resources and \"hints\" that assist a user agent to determine the most appropriate image source to display (e.g. high-resolution displays, small monitors, etc).",
+  "category": "HTML5",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-sizes",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-srcset",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-source-sizes",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-source-srcset",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-sizes",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-sizes",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-srcset"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLSourceElement/srcset",
+  "links": [
+    {
+      "url": "https://www.webkit.org/blog/2910/improved-support-for-high-resolution-displays-with-the-srcset-image-attribute/",
+      "title": "Improved support for high-resolution displays with the srcset image attribute"
+    },
+    {
+      "url": "https://ericportis.com/posts/2014/srcset-sizes/",
+      "title": "Blog post on srcset & sizes"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images",
+      "title": "MDN: Responsive images"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img",
+      "title": "MDN: <img> element"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "38",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "38",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.4",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "TP",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "16",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "25",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.4",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 82.77,
+      "partial": 13.63,
+      "total": 96.4
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.77,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Can be enabled in Firefox by setting the about:config preference dom.image.srcset.enabled to true",
+      "2": "Supports the subset of the syntax for resolution switching (using the `x` descriptor), but not the full syntax that can be used with `sizes` (using the `w` descriptor).",
+      "3": "Intermittently displays distorted images due to bug present (see known issues)",
+      "4": "Does not support min/max expressions.",
+      "5": "For JavaScript-generated img elements, loads src first, even if srcset will also make it load another image (see known issues)"
+    }
+  },
+  "status": "ls",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "srcset"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "srcset",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.sizes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.srcset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSourceElement.sizes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSourceElement.srcset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.img.sizes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.img.srcset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.source.sizes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.source.srcset",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "id": "wf-navigation-timing",
+  "source": "webfeatures",
+  "name": "Navigation timing",
+  "description": "The navigation performance entry and the PerformanceNavigationTiming API measures navigation events, such as loading time or the number of redirects.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/navigation-timing/",
+    "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+    "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-criticalchrestart",
+    "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-domcomplete",
+    "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-domcontentloadedeventend",
+    "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-domcontentloadedeventstart",
+    "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-dominteractive",
+    "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-loadeventend",
+    "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-loadeventstart",
+    "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-redirectcount",
+    "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-tojson",
+    "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-type",
+    "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-unloadeventend",
+    "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-unloadeventstart"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/unloadEventStart",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "57",
+      "versions": [
+        {
+          "version": "57",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "58",
+      "versions": [
+        {
+          "version": "58",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "15",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "57",
+      "versions": [
+        {
+          "version": "57",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "15",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "57",
+      "versions": [
+        {
+          "version": "57",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "57",
+      "versions": [
+        {
+          "version": "57",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "58",
+      "versions": [
+        {
+          "version": "58",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.8,
+      "partial": 0,
+      "total": 91.8
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.23,
+        "firefox": 1.75,
+        "safari": 1.37,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.86,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "navigation-timing"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceNavigationTiming",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceNavigationTiming.criticalCHRestart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceNavigationTiming.domComplete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceNavigationTiming.domContentLoadedEventEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceNavigationTiming.domContentLoadedEventStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceNavigationTiming.domInteractive",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceNavigationTiming.loadEventEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceNavigationTiming.loadEventStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceNavigationTiming.redirectCount",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceNavigationTiming.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceNavigationTiming.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceNavigationTiming.unloadEventEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceNavigationTiming.unloadEventStart",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

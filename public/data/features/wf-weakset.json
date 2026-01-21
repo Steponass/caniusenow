@@ -1,0 +1,190 @@
+{
+  "id": "wf-weakset",
+  "source": "webfeatures",
+  "name": "WeakSet",
+  "description": "A WeakSet object stores unique values of any type without creating strong references to the values, such that membership in the set does not prevent garbage collection of the value.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakset-objects",
+    "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakset-constructor",
+    "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakset.prototype.add",
+    "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakset.prototype.delete",
+    "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakset.prototype.has"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakSet/has",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "36",
+      "versions": [
+        {
+          "version": "36",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "34",
+      "versions": [
+        {
+          "version": "34",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "9",
+      "versions": [
+        {
+          "version": "9",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "36",
+      "versions": [
+        {
+          "version": "36",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "9",
+      "versions": [
+        {
+          "version": "9",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "36",
+      "versions": [
+        {
+          "version": "36",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "36",
+      "versions": [
+        {
+          "version": "36",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "34",
+      "versions": [
+        {
+          "version": "34",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.42,
+      "partial": 0,
+      "total": 92.42
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "weakset"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.WeakSet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.WeakSet.WeakSet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.WeakSet.WeakSet.iterable_allowed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.WeakSet.WeakSet.null_allowed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.WeakSet.add",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.WeakSet.delete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.WeakSet.has",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.WeakSet.symbol_as_keys",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

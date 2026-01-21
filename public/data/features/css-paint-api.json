@@ -1,0 +1,773 @@
+{
+  "id": "css-paint-api",
+  "source": "caniuse",
+  "name": "CSS Painting API",
+  "description": "Allows programmatic generation of images used by CSS",
+  "category": "CSS",
+  "spec": [
+    "https://drafts.css-houdini.org/css-paint-api/",
+    "https://drafts.css-houdini.org/css-paint-api-1/",
+    "https://drafts.css-houdini.org/css-paint-api/#dom-css-paintworklet",
+    "https://drafts.css-houdini.org/css-paint-api/#2d-rendering-context",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-beginpath-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-clearrect-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-clip-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createlineargradient-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createpattern-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createradialgradient-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-drawimage-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-fill-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-fillrect-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-fillstyle-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-getlinedash-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-gettransform-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-globalalpha-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-globalcompositeoperation-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-imagesmoothingenabled-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-imagesmoothingquality-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-ispointinpath-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-ispointinstroke-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-linecap-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-linedashoffset-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-linejoin-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-linewidth-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-miterlimit-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-resettransform-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-restore-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-rotate-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-save-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-scale-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-setlinedash-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-settransform-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-shadowblur-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-shadowcolor-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-shadowoffsetx-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-shadowoffsety-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-stroke-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-strokerect-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-strokestyle-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-transform-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-translate-dev",
+    "https://drafts.css-houdini.org/css-paint-api/#paintsize",
+    "https://drafts.css-houdini.org/css-paint-api/#dom-paintsize-height",
+    "https://drafts.css-houdini.org/css-paint-api/#dom-paintsize-width",
+    "https://drafts.css-houdini.org/css-paint-api/#paintworkletglobalscope",
+    "https://drafts.css-houdini.org/css-paint-api/#dom-paintworkletglobalscope-devicepixelratio",
+    "https://drafts.css-houdini.org/css-paint-api/#dom-paintworkletglobalscope-registerpaint",
+    "https://drafts.css-houdini.org/css-paint-api/#paint-notation"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/image/paint",
+  "links": [
+    {
+      "url": "https://developers.google.com/web/updates/2018/01/paintapi",
+      "title": "Google CSS Paint API Introduction"
+    },
+    {
+      "url": "https://ishoudinireadyyet.com/",
+      "title": "Is Houdini Ready Yet?"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "65",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "140",
+          "status": "n"
+        },
+        {
+          "version": "141",
+          "status": "n"
+        },
+        {
+          "version": "142",
+          "status": "n"
+        },
+        {
+          "version": "143",
+          "status": "n"
+        },
+        {
+          "version": "144",
+          "status": "n"
+        },
+        {
+          "version": "145",
+          "status": "n"
+        },
+        {
+          "version": "146",
+          "status": "n"
+        },
+        {
+          "version": "147",
+          "status": "n"
+        },
+        {
+          "version": "148",
+          "status": "n"
+        },
+        {
+          "version": "149",
+          "status": "n"
+        }
+      ]
+    },
+    "safari": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.3",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.4",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.0",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.1",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.2",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.3",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "TP",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "52",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "n"
+        },
+        {
+          "version": "18.1",
+          "status": "n"
+        },
+        {
+          "version": "18.2",
+          "status": "n"
+        },
+        {
+          "version": "18.3",
+          "status": "n"
+        },
+        {
+          "version": "18.4",
+          "status": "n"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "n"
+        },
+        {
+          "version": "26.0",
+          "status": "n"
+        },
+        {
+          "version": "26.1",
+          "status": "n"
+        },
+        {
+          "version": "26.2",
+          "status": "n"
+        },
+        {
+          "version": "26.3",
+          "status": "n"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "9.2",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "146",
+          "status": "n"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 80.46,
+      "partial": 0,
+      "total": 80.46
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.2,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "samsung": 1.93
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Can be enabled using the Develop > Experimental Features menu."
+    }
+  },
+  "status": "cr",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-paint-api"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "paint",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.paintWorklet_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.beginPath",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.clearRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.clip",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.createLinearGradient",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.createPattern",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.createRadialGradient",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.drawImage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.fill",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.fillRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.fillStyle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.filter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.getLineDash",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.getTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.globalAlpha",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.globalCompositeOperation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.imageSmoothingEnabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.imageSmoothingQuality",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.isPointInPath",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.isPointInStroke",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.lineCap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.lineDashOffset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.lineJoin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.lineWidth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.miterLimit",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.resetTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.restore",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.rotate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.save",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.scale",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.setLineDash",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.setTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.shadowBlur",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.shadowColor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.shadowOffsetX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.shadowOffsetY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.stroke",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.strokeRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.strokeStyle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.transform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.translate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintSize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintSize.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintSize.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintWorkletGlobalScope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintWorkletGlobalScope.devicePixelRatio",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintWorkletGlobalScope.registerPaint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.image.paint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.image.paint.additional_parameters",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2320 @@
+{
+  "id": "webgpu",
+  "source": "caniuse",
+  "name": "WebGPU",
+  "description": "An API for complex rendering and compute, using hardware acceleration. Use cases include demanding 3D games and acceleration of scientific calculations. Meant to supersede WebGL.",
+  "category": "JS API",
+  "spec": [
+    "https://gpuweb.github.io/gpuweb/",
+    "https://gpuweb.github.io/gpuweb/#gpu-interface",
+    "https://gpuweb.github.io/gpuweb/#dom-gpu-getpreferredcanvasformat",
+    "https://gpuweb.github.io/gpuweb/#dom-gpu-requestadapter",
+    "https://gpuweb.github.io/gpuweb/#dom-gpu-wgsllanguagefeatures",
+    "https://gpuweb.github.io/gpuweb/#gpuadapter",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-features",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-info",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-limits",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-requestdevice",
+    "https://gpuweb.github.io/gpuweb/#gpuadapterinfo",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuadapterinfo-architecture",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuadapterinfo-description",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuadapterinfo-device",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuadapterinfo-subgroupmaxsize",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuadapterinfo-subgroupminsize",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuadapterinfo-vendor",
+    "https://gpuweb.github.io/gpuweb/#gpubindgroup",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuobjectbase-label",
+    "https://gpuweb.github.io/gpuweb/#gpubindgrouplayout",
+    "https://gpuweb.github.io/gpuweb/#gpubuffer",
+    "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-destroy",
+    "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-getmappedrange",
+    "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync",
+    "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapstate",
+    "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-size",
+    "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-unmap",
+    "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-usage",
+    "https://gpuweb.github.io/gpuweb/#gpucanvascontext",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-canvas",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-configure",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucanvasconfiguration-tonemapping",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-getconfiguration",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-getcurrenttexture",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-unconfigure",
+    "https://gpuweb.github.io/gpuweb/#gpucommandbuffer",
+    "https://gpuweb.github.io/gpuweb/#gpucommandencoder",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-begincomputepass",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassdescriptor-timestampwrites",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-beginrenderpass",
+    "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasscolorattachment-depthslice",
+    "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdescriptor-timestampwrites",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-clearbuffer",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertobuffer",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertotexture",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copytexturetobuffer",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copytexturetotexture",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-finish",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudebugcommandsmixin-insertdebugmarker",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudebugcommandsmixin-popdebuggroup",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudebugcommandsmixin-pushdebuggroup",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-resolvequeryset",
+    "https://gpuweb.github.io/gpuweb/#gpucompilationinfo",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucompilationinfo-messages",
+    "https://gpuweb.github.io/gpuweb/#gpucompilationmessage",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucompilationmessage-length",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucompilationmessage-linenum",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucompilationmessage-linepos",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucompilationmessage-message",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucompilationmessage-offset",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucompilationmessage-type",
+    "https://gpuweb.github.io/gpuweb/#gpucomputepassencoder",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-dispatchworkgroups",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-dispatchworkgroupsindirect",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-end",
+    "https://gpuweb.github.io/gpuweb/#programmable-passes-bind-groups",
+    "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-setpipeline",
+    "https://gpuweb.github.io/gpuweb/#gpucomputepipeline",
+    "https://gpuweb.github.io/gpuweb/#dom-gpupipelinebase-getbindgrouplayout",
+    "https://gpuweb.github.io/gpuweb/#gpudevice",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-adapterinfo",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbindgroup",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbindgrouplayout",
+    "https://gpuweb.github.io/gpuweb/wgsl/#memory-access-mode",
+    "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgb10a2uint",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbuffer",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createcommandencoder",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createcomputepipeline",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createcomputepipelineasync",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createpipelinelayout",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createqueryset",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuquerytype-timestamp",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createrenderbundleencoder",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createrenderpipeline",
+    "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-dual-source-blending",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuvertexformat-unorm10-10-10-2",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createrenderpipelineasync",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createsampler",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createshadermodule",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createtexture",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-destroy",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-features",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-importexternaltexture",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-limits",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-lost",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-poperrorscope",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-pusherrorscope",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-queue",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevice-onuncapturederror",
+    "https://gpuweb.github.io/gpuweb/#gpudevicelostinfo",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevicelostinfo-message",
+    "https://gpuweb.github.io/gpuweb/#dom-gpudevicelostinfo-reason",
+    "https://gpuweb.github.io/gpuweb/#gpuerror",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuerror-message",
+    "https://gpuweb.github.io/gpuweb/#gpuexternaltexture",
+    "https://gpuweb.github.io/gpuweb/#gpuinternalerror",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuinternalerror-gpuinternalerror",
+    "https://gpuweb.github.io/gpuweb/#gpuoutofmemoryerror",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuoutofmemoryerror-gpuoutofmemoryerror",
+    "https://gpuweb.github.io/gpuweb/#gpupipelineerror",
+    "https://gpuweb.github.io/gpuweb/#dom-gpupipelineerror-constructor",
+    "https://gpuweb.github.io/gpuweb/#dom-gpupipelineerror-reason",
+    "https://gpuweb.github.io/gpuweb/#gpupipelinelayout",
+    "https://gpuweb.github.io/gpuweb/#gpuqueryset",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuqueryset-count",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuqueryset-destroy",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuqueryset-type",
+    "https://gpuweb.github.io/gpuweb/#gpuqueue",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-copyexternalimagetotexture",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-onsubmittedworkdone",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-submit",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writebuffer",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writetexture",
+    "https://gpuweb.github.io/gpuweb/#gpurenderbundle",
+    "https://gpuweb.github.io/gpuweb/#dom-gpurendercommandsmixin-draw",
+    "https://gpuweb.github.io/gpuweb/#dom-gpurendercommandsmixin-drawindexed",
+    "https://gpuweb.github.io/gpuweb/#dom-gpurendercommandsmixin-drawindexedindirect",
+    "https://gpuweb.github.io/gpuweb/#dom-gpurendercommandsmixin-drawindirect",
+    "https://gpuweb.github.io/gpuweb/#dom-gpurenderbundleencoder-finish",
+    "https://gpuweb.github.io/gpuweb/#dom-gpurendercommandsmixin-setindexbuffer",
+    "https://gpuweb.github.io/gpuweb/#dom-gpurendercommandsmixin-setpipeline",
+    "https://gpuweb.github.io/gpuweb/#dom-gpurendercommandsmixin-setvertexbuffer",
+    "https://gpuweb.github.io/gpuweb/#gpurenderpassencoder",
+    "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-beginocclusionquery",
+    "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-end",
+    "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-endocclusionquery",
+    "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-executebundles",
+    "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setblendconstant",
+    "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setscissorrect",
+    "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setstencilreference",
+    "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setviewport",
+    "https://gpuweb.github.io/gpuweb/#gpurenderpipeline",
+    "https://gpuweb.github.io/gpuweb/#gpusampler",
+    "https://gpuweb.github.io/gpuweb/#gpushadermodule",
+    "https://gpuweb.github.io/gpuweb/#dom-gpushadermodule-getcompilationinfo",
+    "https://gpuweb.github.io/gpuweb/#gpusupportedfeatures",
+    "https://gpuweb.github.io/gpuweb/#bgra8unorm-storage",
+    "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-clip-distances",
+    "https://gpuweb.github.io/gpuweb/#depth-clip-control",
+    "https://gpuweb.github.io/gpuweb/#depth32float-stencil8",
+    "https://gpuweb.github.io/gpuweb/#float32-blendable",
+    "https://gpuweb.github.io/gpuweb/#float32-filterable",
+    "https://gpuweb.github.io/gpuweb/#indirect-first-instance",
+    "https://gpuweb.github.io/gpuweb/#rg11b10ufloat-renderable",
+    "https://gpuweb.github.io/gpuweb/#shader-f16",
+    "https://gpuweb.github.io/gpuweb/#texture-compression-astc",
+    "https://gpuweb.github.io/gpuweb/#texture-compression-bc",
+    "https://gpuweb.github.io/gpuweb/#texture-compression-etc2",
+    "https://gpuweb.github.io/gpuweb/#timestamp-query",
+    "https://gpuweb.github.io/gpuweb/#gpusupportedlimits",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxbindgroups",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxbindgroupsplusvertexbuffers",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxbindingsperbindgroup",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxbuffersize",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxcolorattachmentbytespersample",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxcolorattachments",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxcomputeinvocationsperworkgroup",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxcomputeworkgroupsizex",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxcomputeworkgroupsizey",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxcomputeworkgroupsizez",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxcomputeworkgroupstoragesize",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxcomputeworkgroupsperdimension",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxdynamicstoragebuffersperpipelinelayout",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxdynamicuniformbuffersperpipelinelayout",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxinterstageshadervariables",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxsampledtexturespershaderstage",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxsamplerspershaderstage",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxstoragebufferbindingsize",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxstoragebufferspershaderstage",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxstoragetexturespershaderstage",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxtexturearraylayers",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxtexturedimension1d",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxtexturedimension2d",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxtexturedimension3d",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxuniformbufferbindingsize",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxuniformbufferspershaderstage",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxvertexattributes",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxvertexbufferarraystride",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxvertexbuffers",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-minstoragebufferoffsetalignment",
+    "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-minuniformbufferoffsetalignment",
+    "https://gpuweb.github.io/gpuweb/#gputexture",
+    "https://gpuweb.github.io/gpuweb/#dom-gputexture-createview",
+    "https://gpuweb.github.io/gpuweb/#dom-gputextureviewdescriptor-usage",
+    "https://gpuweb.github.io/gpuweb/#dom-gputexture-depthorarraylayers",
+    "https://gpuweb.github.io/gpuweb/#dom-gputexture-destroy",
+    "https://gpuweb.github.io/gpuweb/#dom-gputexture-dimension",
+    "https://gpuweb.github.io/gpuweb/#dom-gputexture-format",
+    "https://gpuweb.github.io/gpuweb/#dom-gputexture-height",
+    "https://gpuweb.github.io/gpuweb/#dom-gputexture-miplevelcount",
+    "https://gpuweb.github.io/gpuweb/#dom-gputexture-samplecount",
+    "https://gpuweb.github.io/gpuweb/#dom-gputexture-usage",
+    "https://gpuweb.github.io/gpuweb/#dom-gputexture-width",
+    "https://gpuweb.github.io/gpuweb/#gputextureview",
+    "https://gpuweb.github.io/gpuweb/#gpuuncapturederrorevent",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuuncapturederrorevent-gpuuncapturederrorevent",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuuncapturederroreventinit-error",
+    "https://gpuweb.github.io/gpuweb/#gpuvalidationerror",
+    "https://gpuweb.github.io/gpuweb/#dom-gpuvalidationerror-gpuvalidationerror",
+    "https://gpuweb.github.io/gpuweb/#canvas-getcontext",
+    "https://gpuweb.github.io/gpuweb/#navigator-gpu",
+    "https://gpuweb.github.io/gpuweb/#gpuwgsllanguagefeatures",
+    "https://gpuweb.github.io/gpuweb/wgsl/#language_extension-packed_4x8_integer_dot_product",
+    "https://gpuweb.github.io/gpuweb/wgsl/#language_extension-readonly_and_readwrite_storage_textures",
+    "https://gpuweb.github.io/gpuweb/wgsl/#language_extension-unrestricted_pointer_parameters"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WorkerNavigator/gpu",
+  "links": [
+    {
+      "url": "https://github.com/gpuweb/gpuweb/wiki/Implementation-Status",
+      "title": "Implementation status"
+    },
+    {
+      "url": "https://github.com/gpuweb/gpuweb/wiki",
+      "title": "Official Wiki"
+    },
+    {
+      "url": "https://toji.github.io/webgpu-test/",
+      "title": "WebGPU test scene"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "137",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "138",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "139",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "144",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "145",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "firefox": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "144",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "145",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "147",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "148",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "149",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "safari": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.3",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.4",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "TP",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "113",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "116",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "117",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "118",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "119",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "120",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "121",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "122",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "123",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "124",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "125",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "26.0",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.3",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.4",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "24",
+      "versions": [
+        {
+          "version": "20",
+          "status": "n"
+        },
+        {
+          "version": "21",
+          "status": "n"
+        },
+        {
+          "version": "22",
+          "status": "n"
+        },
+        {
+          "version": "23",
+          "status": "n"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 77,
+      "partial": 1.87,
+      "total": 78.87
+    },
+    "byBrowser": {
+      "desktop": {
+        "edge": 4.21
+      },
+      "mobile": {
+        "ios_saf": 1.73,
+        "and_chr": 44.12,
+        "samsung": 1.89
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Can be enabled in Firefox with the `dom.webgpu.enabled` flag.",
+      "2": "Can be enabled in Safari with the `WebGPU` feature flag.",
+      "3": "Can be enabled in some Chromium browsers (on Windows, MacOS, Linux) with the `enable-unsafe-webgpu` flag.",
+      "4": "Part of an origin trial.",
+      "5": "Not enabled on Linux by default.",
+      "6": "Only enabled by default on Windows.",
+      "7": "Partial support refers to only being enabled by default on macOS 26 Tahoe or later.",
+      "8": "Only enabled by default on Windows as well as macOS 26 Tahoe or later on Apple Silicon."
+    }
+  },
+  "status": "wd",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "webgpu"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "webgpu",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPU",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPU.getPreferredCanvasFormat",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPU.requestAdapter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPU.requestAdapter.discrete_adapter_default_ac",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPU.wgslLanguageFeatures",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUAdapter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUAdapter.features",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUAdapter.info",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUAdapter.limits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUAdapter.requestDevice",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUAdapter.requestDevice.handles_duplicate_calls",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUAdapterInfo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUAdapterInfo.architecture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUAdapterInfo.description",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUAdapterInfo.device",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUAdapterInfo.subgroupMaxSize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUAdapterInfo.subgroupMinSize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUAdapterInfo.vendor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUBindGroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUBindGroup.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUBindGroupLayout",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUBindGroupLayout.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUBuffer.destroy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUBuffer.getMappedRange",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUBuffer.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUBuffer.mapAsync",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUBuffer.mapState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUBuffer.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUBuffer.unmap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUBuffer.usage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCanvasContext",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCanvasContext.canvas",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCanvasContext.configure",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCanvasContext.configure.toneMapping",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCanvasContext.getConfiguration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCanvasContext.getCurrentTexture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCanvasContext.unconfigure",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandBuffer.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandEncoder",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandEncoder.beginComputePass",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandEncoder.beginComputePass.timestampWrites",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandEncoder.beginRenderPass",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandEncoder.beginRenderPass.depthSlice_option",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandEncoder.beginRenderPass.separate_depth_stencil_read-only",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandEncoder.beginRenderPass.timestampWrites",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandEncoder.clearBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandEncoder.copyBufferToBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandEncoder.copyBufferToTexture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandEncoder.copyTextureToBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandEncoder.copyTextureToTexture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandEncoder.finish",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandEncoder.insertDebugMarker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandEncoder.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandEncoder.popDebugGroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandEncoder.pushDebugGroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCommandEncoder.resolveQuerySet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCompilationInfo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCompilationInfo.messages",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCompilationMessage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCompilationMessage.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCompilationMessage.lineNum",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCompilationMessage.linePos",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCompilationMessage.message",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCompilationMessage.offset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUCompilationMessage.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUComputePassEncoder",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUComputePassEncoder.dispatchWorkgroups",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUComputePassEncoder.dispatchWorkgroupsIndirect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUComputePassEncoder.end",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUComputePassEncoder.insertDebugMarker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUComputePassEncoder.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUComputePassEncoder.popDebugGroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUComputePassEncoder.pushDebugGroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUComputePassEncoder.setBindGroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUComputePassEncoder.setBindGroup.unset_bind_group",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUComputePassEncoder.setPipeline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUComputePipeline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUComputePipeline.getBindGroupLayout",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUComputePipeline.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.adapterInfo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createBindGroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createBindGroupLayout",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createBindGroupLayout.storageTexture_access_read-write_read-only",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createBindGroupLayout.texture_rgb10a2uint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createCommandEncoder",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createComputePipeline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createComputePipeline.optional_entryPoint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createComputePipelineAsync",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createComputePipelineAsync.optional_entryPoint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createPipelineLayout",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createQuerySet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createQuerySet.timestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createRenderBundleEncoder",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createRenderPipeline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createRenderPipeline.dual-source-blending",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createRenderPipeline.optional_depthcompare_depthwriteenabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createRenderPipeline.optional_entryPoint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createRenderPipeline.texture_rgb10a2uint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createRenderPipeline.validates_depth_bias_for_line_and_point_topologies",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createRenderPipeline.vertex_unorm10-10-10-2",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createRenderPipelineAsync",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createRenderPipelineAsync.dual-source-blending",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createRenderPipelineAsync.optional_depthcompare_depthwriteenabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createRenderPipelineAsync.optional_entryPoint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createRenderPipelineAsync.texture_rgb10a2uint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createRenderPipelineAsync.validates_depth_bias_for_line_and_point_topologies",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createRenderPipelineAsync.vertex_unorm10-10-10-2",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createSampler",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createShaderModule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createTexture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.createTexture.texture_rgb10a2uint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.destroy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.features",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.importExternalTexture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.importExternalTexture.color_space_display-p3",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.importExternalTexture.videoframe_source",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.limits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.lost",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.popErrorScope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.pushErrorScope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.queue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDevice.uncapturederror_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDeviceLostInfo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDeviceLostInfo.message",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUDeviceLostInfo.reason",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUError.message",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUExternalTexture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUExternalTexture.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUInternalError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUInternalError.GPUInternalError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUOutOfMemoryError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUOutOfMemoryError.GPUOutOfMemoryError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUPipelineError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUPipelineError.GPUPipelineError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUPipelineError.GPUPipelineError.message_optional",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUPipelineError.reason",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUPipelineLayout",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUPipelineLayout.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUQuerySet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUQuerySet.count",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUQuerySet.destroy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUQuerySet.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUQuerySet.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUQuerySet.type.timestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUQueue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUQueue.copyExternalImageToTexture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUQueue.copyExternalImageToTexture.htmlimageelement_imagedata_source",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUQueue.copyExternalImageToTexture.videoframe_source",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUQueue.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUQueue.onSubmittedWorkDone",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUQueue.submit",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUQueue.submit.validates_command_buffer_uniqueness",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUQueue.writeBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUQueue.writeTexture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderBundle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderBundle.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderBundleEncoder",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderBundleEncoder.draw",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderBundleEncoder.drawIndexed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderBundleEncoder.drawIndexedIndirect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderBundleEncoder.drawIndirect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderBundleEncoder.finish",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderBundleEncoder.insertDebugMarker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderBundleEncoder.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderBundleEncoder.popDebugGroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderBundleEncoder.pushDebugGroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderBundleEncoder.setBindGroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderBundleEncoder.setBindGroup.unset_bind_group",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderBundleEncoder.setIndexBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderBundleEncoder.setPipeline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderBundleEncoder.setVertexBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderBundleEncoder.setVertexBuffer.unset_vertex_buffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.beginOcclusionQuery",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.draw",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.drawIndexed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.drawIndexedIndirect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.drawIndirect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.end",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.endOcclusionQuery",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.executeBundles",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.insertDebugMarker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.popDebugGroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.pushDebugGroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.setBindGroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.setBindGroup.unset_bind_group",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.setBlendConstant",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.setIndexBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.setPipeline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.setScissorRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.setStencilReference",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.setVertexBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.setVertexBuffer.unset_vertex_buffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPassEncoder.setViewport",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPipeline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPipeline.getBindGroupLayout",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPURenderPipeline.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSampler",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSampler.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUShaderModule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUShaderModule.getCompilationInfo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUShaderModule.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.feature_bgra8unorm-storage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.feature_clip-distances",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.feature_depth-clip-control",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.feature_depth32float-stencil8",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.feature_dual-source-blending",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.feature_float32-blendable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.feature_float32-filterable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.feature_indirect-first-instance",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.feature_rg11b10ufloat-renderable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.feature_shader-f16",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.feature_texture-compression-astc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.feature_texture-compression-bc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.feature_texture-compression-etc2",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.feature_timestamp-query",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.has",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedFeatures.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxBindGroups",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxBindGroupsPlusVertexBuffers",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxBindingsPerBindGroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxBufferSize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxColorAttachmentBytesPerSample",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxColorAttachments",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxComputeInvocationsPerWorkgroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxComputeWorkgroupSizeX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxComputeWorkgroupSizeY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxComputeWorkgroupSizeZ",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxComputeWorkgroupStorageSize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxComputeWorkgroupsPerDimension",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxDynamicStorageBuffersPerPipelineLayout",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxDynamicUniformBuffersPerPipelineLayout",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxInterStageShaderVariables",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxSampledTexturesPerShaderStage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxSamplersPerShaderStage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxStorageBufferBindingSize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxStorageBuffersPerShaderStage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxStorageTexturesPerShaderStage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxTextureArrayLayers",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxTextureDimension1D",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxTextureDimension2D",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxTextureDimension3D",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxUniformBufferBindingSize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxUniformBuffersPerShaderStage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxVertexAttributes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxVertexBufferArrayStride",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.maxVertexBuffers",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.minStorageBufferOffsetAlignment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUSupportedLimits.minUniformBufferOffsetAlignment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUTexture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUTexture.createView",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUTexture.createView.descriptor_format_parameter_accepts_rgb10a2uint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUTexture.createView.descriptor_usage_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUTexture.depthOrArrayLayers",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUTexture.destroy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUTexture.dimension",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUTexture.format",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUTexture.format.texture_rgb10a2uint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUTexture.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUTexture.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUTexture.mipLevelCount",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUTexture.sampleCount",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUTexture.usage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUTexture.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUTextureView",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUTextureView.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUUncapturedErrorEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUUncapturedErrorEvent.GPUUncapturedErrorEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUUncapturedErrorEvent.error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUValidationError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GPUValidationError.GPUValidationError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.getContext.webgpu_context",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.gpu",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OffscreenCanvas.getContext.webgpu_context",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WGSLLanguageFeatures",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WGSLLanguageFeatures.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WGSLLanguageFeatures.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WGSLLanguageFeatures.extension_packed_4x8_integer_dot_product",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WGSLLanguageFeatures.extension_readonly_and_readwrite_storage_textures",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WGSLLanguageFeatures.extension_unrestricted_pointer_parameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WGSLLanguageFeatures.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WGSLLanguageFeatures.has",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WGSLLanguageFeatures.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WGSLLanguageFeatures.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WGSLLanguageFeatures.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.gpu",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

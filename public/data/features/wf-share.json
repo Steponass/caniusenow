@@ -1,0 +1,176 @@
+{
+  "id": "wf-share",
+  "source": "webfeatures",
+  "name": "navigator.share()",
+  "description": "The navigator.share() method invokes the device's native sharing mechanism and passes text, links, files, and other content to share targets. Also known as the Web Share API.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/web-share/",
+    "https://w3c.github.io/web-share/#canshare-data-method",
+    "https://w3c.github.io/web-share/#dom-sharedata-files",
+    "https://w3c.github.io/web-share/#dom-sharedata-text",
+    "https://w3c.github.io/web-share/#share-method",
+    "https://w3c.github.io/web-share/#permissions-policy"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/web-share",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "128",
+      "versions": [
+        {
+          "version": "128",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "12.1",
+      "versions": [
+        {
+          "version": "12.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "128",
+      "versions": [
+        {
+          "version": "128",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "12.1",
+      "versions": [
+        {
+          "version": "12.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "128",
+      "versions": [
+        {
+          "version": "128",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "128",
+      "versions": [
+        {
+          "version": "128",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 82.47,
+      "partial": 0,
+      "total": 82.47
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 20.72,
+        "safari": 1.42,
+        "edge": 4.25
+      },
+      "mobile": {
+        "ios_saf": 11.97,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "share"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.canShare",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.canShare.data_files_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.canShare.data_text_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.share",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.share.data_files_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.share.data_text_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.web-share",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.web-share",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

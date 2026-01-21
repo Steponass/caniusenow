@@ -1,0 +1,164 @@
+{
+  "id": "wf-webauthn-public-key-easy",
+  "source": "webfeatures",
+  "name": "Web authentication easy public key access",
+  "description": "The getAuthenticatorData(), getPublicKey(), and getPublicKeyAlgorithm() methods of AuthenticatorAttestationResponse access credential data inside attestationObject without the need to parse it.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/webauthn/#sctn-public-key-easy",
+    "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponse-getauthenticatordata",
+    "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponse-getpublickey",
+    "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponse-getpublickeyalgorithm"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse/getPublicKeyAlgorithm",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "119",
+      "versions": [
+        {
+          "version": "119",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "16",
+      "versions": [
+        {
+          "version": "16",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16",
+      "versions": [
+        {
+          "version": "16",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "119",
+      "versions": [
+        {
+          "version": "119",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 90.89,
+      "partial": 0,
+      "total": 90.89
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.01,
+        "firefox": 1.48,
+        "safari": 1.27,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.52,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webauthn-public-key-easy"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.AuthenticatorAttestationResponse.getAuthenticatorData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AuthenticatorAttestationResponse.getPublicKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AuthenticatorAttestationResponse.getPublicKeyAlgorithm",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

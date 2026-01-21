@@ -1,0 +1,818 @@
+{
+  "id": "push-api",
+  "source": "caniuse",
+  "name": "Push API",
+  "description": "API to allow messages to be pushed from a server to a browser, even when the site isn't focused or even open in the browser.",
+  "category": "JS API",
+  "spec": [
+    "https://w3c.github.io/push-api/",
+    "https://w3c.github.io/push-api/#pushevent-interface",
+    "https://w3c.github.io/push-api/#dom-pushevent-constructor",
+    "https://w3c.github.io/push-api/#dom-pushevent-data",
+    "https://w3c.github.io/push-api/#pushmanager-interface",
+    "https://w3c.github.io/push-api/#dom-pushmanager-getsubscription",
+    "https://w3c.github.io/push-api/#dom-pushmanager-permissionstate",
+    "https://w3c.github.io/push-api/#dom-pushmanager-subscribe",
+    "https://w3c.github.io/push-api/#dom-pushmanager-supportedcontentencodings",
+    "https://w3c.github.io/push-api/#pushmessagedata-interface",
+    "https://w3c.github.io/push-api/#dom-pushmessagedata-arraybuffer",
+    "https://w3c.github.io/push-api/#dom-pushmessagedata-blob",
+    "https://w3c.github.io/push-api/#dom-pushmessagedata-bytes",
+    "https://w3c.github.io/push-api/#dom-pushmessagedata-json",
+    "https://w3c.github.io/push-api/#dom-pushmessagedata-text",
+    "https://w3c.github.io/push-api/#pushsubscription-interface",
+    "https://w3c.github.io/push-api/#dom-pushsubscription-endpoint",
+    "https://w3c.github.io/push-api/#dom-pushsubscription-expirationtime",
+    "https://w3c.github.io/push-api/#dom-pushsubscription-getkey",
+    "https://w3c.github.io/push-api/#dom-pushsubscription-options",
+    "https://w3c.github.io/push-api/#dom-pushsubscription-tojson",
+    "https://w3c.github.io/push-api/#dom-pushsubscription-unsubscribe",
+    "https://w3c.github.io/push-api/#pushsubscriptionchangeevent-interface",
+    "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeevent-constructor",
+    "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeevent-newsubscription",
+    "https://w3c.github.io/push-api/#dom-pushsubscriptionchangeevent-oldsubscription",
+    "https://w3c.github.io/push-api/#dom-pushsubscriptionoptions",
+    "https://w3c.github.io/push-api/#dom-pushsubscriptionoptions-applicationserverkey",
+    "https://w3c.github.io/push-api/#dom-pushsubscriptionoptions-uservisibleonly",
+    "https://w3c.github.io/push-api/#extensions-to-the-serviceworkerglobalscope-interface",
+    "https://w3c.github.io/push-api/#dom-serviceworkerglobalscope-onpush",
+    "https://w3c.github.io/push-api/#the-pushsubscriptionchange-event",
+    "https://w3c.github.io/push-api/#dom-serviceworkerglobalscope-onpushsubscriptionchange",
+    "https://w3c.github.io/ServiceWorker/#serviceworkerregistration-interface",
+    "https://w3c.github.io/push-api/#extensions-to-the-serviceworkerregistration-interface",
+    "https://w3c.github.io/push-api/#dom-serviceworkerregistration-pushmanager"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/pushManager",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Push_API",
+      "title": "MDN Web Docs - Push API"
+    },
+    {
+      "url": "https://developers.google.com/web/updates/2015/03/push-notifications-on-the-open-web",
+      "title": "Google Developers article"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "137",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "138",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "139",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "144",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "145",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "firefox": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "144",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "145",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "147",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "148",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "149",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "safari": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.4",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "TP",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "edge": {
+      "current": "u",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "134",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "135",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "136",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "137",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "138",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "139",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "opera": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "116",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "117",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "118",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "119",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "120",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "121",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "122",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "123",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "124",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "125",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.4",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 82.84,
+      "partial": 11.93,
+      "total": 94.77
+    },
+    "byBrowser": {
+      "desktop": {
+        "edge": 4.26
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Partial support refers to not supporting `PushEvent.data` and `PushMessageData`",
+      "2": "Requires full browser to be running to receive messages",
+      "3": "Safari 7.0 - 16.0 supported a custom implementation which remains available in later versions, see [Safari Push Notifications](https://developer.apple.com/notifications/safari-push-notifications/) and [WWDC video](https://web.archive.org/web/20210419000205/https://developer.apple.com/videos/play/wwdc2013/614/)",
+      "4": "Disabled on Firefox ESR, but can be re-enabled with the `dom.serviceWorkers.enabled` and `dom.push.enabled` flags",
+      "5": "Only available on macOS 13 Ventura or later",
+      "6": "Supported in Safari, not WKWebView nor SFSafariViewController",
+      "7": "Requires website to first be added to the Home Screen."
+    }
+  },
+  "status": "wd",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "push-api"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "push",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Permissions.permission_push",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushEvent.PushEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushEvent.data",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushManager",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushManager.getSubscription",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushManager.permissionState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushManager.subscribe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushManager.supportedContentEncodings_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushMessageData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushMessageData.arrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushMessageData.blob",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushMessageData.bytes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushMessageData.json",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushMessageData.text",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushSubscription",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushSubscription.endpoint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushSubscription.expirationTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushSubscription.getKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushSubscription.options",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushSubscription.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushSubscription.unsubscribe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushSubscriptionChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushSubscriptionChangeEvent.PushSubscriptionChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushSubscriptionChangeEvent.newSubscription",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushSubscriptionChangeEvent.oldSubscription",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushSubscriptionOptions",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushSubscriptionOptions.applicationServerKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PushSubscriptionOptions.userVisibleOnly",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.push_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.pushsubscriptionchange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerRegistration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerRegistration.pushManager",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

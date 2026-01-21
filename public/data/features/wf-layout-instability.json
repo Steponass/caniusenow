@@ -1,0 +1,183 @@
+{
+  "id": "wf-layout-instability",
+  "source": "webfeatures",
+  "name": "Layout instability",
+  "description": "The layout-shift performance entry and LayoutShift API measures the layout stability of web pages based on movements of the elements on the page. They're used to calculate Cumulative Layout Shift (CLS), a common metric for perceived stability.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/layout-instability/",
+    "https://wicg.github.io/layout-instability/#sec-layout-shift",
+    "https://wicg.github.io/layout-instability/#dom-layoutshift-hadrecentinput",
+    "https://wicg.github.io/layout-instability/#dom-layoutshift-lastinputtime",
+    "https://wicg.github.io/layout-instability/#dom-layoutshift-sources",
+    "https://wicg.github.io/layout-instability/#dom-layoutshift-tojson",
+    "https://wicg.github.io/layout-instability/#dom-layoutshift-value",
+    "https://wicg.github.io/layout-instability/#sec-layout-shift-attribution",
+    "https://wicg.github.io/layout-instability/#dom-layoutshiftattribution-currentrect",
+    "https://wicg.github.io/layout-instability/#dom-layoutshiftattribution-node",
+    "https://wicg.github.io/layout-instability/#dom-layoutshiftattribution-previousrect"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/LayoutShiftAttribution/toJSON",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "84",
+      "versions": [
+        {
+          "version": "84",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "84",
+      "versions": [
+        {
+          "version": "84",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "84",
+      "versions": [
+        {
+          "version": "84",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "84",
+      "versions": [
+        {
+          "version": "84",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "84",
+      "versions": [
+        {
+          "version": "84",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "84",
+      "versions": [
+        {
+          "version": "84",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.3,
+      "partial": 0,
+      "total": 76.3
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.01,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "layout-instability"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.LayoutShift",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.LayoutShift.hadRecentInput",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.LayoutShift.lastInputTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.LayoutShift.sources",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.LayoutShift.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.LayoutShift.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.LayoutShiftAttribution",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.LayoutShiftAttribution.currentRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.LayoutShiftAttribution.node",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.LayoutShiftAttribution.previousRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.LayoutShiftAttribution.toJSON",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

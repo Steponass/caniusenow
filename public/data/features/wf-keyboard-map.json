@@ -1,0 +1,170 @@
+{
+  "id": "wf-keyboard-map",
+  "source": "webfeatures",
+  "name": "Keyboard map",
+  "description": "The navigator.keyboard.getLayoutMap() API returns a map from key codes to human readable key names. It can be used to describe buttons to the user when using the keyboard as a set of buttons, such as in games.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/keyboard-map/",
+    "https://wicg.github.io/keyboard-map/#h-keyboard-getlayoutmap",
+    "https://wicg.github.io/keyboard-map/#keyboardlayoutmap-interface"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/values",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "69",
+      "versions": [
+        {
+          "version": "69",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "69",
+      "versions": [
+        {
+          "version": "69",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "69",
+      "versions": [
+        {
+          "version": "69",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "69",
+      "versions": [
+        {
+          "version": "69",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.47,
+      "partial": 0,
+      "total": 76.47
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.18,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "keyboard-map"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Keyboard.getLayoutMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardLayoutMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardLayoutMap.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardLayoutMap.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardLayoutMap.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardLayoutMap.get",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardLayoutMap.has",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardLayoutMap.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardLayoutMap.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardLayoutMap.values",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

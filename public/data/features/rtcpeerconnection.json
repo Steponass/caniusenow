@@ -1,0 +1,1774 @@
+{
+  "id": "rtcpeerconnection",
+  "source": "caniuse",
+  "name": "WebRTC Peer-to-peer connections",
+  "description": "Method of allowing two users to communicate directly, browser to browser using the RTCPeerConnection API.",
+  "category": "JS API",
+  "spec": [
+    "https://w3c.github.io/webrtc-pc/",
+    "https://w3c.github.io/webrtc-pc/#dom-rtccertificate",
+    "https://w3c.github.io/webrtc-pc/#dom-rtccertificate-expires",
+    "https://w3c.github.io/webrtc-pc/#dom-rtccertificate-getfingerprints",
+    "https://w3c.github.io/webrtc-pc/#rtcdtmfsender",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdtmfsender-caninsertdtmf",
+    "https://w3c.github.io/webrtc-pc/#dom-RTCDTMFSender-insertDTMF",
+    "https://w3c.github.io/webrtc-pc/#dom-RTCDTMFSender-tonebuffer",
+    "https://w3c.github.io/webrtc-pc/#event-RTCDTMFSender-tonechange",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdtmftonechangeevent",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdtmftonechangeevent-constructor",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdtmftonechangeevent-tone",
+    "https://w3c.github.io/webrtc-pc/#rtcdatachannel",
+    "https://w3c.github.io/webrtc-pc/#dom-datachannel-binarytype",
+    "https://w3c.github.io/webrtc-pc/#dom-datachannel-bufferedamount",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-bufferedamountlowthreshold",
+    "https://w3c.github.io/webrtc-pc/#event-datachannel-bufferedamountlow",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-onbufferedamountlow",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-close",
+    "https://w3c.github.io/webrtc-pc/#event-datachannel-close",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-onclose",
+    "https://w3c.github.io/webrtc-pc/#event-datachannel-closing",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-onclosing",
+    "https://w3c.github.io/webrtc-pc/#event-datachannel-error",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-onerror",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-id",
+    "https://w3c.github.io/webrtc-pc/#dom-datachannel-label",
+    "https://w3c.github.io/webrtc-pc/#dom-datachannel-maxpacketlifetime",
+    "https://w3c.github.io/webrtc-pc/#dom-datachannel-maxretransmits",
+    "https://w3c.github.io/webrtc-pc/#event-datachannel-message",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-onmessage",
+    "https://w3c.github.io/webrtc-pc/#dom-datachannel-negotiated",
+    "https://w3c.github.io/webrtc-pc/#event-datachannel-open",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-onopen",
+    "https://w3c.github.io/webrtc-pc/#dom-datachannel-ordered",
+    "https://w3c.github.io/webrtc-pc/#dom-datachannel-protocol",
+    "https://w3c.github.io/webrtc-pc/#dom-datachannel-readystate",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel-send",
+    "https://w3c.github.io/webrtc-extensions/#rtcdatachannel-extensions",
+    "https://w3c.github.io/webrtc-pc/#rtcdatachannelevent",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannelevent-constructor",
+    "https://w3c.github.io/webrtc-pc/#dom-datachannelevent-channel",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdtlstransport",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdtlstransport-getremotecertificates",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdtlstransport-icetransport",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcdtlstransport-state",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcerror",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcerror-constructor",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcerror-errordetail",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcerror-receivedalert",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcerror-sctpcausecode",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcerror-sdplinenumber",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcerror-sentalert",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcerrorevent",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcerrorevent-constructor",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcerrorevent-error",
+    "https://w3c.github.io/webrtc-pc/#rtcicecandidate-interface",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-constructor",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-address",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-candidate",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-component",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-foundation",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-port",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-priority",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-protocol",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-relatedaddress",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-relatedport",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-relayprotocol",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-sdpmlineindex",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-sdpmid",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-tcptype",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-tojson",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-type",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-url",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate-usernamefragment",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport",
+    "https://w3c.github.io/webrtc-pc/#dom-icetransport-gatheringstate",
+    "https://w3c.github.io/webrtc-pc/#event-icetransport-gatheringstatechange",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-ongatheringstatechange",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getlocalcandidates",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getlocalparameters",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getremotecandidates",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getremoteparameters",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-getselectedcandidatepair",
+    "https://w3c.github.io/webrtc-pc/#dom-icetransport-role",
+    "https://w3c.github.io/webrtc-pc/#event-icetransport-selectedcandidatepairchange",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-onselectedcandidatepairchange",
+    "https://w3c.github.io/webrtc-pc/#dom-icetransport-state",
+    "https://w3c.github.io/webrtc-pc/#event-icetransport-statechange",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport-onstatechange",
+    "https://w3c.github.io/webrtc-pc/#interface-definition",
+    "https://w3c.github.io/webrtc-pc/#dom-peerconnection",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration-bundlepolicy",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration-certificates",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration-iceservers",
+    "https://w3c.github.io/webrtc-pc/#dom-rtciceserver-credential",
+    "https://w3c.github.io/webrtc-pc/#dom-rtciceserver-urls",
+    "https://w3c.github.io/webrtc-pc/#dom-rtciceserver-username",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration-icetransportpolicy",
+    "https://w3c.github.io/webrtc-pc/#dom-peerconnection-addicecandidate",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-addtrack",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-addtransceiver",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-cantrickleicecandidates",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-close",
+    "https://w3c.github.io/webrtc-pc/#dom-peerconnection-connection-state",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onconnectionstatechange",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-createanswer",
+    "https://w3c.github.io/webrtc-pc/#dom-peerconnection-createdatachannel",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-createoffer",
+    "https://w3c.github.io/webrtc-pc/#dom-peerconnection-currentlocaldesc",
+    "https://w3c.github.io/webrtc-pc/#dom-peerconnection-currentremotedesc",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-ondatachannel",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-generatecertificate",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-getconfiguration",
+    "https://w3c.github.io/webrtc-pc/#dom-peerconnection-getreceivers",
+    "https://w3c.github.io/webrtc-pc/#dom-peerconnection-getsenders",
+    "https://w3c.github.io/webrtc-pc/#dom-peerconnection-gettranseceivers",
+    "https://w3c.github.io/webrtc-pc/#dom-peerconnection-ice-connection-state",
+    "https://w3c.github.io/webrtc-pc/#dom-peerconnection-ice-gathering-state",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onicecandidate",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onicecandidateerror",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-oniceconnectionstatechange",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onicegatheringstatechange",
+    "https://w3c.github.io/webrtc-pc/#dom-peerconnection-localdescription",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-onnegotiationneeded",
+    "https://w3c.github.io/webrtc-pc/#dom-peerconnection-pendinglocaldesc",
+    "https://w3c.github.io/webrtc-pc/#dom-peerconnection-pendingremotedesc",
+    "https://w3c.github.io/webrtc-pc/#dom-peerconnection-remotedescription",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-removetrack",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-restartice",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-setconfiguration",
+    "https://w3c.github.io/webrtc-pc/#dom-peerconnection-setlocaldescription",
+    "https://w3c.github.io/webrtc-pc/#dom-peerconnection-setremotedescription",
+    "https://w3c.github.io/webrtc-pc/#dom-peerconnection-signaling-state",
+    "https://w3c.github.io/webrtc-pc/#event-signalingstatechange",
+    "https://w3c.github.io/webrtc-pc/#event-track",
+    "https://w3c.github.io/webrtc-pc/#rtcpeerconnectioniceerrorevent",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerrorevent-constructor",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerrorevent-address",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerrorevent-errorcode",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerrorevent-errortext",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerrorevent-port",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerrorevent-url",
+    "https://w3c.github.io/webrtc-pc/#rtcpeerconnectioniceevent",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceevent-constructor",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceevent-candidate",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceevent-url",
+    "https://w3c.github.io/webrtc-pc/#rtcrtpreceiver-interface",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver-getcapabilities",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver-getcontributingsources",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcontributingsource-audiolevel",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcontributingsource-rtptimestamp",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcontributingsource-source",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcontributingsource-timestamp",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver-getparameters",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters-codecs",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters-headerextensions",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters-rtcp",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver-getsynchronizationsources",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver-jitterbuffertarget",
+    "https://w3c.github.io/webrtc-pc/#dom-rtpreceiver-track",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver-transport",
+    "https://w3c.github.io/webrtc-pc/#rtcrtpsender-interface",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-dtmf",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-getcapabilities",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-getparameters",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsendparameters-encodings",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsendparameters-transactionid",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-replacetrack",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-setparameters",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpencodingparameters-maxbitrate",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpencodingparameters-maxframerate",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpencodingparameters-scaleresolutiondownby",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-setstreams",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-track",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-transport",
+    "https://w3c.github.io/webrtc-pc/#rtcrtptransceiver-interface",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-currentdirection",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiverdirection-stopped",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-direction",
+    "https://w3c.github.io/webrtc-extensions/#dom-rtcrtptransceiver-getheaderextensionstonegotiate",
+    "https://w3c.github.io/webrtc-extensions/#dom-rtcrtptransceiver-getnegotiatedheaderextensions",
+    "https://w3c.github.io/webrtc-pc/#dom-rtptransceiver-mid",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-receiver",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-sender",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-setcodecpreferences",
+    "https://w3c.github.io/webrtc-extensions/#dom-rtcrtptransceiver-setheaderextensionstonegotiate",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-stop",
+    "https://w3c.github.io/webrtc-pc/#rtcsessiondescription-class",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcsessiondescription-sdp",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcsessiondescription-tojson",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcsessiondescription-type",
+    "https://w3c.github.io/webrtc-pc/#dom-rtctrackevent",
+    "https://w3c.github.io/webrtc-pc/#dom-rtctrackevent-constructor",
+    "https://w3c.github.io/webrtc-pc/#dom-trackevent-receiver",
+    "https://w3c.github.io/webrtc-pc/#dom-rtctrackevent-streams",
+    "https://w3c.github.io/webrtc-pc/#dom-rtctrackevent-track",
+    "https://w3c.github.io/webrtc-pc/#dom-trackevent-transceiver"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/RTCTrackEvent/transceiver",
+  "links": [
+    {
+      "url": "https://webrtc.org/",
+      "title": "WebRTC Project site"
+    },
+    {
+      "url": "https://temasys.atlassian.net/wiki/display/TWPP/WebRTC+Plugins",
+      "title": "Plug-in for support in IE & Safari"
+    },
+    {
+      "url": "https://blogs.windows.com/msedgedev/2017/01/31/introducing-webrtc-microsoft-edge/",
+      "title": "Introducing WebRTC 1.0 and interoperable real-time communications in Microsoft Edge"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "23",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "22",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "11",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "18",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11.0-11.2",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.37,
+      "partial": 0,
+      "total": 96.37
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.19,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "The legacy Edge browser also offers a compatible implementation known as [ObjectRTC](http://blogs.msdn.com/b/ie/archive/2014/10/27/bringing-interoperable-real-time-communications-to-the-web.aspx). See [Object RTC](https://caniuse.com/#feat=objectrtc) for support details for that API.",
+    "byNum": {
+      "1": "BlackBerry 10 recognizes RTCPeerConnection but real support is unconfirmed.",
+      "2": "Edge does not support RTCDataChannel. See [API Catalogue](https://web.archive.org/web/20190327013248/https://developer.microsoft.com/en-us/microsoft-edge/platform/catalog/?q=specName%3Awebrtc)"
+    }
+  },
+  "status": "wd",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "rtcpeerconnection"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "webrtc",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCCertificate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCCertificate.expires",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCCertificate.getFingerprints",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDTMFSender",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDTMFSender.canInsertDTMF",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDTMFSender.insertDTMF",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDTMFSender.toneBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDTMFSender.tonechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDTMFToneChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDTMFToneChangeEvent.RTCDTMFToneChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDTMFToneChangeEvent.tone",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.binaryType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.binaryType.arraybuffer_value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.binaryType.blob_value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.bufferedAmount",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.bufferedAmountLowThreshold",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.bufferedamountlow_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.close_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.closing_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.error_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.maxPacketLifeTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.maxRetransmits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.message_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.negotiated",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.open_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.ordered",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.protocol",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.readyState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.sctp_sdp_21",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.send",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannel.transferable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannelEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannelEvent.RTCDataChannelEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDataChannelEvent.channel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDtlsTransport",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDtlsTransport.error_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDtlsTransport.getRemoteCertificates",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDtlsTransport.iceTransport",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDtlsTransport.state",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCDtlsTransport.statechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCError.RTCError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCError.errorDetail",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCError.receivedAlert",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCError.sctpCauseCode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCError.sdpLineNumber",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCError.sentAlert",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCErrorEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCErrorEvent.RTCErrorEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCErrorEvent.error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate.RTCIceCandidate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate.address",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate.candidate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate.component",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate.foundation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate.port",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate.priority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate.protocol",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate.relatedAddress",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate.relatedPort",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate.relayProtocol",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate.sdpMLineIndex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate.sdpMid",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate.tcpType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate.url",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidate.usernameFragment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceTransport",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceTransport.gatheringState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceTransport.gatheringstatechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceTransport.getLocalCandidates",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceTransport.getLocalParameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceTransport.getRemoteCandidates",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceTransport.getRemoteParameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceTransport.getSelectedCandidatePair",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceTransport.role",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceTransport.selectedcandidatepairchange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceTransport.state",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceTransport.statechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.RTCPeerConnection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.RTCPeerConnection.configuration_bundlePolicy_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.RTCPeerConnection.configuration_certificates_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.RTCPeerConnection.configuration_iceCandidatePoolSize_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.RTCPeerConnection.configuration_iceServers_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.RTCPeerConnection.configuration_iceServers_parameter.credential_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.RTCPeerConnection.configuration_iceServers_parameter.urls_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.RTCPeerConnection.configuration_iceServers_parameter.username_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.RTCPeerConnection.configuration_iceTransportPolicy_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.RTCPeerConnection.configuration_peerIdentity_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.RTCPeerConnection.configuration_rtcpMuxPolicy_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.addIceCandidate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.addIceCandidate.returns_promise",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.addTrack",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.addTransceiver",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.addTransceiver.init_direction_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.addTransceiver.init_sendEncodings_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.addTransceiver.init_streams_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.canTrickleIceCandidates",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.connectionState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.connectionstatechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.createAnswer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.createAnswer.returns_promise",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.createDataChannel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.createOffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.createOffer.returns_promise",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.currentLocalDescription",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.currentRemoteDescription",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.datachannel_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.generateCertificate_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.getConfiguration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.getReceivers",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.getReceivers.stopped_transceivers_removed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.getSenders",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.getSenders.stopped_transceivers_removed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.getTransceivers",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.getTransceivers.stopped_transceivers_removed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.iceConnectionState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.iceGatheringState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.icecandidate_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.icecandidateerror_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.iceconnectionstatechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.icegatheringstatechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.localDescription",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.negotiationneeded_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.pendingLocalDescription",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.pendingRemoteDescription",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.remoteDescription",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.removeTrack",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.restartIce",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.setConfiguration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.setLocalDescription",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.setLocalDescription.description_parameter_optional",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.setLocalDescription.returns_promise",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.setRemoteDescription",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.setRemoteDescription.implicit_rollback",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.setRemoteDescription.returns_promise",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.signalingState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.signalingstatechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.track_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnectionIceErrorEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnectionIceErrorEvent.RTCPeerConnectionIceErrorEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnectionIceErrorEvent.address",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnectionIceErrorEvent.errorCode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnectionIceErrorEvent.errorText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnectionIceErrorEvent.port",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnectionIceErrorEvent.url",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnectionIceEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnectionIceEvent.RTCPeerConnectionIceEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnectionIceEvent.candidate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnectionIceEvent.url",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.createEncodedStreams",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.getCapabilities_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.getContributingSources",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.getContributingSources.audioLevel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.getContributingSources.audio_tracks_supported",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.getContributingSources.rtpTimestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.getContributingSources.source",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.getContributingSources.timestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.getContributingSources.video_tracks_supported",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.getParameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.getParameters.return_object_property_codecs",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.getParameters.return_object_property_headerExtensions",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.getParameters.return_object_property_rtcp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.getSynchronizationSources",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.getSynchronizationSources.audio_tracks_supported",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.getSynchronizationSources.video_tracks_supported",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.jitterBufferTarget",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.track",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.transport",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.createEncodedStreams",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.dtmf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.getCapabilities_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.getParameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.getParameters.return_object_property_codecs",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.getParameters.return_object_property_encodings",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.getParameters.return_object_property_headerExtensions",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.getParameters.return_object_property_rtcp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.getParameters.return_object_property_transactionId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.replaceTrack",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.setParameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.setParameters.parameters_codecs_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.setParameters.parameters_encodings_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.setParameters.parameters_encodings_parameter.active",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.setParameters.parameters_encodings_parameter.maxBitrate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.setParameters.parameters_encodings_parameter.maxFramerate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.setParameters.parameters_encodings_parameter.rid",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.setParameters.parameters_encodings_parameter.scaleResolutionDownBy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.setParameters.parameters_headerExtensions_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.setParameters.parameters_rtcp_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.setParameters.parameters_transactionId_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.setStreams",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.track",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.transport",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpTransceiver",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpTransceiver.currentDirection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpTransceiver.currentDirection.stopped_value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpTransceiver.direction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpTransceiver.direction.value_stopped",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpTransceiver.getHeaderExtensionsToNegotiate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpTransceiver.getNegotiatedHeaderExtensions",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpTransceiver.mid",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpTransceiver.receiver",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpTransceiver.sender",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpTransceiver.setCodecPreferences",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpTransceiver.setHeaderExtensionsToNegotiate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpTransceiver.stop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCSessionDescription",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCSessionDescription.sdp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCSessionDescription.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCSessionDescription.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCTrackEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCTrackEvent.RTCTrackEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCTrackEvent.receiver",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCTrackEvent.streams",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCTrackEvent.track",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCTrackEvent.transceiver",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

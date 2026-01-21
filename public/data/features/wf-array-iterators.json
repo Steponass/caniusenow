@@ -1,0 +1,170 @@
+{
+  "id": "wf-array-iterators",
+  "source": "webfeatures",
+  "name": "Array iterators",
+  "description": "Arrays are iterable with the for … of statement and enumerable with the methods entries(), keys(), and values().",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype-@@iterator",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.entries",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.keys",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.values",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype-%symbol.iterator%"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/values",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "60",
+      "versions": [
+        {
+          "version": "60",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "10",
+      "versions": [
+        {
+          "version": "10",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "14",
+      "versions": [
+        {
+          "version": "14",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "14",
+      "versions": [
+        {
+          "version": "14",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10",
+      "versions": [
+        {
+          "version": "10",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "60",
+      "versions": [
+        {
+          "version": "60",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.17,
+      "partial": 0,
+      "total": 92.17
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.2,
+        "firefox": 1.75,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "array-iterators"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.values",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "id": "wf-array-by-copy",
+  "source": "webfeatures",
+  "name": "Array by copy",
+  "description": "The toReversed(), toSorted(), toSpliced(), and with() methods of arrays and typed arrays return changed copies of arrays. They stand in contrast to methods such as sort() or reverse() that change arrays in place.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.toreversed",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.tosorted",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.tospliced",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.with",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.toreversed",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.tosorted",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.with",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.toreversed",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.tosorted",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.with"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/with",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "110",
+      "versions": [
+        {
+          "version": "110",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "115",
+      "versions": [
+        {
+          "version": "115",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "16",
+      "versions": [
+        {
+          "version": "16",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "110",
+      "versions": [
+        {
+          "version": "110",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "110",
+      "versions": [
+        {
+          "version": "110",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "110",
+      "versions": [
+        {
+          "version": "110",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16",
+      "versions": [
+        {
+          "version": "16",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "110",
+      "versions": [
+        {
+          "version": "110",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "110",
+      "versions": [
+        {
+          "version": "110",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "115",
+      "versions": [
+        {
+          "version": "115",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.27,
+      "partial": 0,
+      "total": 89.27
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 25.29,
+        "firefox": 1.75,
+        "safari": 1.27,
+        "edge": 4.21,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.52,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "array-by-copy"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.toReversed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.toSorted",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.toSpliced",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.with",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.toReversed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.toSorted",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.with",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

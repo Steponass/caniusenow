@@ -1,0 +1,480 @@
+{
+  "id": "maxlength",
+  "source": "caniuse",
+  "name": "maxlength attribute for input and textarea elements",
+  "description": "Declares an upper bound on the number of characters the user can input. Normally the UI ignores attempts by the user to type in additional characters beyond this limit.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/forms.html#attr-input-maxlength"
+  ],
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-maxlength",
+      "title": "MDN Web Docs - attribute maxlength"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "51",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "5.1",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "10",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "u"
+        },
+        {
+          "version": "6",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "7",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "8",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "9",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "10",
+          "status": "y"
+        },
+        {
+          "version": "11",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "4.0-4.1",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "samsung": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "20",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "21",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "22",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "23",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "24",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "25",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "27",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "28",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "29",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.84,
+      "partial": 0.12,
+      "total": 96.96
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.76,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91,
+        "ie": 0.36
+      },
+      "mobile": {
+        "ios_saf": 12.23
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "`<textarea>`'s' UI does not prevent the user from typing additional characters beyond the `maxlength` limit.",
+      "2": "Does not support the `HTMLTextAreaElement.maxLength` DOM property.",
+      "3": "Does not support [`ValidityState.tooLong`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/tooLong). In some cases, this is because `.validity` is not supported in the first place.",
+      "4": "Does not support `ValidityState.tooLong` correctly in the (unlikely) case of the value being initially set too long, then changed by the user to a still incorrect state. See [Firefox bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1203844) and [MS Edge bug](https://web.archive.org/web/20171210191653/https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/4678527/).",
+      "5": "`<input>`'s UI does not prevent the user from typing additional characters beyond the `maxlength` limit between two existing characters of the string.",
+      "6": "Allows text beyond maxlength to be entered at first, but removes all characters past the maxlength when focus is lost."
+    }
+  },
+  "status": "ls",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "maxlength"
+    },
+    "supplementary": []
+  }
+}

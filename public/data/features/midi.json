@@ -1,0 +1,723 @@
+{
+  "id": "midi",
+  "source": "caniuse",
+  "name": "Web MIDI API",
+  "description": "The Web MIDI API specification defines a means for web developers to enumerate, manipulate and access MIDI devices",
+  "category": "JS API",
+  "spec": [
+    "https://webaudio.github.io/web-midi-api/",
+    "https://webaudio.github.io/web-midi-api/#midiaccess-interface",
+    "https://webaudio.github.io/web-midi-api/#dom-midiaccess-inputs",
+    "https://webaudio.github.io/web-midi-api/#dom-midiaccess-outputs",
+    "https://webaudio.github.io/web-midi-api/#dom-midiaccess-onstatechange",
+    "https://webaudio.github.io/web-midi-api/#dom-midiaccess-sysexenabled",
+    "https://webaudio.github.io/web-midi-api/#midiconnectionevent-interface",
+    "https://webaudio.github.io/web-midi-api/#dom-midiconnectionevent-constructor",
+    "https://webaudio.github.io/web-midi-api/#dom-midiconnectionevent-port",
+    "https://webaudio.github.io/web-midi-api/#midiinput-interface",
+    "https://webaudio.github.io/web-midi-api/#dom-midiinput-onmidimessage",
+    "https://webaudio.github.io/web-midi-api/#midiinputmap-interface",
+    "https://webaudio.github.io/web-midi-api/#midimessageevent-interface",
+    "https://webaudio.github.io/web-midi-api/#dom-midimessageevent-constructor",
+    "https://webaudio.github.io/web-midi-api/#dom-midimessageevent-data",
+    "https://webaudio.github.io/web-midi-api/#MIDIOutput",
+    "https://webaudio.github.io/web-midi-api/#dom-midioutput-clear",
+    "https://webaudio.github.io/web-midi-api/#dom-midioutput-send",
+    "https://webaudio.github.io/web-midi-api/#MIDIPort",
+    "https://webaudio.github.io/web-midi-api/#dom-midiport-close",
+    "https://webaudio.github.io/web-midi-api/#dom-midiport-connection",
+    "https://webaudio.github.io/web-midi-api/#dom-midiport-id",
+    "https://webaudio.github.io/web-midi-api/#dom-midiport-manufacturer",
+    "https://webaudio.github.io/web-midi-api/#dom-midiport-name",
+    "https://webaudio.github.io/web-midi-api/#dom-midiport-open",
+    "https://webaudio.github.io/web-midi-api/#dom-midiport-state",
+    "https://webaudio.github.io/web-midi-api/#dom-midiport-onstatechange",
+    "https://webaudio.github.io/web-midi-api/#dom-midiport-type",
+    "https://webaudio.github.io/web-midi-api/#dom-midiport-version",
+    "https://webaudio.github.io/web-midi-api/#dom-navigator-requestmidiaccess",
+    "https://webaudio.github.io/web-midi-api/#permissions-integration",
+    "https://webaudio.github.io/web-midi-api/#permissions-policy-integration"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/midi",
+  "links": [
+    {
+      "url": "https://github.com/cwilso/WebMIDIAPIShim",
+      "title": "Polyfill"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=836897",
+      "title": "Firefox support bug"
+    },
+    {
+      "url": "https://www.onlinemusictools.com/webmiditest/",
+      "title": "Test/demo page"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=107250",
+      "title": "WebKit support bug"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "43",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "108",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "n"
+        },
+        {
+          "version": "18.2",
+          "status": "n"
+        },
+        {
+          "version": "18.3",
+          "status": "n"
+        },
+        {
+          "version": "18.4",
+          "status": "n"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "n"
+        },
+        {
+          "version": "26.0",
+          "status": "n"
+        },
+        {
+          "version": "26.1",
+          "status": "n"
+        },
+        {
+          "version": "26.2",
+          "status": "n"
+        },
+        {
+          "version": "26.3",
+          "status": "n"
+        },
+        {
+          "version": "TP",
+          "status": "n"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "30",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "n"
+        },
+        {
+          "version": "18.1",
+          "status": "n"
+        },
+        {
+          "version": "18.2",
+          "status": "n"
+        },
+        {
+          "version": "18.3",
+          "status": "n"
+        },
+        {
+          "version": "18.4",
+          "status": "n"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "n"
+        },
+        {
+          "version": "26.0",
+          "status": "n"
+        },
+        {
+          "version": "26.1",
+          "status": "n"
+        },
+        {
+          "version": "26.2",
+          "status": "n"
+        },
+        {
+          "version": "26.3",
+          "status": "n"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "146",
+          "status": "n"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 82.39,
+      "partial": 0,
+      "total": 82.39
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.37,
+        "firefox": 1.75,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "samsung": 1.93
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "status": "wd",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "midi"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "web-midi",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIAccess",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIAccess.inputs",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIAccess.outputs",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIAccess.statechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIAccess.sysexEnabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIConnectionEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIConnectionEvent.MIDIConnectionEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIConnectionEvent.port",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIInput",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIInput.midimessage_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIInputMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIInputMap.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIInputMap.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIInputMap.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIInputMap.get",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIInputMap.has",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIInputMap.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIInputMap.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIInputMap.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIMessageEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIMessageEvent.MIDIMessageEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIMessageEvent.data",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIOutput",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIOutput.clear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIOutput.send",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIOutputMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIOutputMap.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIOutputMap.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIOutputMap.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIOutputMap.get",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIOutputMap.has",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIOutputMap.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIOutputMap.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIOutputMap.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIPort",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIPort.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIPort.connection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIPort.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIPort.manufacturer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIPort.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIPort.open",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIPort.state",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIPort.statechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIPort.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MIDIPort.version",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.requestMIDIAccess",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.requestMIDIAccess.secure_context_required",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Permissions.permission_midi",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.midi",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.midi",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

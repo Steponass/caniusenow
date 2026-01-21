@@ -1,0 +1,498 @@
+{
+  "id": "wf-input",
+  "source": "webfeatures",
+  "name": "<input>",
+  "description": "The <input type=\"text\"> HTML element allows the user to enter information into a form. By default, an <input> element is a text input.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/input.html#the-input-element",
+    "https://html.spec.whatwg.org/multipage/input.html#htmlinputelement",
+    "https://html.spec.whatwg.org/multipage/input.html#dom-input-accept",
+    "https://html.spec.whatwg.org/multipage/input.html#dom-input-alt",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fe-autocomplete",
+    "https://html.spec.whatwg.org/multipage/indices.html#event-cancel",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncancel",
+    "https://html.spec.whatwg.org/multipage/input.html#dom-input-checked",
+    "https://html.spec.whatwg.org/multipage/input.html#dom-input-defaultvalue",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fe-disabled",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fae-form-dev",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formaction",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formenctype",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formmethod",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formnovalidate",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formtarget",
+    "https://html.spec.whatwg.org/multipage/input.html#dom-input-height",
+    "https://html.spec.whatwg.org/multipage/indices.html#event-invalid",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oninvalid",
+    "https://html.spec.whatwg.org/multipage/forms.html#dom-lfe-labels-dev",
+    "https://html.spec.whatwg.org/multipage/input.html#dom-input-list-dev",
+    "https://html.spec.whatwg.org/multipage/input.html#dom-input-maxlength",
+    "https://html.spec.whatwg.org/multipage/input.html#dom-input-minlength",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fe-name",
+    "https://html.spec.whatwg.org/multipage/input.html#dom-input-pattern",
+    "https://html.spec.whatwg.org/multipage/input.html#dom-input-placeholder",
+    "https://html.spec.whatwg.org/multipage/input.html#dom-input-readonly",
+    "https://html.spec.whatwg.org/multipage/input.html#dom-input-required",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-select",
+    "https://html.spec.whatwg.org/multipage/indices.html#event-select",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onselect",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-selectiondirection-dev",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-selectionend",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-selectionstart",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-setrangetext-dev",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-setselectionrange-dev",
+    "https://html.spec.whatwg.org/multipage/input.html#dom-input-size",
+    "https://html.spec.whatwg.org/multipage/input.html#dom-input-type",
+    "https://html.spec.whatwg.org/multipage/input.html#dom-input-value",
+    "https://html.spec.whatwg.org/multipage/input.html#dom-input-width",
+    "https://html.spec.whatwg.org/multipage/input.html#attr-input-accept",
+    "https://html.spec.whatwg.org/multipage/input.html#attr-input-alt",
+    "https://html.spec.whatwg.org/multipage/input.html#attr-input-checked",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formaction",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formenctype",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formmethod",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formnovalidate",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formtarget",
+    "https://html.spec.whatwg.org/multipage/input.html#attr-input-list",
+    "https://html.spec.whatwg.org/multipage/input.html#attr-input-maxlength",
+    "https://html.spec.whatwg.org/multipage/input.html#attr-input-minlength",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+    "https://html.spec.whatwg.org/multipage/input.html#attr-input-pattern",
+    "https://html.spec.whatwg.org/multipage/input.html#attr-input-placeholder",
+    "https://html.spec.whatwg.org/multipage/input.html#attr-input-readonly",
+    "https://html.spec.whatwg.org/multipage/input.html#attr-input-required",
+    "https://html.spec.whatwg.org/multipage/input.html#attr-input-size",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-size",
+    "https://html.spec.whatwg.org/multipage/input.html#attr-input-src",
+    "https://html.spec.whatwg.org/multipage/input.html#text-(type=text)-state-and-search-state-(type=search)"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/text",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "input"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.accept",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.alt",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.autocomplete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.cancel_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.checked",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.defaultValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.disabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.form",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.formAction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.formEnctype",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.formMethod",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.formNoValidate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.formTarget",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.invalid_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.labels",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.list",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.maxLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.minLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.pattern",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.placeholder",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.readOnly",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.required",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.select",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.select_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.selectionDirection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.selectionEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.selectionStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.setRangeText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.setSelectionRange",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.accept",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.alt",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.checked",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.disabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.form",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.formaction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.formenctype",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.formmethod",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.formnovalidate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.formtarget",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.list",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.maxlength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.minlength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.pattern",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.placeholder",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.readonly",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.required",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.type_text",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

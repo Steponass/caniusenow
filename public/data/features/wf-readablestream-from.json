@@ -1,0 +1,97 @@
+{
+  "id": "wf-readablestream-from",
+  "source": "webfeatures",
+  "name": "ReadableStream.from()",
+  "description": "The ReadableStream.from() static method converts an iterable or async iterable object, such as an array or async generator function, into a readable stream.",
+  "category": "Other",
+  "spec": [
+    "https://streams.spec.whatwg.org/#rs-from"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/ReadableStream/from_static",
+  "links": [],
+  "support": {
+    "firefox": {
+      "current": "y",
+      "firstFull": "117",
+      "versions": [
+        {
+          "version": "117",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "117",
+      "versions": [
+        {
+          "version": "117",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 1.91,
+      "partial": 0,
+      "total": 1.91
+    },
+    "byBrowser": {
+      "desktop": {
+        "firefox": 1.6
+      },
+      "mobile": {
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "readablestream-from"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream.from_static",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

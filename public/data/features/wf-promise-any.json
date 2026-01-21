@@ -1,0 +1,174 @@
+{
+  "id": "wf-promise-any",
+  "source": "webfeatures",
+  "name": "Promise.any()",
+  "description": "The Promise.any() static method returns a promise that fulfills as soon as the first of an iterable of promises fulfills, with that promise's value. Otherwise, it rejects with an AggregateError when all of the promises have rejected.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.any",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-aggregate-error-objects",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-aggregate-error-constructor",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-aggregate-error"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise/any",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "14",
+      "versions": [
+        {
+          "version": "14",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14",
+      "versions": [
+        {
+          "version": "14",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.64,
+      "partial": 0,
+      "total": 91.64
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.01,
+        "firefox": 1.75,
+        "safari": 1.4,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.89,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "promise-any"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.AggregateError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.AggregateError.AggregateError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.AggregateError.errors",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.AggregateError.serializable_object",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Promise.any",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

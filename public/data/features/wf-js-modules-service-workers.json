@@ -1,0 +1,154 @@
+{
+  "id": "wf-js-modules-service-workers",
+  "source": "webfeatures",
+  "name": "JavaScript modules in service workers",
+  "description": "The navigator.serviceWorker.register() method accepts { type: \"module\" } to load scripts that use import and export. Also known as ECMAScript modules or ESM in service workers.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/ServiceWorker/#dom-registrationoptions-type"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "91",
+      "versions": [
+        {
+          "version": "91",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "147",
+      "versions": [
+        {
+          "version": "147",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "15",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "91",
+      "versions": [
+        {
+          "version": "91",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "91",
+      "versions": [
+        {
+          "version": "91",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "91",
+      "versions": [
+        {
+          "version": "91",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "15",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "91",
+      "versions": [
+        {
+          "version": "91",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "91",
+      "versions": [
+        {
+          "version": "91",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "147",
+      "versions": [
+        {
+          "version": "147",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.78,
+      "partial": 0,
+      "total": 89.78
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.96,
+        "safari": 1.37,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.86,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "js-modules-service-workers"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorker.ecmascript_modules",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.import.service_worker_support",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

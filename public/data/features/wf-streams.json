@@ -1,0 +1,475 @@
+{
+  "id": "wf-streams",
+  "source": "webfeatures",
+  "name": "Streams",
+  "description": "The streams API creates, composes, and consumes continuously generated data.",
+  "category": "Other",
+  "spec": [
+    "https://streams.spec.whatwg.org/",
+    "https://streams.spec.whatwg.org/#blqs-class",
+    "https://streams.spec.whatwg.org/#blqs-constructor",
+    "https://streams.spec.whatwg.org/#ref-for-blqs-high-water-mark①",
+    "https://streams.spec.whatwg.org/#blqs-size",
+    "https://streams.spec.whatwg.org/#cqs-class",
+    "https://streams.spec.whatwg.org/#ref-for-cqs-constructor①",
+    "https://streams.spec.whatwg.org/#ref-for-cqs-high-water-mark①",
+    "https://streams.spec.whatwg.org/#ref-for-cqs-size②",
+    "https://streams.spec.whatwg.org/#rs-class",
+    "https://streams.spec.whatwg.org/#ref-for-rs-constructor⑤",
+    "https://streams.spec.whatwg.org/#ref-for-rs-cancel③",
+    "https://streams.spec.whatwg.org/#ref-for-rs-get-reader⑤",
+    "https://streams.spec.whatwg.org/#ref-for-rs-locked②",
+    "https://streams.spec.whatwg.org/#ref-for-rs-pipe-through②",
+    "https://streams.spec.whatwg.org/#ref-for-rs-pipe-to④",
+    "https://streams.spec.whatwg.org/#ref-for-rs-tee②",
+    "https://streams.spec.whatwg.org/#rs-default-controller-class",
+    "https://streams.spec.whatwg.org/#ref-for-rs-default-controller-close①",
+    "https://streams.spec.whatwg.org/#ref-for-rs-default-controller-desired-size②",
+    "https://streams.spec.whatwg.org/#ref-for-rs-default-controller-enqueue①",
+    "https://streams.spec.whatwg.org/#rs-default-controller-error",
+    "https://streams.spec.whatwg.org/#default-reader-class",
+    "https://streams.spec.whatwg.org/#ref-for-default-reader-constructor①",
+    "https://streams.spec.whatwg.org/#ref-for-generic-reader-cancel②",
+    "https://streams.spec.whatwg.org/#ref-for-generic-reader-closed②",
+    "https://streams.spec.whatwg.org/#ref-for-default-reader-read①",
+    "https://streams.spec.whatwg.org/#ref-for-default-reader-release-lock②",
+    "https://streams.spec.whatwg.org/#ts-class",
+    "https://streams.spec.whatwg.org/#ref-for-ts-constructor④",
+    "https://streams.spec.whatwg.org/#ref-for-ts-readable②",
+    "https://streams.spec.whatwg.org/#ref-for-ts-writable②",
+    "https://streams.spec.whatwg.org/#ts-default-controller-class",
+    "https://streams.spec.whatwg.org/#ts-default-controller-desired-size",
+    "https://streams.spec.whatwg.org/#ts-default-controller-enqueue",
+    "https://streams.spec.whatwg.org/#ts-default-controller-error",
+    "https://streams.spec.whatwg.org/#ts-default-controller-terminate",
+    "https://streams.spec.whatwg.org/#ws-class",
+    "https://streams.spec.whatwg.org/#ref-for-ws-constructor④",
+    "https://streams.spec.whatwg.org/#ref-for-ws-abort③",
+    "https://streams.spec.whatwg.org/#ref-for-ws-close①",
+    "https://streams.spec.whatwg.org/#ref-for-ws-get-writer①",
+    "https://streams.spec.whatwg.org/#ref-for-ws-locked②",
+    "https://streams.spec.whatwg.org/#ws-default-controller-class",
+    "https://streams.spec.whatwg.org/#ref-for-ws-default-controller-error①",
+    "https://streams.spec.whatwg.org/#ref-for-ws-default-controller-signal①",
+    "https://streams.spec.whatwg.org/#default-writer-class",
+    "https://streams.spec.whatwg.org/#ref-for-default-writer-constructor①",
+    "https://streams.spec.whatwg.org/#ref-for-default-writer-abort④",
+    "https://streams.spec.whatwg.org/#ref-for-default-writer-close⑦",
+    "https://streams.spec.whatwg.org/#ref-for-default-writer-closed②",
+    "https://streams.spec.whatwg.org/#ref-for-default-writer-desired-size⑥",
+    "https://streams.spec.whatwg.org/#ref-for-default-writer-ready⑨",
+    "https://streams.spec.whatwg.org/#ref-for-default-writer-release-lock②",
+    "https://streams.spec.whatwg.org/#ref-for-default-writer-write①②"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/write",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "67",
+      "versions": [
+        {
+          "version": "67",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "14.1",
+      "versions": [
+        {
+          "version": "14.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "67",
+      "versions": [
+        {
+          "version": "67",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14.1",
+      "versions": [
+        {
+          "version": "14.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "67",
+      "versions": [
+        {
+          "version": "67",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "67",
+      "versions": [
+        {
+          "version": "67",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.8,
+      "partial": 0,
+      "total": 91.8
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.18,
+        "firefox": 1.75,
+        "safari": 1.39,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.89,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "streams"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ByteLengthQueuingStrategy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ByteLengthQueuingStrategy.ByteLengthQueuingStrategy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ByteLengthQueuingStrategy.highWaterMark",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ByteLengthQueuingStrategy.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CountQueuingStrategy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CountQueuingStrategy.CountQueuingStrategy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CountQueuingStrategy.highWaterMark",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CountQueuingStrategy.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream.ReadableStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream.cancel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream.getReader",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream.locked",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream.pipeThrough",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream.pipeTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream.tee",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultController",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultController.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultController.desiredSize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultController.enqueue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultController.error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultReader",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultReader.ReadableStreamDefaultReader",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultReader.cancel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultReader.closed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultReader.read",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultReader.releaseLock",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultReader.releaseLock.reject_pending_read_request",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TransformStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TransformStream.TransformStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TransformStream.readable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TransformStream.writable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TransformStreamDefaultController",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TransformStreamDefaultController.desiredSize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TransformStreamDefaultController.enqueue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TransformStreamDefaultController.error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TransformStreamDefaultController.terminate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStream.WritableStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStream.abort",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStream.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStream.getWriter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStream.locked",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultController",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultController.error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultController.signal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultWriter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultWriter.WritableStreamDefaultWriter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultWriter.abort",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultWriter.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultWriter.closed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultWriter.desiredSize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultWriter.ready",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultWriter.releaseLock",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultWriter.write",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

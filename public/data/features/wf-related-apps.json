@@ -1,0 +1,96 @@
+{
+  "id": "wf-related-apps",
+  "source": "webfeatures",
+  "name": "Related apps",
+  "description": "The related_applications web app manifest member lists operating system-specific applications that are related to the current web app, such as an Android app that provides similar functionality. The getInstalledRelatedApps() method lists which of those are installed on the current device.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/get-installed-related-apps/spec/",
+    "https://wicg.github.io/get-installed-related-apps/spec/#dom-navigator-getinstalledrelatedapps"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/getInstalledRelatedApps",
+  "links": [],
+  "support": {
+    "edge": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 4.26,
+      "partial": 0,
+      "total": 4.26
+    },
+    "byBrowser": {
+      "desktop": {
+        "edge": 4.26
+      },
+      "mobile": {}
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "related-apps"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.getInstalledRelatedApps",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

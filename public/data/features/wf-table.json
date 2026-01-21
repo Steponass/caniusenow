@@ -1,0 +1,579 @@
+{
+  "id": "wf-table",
+  "source": "webfeatures",
+  "name": "Tables",
+  "description": "The <table> HTML element, with several related elements, represents tabular data in rows and columns of cells.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/tables.html",
+    "https://html.spec.whatwg.org/multipage/tables.html#htmltablecaptionelement",
+    "https://html.spec.whatwg.org/multipage/tables.html#htmltablecellelement",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-th-abbr",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-tdth-cellindex",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-tdth-colspan",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-tdth-headers",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-tdth-rowspan",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-th-scope",
+    "https://html.spec.whatwg.org/multipage/tables.html#htmltablecolelement",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-colgroup-span",
+    "https://html.spec.whatwg.org/multipage/tables.html#htmltableelement",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-table-caption-dev",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-table-createcaption-dev",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-table-createtbody-dev",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-table-createtfoot-dev",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-table-createthead-dev",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-table-deletecaption-dev",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-table-deleterow-dev",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-table-deletetfoot-dev",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-table-deletethead-dev",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-table-insertrow-dev",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-table-rows-dev",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-table-tbodies-dev",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-table-tfoot-dev",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-table-thead-dev",
+    "https://html.spec.whatwg.org/multipage/tables.html#htmltablerowelement",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-tr-cells",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-tr-deletecell",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-tr-insertcell-dev",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-tr-rowindex-dev",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-tr-sectionrowindex",
+    "https://html.spec.whatwg.org/multipage/tables.html#htmltablesectionelement",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-tbody-deleterow",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-tbody-insertrow",
+    "https://html.spec.whatwg.org/multipage/tables.html#dom-tbody-rows",
+    "https://drafts.csswg.org/css2/#propdef-border-collapse",
+    "https://drafts.csswg.org/css2/#separated-borders",
+    "https://drafts.csswg.org/css2/#propdef-caption-side",
+    "https://drafts.csswg.org/css-logical/#caption-side",
+    "https://drafts.csswg.org/css2/#empty-cells",
+    "https://drafts.csswg.org/css2/#valdef-empty-cells-hide",
+    "https://drafts.csswg.org/css2/#valdef-empty-cells-show",
+    "https://drafts.csswg.org/css2/#width-layout",
+    "https://drafts.csswg.org/css2/#valdef-table-layout-auto",
+    "https://drafts.csswg.org/css2/#valdef-table-layout-fixed",
+    "https://html.spec.whatwg.org/multipage/tables.html#the-caption-element",
+    "https://html.spec.whatwg.org/multipage/tables.html#the-col-element",
+    "https://html.spec.whatwg.org/multipage/tables.html#attr-col-span",
+    "https://html.spec.whatwg.org/multipage/tables.html#the-colgroup-element",
+    "https://html.spec.whatwg.org/multipage/tables.html#attr-colgroup-span",
+    "https://html.spec.whatwg.org/multipage/tables.html#the-table-element",
+    "https://html.spec.whatwg.org/multipage/tables.html#the-tbody-element",
+    "https://html.spec.whatwg.org/multipage/tables.html#the-td-element",
+    "https://html.spec.whatwg.org/multipage/tables.html#the-tfoot-element",
+    "https://html.spec.whatwg.org/multipage/tables.html#the-th-element",
+    "https://html.spec.whatwg.org/multipage/tables.html#the-thead-element",
+    "https://html.spec.whatwg.org/multipage/tables.html#the-tr-element"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/tr",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "table"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableCaptionElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableCellElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableCellElement.abbr",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableCellElement.cellIndex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableCellElement.colSpan",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableCellElement.headers",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableCellElement.rowSpan",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableCellElement.scope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableColElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableColElement.span",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableElement.caption",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableElement.createCaption",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableElement.createTBody",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableElement.createTFoot",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableElement.createTHead",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableElement.deleteCaption",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableElement.deleteRow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableElement.deleteTFoot",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableElement.deleteTHead",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableElement.insertRow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableElement.rows",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableElement.tBodies",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableElement.tFoot",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableElement.tHead",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableRowElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableRowElement.cells",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableRowElement.deleteCell",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableRowElement.insertCell",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableRowElement.insertCell.index_parameter_negative_one",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableRowElement.insertCell.index_parameter_optional",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableRowElement.rowIndex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableRowElement.sectionRowIndex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableSectionElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableSectionElement.deleteRow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableSectionElement.insertRow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableSectionElement.rows",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-collapse",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-collapse.collapse",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-collapse.separate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-spacing",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.caption-side",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.caption-side.bottom",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.caption-side.bottom-outside",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.caption-side.top",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.caption-side.top-outside",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.caption-side.writing-mode_relative_values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.empty-cells",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.empty-cells.hide",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.empty-cells.show",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.table-layout",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.table-layout.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.table-layout.fixed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.caption",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.col",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.col.span",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.colgroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.colgroup.span",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.table",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.tbody",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.td",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.td.colspan",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.td.headers",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.td.rowspan",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.td.rowspan.rowspan_zero",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.tfoot",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.th",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.th.abbr",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.th.colspan",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.th.headers",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.th.rowspan",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.th.rowspan.rowspan_zero",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.th.scope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.thead",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.tr",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

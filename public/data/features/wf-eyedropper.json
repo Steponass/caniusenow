@@ -1,0 +1,140 @@
+{
+  "id": "wf-eyedropper",
+  "source": "webfeatures",
+  "name": "Eyedropper",
+  "description": "The EyeDropper API opens an eyedropper tool, a color picker that allows users to select a color from their screen.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/eyedropper-api/",
+    "https://wicg.github.io/eyedropper-api/#eyedropper-interface",
+    "https://wicg.github.io/eyedropper-api/#dom-eyedropper-open"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/EyeDropper/open",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "96",
+      "versions": [
+        {
+          "version": "96",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "96",
+      "versions": [
+        {
+          "version": "96",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "96",
+      "versions": [
+        {
+          "version": "96",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "96",
+      "versions": [
+        {
+          "version": "96",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "96",
+      "versions": [
+        {
+          "version": "96",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "96",
+      "versions": [
+        {
+          "version": "96",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.09,
+      "partial": 0,
+      "total": 76.09
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.93,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "eyedropper"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.EyeDropper",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EyeDropper.EyeDropper",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EyeDropper.open",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EyeDropper.secure_context_required",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "id": "wf-canvas-2d-color-management",
+  "source": "webfeatures",
+  "name": "Color management for 2D canvas",
+  "description": "The optional colorSpace parameter of a 2D canvas's getContext() method chooses the color representation, such as \"srgb\" or \"display-p3\".",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-color-space",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvasrenderingcontext2dsettings-colorspace"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "92",
+      "versions": [
+        {
+          "version": "92",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "15.2",
+      "versions": [
+        {
+          "version": "15.2",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "92",
+      "versions": [
+        {
+          "version": "92",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "92",
+      "versions": [
+        {
+          "version": "92",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "92",
+      "versions": [
+        {
+          "version": "92",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.2",
+      "versions": [
+        {
+          "version": "15.2",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "92",
+      "versions": [
+        {
+          "version": "92",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "92",
+      "versions": [
+        {
+          "version": "92",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.44,
+      "partial": 0,
+      "total": 89.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.95,
+        "safari": 1.37,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.84,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "canvas-2d-color-management"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.getContext.2d_context.options_colorSpace_parameter",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

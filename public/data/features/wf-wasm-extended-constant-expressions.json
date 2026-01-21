@@ -1,0 +1,144 @@
+{
+  "id": "wf-wasm-extended-constant-expressions",
+  "source": "webfeatures",
+  "name": "Extended constant expressions (WebAssembly)",
+  "description": "The i32.add, i32.sub, i32.mul, i64.add, i64.sub, and i64.mul operations extend constant expressions to include arithmetic.",
+  "category": "Other",
+  "spec": [
+    "https://github.com/WebAssembly/extended-const/blob/main/proposals/extended-const/Overview.md"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "112",
+      "versions": [
+        {
+          "version": "112",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "17.4",
+      "versions": [
+        {
+          "version": "17.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.4",
+      "versions": [
+        {
+          "version": "17.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "112",
+      "versions": [
+        {
+          "version": "112",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 86.4,
+      "partial": 0,
+      "total": 86.4
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 23.41,
+        "firefox": 1.75,
+        "safari": 0.96,
+        "edge": 4.21,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.86,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "wasm-extended-constant-expressions"
+    },
+    "supplementary": []
+  }
+}

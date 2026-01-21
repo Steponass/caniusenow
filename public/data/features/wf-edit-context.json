@@ -1,0 +1,351 @@
+{
+  "id": "wf-edit-context",
+  "source": "webfeatures",
+  "name": "EditContext",
+  "description": "The EditContext API allows you to build rich text editors that support advanced text input, such as Input Method Editor (IME) composition, an emoji picker, or other platform-specific editing UI.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/edit-context/",
+    "https://w3c.github.io/edit-context/#dom-characterboundsupdateevent",
+    "https://w3c.github.io/edit-context/#dom-characterboundsupdateevent-constructor",
+    "https://w3c.github.io/edit-context/#dom-characterboundsupdateevent-rangestart",
+    "https://w3c.github.io/edit-context/#dom-editcontext",
+    "https://w3c.github.io/edit-context/#dom-editcontext-constructor",
+    "https://w3c.github.io/edit-context/#dom-editcontext-attachedelements",
+    "https://w3c.github.io/edit-context/#dom-editcontext-characterbounds",
+    "https://w3c.github.io/edit-context/#dom-editcontext-characterboundsrangestart",
+    "https://w3c.github.io/edit-context/#dom-editcontext-oncharacterboundsupdate",
+    "https://w3c.github.io/edit-context/#dom-editcontext-oncompositionend",
+    "https://w3c.github.io/edit-context/#dom-editcontext-oncompositionstart",
+    "https://w3c.github.io/edit-context/#dom-editcontextinit-selectionend",
+    "https://w3c.github.io/edit-context/#dom-editcontextinit-selectionstart",
+    "https://w3c.github.io/edit-context/#dom-editcontext-text",
+    "https://w3c.github.io/edit-context/#dom-editcontext-ontextformatupdate",
+    "https://w3c.github.io/edit-context/#dom-editcontext-ontextupdate",
+    "https://w3c.github.io/edit-context/#dom-editcontext-updatecharacterbounds",
+    "https://w3c.github.io/edit-context/#dom-editcontext-updatecontrolbounds",
+    "https://w3c.github.io/edit-context/#dom-editcontext-updateselection",
+    "https://w3c.github.io/edit-context/#dom-editcontext-updateselectionbounds",
+    "https://w3c.github.io/edit-context/#dom-editcontext-updatetext",
+    "https://w3c.github.io/edit-context/#dom-htmlelement-editcontext",
+    "https://w3c.github.io/edit-context/#dom-textformat",
+    "https://w3c.github.io/edit-context/#dom-textformat-constructor",
+    "https://w3c.github.io/edit-context/#dom-textformat-rangeend",
+    "https://w3c.github.io/edit-context/#dom-textformat-rangestart",
+    "https://w3c.github.io/edit-context/#dom-textformat-underlinestyle",
+    "https://w3c.github.io/edit-context/#dom-textformat-underlinethickness",
+    "https://w3c.github.io/edit-context/#dom-textformatupdateevent",
+    "https://w3c.github.io/edit-context/#dom-textformatupdateevent-constructor",
+    "https://w3c.github.io/edit-context/#dom-textformatupdateevent-gettextformats",
+    "https://w3c.github.io/edit-context/#dom-textupdateevent",
+    "https://w3c.github.io/edit-context/#dom-textupdateevent-constructor",
+    "https://w3c.github.io/edit-context/#dom-textupdateevent-selectionend",
+    "https://w3c.github.io/edit-context/#dom-textupdateevent-selectionstart",
+    "https://w3c.github.io/edit-context/#dom-textupdateevent-text",
+    "https://w3c.github.io/edit-context/#dom-textupdateevent-updaterangeend",
+    "https://w3c.github.io/edit-context/#dom-textupdateevent-updaterangestart"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/TextUpdateEvent/updateRangeStart",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 71.71,
+      "partial": 0,
+      "total": 71.71
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 22.61,
+        "edge": 4.19,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "edit-context"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterBoundsUpdateEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterBoundsUpdateEvent.CharacterBoundsUpdateEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterBoundsUpdateEvent.rangeEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterBoundsUpdateEvent.rangeStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EditContext",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EditContext.EditContext",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EditContext.attachedElements",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EditContext.characterBounds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EditContext.characterBoundsRangeStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EditContext.characterboundsupdate_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EditContext.compositionend_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EditContext.compositionstart_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EditContext.selectionEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EditContext.selectionStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EditContext.text",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EditContext.textformatupdate_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EditContext.textupdate_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EditContext.updateCharacterBounds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EditContext.updateControlBounds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EditContext.updateSelection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EditContext.updateSelectionBounds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EditContext.updateText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.editContext",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextFormat",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextFormat.TextFormat",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextFormat.rangeEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextFormat.rangeStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextFormat.underlineStyle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextFormat.underlineThickness",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextFormatUpdateEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextFormatUpdateEvent.TextFormatUpdateEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextFormatUpdateEvent.getTextFormats",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextUpdateEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextUpdateEvent.TextUpdateEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextUpdateEvent.selectionEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextUpdateEvent.selectionStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextUpdateEvent.text",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextUpdateEvent.updateRangeEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextUpdateEvent.updateRangeStart",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

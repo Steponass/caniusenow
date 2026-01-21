@@ -1,0 +1,171 @@
+{
+  "id": "wf-contact-picker",
+  "source": "webfeatures",
+  "name": "Contact picker",
+  "description": "The navigator.contacts API allows you to ask users to share limited details about entries in their contact list with your application.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/contact-picker/#contacts-manager",
+    "https://w3c.github.io/contact-picker/#contactaddress",
+    "https://w3c.github.io/contact-picker/#dom-contactaddress-addressline",
+    "https://w3c.github.io/contact-picker/#dom-contactaddress-city",
+    "https://w3c.github.io/contact-picker/#dom-contactaddress-country",
+    "https://w3c.github.io/contact-picker/#dom-contactaddress-dependentlocality",
+    "https://w3c.github.io/contact-picker/#dom-contactaddress-organization",
+    "https://w3c.github.io/contact-picker/#dom-contactaddress-phone",
+    "https://w3c.github.io/contact-picker/#dom-contactaddress-postalcode",
+    "https://w3c.github.io/contact-picker/#dom-contactaddress-recipient",
+    "https://w3c.github.io/contact-picker/#dom-contactaddress-region",
+    "https://w3c.github.io/contact-picker/#dom-contactaddress-sortingcode",
+    "https://w3c.github.io/contact-picker/#dom-contactaddress-tojson",
+    "https://w3c.github.io/contact-picker/#contacts-manager-getproperties",
+    "https://w3c.github.io/contact-picker/#contacts-manager-select",
+    "https://w3c.github.io/contact-picker/#dom-navigator-contacts"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/contacts",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 0,
+      "total": 0
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "contact-picker"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ContactAddress",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ContactAddress.addressLine",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ContactAddress.city",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ContactAddress.country",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ContactAddress.dependentLocality",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ContactAddress.organization",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ContactAddress.phone",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ContactAddress.postalCode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ContactAddress.recipient",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ContactAddress.region",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ContactAddress.sortingCode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ContactAddress.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ContactsManager",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ContactsManager.getProperties",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ContactsManager.select",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.contacts",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

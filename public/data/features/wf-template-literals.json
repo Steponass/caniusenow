@@ -1,0 +1,156 @@
+{
+  "id": "wf-template-literals",
+  "source": "webfeatures",
+  "name": "Template literals",
+  "description": "Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-template-literals"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "62",
+      "versions": [
+        {
+          "version": "62",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "53",
+      "versions": [
+        {
+          "version": "53",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "11",
+      "versions": [
+        {
+          "version": "11",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "62",
+      "versions": [
+        {
+          "version": "62",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11",
+      "versions": [
+        {
+          "version": "11",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "62",
+      "versions": [
+        {
+          "version": "62",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "62",
+      "versions": [
+        {
+          "version": "62",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "53",
+      "versions": [
+        {
+          "version": "53",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.16,
+      "partial": 0,
+      "total": 92.16
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.2,
+        "firefox": 1.75,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.19,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "template-literals"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.grammar.template_literals",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.grammar.template_literals.template_literal_revision",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

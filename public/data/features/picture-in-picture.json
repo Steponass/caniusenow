@@ -1,0 +1,610 @@
+{
+  "id": "picture-in-picture",
+  "source": "caniuse",
+  "name": "Picture-in-Picture",
+  "description": "Allows websites to create a floating video window that is always on top of other windows so that users may continue consuming media while they interact with other sites or applications on their device.",
+  "category": "JS API",
+  "spec": [
+    "https://wicg.github.io/picture-in-picture/",
+    "https://w3c.github.io/picture-in-picture/",
+    "https://w3c.github.io/picture-in-picture/#dom-document-exitpictureinpicture",
+    "https://w3c.github.io/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement",
+    "https://w3c.github.io/picture-in-picture/#dom-document-pictureinpictureenabled",
+    "https://w3c.github.io/picture-in-picture/#dom-htmlvideoelement-disablepictureinpicture",
+    "https://w3c.github.io/picture-in-picture/#eventdef-htmlvideoelement-enterpictureinpicture",
+    "https://w3c.github.io/picture-in-picture/#dom-htmlvideoelement-onenterpictureinpicture",
+    "https://w3c.github.io/picture-in-picture/#eventdef-htmlvideoelement-leavepictureinpicture",
+    "https://w3c.github.io/picture-in-picture/#dom-htmlvideoelement-onleavepictureinpicture",
+    "https://w3c.github.io/picture-in-picture/#request-pip",
+    "https://w3c.github.io/picture-in-picture/#event-types",
+    "https://w3c.github.io/picture-in-picture/#dom-pictureinpictureevent-pictureinpictureevent",
+    "https://w3c.github.io/picture-in-picture/#dom-pictureinpictureevent-pictureinpicturewindow",
+    "https://w3c.github.io/picture-in-picture/#interface-picture-in-picture-window",
+    "https://w3c.github.io/picture-in-picture/#dom-pictureinpicturewindow-height",
+    "https://w3c.github.io/picture-in-picture/#eventdef-pictureinpicturewindow-resize",
+    "https://w3c.github.io/picture-in-picture/#dom-pictureinpicturewindow-onresize",
+    "https://w3c.github.io/picture-in-picture/#dom-pictureinpicturewindow-width",
+    "https://drafts.csswg.org/mediaqueries-5/#valdef-media-display-mode-picture-in-picture",
+    "https://drafts.csswg.org/selectors/#pip-state",
+    "https://w3c.github.io/picture-in-picture/#permissions-policy"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/picture-in-picture",
+  "links": [
+    {
+      "url": "https://googlechrome.github.io/samples/picture-in-picture/",
+      "title": "Sample video"
+    },
+    {
+      "url": "https://developer.apple.com/documentation/webkitjs/adding_picture_in_picture_to_your_safari_media_controls",
+      "title": "Safari equivalent API"
+    },
+    {
+      "url": "https://blogs.opera.com/desktop/2016/04/opera-beta-update-video-pop/",
+      "title": "Opera equivalent Video Pop Out feature"
+    },
+    {
+      "url": "https://github.com/WICG/picture-in-picture/blob/master/implementation-status.md",
+      "title": "Implementation Status"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1519885",
+      "title": "Firefox implementation bug"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "70",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "144",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "145",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "147",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "148",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "149",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "13.1",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "73",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14.0-14.4",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "samsung": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "20",
+          "status": "n"
+        },
+        {
+          "version": "21",
+          "status": "n"
+        },
+        {
+          "version": "22",
+          "status": "n"
+        },
+        {
+          "version": "23",
+          "status": "n"
+        },
+        {
+          "version": "24",
+          "status": "n"
+        },
+        {
+          "version": "25",
+          "status": "n"
+        },
+        {
+          "version": "26",
+          "status": "n"
+        },
+        {
+          "version": "27",
+          "status": "n"
+        },
+        {
+          "version": "28",
+          "status": "n"
+        },
+        {
+          "version": "29",
+          "status": "n"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 46.44,
+      "partial": 46.51,
+      "total": 92.95
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.14,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.89
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Partial support in Firefox refers to the fact that Mozilla provides an equivalent proprietary feature, which allows users to use Picture-in-Picture mode for all playing videos.",
+      "2": "Partial support in Firefox 71 refers to being enabled by default only for Windows users.",
+      "3": "Partial support in Firefox 68–70 refers to being enabled by default in Firefox pre-release channels for Windows users only.",
+      "4": "Can be enabled in Firefox via the `media.videocontrols.picture-in-picture.enabled` pref in `about:config`.",
+      "5": "Can be enabled in Chrome via the `#enable-picture-in-picture` & `#enable-surfaces-for-videos` flags in `chrome://flags`.",
+      "6": "Partial support in Safari refers to the fact that Apple provides an equivalent proprietary API for Picture-in-Picture, which is only supported by macOS 10.12 Sierra & iOS 9 and newer.",
+      "7": "Partial support in Opera refers to the fact that Opera provides an equivalent proprietary feature named Video Pop Out, which allows users to use Picture-in-Picture mode for all playing videos.",
+      "8": "Automatically plays fullscreen videos in Picture-in-Picture mode after user hits Home Screen button. Only Android 8.0 Oreo and newer provide appropriate API for Picture-in-Picture."
+    }
+  },
+  "status": "wd",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "picture-in-picture"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "picture-in-picture",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.exitPictureInPicture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.pictureInPictureElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.pictureInPictureEnabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLVideoElement.disablePictureInPicture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLVideoElement.enterpictureinpicture_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLVideoElement.leavepictureinpicture_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLVideoElement.requestPictureInPicture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PictureInPictureEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PictureInPictureEvent.PictureInPictureEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PictureInPictureEvent.pictureInPictureWindow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PictureInPictureWindow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PictureInPictureWindow.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PictureInPictureWindow.resize_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PictureInPictureWindow.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.pictureInPictureElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.media.display-mode.picture-in-picture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.picture-in-picture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.picture-in-picture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.video.disablepictureinpicture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.picture-in-picture",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

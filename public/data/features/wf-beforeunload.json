@@ -1,0 +1,169 @@
+{
+  "id": "wf-beforeunload",
+  "source": "webfeatures",
+  "name": "beforeunload",
+  "description": "The beforeunload event is fired when the current window is about to be unloaded. Typically this is used to display a dialog to confirm if users really want to leave the page when there is unsaved data that would be lost.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-beforeunloadevent-interface",
+    "https://html.spec.whatwg.org/multipage/indices.html#event-beforeunload",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onbeforeunload"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/beforeunload_event",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "3",
+      "versions": [
+        {
+          "version": "3",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "3",
+      "versions": [
+        {
+          "version": "3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "beforeunload"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.BeforeUnloadEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BeforeUnloadEvent.user_interaction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.beforeunload_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.beforeunload_event.preventdefault_activation",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

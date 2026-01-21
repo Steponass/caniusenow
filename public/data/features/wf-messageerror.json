@@ -1,0 +1,181 @@
+{
+  "id": "wf-messageerror",
+  "source": "webfeatures",
+  "name": "messageerror",
+  "description": "The messageerror event fires on a target, such as a window or worker, when an incoming message cannot be deserialized. This event can fire for many types of messages, such as cross-document messages or broadcast channel messages.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/indices.html#event-messageerror",
+    "https://w3c.github.io/ServiceWorker/#eventdef-serviceworkerglobalscope-messageerror",
+    "https://html.spec.whatwg.org/multipage/web-messaging.html#handler-messageeventtarget-onmessageerror",
+    "https://html.spec.whatwg.org/multipage/web-messaging.html#handler-messageport-onmessageerror",
+    "https://w3c.github.io/ServiceWorker/#dom-serviceworkerglobalscope-onmessageerror",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onmessageerror"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Worker/messageerror_event",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "60",
+      "versions": [
+        {
+          "version": "60",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "57",
+      "versions": [
+        {
+          "version": "57",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "18",
+      "versions": [
+        {
+          "version": "18",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "60",
+      "versions": [
+        {
+          "version": "60",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "18",
+      "versions": [
+        {
+          "version": "18",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "60",
+      "versions": [
+        {
+          "version": "60",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "60",
+      "versions": [
+        {
+          "version": "60",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "57",
+      "versions": [
+        {
+          "version": "57",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.13,
+      "partial": 0,
+      "total": 91.13
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.21,
+        "firefox": 1.75,
+        "safari": 1.23,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.35,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "messageerror"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.DedicatedWorkerGlobalScope.messageerror_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MessagePort.messageerror_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerContainer.messageerror_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.messageerror_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.messageerror_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Worker.messageerror_event",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "id": "wf-resizable-buffers",
+  "source": "webfeatures",
+  "name": "Resizable buffers",
+  "description": "The resize() method of an ArrayBuffer and the grow() method of a SharedArrayBuffer, constructed with the maxByteLength option, changes the size of the buffer in place.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.resizable",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-sharedarraybuffer.prototype.growable",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer-constructor",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.maxbytelength",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.prototype.resize",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer-constructor",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer.prototype.grow",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-sharedarraybuffer.prototype.maxbytelength"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/maxByteLength",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "111",
+      "versions": [
+        {
+          "version": "111",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "128",
+      "versions": [
+        {
+          "version": "128",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "111",
+      "versions": [
+        {
+          "version": "111",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "111",
+      "versions": [
+        {
+          "version": "111",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "111",
+      "versions": [
+        {
+          "version": "111",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "111",
+      "versions": [
+        {
+          "version": "111",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "111",
+      "versions": [
+        {
+          "version": "111",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "128",
+      "versions": [
+        {
+          "version": "128",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 88.69,
+      "partial": 0,
+      "total": 88.69
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 25.19,
+        "firefox": 1.48,
+        "safari": 1.23,
+        "edge": 4.21,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.35,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "resizable-buffers"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.ArrayBuffer.ArrayBuffer.maxByteLength_option",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.ArrayBuffer.maxByteLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.ArrayBuffer.resizable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.ArrayBuffer.resize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.SharedArrayBuffer.SharedArrayBuffer.maxByteLength_option",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.SharedArrayBuffer.grow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.SharedArrayBuffer.growable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.SharedArrayBuffer.maxByteLength",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

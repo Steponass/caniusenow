@@ -1,0 +1,137 @@
+{
+  "id": "wf-ext-texture-compression-rgtc",
+  "source": "webfeatures",
+  "name": "EXT_texture_compression_rgtc WebGL extension",
+  "description": "The EXT_texture_compression_rgtc extension for WebGL 1.0 and 2.0 contexts adds RGTC compressed texture formats. RGTC is a block-based texture compression format suited for unsigned and signed red and red-green textures. Also known as Red-Green Texture Compression.",
+  "category": "Other",
+  "spec": [
+    "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_rgtc/"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/EXT_texture_compression_rgtc",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "14.1",
+      "versions": [
+        {
+          "version": "14.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14.1",
+      "versions": [
+        {
+          "version": "14.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.49,
+      "partial": 0,
+      "total": 89.49
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.94,
+        "safari": 1.39,
+        "edge": 4.25,
+        "opera": 0.9
+      },
+      "mobile": {
+        "ios_saf": 11.89,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "ext-texture-compression-rgtc"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.EXT_texture_compression_rgtc",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

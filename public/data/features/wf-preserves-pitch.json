@@ -1,0 +1,151 @@
+{
+  "id": "wf-preserves-pitch",
+  "source": "webfeatures",
+  "name": "preservesPitch",
+  "description": "The preservesPitch property for <audio> or <video> adjusts the pitch of audio to sound more natural when the playback rate is faster or slower than the default.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-preservespitch-dev"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/preservesPitch",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "86",
+      "versions": [
+        {
+          "version": "86",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "101",
+      "versions": [
+        {
+          "version": "101",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "17.2",
+      "versions": [
+        {
+          "version": "17.2",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "86",
+      "versions": [
+        {
+          "version": "86",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "86",
+      "versions": [
+        {
+          "version": "86",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "86",
+      "versions": [
+        {
+          "version": "86",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.2",
+      "versions": [
+        {
+          "version": "17.2",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "86",
+      "versions": [
+        {
+          "version": "86",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "86",
+      "versions": [
+        {
+          "version": "86",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "101",
+      "versions": [
+        {
+          "version": "101",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 90.24,
+      "partial": 0,
+      "total": 90.24
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27,
+        "firefox": 1.75,
+        "safari": 0.98,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 10.92,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "preserves-pitch"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.preservesPitch",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

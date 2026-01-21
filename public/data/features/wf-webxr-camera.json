@@ -1,0 +1,147 @@
+{
+  "id": "wf-webxr-camera",
+  "source": "webfeatures",
+  "name": "Raw camera access for WebXR",
+  "description": "The XRView.camera property provides direct access to pose-synchronized camera images within a WebXR session.",
+  "category": "Other",
+  "spec": [
+    "https://immersive-web.github.io/raw-camera-access/",
+    "https://immersive-web.github.io/raw-camera-access/#xrcamera",
+    "https://immersive-web.github.io/raw-camera-access/#dom-xrcamera-height",
+    "https://immersive-web.github.io/raw-camera-access/#dom-xrcamera-width",
+    "https://immersive-web.github.io/raw-camera-access/#dom-xrview-camera",
+    "https://immersive-web.github.io/raw-camera-access/#dom-xrwebglbinding-getcameraimage"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "107",
+      "versions": [
+        {
+          "version": "107",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "107",
+      "versions": [
+        {
+          "version": "107",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "107",
+      "versions": [
+        {
+          "version": "107",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "107",
+      "versions": [
+        {
+          "version": "107",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "107",
+      "versions": [
+        {
+          "version": "107",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "107",
+      "versions": [
+        {
+          "version": "107",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 75.46,
+      "partial": 0,
+      "total": 75.46
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.3,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webxr-camera"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.XRCamera",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRCamera.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRCamera.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRView.camera",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRWebGLBinding.getCameraImage",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

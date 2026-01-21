@@ -1,0 +1,206 @@
+{
+  "id": "wf-intl-plural-rules",
+  "source": "webfeatures",
+  "name": "Intl.PluralRules",
+  "description": "The Intl.PluralRules API creates a locale-aware object that tells you which of the language's pluralization rules apply based on a given number.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma402/#pluralrules-objects",
+    "https://tc39.es/ecma402/#sec-intl-pluralrules-constructor",
+    "https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.resolvedoptions",
+    "https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.select",
+    "https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.selectrange",
+    "https://tc39.es/ecma402/#sec-intl.pluralrules.supportedlocalesof"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/supportedLocalesOf",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "63",
+      "versions": [
+        {
+          "version": "63",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "58",
+      "versions": [
+        {
+          "version": "58",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "13",
+      "versions": [
+        {
+          "version": "13",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "18",
+      "versions": [
+        {
+          "version": "18",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "63",
+      "versions": [
+        {
+          "version": "63",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "18",
+      "versions": [
+        {
+          "version": "18",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "13",
+      "versions": [
+        {
+          "version": "13",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "63",
+      "versions": [
+        {
+          "version": "63",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "63",
+      "versions": [
+        {
+          "version": "63",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "58",
+      "versions": [
+        {
+          "version": "58",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.87,
+      "partial": 0,
+      "total": 91.87
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.2,
+        "firefox": 1.75,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.91,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "intl-plural-rules"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.PluralRules",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.PluralRules.PluralRules",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.PluralRules.PluralRules.options_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.PluralRules.PluralRules.options_parameter.options_roundingIncrement_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.PluralRules.PluralRules.options_parameter.options_roundingMode_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.PluralRules.PluralRules.options_parameter.options_roundingPriority_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.PluralRules.PluralRules.options_parameter.options_trailingZeroDisplay_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.PluralRules.resolvedOptions",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.PluralRules.select",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.PluralRules.selectRange",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.PluralRules.supportedLocalesOf",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

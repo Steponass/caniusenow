@@ -1,0 +1,185 @@
+{
+  "id": "wf-user-action-pseudos",
+  "source": "webfeatures",
+  "name": "User action pseudo-classes",
+  "description": "The :active, :focus, and :hover CSS pseudo-classes match elements based on how users are interacting with them.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/selectors-4/#the-hover-pseudo",
+    "https://drafts.csswg.org/selectors-4/#the-active-pseudo",
+    "https://drafts.csswg.org/selectors-4/#the-focus-pseudo",
+    "https://html.spec.whatwg.org/multipage/semantics-other.html#selector-active",
+    "https://drafts.csswg.org/selectors/#active-pseudo",
+    "https://html.spec.whatwg.org/multipage/semantics-other.html#selector-focus",
+    "https://drafts.csswg.org/selectors/#focus-pseudo",
+    "https://html.spec.whatwg.org/multipage/semantics-other.html#selector-hover",
+    "https://drafts.csswg.org/selectors/#hover-pseudo"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Selectors/:hover",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "2",
+      "versions": [
+        {
+          "version": "2",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "2",
+      "versions": [
+        {
+          "version": "2",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "user-action-pseudos"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.active",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.active.non_a_elements",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.focus",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.hover",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.hover.a_elements",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.hover.all_elements",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "id": "wf-ime-mode",
+  "source": "webfeatures",
+  "name": "ime-mode",
+  "description": "The ime-mode CSS property sets the state of the input method editor for text fields.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-ui-3/#input-method-editor",
+    "https://drafts.csswg.org/css-ui/#input-method-editor"
+  ],
+  "links": [],
+  "support": {
+    "firefox": {
+      "current": "y",
+      "firstFull": "3",
+      "versions": [
+        {
+          "version": "3",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "3",
+      "versions": [
+        {
+          "version": "3",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 2.16,
+      "partial": 0,
+      "total": 2.16
+    },
+    "byBrowser": {
+      "desktop": {
+        "firefox": 1.85
+      },
+      "mobile": {
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "ime-mode"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.ime-mode",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

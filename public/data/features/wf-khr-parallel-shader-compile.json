@@ -1,0 +1,137 @@
+{
+  "id": "wf-khr-parallel-shader-compile",
+  "source": "webfeatures",
+  "name": "KHR_parallel_shader_compile WebGL extension",
+  "description": "The KHR_parallel_shader_compile extension for WebGL 1.0 and 2.0 contexts checks the status of shader compilation without blocking the runtime.",
+  "category": "Other",
+  "spec": [
+    "https://registry.khronos.org/webgl/extensions/KHR_parallel_shader_compile/"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/KHR_parallel_shader_compile",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "76",
+      "versions": [
+        {
+          "version": "76",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "14.1",
+      "versions": [
+        {
+          "version": "14.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "76",
+      "versions": [
+        {
+          "version": "76",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14.1",
+      "versions": [
+        {
+          "version": "14.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "76",
+      "versions": [
+        {
+          "version": "76",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "76",
+      "versions": [
+        {
+          "version": "76",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.71,
+      "partial": 0,
+      "total": 89.71
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.14,
+        "safari": 1.39,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.89,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "khr-parallel-shader-compile"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.KHR_parallel_shader_compile",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

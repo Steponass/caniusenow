@@ -1,0 +1,156 @@
+{
+  "id": "wf-is-secure-context",
+  "source": "webfeatures",
+  "name": "isSecureContext",
+  "description": "The isSecureContext global property is a boolean for whether the current browsing context is secure. This is primarily a check that the page has been served over an HTTPS URL.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/webappapis.html#dom-issecurecontext-dev"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/isSecureContext",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "55",
+      "versions": [
+        {
+          "version": "55",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "52",
+      "versions": [
+        {
+          "version": "52",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "11.1",
+      "versions": [
+        {
+          "version": "11.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "15",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "55",
+      "versions": [
+        {
+          "version": "55",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "15",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11.1",
+      "versions": [
+        {
+          "version": "11.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "55",
+      "versions": [
+        {
+          "version": "55",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "55",
+      "versions": [
+        {
+          "version": "55",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "52",
+      "versions": [
+        {
+          "version": "52",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.11,
+      "partial": 0,
+      "total": 92.11
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.25,
+        "firefox": 1.76,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.09,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "is-secure-context"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.isSecureContext",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.isSecureContext.worker_support",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

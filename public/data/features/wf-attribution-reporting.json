@@ -1,0 +1,219 @@
+{
+  "id": "wf-attribution-reporting",
+  "source": "webfeatures",
+  "name": "Attribution reporting",
+  "description": "The attribution reporting API measures when an ad click or view leads to a conversion, such as a purchase on an advertiser site.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/attribution-reporting-api/",
+    "https://wicg.github.io/attribution-reporting-api/#dom-htmlattributionsrcelementutils-attributionsrc",
+    "https://wicg.github.io/attribution-reporting-api/#dom-requestinit-attributionreporting",
+    "https://wicg.github.io/attribution-reporting-api/#dom-xmlhttprequest-setattributionreporting",
+    "https://wicg.github.io/attribution-reporting-api/#element-attrdef-a-attributionsrc",
+    "https://wicg.github.io/attribution-reporting-api/#element-attrdef-area-attributionsrc",
+    "https://wicg.github.io/attribution-reporting-api/#permission-policy-integration",
+    "https://wicg.github.io/attribution-reporting-api/#element-attrdef-img-attributionsrc",
+    "https://wicg.github.io/attribution-reporting-api/#element-attrdef-script-attributionsrc",
+    "https://wicg.github.io/attribution-reporting-api/#attribution-reporting-eligible",
+    "https://wicg.github.io/attribution-reporting-api/#parse-source-registration-json",
+    "https://wicg.github.io/attribution-reporting-api/#create-an-attribution-trigger",
+    "https://wicg.github.io/attribution-reporting-api/#attribution-reporting-support"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/attribution-reporting",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 68.21,
+      "partial": 0,
+      "total": 68.21
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 19.95,
+        "edge": 4.14
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "attribution-reporting"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAnchorElement.attributionSrc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.attributionSrc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.attributionSrc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLScriptElement.attributionSrc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Request.Request.init_attributionReporting_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.open.features_parameter_attributionsrc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.setAttributionReporting",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.fetch.init_attributionReporting_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.a.attributionsrc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.area.attributionsrc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.attribution-reporting",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.img.attributionsrc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.script.attributionsrc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Attribution-Reporting-Eligible",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Attribution-Reporting-Register-Source",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Attribution-Reporting-Register-Trigger",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Attribution-Reporting-Support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.attribution-reporting",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

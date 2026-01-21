@@ -1,0 +1,110 @@
+{
+  "id": "wf-color-adjust",
+  "source": "webfeatures",
+  "name": "color-adjust",
+  "description": "The color-adjust shorthand CSS property allows multiple performance related color adjustments to be set at once. Setting the print-color-adjust CSS property directly is preferred, as it is the only such adjustment so far defined.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-color-adjust-1/#color-adjust"
+  ],
+  "links": [],
+  "support": {
+    "firefox": {
+      "current": "y",
+      "firstFull": "48",
+      "versions": [
+        {
+          "version": "48",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "15.4",
+      "versions": [
+        {
+          "version": "15.4",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.4",
+      "versions": [
+        {
+          "version": "15.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "48",
+      "versions": [
+        {
+          "version": "48",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 15.26,
+      "partial": 0,
+      "total": 15.26
+    },
+    "byBrowser": {
+      "desktop": {
+        "firefox": 1.76,
+        "safari": 1.37
+      },
+      "mobile": {
+        "ios_saf": 11.82,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "color-adjust"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.color-adjust",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

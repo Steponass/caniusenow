@@ -1,0 +1,1662 @@
+{
+  "id": "audio-api",
+  "source": "caniuse",
+  "name": "Web Audio API",
+  "description": "High-level JavaScript API for processing and synthesizing audio",
+  "category": "JS API",
+  "spec": [
+    "https://www.w3.org/TR/webaudio/",
+    "https://webaudio.github.io/web-audio-api/",
+    "https://webaudio.github.io/web-audio-api/#AnalyserNode",
+    "https://webaudio.github.io/web-audio-api/#dom-analysernode-analysernode",
+    "https://webaudio.github.io/web-audio-api/#dom-analysernode-fftsize",
+    "https://webaudio.github.io/web-audio-api/#dom-analysernode-frequencybincount",
+    "https://webaudio.github.io/web-audio-api/#dom-analysernode-getbytefrequencydata",
+    "https://webaudio.github.io/web-audio-api/#dom-analysernode-getbytetimedomaindata",
+    "https://webaudio.github.io/web-audio-api/#dom-analysernode-getfloatfrequencydata",
+    "https://webaudio.github.io/web-audio-api/#dom-analysernode-getfloattimedomaindata",
+    "https://webaudio.github.io/web-audio-api/#dom-analysernode-maxdecibels",
+    "https://webaudio.github.io/web-audio-api/#dom-analysernode-mindecibels",
+    "https://webaudio.github.io/web-audio-api/#dom-analysernode-smoothingtimeconstant",
+    "https://webaudio.github.io/web-audio-api/#AudioBuffer",
+    "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-audiobuffer",
+    "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-copyfromchannel",
+    "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-copytochannel",
+    "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-duration",
+    "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-getchanneldata",
+    "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-length",
+    "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-numberofchannels",
+    "https://webaudio.github.io/web-audio-api/#dom-audiobuffer-samplerate",
+    "https://webaudio.github.io/web-audio-api/#AudioBufferSourceNode",
+    "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-audiobuffersourcenode",
+    "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-buffer",
+    "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-detune",
+    "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-loop",
+    "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-loopend",
+    "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-loopstart",
+    "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-playbackrate",
+    "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-start",
+    "https://webaudio.github.io/web-audio-api/#AudioContext",
+    "https://webaudio.github.io/web-audio-api/#dom-audiocontext-audiocontext",
+    "https://webaudio.github.io/web-audio-api/#dom-audiocontextoptions-latencyhint",
+    "https://webaudio.github.io/web-audio-api/#dom-audiocontextoptions-samplerate",
+    "https://webaudio.github.io/web-audio-api/#dom-audiocontextoptions-sinkid",
+    "https://webaudio.github.io/web-audio-api/#dom-audiocontext-baselatency",
+    "https://webaudio.github.io/web-audio-api/#dom-audiocontext-close",
+    "https://webaudio.github.io/web-audio-api/#dom-audiocontext-createmediaelementsource",
+    "https://webaudio.github.io/web-audio-api/#dom-audiocontext-createmediastreamdestination",
+    "https://webaudio.github.io/web-audio-api/#dom-audiocontext-createmediastreamsource",
+    "https://webaudio.github.io/web-audio-api/#dom-audiocontext-createmediastreamtracksource",
+    "https://webaudio.github.io/web-audio-api/#dom-audiocontext-onerror",
+    "https://webaudio.github.io/web-audio-api/#dom-audiocontext-getoutputtimestamp",
+    "https://webaudio.github.io/web-audio-api/#dom-audiocontext-outputlatency",
+    "https://webaudio.github.io/web-audio-api/#dom-audiocontext-resume",
+    "https://webaudio.github.io/web-audio-api/#dom-audiocontext-setsinkid",
+    "https://webaudio.github.io/web-audio-api/#dom-audiocontext-sinkid",
+    "https://webaudio.github.io/web-audio-api/#eventdef-audiocontext-sinkchange",
+    "https://webaudio.github.io/web-audio-api/#dom-audiocontext-suspend",
+    "https://webaudio.github.io/web-audio-api/#AudioDestinationNode",
+    "https://webaudio.github.io/web-audio-api/#dom-audiodestinationnode-maxchannelcount",
+    "https://webaudio.github.io/web-audio-api/#AudioListener",
+    "https://webaudio.github.io/web-audio-api/#dom-audiolistener-forwardx",
+    "https://webaudio.github.io/web-audio-api/#dom-audiolistener-forwardy",
+    "https://webaudio.github.io/web-audio-api/#dom-audiolistener-forwardz",
+    "https://webaudio.github.io/web-audio-api/#dom-audiolistener-positionx",
+    "https://webaudio.github.io/web-audio-api/#dom-audiolistener-positiony",
+    "https://webaudio.github.io/web-audio-api/#dom-audiolistener-positionz",
+    "https://webaudio.github.io/web-audio-api/#dom-audiolistener-upx",
+    "https://webaudio.github.io/web-audio-api/#dom-audiolistener-upy",
+    "https://webaudio.github.io/web-audio-api/#dom-audiolistener-upz",
+    "https://webaudio.github.io/web-audio-api/#AudioNode",
+    "https://webaudio.github.io/web-audio-api/#dom-audionode-channelcount",
+    "https://webaudio.github.io/web-audio-api/#dom-audionode-channelcountmode",
+    "https://webaudio.github.io/web-audio-api/#dom-audionode-channelinterpretation",
+    "https://webaudio.github.io/web-audio-api/#dom-audionode-connect",
+    "https://webaudio.github.io/web-audio-api/#dom-audionode-connect-destinationparam-output",
+    "https://webaudio.github.io/web-audio-api/#dom-audionode-context",
+    "https://webaudio.github.io/web-audio-api/#dom-audionode-disconnect",
+    "https://webaudio.github.io/web-audio-api/#dom-audionode-numberofinputs",
+    "https://webaudio.github.io/web-audio-api/#dom-audionode-numberofoutputs",
+    "https://webaudio.github.io/web-audio-api/#AudioParam",
+    "https://webaudio.github.io/web-audio-api/#dom-audioparam-automationrate",
+    "https://webaudio.github.io/web-audio-api/#dom-audioparam-cancelandholdattime",
+    "https://webaudio.github.io/web-audio-api/#dom-audioparam-cancelscheduledvalues",
+    "https://webaudio.github.io/web-audio-api/#dom-audioparam-defaultvalue",
+    "https://webaudio.github.io/web-audio-api/#dom-audioparam-exponentialramptovalueattime",
+    "https://webaudio.github.io/web-audio-api/#dom-audioparam-linearramptovalueattime",
+    "https://webaudio.github.io/web-audio-api/#dom-audioparam-maxvalue",
+    "https://webaudio.github.io/web-audio-api/#dom-audioparam-minvalue",
+    "https://webaudio.github.io/web-audio-api/#dom-audioparam-settargetattime",
+    "https://webaudio.github.io/web-audio-api/#dom-audioparam-setvalueattime",
+    "https://webaudio.github.io/web-audio-api/#dom-audioparam-setvaluecurveattime",
+    "https://webaudio.github.io/web-audio-api/#dom-audioparam-value",
+    "https://webaudio.github.io/web-audio-api/#audioparammap",
+    "https://webaudio.github.io/web-audio-api/#AudioScheduledSourceNode",
+    "https://webaudio.github.io/web-audio-api/#dom-audioscheduledsourcenode-onended",
+    "https://webaudio.github.io/web-audio-api/#dom-audioscheduledsourcenode-start",
+    "https://webaudio.github.io/web-audio-api/#dom-audioscheduledsourcenode-stop",
+    "https://webaudio.github.io/web-audio-api/#AudioSinkInfo",
+    "https://webaudio.github.io/web-audio-api/#dom-audiosinkinfo-type",
+    "https://webaudio.github.io/web-audio-api/#BaseAudioContext",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createanalyser",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createbiquadfilter",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createbuffer",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createbuffersource",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createchannelmerger",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createchannelsplitter",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createconstantsource",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createconvolver",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createdelay",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createdynamicscompressor",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-creategain",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createiirfilter",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createoscillator",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createpanner",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createperiodicwave",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createstereopanner",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createwaveshaper",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-currenttime",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-decodeaudiodata",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-destination",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-listener",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-samplerate",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-onstatechange",
+    "https://webaudio.github.io/web-audio-api/#BiquadFilterNode",
+    "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-biquadfilternode-context-options",
+    "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-q",
+    "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-detune",
+    "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-frequency",
+    "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-gain",
+    "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-getfrequencyresponse",
+    "https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-type",
+    "https://webaudio.github.io/web-audio-api/#ChannelMergerNode",
+    "https://webaudio.github.io/web-audio-api/#dom-channelmergernode-channelmergernode",
+    "https://webaudio.github.io/web-audio-api/#ChannelSplitterNode",
+    "https://webaudio.github.io/web-audio-api/#dom-channelsplitternode-channelsplitternode",
+    "https://webaudio.github.io/web-audio-api/#ConstantSourceNode",
+    "https://webaudio.github.io/web-audio-api/#dom-constantsourcenode-constantsourcenode",
+    "https://webaudio.github.io/web-audio-api/#dom-constantsourcenode-offset",
+    "https://webaudio.github.io/web-audio-api/#ConvolverNode",
+    "https://webaudio.github.io/web-audio-api/#dom-convolvernode-convolvernode",
+    "https://webaudio.github.io/web-audio-api/#dom-convolvernode-buffer",
+    "https://webaudio.github.io/web-audio-api/#dom-convolvernode-normalize",
+    "https://webaudio.github.io/web-audio-api/#DelayNode",
+    "https://webaudio.github.io/web-audio-api/#dom-delaynode-delaynode",
+    "https://webaudio.github.io/web-audio-api/#dom-delaynode-delaytime",
+    "https://webaudio.github.io/web-audio-api/#DynamicsCompressorNode",
+    "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressornode-dynamicscompressornode",
+    "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressornode-attack",
+    "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressornode-knee",
+    "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressornode-ratio",
+    "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressornode-reduction",
+    "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressornode-release",
+    "https://webaudio.github.io/web-audio-api/#dom-dynamicscompressornode-threshold",
+    "https://webaudio.github.io/web-audio-api/#GainNode",
+    "https://webaudio.github.io/web-audio-api/#dom-gainnode-gainnode",
+    "https://webaudio.github.io/web-audio-api/#dom-gainnode-gain",
+    "https://webaudio.github.io/web-audio-api/#IIRFilterNode",
+    "https://webaudio.github.io/web-audio-api/#dom-iirfilternode-iirfilternode",
+    "https://webaudio.github.io/web-audio-api/#dom-iirfilternode-getfrequencyresponse",
+    "https://webaudio.github.io/web-audio-api/#MediaElementAudioSourceNode",
+    "https://webaudio.github.io/web-audio-api/#dom-mediaelementaudiosourcenode-mediaelementaudiosourcenode",
+    "https://webaudio.github.io/web-audio-api/#dom-mediaelementaudiosourcenode-mediaelement",
+    "https://webaudio.github.io/web-audio-api/#MediaStreamAudioDestinationNode",
+    "https://webaudio.github.io/web-audio-api/#dom-mediastreamaudiodestinationnode-mediastreamaudiodestinationnode",
+    "https://webaudio.github.io/web-audio-api/#dom-mediastreamaudiodestinationnode-stream",
+    "https://webaudio.github.io/web-audio-api/#MediaStreamAudioSourceNode",
+    "https://webaudio.github.io/web-audio-api/#dom-mediastreamaudiosourcenode-mediastreamaudiosourcenode",
+    "https://webaudio.github.io/web-audio-api/#dom-mediastreamaudiosourcenode-mediastream",
+    "https://webaudio.github.io/web-audio-api/#MediaStreamTrackAudioSourceNode",
+    "https://webaudio.github.io/web-audio-api/#dom-mediastreamtrackaudiosourcenode-mediastreamtrackaudiosourcenode",
+    "https://webaudio.github.io/web-audio-api/#OscillatorNode",
+    "https://webaudio.github.io/web-audio-api/#dom-oscillatornode-oscillatornode",
+    "https://webaudio.github.io/web-audio-api/#dom-oscillatornode-detune",
+    "https://webaudio.github.io/web-audio-api/#dom-oscillatornode-frequency",
+    "https://webaudio.github.io/web-audio-api/#dom-oscillatornode-setperiodicwave",
+    "https://webaudio.github.io/web-audio-api/#dom-oscillatornode-type",
+    "https://webaudio.github.io/web-audio-api/#PannerNode",
+    "https://webaudio.github.io/web-audio-api/#dom-pannernode-pannernode",
+    "https://webaudio.github.io/web-audio-api/#dom-pannernode-coneinnerangle",
+    "https://webaudio.github.io/web-audio-api/#dom-pannernode-coneouterangle",
+    "https://webaudio.github.io/web-audio-api/#dom-pannernode-coneoutergain",
+    "https://webaudio.github.io/web-audio-api/#dom-pannernode-distancemodel",
+    "https://webaudio.github.io/web-audio-api/#dom-pannernode-maxdistance",
+    "https://webaudio.github.io/web-audio-api/#dom-pannernode-orientationx",
+    "https://webaudio.github.io/web-audio-api/#dom-pannernode-orientationy",
+    "https://webaudio.github.io/web-audio-api/#dom-pannernode-orientationz",
+    "https://webaudio.github.io/web-audio-api/#dom-pannernode-panningmodel",
+    "https://webaudio.github.io/web-audio-api/#dom-pannernode-positionx",
+    "https://webaudio.github.io/web-audio-api/#dom-pannernode-positiony",
+    "https://webaudio.github.io/web-audio-api/#dom-pannernode-positionz",
+    "https://webaudio.github.io/web-audio-api/#dom-pannernode-refdistance",
+    "https://webaudio.github.io/web-audio-api/#dom-pannernode-rollofffactor",
+    "https://webaudio.github.io/web-audio-api/#PeriodicWave",
+    "https://webaudio.github.io/web-audio-api/#dom-periodicwave-periodicwave",
+    "https://webaudio.github.io/web-audio-api/#stereopannernode",
+    "https://webaudio.github.io/web-audio-api/#dom-stereopannernode-stereopannernode",
+    "https://webaudio.github.io/web-audio-api/#dom-stereopannernode-pan",
+    "https://webaudio.github.io/web-audio-api/#WaveShaperNode",
+    "https://webaudio.github.io/web-audio-api/#dom-waveshapernode-waveshapernode",
+    "https://webaudio.github.io/web-audio-api/#dom-waveshapernode-curve",
+    "https://webaudio.github.io/web-audio-api/#dom-waveshapernode-oversample"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WaveShaperNode/oversample",
+  "links": [
+    {
+      "url": "https://github.com/corbanbrook/audionode.js",
+      "title": "Polyfill to support Web Audio API in Firefox"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/apis/webaudio",
+      "title": "WebPlatform Docs"
+    },
+    {
+      "url": "https://github.com/g200kg/WAAPISim",
+      "title": "Polyfill to enable Web Audio API through Firefox Audio Data api or flash"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API",
+      "title": "MDN Web Docs - Web Audio API"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "14",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "25",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "6",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "6.0-6.1",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.41,
+      "partial": 0,
+      "total": 96.41
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Not all browsers with support for the Audio API also support media streams (e.g. microphone input). See the [getUserMedia/Streams API](/#feat=stream) data for support for that feature.\r\n\r\nFirefox versions < 25 support an alternative, deprecated audio API.\r\n\r\nChrome support [went through some changes](https://developers.google.com/web/updates/2014/07/Web-Audio-Changes-in-m36) as of version 36.",
+    "byNum": {}
+  },
+  "status": "rec",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "audio-api"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "web-audio",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AnalyserNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AnalyserNode.AnalyserNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AnalyserNode.fftSize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AnalyserNode.frequencyBinCount",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AnalyserNode.getByteFrequencyData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AnalyserNode.getByteTimeDomainData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AnalyserNode.getFloatFrequencyData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AnalyserNode.getFloatTimeDomainData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AnalyserNode.maxDecibels",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AnalyserNode.minDecibels",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AnalyserNode.smoothingTimeConstant",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioBuffer.AudioBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioBuffer.copyFromChannel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioBuffer.copyToChannel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioBuffer.duration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioBuffer.getChannelData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioBuffer.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioBuffer.numberOfChannels",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioBuffer.sampleRate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioBufferSourceNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioBufferSourceNode.AudioBufferSourceNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioBufferSourceNode.buffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioBufferSourceNode.detune",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioBufferSourceNode.loop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioBufferSourceNode.loopEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioBufferSourceNode.loopStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioBufferSourceNode.playbackRate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioBufferSourceNode.start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext.AudioContext",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext.AudioContext.options_latencyHint_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext.AudioContext.options_sampleRate_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext.AudioContext.options_sinkId_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext.baseLatency",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext.createMediaElementSource",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext.createMediaStreamDestination",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext.createMediaStreamSource",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext.createMediaStreamTrackSource",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext.error_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext.getOutputTimestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext.outputLatency",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext.resume",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext.setSinkId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext.sinkId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext.sinkchange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioContext.suspend",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioDestinationNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioDestinationNode.maxChannelCount",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener.forwardX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener.forwardY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener.forwardZ",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener.positionX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener.positionY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener.positionZ",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener.upX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener.upY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener.upZ",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioNode.channelCount",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioNode.channelCountMode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioNode.channelInterpretation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioNode.connect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioNode.context",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioNode.disconnect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioNode.disconnect.destination_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioNode.disconnect.input_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioNode.numberOfInputs",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioNode.numberOfOutputs",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParam",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParam.automationRate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParam.cancelAndHoldAtTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParam.cancelScheduledValues",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParam.defaultValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParam.exponentialRampToValueAtTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParam.linearRampToValueAtTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParam.maxValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParam.minValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParam.setTargetAtTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParam.setValueAtTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParam.setValueCurveAtTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParam.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParamMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParamMap.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParamMap.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParamMap.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParamMap.get",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParamMap.has",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParamMap.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParamMap.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioParamMap.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioScheduledSourceNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioScheduledSourceNode.ended_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioScheduledSourceNode.start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioScheduledSourceNode.stop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioSinkInfo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioSinkInfo.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.createAnalyser",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.createBiquadFilter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.createBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.createBufferSource",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.createChannelMerger",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.createChannelSplitter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.createConstantSource",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.createConvolver",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.createDelay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.createDynamicsCompressor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.createGain",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.createIIRFilter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.createOscillator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.createPanner",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.createPeriodicWave",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.createPeriodicWave.constraints_disableNormalization_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.createStereoPanner",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.createWaveShaper",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.currentTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.decodeAudioData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.decodeAudioData.returns_promise",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.destination",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.listener",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.sampleRate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.state",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.statechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BiquadFilterNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BiquadFilterNode.BiquadFilterNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BiquadFilterNode.Q",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BiquadFilterNode.detune",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BiquadFilterNode.frequency",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BiquadFilterNode.gain",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BiquadFilterNode.getFrequencyResponse",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BiquadFilterNode.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ChannelMergerNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ChannelMergerNode.ChannelMergerNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ChannelSplitterNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ChannelSplitterNode.ChannelSplitterNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ConstantSourceNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ConstantSourceNode.ConstantSourceNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ConstantSourceNode.offset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ConvolverNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ConvolverNode.ConvolverNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ConvolverNode.buffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ConvolverNode.normalize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DelayNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DelayNode.DelayNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DelayNode.delayTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DynamicsCompressorNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DynamicsCompressorNode.DynamicsCompressorNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DynamicsCompressorNode.attack",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DynamicsCompressorNode.knee",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DynamicsCompressorNode.ratio",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DynamicsCompressorNode.reduction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DynamicsCompressorNode.release",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DynamicsCompressorNode.threshold",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GainNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GainNode.GainNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GainNode.gain",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IIRFilterNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IIRFilterNode.IIRFilterNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IIRFilterNode.getFrequencyResponse",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaElementAudioSourceNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaElementAudioSourceNode.MediaElementAudioSourceNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaElementAudioSourceNode.mediaElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamAudioDestinationNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamAudioDestinationNode.MediaStreamAudioDestinationNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamAudioDestinationNode.stream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamAudioSourceNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamAudioSourceNode.MediaStreamAudioSourceNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamAudioSourceNode.mediaStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrackAudioSourceNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrackAudioSourceNode.MediaStreamTrackAudioSourceNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OscillatorNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OscillatorNode.OscillatorNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OscillatorNode.detune",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OscillatorNode.frequency",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OscillatorNode.setPeriodicWave",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OscillatorNode.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PannerNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PannerNode.PannerNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PannerNode.coneInnerAngle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PannerNode.coneOuterAngle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PannerNode.coneOuterGain",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PannerNode.distanceModel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PannerNode.maxDistance",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PannerNode.orientationX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PannerNode.orientationY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PannerNode.orientationZ",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PannerNode.panningModel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PannerNode.positionX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PannerNode.positionY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PannerNode.positionZ",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PannerNode.refDistance",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PannerNode.rolloffFactor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PeriodicWave",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PeriodicWave.PeriodicWave",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StereoPannerNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StereoPannerNode.StereoPannerNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StereoPannerNode.pan",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WaveShaperNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WaveShaperNode.WaveShaperNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WaveShaperNode.curve",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WaveShaperNode.oversample",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

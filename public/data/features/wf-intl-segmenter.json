@@ -1,0 +1,193 @@
+{
+  "id": "wf-intl-segmenter",
+  "source": "webfeatures",
+  "name": "Intl.Segmenter",
+  "description": "The Intl.Segmenter API creates a locale-aware text splitter that can separate a string into meaningful graphemes, words, or sentences.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma402/#segmenter-objects",
+    "https://tc39.es/ecma402/#sec-intl-segmenter-constructor",
+    "https://tc39.es/ecma402/#sec-intl.segmenter.prototype.resolvedoptions",
+    "https://tc39.es/ecma402/#sec-intl.segmenter.prototype.segment",
+    "https://tc39.es/ecma402/#sec-intl.segmenter.supportedlocalesof",
+    "https://tc39.es/ecma402/#sec-segments-objects",
+    "https://tc39.es/ecma402/#sec-%intlsegmentsprototype%-%symbol.iterator%",
+    "https://tc39.es/ecma402/#sec-%segmentsprototype%.containing"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter/segment/Segments/containing",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "87",
+      "versions": [
+        {
+          "version": "87",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "125",
+      "versions": [
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "14.1",
+      "versions": [
+        {
+          "version": "14.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "87",
+      "versions": [
+        {
+          "version": "87",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "87",
+      "versions": [
+        {
+          "version": "87",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "87",
+      "versions": [
+        {
+          "version": "87",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14.1",
+      "versions": [
+        {
+          "version": "14.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "87",
+      "versions": [
+        {
+          "version": "87",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "87",
+      "versions": [
+        {
+          "version": "87",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "125",
+      "versions": [
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.35,
+      "partial": 0,
+      "total": 91.35
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.99,
+        "firefox": 1.48,
+        "safari": 1.39,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.89,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "intl-segmenter"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Segmenter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Segmenter.Segmenter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Segmenter.resolvedOptions",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Segmenter.segment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Segmenter.supportedLocalesOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Segments",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Segments.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Segments.containing",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

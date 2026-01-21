@@ -1,0 +1,236 @@
+{
+  "id": "wf-mutationobserver",
+  "source": "webfeatures",
+  "name": "MutationObserver",
+  "description": "The MutationObserver API watches for changes to the DOM tree and calls a callback function when DOM changes occur.",
+  "category": "Other",
+  "spec": [
+    "https://dom.spec.whatwg.org/#interface-mutationobserver",
+    "https://dom.spec.whatwg.org/#ref-for-dom-mutationobserver-mutationobserver①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-mutationobserver-disconnect①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-mutationobserver-observe②",
+    "https://dom.spec.whatwg.org/#ref-for-dom-mutationobserver-takerecords①",
+    "https://dom.spec.whatwg.org/#interface-mutationrecord",
+    "https://dom.spec.whatwg.org/#ref-for-dom-mutationrecord-addednodes②",
+    "https://dom.spec.whatwg.org/#ref-for-dom-mutationrecord-attributename②",
+    "https://dom.spec.whatwg.org/#ref-for-dom-mutationrecord-attributenamespace②",
+    "https://dom.spec.whatwg.org/#ref-for-dom-mutationrecord-nextsibling②",
+    "https://dom.spec.whatwg.org/#ref-for-dom-mutationrecord-oldvalue②",
+    "https://dom.spec.whatwg.org/#ref-for-dom-mutationrecord-previoussibling②",
+    "https://dom.spec.whatwg.org/#ref-for-dom-mutationrecord-removednodes②",
+    "https://dom.spec.whatwg.org/#ref-for-dom-mutationrecord-target②",
+    "https://dom.spec.whatwg.org/#ref-for-dom-mutationrecord-type②"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/MutationRecord/type",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "26",
+      "versions": [
+        {
+          "version": "26",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "14",
+      "versions": [
+        {
+          "version": "14",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "7",
+      "versions": [
+        {
+          "version": "7",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "26",
+      "versions": [
+        {
+          "version": "26",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "7",
+      "versions": [
+        {
+          "version": "7",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "26",
+      "versions": [
+        {
+          "version": "26",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "26",
+      "versions": [
+        {
+          "version": "26",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "14",
+      "versions": [
+        {
+          "version": "14",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.27,
+      "partial": 0,
+      "total": 94.27
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "and_chr": 44.12,
+        "samsung": 1.85,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "mutationobserver"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.MutationObserver",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MutationObserver.MutationObserver",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MutationObserver.disconnect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MutationObserver.observe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MutationObserver.takeRecords",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MutationRecord",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MutationRecord.addedNodes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MutationRecord.attributeName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MutationRecord.attributeNamespace",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MutationRecord.nextSibling",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MutationRecord.oldValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MutationRecord.previousSibling",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MutationRecord.removedNodes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MutationRecord.target",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MutationRecord.type",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

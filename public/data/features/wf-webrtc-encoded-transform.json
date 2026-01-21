@@ -1,0 +1,276 @@
+{
+  "id": "wf-webrtc-encoded-transform",
+  "source": "webfeatures",
+  "name": "WebRTC encoded transform",
+  "description": "The WebRTC encoded transform API allows you to modify audio and video streams in WebRTC connections. For example, it can be used for visual effects or custom codecs.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/webrtc-encoded-transform/",
+    "https://w3c.github.io/webrtc-encoded-transform/#dom-dedicatedworkerglobalscope-onrtctransform",
+    "https://w3c.github.io/webrtc-encoded-transform/#rtcencodedaudioframe",
+    "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframe-constructor",
+    "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframe-data",
+    "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframe-getmetadata",
+    "https://w3c.github.io/webrtc-encoded-transform/#rtcencodedvideoframe",
+    "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-constructor",
+    "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-data",
+    "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-getmetadata",
+    "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-type",
+    "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsender-transform",
+    "https://w3c.github.io/webrtc-encoded-transform/#rtcrtpscripttransform",
+    "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-rtcrtpscripttransform",
+    "https://w3c.github.io/webrtc-encoded-transform/#rtcrtpscripttransformer",
+    "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-generatekeyframe",
+    "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-options",
+    "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-readable",
+    "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-sendkeyframerequest",
+    "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-writable",
+    "https://w3c.github.io/webrtc-encoded-transform/#rtctransformevent",
+    "https://w3c.github.io/webrtc-encoded-transform/#dom-rtctransformevent-transformer"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/RTCTransformEvent/transformer",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "117",
+      "versions": [
+        {
+          "version": "117",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "15.4",
+      "versions": [
+        {
+          "version": "15.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.4",
+      "versions": [
+        {
+          "version": "15.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "117",
+      "versions": [
+        {
+          "version": "117",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 78.48,
+      "partial": 0,
+      "total": 78.48
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 15.25,
+        "firefox": 1.6,
+        "safari": 1.37,
+        "edge": 4.01
+      },
+      "mobile": {
+        "ios_saf": 11.82,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webrtc-encoded-transform"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.DedicatedWorkerGlobalScope.rtctransform_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCEncodedAudioFrame",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCEncodedAudioFrame.RTCEncodedAudioFrame",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCEncodedAudioFrame.data",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCEncodedAudioFrame.getMetadata",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCEncodedVideoFrame",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCEncodedVideoFrame.RTCEncodedVideoFrame",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCEncodedVideoFrame.data",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCEncodedVideoFrame.getMetadata",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCEncodedVideoFrame.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.transform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpScriptTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpScriptTransform.RTCRtpScriptTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpScriptTransformer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpScriptTransformer.generateKeyFrame",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpScriptTransformer.options",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpScriptTransformer.readable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpScriptTransformer.sendKeyFrameRequest",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpScriptTransformer.writable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.transform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCTransformEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCTransformEvent.transformer",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

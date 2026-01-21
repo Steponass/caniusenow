@@ -1,0 +1,458 @@
+{
+  "id": "link-rel-dns-prefetch",
+  "source": "caniuse",
+  "name": "Resource Hints: dns-prefetch",
+  "description": "Gives a hint to the browser to perform a DNS lookup in the background to improve performance. This is indicated using `<link rel=\"dns-prefetch\" href=\"https://example.com/\">`",
+  "category": "Other",
+  "spec": [
+    "https://www.w3.org/TR/resource-hints/#dns-prefetch",
+    "https://html.spec.whatwg.org/multipage/links.html#link-type-dns-prefetch"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Attributes/rel/dns-prefetch",
+  "links": [
+    {
+      "url": "https://msdn.microsoft.com/en-us/library/dn265039(v=vs.85).aspx",
+      "title": "Prerender and prefetch support"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching",
+      "title": "Controlling DNS prefetching"
+    },
+    {
+      "url": "https://www.ctrl.blog/entry/dns-prefetch-preconnect.html",
+      "title": "What to <link rel=dns-prefetch> and when to use `preconnect` instead"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "127",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "5",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "10",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "10",
+          "status": "y"
+        },
+        {
+          "version": "11",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "26.0",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "u"
+        },
+        {
+          "version": "18.1",
+          "status": "u"
+        },
+        {
+          "version": "18.2",
+          "status": "u"
+        },
+        {
+          "version": "18.3",
+          "status": "u"
+        },
+        {
+          "version": "18.4",
+          "status": "u"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "u"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "5.0-5.4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 85.44,
+      "partial": 0.43,
+      "total": 85.87
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.48,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91,
+        "ie": 0.36
+      },
+      "mobile": {
+        "ios_saf": 1.73,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "IE9 [supported `dns-prefetch` as `prefetch`](https://blogs.msdn.com/b/ieinternals/archive/2012/03/01/ie10-beta-consumer-preview-minor-changes-changelist.aspx) as the former wasn’t defined yet.",
+      "2": "Firefox < 127 only supports `dns-prefetch` on HTTP origins. HTTPS is unsupported."
+    }
+  },
+  "status": "wd",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "link-rel-dns-prefetch"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "link-rel-dns-prefetch",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.link.rel.dns-prefetch",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

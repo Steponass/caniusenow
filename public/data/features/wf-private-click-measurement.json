@@ -1,0 +1,102 @@
+{
+  "id": "wf-private-click-measurement",
+  "source": "webfeatures",
+  "name": "Private click measurement",
+  "description": "The attributionsourceid and attributiondestination attributes for <a> elements measure clicks across websites without associating a click to a specific session. Not to be confused with attribution reporting. Also known as PCM.",
+  "category": "Other",
+  "spec": [
+    "https://privacycg.github.io/private-click-measurement/",
+    "https://privacycg.github.io/private-click-measurement/#dom-htmlanchorelement-attributionsourceid"
+  ],
+  "links": [],
+  "support": {
+    "safari": {
+      "current": "y",
+      "firstFull": "15.4",
+      "versions": [
+        {
+          "version": "15.4",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.4",
+      "versions": [
+        {
+          "version": "15.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 13.19,
+      "partial": 0,
+      "total": 13.19
+    },
+    "byBrowser": {
+      "desktop": {
+        "safari": 1.37
+      },
+      "mobile": {
+        "ios_saf": 11.82
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "private-click-measurement"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAnchorElement.attributionSourceId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.a.attributionsourceid",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

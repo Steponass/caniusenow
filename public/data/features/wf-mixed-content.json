@@ -1,0 +1,191 @@
+{
+  "id": "wf-mixed-content",
+  "source": "webfeatures",
+  "name": "Mixed content handling",
+  "description": "When a document is loaded over HTTPS, browsers ensure that none of the document's resources are loaded over an insecure protocol. Instead, resources that the document attempts to load over an insecure protocol are either loaded over HTTPS or are blocked.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/webappsec-mixed-content/",
+    "https://w3c.github.io/webappsec-mixed-content/#intro",
+    "https://w3c.github.io/webappsec-mixed-content/#category-upgradeable",
+    "https://w3c.github.io/webappsec-mixed-content/#mixed-download",
+    "https://w3c.github.io/webappsec-mixed-content/#category-blockable"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/Security/Defenses/Mixed_content",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "≤79",
+      "versions": [
+        {
+          "version": "≤79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "≤23",
+      "versions": [
+        {
+          "version": "≤23",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "≤9.1",
+      "versions": [
+        {
+          "version": "≤9.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "≤79",
+      "versions": [
+        {
+          "version": "≤79",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "≤9.1",
+      "versions": [
+        {
+          "version": "≤9.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "≤79",
+      "versions": [
+        {
+          "version": "≤79",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "≤79",
+      "versions": [
+        {
+          "version": "≤79",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "≤23",
+      "versions": [
+        {
+          "version": "≤23",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "mixed-content"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "http.mixed-content",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.mixed-content.allow_file_urls",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.mixed-content.allow_localhost_url",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.mixed-content.allow_loopback_url",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.mixed-content.auto_upgrade_images",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.mixed-content.auto_upgrade_video_audio",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.mixed-content.block_mixed_downloads",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.mixed-content.blockable_mixed_content",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

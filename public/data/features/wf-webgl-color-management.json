@@ -1,0 +1,157 @@
+{
+  "id": "wf-webgl-color-management",
+  "source": "webfeatures",
+  "name": "Color management for WebGL",
+  "description": "The drawingBufferColorSpace and unpackColorSpace properties of WebGLRenderingContext sets the color representation for the buffer and imported textures, such as \"srgb\" or \"display-p3\".",
+  "category": "Other",
+  "spec": [
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#DOM-WebGLRenderingContext-drawingBufferColorSpace",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#DOM-WebGLRenderingContext-unpackColorSpace"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/unpackColorSpace",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 90.25,
+      "partial": 0,
+      "total": 90.25
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.73,
+        "firefox": 1.48,
+        "safari": 1.23,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.35,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webgl-color-management"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.drawingBufferColorSpace",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.unpackColorSpace",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

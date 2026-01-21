@@ -1,0 +1,296 @@
+{
+  "id": "wf-observable",
+  "source": "webfeatures",
+  "name": "Observable",
+  "description": "The when() method on a event target returns an Observable object, which provides a declarative API for subscribing to and operating on events. It's an alternative to addEventListener() callbacks.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/observable/",
+    "https://wicg.github.io/observable/#dom-eventtarget-when",
+    "https://wicg.github.io/observable/#observable-api",
+    "https://wicg.github.io/observable/#dom-observable-observable",
+    "https://wicg.github.io/observable/#dom-observable-catch",
+    "https://wicg.github.io/observable/#dom-observable-drop",
+    "https://wicg.github.io/observable/#dom-observable-every",
+    "https://wicg.github.io/observable/#dom-observable-filter",
+    "https://wicg.github.io/observable/#dom-observable-finally",
+    "https://wicg.github.io/observable/#dom-observable-find",
+    "https://wicg.github.io/observable/#dom-observable-first",
+    "https://wicg.github.io/observable/#dom-observable-flatmap",
+    "https://wicg.github.io/observable/#dom-observable-foreach",
+    "https://wicg.github.io/observable/#dom-observable-from",
+    "https://wicg.github.io/observable/#dom-observable-inspect",
+    "https://wicg.github.io/observable/#dom-observable-last",
+    "https://wicg.github.io/observable/#dom-observable-map",
+    "https://wicg.github.io/observable/#dom-observable-reduce",
+    "https://wicg.github.io/observable/#dom-observable-some",
+    "https://wicg.github.io/observable/#dom-observable-subscribe",
+    "https://wicg.github.io/observable/#dom-observable-switchmap",
+    "https://wicg.github.io/observable/#dom-observable-take",
+    "https://wicg.github.io/observable/#dom-observable-takeuntil",
+    "https://wicg.github.io/observable/#dom-observable-toarray",
+    "https://wicg.github.io/observable/#subscriber-api",
+    "https://wicg.github.io/observable/#dom-subscriber-active",
+    "https://wicg.github.io/observable/#dom-subscriber-addteardown",
+    "https://wicg.github.io/observable/#dom-subscriber-complete",
+    "https://wicg.github.io/observable/#dom-subscriber-error",
+    "https://wicg.github.io/observable/#dom-subscriber-next",
+    "https://wicg.github.io/observable/#dom-subscriber-signal"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 67.84,
+      "partial": 0,
+      "total": 67.84
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 19.6,
+        "edge": 4.12
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "observable"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.EventTarget.when",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.Observable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.catch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.drop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.every",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.filter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.finally",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.find",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.first",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.flatMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.from_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.inspect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.last",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.map",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.reduce",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.some",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.subscribe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.switchMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.take",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.takeUntil",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Observable.toArray",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Subscriber",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Subscriber.active",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Subscriber.addTeardown",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Subscriber.complete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Subscriber.error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Subscriber.next",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Subscriber.signal",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

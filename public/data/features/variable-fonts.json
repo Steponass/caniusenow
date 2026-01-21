@@ -1,0 +1,530 @@
+{
+  "id": "variable-fonts",
+  "source": "caniuse",
+  "name": "Variable fonts",
+  "description": "OpenType font settings that allows a single font file to behave like multiple fonts: it can contain all the allowed variations in width, weight, slant, optical size, or any other exposed axes of variation as defined by the font designer. Variations can be applied via the `font-variation-settings` property.",
+  "category": "CSS",
+  "spec": [
+    "https://w3c.github.io/csswg-drafts/css-fonts-4/#font-variation-settings-def",
+    "https://drafts.csswg.org/css-fonts-4/#font-variation-settings-def",
+    "https://drafts.csswg.org/css-fonts/#font-rend-desc",
+    "https://drafts.csswg.org/css-fonts/#font-variation-settings-def"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/font-variation-settings",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings",
+      "title": "MDN Web docs article"
+    },
+    {
+      "url": "https://medium.com/clear-left-thinking/how-to-use-variable-fonts-in-the-real-world-e6d73065a604",
+      "title": "How to use variable fonts in the real world"
+    },
+    {
+      "url": "https://v-fonts.com",
+      "title": "v-fonts.com - A simple resource for finding and trying variable fonts"
+    },
+    {
+      "url": "https://www.axis-praxis.org/about",
+      "title": "Axis-Praxis - Tool & info on variable fonts"
+    },
+    {
+      "url": "https://evilmartians.com/chronicles/the-joy-of-variable-fonts-getting-started-on-the-frontend",
+      "title": "Getting started with Variable Fonts on the Frontend (2022)"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "67",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "144",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "145",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "147",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "148",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "149",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "54",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "13.0-13.1",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "20",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "21",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "22",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "23",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "24",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "25",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "27",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "28",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "29",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.12,
+      "partial": 0,
+      "total": 96.12
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.18,
+        "safari": 1.37,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.91,
+        "and_chr": 44.12
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Works with Experimental Web Platform features enabled",
+      "2": "Requires macOS 10.12 Sierra or later and the following about:config flags to be enabled:\r\n`layout.css.font-variations.enabled`,\r\n`gfx.downloadable_fonts.keep_variation_tables`",
+      "3": "Requires macOS 10.13 High Sierra or later or [Windows 10 1709 \"Fall Creators Update\" or later](https://bugzilla.mozilla.org/show_bug.cgi?id=1742970#c2)",
+      "4": "Does not support the `font-weight` and `font-stretch` properties.",
+      "5": "Does not support `format('truetype-variations')`, `format('woff-variations')`, `format('woff2-variations')`",
+      "6": "Does not support OpenType-CFF2 fonts",
+      "7": "OpenType-CFF2 support requires macOS 10.15 Catalina or later"
+    }
+  },
+  "status": "wd",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "variable-fonts"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "font-variation-settings",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.font-face.font-variation-settings",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-variation-settings",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

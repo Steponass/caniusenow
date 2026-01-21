@@ -1,0 +1,163 @@
+{
+  "id": "wf-gamepad-vr",
+  "source": "webfeatures",
+  "name": "Gamepad VR hands and poses",
+  "description": "The hand and pose properties of a Gamepad object represent the position in space and the hand that WebVR controllers are held in.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/gamepad/extensions.html",
+    "https://w3c.github.io/gamepad/extensions.html#dom-gamepad-hand",
+    "https://w3c.github.io/gamepad/extensions.html#dom-gamepad-pose",
+    "https://w3c.github.io/gamepad/extensions.html#gamepadpose-interface",
+    "https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose-angularacceleration",
+    "https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose-angularvelocity",
+    "https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose-hasorientation",
+    "https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose-hasposition",
+    "https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose-linearacceleration",
+    "https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose-linearvelocity",
+    "https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose-orientation",
+    "https://w3c.github.io/gamepad/extensions.html#dom-gamepadpose-position"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/GamepadPose/position",
+  "links": [],
+  "support": {
+    "firefox": {
+      "current": "y",
+      "firstFull": "55",
+      "versions": [
+        {
+          "version": "55",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "55",
+      "versions": [
+        {
+          "version": "55",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 2.06,
+      "partial": 0,
+      "total": 2.06
+    },
+    "byBrowser": {
+      "desktop": {
+        "firefox": 1.75
+      },
+      "mobile": {
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "gamepad-vr"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Gamepad.hand",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Gamepad.pose",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.angularAcceleration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.angularVelocity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.hasOrientation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.hasPosition",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.linearAcceleration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.linearVelocity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.orientation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.position",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.secure_context_required",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

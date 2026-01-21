@@ -1,0 +1,169 @@
+{
+  "id": "wf-dirname",
+  "source": "webfeatures",
+  "name": "dirname",
+  "description": "The dirname attribute of <textarea> and <input> HTML elements includes the field's writing direction as form data on submission.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname",
+    "https://html.spec.whatwg.org/multipage/input.html#dom-input-dirname",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-textarea-dirname"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Attributes/dirname",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "116",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "6",
+      "versions": [
+        {
+          "version": "6",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "6",
+      "versions": [
+        {
+          "version": "6",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "116",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.19,
+      "partial": 0,
+      "total": 94.19
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.6,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "dirname"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.dirName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.dirName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.dirname",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.textarea.dirname",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

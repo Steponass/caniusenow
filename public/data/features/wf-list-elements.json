@@ -1,0 +1,230 @@
+{
+  "id": "wf-list-elements",
+  "source": "webfeatures",
+  "name": "<ol>, <ul>, and <li>",
+  "description": "The <ol>, <ul>, and <li> HTML elements represent ordered and unordered lists.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/grouping-content.html#the-ol-element",
+    "https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element",
+    "https://html.spec.whatwg.org/multipage/grouping-content.html#the-li-element",
+    "https://html.spec.whatwg.org/multipage/grouping-content.html#htmllielement",
+    "https://html.spec.whatwg.org/multipage/grouping-content.html#dom-li-value",
+    "https://html.spec.whatwg.org/multipage/grouping-content.html#htmlolistelement",
+    "https://html.spec.whatwg.org/multipage/grouping-content.html#dom-ol-reversed",
+    "https://html.spec.whatwg.org/multipage/grouping-content.html#dom-ol-start",
+    "https://html.spec.whatwg.org/multipage/grouping-content.html#dom-ol-type",
+    "https://html.spec.whatwg.org/multipage/grouping-content.html#htmlulistelement",
+    "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-li-value",
+    "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-reversed",
+    "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-start",
+    "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/ul",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "≤4",
+      "versions": [
+        {
+          "version": "≤4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "≤4",
+      "versions": [
+        {
+          "version": "≤4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "list-elements"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLLIElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLLIElement.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLOListElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLOListElement.reversed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLOListElement.start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLOListElement.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLUListElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.li",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.li.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.ol",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.ol.reversed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.ol.start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.ol.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.ul",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1817 @@
+{
+  "id": "wf-dom",
+  "source": "webfeatures",
+  "name": "DOM",
+  "description": "The DOM (Document Object Model) API represents HTML and XML documents as trees of nodes. You can use the API to inspect and modify the structure and content of a document.",
+  "category": "Other",
+  "spec": [
+    "https://dom.spec.whatwg.org/",
+    "https://dom.spec.whatwg.org/#interface-attr",
+    "https://dom.spec.whatwg.org/#dom-attr-localname",
+    "https://dom.spec.whatwg.org/#dom-attr-name",
+    "https://dom.spec.whatwg.org/#dom-attr-namespaceuri",
+    "https://dom.spec.whatwg.org/#dom-attr-ownerelement",
+    "https://dom.spec.whatwg.org/#dom-attr-prefix",
+    "https://dom.spec.whatwg.org/#dom-attr-value",
+    "https://dom.spec.whatwg.org/#interface-cdatasection",
+    "https://dom.spec.whatwg.org/#interface-characterdata",
+    "https://dom.spec.whatwg.org/#ref-for-dom-childnode-after①",
+    "https://dom.spec.whatwg.org/#dom-characterdata-appenddata",
+    "https://dom.spec.whatwg.org/#ref-for-dom-childnode-before①",
+    "https://dom.spec.whatwg.org/#dom-characterdata-data",
+    "https://dom.spec.whatwg.org/#dom-characterdata-deletedata",
+    "https://dom.spec.whatwg.org/#dom-characterdata-insertdata",
+    "https://dom.spec.whatwg.org/#dom-characterdata-length",
+    "https://dom.spec.whatwg.org/#ref-for-dom-nondocumenttypechildnode-nextelementsibling②",
+    "https://dom.spec.whatwg.org/#ref-for-dom-nondocumenttypechildnode-previouselementsibling②",
+    "https://dom.spec.whatwg.org/#ref-for-dom-childnode-remove①",
+    "https://dom.spec.whatwg.org/#dom-characterdata-replacedata",
+    "https://dom.spec.whatwg.org/#ref-for-dom-childnode-replacewith①",
+    "https://dom.spec.whatwg.org/#dom-characterdata-substringdata",
+    "https://dom.spec.whatwg.org/#interface-comment",
+    "https://dom.spec.whatwg.org/#ref-for-dom-comment-comment①",
+    "https://webidl.spec.whatwg.org/#idl-DOMException",
+    "https://webidl.spec.whatwg.org/#dom-domexception-domexception",
+    "https://webidl.spec.whatwg.org/#dom-domexception-message",
+    "https://webidl.spec.whatwg.org/#dom-domexception-name",
+    "https://dom.spec.whatwg.org/#interface-domimplementation",
+    "https://dom.spec.whatwg.org/#ref-for-dom-domimplementation-createdocument②",
+    "https://dom.spec.whatwg.org/#ref-for-dom-domimplementation-createdocumenttype①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-domimplementation-createhtmldocument①",
+    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#the-domstringlist-interface",
+    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#dom-domstringlist-contains",
+    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#dom-domstringlist-item",
+    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#dom-domstringlist-length",
+    "https://dom.spec.whatwg.org/#interface-domtokenlist",
+    "https://dom.spec.whatwg.org/#ref-for-dom-domtokenlist-add①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-domtokenlist-contains①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-domtokenlist-item①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-domtokenlist-length①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-domtokenlist-remove①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-domtokenlist-replace①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-domtokenlist-supports①",
+    "https://dom.spec.whatwg.org/#DOMTokenList-stringification-behavior",
+    "https://dom.spec.whatwg.org/#ref-for-dom-domtokenlist-toggle①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-domtokenlist-value②",
+    "https://dom.spec.whatwg.org/#interface-document",
+    "https://html.spec.whatwg.org/multipage/dom.html#the-document-object",
+    "https://drafts.csswg.org/cssom-view/#extensions-to-the-document-interface",
+    "https://w3c.github.io/pointerlock/#extensions-to-the-document-interface",
+    "https://w3c.github.io/selection-api/#extensions-to-document-interface",
+    "https://html.spec.whatwg.org/multipage/parsing.html#stop-parsing",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-document①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-url①",
+    "https://html.spec.whatwg.org/multipage/interaction.html#dom-documentorshadowroot-activeelement-dev",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-adoptnode①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-append①",
+    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-body-dev",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-characterset①",
+    "https://dom.spec.whatwg.org/#dom-parentnode-childelementcount",
+    "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-children①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-compatmode①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-contenttype①",
+    "https://dom.spec.whatwg.org/#dom-document-createattribute",
+    "https://dom.spec.whatwg.org/#dom-document-createattributens",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-createcomment①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-createdocumentfragment①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-createelement①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-createelementns①",
+    "https://dom.spec.whatwg.org/#dom-document-createnodeiterator",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-createprocessinginstruction①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-createtextnode①",
+    "https://dom.spec.whatwg.org/#dom-document-createtreewalker",
+    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-currentscript-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-document-defaultview-dev",
+    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-dir",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-doctype①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-documentelement①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-documenturi①",
+    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-embeds-dev",
+    "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-firstelementchild①",
+    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-forms-dev",
+    "https://dom.spec.whatwg.org/#ref-for-dom-nonelementparentnode-getelementbyid②",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-getelementsbyclassname①",
+    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-getelementsbyname-dev",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-getelementsbytagname①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-getelementsbytagnamens①",
+    "https://html.spec.whatwg.org/multipage/interaction.html#dom-document-hasfocus-dev",
+    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-head-dev",
+    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-images-dev",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-implementation①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-document-importnode①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-lastelementchild①",
+    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-lastmodified-dev",
+    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-links-dev",
+    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-plugins-dev",
+    "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-prepend①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-queryselector①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-queryselectorall①",
+    "https://html.spec.whatwg.org/multipage/dom.html#current-document-readiness",
+    "https://html.spec.whatwg.org/multipage/indices.html#event-readystatechange",
+    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-referrer-dev",
+    "https://dom.spec.whatwg.org/#ref-for-dom-parentnode-replacechildren①",
+    "https://html.spec.whatwg.org/multipage/dom.html#dom-document-scripts-dev",
+    "https://html.spec.whatwg.org/multipage/dom.html#document.title",
+    "https://dom.spec.whatwg.org/#interface-documentfragment",
+    "https://dom.spec.whatwg.org/#ref-for-dom-documentfragment-documentfragment①",
+    "https://dom.spec.whatwg.org/#dom-nonelementparentnode-getelementbyid",
+    "https://dom.spec.whatwg.org/#interface-documenttype",
+    "https://dom.spec.whatwg.org/#dom-documenttype-name",
+    "https://dom.spec.whatwg.org/#dom-documenttype-publicid",
+    "https://dom.spec.whatwg.org/#dom-documenttype-systemid",
+    "https://dom.spec.whatwg.org/#interface-element",
+    "https://w3c.github.io/pointerevents/#extensions-to-the-element-interface",
+    "https://fullscreen.spec.whatwg.org/#api",
+    "https://w3c.github.io/DOM-Parsing/#extensions-to-the-element-interface",
+    "https://drafts.csswg.org/cssom-view/#extension-to-the-element-interface",
+    "https://dom.spec.whatwg.org/#dom-element-attributes",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-classlist①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-classname①",
+    "https://drafts.csswg.org/cssom-view/#dom-element-clientheight",
+    "https://drafts.csswg.org/cssom-view/#dom-element-clientleft",
+    "https://drafts.csswg.org/cssom-view/#dom-element-clienttop",
+    "https://drafts.csswg.org/cssom-view/#dom-element-clientwidth",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-closest①",
+    "https://drafts.csswg.org/cssom-view/#dom-element-currentcsszoom",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-getattribute①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-getattributens①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-getattributenames①",
+    "https://dom.spec.whatwg.org/#dom-element-getattributenode",
+    "https://dom.spec.whatwg.org/#dom-element-getattributenodens",
+    "https://drafts.csswg.org/cssom-view/#dom-element-getboundingclientrect",
+    "https://drafts.csswg.org/cssom-view/#dom-element-getclientrects",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-getelementsbyclassname",
+    "https://dom.spec.whatwg.org/#dom-element-getelementsbytagname",
+    "https://dom.spec.whatwg.org/#dom-element-getelementsbytagnamens",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-hasattribute①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-hasattributens①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-hasattributes①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-id①",
+    "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-innerhtml",
+    "https://dom.spec.whatwg.org/#dom-element-insertadjacentelement",
+    "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-insertadjacenthtml()-method",
+    "https://dom.spec.whatwg.org/#dom-element-insertadjacenttext",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-localname①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-matches①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-namespaceuri①",
+    "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-outerhtml",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-prefix①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-removeattribute①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-removeattributens①",
+    "https://dom.spec.whatwg.org/#dom-element-removeattributenode",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-setattribute①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-setattributens①",
+    "https://dom.spec.whatwg.org/#dom-element-setattributenode",
+    "https://dom.spec.whatwg.org/#dom-element-setattributenodens",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-tagname①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-toggleattribute①",
+    "https://dom.spec.whatwg.org/#interface-htmlcollection",
+    "https://dom.spec.whatwg.org/#ref-for-dom-htmlcollection-item①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-htmlcollection-length①",
+    "https://dom.spec.whatwg.org/#dom-htmlcollection-nameditem-key",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#htmldocument",
+    "https://html.spec.whatwg.org/multipage/dom.html#htmlelement",
+    "https://html.spec.whatwg.org/multipage/dom.html#dom-dir",
+    "https://html.spec.whatwg.org/multipage/interaction.html#dom-hidden",
+    "https://html.spec.whatwg.org/multipage/dom.html#the-innertext-idl-attribute",
+    "https://w3c.github.io/uievents/#event-type-load",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onload",
+    "https://html.spec.whatwg.org/multipage/indices.html#event-load",
+    "https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsetheight",
+    "https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsetleft",
+    "https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsetparent",
+    "https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsettop",
+    "https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsetwidth",
+    "https://html.spec.whatwg.org/multipage/dom.html#dom-outertext",
+    "https://dom.spec.whatwg.org/#interface-namednodemap",
+    "https://dom.spec.whatwg.org/#dom-namednodemap-getnameditem",
+    "https://dom.spec.whatwg.org/#dom-namednodemap-getnameditemns",
+    "https://dom.spec.whatwg.org/#dom-namednodemap-item",
+    "https://dom.spec.whatwg.org/#dom-namednodemap-length",
+    "https://dom.spec.whatwg.org/#dom-namednodemap-removenameditem",
+    "https://dom.spec.whatwg.org/#dom-namednodemap-removenameditemns",
+    "https://dom.spec.whatwg.org/#dom-namednodemap-setnameditem",
+    "https://dom.spec.whatwg.org/#dom-namednodemap-setnameditemns",
+    "https://dom.spec.whatwg.org/#interface-node",
+    "https://dom.spec.whatwg.org/#dom-node-appendchild",
+    "https://dom.spec.whatwg.org/#ref-for-dom-node-baseuri①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-node-childnodes①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-node-clonenode①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-node-comparedocumentposition①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-node-contains①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-node-firstchild①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-node-haschildnodes①",
+    "https://dom.spec.whatwg.org/#dom-node-insertbefore",
+    "https://dom.spec.whatwg.org/#dom-node-isdefaultnamespace",
+    "https://dom.spec.whatwg.org/#ref-for-dom-node-isequalnode①",
+    "https://dom.spec.whatwg.org/#dom-node-issamenode",
+    "https://dom.spec.whatwg.org/#ref-for-dom-node-lastchild①",
+    "https://dom.spec.whatwg.org/#dom-node-lookupnamespaceuri",
+    "https://dom.spec.whatwg.org/#dom-node-lookupprefix",
+    "https://dom.spec.whatwg.org/#ref-for-dom-node-nextsibling①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-node-nodename①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-node-nodetype①",
+    "https://dom.spec.whatwg.org/#dom-node-nodevalue",
+    "https://dom.spec.whatwg.org/#ref-for-dom-node-normalize①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-node-ownerdocument①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-node-parentelement①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-node-parentnode①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-node-previoussibling①",
+    "https://dom.spec.whatwg.org/#dom-node-removechild",
+    "https://dom.spec.whatwg.org/#dom-node-replacechild",
+    "https://dom.spec.whatwg.org/#dom-node-textcontent",
+    "https://dom.spec.whatwg.org/#interface-nodeiterator",
+    "https://dom.spec.whatwg.org/#dom-nodeiterator-filter",
+    "https://dom.spec.whatwg.org/#dom-nodeiterator-nextnode",
+    "https://dom.spec.whatwg.org/#dom-nodeiterator-pointerbeforereferencenode",
+    "https://dom.spec.whatwg.org/#dom-nodeiterator-previousnode",
+    "https://dom.spec.whatwg.org/#dom-nodeiterator-referencenode",
+    "https://dom.spec.whatwg.org/#dom-nodeiterator-root",
+    "https://dom.spec.whatwg.org/#dom-nodeiterator-whattoshow",
+    "https://dom.spec.whatwg.org/#interface-nodelist",
+    "https://dom.spec.whatwg.org/#ref-for-dom-nodelist-item①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-nodelist-length①",
+    "https://dom.spec.whatwg.org/#interface-processinginstruction",
+    "https://dom.spec.whatwg.org/#dom-processinginstruction-target",
+    "https://dom.spec.whatwg.org/#interface-text",
+    "https://dom.spec.whatwg.org/#ref-for-dom-text-text①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-text-splittext①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-text-wholetext①",
+    "https://dom.spec.whatwg.org/#interface-treewalker",
+    "https://dom.spec.whatwg.org/#dom-treewalker-currentnode",
+    "https://dom.spec.whatwg.org/#dom-treewalker-filter",
+    "https://dom.spec.whatwg.org/#dom-treewalker-firstchild",
+    "https://dom.spec.whatwg.org/#dom-treewalker-lastchild",
+    "https://dom.spec.whatwg.org/#dom-treewalker-nextnode",
+    "https://dom.spec.whatwg.org/#dom-treewalker-nextsibling",
+    "https://dom.spec.whatwg.org/#dom-treewalker-parentnode",
+    "https://dom.spec.whatwg.org/#dom-treewalker-previousnode",
+    "https://dom.spec.whatwg.org/#dom-treewalker-previoussibling",
+    "https://dom.spec.whatwg.org/#dom-treewalker-root",
+    "https://dom.spec.whatwg.org/#dom-treewalker-whattoshow",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-document-dev",
+    "https://dom.spec.whatwg.org/#xmldocument"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/XMLDocument",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "dom"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Attr",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Attr.localName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Attr.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Attr.namespaceURI",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Attr.ownerElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Attr.prefix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Attr.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CDATASection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.after",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.appendData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.before",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.data",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.deleteData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.insertData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.nextElementSibling",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.previousElementSibling",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.remove",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.replaceData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.replaceWith",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.substringData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Comment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Comment.Comment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMException",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMException.DOMException",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMException.message",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMException.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMImplementation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMImplementation.createDocument",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMImplementation.createDocumentType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMImplementation.createHTMLDocument",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMStringList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMStringList.contains",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMStringList.item",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMStringList.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.add",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.add.multiple_parameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.contains",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.item",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.remove",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.remove.multiple_parameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.remove_duplicates",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.replace",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.replace.boolean_value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.supports",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.toggle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.toggle.force_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.trim_whitespace",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMTokenList.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.DOMContentLoaded_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.Document",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.URL",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.activeElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.adoptNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.append",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.body",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.characterSet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.childElementCount",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.children",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.compatMode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.contentType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.createAttribute",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.createAttributeNS",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.createCDATASection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.createComment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.createDocumentFragment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.createElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.createElement.options_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.createElementNS",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.createElementNS.options_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.createNodeIterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.createProcessingInstruction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.createTextNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.createTreeWalker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.createTreeWalker.whatToShow_filter_parameters_optional",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.currentScript",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.defaultView",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.dir",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.doctype",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.documentElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.documentURI",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.embeds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.firstElementChild",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.forms",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.getElementById",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.getElementsByClassName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.getElementsByName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.getElementsByTagName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.getElementsByTagNameNS",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.hasFocus",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.head",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.images",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.implementation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.importNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.lastElementChild",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.lastModified",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.links",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.plugins",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.prepend",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.querySelector",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.querySelectorAll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.readyState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.readystatechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.referrer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.replaceChildren",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.scripts",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.title",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentFragment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentFragment.DocumentFragment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentFragment.append",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentFragment.childElementCount",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentFragment.children",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentFragment.firstElementChild",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentFragment.getElementById",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentFragment.lastElementChild",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentFragment.prepend",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentFragment.querySelector",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentFragment.querySelectorAll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentFragment.replaceChildren",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentType.after",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentType.before",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentType.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentType.publicId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentType.remove",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentType.replaceWith",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentType.systemId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.after",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.append",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.attributes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.before",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.childElementCount",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.children",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.classList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.className",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.clientHeight",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.clientLeft",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.clientTop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.clientWidth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.closest",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.currentCSSZoom",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.firstElementChild",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.getAttribute",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.getAttributeNS",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.getAttributeNames",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.getAttributeNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.getAttributeNodeNS",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.getBoundingClientRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.getClientRects",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.getElementsByClassName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.getElementsByTagName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.getElementsByTagName.all_elements_selector",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.getElementsByTagNameNS",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.getElementsByTagNameNS.all_elements_selector",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.hasAttribute",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.hasAttributeNS",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.hasAttributes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.innerHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.insertAdjacentElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.insertAdjacentHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.insertAdjacentText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.lastElementChild",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.localName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.matches",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.namespaceURI",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.nextElementSibling",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.outerHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.prefix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.prepend",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.previousElementSibling",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.querySelector",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.querySelectorAll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.remove",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.removeAttribute",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.removeAttributeNS",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.removeAttributeNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.replaceChildren",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.replaceWith",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.setAttribute",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.setAttributeNS",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.setAttributeNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.setAttributeNodeNS",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.tagName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.toggleAttribute",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCollection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCollection.item",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCollection.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCollection.namedItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLDocument",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.dir",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.hidden",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.innerText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.load_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.offsetHeight",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.offsetLeft",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.offsetParent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.offsetTop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.offsetWidth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.outerText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NamedNodeMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NamedNodeMap.getNamedItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NamedNodeMap.getNamedItemNS",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NamedNodeMap.item",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NamedNodeMap.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NamedNodeMap.removeNamedItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NamedNodeMap.removeNamedItemNS",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NamedNodeMap.setNamedItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NamedNodeMap.setNamedItemNS",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.appendChild",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.baseURI",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.childNodes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.cloneNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.compareDocumentPosition",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.contains",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.firstChild",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.hasChildNodes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.insertBefore",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.isDefaultNamespace",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.isEqualNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.isSameNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.lastChild",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.lookupNamespaceURI",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.lookupPrefix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.nextSibling",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.nodeName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.nodeType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.nodeValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.normalize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.ownerDocument",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.parentElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.parentNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.previousSibling",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.removeChild",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.replaceChild",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Node.textContent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NodeIterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NodeIterator.filter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NodeIterator.nextNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NodeIterator.pointerBeforeReferenceNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NodeIterator.previousNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NodeIterator.referenceNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NodeIterator.root",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NodeIterator.whatToShow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NodeList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NodeList.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NodeList.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NodeList.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NodeList.item",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NodeList.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NodeList.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NodeList.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ProcessingInstruction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ProcessingInstruction.target",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Text",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Text.Text",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Text.splitText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Text.wholeText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TreeWalker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TreeWalker.currentNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TreeWalker.filter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TreeWalker.firstChild",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TreeWalker.lastChild",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TreeWalker.nextNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TreeWalker.nextSibling",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TreeWalker.parentNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TreeWalker.previousNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TreeWalker.previousSibling",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TreeWalker.root",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TreeWalker.whatToShow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.document",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLDocument",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

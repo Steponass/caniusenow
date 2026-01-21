@@ -1,0 +1,213 @@
+{
+  "id": "wf-embed",
+  "source": "webfeatures",
+  "name": "<embed>",
+  "description": "The <embed> element represents an external resource such as a PDF or SVG document. It was historically used for plugins such as Shockwave Flash.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-embed-element",
+    "https://html.spec.whatwg.org/multipage/obsolete.html#noembed",
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#htmlembedelement",
+    "https://html.spec.whatwg.org/multipage/embedded-content-other.html#dom-media-getsvgdocument-dev",
+    "https://html.spec.whatwg.org/multipage/embedded-content-other.html#dom-dim-height",
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#dom-embed-src",
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#dom-embed-type",
+    "https://html.spec.whatwg.org/multipage/embedded-content-other.html#dom-dim-width",
+    "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-src",
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-type",
+    "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/embed",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1.5",
+      "versions": [
+        {
+          "version": "1.5",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "≤4",
+      "versions": [
+        {
+          "version": "≤4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "≤4",
+      "versions": [
+        {
+          "version": "≤4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1.5",
+      "versions": [
+        {
+          "version": "1.5",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "embed"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLEmbedElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLEmbedElement.getSVGDocument",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLEmbedElement.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLEmbedElement.src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLEmbedElement.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLEmbedElement.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.embed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.embed.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.embed.src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.embed.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.embed.width",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

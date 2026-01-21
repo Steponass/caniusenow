@@ -1,0 +1,145 @@
+{
+  "id": "wf-time-relative-selectors",
+  "source": "webfeatures",
+  "name": "Time-relative pseudo-selectors",
+  "description": "The :past and :future CSS pseudo-classes match prior or upcoming text track cues during media playback.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/webvtt/#the-past-and-future-pseudo-classes",
+    "https://drafts.csswg.org/selectors/#the-future-pseudo",
+    "https://drafts.csswg.org/selectors/#the-past-pseudo"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Selectors/:past",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "23",
+      "versions": [
+        {
+          "version": "23",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "7",
+      "versions": [
+        {
+          "version": "7",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "23",
+      "versions": [
+        {
+          "version": "23",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "7",
+      "versions": [
+        {
+          "version": "7",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "23",
+      "versions": [
+        {
+          "version": "23",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "23",
+      "versions": [
+        {
+          "version": "23",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.25,
+      "partial": 0,
+      "total": 92.25
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "and_chr": 44.12,
+        "samsung": 1.91
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "time-relative-selectors"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.future",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.past",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

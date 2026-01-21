@@ -1,0 +1,151 @@
+{
+  "id": "wf-scripting",
+  "source": "webfeatures",
+  "name": "scripting media query",
+  "description": "The scripting CSS media query sets styles based on whether scripting such as JavaScript is available. Values are enabled if scripting is available, initial-only if scripting is only available on page load (for example, printed content), or none.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/mediaqueries-5/#scripting"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@media/scripting",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "120",
+      "versions": [
+        {
+          "version": "120",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "113",
+      "versions": [
+        {
+          "version": "113",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "120",
+      "versions": [
+        {
+          "version": "120",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "120",
+      "versions": [
+        {
+          "version": "120",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "120",
+      "versions": [
+        {
+          "version": "120",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "120",
+      "versions": [
+        {
+          "version": "120",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "120",
+      "versions": [
+        {
+          "version": "120",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "113",
+      "versions": [
+        {
+          "version": "113",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 86.1,
+      "partial": 0,
+      "total": 86.1
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 22.88,
+        "firefox": 1.75,
+        "safari": 1.07,
+        "edge": 4.21,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.97,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "scripting"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.media.scripting",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

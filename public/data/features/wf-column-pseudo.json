@@ -1,0 +1,127 @@
+{
+  "id": "wf-column-pseudo",
+  "source": "webfeatures",
+  "name": "::column",
+  "description": "The ::column CSS pseudo-element represents the individual columns of a multi-column layout container. Columns can only be styled with scroll snap CSS properties and can also have a ::scroll-marker pseudo-element, which scrolls to the column when activated.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-multicol-2/#column-pseudo"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Selectors/::column",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 67.84,
+      "partial": 0,
+      "total": 67.84
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 19.6,
+        "edge": 4.12
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "column-pseudo"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.column",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.column.nested_scroll-marker",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,911 @@
+{
+  "id": "stream",
+  "source": "caniuse",
+  "name": "getUserMedia/Stream API",
+  "description": "Method of accessing external device data (such as a webcam video stream). Formerly this was envisioned as the <device> element.",
+  "category": "JS API",
+  "spec": [
+    "https://www.w3.org/TR/mediacapture-streams/",
+    "https://w3c.github.io/mediacapture-main/",
+    "https://w3c.github.io/mediacapture-main/#dom-inputdeviceinfo",
+    "https://w3c.github.io/mediacapture-main/#dom-inputdeviceinfo-getcapabilities",
+    "https://w3c.github.io/mediacapture-main/#device-info",
+    "https://w3c.github.io/mediacapture-main/#dom-mediadeviceinfo-deviceid",
+    "https://w3c.github.io/mediacapture-main/#dom-mediadeviceinfo-groupid",
+    "https://w3c.github.io/mediacapture-main/#dom-mediadeviceinfo-kind",
+    "https://w3c.github.io/mediacapture-main/#dom-mediadeviceinfo-label",
+    "https://w3c.github.io/mediacapture-main/#dom-mediadeviceinfo-tojson",
+    "https://w3c.github.io/mediacapture-main/#mediadevices",
+    "https://w3c.github.io/mediacapture-main/#event-mediadevices-devicechange",
+    "https://w3c.github.io/mediacapture-main/#dom-mediadevices-ondevicechange",
+    "https://w3c.github.io/mediacapture-main/#dom-mediadevices-enumeratedevices",
+    "https://w3c.github.io/mediacapture-main/#dom-mediadevices-getsupportedconstraints",
+    "https://w3c.github.io/mediacapture-main/#dom-mediadevices-getusermedia",
+    "https://w3c.github.io/mediacapture-main/#mediastream",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastream-constructor",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastream-active",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastream-addtrack",
+    "https://w3c.github.io/mediacapture-main/#event-mediastream-addtrack",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastream-clone",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastream-getaudiotracks",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastream-gettrackbyid",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastream-gettracks",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastream-getvideotracks",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastream-id",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastream-removetrack",
+    "https://w3c.github.io/mediacapture-main/#event-mediastream-removetrack",
+    "https://w3c.github.io/mediacapture-main/#mediastreamtrack",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-applyconstraints",
+    "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-aspectratio",
+    "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-autogaincontrol",
+    "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-channelcount",
+    "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-deviceid",
+    "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-echocancellation",
+    "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-facingmode",
+    "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-framerate",
+    "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-groupid",
+    "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-height",
+    "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-latency",
+    "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-noisesuppression",
+    "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-resizemode",
+    "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-samplerate",
+    "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-samplesize",
+    "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset-width",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-clone",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-enabled",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-onended",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-getcapabilities",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-getconstraints",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-getsettings",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-id",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-kind",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-label",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-onmute",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-muted",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-readystate",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-stop",
+    "https://w3c.github.io/mediacapture-main/#event-mediastreamtrack-unmute",
+    "https://w3c.github.io/mediacapture-main/#mediastreamtrackevent",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrackevent-constructor",
+    "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrackevent-track",
+    "https://w3c.github.io/mediacapture-main/#overconstrainederror-interface",
+    "https://w3c.github.io/mediacapture-main/#dom-overconstrainederror",
+    "https://w3c.github.io/mediacapture-main/#dom-overconstrainederror-constraint",
+    "https://w3c.github.io/mediacapture-main/#permissions-policy-integration"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/microphone",
+  "links": [
+    {
+      "url": "https://dev.opera.com/blog/webcam-orientation-preview/",
+      "title": "Technology preview from Opera"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/dom/Navigator/getUserMedia",
+      "title": "WebPlatform Docs"
+    },
+    {
+      "url": "https://blogs.windows.com/msedgedev/2015/05/13/announcing-media-capture-functionality-in-microsoft-edge/",
+      "title": "Media Capture functionality in Microsoft Edge"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/50800696/getusermedia-in-pwa-with-manifest-on-ios-11",
+      "title": "getUserMedia in PWA with manifest on iOS 11"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=185448#c84",
+      "title": "getUserMedia working again in PWA on iOS 13.4"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "53",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "42",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "11",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "40",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.4",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "6.2-6.4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.21,
+      "partial": 0.14,
+      "total": 96.35
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.27,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "As of Chrome 47, the getUserMedia API cannot be called from insecure origins.",
+    "byNum": {
+      "1": "Blink-based (and some other) browsers support an older version of the spec that does not use `srcObject`. [See Chromium issue 387740](https://code.google.com/p/chromium/issues/detail?id=387740).",
+      "2": "Supports the older spec's `navigator.getUserMedia` API, not the newer `navigator.mediaDevices.getUserMedia` one.",
+      "3": "Before iOS 14.3 `getUserMedia` returned no video input devices in `UIWebView` or `WKWebView`, but only directly in Safari.",
+      "4": "Does not work in standalone running (\"installed\") PWAs."
+    }
+  },
+  "status": "cr",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "stream"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "media-capture",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InputDeviceInfo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InputDeviceInfo.getCapabilities",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaDeviceInfo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaDeviceInfo.deviceId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaDeviceInfo.groupId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaDeviceInfo.kind",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaDeviceInfo.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaDeviceInfo.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaDevices",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaDevices.devicechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaDevices.enumerateDevices",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaDevices.getSupportedConstraints",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaDevices.getUserMedia",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaDevices.getUserMedia.secure_context_required",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStream.MediaStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStream.active",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStream.addTrack",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStream.addtrack_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStream.clone",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStream.getAudioTracks",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStream.getTrackById",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStream.getTracks",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStream.getVideoTracks",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStream.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStream.removeTrack",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStream.removetrack_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.applyConstraints",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.applyConstraints.aspectRatio_constraint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.applyConstraints.autoGainControl_constraint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.applyConstraints.channelCount_constraint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.applyConstraints.deviceId_constraint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.applyConstraints.echoCancellation_constraint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.applyConstraints.facingMode_constraint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.applyConstraints.frameRate_constraint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.applyConstraints.groupId_constraint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.applyConstraints.height_constraint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.applyConstraints.latency_constraint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.applyConstraints.noiseSuppression_constraint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.applyConstraints.resizeMode_constraint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.applyConstraints.sampleRate_constraint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.applyConstraints.sampleSize_constraint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.applyConstraints.width_constraint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.clone",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.enabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.ended_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.getCapabilities",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.getConstraints",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.getSettings",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.kind",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.mute_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.muted",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.readyState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.stop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.unmute_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrackEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrackEvent.MediaStreamTrackEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrackEvent.track",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.mediaDevices",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.mediaDevices.secure_context_required",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OverconstrainedError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OverconstrainedError.OverconstrainedError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OverconstrainedError.constraint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Permissions.permission_camera",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Permissions.permission_microphone",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.camera",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.microphone",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.camera",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.microphone",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "id": "wf-contain-style",
+  "source": "webfeatures",
+  "name": "Style containment",
+  "description": "The contain: style CSS declaration permits the browser to avoid slower layout calculations by preventing modification to counter (counter-increment and counter-set) and quotation styles (content property quote values) beyond the element's descendants.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-contain-2/#containment-style",
+    "https://drafts.csswg.org/css-contain/#valdef-contain-style"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/contain",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "52",
+      "versions": [
+        {
+          "version": "52",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "103",
+      "versions": [
+        {
+          "version": "103",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "15.4",
+      "versions": [
+        {
+          "version": "15.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "52",
+      "versions": [
+        {
+          "version": "52",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.4",
+      "versions": [
+        {
+          "version": "15.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "52",
+      "versions": [
+        {
+          "version": "52",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "52",
+      "versions": [
+        {
+          "version": "52",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "103",
+      "versions": [
+        {
+          "version": "103",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.82,
+      "partial": 0,
+      "total": 91.82
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.28,
+        "firefox": 1.75,
+        "safari": 1.37,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.82,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "contain-style"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.contain.style",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "id": "wf-scheduler",
+  "source": "webfeatures",
+  "name": "Scheduler API",
+  "description": "The scheduler API provides a way to prioritize all tasks belonging to an application.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/scheduling-apis/",
+    "https://wicg.github.io/scheduling-apis/#scheduler",
+    "https://wicg.github.io/scheduling-apis/#dom-scheduler-posttask",
+    "https://wicg.github.io/scheduling-apis/#dom-scheduler-yield",
+    "https://wicg.github.io/scheduling-apis/#sec-task-controller",
+    "https://wicg.github.io/scheduling-apis/#dom-taskcontroller-taskcontroller",
+    "https://wicg.github.io/scheduling-apis/#dom-taskcontroller-setpriority",
+    "https://wicg.github.io/scheduling-apis/#sec-task-priority-change-event",
+    "https://wicg.github.io/scheduling-apis/#dom-taskprioritychangeevent-taskprioritychangeevent",
+    "https://wicg.github.io/scheduling-apis/#dom-taskprioritychangeevent-previouspriority",
+    "https://wicg.github.io/scheduling-apis/#tasksignal",
+    "https://wicg.github.io/scheduling-apis/#dom-tasksignal-any",
+    "https://wicg.github.io/scheduling-apis/#dom-tasksignal-priority",
+    "https://wicg.github.io/scheduling-apis/#eventdef-tasksignal-prioritychange",
+    "https://wicg.github.io/scheduling-apis/#dom-tasksignal-onprioritychange",
+    "https://wicg.github.io/scheduling-apis/#dom-windoworworkerglobalscope-scheduler"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/scheduler",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "129",
+      "versions": [
+        {
+          "version": "129",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "142",
+      "versions": [
+        {
+          "version": "142",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "129",
+      "versions": [
+        {
+          "version": "129",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "129",
+      "versions": [
+        {
+          "version": "129",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "129",
+      "versions": [
+        {
+          "version": "129",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "129",
+      "versions": [
+        {
+          "version": "129",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "129",
+      "versions": [
+        {
+          "version": "129",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "142",
+      "versions": [
+        {
+          "version": "142",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 70.58,
+      "partial": 0,
+      "total": 70.58
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 20.64,
+        "firefox": 1.35,
+        "edge": 4.17
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "scheduler"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Scheduler",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Scheduler.postTask",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Scheduler.yield",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskController",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskController.TaskController",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskController.setPriority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskPriorityChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskPriorityChangeEvent.TaskPriorityChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskPriorityChangeEvent.previousPriority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskSignal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskSignal.any_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskSignal.priority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskSignal.prioritychange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.scheduler",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

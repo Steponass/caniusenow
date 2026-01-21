@@ -1,0 +1,226 @@
+{
+  "id": "wf-meta",
+  "source": "webfeatures",
+  "name": "<meta>",
+  "description": "The <meta> element represents metadata about the page used by the browser or search engines, including description, keywords, and character sets.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/semantics.html#meta",
+    "https://html.spec.whatwg.org/multipage/semantics.html#htmlmetaelement",
+    "https://html.spec.whatwg.org/multipage/semantics.html#dom-meta-content",
+    "https://html.spec.whatwg.org/multipage/semantics.html#dom-meta-httpequiv",
+    "https://html.spec.whatwg.org/multipage/semantics.html#dom-meta-media",
+    "https://html.spec.whatwg.org/multipage/semantics.html#dom-meta-name",
+    "https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element",
+    "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-charset",
+    "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-content",
+    "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv",
+    "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-keyword-content-type",
+    "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-keyword-refresh",
+    "https://html.spec.whatwg.org/multipage/semantics.html#standard-metadata-names",
+    "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-delivery-meta",
+    "https://html.spec.whatwg.org/multipage/semantics.html#meta-referrer"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/meta/name/referrer",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "meta"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMetaElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMetaElement.content",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMetaElement.httpEquiv",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMetaElement.media",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMetaElement.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.meta",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.meta.charset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.meta.content",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.meta.http-equiv",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.meta.http-equiv.content-type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.meta.http-equiv.refresh",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.meta.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.meta.name.referrer",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

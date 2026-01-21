@@ -1,0 +1,148 @@
+{
+  "id": "wf-fedcm",
+  "source": "webfeatures",
+  "name": "Federated credential management",
+  "description": "The IdentityCredential API delegates authentication to a third-party identity provider, instead of using third-party cookies. Also known as FedCM.",
+  "category": "Other",
+  "spec": [
+    "https://w3c-fedid.github.io/FedCM/",
+    "https://w3c-fedid.github.io/FedCM/#dom-credentialrequestoptions-identity",
+    "https://w3c-fedid.github.io/FedCM/#dom-identitycredentialrequestoptions-context",
+    "https://w3c-fedid.github.io/FedCM/#dom-identityproviderrequestoptions-loginhint",
+    "https://w3c-fedid.github.io/FedCM/#browser-api-identity-credential-interface",
+    "https://w3c-fedid.github.io/FedCM/#dom-identitycredential-token"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/IdentityCredential/token",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "116",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "116",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "116",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "116",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "116",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "116",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 72.39,
+      "partial": 0,
+      "total": 72.39
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 23.26,
+        "edge": 4.21,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "fedcm"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CredentialsContainer.get.identity_option",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CredentialsContainer.get.identity_option.context_option",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CredentialsContainer.get.identity_option.providers_option_loginHint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IdentityCredential",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IdentityCredential.token",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

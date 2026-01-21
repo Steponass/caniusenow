@@ -1,0 +1,372 @@
+{
+  "id": "wf-image-maps",
+  "source": "webfeatures",
+  "name": "Image maps",
+  "description": "The <area> and <map> elements define a clickable area on an image.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/image-maps.html",
+    "https://html.spec.whatwg.org/multipage/image-maps.html#htmlareaelement",
+    "https://html.spec.whatwg.org/multipage/image-maps.html#dom-area-alt",
+    "https://html.spec.whatwg.org/multipage/image-maps.html#dom-area-coords",
+    "https://html.spec.whatwg.org/multipage/links.html#dom-hyperlink-hash-dev",
+    "https://html.spec.whatwg.org/multipage/links.html#dom-hyperlink-host-dev",
+    "https://html.spec.whatwg.org/multipage/links.html#dom-hyperlink-hostname-dev",
+    "https://html.spec.whatwg.org/multipage/links.html#dom-hyperlink-href-dev",
+    "https://html.spec.whatwg.org/multipage/links.html#dom-hyperlink-origin-dev",
+    "https://html.spec.whatwg.org/multipage/links.html#dom-hyperlink-password-dev",
+    "https://html.spec.whatwg.org/multipage/links.html#dom-hyperlink-pathname-dev",
+    "https://html.spec.whatwg.org/multipage/links.html#dom-hyperlink-port-dev",
+    "https://html.spec.whatwg.org/multipage/links.html#dom-hyperlink-protocol-dev",
+    "https://html.spec.whatwg.org/multipage/image-maps.html#dom-area-rel",
+    "https://html.spec.whatwg.org/multipage/image-maps.html#dom-area-rellist",
+    "https://html.spec.whatwg.org/multipage/links.html#dom-hyperlink-search-dev",
+    "https://html.spec.whatwg.org/multipage/image-maps.html#dom-area-shape",
+    "https://html.spec.whatwg.org/multipage/image-maps.html#dom-area-target",
+    "https://html.spec.whatwg.org/multipage/links.html#dom-hyperlink-username-dev",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-ismap",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-usemap",
+    "https://html.spec.whatwg.org/multipage/image-maps.html#htmlmapelement",
+    "https://html.spec.whatwg.org/multipage/image-maps.html#dom-map-areas-dev",
+    "https://html.spec.whatwg.org/multipage/image-maps.html#dom-map-name",
+    "https://html.spec.whatwg.org/multipage/image-maps.html#the-area-element",
+    "https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-alt",
+    "https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-coords",
+    "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href",
+    "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-rel",
+    "https://html.spec.whatwg.org/multipage/links.html#link-type-noopener",
+    "https://html.spec.whatwg.org/multipage/links.html#link-type-noreferrer",
+    "https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape",
+    "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-target",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-ismap",
+    "https://html.spec.whatwg.org/multipage/image-maps.html#attr-hyperlink-usemap",
+    "https://html.spec.whatwg.org/multipage/image-maps.html#the-map-element"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/map",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "image-maps"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.alt",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.coords",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.hash",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.host",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.hostname",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.origin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.password",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.pathname",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.port",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.protocol",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.rel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.relList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.search",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.shape",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.target",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.username",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.isMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.useMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMapElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMapElement.areas",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMapElement.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.area",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.area.alt",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.area.coords",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.area.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.area.implicit_noopener",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.area.rel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.area.rel.noopener",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.area.rel.noreferrer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.area.shape",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.area.target",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.img.ismap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.img.usemap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.map",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.map.name",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

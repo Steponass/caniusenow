@@ -1,0 +1,173 @@
+{
+  "id": "wf-intl-locale-info",
+  "source": "webfeatures",
+  "name": "Intl.Locale info",
+  "description": "The getter methods of the Intl.Locale API provide supplemental information about a Unicode locale, such as the locale's calendar (for example, the first day in a week or the weekend start day), writing direction, 12- or 24-hour cycles, and numbering system.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma402/#locale-objects",
+    "https://tc39.es/proposal-intl-locale-info/#sec-Intl.Locale.prototype.getCalendars",
+    "https://tc39.es/proposal-intl-locale-info/#sec-Intl.Locale.prototype.getCollations",
+    "https://tc39.es/proposal-intl-locale-info/#sec-Intl.Locale.prototype.getHourCycles",
+    "https://tc39.es/proposal-intl-locale-info/#sec-Intl.Locale.prototype.getNumberingSystems",
+    "https://tc39.es/proposal-intl-locale-info/#sec-Intl.Locale.prototype.getTextInfo",
+    "https://tc39.es/proposal-intl-locale-info/#sec-Intl.Locale.prototype.getTimeZones",
+    "https://tc39.es/proposal-intl-locale-info/#sec-Intl.Locale.prototype.getWeekInfo"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/getWeekInfo",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "130",
+      "versions": [
+        {
+          "version": "130",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "130",
+      "versions": [
+        {
+          "version": "130",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "130",
+      "versions": [
+        {
+          "version": "130",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "130",
+      "versions": [
+        {
+          "version": "130",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "130",
+      "versions": [
+        {
+          "version": "130",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "130",
+      "versions": [
+        {
+          "version": "130",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 80.9,
+      "partial": 0,
+      "total": 80.9
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 20.57,
+        "safari": 1.07,
+        "edge": 4.17
+      },
+      "mobile": {
+        "ios_saf": 10.97,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "intl-locale-info"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Locale.getCalendars",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Locale.getCollations",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Locale.getHourCycles",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Locale.getNumberingSystems",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Locale.getTextInfo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Locale.getTimeZones",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Locale.getWeekInfo",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

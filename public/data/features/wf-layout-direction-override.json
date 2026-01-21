@@ -1,0 +1,208 @@
+{
+  "id": "wf-layout-direction-override",
+  "source": "webfeatures",
+  "name": "Layout direction override",
+  "description": "The unicode-bidi and direction CSS properties override the Unicode layout algorithm. They are intended for Document Type Definition (DTD) designers. For HTML documents, you should use the dir global HTML attribute and <bdo> HTML element instead.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-writing-modes-4/#direction",
+    "https://drafts.csswg.org/css-writing-modes-4/#unicode-bidi",
+    "https://drafts.csswg.org/css-writing-modes/#direction",
+    "https://svgwg.org/svg2-draft/text.html#DirectionProperty",
+    "https://drafts.csswg.org/css-writing-modes/#valdef-direction-ltr",
+    "https://drafts.csswg.org/css-writing-modes/#valdef-direction-rtl",
+    "https://drafts.csswg.org/css-writing-modes/#unicode-bidi",
+    "https://drafts.csswg.org/css-writing-modes/#valdef-unicode-bidi-bidi-override",
+    "https://drafts.csswg.org/css-writing-modes/#valdef-unicode-bidi-embed",
+    "https://drafts.csswg.org/css-writing-modes/#valdef-unicode-bidi-isolate",
+    "https://drafts.csswg.org/css-writing-modes/#valdef-unicode-bidi-isolate-override",
+    "https://drafts.csswg.org/css-writing-modes/#valdef-unicode-bidi-normal",
+    "https://drafts.csswg.org/css-writing-modes/#valdef-unicode-bidi-plaintext"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/unicode-bidi",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "48",
+      "versions": [
+        {
+          "version": "48",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "50",
+      "versions": [
+        {
+          "version": "50",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "11",
+      "versions": [
+        {
+          "version": "11",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "48",
+      "versions": [
+        {
+          "version": "48",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11",
+      "versions": [
+        {
+          "version": "11",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "48",
+      "versions": [
+        {
+          "version": "48",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "48",
+      "versions": [
+        {
+          "version": "48",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "50",
+      "versions": [
+        {
+          "version": "50",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.3,
+      "partial": 0,
+      "total": 92.3
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.33,
+        "firefox": 1.76,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.19,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "layout-direction-override"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.direction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.direction.ltr",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.direction.rtl",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.unicode-bidi",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.unicode-bidi.bidi-override",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.unicode-bidi.embed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.unicode-bidi.isolate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.unicode-bidi.isolate-override",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.unicode-bidi.normal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.unicode-bidi.plaintext",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

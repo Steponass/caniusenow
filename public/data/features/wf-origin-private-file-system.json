@@ -1,0 +1,302 @@
+{
+  "id": "wf-origin-private-file-system",
+  "source": "webfeatures",
+  "name": "Origin private file system",
+  "description": "The navigator.storage.getDirectory() method returns a FileSystemDirectoryHandle that is restricted to a specific origin and invisible to the user's actual file system for faster file-based applications, such as SQLite databases.",
+  "category": "Other",
+  "spec": [
+    "https://fs.spec.whatwg.org/#origin-private-file-system",
+    "https://fs.spec.whatwg.org/#api-filesystemdirectoryhandle",
+    "https://fs.spec.whatwg.org/#api-filesystemdirectoryhandle-asynciterable",
+    "https://fs.spec.whatwg.org/#api-filesystemdirectoryhandle-getdirectoryhandle",
+    "https://fs.spec.whatwg.org/#api-filesystemdirectoryhandle-getfilehandle",
+    "https://fs.spec.whatwg.org/#api-filesystemdirectoryhandle-removeentry",
+    "https://fs.spec.whatwg.org/#api-filesystemdirectoryhandle-resolve",
+    "https://fs.spec.whatwg.org/#api-filesystemfilehandle",
+    "https://fs.spec.whatwg.org/#api-filesystemfilehandle-createsyncaccesshandle",
+    "https://fs.spec.whatwg.org/#api-filesystemfilehandle-getfile",
+    "https://fs.spec.whatwg.org/#api-filesystemhandle",
+    "https://fs.spec.whatwg.org/#api-filesystemhandle-issameentry",
+    "https://fs.spec.whatwg.org/#ref-for-dom-filesystemhandle-kind①",
+    "https://fs.spec.whatwg.org/#ref-for-dom-filesystemhandle-name①",
+    "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle",
+    "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle-close",
+    "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle-flush",
+    "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle-getsize",
+    "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle-read",
+    "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle-truncate",
+    "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle-write",
+    "https://fs.spec.whatwg.org/#dom-storagemanager-getdirectory"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/StorageManager/getDirectory",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "108",
+      "versions": [
+        {
+          "version": "108",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "111",
+      "versions": [
+        {
+          "version": "111",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "108",
+      "versions": [
+        {
+          "version": "108",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "108",
+      "versions": [
+        {
+          "version": "108",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "108",
+      "versions": [
+        {
+          "version": "108",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "108",
+      "versions": [
+        {
+          "version": "108",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "108",
+      "versions": [
+        {
+          "version": "108",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "111",
+      "versions": [
+        {
+          "version": "111",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.91,
+      "partial": 0,
+      "total": 89.91
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.11,
+        "firefox": 1.75,
+        "safari": 1.23,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.35,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "origin-private-file-system"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemDirectoryHandle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemDirectoryHandle.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemDirectoryHandle.getDirectoryHandle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemDirectoryHandle.getFileHandle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemDirectoryHandle.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemDirectoryHandle.removeEntry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemDirectoryHandle.resolve",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemDirectoryHandle.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemFileHandle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemFileHandle.createSyncAccessHandle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemFileHandle.getFile",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemHandle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemHandle.isSameEntry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemHandle.kind",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemHandle.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemSyncAccessHandle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemSyncAccessHandle.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemSyncAccessHandle.close.sync_version",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemSyncAccessHandle.flush",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemSyncAccessHandle.flush.sync_version",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemSyncAccessHandle.getSize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemSyncAccessHandle.getSize.sync_version",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemSyncAccessHandle.read",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemSyncAccessHandle.truncate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemSyncAccessHandle.truncate.sync_version",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemSyncAccessHandle.write",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StorageManager.getDirectory",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

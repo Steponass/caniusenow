@@ -1,0 +1,122 @@
+{
+  "id": "wf-sizes-auto",
+  "source": "webfeatures",
+  "name": "<img sizes=\"auto\" loading=\"lazy\">",
+  "description": "The sizes=\"auto\" attribute for the <img> HTML element sets the layout size for the image based on the computed layout size when choosing a source from the srcset. This attribute only applies to images with the loading=\"lazy\" attribute.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/images.html#valdef-sizes-auto"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLImageElement/sizes",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "126",
+      "versions": [
+        {
+          "version": "126",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "126",
+      "versions": [
+        {
+          "version": "126",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "126",
+      "versions": [
+        {
+          "version": "126",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "126",
+      "versions": [
+        {
+          "version": "126",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "126",
+      "versions": [
+        {
+          "version": "126",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "126",
+      "versions": [
+        {
+          "version": "126",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 69.88,
+      "partial": 0,
+      "total": 69.88
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 21.58,
+        "edge": 4.18
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "sizes-auto"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.img.sizes.auto",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

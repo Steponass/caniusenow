@@ -1,0 +1,245 @@
+{
+  "id": "wf-location",
+  "source": "webfeatures",
+  "name": "Location",
+  "description": "The location global object represents the current page's address. You can use it to get the parts of the address (such as location.hostname or location.pathname) or navigate to another URL.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-location-interface",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-location-ancestororigins-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-location-assign-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-location-hash-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-location-host-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-location-hostname-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-location-href-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-location-origin-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-location-pathname-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-location-port-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-location-protocol-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-location-reload-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-location-replace-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-location-search-dev"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/location",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "location"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.location",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Location",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Location.ancestorOrigins",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Location.assign",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Location.hash",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Location.host",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Location.hostname",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Location.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Location.origin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Location.pathname",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Location.port",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Location.protocol",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Location.reload",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Location.replace",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Location.search",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Location.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.location",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

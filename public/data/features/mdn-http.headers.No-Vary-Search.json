@@ -1,0 +1,153 @@
+{
+  "id": "mdn-http.headers.No-Vary-Search",
+  "source": "mdnbcd",
+  "name": "No- Vary- Search",
+  "description": "",
+  "category": "Other",
+  "spec": [
+    "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#section-2"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/No-Vary-Search",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "141",
+      "firstPartial": "121",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "a",
+          "notes": "Before Chrome 127, speculation rules are only supported for navigational prefetch, not prerender. Before Chrome 141, HTTP cache is not supported."
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "141",
+      "firstPartial": "121",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "a",
+          "notes": "Before Edge 127, speculation rules are only supported for navigational prefetch, not prerender. Before Edge 141, HTTP cache is not supported."
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "125",
+      "firstPartial": "107",
+      "versions": [
+        {
+          "version": "125",
+          "status": "y"
+        },
+        {
+          "version": "107",
+          "status": "a",
+          "notes": "Before Opera 113, speculation rules are only supported for navigational prefetch, not prerender. Before Opera 125, HTTP cache is not supported."
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "141",
+      "firstPartial": "121",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "a",
+          "notes": "Before Edge 127, speculation rules are only supported for navigational prefetch, not prerender. Before Edge 141, HTTP cache is not supported."
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "141",
+      "firstPartial": "121",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "a",
+          "notes": "Before Chrome 127, speculation rules are only supported for navigational prefetch, not prerender. Before Chrome 141, HTTP cache is not supported."
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "141",
+      "firstPartial": "121",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "a",
+          "notes": "Before Chrome 127, speculation rules are only supported for navigational prefetch, not prerender. Before Chrome 141, HTTP cache is not supported."
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 63.6,
+      "partial": 8.11,
+      "total": 71.71
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 22.61,
+        "edge": 4.19,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "http.headers.No-Vary-Search"
+    },
+    "supplementary": []
+  }
+}

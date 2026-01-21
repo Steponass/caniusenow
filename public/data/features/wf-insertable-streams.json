@@ -1,0 +1,140 @@
+{
+  "id": "wf-insertable-streams",
+  "source": "webfeatures",
+  "name": "Insertable streams for MediaStreamTrack",
+  "description": "The MediaStreamTrackProcessor and MediaStreamTrackGenerator APIs modify the contents of a media track for merging streams, applying real-time effects like funny hats, and content overlays.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/mediacapture-transform/",
+    "https://w3c.github.io/mediacapture-transform/#mediastreamtrackprocessor",
+    "https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessor-mediastreamtrackprocessor",
+    "https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessor-readable",
+    "https://w3c.github.io/mediacapture-transform/#videotrackgenerator",
+    "https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-videotrackgenerator",
+    "https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-muted",
+    "https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-track",
+    "https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-writable"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/VideoTrackGenerator/writable",
+  "links": [],
+  "support": {
+    "safari": {
+      "current": "y",
+      "firstFull": "18",
+      "versions": [
+        {
+          "version": "18",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "18",
+      "versions": [
+        {
+          "version": "18",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 11.15,
+      "partial": 0,
+      "total": 11.15
+    },
+    "byBrowser": {
+      "desktop": {
+        "safari": 0.74
+      },
+      "mobile": {
+        "ios_saf": 10.41
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "insertable-streams"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrackProcessor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrackProcessor.MediaStreamTrackProcessor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrackProcessor.readable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VideoTrackGenerator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VideoTrackGenerator.VideoTrackGenerator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VideoTrackGenerator.muted",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VideoTrackGenerator.track",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VideoTrackGenerator.writable",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

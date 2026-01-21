@@ -1,0 +1,1063 @@
+{
+  "id": "serviceworkers",
+  "source": "caniuse",
+  "name": "Service Workers",
+  "description": "Method that enables applications to take advantage of persistent background processing, including hooks to enable bootstrapping of web applications while offline.",
+  "category": "JS API",
+  "spec": [
+    "https://w3c.github.io/ServiceWorker/",
+    "https://w3c.github.io/ServiceWorker/#cache-interface",
+    "https://w3c.github.io/ServiceWorker/#cache-add",
+    "https://w3c.github.io/ServiceWorker/#cache-addAll",
+    "https://w3c.github.io/ServiceWorker/#cache-delete",
+    "https://w3c.github.io/ServiceWorker/#cache-keys",
+    "https://w3c.github.io/ServiceWorker/#cache-match",
+    "https://w3c.github.io/ServiceWorker/#cache-matchall",
+    "https://w3c.github.io/ServiceWorker/#cache-put",
+    "https://w3c.github.io/ServiceWorker/#cachestorage-interface",
+    "https://w3c.github.io/ServiceWorker/#cache-storage-delete",
+    "https://w3c.github.io/ServiceWorker/#cache-storage-has",
+    "https://w3c.github.io/ServiceWorker/#cache-storage-keys",
+    "https://w3c.github.io/ServiceWorker/#cache-storage-match",
+    "https://w3c.github.io/ServiceWorker/#cache-storage-open",
+    "https://w3c.github.io/ServiceWorker/#client-interface",
+    "https://w3c.github.io/ServiceWorker/#client-frametype",
+    "https://w3c.github.io/ServiceWorker/#client-id",
+    "https://w3c.github.io/ServiceWorker/#dom-client-postmessage-message-options",
+    "https://w3c.github.io/ServiceWorker/#client-type",
+    "https://w3c.github.io/ServiceWorker/#client-url",
+    "https://w3c.github.io/ServiceWorker/#clients-interface",
+    "https://w3c.github.io/ServiceWorker/#clients-claim",
+    "https://w3c.github.io/ServiceWorker/#clients-get",
+    "https://w3c.github.io/ServiceWorker/#clients-matchall",
+    "https://w3c.github.io/ServiceWorker/#dom-clientqueryoptions-includeuncontrolled",
+    "https://w3c.github.io/ServiceWorker/#clients-openwindow",
+    "https://w3c.github.io/ServiceWorker/#extendableevent-interface",
+    "https://w3c.github.io/ServiceWorker/#dom-extendableevent-extendableevent",
+    "https://w3c.github.io/ServiceWorker/#dom-extendableevent-waituntil",
+    "https://w3c.github.io/ServiceWorker/#extendablemessageevent-interface",
+    "https://w3c.github.io/ServiceWorker/#dom-extendablemessageevent-extendablemessageevent",
+    "https://w3c.github.io/ServiceWorker/#extendablemessage-event-data",
+    "https://w3c.github.io/ServiceWorker/#extendablemessage-event-lasteventid",
+    "https://w3c.github.io/ServiceWorker/#extendablemessage-event-origin",
+    "https://w3c.github.io/ServiceWorker/#extendablemessage-event-ports",
+    "https://w3c.github.io/ServiceWorker/#extendablemessage-event-source",
+    "https://w3c.github.io/ServiceWorker/#fetchevent-interface",
+    "https://w3c.github.io/ServiceWorker/#dom-fetchevent-fetchevent",
+    "https://w3c.github.io/ServiceWorker/#fetch-event-clientid",
+    "https://w3c.github.io/ServiceWorker/#dom-fetchevent-handled",
+    "https://w3c.github.io/ServiceWorker/#fetch-event-preloadresponse",
+    "https://w3c.github.io/ServiceWorker/#fetch-event-request",
+    "https://w3c.github.io/ServiceWorker/#fetch-event-respondwith",
+    "https://w3c.github.io/ServiceWorker/#fetch-event-resultingclientid",
+    "https://w3c.github.io/ServiceWorker/#installevent",
+    "https://w3c.github.io/ServiceWorker/#dom-installevent-installevent",
+    "https://w3c.github.io/ServiceWorker/#register-router-method",
+    "https://w3c.github.io/ServiceWorker/#navigation-preload-manager",
+    "https://w3c.github.io/ServiceWorker/#dom-navigationpreloadmanager-disable",
+    "https://w3c.github.io/ServiceWorker/#dom-navigationpreloadmanager-enable",
+    "https://w3c.github.io/ServiceWorker/#dom-navigationpreloadmanager-getstate",
+    "https://w3c.github.io/ServiceWorker/#dom-navigationpreloadmanager-setheadervalue",
+    "https://w3c.github.io/ServiceWorker/#navigator-service-worker-attribute",
+    "https://w3c.github.io/ServiceWorker/#serviceworker-interface",
+    "https://w3c.github.io/ServiceWorker/#dom-serviceworker-postmessage",
+    "https://w3c.github.io/ServiceWorker/#dom-serviceworker-postmessage-message-options",
+    "https://w3c.github.io/ServiceWorker/#service-worker-url",
+    "https://w3c.github.io/ServiceWorker/#service-worker-state",
+    "https://w3c.github.io/ServiceWorker/#dom-serviceworker-onstatechange",
+    "https://w3c.github.io/ServiceWorker/#serviceworkercontainer-interface",
+    "https://w3c.github.io/ServiceWorker/#navigator-service-worker-controller",
+    "https://w3c.github.io/ServiceWorker/#dom-serviceworkercontainer-oncontrollerchange",
+    "https://w3c.github.io/ServiceWorker/#navigator-service-worker-getRegistration",
+    "https://w3c.github.io/ServiceWorker/#navigator-service-worker-getRegistrations",
+    "https://w3c.github.io/ServiceWorker/#dom-serviceworkercontainer-onmessage",
+    "https://w3c.github.io/ServiceWorker/#navigator-service-worker-ready",
+    "https://w3c.github.io/ServiceWorker/#navigator-service-worker-register",
+    "https://w3c.github.io/ServiceWorker/#navigator-service-worker-startMessages",
+    "https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope-interface",
+    "https://w3c.github.io/ServiceWorker/#service-worker-global-scope-activate-event",
+    "https://w3c.github.io/ServiceWorker/#dom-serviceworkerglobalscope-onactivate",
+    "https://w3c.github.io/ServiceWorker/#service-worker-global-scope-clients",
+    "https://w3c.github.io/ServiceWorker/#dom-serviceworkerglobalscope-onfetch",
+    "https://w3c.github.io/ServiceWorker/#dom-serviceworkerglobalscope-oninstall",
+    "https://w3c.github.io/ServiceWorker/#eventdef-serviceworkerglobalscope-message",
+    "https://w3c.github.io/ServiceWorker/#dom-serviceworkerglobalscope-onmessage",
+    "https://w3c.github.io/ServiceWorker/#service-worker-global-scope-registration",
+    "https://w3c.github.io/ServiceWorker/#dom-serviceworkerglobalscope-serviceworker",
+    "https://w3c.github.io/ServiceWorker/#service-worker-global-scope-skipwaiting",
+    "https://w3c.github.io/ServiceWorker/#navigator-service-worker-active",
+    "https://w3c.github.io/ServiceWorker/#navigator-service-worker-installing",
+    "https://w3c.github.io/ServiceWorker/#service-worker-registration-navigationpreload",
+    "https://w3c.github.io/ServiceWorker/#service-worker-registration-scope",
+    "https://w3c.github.io/ServiceWorker/#navigator-service-worker-unregister",
+    "https://w3c.github.io/ServiceWorker/#service-worker-registration-update",
+    "https://w3c.github.io/ServiceWorker/#service-worker-registration-updateviacache",
+    "https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-onupdatefound",
+    "https://w3c.github.io/ServiceWorker/#navigator-service-worker-waiting",
+    "https://w3c.github.io/ServiceWorker/#windowclient",
+    "https://w3c.github.io/ServiceWorker/#client-ancestororigins",
+    "https://w3c.github.io/ServiceWorker/#client-focus",
+    "https://w3c.github.io/ServiceWorker/#client-focused",
+    "https://w3c.github.io/ServiceWorker/#client-navigate",
+    "https://w3c.github.io/ServiceWorker/#client-visibilitystate",
+    "https://w3c.github.io/ServiceWorker/#navigator-serviceworker",
+    "https://w3c.github.io/ServiceWorker/#self-caches",
+    "https://w3c.github.io/ServiceWorker/#handle-fetch"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Service-Worker-Navigation-Preload",
+  "links": [
+    {
+      "url": "https://www.html5rocks.com/en/tutorials/service-worker/introduction/",
+      "title": "HTML5Rocks article (introduction)"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker_API",
+      "title": "MDN Web Docs - Service Workers"
+    },
+    {
+      "url": "https://jakearchibald.github.io/isserviceworkerready/resources.html",
+      "title": "List of various resources"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "45",
+      "firstPartial": "40",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "138",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "11.1",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "32",
+      "firstPartial": "27",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11.3-11.4",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 95.52,
+      "partial": 0.6,
+      "total": 96.12
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.4,
+        "firefox": 1.46,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.98,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Details on partial support can be found on [is ServiceWorker Ready?](https://jakearchibald.github.io/isserviceworkerready/)",
+    "byNum": {
+      "1": "Partial support can be enabled in Firefox with the `dom.serviceWorkers.enabled` flag.",
+      "2": "Available behind the \"Enable service workers\" flag",
+      "3": "Disabled on Firefox ESR, but can be re-enabled with the `dom.serviceWorkers.enabled` flag",
+      "4": "Not supported in Private Browsing mode ([see bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1320796))"
+    }
+  },
+  "status": "cr",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "serviceworkers"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "service-workers",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Cache",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Cache.add",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Cache.addAll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Cache.delete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Cache.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Cache.match",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Cache.matchAll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Cache.put",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Cache.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CacheStorage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CacheStorage.delete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CacheStorage.has",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CacheStorage.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CacheStorage.match",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CacheStorage.open",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CacheStorage.secure_context_required",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CacheStorage.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Client",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Client.frameType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Client.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Client.postMessage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Client.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Client.url",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Clients",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Clients.claim",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Clients.get",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Clients.matchAll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Clients.matchAll.options_includeUncontrolled_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Clients.openWindow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ExtendableEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ExtendableEvent.ExtendableEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ExtendableEvent.waitUntil",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ExtendableEvent.waitUntil.async_waitUntil",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ExtendableMessageEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ExtendableMessageEvent.ExtendableMessageEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ExtendableMessageEvent.data",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ExtendableMessageEvent.lastEventId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ExtendableMessageEvent.origin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ExtendableMessageEvent.ports",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ExtendableMessageEvent.source",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FetchEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FetchEvent.FetchEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FetchEvent.clientId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FetchEvent.handled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FetchEvent.preloadResponse",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FetchEvent.request",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FetchEvent.respondWith",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FetchEvent.respondWith.networkerror_on_same-origin_cors",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FetchEvent.respondWith.resource_url",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FetchEvent.resultingClientId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InstallEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InstallEvent.InstallEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InstallEvent.addRoutes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationPreloadManager",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationPreloadManager.disable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationPreloadManager.enable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationPreloadManager.getState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationPreloadManager.setHeaderValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.serviceWorker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorker.postMessage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorker.scriptURL",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorker.state",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorker.statechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerContainer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerContainer.controller",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerContainer.controllerchange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerContainer.getRegistration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerContainer.getRegistrations",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerContainer.message_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerContainer.ready",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerContainer.register",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerContainer.startMessages",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerContainer.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.activate_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.clients",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.fetch_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.install_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.message_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.registration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.serviceWorker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.skipWaiting",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerRegistration.active",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerRegistration.installing",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerRegistration.navigationPreload",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerRegistration.scope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerRegistration.unregister",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerRegistration.update",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerRegistration.updateViaCache",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerRegistration.updatefound_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerRegistration.waiting",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WindowClient",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WindowClient.ancestorOrigins",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WindowClient.focus",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WindowClient.focused",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WindowClient.navigate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WindowClient.visibilityState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.serviceWorker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.caches",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.caches.secure_context_required",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.caches.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Service-Worker-Navigation-Preload",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

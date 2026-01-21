@@ -1,0 +1,155 @@
+{
+  "id": "wf-contenteditable-plaintextonly",
+  "source": "webfeatures",
+  "name": "contenteditable=\"plaintext-only\"",
+  "description": "The contenteditable=\"plaintext-only\" global HTML attribute allows the user to edit the content of an element, but prevents rich-text formatting.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/interaction.html#attr-contenteditable-plaintextonly-state"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "51",
+      "versions": [
+        {
+          "version": "51",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "136",
+      "versions": [
+        {
+          "version": "136",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "5.1",
+      "versions": [
+        {
+          "version": "5.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "51",
+      "versions": [
+        {
+          "version": "51",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "5.1",
+      "versions": [
+        {
+          "version": "5.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "51",
+      "versions": [
+        {
+          "version": "51",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "51",
+      "versions": [
+        {
+          "version": "51",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "136",
+      "versions": [
+        {
+          "version": "136",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.01,
+      "partial": 0,
+      "total": 92.01
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.29,
+        "firefox": 1.47,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "contenteditable-plaintextonly"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.contentEditable.plaintext-only",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.global_attributes.contenteditable.plaintext-only",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

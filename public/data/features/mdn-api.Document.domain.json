@@ -1,0 +1,164 @@
+{
+  "id": "mdn-api.Document.domain",
+  "source": "mdnbcd",
+  "name": "Domain",
+  "description": "",
+  "category": "JS API",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/browsers.html#relaxing-the-same-origin-restriction"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Document/domain",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y",
+          "notes": "Since Chrome 115, setting <code>domain</code> has no effect, unless the website has opted into <a href=\"https://developer.mozilla.org/docs/Web/HTTP/Headers/Origin-Agent-Cluster\">origin-keyed agent clusters</a>."
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "69",
+      "firstPartial": "1",
+      "versions": [
+        {
+          "version": "69",
+          "status": "y",
+          "notes": "From Firefox 62, if the domain cannot be identified, <code>domain</code> returns an empty string instead of <code>null</code>. See <a href=\"https://bugzil.la/819475\">bug 819475</a>."
+        },
+        {
+          "version": "1",
+          "status": "a",
+          "notes": "Only supported for <a href=\"https://developer.mozilla.org/docs/Web/API/HTMLDocument\"><code>HTMLDocument</code></a>, not all <code>Document</code> objects."
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "≤12.1",
+      "versions": [
+        {
+          "version": "≤12.1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "4",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y",
+          "notes": "Since Chrome 115, setting <code>domain</code> has no effect, unless the website has opted into <a href=\"https://developer.mozilla.org/docs/Web/HTTP/Headers/Origin-Agent-Cluster\">origin-keyed agent clusters</a>."
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y",
+          "notes": "Since Chrome 115, setting <code>domain</code> has no effect, unless the website has opted into <a href=\"https://developer.mozilla.org/docs/Web/HTTP/Headers/Origin-Agent-Cluster\">origin-keyed agent clusters</a>."
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "69",
+      "firstPartial": "1",
+      "versions": [
+        {
+          "version": "69",
+          "status": "y",
+          "notes": "From Firefox 62, if the domain cannot be identified, <code>domain</code> returns an empty string instead of <code>null</code>. See <a href=\"https://bugzil.la/819475\">bug 819475</a>."
+        },
+        {
+          "version": "1",
+          "status": "a",
+          "notes": "Only supported for <a href=\"https://developer.mozilla.org/docs/Web/API/HTMLDocument\"><code>HTMLDocument</code></a>, not all <code>Document</code> objects."
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.77,
+      "partial": 0.1,
+      "total": 94.87
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91,
+        "ie": 0.43
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "api.Document.domain"
+    },
+    "supplementary": []
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "id": "wf-webgl-oes-draw-buffers-indexed",
+  "source": "webfeatures",
+  "name": "OES_draw_buffers_indexed WebGL extension",
+  "description": "The OES_draw_buffers_indexed extension for WebGL 2.0 contexts allows you to control blending on a per-color basis when writing to multiple color buffers simultaneously.",
+  "category": "Other",
+  "spec": [
+    "https://registry.khronos.org/webgl/extensions/OES_draw_buffers_indexed/"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/OES_draw_buffers_indexed/enableiOES",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "100",
+      "versions": [
+        {
+          "version": "100",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "108",
+      "versions": [
+        {
+          "version": "108",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "16",
+      "versions": [
+        {
+          "version": "16",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "100",
+      "versions": [
+        {
+          "version": "100",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "100",
+      "versions": [
+        {
+          "version": "100",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "100",
+      "versions": [
+        {
+          "version": "100",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16",
+      "versions": [
+        {
+          "version": "16",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "100",
+      "versions": [
+        {
+          "version": "100",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "100",
+      "versions": [
+        {
+          "version": "100",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "108",
+      "versions": [
+        {
+          "version": "108",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 90.87,
+      "partial": 0,
+      "total": 90.87
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.86,
+        "firefox": 1.75,
+        "safari": 1.27,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.52,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webgl-oes-draw-buffers-indexed"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.OES_draw_buffers_indexed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OES_draw_buffers_indexed.blendEquationSeparateiOES",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OES_draw_buffers_indexed.blendEquationiOES",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OES_draw_buffers_indexed.blendFuncSeparateiOES",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OES_draw_buffers_indexed.blendFunciOES",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OES_draw_buffers_indexed.colorMaskiOES",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OES_draw_buffers_indexed.disableiOES",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OES_draw_buffers_indexed.enableiOES",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

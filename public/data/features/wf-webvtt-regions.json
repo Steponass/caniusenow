@@ -1,0 +1,172 @@
+{
+  "id": "wf-webvtt-regions",
+  "source": "webfeatures",
+  "name": "WebVTT regions",
+  "description": "WebVTT regions set the areas of the video where captions or subtitles should be rendered, such as placing roll-up captions used for live captions.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/webvtt/#regions",
+    "https://w3c.github.io/webvtt/#dom-vttcue-region",
+    "https://w3c.github.io/webvtt/#the-vttregion-interface",
+    "https://w3c.github.io/webvtt/#dom-vttregion-vttregion",
+    "https://w3c.github.io/webvtt/#dom-vttregion-id",
+    "https://w3c.github.io/webvtt/#dom-vttregion-lines",
+    "https://w3c.github.io/webvtt/#dom-vttregion-regionanchorx",
+    "https://w3c.github.io/webvtt/#dom-vttregion-regionanchory",
+    "https://w3c.github.io/webvtt/#dom-vttregion-scroll",
+    "https://w3c.github.io/webvtt/#dom-vttregion-viewportanchorx",
+    "https://w3c.github.io/webvtt/#dom-vttregion-viewportanchory",
+    "https://w3c.github.io/webvtt/#dom-vttregion-width"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/VTTRegion",
+  "links": [],
+  "support": {
+    "firefox": {
+      "current": "y",
+      "firstFull": "59",
+      "versions": [
+        {
+          "version": "59",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "14.1",
+      "versions": [
+        {
+          "version": "14.1",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14.1",
+      "versions": [
+        {
+          "version": "14.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "59",
+      "versions": [
+        {
+          "version": "59",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 15.34,
+      "partial": 0,
+      "total": 15.34
+    },
+    "byBrowser": {
+      "desktop": {
+        "firefox": 1.75,
+        "safari": 1.39
+      },
+      "mobile": {
+        "ios_saf": 11.89,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webvtt-regions"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTCue.region",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion.VTTRegion",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion.lines",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion.regionAnchorX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion.regionAnchorY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion.scroll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion.viewportAnchorX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion.viewportAnchorY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion.width",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

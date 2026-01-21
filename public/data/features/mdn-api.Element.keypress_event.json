@@ -1,0 +1,154 @@
+{
+  "id": "mdn-api.Element.keypress_event",
+  "source": "mdnbcd",
+  "name": "<code>keypress</code> event",
+  "description": "<code>keypress</code> event",
+  "category": "JS API",
+  "spec": [
+    "https://w3c.github.io/uievents/#event-type-keypress",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onkeypress"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Element/keypress_event",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y",
+          "notes": "Chrome does not fire the <code>keypress</code> event for <a href=\"https://crbug.com/40879837#comment51\">known keyboard shortcuts</a>. Which keyboard shortcuts are known depends on the user's system. Use the <code>keydown</code> event to implement keyboard shortcuts."
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "6",
+      "versions": [
+        {
+          "version": "6",
+          "status": "y",
+          "notes": "As of Firefox 65, the <code>keypress</code> event is no longer fired for <a href=\"https://developer.mozilla.org/docs/Web/API/KeyboardEvent/keyCode#Non-printable_keys_(function_keys)\">non-printable keys</a>, except for the Enter key, and the Shift + Enter and Ctrl + Enter key combinations (these were kept for cross-browser compatibility purposes)."
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "1.3",
+      "versions": [
+        {
+          "version": "1.3",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "≤12.1",
+      "versions": [
+        {
+          "version": "≤12.1",
+          "status": "y",
+          "notes": "Opera does not fire the <code>keypress</code> event for <a href=\"https://crbug.com/40879837#comment51\">known keyboard shortcuts</a>. Which keyboard shortcuts are known depends on the user's system. Use the <code>keydown</code> event to implement keyboard shortcuts."
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "9",
+      "versions": [
+        {
+          "version": "9",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "1.3",
+      "versions": [
+        {
+          "version": "1.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y",
+          "notes": "Chrome does not fire the <code>keypress</code> event for <a href=\"https://crbug.com/40879837#comment51\">known keyboard shortcuts</a>. Which keyboard shortcuts are known depends on the user's system. Use the <code>keydown</code> event to implement keyboard shortcuts."
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y",
+          "notes": "Chrome does not fire the <code>keypress</code> event for <a href=\"https://crbug.com/40879837#comment51\">known keyboard shortcuts</a>. Which keyboard shortcuts are known depends on the user's system. Use the <code>keydown</code> event to implement keyboard shortcuts."
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "6",
+      "versions": [
+        {
+          "version": "6",
+          "status": "y",
+          "notes": "As of Firefox 65, the <code>keypress</code> event is no longer fired for <a href=\"https://developer.mozilla.org/docs/Web/API/KeyboardEvent/keyCode#Non-printable_keys_(function_keys)\">non-printable keys</a>, except for the Enter key, and the Shift + Enter and Ctrl + Enter key combinations (these were kept for cross-browser compatibility purposes)."
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.83,
+      "partial": 0,
+      "total": 94.83
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.82,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91,
+        "ie": 0.41
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "api.Element.keypress_event"
+    },
+    "supplementary": []
+  }
+}

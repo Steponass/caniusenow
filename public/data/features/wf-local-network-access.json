@@ -1,0 +1,81 @@
+{
+  "id": "wf-local-network-access",
+  "source": "webfeatures",
+  "name": "Local network access",
+  "description": "The \"local-network-access\" user permission (and certain actions that imply this permission, such as a fetch() request with { targetAddressSpace: \"local\" }) allows a site to send requests to servers on a user's local network.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/local-network-access/",
+    "https://wicg.github.io/local-network-access/#dom-request-targetaddressspace"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 0,
+      "total": 0
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "local-network-access"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Request.targetAddressSpace",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

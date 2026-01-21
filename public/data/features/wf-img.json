@@ -1,0 +1,272 @@
+{
+  "id": "wf-img",
+  "source": "webfeatures",
+  "name": "<img>",
+  "description": "The <img> element adds an image into the document.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#htmlimageelement",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-image-dev",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-alt",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-complete-dev",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-crossorigin",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-decode-dev",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-decoding",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-height-dev",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-naturalheight-dev",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-naturalwidth-dev",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-src",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-width-dev",
+    "https://drafts.csswg.org/cssom-view/#dom-htmlimageelement-x",
+    "https://drafts.csswg.org/cssom-view/#dom-htmlimageelement-y",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-alt",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-crossorigin",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-decoding",
+    "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-src",
+    "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/img#decoding",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "img"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.Image",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.alt",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.complete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.crossOrigin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.decode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.decoding",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.naturalHeight",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.naturalWidth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.img",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.img.alt",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.img.crossorigin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.img.decoding",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.img.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.img.src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.img.width",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

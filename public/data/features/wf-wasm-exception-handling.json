@@ -1,0 +1,144 @@
+{
+  "id": "wf-wasm-exception-handling",
+  "source": "webfeatures",
+  "name": "Exception handling (WebAssembly)",
+  "description": "Exceptions break the normal control flow of execution to represent exceptional behavior, such as an error. You can respond to the exception in JavaScript code.",
+  "category": "Other",
+  "spec": [
+    "https://github.com/WebAssembly/exception-handling/blob/main/proposals/exception-handling/legacy/Exceptions.md"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "95",
+      "versions": [
+        {
+          "version": "95",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "100",
+      "versions": [
+        {
+          "version": "100",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "15.2",
+      "versions": [
+        {
+          "version": "15.2",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "95",
+      "versions": [
+        {
+          "version": "95",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "95",
+      "versions": [
+        {
+          "version": "95",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "95",
+      "versions": [
+        {
+          "version": "95",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.2",
+      "versions": [
+        {
+          "version": "15.2",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "95",
+      "versions": [
+        {
+          "version": "95",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "95",
+      "versions": [
+        {
+          "version": "95",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "100",
+      "versions": [
+        {
+          "version": "100",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.38,
+      "partial": 0,
+      "total": 91.38
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.93,
+        "firefox": 1.75,
+        "safari": 1.37,
+        "edge": 4.25,
+        "opera": 0.82
+      },
+      "mobile": {
+        "ios_saf": 11.84,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "wasm-exception-handling"
+    },
+    "supplementary": []
+  }
+}

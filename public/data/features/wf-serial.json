@@ -1,0 +1,261 @@
+{
+  "id": "wf-serial",
+  "source": "webfeatures",
+  "name": "Web serial",
+  "description": "The navigator.serial API communicates with devices over serial ports, such as microcontrollers.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/serial/",
+    "https://wicg.github.io/serial/#extensions-to-the-navigator-interface",
+    "https://wicg.github.io/serial/#serial-interface",
+    "https://wicg.github.io/serial/#dom-serial-getports",
+    "https://wicg.github.io/serial/#dom-serial-requestport",
+    "https://wicg.github.io/serial/#dom-serialportrequestoptions-allowedbluetoothserviceclassids",
+    "https://wicg.github.io/serial/#dom-serialportfilter-bluetoothserviceclassid",
+    "https://wicg.github.io/serial/#dom-serialport",
+    "https://wicg.github.io/serial/#dom-serialport-close",
+    "https://wicg.github.io/serial/#dfn-connect",
+    "https://wicg.github.io/serial/#dom-serialport-onconnect",
+    "https://wicg.github.io/serial/#dom-serialport-connected",
+    "https://wicg.github.io/serial/#dfn-disconnect",
+    "https://wicg.github.io/serial/#dom-serialport-ondisconnect",
+    "https://wicg.github.io/serial/#dom-serialport-forget",
+    "https://wicg.github.io/serial/#dom-serialport-getinfo",
+    "https://wicg.github.io/serial/#dom-serialportinfo-bluetoothserviceclassid",
+    "https://wicg.github.io/serial/#dom-serialport-getsignals",
+    "https://wicg.github.io/serial/#dom-serialport-open",
+    "https://wicg.github.io/serial/#dom-serialport-readable",
+    "https://wicg.github.io/serial/#dom-serialport-setsignals",
+    "https://wicg.github.io/serial/#dom-serialport-writable",
+    "https://wicg.github.io/serial/#dom-workernavigator-serial",
+    "https://wicg.github.io/serial/#permissions-policy"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/serial",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "89",
+      "versions": [
+        {
+          "version": "89",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "89",
+      "versions": [
+        {
+          "version": "89",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "89",
+      "versions": [
+        {
+          "version": "89",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "89",
+      "versions": [
+        {
+          "version": "89",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "89",
+      "versions": [
+        {
+          "version": "89",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "89",
+      "versions": [
+        {
+          "version": "89",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.25,
+      "partial": 0,
+      "total": 76.25
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.96,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "serial"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.serial",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Serial",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Serial.getPorts",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Serial.requestPort",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Serial.requestPort.allowedBluetoothServiceClassIds_option",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Serial.requestPort.filters_bluetoothServiceClassId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SerialPort",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SerialPort.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SerialPort.connect_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SerialPort.connect_event.bluetooth_rfcomm",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SerialPort.connected",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SerialPort.disconnect_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SerialPort.disconnect_event.bluetooth_rfcomm",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SerialPort.forget",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SerialPort.getInfo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SerialPort.getInfo.bluetoothServiceClassId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SerialPort.getSignals",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SerialPort.open",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SerialPort.readable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SerialPort.setSignals",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SerialPort.writable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.serial",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.serial",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.serial",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

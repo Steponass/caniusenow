@@ -1,0 +1,213 @@
+{
+  "id": "wf-focus-events",
+  "source": "webfeatures",
+  "name": "Focus events",
+  "description": "Focus events, such as focus and blur, fire when an element gets or loses focus.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/uievents/#events-focusevent",
+    "https://w3c.github.io/uievents/#event-type-blur",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onblur",
+    "https://w3c.github.io/uievents/#event-type-focus",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onfocus",
+    "https://w3c.github.io/uievents/#event-type-focusin",
+    "https://w3c.github.io/uievents/#event-type-focusout",
+    "https://w3c.github.io/uievents/#interface-focusevent",
+    "https://w3c.github.io/uievents/#dom-focusevent-focusevent",
+    "https://w3c.github.io/uievents/#dom-focusevent-relatedtarget",
+    "https://html.spec.whatwg.org/multipage/interaction.html#dom-blur-dev",
+    "https://html.spec.whatwg.org/multipage/interaction.html#dom-focus-dev"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLElement/focus",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "24",
+      "versions": [
+        {
+          "version": "24",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "3.1",
+      "versions": [
+        {
+          "version": "3.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "3.1",
+      "versions": [
+        {
+          "version": "3.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "24",
+      "versions": [
+        {
+          "version": "24",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.36,
+      "partial": 0,
+      "total": 94.36
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "focus-events"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.blur_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.focus_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.focusin_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.focusout_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FocusEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FocusEvent.FocusEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FocusEvent.relatedTarget",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.blur",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.focus",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.focus.options_focusVisible_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.focus.options_preventScroll_parameter",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

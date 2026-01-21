@@ -1,0 +1,93 @@
+{
+  "id": "mdn-http.headers.Idempotency-Key",
+  "source": "mdnbcd",
+  "name": "Idempotency- Key",
+  "description": "",
+  "category": "Other",
+  "spec": [
+    "https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-idempotency-key-header/#name-the-idempotency-key-http-re"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Idempotency-Key",
+  "links": [],
+  "support": {
+    "firefox": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "135",
+          "status": "d",
+          "flags": [
+            "flags"
+          ],
+          "notes": "Automatically adds a unique 64-bit key for POST requests when needed, if not set in JavaScript."
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "135",
+          "status": "d",
+          "flags": [
+            "flags"
+          ],
+          "notes": "Automatically adds a unique 64-bit key for POST requests when needed, if not set in JavaScript."
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 0,
+      "total": 0
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "http.headers.Idempotency-Key"
+    },
+    "supplementary": []
+  }
+}

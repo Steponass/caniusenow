@@ -1,0 +1,829 @@
+{
+  "id": "wf-canvas-2d",
+  "source": "webfeatures",
+  "name": "2D canvas",
+  "description": "The CanvasRenderingContext2D API is the \"2d\" rendering context for the <canvas> element. It represents a flat, two-dimensional space for drawing graphics and animations.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+    "https://html.spec.whatwg.org/multipage/canvas.html#canvasgradient",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvasgradient-addcolorstop-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#canvaspattern",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvaspattern-settransform-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-arc-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-arcto-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-beginpath-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-beziercurveto-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-canvas-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-clearrect-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-clip-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-closepath-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createimagedata-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createlineargradient-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createpattern-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createradialgradient-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-direction-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-drawfocusifneeded-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-drawimage-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-ellipse-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-fill-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-fillrect-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-fillstyle-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-filltext-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-filter-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-font-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-fontkerning",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-fontstretch",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-fontvariantcaps",
+    "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext:dom-context-2d-canvas-getcontextattributes-2",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-getimagedata-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-getlinedash-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-gettransform-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-globalalpha-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-globalcompositeoperation-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-imagesmoothingenabled-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-imagesmoothingquality-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-ispointinpath-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-ispointinstroke-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-lang",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-letterspacing",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-linecap-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-linedashoffset-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-linejoin-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-lineto-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-linewidth-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-measuretext-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-miterlimit-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-moveto-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-putimagedata-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-quadraticcurveto-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-rect-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-resettransform-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-restore-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-rotate-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-save-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-scale-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-setlinedash-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-settransform-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-shadowblur-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-shadowcolor-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-shadowoffsetx-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-shadowoffsety-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-stroke-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-strokerect-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-strokestyle-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-stroketext-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-textalign-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-textbaseline-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-textrendering",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-transform-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-translate-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-wordspacing",
+    "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagedata",
+    "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-imagedata",
+    "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-imagedata-with-data",
+    "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-imagedata-colorspace",
+    "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-imagedata-data",
+    "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-imagedata-height",
+    "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-imagedata-width",
+    "https://html.spec.whatwg.org/multipage/canvas.html#path2d-objects",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-path2d-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-path2d-addpath-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-roundrect-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#textmetrics",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-actualboundingboxascent-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-actualboundingboxdescent-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-actualboundingboxleft-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-actualboundingboxright-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-alphabeticbaseline-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-emheightascent-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-emheightdescent-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-fontboundingboxascent-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-fontboundingboxdescent-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-hangingbaseline-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-ideographicbaseline-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-textmetrics-width-dev"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/TextMetrics/width",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1.5",
+      "versions": [
+        {
+          "version": "1.5",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "2",
+      "versions": [
+        {
+          "version": "2",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "2",
+      "versions": [
+        {
+          "version": "2",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1.5",
+      "versions": [
+        {
+          "version": "1.5",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "canvas-2d"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasGradient",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasGradient.addColorStop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasPattern",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasPattern.setTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasPattern.setTransform.dommatrix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.arc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.arcTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.beginPath",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.bezierCurveTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.canvas",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.clearRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.clip",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.clip.path_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.closePath",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.createImageData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.createLinearGradient",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.createPattern",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.createRadialGradient",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.direction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.drawFocusIfNeeded",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.drawFocusIfNeeded.path_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.drawImage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.drawImage.ImageBitmap_source_image",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.ellipse",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.fill",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.fill.path_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.fillRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.fillStyle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.fillText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.filter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.font",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.fontKerning",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.fontStretch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.fontVariantCaps",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.getContextAttributes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.getImageData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.getLineDash",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.getTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.globalAlpha",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.globalCompositeOperation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.imageSmoothingEnabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.imageSmoothingQuality",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.isPointInPath",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.isPointInPath.path_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.isPointInStroke",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.isPointInStroke.path_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.lang",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.letterSpacing",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.lineCap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.lineDashOffset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.lineJoin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.lineTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.lineWidth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.measureText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.miterLimit",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.moveTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.putImageData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.quadraticCurveTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.rect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.resetTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.restore",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.rotate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.save",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.scale",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.setLineDash",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.setTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.setTransform.matrix_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.shadowBlur",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.shadowColor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.shadowOffsetX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.shadowOffsetY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.stroke",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.stroke.path_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.strokeRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.strokeStyle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.strokeText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.textAlign",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.textBaseline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.textRendering",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.transform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.translate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.wordSpacing",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.getContext.2d_context",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ImageData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ImageData.ImageData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ImageData.colorSpace",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ImageData.data",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ImageData.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ImageData.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ImageData.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Path2D",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Path2D.Path2D",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Path2D.addPath",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Path2D.arc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Path2D.arcTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Path2D.bezierCurveTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Path2D.closePath",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Path2D.ellipse",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Path2D.lineTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Path2D.moveTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Path2D.quadraticCurveTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Path2D.rect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Path2D.roundRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextMetrics",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextMetrics.actualBoundingBoxAscent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextMetrics.actualBoundingBoxDescent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextMetrics.actualBoundingBoxLeft",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextMetrics.actualBoundingBoxRight",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextMetrics.alphabeticBaseline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextMetrics.emHeightAscent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextMetrics.emHeightDescent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextMetrics.fontBoundingBoxAscent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextMetrics.fontBoundingBoxDescent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextMetrics.hangingBaseline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextMetrics.ideographicBaseline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextMetrics.width",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

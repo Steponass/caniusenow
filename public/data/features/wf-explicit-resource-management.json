@@ -1,0 +1,294 @@
+{
+  "id": "wf-explicit-resource-management",
+  "source": "webfeatures",
+  "name": "Explicit resource management",
+  "description": "The using and await using declarations and the dispose and asyncDispose symbols manage the lifecycle of resources such as file handles and streams. The DisposableStack and AsyncDisposableStack objects can group, dispose, and coordinate dependencies between multiple disposable resources.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/proposal-async-explicit-resource-management/",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposablestack-objects",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposablestack.prototype-@@asyncDispose",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-properties-of-the-asyncdisposablestack-constructor",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposablestack.prototype.adopt",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposablestack.prototype.defer",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposablestack.prototype.disposeAsync",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-get-asyncdisposablestack.prototype.disposed",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposablestack.prototype.move",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposablestack.prototype.use",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposablestack-objects",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposablestack.prototype-@@dispose",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposablestack-constructor",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposablestack.prototype.dispose",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-get-disposablestack.prototype.disposed",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposablestack.prototype.move",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposablestack.prototype.use",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-%iteratorprototype%-@@dispose",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-suppressederror-objects",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-suppressederror-constructor",
+    "https://tc39.es/proposal-async-explicit-resource-management/#sec-suppressederror",
+    "https://tc39.es/proposal-async-explicit-resource-management/#table-1",
+    "https://tc39.es/proposal-async-explicit-resource-management/#prod-AwaitUsingDeclaration",
+    "https://tc39.es/proposal-async-explicit-resource-management/#prod-UsingDeclaration"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/using",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 69.66,
+      "partial": 0,
+      "total": 69.66
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 19.74,
+        "firefox": 1.35,
+        "edge": 4.13
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "explicit-resource-management"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.AsyncDisposableStack",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.AsyncDisposableStack.@@asyncDispose",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.AsyncDisposableStack.AsyncDisposableStack",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.AsyncDisposableStack.adopt",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.AsyncDisposableStack.defer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.AsyncDisposableStack.disposeAsync",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.AsyncDisposableStack.disposed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.AsyncDisposableStack.move",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.AsyncDisposableStack.use",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.AsyncIterator.@@asyncDispose",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DisposableStack",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DisposableStack.@@dispose",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DisposableStack.DisposableStack",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DisposableStack.adopt",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DisposableStack.defer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DisposableStack.dispose",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DisposableStack.disposed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DisposableStack.move",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DisposableStack.use",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Iterator.@@dispose",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.SuppressedError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.SuppressedError.SuppressedError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.SuppressedError.error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.SuppressedError.suppressed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.asyncDispose",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.dispose",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.await_using",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.using",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "wf-periodic-background-sync",
+  "source": "webfeatures",
+  "name": "Periodic background sync",
+  "description": "The periodic background synchronization API fires a recurring periodicsync event in a service worker. You can use this to update data in the background at regular intervals.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/periodic-background-sync/",
+    "https://wicg.github.io/periodic-background-sync/#periodicsync-event",
+    "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncevent-periodicsyncevent",
+    "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncevent-tag",
+    "https://wicg.github.io/periodic-background-sync/#periodicsyncmanager-interface",
+    "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncmanager-gettags",
+    "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncmanager-register",
+    "https://wicg.github.io/periodic-background-sync/#dom-periodicsyncmanager-unregister",
+    "https://wicg.github.io/periodic-background-sync/#dom-serviceworkerglobalscope-onperiodicsync",
+    "https://wicg.github.io/periodic-background-sync/#dom-serviceworkerregistration-periodicsync"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/periodicSync",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "80",
+      "versions": [
+        {
+          "version": "80",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "80",
+      "versions": [
+        {
+          "version": "80",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "80",
+      "versions": [
+        {
+          "version": "80",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "80",
+      "versions": [
+        {
+          "version": "80",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "80",
+      "versions": [
+        {
+          "version": "80",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "80",
+      "versions": [
+        {
+          "version": "80",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.36,
+      "partial": 0,
+      "total": 76.36
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.07,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "periodic-background-sync"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.PeriodicSyncEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PeriodicSyncEvent.PeriodicSyncEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PeriodicSyncEvent.tag",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PeriodicSyncManager",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PeriodicSyncManager.getTags",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PeriodicSyncManager.register",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PeriodicSyncManager.unregister",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.periodicsync_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerRegistration.periodicSync",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

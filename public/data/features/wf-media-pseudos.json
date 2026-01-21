@@ -1,0 +1,142 @@
+{
+  "id": "wf-media-pseudos",
+  "source": "webfeatures",
+  "name": "Media element pseudo-classes",
+  "description": "The :playing, :paused, :seeking, :buffering, :stalled, :muted, and :volume-locked CSS pseudo-classes match <audio> and <video> elements based on their state.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/selectors-4/#resource-pseudos",
+    "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes",
+    "https://drafts.csswg.org/selectors/#selectordef-buffering",
+    "https://html.spec.whatwg.org/multipage/semantics-other.html#selector-buffering",
+    "https://drafts.csswg.org/selectors/#selectordef-muted",
+    "https://html.spec.whatwg.org/multipage/semantics-other.html#selector-muted",
+    "https://drafts.csswg.org/selectors/#selectordef-paused",
+    "https://html.spec.whatwg.org/multipage/semantics-other.html#selector-paused",
+    "https://drafts.csswg.org/selectors/#selectordef-playing",
+    "https://html.spec.whatwg.org/multipage/semantics-other.html#selector-playing",
+    "https://drafts.csswg.org/selectors/#selectordef-seeking",
+    "https://html.spec.whatwg.org/multipage/semantics-other.html#selector-seeking",
+    "https://drafts.csswg.org/selectors/#selectordef-stalled",
+    "https://html.spec.whatwg.org/multipage/semantics-other.html#selector-stalled",
+    "https://drafts.csswg.org/selectors/#selectordef-volume-locked",
+    "https://html.spec.whatwg.org/multipage/semantics-other.html#selector-volume-locked"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Selectors/:volume-locked",
+  "links": [],
+  "support": {
+    "safari": {
+      "current": "y",
+      "firstFull": "15.4",
+      "versions": [
+        {
+          "version": "15.4",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.4",
+      "versions": [
+        {
+          "version": "15.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 13.19,
+      "partial": 0,
+      "total": 13.19
+    },
+    "byBrowser": {
+      "desktop": {
+        "safari": 1.37
+      },
+      "mobile": {
+        "ios_saf": 11.82
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "media-pseudos"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.buffering",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.muted",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.paused",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.playing",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.seeking",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.stalled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.volume-locked",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

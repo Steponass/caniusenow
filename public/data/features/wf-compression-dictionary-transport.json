@@ -1,0 +1,161 @@
+{
+  "id": "wf-compression-dictionary-transport",
+  "source": "webfeatures",
+  "name": "Compression Dictionary Transport",
+  "description": "Compression Dictionary Transport is a mechanism for using designated HTTP responses as an external dictionary for future HTTP responses for compression schemes that support using external dictionaries (e.g., Brotli and Zstandard)",
+  "category": "Other",
+  "spec": [
+    "https://httpwg.org/specs/rfc9842.html",
+    "https://www.rfc-editor.org/rfc/rfc9842#name-link-relation-registration",
+    "https://www.rfc-editor.org/rfc/rfc9842#name-available-dictionary",
+    "https://www.rfc-editor.org/rfc/rfc9842#name-dictionary-id",
+    "https://www.rfc-editor.org/rfc/rfc9842#name-use-as-dictionary"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Use-As-Dictionary",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "130",
+      "versions": [
+        {
+          "version": "130",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "130",
+      "versions": [
+        {
+          "version": "130",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "130",
+      "versions": [
+        {
+          "version": "130",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "130",
+      "versions": [
+        {
+          "version": "130",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "130",
+      "versions": [
+        {
+          "version": "130",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "130",
+      "versions": [
+        {
+          "version": "130",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 68.86,
+      "partial": 0,
+      "total": 68.86
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 20.57,
+        "edge": 4.17
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "compression-dictionary-transport"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.link.rel.compression-dictionary",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Accept-Encoding.dcb",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Accept-Encoding.dcz",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Available-Dictionary",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Encoding.dcb",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Encoding.dcz",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Dictionary-ID",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Use-As-Dictionary",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1417 @@
+{
+  "id": "webgl",
+  "source": "caniuse",
+  "name": "WebGL - 3D Canvas graphics",
+  "description": "Method of generating dynamic 3D graphics using JavaScript, accelerated through hardware",
+  "category": "Other",
+  "spec": [
+    "https://www.khronos.org/registry/webgl/specs/1.0/",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#WebGLContextAttributes",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.15.4",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.15.2",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.15.3",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.11",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#DOM-WebGLActiveInfo-name",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#DOM-WebGLActiveInfo-size",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#DOM-WebGLActiveInfo-type",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.4",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.15",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.15.1",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.5",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.3",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.6",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.7",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.14",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.14.3",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.14.9",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.14.5",
+    "https://registry.khronos.org/webgl/specs/latest/2.0/#3.7.1",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.14.6",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.14.7",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.14.8",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#DOM-WebGLRenderingContext-canvas",
+    "https://registry.khronos.org/webgl/specs/latest/2.0/#3.7.4",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.14.11",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#COMPRESSEDTEXIMAGE2D",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#COMPRESSEDTEXSUBIMAGE2D",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.14.10",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.14.1",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#DOM-WebGLRenderingContext-drawingBufferHeight",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#2.2",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#DOM-WebGLRenderingContext-drawingBufferWidth",
+    "https://registry.khronos.org/webgl/specs/latest/2.0/#3.7.3",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.14.2",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.14.14",
+    "https://registry.khronos.org/webgl/specs/latest/2.0/#3.7.2",
+    "https://registry.khronos.org/webgl/specs/latest/2.0/#3.7.7",
+    "https://registry.khronos.org/webgl/specs/latest/2.0/#3.7.5",
+    "https://registry.khronos.org/webgl/specs/latest/2.0/#3.7.6",
+    "https://registry.khronos.org/webgl/specs/latest/2.0/#3.7.8",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.14.13",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#PIXEL_STORAGE_PARAMETERS",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.14.12",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.14.4",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#TEXSUBIMAGE2D",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.8",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.12",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#DOM-WebGLShaderPrecisionFormat-precision",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#DOM-WebGLShaderPrecisionFormat-rangeMax",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#DOM-WebGLShaderPrecisionFormat-rangeMin",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.9",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#5.10"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WebGLUniformLocation",
+  "links": [
+    {
+      "url": "https://get.webgl.org/get-a-webgl-implementation/",
+      "title": "Instructions on enabling WebGL"
+    },
+    {
+      "url": "https://www.khronos.org/webgl/wiki/Tutorial",
+      "title": "Tutorial"
+    },
+    {
+      "url": "https://hacks.mozilla.org/2009/12/webgl-draft-released-today/",
+      "title": "Firefox blog post"
+    },
+    {
+      "url": "https://github.com/iewebgl/iewebgl",
+      "title": "Polyfill for IE"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "33",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "24",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "8",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "19",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "u",
+          "flags": [
+            "polyfill"
+          ]
+        },
+        {
+          "version": "7",
+          "status": "u",
+          "flags": [
+            "polyfill"
+          ]
+        },
+        {
+          "version": "8",
+          "status": "u",
+          "flags": [
+            "polyfill"
+          ]
+        },
+        {
+          "version": "9",
+          "status": "u",
+          "flags": [
+            "polyfill"
+          ]
+        },
+        {
+          "version": "10",
+          "status": "u",
+          "flags": [
+            "polyfill"
+          ]
+        },
+        {
+          "version": "11",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "8",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.83,
+      "partial": 0,
+      "total": 96.83
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "WebGL support is dependent on GPU support and may not be available on older devices. This is due to the additional requirement for users to have [up to date video drivers](http://www.khronos.org/webgl/wiki/BlacklistsAndWhitelists).\r\n\r\nNote that WebGL is part of the [Khronos Group](http://www.khronos.org/webgl/), not the W3C.",
+    "byNum": {
+      "1": "WebGL context is accessed from \"experimental-webgl\" rather than \"webgl\""
+    }
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "webgl"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "webgl",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.getContext.webgl_context",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.getContext.webgl_context.options_alpha_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.getContext.webgl_context.options_failIfMajorPerformanceCaveat_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.getContext.webgl_context.options_powerPreference_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.webglcontextcreationerror_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.webglcontextlost_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.webglcontextrestored_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLActiveInfo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLActiveInfo.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLActiveInfo.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLActiveInfo.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLActiveInfo.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLBuffer.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLContextEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLContextEvent.WebGLContextEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLContextEvent.statusMessage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLContextEvent.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLFramebuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLFramebuffer.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLObject",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLProgram",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLProgram.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderbuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderbuffer.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.activeTexture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.attachShader",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.bindAttribLocation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.bindBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.bindFramebuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.bindRenderbuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.bindTexture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.blendColor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.blendEquation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.blendEquationSeparate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.blendFunc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.blendFuncSeparate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.bufferData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.bufferSubData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.canvas",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.checkFramebufferStatus",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.clear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.clearColor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.clearDepth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.clearStencil",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.colorMask",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.compileShader",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.compressedTexImage2D",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.compressedTexSubImage2D",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.copyTexImage2D",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.copyTexSubImage2D",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.createBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.createFramebuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.createProgram",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.createRenderbuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.createShader",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.createTexture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.cullFace",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.deleteBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.deleteFramebuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.deleteProgram",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.deleteRenderbuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.deleteShader",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.deleteTexture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.depthFunc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.depthMask",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.depthRange",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.detachShader",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.disable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.disableVertexAttribArray",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.drawArrays",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.drawElements",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.drawingBufferFormat",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.drawingBufferHeight",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.drawingBufferStorage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.drawingBufferWidth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.enable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.enableVertexAttribArray",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.finish",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.flush",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.framebufferRenderbuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.framebufferTexture2D",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.frontFace",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.generateMipmap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getActiveAttrib",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getActiveUniform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getAttachedShaders",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getAttribLocation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getBufferParameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getContextAttributes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getExtension",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getFramebufferAttachmentParameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getParameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getProgramInfoLog",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getProgramParameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getRenderbufferParameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getShaderInfoLog",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getShaderParameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getShaderPrecisionFormat",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getShaderSource",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getSupportedExtensions",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getTexParameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getUniform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getUniformLocation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getVertexAttrib",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.getVertexAttribOffset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.hint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.isBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.isContextLost",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.isEnabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.isFramebuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.isProgram",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.isRenderbuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.isShader",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.isTexture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.lineWidth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.linkProgram",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.pixelStorei",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.polygonOffset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.readPixels",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.renderbufferStorage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.sampleCoverage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.scissor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.shaderSource",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.stencilFunc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.stencilFuncSeparate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.stencilMask",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.stencilMaskSeparate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.stencilOp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.stencilOpSeparate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.texImage2D",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.texParameterf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.texParameteri",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.texSubImage2D",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniform1f",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniform1fv",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniform1i",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniform1iv",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniform2f",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniform2fv",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniform2i",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniform2iv",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniform3f",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniform3fv",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniform3i",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniform3iv",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniform4f",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniform4fv",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniform4i",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniform4iv",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniformMatrix2fv",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniformMatrix3fv",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.uniformMatrix4fv",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.useProgram",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.validateProgram",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.vertexAttrib1f",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.vertexAttrib1fv",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.vertexAttrib2f",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.vertexAttrib2fv",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.vertexAttrib3f",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.vertexAttrib3fv",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.vertexAttrib4f",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.vertexAttrib4fv",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.vertexAttribPointer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.viewport",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLShader",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLShader.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLShaderPrecisionFormat",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLShaderPrecisionFormat.precision",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLShaderPrecisionFormat.rangeMax",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLShaderPrecisionFormat.rangeMin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLShaderPrecisionFormat.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLTexture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLTexture.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLUniformLocation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLUniformLocation.worker_support",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

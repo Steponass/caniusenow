@@ -1,0 +1,200 @@
+{
+  "id": "wf-barprop",
+  "source": "webfeatures",
+  "name": "BarProp",
+  "description": "The visible property of the window.locationbar, window.menubar, window.personalbar, window.scrollbars, window.statusbar, and window.toolbar APIs historically represented the visibility of a browser user interface. For privacy reasons, it now represents whether the window is a pop-up.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#browser-interface-elements",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#barprop",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-barprop-visible",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-locationbar-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-menubar-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-personalbar-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-scrollbars-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-statusbar-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-toolbar-dev"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/toolbar",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "3",
+      "versions": [
+        {
+          "version": "3",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "3",
+      "versions": [
+        {
+          "version": "3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "barprop"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.BarProp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BarProp.visible",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BarProp.visible.returns_popup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.locationbar",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.menubar",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.personalbar",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.scrollbars",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.statusbar",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.toolbar",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

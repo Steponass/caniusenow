@@ -1,0 +1,336 @@
+{
+  "id": "wf-media-session",
+  "source": "webfeatures",
+  "name": "Media session",
+  "description": "The navigator.mediaSession API integrates with platform UI for media playback. It can be used to set metadata such as title and artwork, and to handle user actions like playing, pausing, or seeking.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/mediasession/",
+    "https://w3c.github.io/mediasession/#chapterinformation",
+    "https://w3c.github.io/mediasession/#dom-chapterinformation-artwork",
+    "https://w3c.github.io/mediasession/#dom-chapterinformation-starttime",
+    "https://w3c.github.io/mediasession/#dom-chapterinformation-title",
+    "https://w3c.github.io/mediasession/#the-mediametadata-interface",
+    "https://w3c.github.io/mediasession/#dom-mediametadata-mediametadata",
+    "https://w3c.github.io/mediasession/#dom-mediametadata-album",
+    "https://w3c.github.io/mediasession/#dom-mediametadata-artist",
+    "https://w3c.github.io/mediasession/#dom-mediametadata-artwork",
+    "https://w3c.github.io/mediasession/#dom-mediametadata-chapterinfo",
+    "https://w3c.github.io/mediasession/#dom-mediametadata-title",
+    "https://w3c.github.io/mediasession/#the-mediasession-interface",
+    "https://w3c.github.io/mediasession/#dom-mediasession-metadata",
+    "https://w3c.github.io/mediasession/#dom-mediasession-playbackstate",
+    "https://w3c.github.io/mediasession/#dom-mediasession-setactionhandler",
+    "https://w3c.github.io/mediasession/#dom-mediasession-setcameraactive",
+    "https://w3c.github.io/mediasession/#dom-mediasession-setmicrophoneactive",
+    "https://w3c.github.io/mediasession/#dom-mediasession-setpositionstate",
+    "https://w3c.github.io/mediasession/#dom-mediasession-setscreenshareactive",
+    "https://w3c.github.io/mediasession/#dom-navigator-mediasession"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/mediaSession",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "73",
+      "versions": [
+        {
+          "version": "73",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "82",
+      "versions": [
+        {
+          "version": "82",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "15",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "73",
+      "versions": [
+        {
+          "version": "73",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "15",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "73",
+      "versions": [
+        {
+          "version": "73",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "73",
+      "versions": [
+        {
+          "version": "73",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "82",
+      "versions": [
+        {
+          "version": "82",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.71,
+      "partial": 0,
+      "total": 91.71
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.14,
+        "firefox": 1.75,
+        "safari": 1.37,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.86,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "media-session"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ChapterInformation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ChapterInformation.artwork",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ChapterInformation.startTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ChapterInformation.title",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaMetadata",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaMetadata.MediaMetadata",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaMetadata.album",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaMetadata.artist",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaMetadata.artwork",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaMetadata.chapterInfo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaMetadata.title",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.metadata",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.playbackState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setActionHandler",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setActionHandler.hangup_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setActionHandler.nextslide_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setActionHandler.nexttrack_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setActionHandler.pause_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setActionHandler.play_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setActionHandler.previousslide_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setActionHandler.previoustrack_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setActionHandler.seekbackward_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setActionHandler.seekforward_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setActionHandler.seekto_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setActionHandler.skipad_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setActionHandler.stop_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setActionHandler.togglecamera_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setActionHandler.togglemicrophone_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setCameraActive",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setMicrophoneActive",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setPositionState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaSession.setScreenshareActive",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.mediaSession",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

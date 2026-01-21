@@ -1,0 +1,136 @@
+{
+  "id": "wf-is-input-pending",
+  "source": "webfeatures",
+  "name": "isInputPending()",
+  "description": "The navigator.scheduling.isInputPending() method checks if there are pending input events, such as touch or mouse events. This allows you to yield from long-running scripts that might be blocking user interaction.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/is-input-pending/",
+    "https://wicg.github.io/is-input-pending/#dom-navigator-scheduling",
+    "https://wicg.github.io/is-input-pending/#the-scheduling-interface",
+    "https://wicg.github.io/is-input-pending/#dom-scheduling-isinputpending"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Scheduling/isInputPending",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "87",
+      "versions": [
+        {
+          "version": "87",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "87",
+      "versions": [
+        {
+          "version": "87",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "87",
+      "versions": [
+        {
+          "version": "87",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "87",
+      "versions": [
+        {
+          "version": "87",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "87",
+      "versions": [
+        {
+          "version": "87",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "87",
+      "versions": [
+        {
+          "version": "87",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.28,
+      "partial": 0,
+      "total": 76.28
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.99,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "is-input-pending"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.scheduling",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Scheduling",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Scheduling.isInputPending",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

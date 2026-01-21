@@ -1,0 +1,152 @@
+{
+  "id": "wf-contain-inline-size",
+  "source": "webfeatures",
+  "name": "Inline-size containment",
+  "description": "The contain: inline-size CSS declaration prevents the element's inline dimension from being set by the element's contents. This permits the browser to avoid slower layout calculations.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-contain-3/#containment-inline-size",
+    "https://drafts.csswg.org/css-contain-2/#valdef-contain-inline-size"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/contain",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "101",
+      "versions": [
+        {
+          "version": "101",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "16",
+      "versions": [
+        {
+          "version": "16",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16",
+      "versions": [
+        {
+          "version": "16",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "101",
+      "versions": [
+        {
+          "version": "101",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 90.68,
+      "partial": 0,
+      "total": 90.68
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.67,
+        "firefox": 1.75,
+        "safari": 1.27,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.52,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "contain-inline-size"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.contain.inline-size",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

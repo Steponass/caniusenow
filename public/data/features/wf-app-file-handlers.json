@@ -1,0 +1,124 @@
+{
+  "id": "wf-app-file-handlers",
+  "source": "webfeatures",
+  "name": "File handlers",
+  "description": "The file_handlers web app manifest member registers an installed web app as a handler for files with specific file extensions or MIME types.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/manifest-incubations/#file_handlers-member",
+    "https://wicg.github.io/web-app-launch/#dom-launchparams-files"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/LaunchParams/files",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76,
+      "partial": 0,
+      "total": 76
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.85,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "app-file-handlers"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.LaunchParams.files",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

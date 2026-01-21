@@ -1,0 +1,633 @@
+{
+  "id": "wf-css-object-model",
+  "source": "webfeatures",
+  "name": "CSS object model",
+  "description": "The CSS object model API reads, creates, and modifies CSS stylesheets and inline styles. Also known as CSSOM.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/cssom-1/#css-object-model",
+    "https://drafts.csswg.org/cssom/#namespacedef-css",
+    "https://drafts.csswg.org/css-conditional-3/#the-cssconditionrule-interface",
+    "https://drafts.csswg.org/css-conditional-3/#dom-cssconditionrule-conditiontext",
+    "https://drafts.csswg.org/cssom/#the-cssgroupingrule-interface",
+    "https://drafts.csswg.org/cssom/#dom-cssgroupingrule-cssrules",
+    "https://drafts.csswg.org/cssom/#dom-cssgroupingrule-deleterule",
+    "https://drafts.csswg.org/cssom/#dom-cssgroupingrule-insertrule",
+    "https://drafts.csswg.org/cssom/#the-cssmarginrule-interface",
+    "https://drafts.csswg.org/cssom/#dom-cssmarginrule-name",
+    "https://drafts.csswg.org/cssom/#dom-cssmarginrule-style",
+    "https://drafts.csswg.org/css-conditional-3/#the-cssmediarule-interface",
+    "https://drafts.csswg.org/css-conditional-3/#dom-cssmediarule-media",
+    "https://drafts.csswg.org/cssom/#csspagedescriptors",
+    "https://drafts.csswg.org/cssom/#dom-csspagedescriptors-margin",
+    "https://drafts.csswg.org/cssom/#dom-csspagedescriptors-margin-bottom",
+    "https://drafts.csswg.org/cssom/#dom-csspagedescriptors-margin-left",
+    "https://drafts.csswg.org/cssom/#dom-csspagedescriptors-margin-right",
+    "https://drafts.csswg.org/cssom/#dom-csspagedescriptors-margin-top",
+    "https://drafts.csswg.org/cssom/#dom-csspagedescriptors-marginbottom",
+    "https://drafts.csswg.org/cssom/#dom-csspagedescriptors-marginleft",
+    "https://drafts.csswg.org/cssom/#dom-csspagedescriptors-marginright",
+    "https://drafts.csswg.org/cssom/#dom-csspagedescriptors-margintop",
+    "https://drafts.csswg.org/cssom/#dom-csspagedescriptors-page-orientation",
+    "https://drafts.csswg.org/cssom/#dom-csspagedescriptors-pageorientation",
+    "https://drafts.csswg.org/cssom/#dom-csspagedescriptors-size",
+    "https://drafts.csswg.org/cssom/#the-csspagerule-interface",
+    "https://drafts.csswg.org/cssom/#dom-csspagerule-selectortext",
+    "https://drafts.csswg.org/cssom/#dom-csspagerule-style",
+    "https://drafts.csswg.org/css-pseudo/#CSSPseudoElement-interface",
+    "https://drafts.csswg.org/css-pseudo/#dom-csspseudoelement-element",
+    "https://drafts.csswg.org/css-pseudo/#dom-csspseudoelement-type",
+    "https://drafts.csswg.org/cssom/#the-cssrule-interface",
+    "https://drafts.csswg.org/cssom/#dom-cssrule-csstext",
+    "https://drafts.csswg.org/cssom/#dom-cssrule-parentrule",
+    "https://drafts.csswg.org/cssom/#dom-cssrule-parentstylesheet",
+    "https://drafts.csswg.org/cssom/#the-cssrulelist-interface",
+    "https://drafts.csswg.org/cssom/#dom-cssrulelist-item",
+    "https://drafts.csswg.org/cssom/#dom-cssrulelist-length",
+    "https://drafts.csswg.org/cssom/#the-cssstyledeclaration-interface",
+    "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-csstext",
+    "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-getpropertypriority",
+    "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-getpropertyvalue",
+    "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-item",
+    "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-length",
+    "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-parentrule",
+    "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-removeproperty",
+    "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-setproperty",
+    "https://drafts.csswg.org/cssom/#the-cssstylerule-interface",
+    "https://drafts.csswg.org/cssom/#dom-cssstylerule-selectortext",
+    "https://drafts.csswg.org/cssom/#dom-cssstylerule-style",
+    "https://drafts.csswg.org/cssom/#the-cssstylesheet-interface",
+    "https://drafts.csswg.org/cssom/#dom-cssstylesheet-cssrules",
+    "https://drafts.csswg.org/cssom/#dom-cssstylesheet-deleterule",
+    "https://drafts.csswg.org/cssom/#dom-cssstylesheet-insertrule",
+    "https://drafts.csswg.org/cssom/#dom-cssstylesheet-ownerrule",
+    "https://drafts.csswg.org/cssom/#dom-documentorshadowroot-stylesheets",
+    "https://drafts.csswg.org/cssom/#dom-elementcssinlinestyle-style",
+    "https://drafts.csswg.org/cssom/#dom-linkstyle-sheet",
+    "https://drafts.csswg.org/cssom/#the-medialist-interface",
+    "https://drafts.csswg.org/cssom/#dom-medialist-appendmedium",
+    "https://drafts.csswg.org/cssom/#dom-medialist-deletemedium",
+    "https://drafts.csswg.org/cssom/#dom-medialist-item",
+    "https://drafts.csswg.org/cssom/#dom-medialist-length",
+    "https://drafts.csswg.org/cssom/#dom-medialist-mediatext",
+    "https://drafts.csswg.org/cssom/#MediaList-stringification-behavior",
+    "https://drafts.csswg.org/cssom/#the-stylesheet-interface",
+    "https://drafts.csswg.org/cssom/#dom-stylesheet-disabled",
+    "https://drafts.csswg.org/cssom/#dom-stylesheet-href",
+    "https://drafts.csswg.org/cssom/#dom-stylesheet-media",
+    "https://drafts.csswg.org/cssom/#dom-stylesheet-ownernode",
+    "https://drafts.csswg.org/cssom/#dom-stylesheet-parentstylesheet",
+    "https://drafts.csswg.org/cssom/#dom-stylesheet-title",
+    "https://drafts.csswg.org/cssom/#dom-stylesheet-type",
+    "https://drafts.csswg.org/cssom/#the-stylesheetlist-interface",
+    "https://drafts.csswg.org/cssom/#dom-stylesheetlist-item",
+    "https://drafts.csswg.org/cssom/#dom-stylesheetlist-length"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/StyleSheetList/length",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "28",
+      "versions": [
+        {
+          "version": "28",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "22",
+      "versions": [
+        {
+          "version": "22",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "9",
+      "versions": [
+        {
+          "version": "9",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "28",
+      "versions": [
+        {
+          "version": "28",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "9",
+      "versions": [
+        {
+          "version": "9",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "28",
+      "versions": [
+        {
+          "version": "28",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "28",
+      "versions": [
+        {
+          "version": "28",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "22",
+      "versions": [
+        {
+          "version": "22",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.18,
+      "partial": 0,
+      "total": 94.18
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "and_chr": 44.12,
+        "samsung": 1.76,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "css-object-model"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSConditionRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSConditionRule.conditionText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSGroupingRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSGroupingRule.cssRules",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSGroupingRule.deleteRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSGroupingRule.insertRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMarginRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMarginRule.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMarginRule.style",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMediaRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSMediaRule.media",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPageDescriptors",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPageDescriptors.margin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPageDescriptors.margin-bottom",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPageDescriptors.margin-left",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPageDescriptors.margin-right",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPageDescriptors.margin-top",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPageDescriptors.marginBottom",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPageDescriptors.marginLeft",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPageDescriptors.marginRight",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPageDescriptors.marginTop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPageDescriptors.page-orientation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPageDescriptors.pageOrientation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPageDescriptors.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPageRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPageRule.selectorText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPageRule.style",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPageRule.style.type_CSSPageDescriptors",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPseudoElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPseudoElement.element",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPseudoElement.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSRule.cssText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSRule.parentRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSRule.parentStyleSheet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSRuleList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSRuleList.item",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSRuleList.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleDeclaration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleDeclaration.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleDeclaration.cssText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleDeclaration.getPropertyPriority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleDeclaration.getPropertyValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleDeclaration.item",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleDeclaration.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleDeclaration.parentRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleDeclaration.removeProperty",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleDeclaration.setProperty",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleRule.selectorText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleRule.style",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleSheet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleSheet.cssRules",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleSheet.deleteRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleSheet.insertRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleSheet.insertRule.index_parameter_optional",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleSheet.ownerRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.styleSheets",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.style",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLLinkElement.sheet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLStyleElement.sheet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaList.appendMedium",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaList.deleteMedium",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaList.item",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaList.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaList.mediaText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaList.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ProcessingInstruction.sheet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.styleSheets",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StyleSheet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StyleSheet.disabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StyleSheet.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StyleSheet.media",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StyleSheet.ownerNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StyleSheet.parentStyleSheet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StyleSheet.title",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StyleSheet.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StyleSheetList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StyleSheetList.item",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StyleSheetList.length",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

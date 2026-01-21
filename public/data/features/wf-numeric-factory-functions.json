@@ -1,0 +1,510 @@
+{
+  "id": "wf-numeric-factory-functions",
+  "source": "webfeatures",
+  "name": "Numeric factory functions",
+  "description": "The numeric factory functions, such as CSS.px() or CSS.kHz(), return a CSSUnitValue representing a CSS number value (as in 12px or 440kHz).",
+  "category": "Other",
+  "spec": [
+    "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-hz",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-q",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-cap",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-ch",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-cm",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-cqb",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-cqh",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-cqi",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-cqmax",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-cqmin",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-cqw",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-deg",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-dpcm",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-dpi",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-dppx",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-dvb",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-dvh",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-dvi",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-dvmax",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-dvmin",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-dvw",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-em",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-ex",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-fr",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-grad",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-ic",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-in",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-khz",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-lh",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-lvb",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-lvh",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-lvi",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-lvmax",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-lvmin",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-lvw",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-mm",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-ms",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-number",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-pc",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-percent",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-pt",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-px",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-rad",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-rcap",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-rch",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-rem",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-rex",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-ric",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-rlh",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-s",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-svb",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-svh",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-svi",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-svmax",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-svmin",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-svw",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-turn",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-vb",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-vh",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-vi",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-vmax",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-vmin",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-css-vw"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/CSS/factory_functions_static",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.07,
+      "partial": 0,
+      "total": 89.07
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.2,
+        "safari": 1.23,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.35,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "numeric-factory-functions"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.Hz_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.Q_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.cap_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.ch_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.cm_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.cqb_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.cqh_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.cqi_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.cqmax_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.cqmin_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.cqw_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.deg_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.dpcm_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.dpi_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.dppx_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.dvb_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.dvh_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.dvi_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.dvmax_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.dvmin_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.dvw_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.em_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.ex_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.fr_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.grad_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.ic_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.in_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.kHz_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.lh_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.lvb_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.lvh_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.lvi_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.lvmax_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.lvmin_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.lvw_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.mm_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.ms_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.number_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.pc_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.percent_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.pt_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.px_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.rad_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.rcap_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.rch_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.rem_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.rex_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.ric_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.rlh_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.s_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.svb_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.svh_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.svi_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.svmax_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.svmin_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.svw_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.turn_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.vb_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.vh_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.vi_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.vmax_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.vmin_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.vw_static",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

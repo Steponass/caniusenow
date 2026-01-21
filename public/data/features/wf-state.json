@@ -1,0 +1,213 @@
+{
+  "id": "wf-state",
+  "source": "webfeatures",
+  "name": ":state()",
+  "description": "The :state() CSS pseudo-class matches custom elements based on their custom state, set through the ElementInternals.states API.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-state-pseudo-class",
+    "https://html.spec.whatwg.org/multipage/custom-elements.html#customstateset",
+    "https://html.spec.whatwg.org/multipage/semantics-other.html#selector-custom"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Selectors/:state",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "125",
+      "versions": [
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "126",
+      "versions": [
+        {
+          "version": "126",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "17.4",
+      "versions": [
+        {
+          "version": "17.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "125",
+      "versions": [
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "125",
+      "versions": [
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "125",
+      "versions": [
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.4",
+      "versions": [
+        {
+          "version": "17.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "125",
+      "versions": [
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "125",
+      "versions": [
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "126",
+      "versions": [
+        {
+          "version": "126",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 84.28,
+      "partial": 0,
+      "total": 84.28
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 22.16,
+        "firefox": 1.48,
+        "safari": 0.96,
+        "edge": 4.18,
+        "opera": 0.22
+      },
+      "mobile": {
+        "ios_saf": 10.86,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "state"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomStateSet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomStateSet.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomStateSet.add",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomStateSet.clear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomStateSet.delete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomStateSet.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomStateSet.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomStateSet.has",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomStateSet.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomStateSet.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomStateSet.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ElementInternals.states",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.state",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

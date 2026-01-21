@@ -1,0 +1,188 @@
+{
+  "id": "wf-window-controls-overlay",
+  "source": "webfeatures",
+  "name": "Window Controls Overlay",
+  "description": "The display_override: [\"window-controls-overlay\"] web application manifest member shows content in the title bar area of a progressive web app that is installed on a desktop device.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/window-controls-overlay/",
+    "https://wicg.github.io/window-controls-overlay/#windowcontrolsoverlay-interface",
+    "https://wicg.github.io/window-controls-overlay/#the-ongeometrychange-attribute",
+    "https://wicg.github.io/window-controls-overlay/#the-gettitlebararearect-method",
+    "https://wicg.github.io/window-controls-overlay/#the-visible-attribute",
+    "https://wicg.github.io/window-controls-overlay/#title-bar-area-env-variables"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/env",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 75.83,
+      "partial": 0,
+      "total": 75.83
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.67,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "window-controls-overlay"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.windowControlsOverlay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WindowControlsOverlay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WindowControlsOverlay.geometrychange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WindowControlsOverlay.getTitlebarAreaRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WindowControlsOverlay.visible",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WindowControlsOverlayGeometryChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WindowControlsOverlayGeometryChangeEvent.WindowControlsOverlayGeometryChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WindowControlsOverlayGeometryChangeEvent.titlebarAreaRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WindowControlsOverlayGeometryChangeEvent.visible",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.env.titlebar-area-height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.env.titlebar-area-width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.env.titlebar-area-x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.env.titlebar-area-y",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "id": "wf-wasm-exnref-exceptions",
+  "source": "webfeatures",
+  "name": "Exception references with exnref (WebAssembly)",
+  "description": "When caught, an exception is reified into an exception reference, a value of the new type exnref.",
+  "category": "Other",
+  "spec": [
+    "https://github.com/WebAssembly/exception-handling/blob/main/proposals/exception-handling/Exceptions.md"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "137",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "131",
+      "versions": [
+        {
+          "version": "131",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "18.4",
+      "versions": [
+        {
+          "version": "18.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "137",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "18.4",
+      "versions": [
+        {
+          "version": "18.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "137",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "137",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "131",
+      "versions": [
+        {
+          "version": "131",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 75.95,
+      "partial": 0,
+      "total": 75.95
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 19.47,
+        "firefox": 1.48,
+        "safari": 0.65
+      },
+      "mobile": {
+        "ios_saf": 9.93,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "wasm-exnref-exceptions"
+    },
+    "supplementary": []
+  }
+}

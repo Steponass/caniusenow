@@ -1,0 +1,157 @@
+{
+  "id": "wf-webgl-multi-draw",
+  "source": "webfeatures",
+  "name": "WEBGL_multi_draw WebGL extension",
+  "description": "The WEBGL_multi_draw extension for WebGL 1.0 and 2.0 contexts renders more than one primitive with a single function call.",
+  "category": "Other",
+  "spec": [
+    "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WEBGL_multi_draw/multiDrawElementsWEBGL",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "86",
+      "versions": [
+        {
+          "version": "86",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "15",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "86",
+      "versions": [
+        {
+          "version": "86",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "86",
+      "versions": [
+        {
+          "version": "86",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "86",
+      "versions": [
+        {
+          "version": "86",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "15",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "86",
+      "versions": [
+        {
+          "version": "86",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "86",
+      "versions": [
+        {
+          "version": "86",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.51,
+      "partial": 0,
+      "total": 89.51
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27,
+        "safari": 1.37,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.86,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webgl-multi-draw"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.WEBGL_multi_draw",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WEBGL_multi_draw.multiDrawArraysInstancedWEBGL",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WEBGL_multi_draw.multiDrawArraysWEBGL",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WEBGL_multi_draw.multiDrawElementsInstancedWEBGL",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WEBGL_multi_draw.multiDrawElementsWEBGL",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

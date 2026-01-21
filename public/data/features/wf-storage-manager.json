@@ -1,0 +1,186 @@
+{
+  "id": "wf-storage-manager",
+  "source": "webfeatures",
+  "name": "Storage manager",
+  "description": "The navigator.storage API provides information about the availability and persistence of the data that a site stores on the device, by using APIs such as the Cache API or the IndexedDB API.",
+  "category": "Other",
+  "spec": [
+    "https://storage.spec.whatwg.org/",
+    "https://storage.spec.whatwg.org/#dom-navigatorstorage-storage",
+    "https://storage.spec.whatwg.org/#storagemanager",
+    "https://storage.spec.whatwg.org/#dom-storagemanager-estimate",
+    "https://storage.spec.whatwg.org/#dom-storagemanager-persist",
+    "https://storage.spec.whatwg.org/#dom-storagemanager-persisted"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WorkerNavigator/storage",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "61",
+      "versions": [
+        {
+          "version": "61",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "57",
+      "versions": [
+        {
+          "version": "57",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "61",
+      "versions": [
+        {
+          "version": "61",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "61",
+      "versions": [
+        {
+          "version": "61",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "61",
+      "versions": [
+        {
+          "version": "61",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "57",
+      "versions": [
+        {
+          "version": "57",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 90.58,
+      "partial": 0,
+      "total": 90.58
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.2,
+        "firefox": 1.75,
+        "safari": 1.07,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 10.97,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "storage-manager"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.storage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Permissions.permission_persistent-storage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StorageManager",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StorageManager.estimate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StorageManager.persist",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StorageManager.persisted",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.storage",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

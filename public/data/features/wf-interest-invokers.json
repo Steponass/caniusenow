@@ -1,0 +1,182 @@
+{
+  "id": "wf-interest-invokers",
+  "source": "webfeatures",
+  "name": "Interest invokers",
+  "description": "Interest invokers, registered by the interestfor HTML attribute, trigger events and actions on a target element when a user shows interest in the element, through behaviors such as hover, focus, or long-press. Pseudo-elements apply styles to sources and targets of interest.",
+  "category": "Other",
+  "spec": [
+    "https://github.com/whatwg/html/pull/11006"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/SVGAElement/interestForElement",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "142",
+      "versions": [
+        {
+          "version": "142",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "142",
+      "versions": [
+        {
+          "version": "142",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "142",
+      "versions": [
+        {
+          "version": "142",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "142",
+      "versions": [
+        {
+          "version": "142",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "142",
+      "versions": [
+        {
+          "version": "142",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "142",
+      "versions": [
+        {
+          "version": "142",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 62.71,
+      "partial": 0,
+      "total": 62.71
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 14.64,
+        "edge": 3.94
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "interest-invokers"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAnchorElement.interestForElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAreaElement.interestForElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLButtonElement.interestForElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.interest_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.loseinterest_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InterestEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InterestEvent.InterestEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InterestEvent.source",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGAElement.interestForElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.a.interestfor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.area.interestfor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.button.interestfor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.a.interestfor",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

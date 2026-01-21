@@ -1,0 +1,176 @@
+{
+  "id": "wf-shared-storage-locks",
+  "source": "webfeatures",
+  "name": "Shared storage locks",
+  "description": "The withLock option to set(), append(), delete(), clear(), and batchUpdate() methods of the sharedStorage API prevents duplicate reporting from cross-site race conditions.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/shared-storage/#web-locks-integration",
+    "https://wicg.github.io/shared-storage/#dom-sharedstorage-batchupdate",
+    "https://wicg.github.io/shared-storage/#sharedstorageappendmethod",
+    "https://wicg.github.io/shared-storage/#dom-sharedstorageappendmethod-sharedstorageappendmethod",
+    "https://wicg.github.io/shared-storage/#sharedstorageclearmethod",
+    "https://wicg.github.io/shared-storage/#dom-sharedstorageclearmethod-sharedstorageclearmethod",
+    "https://wicg.github.io/shared-storage/#sharedstoragedeletemethod",
+    "https://wicg.github.io/shared-storage/#dom-sharedstoragedeletemethod-sharedstoragedeletemethod",
+    "https://wicg.github.io/shared-storage/#sharedstoragemodifiermethod",
+    "https://wicg.github.io/shared-storage/#sharedstoragesetmethod",
+    "https://wicg.github.io/shared-storage/#dom-sharedstoragesetmethod-sharedstoragesetmethod"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 68,
+      "partial": 0,
+      "total": 68
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 19.74,
+        "edge": 4.13
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "shared-storage-locks"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedStorage.batchUpdate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedStorageAppendMethod",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedStorageAppendMethod.SharedStorageAppendMethod",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedStorageClearMethod",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedStorageClearMethod.SharedStorageClearMethod",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedStorageDeleteMethod",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedStorageDeleteMethod.SharedStorageDeleteMethod",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedStorageModifierMethod",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedStorageSetMethod",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedStorageSetMethod.SharedStorageSetMethod",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

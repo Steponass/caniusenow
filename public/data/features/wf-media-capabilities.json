@@ -1,0 +1,176 @@
+{
+  "id": "wf-media-capabilities",
+  "source": "webfeatures",
+  "name": "Media capabilities",
+  "description": "The navigator.mediaCapabilities API queries the encoding and decoding abilities of the device, such as supported codecs, resolutions, and bitrates.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/media-capabilities/",
+    "https://w3c.github.io/media-capabilities/#media-capabilities-interface",
+    "https://w3c.github.io/media-capabilities/#dom-mediacapabilities-decodinginfo",
+    "https://w3c.github.io/media-capabilities/#dom-mediacapabilities-encodinginfo",
+    "https://w3c.github.io/media-capabilities/#dom-navigator-mediacapabilities",
+    "https://w3c.github.io/media-capabilities/#dom-workernavigator-mediacapabilities"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WorkerNavigator/mediaCapabilities",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "101",
+      "versions": [
+        {
+          "version": "101",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "63",
+      "versions": [
+        {
+          "version": "63",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "15.4",
+      "versions": [
+        {
+          "version": "15.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "101",
+      "versions": [
+        {
+          "version": "101",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "101",
+      "versions": [
+        {
+          "version": "101",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "101",
+      "versions": [
+        {
+          "version": "101",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.4",
+      "versions": [
+        {
+          "version": "15.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "101",
+      "versions": [
+        {
+          "version": "101",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "101",
+      "versions": [
+        {
+          "version": "101",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "63",
+      "versions": [
+        {
+          "version": "63",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.27,
+      "partial": 0,
+      "total": 91.27
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.86,
+        "firefox": 1.75,
+        "safari": 1.37,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.82,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "media-capabilities"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaCapabilities",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaCapabilities.decodingInfo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaCapabilities.encodingInfo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.mediaCapabilities",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.mediaCapabilities",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

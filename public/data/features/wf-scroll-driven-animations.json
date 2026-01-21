@@ -1,0 +1,349 @@
+{
+  "id": "wf-scroll-driven-animations",
+  "source": "webfeatures",
+  "name": "Scroll-driven animations",
+  "description": "The animation-timeline, scroll-timeline, and view-timeline CSS properties advance animations based on the user's scroll position.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/scroll-animations-1/",
+    "https://drafts.csswg.org/scroll-animations/#scrolltimeline-interface",
+    "https://drafts.csswg.org/scroll-animations/#dom-scrolltimeline-scrolltimeline",
+    "https://drafts.csswg.org/scroll-animations/#dom-scrolltimeline-axis",
+    "https://drafts.csswg.org/scroll-animations/#dom-scrolltimeline-source",
+    "https://drafts.csswg.org/scroll-animations/#viewtimeline-interface",
+    "https://drafts.csswg.org/scroll-animations/#dom-viewtimeline-viewtimeline",
+    "https://drafts.csswg.org/scroll-animations/#dom-viewtimeline-endoffset",
+    "https://drafts.csswg.org/scroll-animations/#dom-viewtimeline-startoffset",
+    "https://drafts.csswg.org/scroll-animations/#dom-viewtimeline-subject",
+    "https://drafts.csswg.org/scroll-animations/#animation-range",
+    "https://drafts.csswg.org/scroll-animations/#animation-range-end",
+    "https://drafts.csswg.org/scroll-animations/#valdef-animation-range-end-normal",
+    "https://drafts.csswg.org/scroll-animations/#animation-range-start",
+    "https://drafts.csswg.org/scroll-animations/#valdef-animation-range-start-normal",
+    "https://drafts.csswg.org/css-animations-2/#animation-timeline",
+    "https://drafts.csswg.org/scroll-animations/#scroll-notation",
+    "https://drafts.csswg.org/scroll-animations/#view-notation",
+    "https://drafts.csswg.org/scroll-animations/#scroll-timeline-shorthand",
+    "https://drafts.csswg.org/scroll-animations/#propdef-scroll-timeline-axis",
+    "https://drafts.csswg.org/scroll-animations/#valdef-scroll-block",
+    "https://drafts.csswg.org/scroll-animations/#valdef-scroll-inline",
+    "https://drafts.csswg.org/scroll-animations/#valdef-scroll-x",
+    "https://drafts.csswg.org/scroll-animations/#valdef-scroll-y",
+    "https://drafts.csswg.org/scroll-animations/#scroll-timeline-name",
+    "https://drafts.csswg.org/scroll-animations/#propdef-timeline-scope",
+    "https://drafts.csswg.org/scroll-animations/#valdef-timeline-scope-all",
+    "https://drafts.csswg.org/scroll-animations/#valdef-timeline-scope-none",
+    "https://drafts.csswg.org/scroll-animations/#view-timeline-shorthand",
+    "https://drafts.csswg.org/scroll-animations/#view-timeline-axis",
+    "https://drafts.csswg.org/scroll-animations/#view-timeline-inset",
+    "https://drafts.csswg.org/scroll-animations/#valdef-view-timeline-inset-auto",
+    "https://drafts.csswg.org/scroll-animations/#view-timeline-name"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/view-timeline-name",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "115",
+      "versions": [
+        {
+          "version": "115",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "26",
+      "versions": [
+        {
+          "version": "26",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "115",
+      "versions": [
+        {
+          "version": "115",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "115",
+      "versions": [
+        {
+          "version": "115",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "115",
+      "versions": [
+        {
+          "version": "115",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "26",
+      "versions": [
+        {
+          "version": "26",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "115",
+      "versions": [
+        {
+          "version": "115",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "115",
+      "versions": [
+        {
+          "version": "115",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 74.67,
+      "partial": 0,
+      "total": 74.67
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 23.3,
+        "safari": 0.52,
+        "edge": 4.21,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 1.73,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "scroll-driven-animations"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ScrollTimeline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ScrollTimeline.ScrollTimeline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ScrollTimeline.axis",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ScrollTimeline.source",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ViewTimeline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ViewTimeline.ViewTimeline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ViewTimeline.endOffset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ViewTimeline.startOffset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ViewTimeline.subject",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation.animation-timeline_included",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-range",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-range-end",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-range-end.normal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-range-start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-range-start.normal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-timeline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-timeline.scroll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-timeline.view",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.scroll-timeline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.scroll-timeline-axis",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.scroll-timeline-axis.block",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.scroll-timeline-axis.inline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.scroll-timeline-axis.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.scroll-timeline-axis.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.scroll-timeline-name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.timeline-scope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.timeline-scope.all",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.timeline-scope.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.view-timeline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.view-timeline-axis",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.view-timeline-axis.block",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.view-timeline-axis.inline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.view-timeline-axis.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.view-timeline-axis.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.view-timeline-inset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.view-timeline-inset.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.view-timeline-name",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

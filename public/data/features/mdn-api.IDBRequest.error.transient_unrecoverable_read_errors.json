@@ -1,0 +1,159 @@
+{
+  "id": "mdn-api.IDBRequest.error.transient_unrecoverable_read_errors",
+  "source": "mdnbcd",
+  "name": "Transient and unrecoverable read errors",
+  "description": "Transient and unrecoverable read errors",
+  "category": "JS API",
+  "spec": [
+    "https://w3c.github.io/IndexedDB/#:~:text=NotReadableError"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "132",
+      "firstPartial": "130",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y",
+          "notes": "Returns a <code>NotReadableError</code> exception for unrecoverable read errors, and an <code>UnknownError</code> for transient read errors."
+        },
+        {
+          "version": "130",
+          "status": "a",
+          "notes": "Returns a <code>NotFoundError</code> exception for unrecoverable read errors, and a <code>DataError</code> for transient read errors."
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "14",
+      "versions": [
+        {
+          "version": "14",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "8",
+      "versions": [
+        {
+          "version": "8",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "117",
+      "firstPartial": "115",
+      "versions": [
+        {
+          "version": "117",
+          "status": "y",
+          "notes": "Returns a <code>NotReadableError</code> exception for unrecoverable read errors, and an <code>UnknownError</code> for transient read errors."
+        },
+        {
+          "version": "115",
+          "status": "a",
+          "notes": "Returns a <code>NotFoundError</code> exception for unrecoverable read errors, and a <code>DataError</code> for transient read errors."
+        }
+      ]
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "8",
+      "versions": [
+        {
+          "version": "8",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "132",
+      "firstPartial": "130",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y",
+          "notes": "Returns a <code>NotReadableError</code> exception for unrecoverable read errors, and an <code>UnknownError</code> for transient read errors."
+        },
+        {
+          "version": "130",
+          "status": "a",
+          "notes": "Returns a <code>NotFoundError</code> exception for unrecoverable read errors, and a <code>DataError</code> for transient read errors."
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "132",
+      "firstPartial": "130",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y",
+          "notes": "Returns a <code>NotReadableError</code> exception for unrecoverable read errors, and an <code>UnknownError</code> for transient read errors."
+        },
+        {
+          "version": "130",
+          "status": "a",
+          "notes": "Returns a <code>NotFoundError</code> exception for unrecoverable read errors, and a <code>DataError</code> for transient read errors."
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "14",
+      "versions": [
+        {
+          "version": "14",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 80.67,
+      "partial": 0.54,
+      "total": 81.21
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 20.57,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "api.IDBRequest.error.transient_unrecoverable_read_errors"
+    },
+    "supplementary": []
+  }
+}

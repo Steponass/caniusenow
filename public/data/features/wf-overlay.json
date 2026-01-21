@@ -1,0 +1,135 @@
+{
+  "id": "wf-overlay",
+  "source": "webfeatures",
+  "name": "overlay",
+  "description": "The overlay CSS property, used as an allow-discrete CSS transition, prevents a top layer element, such as a popover or a <dialog>, from being removed from the top layer before it has finished animating. You can't set the value of the overlay property; only use it as transition property.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-position-4/#overlay",
+    "https://drafts.csswg.org/css-position-4/#valdef-overlay-auto",
+    "https://drafts.csswg.org/css-position-4/#valdef-overlay-none"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/overlay",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "117",
+      "versions": [
+        {
+          "version": "117",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "117",
+      "versions": [
+        {
+          "version": "117",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "117",
+      "versions": [
+        {
+          "version": "117",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "117",
+      "versions": [
+        {
+          "version": "117",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "117",
+      "versions": [
+        {
+          "version": "117",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "117",
+      "versions": [
+        {
+          "version": "117",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 72.24,
+      "partial": 0,
+      "total": 72.24
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 23.11,
+        "edge": 4.21,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "overlay"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overlay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overlay.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overlay.none",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "id": "wf-profiler",
+  "source": "webfeatures",
+  "name": "Profiler",
+  "description": "The Profiler API records data about the execution of a page, which you can send to a server for later analysis. Also known as self-profiling.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/js-self-profiling/",
+    "https://wicg.github.io/js-self-profiling/#the-profiler-interface",
+    "https://wicg.github.io/js-self-profiling/#dom-profiler-constructor",
+    "https://wicg.github.io/js-self-profiling/#dom-profiler-sampleinterval",
+    "https://wicg.github.io/js-self-profiling/#dom-profiler-stop",
+    "https://wicg.github.io/js-self-profiling/#dom-profiler-stopped"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Profiler/stop",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "94",
+      "versions": [
+        {
+          "version": "94",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "94",
+      "versions": [
+        {
+          "version": "94",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "94",
+      "versions": [
+        {
+          "version": "94",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "94",
+      "versions": [
+        {
+          "version": "94",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "94",
+      "versions": [
+        {
+          "version": "94",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "94",
+      "versions": [
+        {
+          "version": "94",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.12,
+      "partial": 0,
+      "total": 76.12
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.93,
+        "edge": 4.25,
+        "opera": 0.82
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "profiler"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Profiler",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Profiler.Profiler",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Profiler.sampleInterval",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Profiler.stop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Profiler.stopped",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

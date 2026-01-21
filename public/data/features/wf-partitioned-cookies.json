@@ -1,0 +1,152 @@
+{
+  "id": "wf-partitioned-cookies",
+  "source": "webfeatures",
+  "name": "Partitioned cookies",
+  "description": "Partitioned cookies allow you to opt a cookie into partitioned storage, with a separate cookie jar per top-level site. Also known as Cookies Having Independent Partitioned State or CHIPS.",
+  "category": "Other",
+  "spec": [
+    "https://cookiestore.spec.whatwg.org/",
+    "https://cookiestore.spec.whatwg.org/#dom-cookiestoredeleteoptions-partitioned",
+    "https://cookiestore.spec.whatwg.org/#dom-cookieinit-partitioned",
+    "https://cookiestore.spec.whatwg.org/#dom-cookielistitem-partitioned",
+    "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html#section-2.1"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/Privacy/Guides/Privacy_sandbox/Partitioned_cookies",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 72.54,
+      "partial": 0,
+      "total": 72.54
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 23.41,
+        "edge": 4.21,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "partitioned-cookies"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CookieStore.delete.partitioned_option",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CookieStore.get.partitioned_return_property",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CookieStore.set.partitioned_option",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ExtendableCookieChangeEvent.changed.partitioned_property",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ExtendableCookieChangeEvent.deleted.partitioned_property",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Set-Cookie.Partitioned",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

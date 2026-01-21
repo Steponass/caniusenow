@@ -1,0 +1,559 @@
+{
+  "id": "wf-xhr",
+  "source": "webfeatures",
+  "name": "XMLHttpRequest",
+  "description": "The XMLHttpRequest API makes HTTP requests. It's the predecessor to fetch(). Also known as XHR.",
+  "category": "Other",
+  "spec": [
+    "https://xhr.spec.whatwg.org/",
+    "https://xhr.spec.whatwg.org/#interface-formdata",
+    "https://xhr.spec.whatwg.org/#dom-formdata",
+    "https://xhr.spec.whatwg.org/#dom-formdata-append",
+    "https://xhr.spec.whatwg.org/#dom-formdata-delete",
+    "https://xhr.spec.whatwg.org/#dom-formdata-get",
+    "https://xhr.spec.whatwg.org/#dom-formdata-getall",
+    "https://xhr.spec.whatwg.org/#dom-formdata-has",
+    "https://xhr.spec.whatwg.org/#dom-formdata-set",
+    "https://xhr.spec.whatwg.org/#interface-progressevent",
+    "https://xhr.spec.whatwg.org/#dom-progressevent-progressevent",
+    "https://xhr.spec.whatwg.org/#dom-progressevent-lengthcomputable",
+    "https://xhr.spec.whatwg.org/#dom-progressevent-loaded",
+    "https://xhr.spec.whatwg.org/#dom-progressevent-total",
+    "https://xhr.spec.whatwg.org/#interface-xmlhttprequest",
+    "https://xhr.spec.whatwg.org/#dom-xmlhttprequest",
+    "https://xhr.spec.whatwg.org/#the-abort()-method",
+    "https://xhr.spec.whatwg.org/#event-xhr-abort",
+    "https://xhr.spec.whatwg.org/#handler-xhr-onabort",
+    "https://fetch.spec.whatwg.org/#http-redirect-fetch",
+    "https://xhr.spec.whatwg.org/#event-xhr-error",
+    "https://xhr.spec.whatwg.org/#handler-xhr-onerror",
+    "https://xhr.spec.whatwg.org/#the-getallresponseheaders()-method",
+    "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-getresponseheader",
+    "https://xhr.spec.whatwg.org/#event-xhr-load",
+    "https://xhr.spec.whatwg.org/#handler-xhr-onload",
+    "https://xhr.spec.whatwg.org/#event-xhr-loadend",
+    "https://xhr.spec.whatwg.org/#handler-xhr-onloadend",
+    "https://xhr.spec.whatwg.org/#event-xhr-loadstart",
+    "https://xhr.spec.whatwg.org/#handler-xhr-onloadstart",
+    "https://xhr.spec.whatwg.org/#the-open()-method",
+    "https://xhr.spec.whatwg.org/#the-overridemimetype()-method",
+    "https://xhr.spec.whatwg.org/#event-xhr-progress",
+    "https://xhr.spec.whatwg.org/#handler-xhr-onprogress",
+    "https://xhr.spec.whatwg.org/#states",
+    "https://xhr.spec.whatwg.org/#event-xhr-readystatechange",
+    "https://xhr.spec.whatwg.org/#handler-xhr-onreadystatechange",
+    "https://xhr.spec.whatwg.org/#the-response-attribute",
+    "https://xhr.spec.whatwg.org/#the-responsetext-attribute",
+    "https://xhr.spec.whatwg.org/#the-responsetype-attribute",
+    "https://xhr.spec.whatwg.org/#the-responseurl-attribute",
+    "https://xhr.spec.whatwg.org/#the-responsexml-attribute",
+    "https://xhr.spec.whatwg.org/#the-send()-method",
+    "https://xhr.spec.whatwg.org/#the-setrequestheader()-method",
+    "https://xhr.spec.whatwg.org/#the-status-attribute",
+    "https://xhr.spec.whatwg.org/#the-statustext-attribute",
+    "https://xhr.spec.whatwg.org/#the-timeout-attribute",
+    "https://xhr.spec.whatwg.org/#event-xhr-timeout",
+    "https://xhr.spec.whatwg.org/#handler-xhr-ontimeout",
+    "https://xhr.spec.whatwg.org/#the-upload-attribute",
+    "https://xhr.spec.whatwg.org/#the-withcredentials-attribute",
+    "https://xhr.spec.whatwg.org/#xmlhttprequesteventtarget",
+    "https://xhr.spec.whatwg.org/#xmlhttprequestupload"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/XMLHttpRequestEventTarget/timeout_event",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "3",
+      "versions": [
+        {
+          "version": "3",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "3",
+      "versions": [
+        {
+          "version": "3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "xhr"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.FormData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FormData.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FormData.FormData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FormData.FormData.submitter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FormData.append",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FormData.append.filename_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FormData.delete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FormData.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FormData.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FormData.get",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FormData.getAll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FormData.has",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FormData.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FormData.set",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FormData.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FormData.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ProgressEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ProgressEvent.ProgressEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ProgressEvent.ProgressEvent.loaded_total_options_accept_double",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ProgressEvent.lengthComputable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ProgressEvent.loaded",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ProgressEvent.total",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ProgressEvent.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.XMLHttpRequest",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.abort",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.abort_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.authorization_removed_cross_origin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.error_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.getAllResponseHeaders",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.getAllResponseHeaders.header_names_lowercase",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.getResponseHeader",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.load_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.loadend_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.loadstart_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.open",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.overrideMimeType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.progress_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.readyState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.readystatechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.response",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.responseText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.responseType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.responseType.arraybuffer_value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.responseType.blob_value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.responseType.document_value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.responseType.json_value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.responseURL",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.responseXML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.send",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.send.body_ArrayBufferView_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.send.body_ArrayBuffer_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.send.body_Blob_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.send.body_FormData_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.send.body_URLSearchParams_type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.setRequestHeader",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.status",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.statusText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.timeout",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.timeout_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.upload",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.withCredentials",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequest.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequestEventTarget",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequestUpload",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequestUpload.abort_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequestUpload.error_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequestUpload.load_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequestUpload.loadend_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequestUpload.loadstart_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequestUpload.progress_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XMLHttpRequestUpload.timeout_event",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

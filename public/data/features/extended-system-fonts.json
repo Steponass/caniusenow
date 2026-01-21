@@ -1,0 +1,462 @@
+{
+  "id": "extended-system-fonts",
+  "source": "caniuse",
+  "name": "ui-serif, ui-sans-serif, ui-monospace and ui-rounded values for font-family",
+  "description": "Allows more control when choosing system interface fonts",
+  "category": "CSS",
+  "spec": [
+    "https://w3c.github.io/csswg-drafts/css-fonts-4/#ui-serif-def",
+    "https://drafts.csswg.org/css-fonts-4/#ui-serif-def"
+  ],
+  "links": [
+    {
+      "url": "https://webkit.org/blog/10247/new-webkit-features-in-safari-13-1/",
+      "title": "WebKit Safari 13.1 announcement"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1598879",
+      "title": "ui-serif Firefox support bug"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1598880",
+      "title": "ui-sans-serif Firefox support bug"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1598881",
+      "title": "ui-monospace Firefox support bug"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1598883",
+      "title": "ui-rounded Firefox support bug"
+    },
+    {
+      "url": "https://bugs.chromium.org/p/chromium/issues/detail?id=1029069",
+      "title": "Chromium support bug"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "137",
+          "status": "n"
+        },
+        {
+          "version": "138",
+          "status": "n"
+        },
+        {
+          "version": "139",
+          "status": "n"
+        },
+        {
+          "version": "140",
+          "status": "n"
+        },
+        {
+          "version": "141",
+          "status": "n"
+        },
+        {
+          "version": "142",
+          "status": "n"
+        },
+        {
+          "version": "143",
+          "status": "n"
+        },
+        {
+          "version": "144",
+          "status": "n"
+        },
+        {
+          "version": "145",
+          "status": "n"
+        },
+        {
+          "version": "146",
+          "status": "n"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "140",
+          "status": "n"
+        },
+        {
+          "version": "141",
+          "status": "n"
+        },
+        {
+          "version": "142",
+          "status": "n"
+        },
+        {
+          "version": "143",
+          "status": "n"
+        },
+        {
+          "version": "144",
+          "status": "n"
+        },
+        {
+          "version": "145",
+          "status": "n"
+        },
+        {
+          "version": "146",
+          "status": "n"
+        },
+        {
+          "version": "147",
+          "status": "n"
+        },
+        {
+          "version": "148",
+          "status": "n"
+        },
+        {
+          "version": "149",
+          "status": "n"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "13.1",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "134",
+          "status": "n"
+        },
+        {
+          "version": "135",
+          "status": "n"
+        },
+        {
+          "version": "136",
+          "status": "n"
+        },
+        {
+          "version": "137",
+          "status": "n"
+        },
+        {
+          "version": "138",
+          "status": "n"
+        },
+        {
+          "version": "139",
+          "status": "n"
+        },
+        {
+          "version": "140",
+          "status": "n"
+        },
+        {
+          "version": "141",
+          "status": "n"
+        },
+        {
+          "version": "142",
+          "status": "n"
+        },
+        {
+          "version": "143",
+          "status": "n"
+        }
+      ]
+    },
+    "opera": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "116",
+          "status": "n"
+        },
+        {
+          "version": "117",
+          "status": "n"
+        },
+        {
+          "version": "118",
+          "status": "n"
+        },
+        {
+          "version": "119",
+          "status": "n"
+        },
+        {
+          "version": "120",
+          "status": "n"
+        },
+        {
+          "version": "121",
+          "status": "n"
+        },
+        {
+          "version": "122",
+          "status": "n"
+        },
+        {
+          "version": "123",
+          "status": "n"
+        },
+        {
+          "version": "124",
+          "status": "n"
+        },
+        {
+          "version": "125",
+          "status": "n"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "13.4-13.7",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "143",
+          "status": "n"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "20",
+          "status": "n"
+        },
+        {
+          "version": "21",
+          "status": "n"
+        },
+        {
+          "version": "22",
+          "status": "n"
+        },
+        {
+          "version": "23",
+          "status": "n"
+        },
+        {
+          "version": "24",
+          "status": "n"
+        },
+        {
+          "version": "25",
+          "status": "n"
+        },
+        {
+          "version": "26",
+          "status": "n"
+        },
+        {
+          "version": "27",
+          "status": "n"
+        },
+        {
+          "version": "28",
+          "status": "n"
+        },
+        {
+          "version": "29",
+          "status": "n"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "146",
+          "status": "n"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 13.31,
+      "partial": 0,
+      "total": 13.31
+    },
+    "byBrowser": {
+      "desktop": {
+        "safari": 1.42
+      },
+      "mobile": {
+        "ios_saf": 11.9
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "status": "wd",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "extended-system-fonts"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "font-family-ui",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-family.ui-monospace",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-family.ui-rounded",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-family.ui-sans-serif",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-family.ui-serif",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

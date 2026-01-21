@@ -1,0 +1,136 @@
+{
+  "id": "wf-toggleevent-source",
+  "source": "webfeatures",
+  "name": "ToggleEvent source",
+  "description": "The source property of a ToggleEvent object is the element which triggered the toggle event to fire for a popover, <dialog>, or <details> element, if applicable.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/interaction.html#dom-toggleevent-source"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/ToggleEvent/source",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "140",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "145",
+      "versions": [
+        {
+          "version": "145",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "140",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "140",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "140",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "140",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "140",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "145",
+      "versions": [
+        {
+          "version": "145",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 65.29,
+      "partial": 0,
+      "total": 65.29
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 15.52,
+        "firefox": 1.3,
+        "edge": 4.05
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "toggleevent-source"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ToggleEvent.source",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

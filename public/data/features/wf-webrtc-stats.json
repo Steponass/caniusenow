@@ -1,0 +1,1621 @@
+{
+  "id": "wf-webrtc-stats",
+  "source": "webfeatures",
+  "name": "WebRTC statistics",
+  "description": "The RTCPeerConnection.getStats(), RTCRtpSender.getStats(), and RTCRtpReceiver.getStats() methods return detailed information about the status, performance, network, and media for a given WebRTC connection.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/webrtc-stats/",
+    "https://w3c.github.io/webrtc-pc/#widl-RTCPeerConnection-getStats-Promise-RTCStatsReport--MediaStreamTrack-selector",
+    "https://w3c.github.io/webrtc-pc/#widl-RTCRtpReceiver-getStats-Promise-RTCStatsReport",
+    "https://w3c.github.io/webrtc-pc/#widl-RTCRtpSender-getStats-Promise-RTCStatsReport",
+    "https://w3c.github.io/webrtc-pc/#rtcstatsreport-object",
+    "https://w3c.github.io/webrtc-pc/#dom-rtcstatsreport",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-candidate-pair",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-availableoutgoingbitrate",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-bytesdiscardedonsend",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-bytesreceived",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-bytessent",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-consentrequestssent",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-currentroundtriptime",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcstats-id",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-lastpacketreceivedtimestamp",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-lastpacketsenttimestamp",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-localcandidateid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-nominated",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-packetsdiscardedonsend",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-packetsreceived",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-packetssent",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-remotecandidateid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-requestsreceived",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-requestssent",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-responsesreceived",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-responsessent",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-state",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcstats-timestamp",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-totalroundtriptime",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatepairstats-transportid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcstats-type",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-certificate",
+    "https://w3c.github.io/webrtc-stats/#dom-rtccertificatestats-base64certificate",
+    "https://w3c.github.io/webrtc-stats/#dom-rtccertificatestats-fingerprint",
+    "https://w3c.github.io/webrtc-stats/#dom-rtccertificatestats-fingerprintalgorithm",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-codec",
+    "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats-channels",
+    "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats-clockrate",
+    "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats-mimetype",
+    "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats-payloadtype",
+    "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats-sdpfmtpline",
+    "https://w3c.github.io/webrtc-stats/#dom-rtccodecstats-transportid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-data-channel",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-bytesreceived",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-bytessent",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-datachannelidentifier",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-label",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-messagesreceived",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-messagessent",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-protocol",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-state",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-inbound-rtp",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-audiolevel",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-bytesreceived",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcrtpstreamstats-codecid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-concealedsamples",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-concealmentevents",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-estimatedplayouttimestamp",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-fecpacketsdiscarded",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-fecpacketsreceived",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-frameheight",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-framewidth",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-framesassembledfrommultiplepackets",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-framesdecoded",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-framespersecond",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-framesreceived",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-freezecount",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-headerbytesreceived",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-insertedsamplesfordeceleration",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-jitter",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-jitterbufferdelay",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-jitterbufferemittedcount",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-jitterbufferminimumdelay",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-jitterbuffertargetdelay",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-keyframesdecoded",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcrtpstreamstats-kind",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-lastpacketreceivedtimestamp",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-mid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-nackcount",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-packetsdiscarded",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-packetslost",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-packetsreceived",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-pausecount",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-playoutid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-qpsum",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-remoteid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-removedsamplesforacceleration",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-silentconcealedsamples",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcrtpstreamstats-ssrc",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalassemblytime",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalaudioenergy",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totaldecodetime",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalfreezesduration",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalinterframedelay",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalpausesduration",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalprocessingdelay",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalsamplesduration",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalsamplesreceived",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalsquaredinterframedelay",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-trackidentifier",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcrtpstreamstats-transportid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-local-candidate",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-address",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-candidatetype",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-foundation",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-port",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-priority",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-protocol",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-transportid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcicecandidatestats-usernamefragment",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-media-playout",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-kind",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-synthesizedsamplesduration",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-synthesizedsamplesevents",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-totalplayoutdelay",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-totalsamplescount",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-totalsamplesduration",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-media-source",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosourcestats-audiolevel",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcvideosourcestats-frames",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcvideosourcestats-framespersecond",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcvideosourcestats-height",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcmediasourcestats-kind",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosourcestats-totalaudioenergy",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosourcestats-totalsamplesduration",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcmediasourcestats-trackidentifier",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcvideosourcestats-width",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-outbound-rtp",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-active",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcsentrtpstreamstats-bytessent",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-frameheight",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-framewidth",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-framesencoded",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-framespersecond",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-framessent",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-headerbytessent",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-keyframesencoded",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-mediasourceid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-mid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-nackcount",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcsentrtpstreamstats-packetssent",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-qpsum",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-qualitylimitationdurations",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-qualitylimitationreason",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-remoteid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-retransmittedbytessent",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-retransmittedpacketssent",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-rid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-scalabilitymode",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-targetbitrate",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-totalencodetime",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-totalencodedbytestarget",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcoutboundrtpstreamstats-totalpacketsenddelay",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-peer-connection",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcpeerconnectionstats-datachannelsclosed",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcpeerconnectionstats-datachannelsopened",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-remote-candidate",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-remote-inbound-rtp",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-fractionlost",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-localid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-roundtriptime",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-roundtriptimemeasurements",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats-totalroundtriptime",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-remote-outbound-rtp",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteoutboundrtpstreamstats-localid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteoutboundrtpstreamstats-remotetimestamp",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteoutboundrtpstreamstats-reportssent",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteoutboundrtpstreamstats-roundtriptimemeasurements",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcremoteoutboundrtpstreamstats-totalroundtriptime",
+    "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-transport",
+    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-bytesreceived",
+    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-bytessent",
+    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-dtlscipher",
+    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-dtlsrole",
+    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-dtlsstate",
+    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-icelocalusernamefragment",
+    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-icerole",
+    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-icestate",
+    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-localcertificateid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-packetsreceived",
+    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-packetssent",
+    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-remotecertificateid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-selectedcandidatepairchanges",
+    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-selectedcandidatepairid",
+    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-srtpcipher",
+    "https://w3c.github.io/webrtc-stats/#dom-rtctransportstats-tlsversion"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/RTCStatsReport/values",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "58",
+      "versions": [
+        {
+          "version": "58",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "44",
+      "versions": [
+        {
+          "version": "44",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "11",
+      "versions": [
+        {
+          "version": "11",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "58",
+      "versions": [
+        {
+          "version": "58",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11",
+      "versions": [
+        {
+          "version": "11",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "58",
+      "versions": [
+        {
+          "version": "58",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "58",
+      "versions": [
+        {
+          "version": "58",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "44",
+      "versions": [
+        {
+          "version": "44",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.19,
+      "partial": 0,
+      "total": 92.19
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.23,
+        "firefox": 1.76,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.19,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webrtc-stats"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.getStats",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.getStats.returns_promise",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCPeerConnection.getStats.selector_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpReceiver.getStats",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCRtpSender.getStats",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.get",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.has",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.availableOutgoingBitrate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.bytesDiscardedOnSend",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.bytesReceived",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.bytesSent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.consentRequestsSent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.currentRoundTripTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.lastPacketReceivedTimestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.lastPacketSentTimestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.localCandidateId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.nominated",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.packetsDiscardedOnSend",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.packetsReceived",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.packetsSent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.remoteCandidateId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.requestsReceived",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.requestsSent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.responsesReceived",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.responsesSent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.state",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.timestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.totalRoundTripTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.transportId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_candidate-pair.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_certificate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_certificate.base64Certificate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_certificate.fingerprint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_certificate.fingerprintAlgorithm",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_certificate.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_certificate.timestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_certificate.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_codec",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_codec.channels",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_codec.clockRate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_codec.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_codec.mimeType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_codec.payloadType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_codec.sdpFmtpLine",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_codec.timestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_codec.transportId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_codec.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_data-channel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_data-channel.bytesReceived",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_data-channel.bytesSent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_data-channel.dataChannelIdentifier",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_data-channel.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_data-channel.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_data-channel.messagesReceived",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_data-channel.messagesSent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_data-channel.protocol",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_data-channel.state",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_data-channel.timestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_data-channel.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.audioLevel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.bytesReceived",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.codecId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.concealedSamples",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.concealmentEvents",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.estimatedPlayoutTimestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.fecPacketsDiscarded",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.fecPacketsReceived",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.frameHeight",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.frameWidth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.framesAssembledFromMultiplePackets",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.framesDecoded",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.framesPerSecond",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.framesReceived",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.freezeCount",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.headerBytesReceived",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.insertedSamplesForDeceleration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.jitter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.jitterBufferDelay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.jitterBufferEmittedCount",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.jitterBufferMinimumDelay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.jitterBufferTargetDelay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.keyFramesDecoded",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.kind",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.lastPacketReceivedTimestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.mid",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.nackCount",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.packetsDiscarded",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.packetsLost",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.packetsReceived",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.pauseCount",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.playoutId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.qpSum",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.remoteId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.removedSamplesForAcceleration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.silentConcealedSamples",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.ssrc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.timestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.totalAssemblyTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.totalAudioEnergy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.totalDecodeTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.totalFreezesDuration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.totalInterFrameDelay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.totalPausesDuration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.totalProcessingDelay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.totalSamplesDuration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.totalSamplesReceived",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.totalSquaredInterFrameDelay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.trackIdentifier",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.transportId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_inbound-rtp.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_local-candidate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_local-candidate.address",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_local-candidate.candidateType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_local-candidate.foundation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_local-candidate.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_local-candidate.port",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_local-candidate.priority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_local-candidate.protocol",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_local-candidate.timestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_local-candidate.transportId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_local-candidate.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_local-candidate.usernameFragment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-playout",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-playout.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-playout.kind",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-playout.synthesizedSamplesDuration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-playout.synthesizedSamplesEvents",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-playout.timestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-playout.totalPlayoutDelay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-playout.totalSamplesCount",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-playout.totalSamplesDuration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-playout.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-source",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-source.audioLevel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-source.frames",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-source.framesPerSecond",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-source.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-source.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-source.kind",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-source.timestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-source.totalAudioEnergy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-source.totalSamplesDuration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-source.trackIdentifier",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-source.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_media-source.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.active",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.bytesSent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.codecId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.frameHeight",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.frameWidth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.framesEncoded",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.framesPerSecond",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.framesSent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.headerBytesSent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.keyFramesEncoded",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.kind",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.mediaSourceId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.mid",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.nackCount",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.packetsSent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.qpSum",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.qualityLimitationDurations",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.qualityLimitationReason",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.remoteId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.retransmittedBytesSent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.retransmittedPacketsSent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.rid",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.scalabilityMode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.ssrc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.targetBitrate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.timestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.totalEncodeTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.totalEncodedBytesTarget",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.totalPacketSendDelay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.transportId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_outbound-rtp.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_peer-connection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_peer-connection.dataChannelsClosed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_peer-connection.dataChannelsOpened",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_peer-connection.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_peer-connection.timestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_peer-connection.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-candidate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-candidate.address",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-candidate.candidateType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-candidate.foundation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-candidate.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-candidate.port",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-candidate.priority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-candidate.protocol",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-candidate.timestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-candidate.transportId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-candidate.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-candidate.usernameFragment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-inbound-rtp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-inbound-rtp.codecId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-inbound-rtp.fractionLost",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-inbound-rtp.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-inbound-rtp.jitter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-inbound-rtp.kind",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-inbound-rtp.localId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-inbound-rtp.packetsLost",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-inbound-rtp.packetsReceived",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-inbound-rtp.roundTripTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-inbound-rtp.roundTripTimeMeasurements",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-inbound-rtp.ssrc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-inbound-rtp.timestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-inbound-rtp.totalRoundTripTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-inbound-rtp.transportId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-inbound-rtp.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-outbound-rtp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-outbound-rtp.bytesSent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-outbound-rtp.codecId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-outbound-rtp.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-outbound-rtp.kind",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-outbound-rtp.localId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-outbound-rtp.packetsSent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-outbound-rtp.remoteTimestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-outbound-rtp.reportsSent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-outbound-rtp.roundTripTimeMeasurements",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-outbound-rtp.ssrc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-outbound-rtp.timestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-outbound-rtp.totalRoundTripTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-outbound-rtp.transportId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_remote-outbound-rtp.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.bytesReceived",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.bytesSent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.dtlsCipher",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.dtlsRole",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.dtlsState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.iceLocalUsernameFragment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.iceRole",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.iceState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.localCertificateId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.packetsReceived",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.packetsSent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.remoteCertificateId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.selectedCandidatePairChanges",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.selectedCandidatePairId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.srtpCipher",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.timestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.tlsVersion",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.type_transport.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCStatsReport.values",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,622 @@
+{
+  "id": "font-smooth",
+  "source": "caniuse",
+  "name": "CSS font-smooth",
+  "description": "Controls the application of anti-aliasing when fonts are rendered.",
+  "category": "CSS",
+  "spec": [
+    "https://www.w3.org/TR/WD-font/#font-smooth"
+  ],
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth",
+      "title": "MDN Web Docs - font-smooth"
+    },
+    {
+      "url": "https://www.w3.org/TR/WD-font/#font-smooth",
+      "title": "Old version of W3C recommendation containing font-smooth"
+    },
+    {
+      "url": "https://github.com/whatwg/compat/issues/115",
+      "title": "WHATWG compat issue to spec `-webkit-font-smoothing: antialiased`"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "137",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "138",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "139",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "144",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "145",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "firefox": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "144",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "145",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "147",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "148",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "149",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "safari": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.3",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.4",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.0",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.1",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.2",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.3",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "TP",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "edge": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "134",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "135",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "136",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "137",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "138",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "139",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "opera": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "116",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "117",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "118",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "119",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "120",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "121",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "122",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "123",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "124",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "125",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "n"
+        },
+        {
+          "version": "18.1",
+          "status": "n"
+        },
+        {
+          "version": "18.2",
+          "status": "n"
+        },
+        {
+          "version": "18.3",
+          "status": "n"
+        },
+        {
+          "version": "18.4",
+          "status": "n"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "n"
+        },
+        {
+          "version": "26.0",
+          "status": "n"
+        },
+        {
+          "version": "26.1",
+          "status": "n"
+        },
+        {
+          "version": "26.2",
+          "status": "n"
+        },
+        {
+          "version": "26.3",
+          "status": "n"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "143",
+          "status": "n"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "20",
+          "status": "n"
+        },
+        {
+          "version": "21",
+          "status": "n"
+        },
+        {
+          "version": "22",
+          "status": "n"
+        },
+        {
+          "version": "23",
+          "status": "n"
+        },
+        {
+          "version": "24",
+          "status": "n"
+        },
+        {
+          "version": "25",
+          "status": "n"
+        },
+        {
+          "version": "26",
+          "status": "n"
+        },
+        {
+          "version": "27",
+          "status": "n"
+        },
+        {
+          "version": "28",
+          "status": "n"
+        },
+        {
+          "version": "29",
+          "status": "n"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "146",
+          "status": "n"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 35.8,
+      "total": 35.8
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Though present in early (2002) drafts of CSS3 Fonts, `font-smooth` has been removed from this specification and is currently not on the standard track.",
+    "byNum": {
+      "1": "WebKit implements something similar with a different name `-webkit-font-smoothing` and different values: `none`, `antialiased` and `subpixel-antialiased`.",
+      "2": "Firefox implements something similar with a different name `-moz-osx-font-smoothing` and different values: `auto`, `inherit`, `unset`, `grayscale`.",
+      "3": "Works only on Mac OS X platform.",
+      "4": "Firefox 128 and later supports `-webkit-font-smoothing: antialiased` (by mapping to `-moz-osx-font-smoothing: grayscale`)"
+    }
+  },
+  "status": "unoff",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "font-smooth"
+    },
+    "supplementary": []
+  }
+}

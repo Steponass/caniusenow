@@ -1,0 +1,843 @@
+{
+  "id": "css-animation",
+  "source": "caniuse",
+  "name": "CSS Animation",
+  "description": "Complex method of animating certain properties of an element",
+  "category": "CSS",
+  "spec": [
+    "https://www.w3.org/TR/css3-animations/",
+    "https://drafts.csswg.org/css-animations-2/",
+    "https://drafts.csswg.org/css-animations/#interface-animationevent",
+    "https://drafts.csswg.org/css-animations/#dom-animationevent-animationevent",
+    "https://drafts.csswg.org/css-animations/#dom-animationevent-animationname",
+    "https://drafts.csswg.org/css-animations/#dom-animationevent-elapsedtime",
+    "https://drafts.csswg.org/css-animations/#dom-animationevent-pseudoelement",
+    "https://drafts.csswg.org/css-animations-2/#the-CSSAnimation-interface",
+    "https://drafts.csswg.org/css-animations-2/#dom-cssanimation-animationname",
+    "https://drafts.csswg.org/css-animations/#interface-csskeyframerule",
+    "https://drafts.csswg.org/css-animations/#dom-csskeyframerule-keytext",
+    "https://drafts.csswg.org/css-animations/#dom-csskeyframerule-style",
+    "https://drafts.csswg.org/css-animations/#interface-csskeyframesrule",
+    "https://drafts.csswg.org/css-animations/#interface-csskeyframesrule-appendrule",
+    "https://drafts.csswg.org/css-animations/#dom-csskeyframesrule-cssrules",
+    "https://drafts.csswg.org/css-animations/#dom-csskeyframesrule-deleterule",
+    "https://drafts.csswg.org/css-animations/#interface-csskeyframesrule-findrule",
+    "https://drafts.csswg.org/css-animations/#dom-csskeyframesrule-length",
+    "https://drafts.csswg.org/css-animations/#dom-csskeyframesrule-name",
+    "https://drafts.csswg.org/css-animations/#keyframes",
+    "https://drafts.csswg.org/scroll-animations/#named-range-keyframes",
+    "https://drafts.csswg.org/css-animations/#animation",
+    "https://drafts.csswg.org/css-animations/#valdef-animation-direction-alternate",
+    "https://drafts.csswg.org/css-animations/#valdef-animation-direction-alternate-reverse",
+    "https://drafts.csswg.org/css-animations-2/#valdef-animation-timeline-auto",
+    "https://drafts.csswg.org/css-animations-2/#valdef-animation-duration-auto",
+    "https://drafts.csswg.org/css-animations/#valdef-animation-fill-mode-backwards",
+    "https://drafts.csswg.org/css-animations/#valdef-animation-fill-mode-both",
+    "https://drafts.csswg.org/css-easing-2/#valdef-cubic-bezier-easing-function-ease",
+    "https://drafts.csswg.org/css-easing-2/#valdef-cubic-bezier-easing-function-ease-in",
+    "https://drafts.csswg.org/css-easing-2/#valdef-cubic-bezier-easing-function-ease-in-out",
+    "https://drafts.csswg.org/css-easing-2/#valdef-cubic-bezier-easing-function-ease-out",
+    "https://drafts.csswg.org/css-animations/#valdef-animation-fill-mode-forwards",
+    "https://drafts.csswg.org/css-animations/#valdef-animation-iteration-count-infinite",
+    "https://www.w3.org/TR/css-easing-2/#valdef-easing-function-linear",
+    "https://drafts.csswg.org/css-animations/#valdef-animation-fill-mode-none",
+    "https://drafts.csswg.org/css-animations/#valdef-animation-direction-normal",
+    "https://drafts.csswg.org/css-animations/#valdef-animation-direction-reverse",
+    "https://drafts.csswg.org/css-easing-2/#valdef-step-easing-function-step-end",
+    "https://drafts.csswg.org/css-easing-2/#valdef-step-easing-function-step-start",
+    "https://drafts.csswg.org/css-animations/#animation-delay",
+    "https://drafts.csswg.org/css-animations/#animation-direction",
+    "https://drafts.csswg.org/css-animations/#animation-duration",
+    "https://drafts.csswg.org/css-animations/#animation-fill-mode",
+    "https://drafts.csswg.org/css-animations/#animation-iteration-count",
+    "https://drafts.csswg.org/css-animations/#animation-name",
+    "https://drafts.csswg.org/css-animations/#valdef-animation-name-none",
+    "https://drafts.csswg.org/css-animations/#animation-play-state",
+    "https://drafts.csswg.org/css-animations/#valdef-animation-play-state-paused",
+    "https://drafts.csswg.org/css-animations/#valdef-animation-play-state-running",
+    "https://drafts.csswg.org/css-animations/#animation-timing-function",
+    "https://drafts.csswg.org/css-easing-1/#valdef-easing-function-linear",
+    "https://drafts.csswg.org/css-easing-1/#valdef-step-easing-function-step-end",
+    "https://drafts.csswg.org/css-easing-1/#valdef-step-easing-function-step-start",
+    "https://drafts.csswg.org/css-values/#time"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/time",
+  "links": [
+    {
+      "url": "https://robertnyman.com/2010/05/06/css3-animations/",
+      "title": "Blog post on usage"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/css/properties/animations",
+      "title": "WebPlatform Docs"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation",
+      "title": "MDN - animation"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "5",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "5.1",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "10",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "y"
+        },
+        {
+          "version": "11",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "6.0-6.1",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.84,
+      "partial": 0,
+      "total": 96.84
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91,
+        "ie": 0.36
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Partial support in Android browser refers to buggy behavior in different scenarios.",
+      "2": "Does not support the `steps()`, `step-start` & `step-end` timing functions"
+    }
+  },
+  "status": "wd",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-animation"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "animations-css",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AnimationEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AnimationEvent.AnimationEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AnimationEvent.animationName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AnimationEvent.elapsedTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AnimationEvent.pseudoElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSAnimation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSAnimation.animationName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSKeyframeRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSKeyframeRule.keyText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSKeyframeRule.style",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSKeyframesRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSKeyframesRule.appendRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSKeyframesRule.cssRules",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSKeyframesRule.deleteRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSKeyframesRule.findRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSKeyframesRule.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSKeyframesRule.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.keyframes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.keyframes.ignore_important_declarations",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.keyframes.named_range_keyframes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation.alternate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation.alternate-reverse",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation.backwards",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation.both",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation.ease",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation.ease-in",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation.ease-in-out",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation.ease-out",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation.forwards",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation.infinite",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation.linear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation.normal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation.reverse",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation.step-end",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation.step-start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-delay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-direction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-direction.alternate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-direction.alternate-reverse",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-direction.normal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-direction.reverse",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-duration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-duration.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-fill-mode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-fill-mode.backwards",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-fill-mode.both",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-fill-mode.forwards",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-fill-mode.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-iteration-count",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-iteration-count.infinite",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-name.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-play-state",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-play-state.paused",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-play-state.running",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-timing-function",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-timing-function.ease",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-timing-function.ease-in",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-timing-function.ease-in-out",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-timing-function.ease-out",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-timing-function.jump",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-timing-function.linear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-timing-function.step-end",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.animation-timing-function.step-start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.time",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

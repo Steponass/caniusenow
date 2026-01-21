@@ -1,0 +1,152 @@
+{
+  "id": "wf-supports-compat",
+  "source": "webfeatures",
+  "name": "@supports (compatibility prefix)",
+  "description": "The @supports (-webkit-transform-3d) CSS media query is a standardized compatibility alternative to @supports (transform-style).",
+  "category": "Other",
+  "spec": [
+    "https://compat.spec.whatwg.org/#css-media-queries-webkit-transform-3d"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@media/-webkit-transform-3d",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "2",
+      "versions": [
+        {
+          "version": "2",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "49",
+      "versions": [
+        {
+          "version": "49",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "2",
+      "versions": [
+        {
+          "version": "2",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "2",
+      "versions": [
+        {
+          "version": "2",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "2",
+      "versions": [
+        {
+          "version": "2",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "49",
+      "versions": [
+        {
+          "version": "49",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.35,
+      "partial": 0,
+      "total": 94.35
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.76,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "supports-compat"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.media.-webkit-transform-3d",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

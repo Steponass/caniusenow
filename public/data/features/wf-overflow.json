@@ -1,0 +1,159 @@
+{
+  "id": "wf-overflow",
+  "source": "webfeatures",
+  "name": "Overflow media queries",
+  "description": "The overflow-block and overflow-inline CSS media queries set styles based on the way a device displays content that's larger than the viewport or page area. For example, a laptop lets users scroll to reveal content, while a printer displays overflowing content on additional pages.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/mediaqueries-5/#mf-overflow-block",
+    "https://drafts.csswg.org/mediaqueries-5/#mf-overflow-inline",
+    "https://drafts.csswg.org/mediaqueries/#mf-overflow-block",
+    "https://drafts.csswg.org/mediaqueries/#mf-overflow-inline"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@media/overflow-inline",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "113",
+      "versions": [
+        {
+          "version": "113",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "113",
+      "versions": [
+        {
+          "version": "113",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "113",
+      "versions": [
+        {
+          "version": "113",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "113",
+      "versions": [
+        {
+          "version": "113",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "113",
+      "versions": [
+        {
+          "version": "113",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "113",
+      "versions": [
+        {
+          "version": "113",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 86.65,
+      "partial": 0,
+      "total": 86.65
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 23.42,
+        "firefox": 1.75,
+        "safari": 1.07,
+        "edge": 4.21,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.97,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "overflow"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.media.overflow-block",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.media.overflow-inline",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

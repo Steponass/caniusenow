@@ -1,0 +1,1015 @@
+{
+  "id": "internationalization",
+  "source": "caniuse",
+  "name": "Internationalization API",
+  "description": "Locale-sensitive collation (string comparison), number formatting, and date and time formatting.",
+  "category": "JS API",
+  "spec": [
+    "https://tc39.es/ecma402/",
+    "https://tc39.es/ecma402/#introduction",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.tolocalestring",
+    "https://tc39.es/ecma402/#sup-array.prototype.tolocalestring",
+    "https://tc39.es/ecma402/#sup-bigint.prototype.tolocalestring",
+    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.tolocaledatestring",
+    "https://tc39.es/ecma402/#sup-date.prototype.tolocaledatestring",
+    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.tolocalestring",
+    "https://tc39.es/ecma402/#sup-date.prototype.tolocalestring",
+    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.tolocaletimestring",
+    "https://tc39.es/ecma402/#sup-date.prototype.tolocaletimestring",
+    "https://tc39.es/ecma402/#intl-object",
+    "https://tc39.es/ecma402/#collator-objects",
+    "https://tc39.es/ecma402/#sec-intl-collator-constructor",
+    "https://tc39.es/ecma402/#sec-intl.collator.prototype.compare",
+    "https://tc39.es/ecma402/#sec-intl.collator.prototype.resolvedoptions",
+    "https://tc39.es/ecma402/#sec-intl.collator.supportedlocalesof",
+    "https://tc39.es/ecma402/#datetimeformat-objects",
+    "https://tc39.es/ecma402/#sec-intl-datetimeformat-constructor",
+    "https://tc39.es/ecma402/#sec-chaindatetimeformat",
+    "https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.format",
+    "https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.formatRange",
+    "https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatRangeToParts",
+    "https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatToParts",
+    "https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.resolvedoptions",
+    "https://tc39.es/ecma402/#sec-intl.datetimeformat.supportedlocalesof",
+    "https://tc39.es/ecma402/#numberformat-objects",
+    "https://tc39.es/ecma402/#sec-intl-numberformat-constructor",
+    "https://tc39.es/ecma402/#sec-chainnumberformat",
+    "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.format",
+    "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.formatrange",
+    "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.formatrangetoparts",
+    "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.formattoparts",
+    "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.resolvedoptions",
+    "https://tc39.es/ecma402/#sec-intl.numberformat.supportedlocalesof",
+    "https://tc39.es/ecma402/#sec-intl.getcanonicallocales",
+    "https://tc39.es/ecma402/#sec-intl.supportedvaluesof",
+    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.prototype.tolocalestring",
+    "https://tc39.es/ecma402/#sup-number.prototype.tolocalestring",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.tolocalestring",
+    "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.localecompare",
+    "https://tc39.es/ecma402/#sup-String.prototype.localeCompare",
+    "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.tolocalelowercase",
+    "https://tc39.es/ecma402/#sup-string.prototype.tolocalelowercase",
+    "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.tolocaleuppercase",
+    "https://tc39.es/ecma402/#sup-string.prototype.tolocaleuppercase",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.tolocalestring"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/toLocaleString",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl",
+      "title": "MDN Web Docs - Internationalization"
+    },
+    {
+      "url": "https://norbertlindenberg.com/2012/12/ecmascript-internationalization-api/",
+      "title": "The ECMAScript Internationalization API"
+    },
+    {
+      "url": "https://code.tutsplus.com/tutorials/working-with-intl--cms-21082",
+      "title": "Working With Intl"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=90906",
+      "title": "WebKit tracking bug"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1344625",
+      "title": "Firefox for Android tracking bug"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "24",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "29",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "10",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "11",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10.0-10.2",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.73,
+      "partial": 0,
+      "total": 96.73
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91,
+        "ie": 0.36
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "internationalization"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "intl",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.toLocaleString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.toLocaleString.locales_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.toLocaleString.options_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.BigInt.toLocaleString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.BigInt.toLocaleString.locales_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.BigInt.toLocaleString.options_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Date.toLocaleDateString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Date.toLocaleDateString.iana_time_zone_names",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Date.toLocaleDateString.locales_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Date.toLocaleDateString.options_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Date.toLocaleString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Date.toLocaleString.iana_time_zone_names",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Date.toLocaleString.locales_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Date.toLocaleString.options_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Date.toLocaleTimeString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Date.toLocaleTimeString.iana_time_zone_names",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Date.toLocaleTimeString.locales_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Date.toLocaleTimeString.options_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Collator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Collator.Collator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Collator.Collator.options_caseFirst_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Collator.Collator.options_collation_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Collator.Collator.options_ignorePunctuation_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Collator.Collator.options_localeMatcher_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Collator.Collator.options_numeric_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Collator.Collator.options_sensitivity_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Collator.Collator.options_usage_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Collator.compare",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Collator.resolvedOptions",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Collator.supportedLocalesOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.DateTimeFormat",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.DateTimeFormat.IntlLegacyConstructedSymbol",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.DateTimeFormat.locales_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.DateTimeFormat.options_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.DateTimeFormat.options_parameter.options_calendar_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.DateTimeFormat.options_parameter.options_dateStyle_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.DateTimeFormat.options_parameter.options_dayPeriod_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.DateTimeFormat.options_parameter.options_fractionalSecondDigits_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.DateTimeFormat.options_parameter.options_hourCycle_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.DateTimeFormat.options_parameter.options_numberingSystem_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.DateTimeFormat.options_parameter.options_timeStyle_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.DateTimeFormat.options_parameter.options_timeZoneName_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.DateTimeFormat.options_parameter.options_timeZoneName_parameter.extended_values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.DateTimeFormat.options_parameter.options_timeZone_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.DateTimeFormat.options_parameter.options_timeZone_parameter.iana_time_zones",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.format",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.formatRange",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.formatRangeToParts",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.formatToParts",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.resolvedOptions",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.resolvedOptions.computed_timezone",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.DateTimeFormat.supportedLocalesOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.IntlLegacyConstructedSymbol",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.locales_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_compactDisplay_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_currencyDisplay_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_currencySign_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_currency_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_localeMatcher_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_maximumFractionDigits_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_maximumSignificantDigits_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_minimumFractionDigits_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_minimumIntegerDigits_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_minimumSignificantDigits_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_notation_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_numberingSystem_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_roundingIncrement_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_roundingMode_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_roundingPriority_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_signDisplay_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_signDisplay_parameter.negative",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_style_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_trailingZeroDisplay_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_unitDisplay_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_unit_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_useGrouping_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_useGrouping_parameter.string_values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.format",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.format.number_parameter-string_decimal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.formatRange",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.formatRangeToParts",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.formatToParts",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.resolvedOptions",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.NumberFormat.supportedLocalesOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.getCanonicalLocales",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.supportedValuesOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Number.toLocaleString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Number.toLocaleString.locales_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Number.toLocaleString.options_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.toLocaleString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.localeCompare",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.localeCompare.locales_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.localeCompare.options_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.toLocaleLowerCase",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.toLocaleLowerCase.locales_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.toLocaleUpperCase",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.toLocaleUpperCase.locales_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.toLocaleString",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "id": "wf-orientation-sensor",
+  "source": "webfeatures",
+  "name": "Orientation Sensor",
+  "description": "The AbsoluteOrientationSensor and RelativeOrientationSensor APIs describe the physical orientation of a device in three-dimensional space, either in relation to the Earth's coordinate system or in relation to the device's own orientation, respectively.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/orientation-sensor/#absoluteorientationsensor-interface",
+    "https://w3c.github.io/orientation-sensor/#relativeorientationsensor-interface",
+    "https://w3c.github.io/orientation-sensor/#dom-absoluteorientationsensor-absoluteorientationsensor",
+    "https://w3c.github.io/orientation-sensor/#orientationsensor-interface",
+    "https://w3c.github.io/orientation-sensor/#orientationsensor-populatematrix",
+    "https://w3c.github.io/orientation-sensor/#orientationsensor-quaternion",
+    "https://w3c.github.io/orientation-sensor/#dom-relativeorientationsensor-relativeorientationsensor",
+    "https://w3c.github.io/sensors/#the-sensor-interface",
+    "https://w3c.github.io/sensors/#sensor-onactivate",
+    "https://w3c.github.io/sensors/#sensor-activated",
+    "https://w3c.github.io/sensors/#sensor-onerror",
+    "https://w3c.github.io/sensors/#sensor-has-reading",
+    "https://w3c.github.io/sensors/#sensor-onreading",
+    "https://w3c.github.io/sensors/#sensor-start",
+    "https://w3c.github.io/sensors/#sensor-stop",
+    "https://w3c.github.io/sensors/#sensor-timestamp",
+    "https://w3c.github.io/sensors/#the-sensor-error-event-interface",
+    "https://w3c.github.io/sensors/#dom-sensorerrorevent-sensorerrorevent",
+    "https://w3c.github.io/sensors/#dom-sensorerrorevent-error"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/SensorErrorEvent/error",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "67",
+      "versions": [
+        {
+          "version": "67",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "67",
+      "versions": [
+        {
+          "version": "67",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "67",
+      "versions": [
+        {
+          "version": "67",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "67",
+      "versions": [
+        {
+          "version": "67",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.47,
+      "partial": 0,
+      "total": 76.47
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.18,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "orientation-sensor"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.AbsoluteOrientationSensor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AbsoluteOrientationSensor.AbsoluteOrientationSensor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OrientationSensor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OrientationSensor.populateMatrix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OrientationSensor.quaternion",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RelativeOrientationSensor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RelativeOrientationSensor.RelativeOrientationSensor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sensor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sensor.activate_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sensor.activated",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sensor.error_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sensor.hasReading",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sensor.reading_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sensor.start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sensor.stop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sensor.timestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SensorErrorEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SensorErrorEvent.SensorErrorEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SensorErrorEvent.error",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "id": "wf-related-website-sets",
+  "source": "webfeatures",
+  "name": "Related website sets",
+  "description": "Related website sets declares relationships between sites so the browser allows cookie and storage access between them through methods such as document.requestStorageAccessFor().",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/first-party-sets/",
+    "https://privacycg.github.io/requestStorageAccessFor/",
+    "https://privacycg.github.io/requestStorageAccessFor/#dom-document-requeststorageaccessfor",
+    "https://privacycg.github.io/requestStorageAccessFor/#permissions-integration"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccessFor",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "119",
+      "versions": [
+        {
+          "version": "119",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "119",
+      "versions": [
+        {
+          "version": "119",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "119",
+      "versions": [
+        {
+          "version": "119",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "119",
+      "versions": [
+        {
+          "version": "119",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "119",
+      "versions": [
+        {
+          "version": "119",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "119",
+      "versions": [
+        {
+          "version": "119",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 72.03,
+      "partial": 0,
+      "total": 72.03
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 22.9,
+        "edge": 4.21,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "related-website-sets"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.requestStorageAccessFor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Permissions.permission_top-level-storage-access",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "id": "wf-typed-array-iteration-methods",
+  "source": "webfeatures",
+  "name": "Typed array iteration methods",
+  "description": "Typed array iteration methods",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.every",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.filter",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.foreach",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.indexof",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.lastindexof",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.map",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.reduce",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.reduceright",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.some",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.every",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.filter",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.foreach",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.indexof",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.lastindexof",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.map",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.reduce",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.reduceright",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.some"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/some",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "45",
+      "versions": [
+        {
+          "version": "45",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "38",
+      "versions": [
+        {
+          "version": "38",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "10",
+      "versions": [
+        {
+          "version": "10",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "45",
+      "versions": [
+        {
+          "version": "45",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10",
+      "versions": [
+        {
+          "version": "10",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "45",
+      "versions": [
+        {
+          "version": "45",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "45",
+      "versions": [
+        {
+          "version": "45",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "38",
+      "versions": [
+        {
+          "version": "38",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.35,
+      "partial": 0,
+      "total": 92.35
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.36,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "typed-array-iteration-methods"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.every",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.filter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.indexOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.lastIndexOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.map",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.reduce",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.reduceRight",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.some",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

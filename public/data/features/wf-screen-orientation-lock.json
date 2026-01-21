@@ -1,0 +1,104 @@
+{
+  "id": "wf-screen-orientation-lock",
+  "source": "webfeatures",
+  "name": "Screen orientation lock",
+  "description": "The screen.orientation.lock() method prevents changes to the screen orientation, typically in fullscreen applications such as games. For example, while locked, rotating a phone to the side won't change the screen orientation from landscape to portrait.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/screen-orientation/#lock-method",
+    "https://w3c.github.io/screen-orientation/#dom-screenorientation-lock",
+    "https://w3c.github.io/screen-orientation/#dom-screenorientation-unlock"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/ScreenOrientation/unlock",
+  "links": [],
+  "support": {
+    "firefox": {
+      "current": "y",
+      "firstFull": "144",
+      "versions": [
+        {
+          "version": "144",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "144",
+      "versions": [
+        {
+          "version": "144",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 1.63,
+      "partial": 0,
+      "total": 1.63
+    },
+    "byBrowser": {
+      "desktop": {
+        "firefox": 1.33
+      },
+      "mobile": {
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "screen-orientation-lock"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ScreenOrientation.lock",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ScreenOrientation.unlock",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

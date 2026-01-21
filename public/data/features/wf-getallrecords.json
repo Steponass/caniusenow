@@ -1,0 +1,129 @@
+{
+  "id": "wf-getallrecords",
+  "source": "webfeatures",
+  "name": "IndexedDB getAllRecords()",
+  "description": "The getAllRecords() method of IDBObjectStore and IDBIndex return records and their primary keys from an IndexedDB store or index. The records can be read in batches and in reverse order. The getAllRecords() methods speed up read operations on large datasets.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/IndexedDB/#dom-idbindex-getallrecords",
+    "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getallrecords",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbindex-getallrecords①"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/IDBObjectStore/getAllRecords",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 63.38,
+      "partial": 0,
+      "total": 63.38
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 15.25,
+        "edge": 4.01
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "getallrecords"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBIndex.getAllRecords",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.getAllRecords",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

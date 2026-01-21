@@ -1,0 +1,126 @@
+{
+  "id": "wf-style-query-range-syntax",
+  "source": "webfeatures",
+  "name": "Range syntax for style queries",
+  "description": "The @container style() CSS at-rule and if(style()) CSS function queries accept a range syntax, such as >, <, >=, <=, to query for inexact values.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-conditional-5/#typedef-style-range"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "142",
+      "versions": [
+        {
+          "version": "142",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "142",
+      "versions": [
+        {
+          "version": "142",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "142",
+      "versions": [
+        {
+          "version": "142",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "142",
+      "versions": [
+        {
+          "version": "142",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "142",
+      "versions": [
+        {
+          "version": "142",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "142",
+      "versions": [
+        {
+          "version": "142",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 62.71,
+      "partial": 0,
+      "total": 62.71
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 14.64,
+        "edge": 3.94
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "style-query-range-syntax"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.container.style_queries_for_custom_properties.range_syntax",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.if.style.range_syntax",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

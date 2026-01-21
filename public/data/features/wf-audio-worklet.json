@@ -1,0 +1,259 @@
+{
+  "id": "wf-audio-worklet",
+  "source": "webfeatures",
+  "name": "AudioWorklet",
+  "description": "The AudioWorklet API runs module code in a separate thread, specifically for non-blocking, low latency audio processing.",
+  "category": "Other",
+  "spec": [
+    "https://webaudio.github.io/web-audio-api/#AudioWorklet",
+    "https://webaudio.github.io/web-audio-api/#AudioWorkletGlobalScope",
+    "https://webaudio.github.io/web-audio-api/#dom-audioworkletglobalscope-currentframe",
+    "https://webaudio.github.io/web-audio-api/#dom-audioworkletglobalscope-currenttime",
+    "https://webaudio.github.io/web-audio-api/#dom-audioworkletglobalscope-port",
+    "https://webaudio.github.io/web-audio-api/#dom-audioworkletglobalscope-registerprocessor",
+    "https://webaudio.github.io/web-audio-api/#dom-audioworkletglobalscope-samplerate",
+    "https://webaudio.github.io/web-audio-api/#AudioWorkletNode",
+    "https://webaudio.github.io/web-audio-api/#dom-audioworkletnode-audioworkletnode",
+    "https://webaudio.github.io/web-audio-api/#dom-audioworkletnode-parameters",
+    "https://webaudio.github.io/web-audio-api/#dom-audioworkletnode-port",
+    "https://webaudio.github.io/web-audio-api/#dom-audioworkletnode-onprocessorerror",
+    "https://webaudio.github.io/web-audio-api/#AudioWorkletProcessor",
+    "https://webaudio.github.io/web-audio-api/#dom-audioworkletprocessor-audioworkletprocessor",
+    "https://webaudio.github.io/web-audio-api/#dom-audioworkletprocessor-port",
+    "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-audioworklet",
+    "https://html.spec.whatwg.org/multipage/worklets.html#worklets-worklet",
+    "https://html.spec.whatwg.org/multipage/worklets.html#dom-worklet-addmodule-dev",
+    "https://html.spec.whatwg.org/multipage/worklets.html#workletglobalscope"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WorkletGlobalScope",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "76",
+      "versions": [
+        {
+          "version": "76",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "14.1",
+      "versions": [
+        {
+          "version": "14.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14.1",
+      "versions": [
+        {
+          "version": "14.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "76",
+      "versions": [
+        {
+          "version": "76",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.82,
+      "partial": 0,
+      "total": 91.82
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.2,
+        "firefox": 1.75,
+        "safari": 1.39,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.89,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "audio-worklet"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorklet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletGlobalScope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletGlobalScope.currentFrame",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletGlobalScope.currentTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletGlobalScope.port",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletGlobalScope.registerProcessor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletGlobalScope.sampleRate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletNode.AudioWorkletNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletNode.parameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletNode.port",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletNode.processorerror_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletProcessor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletProcessor.AudioWorkletProcessor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletProcessor.port",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.audioWorklet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Worklet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Worklet.addModule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkletGlobalScope",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

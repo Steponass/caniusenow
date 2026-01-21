@@ -1,0 +1,1014 @@
+{
+  "id": "video",
+  "source": "caniuse",
+  "name": "Video element",
+  "description": "Method of playing videos on webpages (without requiring a plug-in). Includes support for the following media properties: `currentSrc`, `currentTime`, `paused`, `playbackRate`, `buffered`, `duration`, `played`, `seekable`, `ended`, `autoplay`, `loop`, `controls`, `volume` & `muted`",
+  "category": "HTML5",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#the-video-element",
+    "https://html.spec.whatwg.org/multipage/media.html#video",
+    "https://html.spec.whatwg.org/multipage/media.html#htmlmediaelement",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-abort",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onabort",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-autoplay",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-buffered-dev",
+    "https://w3c.github.io/media-source/#htmlmediaelement-extensions-buffered",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-navigator-canplaytype-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-canplay",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncanplay",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-canplaythrough",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncanplaythrough",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-controls",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-crossorigin",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-currentsrc-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-currenttime-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-defaultmuted",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-defaultplaybackrate-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-duration-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-durationchange",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-ondurationchange",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-emptied",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onemptied",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-ended-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-ended",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onended",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-error-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-error",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onmessageerror",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-load-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-loadeddata",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onloadeddata",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-loadedmetadata",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onloadedmetadata",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-loadstart",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onloadstart",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-loop",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-muted-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-networkstate-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-pause-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-pause",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onpause",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-paused-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-play-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-play",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onplay",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-playbackrate-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-played-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-playing",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onplaying",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-preload",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-progress",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onprogress",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-ratechange",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onratechange",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-readystate-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-seekable-dev",
+    "https://w3c.github.io/media-source/#htmlmediaelement-extensions-seekable",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-seeked",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onseeked",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-seeking-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-seeking",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onseeking",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-src",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-stalled",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onstalled",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-suspend",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onsuspend",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-timeupdate",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-ontimeupdate",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-volume-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-volumechange",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onvolumechange",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-waiting",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onwaiting",
+    "https://html.spec.whatwg.org/multipage/media.html#htmlvideoelement",
+    "https://html.spec.whatwg.org/multipage/embedded-content-other.html#dom-dim-height",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-video-playsinline",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-video-poster",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-resize",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onresize",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-video-videoheight-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-video-videowidth-dev",
+    "https://html.spec.whatwg.org/multipage/embedded-content-other.html#dom-dim-width",
+    "https://html.spec.whatwg.org/multipage/media.html#error-codes",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-mediaerror-code-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-mediaerror-message-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#time-ranges",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-timeranges-end-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-timeranges-length-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-timeranges-start-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#the-video-element",
+    "https://html.spec.whatwg.org/multipage/media.html#attr-media-autoplay",
+    "https://html.spec.whatwg.org/multipage/media.html#attr-media-controls",
+    "https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin",
+    "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+    "https://html.spec.whatwg.org/multipage/media.html#attr-media-loop",
+    "https://html.spec.whatwg.org/multipage/media.html#attr-media-muted",
+    "https://html.spec.whatwg.org/multipage/media.html#attr-video-playsinline",
+    "https://html.spec.whatwg.org/multipage/media.html#attr-video-poster",
+    "https://html.spec.whatwg.org/multipage/media.html#attr-media-preload",
+    "https://html.spec.whatwg.org/multipage/media.html#attr-media-src",
+    "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Attributes/crossorigin",
+  "links": [
+    {
+      "url": "https://dev.opera.com/articles/everything-you-need-to-know-html5-video-audio/",
+      "title": "Detailed article on video/audio elements"
+    },
+    {
+      "url": "https://www.webmproject.org",
+      "title": "WebM format information"
+    },
+    {
+      "url": "http://camendesign.co.uk/code/video_for_everybody",
+      "title": "Video for Everybody"
+    },
+    {
+      "url": "http://diveintohtml5.info/video.html",
+      "title": "Video on the Web - includes info on Android support"
+    },
+    {
+      "url": "https://raw.github.com/phiggins42/has.js/master/detect/video.js#video",
+      "title": "has.js test"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/html/elements/video",
+      "title": "WebPlatform Docs"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "20",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "u",
+      "firstFull": "3.1",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.4",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "TP",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "10.5",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "9",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "y"
+        },
+        {
+          "version": "10",
+          "status": "y"
+        },
+        {
+          "version": "11",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.4",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.83,
+      "partial": 0.08,
+      "total": 96.91
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91,
+        "ie": 0.41
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Different browsers have support for different video formats, see sub-features for details.\r\n\r\n",
+    "byNum": {
+      "1": "The Android browser (before 2.3) requires [specific handling](http://www.broken-links.com/2010/07/08/making-html5-video-work-on-android-phones/) to run the video element.",
+      "2": "Old Firefox versions were missing support for some properties: `loop` was added in v11, `played` in v15, `playbackRate` in v20.",
+      "3": "Ignores the `autoplay` attribute by default, though autoplay behavior can be [enabled by users](https://webkit.org/blog/7734/auto-play-policy-changes-for-macos/)",
+      "4": "On iOS the `volume` property is read-only."
+    }
+  },
+  "status": "ls",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "video"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "video",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.abort_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.autoplay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.buffered",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.canPlayType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.canplay_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.canplaythrough_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.controls",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.crossOrigin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.currentSrc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.currentTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.defaultMuted",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.defaultPlaybackRate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.duration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.durationchange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.emptied_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.ended",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.ended_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.error_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.load",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.loadeddata_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.loadedmetadata_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.loadstart_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.loop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.muted",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.networkState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.pause",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.pause_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.paused",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.play",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.play.returns_promise",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.play_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.playbackRate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.played",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.playing_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.preload",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.progress_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.ratechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.readyState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.seekable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.seeked_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.seeking",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.seeking_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.stalled_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.suspend_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.timeupdate_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.volume",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.volumechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.waiting_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLVideoElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLVideoElement.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLVideoElement.playsInline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLVideoElement.poster",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLVideoElement.resize_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLVideoElement.videoHeight",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLVideoElement.videoWidth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLVideoElement.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaError.code",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaError.message",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TimeRanges",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TimeRanges.end",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TimeRanges.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TimeRanges.start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.video",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.video.autoplay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.video.controls",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.video.crossorigin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.video.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.video.loop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.video.muted",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.video.playsinline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.video.poster",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.video.preload",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.video.src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.video.width",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "id": "wf-contrast-color",
+  "source": "webfeatures",
+  "name": "contrast-color()",
+  "description": "The contrast-color() CSS function picks a color that has guaranteed contrast against a specified foreground or background color.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-color-6/#funcdef-contrast-color",
+    "https://drafts.csswg.org/css-color-5/#contrast-color"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/color_value/contrast-color",
+  "links": [],
+  "support": {
+    "firefox": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "26",
+      "versions": [
+        {
+          "version": "26",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "26",
+      "versions": [
+        {
+          "version": "26",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 3.32,
+      "partial": 0,
+      "total": 3.32
+    },
+    "byBrowser": {
+      "desktop": {
+        "firefox": 0.77,
+        "safari": 0.52
+      },
+      "mobile": {
+        "ios_saf": 1.73,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "contrast-color"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.types.color.contrast-color",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

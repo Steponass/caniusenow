@@ -1,0 +1,124 @@
+{
+  "id": "wf-capture-stream-audio-video",
+  "source": "webfeatures",
+  "name": "captureStream() for <audio> and <video>",
+  "description": "The captureStream() method for <audio> and <video> elements returns a MediaStream for the media element's content. You can use this to record media or send it elsewhere, such as a canvas or WebRTC connection.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/mediacapture-fromelement/#html-media-element-media-capture-extensions",
+    "https://w3c.github.io/mediacapture-fromelement/#dom-htmlmediaelement-capturestream"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/captureStream",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "62",
+      "versions": [
+        {
+          "version": "62",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "62",
+      "versions": [
+        {
+          "version": "62",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "62",
+      "versions": [
+        {
+          "version": "62",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "62",
+      "versions": [
+        {
+          "version": "62",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.48,
+      "partial": 0,
+      "total": 76.48
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.2,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "capture-stream-audio-video"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.captureStream",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

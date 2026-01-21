@@ -1,0 +1,117 @@
+{
+  "id": "wf-webvtt-cue-alignment",
+  "source": "webfeatures",
+  "name": "WebVTT cue alignment",
+  "description": "The WebVTT cue alignment settings control which part of the cue is aligned with the given line and position. Cue alignment is set using line and position settings in WebVTT files or the lineAlign and positionAlign properties of VTTCue using JavaScript.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/webvtt/#dom-vttcue-linealign",
+    "https://w3c.github.io/webvtt/#dom-vttcue-positionalign"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/VTTCue/positionAlign",
+  "links": [],
+  "support": {
+    "firefox": {
+      "current": "y",
+      "firstFull": "31",
+      "versions": [
+        {
+          "version": "31",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "14.1",
+      "versions": [
+        {
+          "version": "14.1",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14.1",
+      "versions": [
+        {
+          "version": "14.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "31",
+      "versions": [
+        {
+          "version": "31",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 15.36,
+      "partial": 0,
+      "total": 15.36
+    },
+    "byBrowser": {
+      "desktop": {
+        "firefox": 1.77,
+        "safari": 1.39
+      },
+      "mobile": {
+        "ios_saf": 11.89,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webvtt-cue-alignment"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTCue.lineAlign",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTCue.positionAlign",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "id": "wf-region-capture",
+  "source": "webfeatures",
+  "name": "Region capture",
+  "description": "When using navigator.mediaDevices.getDisplayMedia() to capture a browser tab as a video stream, the region capture API allows you to crop the video to the bounding box of a given element. In contrast to the element capture API, any content that overlays that element is also captured.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/mediacapture-region/",
+    "https://w3c.github.io/mediacapture-region/#browser-capture-media-stream-track",
+    "https://w3c.github.io/mediacapture-region/#dom-browsercapturemediastreamtrack-clone",
+    "https://w3c.github.io/mediacapture-region/#dom-browsercapturemediastreamtrack-cropto",
+    "https://w3c.github.io/mediacapture-region/#crop-target",
+    "https://w3c.github.io/mediacapture-region/#dom-croptarget-fromelement"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/CropTarget/fromElement_static",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 75.89,
+      "partial": 0,
+      "total": 75.89
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.73,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "region-capture"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.BrowserCaptureMediaStreamTrack",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BrowserCaptureMediaStreamTrack.clone",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BrowserCaptureMediaStreamTrack.cropTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CropTarget",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CropTarget.fromElement_static",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

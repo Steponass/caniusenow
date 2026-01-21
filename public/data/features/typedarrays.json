@@ -1,0 +1,914 @@
+{
+  "id": "typedarrays",
+  "source": "caniuse",
+  "name": "Typed Arrays",
+  "description": "JavaScript typed arrays provide a mechanism for accessing raw binary data much more efficiently. Includes: `Int8Array`, `Uint8Array`, `Uint8ClampedArray`, `Int16Array`, `Uint16Array`, `Int32Array`, `Uint32Array`, `Float32Array` & `Float64Array`\r\n",
+  "category": "JS API",
+  "spec": [
+    "https://tc39.es/ecma262/#sec-typedarray-objects",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#table-49",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-constructors",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray.bytes_per_element",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%25typedarray%25.prototype.buffer",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%25typedarray%25.prototype.bytelength",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%25typedarray%25.prototype.byteoffset",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.join",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%25typedarray%25.prototype.length",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-properties-of-the-typedarray-constructors",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.reverse",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.set",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.slice",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.sort",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.subarray",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.tolocalestring",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.tostring",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer-objects",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer-%symbol.species%",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer-constructor",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.bytelength",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.isview",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.prototype.slice",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview-objects",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview-constructor",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-dataview.prototype.buffer",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-dataview.prototype.bytelength",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-dataview.prototype.byteoffset",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.getfloat32",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.getfloat64",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.getint16",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.getint32",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.getint8",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.getuint16",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.getuint32",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.getuint8",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setfloat32",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setfloat64",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setint16",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setint32",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setint8",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setuint16",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setuint32",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview.prototype.setuint8",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%typedarray%-%symbol.species%",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%typedarray%.prototype.buffer",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%typedarray%.prototype.bytelength",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%typedarray%.prototype.byteoffset",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.join",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%typedarray%.prototype.length",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.reverse",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.set",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.slice",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.sort",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.subarray",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.tostring"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray/Uint8ClampedArray",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en/javascript_typed_arrays",
+      "title": "MDN Web Docs - Typed arrays"
+    },
+    {
+      "url": "https://github.com/zloirock/core-js#ecmascript-typed-arrays",
+      "title": "Polyfill for this feature is available in the core-js library"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "7",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "6",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "11.6",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "11",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "11",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "5.0-5.1",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.88,
+      "partial": 0,
+      "total": 96.88
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91,
+        "ie": 0.36
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Includes support for ArrayBuffer objects.",
+    "byNum": {
+      "1": "IE10 (and IE 10&11 mobile) does not support `Uint8ClampedArray`",
+      "2": "Does not support `Float64Array`"
+    }
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "typedarrays"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "typed-arrays",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.ArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.ArrayBuffer.@@species",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.ArrayBuffer.ArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.ArrayBuffer.byteLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.ArrayBuffer.isView",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.ArrayBuffer.slice",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.DataView",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.buffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.byteLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.byteOffset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.getFloat32",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.getFloat64",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.getInt16",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.getInt32",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.getInt8",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.getUint16",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.getUint32",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.getUint8",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.setFloat32",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.setFloat64",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.setInt16",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.setInt32",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.setInt8",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.setUint16",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.setUint32",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.setUint8",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Float32Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Float32Array.Float32Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Float32Array.Float32Array.constructor_without_parameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Float32Array.Float32Array.iterable_allowed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Float64Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Float64Array.Float64Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Float64Array.Float64Array.constructor_without_parameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Float64Array.Float64Array.iterable_allowed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Int16Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Int16Array.Int16Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Int16Array.Int16Array.constructor_without_parameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Int16Array.Int16Array.iterable_allowed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Int32Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Int32Array.Int32Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Int32Array.Int32Array.constructor_without_parameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Int32Array.Int32Array.iterable_allowed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Int8Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Int8Array.Int8Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Int8Array.Int8Array.constructor_without_parameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Int8Array.Int8Array.iterable_allowed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.@@species",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.BYTES_PER_ELEMENT",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.buffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.byteLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.byteOffset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.constructor_without_parameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.index_properties_not_consulting_prototype",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.iterable_in_constructor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.join",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.named_properties",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.reverse",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.set",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.slice",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.sort",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.subarray",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Uint16Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Uint16Array.Uint16Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Uint16Array.Uint16Array.constructor_without_parameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Uint16Array.Uint16Array.iterable_allowed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Uint32Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Uint32Array.Uint32Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Uint32Array.Uint32Array.constructor_without_parameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Uint32Array.Uint32Array.iterable_allowed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Uint8Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Uint8Array.Uint8Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Uint8Array.Uint8Array.constructor_without_parameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Uint8Array.Uint8Array.iterable_allowed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Uint8ClampedArray",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Uint8ClampedArray.Uint8ClampedArray",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Uint8ClampedArray.Uint8ClampedArray.constructor_without_parameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Uint8ClampedArray.Uint8ClampedArray.iterable_allowed",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

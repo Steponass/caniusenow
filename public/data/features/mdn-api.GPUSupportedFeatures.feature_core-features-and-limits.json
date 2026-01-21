@@ -1,0 +1,138 @@
+{
+  "id": "mdn-api.GPUSupportedFeatures.feature_core-features-and-limits",
+  "source": "mdnbcd",
+  "name": "<code>core-features-and-limits</code> feature",
+  "description": "<code>core-features-and-limits</code> feature",
+  "category": "JS API",
+  "spec": [
+    "https://gpuweb.github.io/gpuweb/#core-features-and-limits"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "a",
+      "firstPartial": "139",
+      "versions": [
+        {
+          "version": "139",
+          "status": "a",
+          "notes": "Supported on ChromeOS, macOS, and Windows. Supported on Linux (Intel Gen12+ GPUs only) since Chrome 144. Available on all adapters and enabled automatically on all devices even if not requested."
+        }
+      ]
+    },
+    "firefox": {
+      "current": "a",
+      "firstPartial": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "a",
+          "notes": "Supports all contexts except service workers. See <a href=\"https://bugzil.la/1942431\">bug 1942431</a>. Supports Windows since Firefox 141. See <a href=\"https://bugzil.la/1972486\">bug 1972486</a>. Supports macOS Tahoe on Apple silicon since Firefox 145. See <a href=\"https://bugzil.la/1992212\">bug 1992212</a>. Supports older macOS versions on Apple silicon since Firefox 147. See <a href=\"https://bugzil.la/1993341\">bug 1993341</a>. Does not support macOS on Intel CPUs. See <a href=\"https://bugzil.la/2004105\">bug 2004105</a>. Does not support Linux. See <a href=\"https://bugzil.la/2006676\">bug 2006676</a>."
+        }
+      ]
+    },
+    "edge": {
+      "current": "a",
+      "firstPartial": "139",
+      "versions": [
+        {
+          "version": "139",
+          "status": "a",
+          "notes": "Supported on ChromeOS, macOS, and Windows. Supported on Linux (Intel Gen12+ GPUs only) since Edge 144. Available on all adapters and enabled automatically on all devices even if not requested."
+        }
+      ]
+    },
+    "opera": {
+      "current": "a",
+      "firstPartial": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "a",
+          "notes": "Supported on ChromeOS, macOS, and Windows. Supported on Linux (Intel Gen12+ GPUs only) since Opera false. Available on all adapters and enabled automatically on all devices even if not requested."
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "a",
+      "firstPartial": "139",
+      "versions": [
+        {
+          "version": "139",
+          "status": "a",
+          "notes": "Supported on ChromeOS, macOS, and Windows. Supported on Linux (Intel Gen12+ GPUs only) since Edge 144. Available on all adapters and enabled automatically on all devices even if not requested."
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "a",
+      "firstPartial": "139",
+      "versions": [
+        {
+          "version": "139",
+          "status": "a",
+          "notes": "Supported on ChromeOS, macOS, and Windows. Supported on Linux (Intel Gen12+ GPUs only) since Chrome 144. Available on all adapters and enabled automatically on all devices even if not requested."
+        }
+      ]
+    },
+    "samsung": {
+      "current": "a",
+      "firstPartial": "139",
+      "versions": [
+        {
+          "version": "139",
+          "status": "a",
+          "notes": "Supported on ChromeOS, macOS, and Windows. Supported on Linux (Intel Gen12+ GPUs only) since Chrome 144. Available on all adapters and enabled automatically on all devices even if not requested."
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "a",
+      "firstPartial": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "a",
+          "notes": "Supports all contexts except service workers. See <a href=\"https://bugzil.la/1942431\">bug 1942431</a>. Supports Windows since Firefox 141. See <a href=\"https://bugzil.la/1972486\">bug 1972486</a>. Supports macOS Tahoe on Apple silicon since Firefox 145. See <a href=\"https://bugzil.la/1992212\">bug 1992212</a>. Supports older macOS versions on Apple silicon since Firefox 147. See <a href=\"https://bugzil.la/1993341\">bug 1993341</a>. Does not support macOS on Intel CPUs. See <a href=\"https://bugzil.la/2004105\">bug 2004105</a>. Does not support Linux. See <a href=\"https://bugzil.la/2006676\">bug 2006676</a>."
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 69.75,
+      "total": 69.75
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 19.12,
+        "firefox": 1.35,
+        "edge": 4.07,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "api.GPUSupportedFeatures.feature_core-features-and-limits"
+    },
+    "supplementary": []
+  }
+}

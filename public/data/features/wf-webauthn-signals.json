@@ -1,0 +1,149 @@
+{
+  "id": "wf-webauthn-signals",
+  "source": "webfeatures",
+  "name": "Web authentication signal methods",
+  "description": "The signalUnknownCredential(), signalAllAcceptedCredentials(), and signalCurrentUserDetails() methods of PublicKeyCredential inform authenticators of the state of public key credentials, so that incorrect or revoked credentials may be updated, removed, or hidden.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/webauthn/#sctn-signal-methods",
+    "https://w3c.github.io/webauthn/#dom-publickeycredential-signalallacceptedcredentials",
+    "https://w3c.github.io/webauthn/#dom-publickeycredential-signalcurrentuserdetails",
+    "https://w3c.github.io/webauthn/#dom-publickeycredential-signalunknowncredential"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/signalUnknownCredential_static",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "26",
+      "versions": [
+        {
+          "version": "26",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "26",
+      "versions": [
+        {
+          "version": "26",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 70.55,
+      "partial": 0,
+      "total": 70.55
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 20.03,
+        "safari": 0.52,
+        "edge": 4.15
+      },
+      "mobile": {
+        "ios_saf": 1.73,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webauthn-signals"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.PublicKeyCredential.signalAllAcceptedCredentials_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PublicKeyCredential.signalCurrentUserDetails_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PublicKeyCredential.signalUnknownCredential_static",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

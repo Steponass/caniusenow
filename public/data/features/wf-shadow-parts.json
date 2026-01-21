@@ -1,0 +1,170 @@
+{
+  "id": "wf-shadow-parts",
+  "source": "webfeatures",
+  "name": "Shadow parts",
+  "description": "The part and exportparts HTML attributes expose elements of a shadow DOM as named parts, which can be selected by the ::part() CSS pseudo-element for styling.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-shadow-1/#exposing",
+    "https://drafts.csswg.org/css-shadow/#idl",
+    "https://drafts.csswg.org/css-shadow/#part",
+    "https://drafts.csswg.org/css-shadow/#element-attrdef-html-global-exportparts",
+    "https://drafts.csswg.org/css-shadow/#part-attr"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Global_attributes/part",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "73",
+      "versions": [
+        {
+          "version": "73",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "72",
+      "versions": [
+        {
+          "version": "72",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "13.1",
+      "versions": [
+        {
+          "version": "13.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "73",
+      "versions": [
+        {
+          "version": "73",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "13.1",
+      "versions": [
+        {
+          "version": "13.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "73",
+      "versions": [
+        {
+          "version": "73",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "73",
+      "versions": [
+        {
+          "version": "73",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "72",
+      "versions": [
+        {
+          "version": "72",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.82,
+      "partial": 0,
+      "total": 91.82
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.14,
+        "firefox": 1.75,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.91,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "shadow-parts"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.part",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.part",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.global_attributes.exportparts",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.global_attributes.part",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "id": "wf-fetch-priority",
+  "source": "webfeatures",
+  "name": "Fetch priority",
+  "description": "The fetch() priority option and the fetchpriority HTML attribute give hints to the browser about which requests to do before other requests of the same type.",
+  "category": "Other",
+  "spec": [
+    "https://fetch.spec.whatwg.org/#request-priority",
+    "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#fetch-priority-attributes",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-fetchpriority",
+    "https://html.spec.whatwg.org/multipage/semantics.html#dom-link-fetchpriority",
+    "https://html.spec.whatwg.org/multipage/scripting.html#dom-script-fetchpriority",
+    "https://fetch.spec.whatwg.org/#dom-requestinit-priority",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-fetchpriority",
+    "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-fetchpriority",
+    "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-fetchpriority"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/fetchpriority",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "103",
+      "versions": [
+        {
+          "version": "103",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "17.2",
+      "versions": [
+        {
+          "version": "17.2",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "103",
+      "versions": [
+        {
+          "version": "103",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "103",
+      "versions": [
+        {
+          "version": "103",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "103",
+      "versions": [
+        {
+          "version": "103",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.2",
+      "versions": [
+        {
+          "version": "17.2",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "103",
+      "versions": [
+        {
+          "version": "103",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "103",
+      "versions": [
+        {
+          "version": "103",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.67,
+      "partial": 0,
+      "total": 89.67
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.84,
+        "firefox": 1.48,
+        "safari": 0.98,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.92,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "fetch-priority"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.fetchPriority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLLinkElement.fetchPriority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLScriptElement.fetchPriority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Request.Request.init_priority_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.fetch.init_priority_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.img.fetchpriority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.link.fetchpriority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.script.fetchpriority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Link.fetchpriority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.feImage.fetchpriority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.image.fetchpriority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.script.fetchpriority",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,429 @@
+{
+  "id": "wf-text-tracks",
+  "source": "webfeatures",
+  "name": "Text tracks",
+  "description": "The <track> element is used as a child of the media elements that lets you specify a timed text track to be displayed in parallel with the media element.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/media.html#timed-text-tracks",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-addtexttrack-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-texttracks-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#htmltrackelement",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-cuechange",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncuechange",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-track-default",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-track-kind",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-track-label",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-track-readystate-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-track-src",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-track-srclang",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-track-track-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#texttrack",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-activecues-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-addcue-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#handler-texttrack-oncuechange",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-cues-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-id-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-inbandmetadatatrackdispatchtype-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-kind-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-label-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-language-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-mode-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-removecue-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#texttrackcue",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttrackcue-endtime",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-enter",
+    "https://html.spec.whatwg.org/multipage/media.html#handler-texttrackcue-onenter",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-exit",
+    "https://html.spec.whatwg.org/multipage/media.html#handler-texttrackcue-onexit",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttrackcue-id",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttrackcue-pauseonexit",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttrackcue-starttime",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttrackcue-track",
+    "https://html.spec.whatwg.org/multipage/media.html#texttrackcuelist",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttrackcuelist-getcuebyid",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttrackcuelist-length",
+    "https://html.spec.whatwg.org/multipage/media.html#text-track-api",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-addtrack",
+    "https://html.spec.whatwg.org/multipage/media.html#handler-tracklist-onaddtrack",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-change",
+    "https://html.spec.whatwg.org/multipage/media.html#handler-tracklist-onchange",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttracklist-gettrackbyid-dev",
+    "https://html.spec.whatwg.org/multipage/media.html#dom-texttracklist-length",
+    "https://html.spec.whatwg.org/multipage/media.html#event-media-removetrack",
+    "https://html.spec.whatwg.org/multipage/media.html#handler-tracklist-onremovetrack",
+    "https://html.spec.whatwg.org/multipage/media.html#the-track-element",
+    "https://html.spec.whatwg.org/multipage/media.html#attr-track-default",
+    "https://html.spec.whatwg.org/multipage/media.html#attr-track-kind",
+    "https://html.spec.whatwg.org/multipage/media.html#attr-track-label",
+    "https://html.spec.whatwg.org/multipage/media.html#attr-track-src",
+    "https://html.spec.whatwg.org/multipage/media.html#attr-track-srclang"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/track",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "23",
+      "versions": [
+        {
+          "version": "23",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "31",
+      "versions": [
+        {
+          "version": "31",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "6",
+      "versions": [
+        {
+          "version": "6",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "23",
+      "versions": [
+        {
+          "version": "23",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "6",
+      "versions": [
+        {
+          "version": "6",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "23",
+      "versions": [
+        {
+          "version": "23",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "23",
+      "versions": [
+        {
+          "version": "23",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "31",
+      "versions": [
+        {
+          "version": "31",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.34,
+      "partial": 0,
+      "total": 94.34
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.91,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "text-tracks"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.addTextTrack",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.textTracks",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTrackElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTrackElement.cuechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTrackElement.default",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTrackElement.kind",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTrackElement.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTrackElement.readyState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTrackElement.src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTrackElement.srclang",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTrackElement.track",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrack",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrack.activeCues",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrack.addCue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrack.cuechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrack.cues",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrack.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrack.inBandMetadataTrackDispatchType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrack.kind",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrack.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrack.language",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrack.mode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrack.removeCue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrackCue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrackCue.endTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrackCue.enter_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrackCue.exit_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrackCue.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrackCue.pauseOnExit",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrackCue.startTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrackCue.track",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrackCueList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrackCueList.getCueById",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrackCueList.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrackList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrackList.addtrack_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrackList.change_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrackList.getTrackById",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrackList.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TextTrackList.removetrack_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.track",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.track.default",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.track.kind",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.track.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.track.src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.track.srclang",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

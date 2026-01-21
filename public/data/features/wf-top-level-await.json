@@ -1,0 +1,137 @@
+{
+  "id": "wf-top-level-await",
+  "source": "webfeatures",
+  "name": "Top-level await",
+  "description": "The await keyword, when used at the top level of a module (outside of an async function), delays parent module execution until after a promise fulfills.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-async-function-definitions"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/await#top_level_await",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "89",
+      "versions": [
+        {
+          "version": "89",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "89",
+      "versions": [
+        {
+          "version": "89",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "89",
+      "versions": [
+        {
+          "version": "89",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "89",
+      "versions": [
+        {
+          "version": "89",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "89",
+      "versions": [
+        {
+          "version": "89",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "89",
+      "versions": [
+        {
+          "version": "89",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "89",
+      "versions": [
+        {
+          "version": "89",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "89",
+      "versions": [
+        {
+          "version": "89",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 78.3,
+      "partial": 0,
+      "total": 78.3
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.96,
+        "firefox": 1.75,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "top-level-await"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.await.top_level",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

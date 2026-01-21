@@ -1,0 +1,123 @@
+{
+  "id": "mdn-http.headers.Expect-CT",
+  "source": "mdnbcd",
+  "name": "Expect- C T",
+  "description": "",
+  "category": "Other",
+  "spec": [
+    "https://www.rfc-editor.org/rfc/rfc9163#section-2.1"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Expect-CT",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "61",
+      "versions": [
+        {
+          "version": "61",
+          "status": "y",
+          "notes": "Before later builds of Chrome 64, invalid Expect-CT reports would be sent. Newer versions do not send reports after 10 weeks from the build date. See <a href=\"https://crbug.com/41356303\">bug 41356303</a>."
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y",
+          "notes": "Before later builds of Edge 79, invalid Expect-CT reports would be sent. Newer versions do not send reports after 10 weeks from the build date. See <a href=\"https://crbug.com/41356303\">bug 41356303</a>."
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "48",
+      "versions": [
+        {
+          "version": "48",
+          "status": "y",
+          "notes": "Before later builds of Opera 51, invalid Expect-CT reports would be sent. Newer versions do not send reports after 10 weeks from the build date. See <a href=\"https://crbug.com/41356303\">bug 41356303</a>."
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y",
+          "notes": "Before later builds of Edge 79, invalid Expect-CT reports would be sent. Newer versions do not send reports after 10 weeks from the build date. See <a href=\"https://crbug.com/41356303\">bug 41356303</a>."
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "61",
+      "versions": [
+        {
+          "version": "61",
+          "status": "y",
+          "notes": "Before later builds of Chrome 64, invalid Expect-CT reports would be sent. Newer versions do not send reports after 10 weeks from the build date. See <a href=\"https://crbug.com/41356303\">bug 41356303</a>."
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "61",
+      "versions": [
+        {
+          "version": "61",
+          "status": "y",
+          "notes": "Before later builds of Chrome 64, invalid Expect-CT reports would be sent. Newer versions do not send reports after 10 weeks from the build date. See <a href=\"https://crbug.com/41356303\">bug 41356303</a>."
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.48,
+      "partial": 0,
+      "total": 76.48
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.2,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "http.headers.Expect-CT"
+    },
+    "supplementary": []
+  }
+}

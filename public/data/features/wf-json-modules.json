@@ -1,0 +1,156 @@
+{
+  "id": "wf-json-modules",
+  "source": "webfeatures",
+  "name": "JSON import attributes",
+  "description": "Module import … with { type: \"json\" } statements load JSON data. Also known as JSON module scripts.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/webappapis.html#json-module-script",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-import-call-runtime-semantics-evaluation"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "138",
+      "versions": [
+        {
+          "version": "138",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "17.2",
+      "versions": [
+        {
+          "version": "17.2",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.2",
+      "versions": [
+        {
+          "version": "17.2",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "138",
+      "versions": [
+        {
+          "version": "138",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 85.14,
+      "partial": 0,
+      "total": 85.14
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 22.39,
+        "firefox": 1.46,
+        "safari": 0.98,
+        "edge": 4.18,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.92,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "json-modules"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.grammar.trailing_commas.trailing_commas_in_dynamic_import",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.import.import_attributes.type_json",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

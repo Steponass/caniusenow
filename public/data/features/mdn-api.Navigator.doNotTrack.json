@@ -1,0 +1,149 @@
+{
+  "id": "mdn-api.Navigator.doNotTrack",
+  "source": "mdnbcd",
+  "name": "Do Not Track",
+  "description": "",
+  "category": "JS API",
+  "spec": [],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/doNotTrack",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "23",
+      "versions": [
+        {
+          "version": "23",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "9",
+      "versions": [
+        {
+          "version": "9",
+          "status": "y",
+          "notes": "In Firefox, <code>navigator.doNotTrack</code> returns <code>\"unspecified\"</code> instead of <code>null</code>. Before Firefox 32, <code>navigator.doNotTrack</code> would report values of <code>\"yes\"</code> and <code>\"no\"</code> rather than <code>\"1\"</code> and <code>\"0\"</code>."
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "5.1",
+      "versions": [
+        {
+          "version": "5.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y",
+          "notes": "Before version 17, Edge implemented <code>window.doNotTrack</code>."
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "9",
+      "versions": [
+        {
+          "version": "9",
+          "status": "y",
+          "notes": "For IE11 and subsequent versions, use <code>window.doNotTrack</code>"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "5.1",
+      "versions": [
+        {
+          "version": "5.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "23",
+      "versions": [
+        {
+          "version": "23",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "23",
+      "versions": [
+        {
+          "version": "23",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "9",
+      "versions": [
+        {
+          "version": "9",
+          "status": "y",
+          "notes": "In Firefox, <code>navigator.doNotTrack</code> returns <code>\"unspecified\"</code> instead of <code>null</code>. Before Firefox 32, <code>navigator.doNotTrack</code> would report values of <code>\"yes\"</code> and <code>\"no\"</code> rather than <code>\"1\"</code> and <code>\"0\"</code>."
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.8,
+      "partial": 0,
+      "total": 94.8
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.82,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91,
+        "ie": 0.41
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.91,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "api.Navigator.doNotTrack"
+    },
+    "supplementary": []
+  }
+}

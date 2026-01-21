@@ -1,0 +1,159 @@
+{
+  "id": "mdn-api.Event.initEvent",
+  "source": "mdnbcd",
+  "name": "Init Event",
+  "description": "",
+  "category": "JS API",
+  "spec": [
+    "https://dom.spec.whatwg.org/#dom-event-initevent"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Event/initEvent",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "17",
+      "firstPartial": "1",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        },
+        {
+          "version": "1",
+          "status": "a",
+          "notes": "Before Firefox 17, a call to this method after the dispatching of the event raised an exception instead of doing nothing."
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "≤12.1",
+      "versions": [
+        {
+          "version": "≤12.1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "9",
+      "versions": [
+        {
+          "version": "9",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "17",
+      "firstPartial": "1",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        },
+        {
+          "version": "1",
+          "status": "a",
+          "notes": "Before Firefox 17, a call to this method after the dispatching of the event raised an exception instead of doing nothing."
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.78,
+      "partial": 0.08,
+      "total": 94.85
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91,
+        "ie": 0.41
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "api.Event.initEvent"
+    },
+    "supplementary": []
+  }
+}

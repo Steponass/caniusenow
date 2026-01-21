@@ -1,0 +1,137 @@
+{
+  "id": "wf-show-picker-select",
+  "source": "webfeatures",
+  "name": "showPicker() for <select>",
+  "description": "The showPicker() method for <select> elements shows the dropdown menu or other user interface for picking one of the options.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/input.html#dom-select-showpicker"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLSelectElement/showPicker",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "122",
+      "versions": [
+        {
+          "version": "122",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "122",
+      "versions": [
+        {
+          "version": "122",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 73.5,
+      "partial": 0,
+      "total": 73.5
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 22.61,
+        "firefox": 1.48,
+        "edge": 4.19,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "show-picker-select"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.showPicker",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

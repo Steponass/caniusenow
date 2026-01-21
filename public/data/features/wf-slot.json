@@ -1,0 +1,217 @@
+{
+  "id": "wf-slot",
+  "source": "webfeatures",
+  "name": "<slot>",
+  "description": "The <slot> HTML element is a placeholder inside a web component where consumers of the component can insert their own markup.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/scripting.html#the-slot-element",
+    "https://dom.spec.whatwg.org/#dom-slotable-assignedslot",
+    "https://dom.spec.whatwg.org/#ref-for-dom-element-slot①",
+    "https://html.spec.whatwg.org/multipage/scripting.html#htmlslotelement",
+    "https://html.spec.whatwg.org/multipage/scripting.html#dom-slot-assignedelements-dev",
+    "https://html.spec.whatwg.org/multipage/scripting.html#dom-slot-assignednodes-dev",
+    "https://html.spec.whatwg.org/multipage/scripting.html#dom-slot-name-dev",
+    "https://dom.spec.whatwg.org/#eventdef-htmlslotelement-slotchange",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onslotchange",
+    "https://drafts.csswg.org/css-shadow/#slotted-pseudo",
+    "https://dom.spec.whatwg.org/#shadow-tree-slots",
+    "https://html.spec.whatwg.org/multipage/dom.html#attr-slot"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Global_attributes/slot",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "53",
+      "versions": [
+        {
+          "version": "53",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "63",
+      "versions": [
+        {
+          "version": "63",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "10",
+      "versions": [
+        {
+          "version": "10",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "53",
+      "versions": [
+        {
+          "version": "53",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10",
+      "versions": [
+        {
+          "version": "10",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "53",
+      "versions": [
+        {
+          "version": "53",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "53",
+      "versions": [
+        {
+          "version": "53",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "63",
+      "versions": [
+        {
+          "version": "63",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.25,
+      "partial": 0,
+      "total": 92.25
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.27,
+        "firefox": 1.75,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "slot"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.assignedSlot",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.slot",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSlotElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSlotElement.assignedElements",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSlotElement.assignedNodes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSlotElement.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSlotElement.slotchange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Text.assignedSlot",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.slotted",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.slot",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.slot.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.global_attributes.slot",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

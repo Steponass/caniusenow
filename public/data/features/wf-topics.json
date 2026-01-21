@@ -1,0 +1,162 @@
+{
+  "id": "wf-topics",
+  "source": "webfeatures",
+  "name": "Topics",
+  "description": "The topics API reports a user's likely subject-matter interests (as determined by the browser, known as topics) to iframes. This allows for interest-based advertising that does not rely on user's exact browsing history, third-party cookies, or fingerprinting.",
+  "category": "Other",
+  "spec": [
+    "https://patcg-individual-drafts.github.io/topics/"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Sec-Browsing-Topics",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "126",
+      "versions": [
+        {
+          "version": "126",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "126",
+      "versions": [
+        {
+          "version": "126",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "126",
+      "versions": [
+        {
+          "version": "126",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "126",
+      "versions": [
+        {
+          "version": "126",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "126",
+      "versions": [
+        {
+          "version": "126",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "126",
+      "versions": [
+        {
+          "version": "126",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 69.88,
+      "partial": 0,
+      "total": 69.88
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 21.58,
+        "edge": 4.18
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "topics"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.browsingTopics",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLIFrameElement.browsingTopics",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Request.Request.init_browsingTopics_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.fetch.init_browsingTopics_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.browsing-topics",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.browsingtopics",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Observe-Browsing-Topics",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.browsing-topics",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Sec-Browsing-Topics",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

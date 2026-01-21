@@ -1,0 +1,97 @@
+{
+  "id": "wf-webgl-compressed-texture-pvrtc",
+  "source": "webfeatures",
+  "name": "WEBGL_compressed_texture_pvrtc WebGL extension",
+  "description": "The WEBGL_compressed_texture_pvrtc extension for WebGL 1.0 and 2.0 contexts adds PVRTC compressed texture formats to compressedTexImage2D() and compressedTexSubImage2D().",
+  "category": "Other",
+  "spec": [
+    "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_pvrtc/"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WEBGL_compressed_texture_pvrtc",
+  "links": [],
+  "support": {
+    "safari": {
+      "current": "y",
+      "firstFull": "7",
+      "versions": [
+        {
+          "version": "7",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "7",
+      "versions": [
+        {
+          "version": "7",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 13.64,
+      "partial": 0,
+      "total": 13.64
+    },
+    "byBrowser": {
+      "desktop": {
+        "safari": 1.42
+      },
+      "mobile": {
+        "ios_saf": 12.22
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webgl-compressed-texture-pvrtc"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.WEBGL_compressed_texture_pvrtc",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

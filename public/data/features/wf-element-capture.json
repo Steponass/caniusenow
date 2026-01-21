@@ -1,0 +1,135 @@
+{
+  "id": "wf-element-capture",
+  "source": "webfeatures",
+  "name": "Element capture",
+  "description": "The restrictTo() method on screen capture media tracks limits capture to a specific element, excluding content which might occlude the element itself, such as video conferencing controls.",
+  "category": "Other",
+  "spec": [
+    "https://screen-share.github.io/element-capture/",
+    "https://screen-share.github.io/element-capture/#dom-browsercapturemediastreamtrack-restrictto",
+    "https://screen-share.github.io/element-capture/#dom-restrictiontarget",
+    "https://screen-share.github.io/element-capture/#dom-restrictiontarget-fromelement"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/RestrictionTarget/fromElement_static",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 68.3,
+      "partial": 0,
+      "total": 68.3
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 20.03,
+        "edge": 4.15
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "element-capture"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.BrowserCaptureMediaStreamTrack.restrictTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RestrictionTarget",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RestrictionTarget.fromElement_static",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

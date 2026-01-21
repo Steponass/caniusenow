@@ -1,0 +1,226 @@
+{
+  "id": "wf-webxr-hit-test",
+  "source": "webfeatures",
+  "name": "Hit test",
+  "description": "The getHitTestResults() method of an XRFrame object helps place objects in an augmented reality session by finding where cast rays intersect with real-world geometry.",
+  "category": "Other",
+  "spec": [
+    "https://immersive-web.github.io/hit-test/",
+    "https://immersive-web.github.io/hit-test/#dom-xrframe-gethittestresults",
+    "https://immersive-web.github.io/hit-test/#dom-xrframe-gethittestresultsfortransientinput",
+    "https://immersive-web.github.io/hit-test/#xr-hit-test-result-interface",
+    "https://immersive-web.github.io/hit-test/#dom-xrhittestresult-getpose",
+    "https://immersive-web.github.io/hit-test/#hit-test-source-interface",
+    "https://immersive-web.github.io/hit-test/#dom-xrhittestsource-cancel",
+    "https://immersive-web.github.io/hit-test/#xrray-interface",
+    "https://immersive-web.github.io/hit-test/#dom-xrray-xrray",
+    "https://immersive-web.github.io/hit-test/#dom-xrray-direction",
+    "https://immersive-web.github.io/hit-test/#dom-xrray-matrix",
+    "https://immersive-web.github.io/hit-test/#dom-xrray-origin",
+    "https://immersive-web.github.io/hit-test/#dom-xrsession-requesthittestsource",
+    "https://immersive-web.github.io/hit-test/#dom-xrsession-requesthittestsourcefortransientinput",
+    "https://immersive-web.github.io/hit-test/#xr-transient-input-hit-test-result-interface",
+    "https://immersive-web.github.io/hit-test/#dom-xrtransientinputhittestresult-inputsource",
+    "https://immersive-web.github.io/hit-test/#dom-xrtransientinputhittestresult-results",
+    "https://immersive-web.github.io/hit-test/#transient-input-hit-test-source-interface",
+    "https://immersive-web.github.io/hit-test/#dom-xrtransientinputhittestsource-cancel"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/XRTransientInputHitTestSource/cancel",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.35,
+      "partial": 0,
+      "total": 76.35
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.06,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webxr-hit-test"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.XRFrame.getHitTestResults",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRFrame.getHitTestResultsForTransientInput",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRHitTestResult",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRHitTestResult.getPose",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRHitTestSource",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRHitTestSource.cancel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRRay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRRay.XRRay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRRay.direction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRRay.matrix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRRay.origin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRSession.requestHitTestSource",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRSession.requestHitTestSourceForTransientInput",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRTransientInputHitTestResult",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRTransientInputHitTestResult.inputSource",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRTransientInputHitTestResult.results",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRTransientInputHitTestSource",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRTransientInputHitTestSource.cancel",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

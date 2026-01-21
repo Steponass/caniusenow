@@ -1,0 +1,111 @@
+{
+  "id": "wf-fast-seek",
+  "source": "webfeatures",
+  "name": "fastSeek()",
+  "description": "The fastSeek() method seeks an <audio> or <video> element as fast as possible, by seeking to a keyframe instead of exactly the requested time.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/media.html#dom-media-fastseek-dev"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/fastSeek",
+  "links": [],
+  "support": {
+    "firefox": {
+      "current": "y",
+      "firstFull": "31",
+      "versions": [
+        {
+          "version": "31",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "8",
+      "versions": [
+        {
+          "version": "8",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "8",
+      "versions": [
+        {
+          "version": "8",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "31",
+      "versions": [
+        {
+          "version": "31",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 15.72,
+      "partial": 0,
+      "total": 15.72
+    },
+    "byBrowser": {
+      "desktop": {
+        "firefox": 1.77,
+        "safari": 1.42
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "fast-seek"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.fastSeek",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

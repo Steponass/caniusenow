@@ -1,0 +1,512 @@
+{
+  "id": "document-policy",
+  "source": "caniuse",
+  "name": "Document Policy",
+  "description": "A mechanism that allows developers to set certain rules and policies for a given site. The rules can change default browser behaviour, block certain features or set limits on resource usage. Document Policy is useful both for security and performance, and is similar to [Permissions Policy](/permissions-policy).",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/document-policy/"
+  ],
+  "links": [
+    {
+      "url": "https://mozilla.github.io/standards-positions/#document-policy",
+      "title": "Firefox position: non-harmful"
+    },
+    {
+      "url": "https://bugs.chromium.org/p/chromium/issues/detail?id=993790",
+      "title": "Chromium tracking bug for new policies"
+    },
+    {
+      "url": "https://github.com/WICG/document-policy/blob/main/document-policy-explainer.md",
+      "title": "WICG - Document Policy Explainer"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "137",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "138",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "139",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "144",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "145",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "140",
+          "status": "n"
+        },
+        {
+          "version": "141",
+          "status": "n"
+        },
+        {
+          "version": "142",
+          "status": "n"
+        },
+        {
+          "version": "143",
+          "status": "n"
+        },
+        {
+          "version": "144",
+          "status": "n"
+        },
+        {
+          "version": "145",
+          "status": "n"
+        },
+        {
+          "version": "146",
+          "status": "n"
+        },
+        {
+          "version": "147",
+          "status": "n"
+        },
+        {
+          "version": "148",
+          "status": "n"
+        },
+        {
+          "version": "149",
+          "status": "n"
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "n"
+        },
+        {
+          "version": "18.2",
+          "status": "n"
+        },
+        {
+          "version": "18.3",
+          "status": "n"
+        },
+        {
+          "version": "18.4",
+          "status": "n"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "n"
+        },
+        {
+          "version": "26.0",
+          "status": "n"
+        },
+        {
+          "version": "26.1",
+          "status": "n"
+        },
+        {
+          "version": "26.2",
+          "status": "n"
+        },
+        {
+          "version": "26.3",
+          "status": "n"
+        },
+        {
+          "version": "TP",
+          "status": "n"
+        }
+      ]
+    },
+    "edge": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "134",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "135",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "136",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "137",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "138",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "139",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "opera": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "116",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "117",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "118",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "119",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "120",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "121",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "122",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "123",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "124",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "125",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "n"
+        },
+        {
+          "version": "18.1",
+          "status": "n"
+        },
+        {
+          "version": "18.2",
+          "status": "n"
+        },
+        {
+          "version": "18.3",
+          "status": "n"
+        },
+        {
+          "version": "18.4",
+          "status": "n"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "n"
+        },
+        {
+          "version": "26.0",
+          "status": "n"
+        },
+        {
+          "version": "26.1",
+          "status": "n"
+        },
+        {
+          "version": "26.2",
+          "status": "n"
+        },
+        {
+          "version": "26.3",
+          "status": "n"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "samsung": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "20",
+          "status": "n"
+        },
+        {
+          "version": "21",
+          "status": "n"
+        },
+        {
+          "version": "22",
+          "status": "n"
+        },
+        {
+          "version": "23",
+          "status": "n"
+        },
+        {
+          "version": "24",
+          "status": "n"
+        },
+        {
+          "version": "25",
+          "status": "n"
+        },
+        {
+          "version": "26",
+          "status": "n"
+        },
+        {
+          "version": "27",
+          "status": "n"
+        },
+        {
+          "version": "28",
+          "status": "n"
+        },
+        {
+          "version": "29",
+          "status": "n"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "146",
+          "status": "n"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 77.69,
+      "total": 77.69
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Standard support includes the HTTP `Document-Policy` header and `policy` attribute on iframes.",
+    "byNum": {
+      "1": "Chromium browsers only support the HTTP header."
+    }
+  },
+  "status": "unoff",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "document-policy"
+    },
+    "supplementary": []
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "id": "wf-compression-streams",
+  "source": "webfeatures",
+  "name": "Compression streams",
+  "description": "The CompressionStream and DecompressionStream APIs compress and decompress data using the gzip or deflate formats.",
+  "category": "Other",
+  "spec": [
+    "https://compression.spec.whatwg.org/",
+    "https://compression.spec.whatwg.org/#compression-stream",
+    "https://compression.spec.whatwg.org/#dom-compressionstream-compressionstream",
+    "https://compression.spec.whatwg.org/#supported-formats",
+    "https://streams.spec.whatwg.org/#dom-generictransformstream-readable",
+    "https://streams.spec.whatwg.org/#dom-generictransformstream-writable",
+    "https://compression.spec.whatwg.org/#decompression-stream",
+    "https://compression.spec.whatwg.org/#dom-decompressionstream-decompressionstream"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/DecompressionStream/writable",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "80",
+      "versions": [
+        {
+          "version": "80",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "113",
+      "versions": [
+        {
+          "version": "113",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "80",
+      "versions": [
+        {
+          "version": "80",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "80",
+      "versions": [
+        {
+          "version": "80",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "80",
+      "versions": [
+        {
+          "version": "80",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "80",
+      "versions": [
+        {
+          "version": "80",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "80",
+      "versions": [
+        {
+          "version": "80",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "113",
+      "versions": [
+        {
+          "version": "113",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 90.99,
+      "partial": 0,
+      "total": 90.99
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.07,
+        "firefox": 1.75,
+        "safari": 1.23,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.35,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "compression-streams"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CompressionStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CompressionStream.CompressionStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CompressionStream.CompressionStream.brotli",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CompressionStream.CompressionStream.deflate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CompressionStream.CompressionStream.deflate-raw",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CompressionStream.CompressionStream.gzip",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CompressionStream.readable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CompressionStream.writable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DecompressionStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DecompressionStream.DecompressionStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DecompressionStream.DecompressionStream.brotli",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DecompressionStream.DecompressionStream.deflate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DecompressionStream.DecompressionStream.deflate-raw",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DecompressionStream.DecompressionStream.gzip",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DecompressionStream.readable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DecompressionStream.writable",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

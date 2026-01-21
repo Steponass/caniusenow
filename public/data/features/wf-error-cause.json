@@ -1,0 +1,156 @@
+{
+  "id": "wf-error-cause",
+  "source": "webfeatures",
+  "name": "Error cause",
+  "description": "The cause property of errors records the specific original cause of the error, particularly for errors that have been re-thrown.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-installerrorcause"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error/cause",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "91",
+      "versions": [
+        {
+          "version": "91",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "15",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "15",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "91",
+      "versions": [
+        {
+          "version": "91",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.49,
+      "partial": 0,
+      "total": 91.49
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.94,
+        "firefox": 1.75,
+        "safari": 1.37,
+        "edge": 4.25,
+        "opera": 0.9
+      },
+      "mobile": {
+        "ios_saf": 11.86,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "error-cause"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Error.Error.options_cause_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Error.cause",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

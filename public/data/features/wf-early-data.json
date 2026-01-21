@@ -1,0 +1,104 @@
+{
+  "id": "wf-early-data",
+  "source": "webfeatures",
+  "name": "Early data",
+  "description": "TLS 1.3 sessions may be resumed more quickly by sending so-called early data to servers before the TLS handshake has finished. Also known as zero round-trip time resumption or 0-RTT.",
+  "category": "Other",
+  "spec": [
+    "https://httpwg.org/specs/rfc8470.html",
+    "https://httpwg.org/specs/rfc8470.html#header",
+    "https://httpwg.org/specs/rfc8470.html#status"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Status/425",
+  "links": [],
+  "support": {
+    "firefox": {
+      "current": "y",
+      "firstFull": "58",
+      "versions": [
+        {
+          "version": "58",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "58",
+      "versions": [
+        {
+          "version": "58",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 2.06,
+      "partial": 0,
+      "total": 2.06
+    },
+    "byBrowser": {
+      "desktop": {
+        "firefox": 1.75
+      },
+      "mobile": {
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "early-data"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Early-Data",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.status.425",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

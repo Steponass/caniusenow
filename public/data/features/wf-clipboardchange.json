@@ -1,0 +1,127 @@
+{
+  "id": "wf-clipboardchange",
+  "source": "webfeatures",
+  "name": "clipboardchange",
+  "description": "The clipboardchange event for navigator.clipboard fires when the user modifies the clipboard's contents.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/clipboard-apis/#clipboard-event-clipboardchange",
+    "https://w3c.github.io/clipboard-apis/#clipboardchangeevent",
+    "https://w3c.github.io/clipboard-apis/#dom-clipboardchangeevent-clipboardchangeevent",
+    "https://w3c.github.io/clipboard-apis/#dom-clipboardchangeevent-changeid",
+    "https://w3c.github.io/clipboard-apis/#dom-clipboardchangeevent-types"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "144",
+      "versions": [
+        {
+          "version": "144",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "144",
+      "versions": [
+        {
+          "version": "144",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "144",
+      "versions": [
+        {
+          "version": "144",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "144",
+      "versions": [
+        {
+          "version": "144",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 44.17,
+      "partial": 0,
+      "total": 44.17
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 0.05
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "clipboardchange"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardChangeEvent.ClipboardChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardChangeEvent.changeId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardChangeEvent.types",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

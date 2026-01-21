@@ -1,0 +1,365 @@
+{
+  "id": "wf-window",
+  "source": "webfeatures",
+  "name": "Window",
+  "description": "The window global object represents a browser tab or iframe and its relationship to the document and other tabs. It's also a generic global object, under which many other APIs are located.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-window-object",
+    "https://html.spec.whatwg.org/multipage/indices.html#event-domcontentloaded",
+    "https://w3c.github.io/uievents/#event-type-blur",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onblur",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-close-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-closed-dev",
+    "https://html.spec.whatwg.org/multipage/indices.html#event-error",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onerror",
+    "https://html.spec.whatwg.org/multipage/interaction.html#dom-window-focus-dev",
+    "https://w3c.github.io/uievents/#event-type-focus",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onfocus",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-frameelement-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-frames-dev",
+    "https://drafts.csswg.org/cssom-view/#dom-window-innerheight",
+    "https://drafts.csswg.org/cssom-view/#dom-window-innerwidth",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-length-dev",
+    "https://w3c.github.io/uievents/#event-type-load",
+    "https://html.spec.whatwg.org/multipage/parsing.html#delay-the-load-event",
+    "https://drafts.csswg.org/cssom-view/#dom-window-moveby",
+    "https://drafts.csswg.org/cssom-view/#dom-window-moveto",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-name-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-open-dev",
+    "https://drafts.csswg.org/cssom-view/#the-features-argument-to-the-open()-method",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-opener-dev",
+    "https://drafts.csswg.org/cssom-view/#dom-window-outerheight",
+    "https://drafts.csswg.org/cssom-view/#dom-window-outerwidth",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-parent-dev",
+    "https://drafts.csswg.org/cssom-view/#dom-window-resizeby",
+    "https://drafts.csswg.org/cssom-view/#dom-window-resizeto",
+    "https://drafts.csswg.org/cssom-view/#eventdef-window-resize",
+    "https://drafts.csswg.org/cssom-view/#dom-window-screen",
+    "https://drafts.csswg.org/cssom-view/#dom-window-screenleft",
+    "https://drafts.csswg.org/cssom-view/#dom-window-screentop",
+    "https://drafts.csswg.org/cssom-view/#dom-window-screenx",
+    "https://drafts.csswg.org/cssom-view/#dom-window-screeny",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-self-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-stop-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-top-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-dev"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/window",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "window"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Window",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.DOMContentLoaded_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.blur_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.closed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.error_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.focus",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.focus_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.frameElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.frames",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.innerHeight",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.innerWidth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.load_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.moveBy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.moveTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.open",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.open.features_parameter_popup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.open.once_per_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.opener",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.outerHeight",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.outerWidth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.parent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.resizeBy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.resizeTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.resize_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.screen",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.screenLeft",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.screenTop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.screenX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.screenY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.self",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.stop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.top",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.window",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

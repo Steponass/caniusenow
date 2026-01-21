@@ -1,0 +1,97 @@
+{
+  "id": "wf-smooth",
+  "source": "webfeatures",
+  "name": "image-rendering: smooth",
+  "description": "The image-rendering: smooth CSS declaration scales images while retaining a gradual color blending that is useful for photos.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-images-3/#the-image-rendering",
+    "https://drafts.csswg.org/css-images/#valdef-image-rendering-smooth"
+  ],
+  "links": [],
+  "support": {
+    "firefox": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 2.05,
+      "partial": 0,
+      "total": 2.05
+    },
+    "byBrowser": {
+      "desktop": {
+        "firefox": 1.75
+      },
+      "mobile": {
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "smooth"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.image-rendering.smooth",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

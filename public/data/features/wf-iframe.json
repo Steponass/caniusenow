@@ -1,0 +1,224 @@
+{
+  "id": "wf-iframe",
+  "source": "webfeatures",
+  "name": "<iframe>",
+  "description": "The <iframe> element embeds another HTML page into the current page.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element",
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#htmliframeelement",
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#dom-iframe-contentdocument",
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#dom-iframe-contentwindow",
+    "https://html.spec.whatwg.org/multipage/embedded-content-other.html#dom-media-getsvgdocument-dev",
+    "https://html.spec.whatwg.org/multipage/embedded-content-other.html#dom-dim-height",
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#dom-iframe-name",
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#dom-iframe-src",
+    "https://html.spec.whatwg.org/multipage/embedded-content-other.html#dom-dim-width",
+    "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-name",
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-src",
+    "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/iframe",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "≤4",
+      "versions": [
+        {
+          "version": "≤4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "≤4",
+      "versions": [
+        {
+          "version": "≤4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "iframe"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLIFrameElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLIFrameElement.contentDocument",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLIFrameElement.contentWindow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLIFrameElement.getSVGDocument",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLIFrameElement.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLIFrameElement.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLIFrameElement.src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLIFrameElement.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.width",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

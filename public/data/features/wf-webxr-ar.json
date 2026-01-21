@@ -1,0 +1,136 @@
+{
+  "id": "wf-webxr-ar",
+  "source": "webfeatures",
+  "name": "Augmented reality",
+  "description": "The \"immersive-ar\" value for navigator.xr.requestSession() starts an augmented reality WebXR session that renders content aligned with the visible environment.",
+  "category": "Other",
+  "spec": [
+    "https://immersive-web.github.io/webxr-ar-module/",
+    "https://immersive-web.github.io/webxr-ar-module/#dom-xrsession-environmentblendmode",
+    "https://immersive-web.github.io/webxr-ar-module/#dom-xrsession-interactionmode",
+    "https://immersive-web.github.io/webxr-ar-module/#dom-xrview-isfirstpersonobserver"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/XRView/isFirstPersonObserver",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "86",
+      "versions": [
+        {
+          "version": "86",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "86",
+      "versions": [
+        {
+          "version": "86",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "86",
+      "versions": [
+        {
+          "version": "86",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "86",
+      "versions": [
+        {
+          "version": "86",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "86",
+      "versions": [
+        {
+          "version": "86",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "86",
+      "versions": [
+        {
+          "version": "86",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.29,
+      "partial": 0,
+      "total": 76.29
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webxr-ar"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.XRSession.environmentBlendMode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRSession.interactionMode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRView.isFirstPersonObserver",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

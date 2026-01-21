@@ -1,0 +1,477 @@
+{
+  "id": "html-media-capture",
+  "source": "caniuse",
+  "name": "HTML Media Capture",
+  "description": "Facilitates user access to a device's media capture mechanism, such as a camera, or microphone, from within a file upload control.",
+  "category": "HTML5",
+  "spec": [
+    "https://w3c.github.io/html-media-capture/",
+    "https://w3c.github.io/html-media-capture/#dom-htmlinputelement-capture",
+    "https://w3c.github.io/html-media-capture/#dfn-capture"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Attributes/capture",
+  "links": [
+    {
+      "url": "https://addpipe.com/blog/correct-syntax-html-media-capture/",
+      "title": "Correct Syntax for HTML Media Capture"
+    },
+    {
+      "url": "https://books.google.com.au/books?id=gswdarRZVUoC&pg=PA263&dq=%22file+upload+compatibility+table%22",
+      "title": "Programming the Mobile Web: File upload compatibility table"
+    },
+    {
+      "url": "https://addpipe.com/html-media-capture-demo/",
+      "title": "HTML Media Capture Test Bench"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "137",
+          "status": "n"
+        },
+        {
+          "version": "138",
+          "status": "n"
+        },
+        {
+          "version": "139",
+          "status": "n"
+        },
+        {
+          "version": "140",
+          "status": "n"
+        },
+        {
+          "version": "141",
+          "status": "n"
+        },
+        {
+          "version": "142",
+          "status": "n"
+        },
+        {
+          "version": "143",
+          "status": "n"
+        },
+        {
+          "version": "144",
+          "status": "n"
+        },
+        {
+          "version": "145",
+          "status": "n"
+        },
+        {
+          "version": "146",
+          "status": "n"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "140",
+          "status": "n"
+        },
+        {
+          "version": "141",
+          "status": "n"
+        },
+        {
+          "version": "142",
+          "status": "n"
+        },
+        {
+          "version": "143",
+          "status": "n"
+        },
+        {
+          "version": "144",
+          "status": "n"
+        },
+        {
+          "version": "145",
+          "status": "n"
+        },
+        {
+          "version": "146",
+          "status": "n"
+        },
+        {
+          "version": "147",
+          "status": "n"
+        },
+        {
+          "version": "148",
+          "status": "n"
+        },
+        {
+          "version": "149",
+          "status": "n"
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "n"
+        },
+        {
+          "version": "18.2",
+          "status": "n"
+        },
+        {
+          "version": "18.3",
+          "status": "n"
+        },
+        {
+          "version": "18.4",
+          "status": "n"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "n"
+        },
+        {
+          "version": "26.0",
+          "status": "n"
+        },
+        {
+          "version": "26.1",
+          "status": "n"
+        },
+        {
+          "version": "26.2",
+          "status": "n"
+        },
+        {
+          "version": "26.3",
+          "status": "n"
+        },
+        {
+          "version": "TP",
+          "status": "n"
+        }
+      ]
+    },
+    "edge": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "134",
+          "status": "n"
+        },
+        {
+          "version": "135",
+          "status": "n"
+        },
+        {
+          "version": "136",
+          "status": "n"
+        },
+        {
+          "version": "137",
+          "status": "n"
+        },
+        {
+          "version": "138",
+          "status": "n"
+        },
+        {
+          "version": "139",
+          "status": "n"
+        },
+        {
+          "version": "140",
+          "status": "n"
+        },
+        {
+          "version": "141",
+          "status": "n"
+        },
+        {
+          "version": "142",
+          "status": "n"
+        },
+        {
+          "version": "143",
+          "status": "n"
+        }
+      ]
+    },
+    "opera": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "116",
+          "status": "n"
+        },
+        {
+          "version": "117",
+          "status": "n"
+        },
+        {
+          "version": "118",
+          "status": "n"
+        },
+        {
+          "version": "119",
+          "status": "n"
+        },
+        {
+          "version": "120",
+          "status": "n"
+        },
+        {
+          "version": "121",
+          "status": "n"
+        },
+        {
+          "version": "122",
+          "status": "n"
+        },
+        {
+          "version": "123",
+          "status": "n"
+        },
+        {
+          "version": "124",
+          "status": "n"
+        },
+        {
+          "version": "125",
+          "status": "n"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.4",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 59.96,
+      "partial": 0.5,
+      "total": 60.46
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Does not support the capture attribute used to force capture straight from the device's camera or microphone. Also note that default video dimensions are 480x320 (4:3).",
+      "2": "Android 2.2-2.3 do not support the capture attribute",
+      "3": "Supports a \"capture\" button for any `<input type=\"file\"> field, regardless of whether the capture attribute is used."
+    }
+  },
+  "status": "rec",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "html-media-capture"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "html-media-capture",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.capture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.capture",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

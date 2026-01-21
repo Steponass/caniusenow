@@ -1,0 +1,385 @@
+{
+  "id": "wf-textarea",
+  "source": "webfeatures",
+  "name": "<textarea>",
+  "description": "The <textarea> element represents an editing control that allows users to enter multi-line, free-form, plain text.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/form-elements.html#the-textarea-element",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#htmltextareaelement",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fe-autocomplete",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-textarea-cols",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-textarea-defaultvalue",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fe-disabled",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fae-form-dev",
+    "https://html.spec.whatwg.org/multipage/forms.html#dom-lfe-labels-dev",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-textarea-maxlength",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-textarea-minlength",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fe-name",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-textarea-placeholder",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-textarea-readonly",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-textarea-required",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-textarea-rows",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-select-dev",
+    "https://html.spec.whatwg.org/multipage/indices.html#event-select",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onselect",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-selectiondirection",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-selectionend",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-selectionstart",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-setrangetext-dev",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-setselectionrange-dev",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-textarea-textlength",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-textarea-type-dev",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-textarea-value-dev",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-textarea-wrap",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-cols",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-maxlength",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-minlength",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-placeholder",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-readonly",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-required",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-rows",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-wrap"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Attributes/required",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "≤4",
+      "versions": [
+        {
+          "version": "≤4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "≤4",
+      "versions": [
+        {
+          "version": "≤4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "textarea"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.autocomplete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.cols",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.defaultValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.disabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.form",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.labels",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.maxLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.minLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.placeholder",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.readOnly",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.required",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.rows",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.select",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.select_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.selectionDirection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.selectionEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.selectionStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.setRangeText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.setSelectionRange",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.textLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTextAreaElement.wrap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.textarea",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.textarea.autocomplete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.textarea.cols",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.textarea.disabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.textarea.form",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.textarea.maxlength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.textarea.minlength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.textarea.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.textarea.placeholder",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.textarea.placeholder.line_breaks",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.textarea.readonly",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.textarea.required",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.textarea.rows",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.textarea.wrap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.textarea.wrap.hard",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

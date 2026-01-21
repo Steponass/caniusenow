@@ -1,0 +1,147 @@
+{
+  "id": "wf-page-visibility-state",
+  "source": "webfeatures",
+  "name": "Page visibility state",
+  "description": "The visibility-state performance entry and the VisibilityStateEntry API measure the timing of page visibility state changes, such as when a tab is no longer visible or the user has switched to another app.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/interaction.html#the-visibilitystateentry-interface",
+    "https://html.spec.whatwg.org/multipage/interaction.html#visibilitystateentry-duration",
+    "https://html.spec.whatwg.org/multipage/interaction.html#visibilitystateentry-entrytype",
+    "https://html.spec.whatwg.org/multipage/interaction.html#visibilitystateentry-name",
+    "https://html.spec.whatwg.org/multipage/interaction.html#visibilitystateentry-starttime"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/VisibilityStateEntry",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "115",
+      "versions": [
+        {
+          "version": "115",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "115",
+      "versions": [
+        {
+          "version": "115",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "115",
+      "versions": [
+        {
+          "version": "115",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "115",
+      "versions": [
+        {
+          "version": "115",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "115",
+      "versions": [
+        {
+          "version": "115",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "115",
+      "versions": [
+        {
+          "version": "115",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 72.42,
+      "partial": 0,
+      "total": 72.42
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 23.3,
+        "edge": 4.21,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "page-visibility-state"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.VisibilityStateEntry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VisibilityStateEntry.duration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VisibilityStateEntry.entryType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VisibilityStateEntry.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VisibilityStateEntry.startTime",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

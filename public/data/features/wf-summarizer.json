@@ -1,0 +1,200 @@
+{
+  "id": "wf-summarizer",
+  "source": "webfeatures",
+  "name": "Summarizer",
+  "description": "The Summarizer API uses an on-device language model to summarize text.",
+  "category": "Other",
+  "spec": [
+    "https://webmachinelearning.github.io/writing-assistance-apis/",
+    "https://webmachinelearning.github.io/writing-assistance-apis/#summarizer",
+    "https://webmachinelearning.github.io/writing-assistance-apis/#dom-summarizer-availability",
+    "https://webmachinelearning.github.io/writing-assistance-apis/#dom-summarizer-create",
+    "https://webmachinelearning.github.io/writing-assistance-apis/#dom-destroyablemodel-destroy",
+    "https://webmachinelearning.github.io/writing-assistance-apis/#dom-summarizer-expectedcontextlanguages",
+    "https://webmachinelearning.github.io/writing-assistance-apis/#dom-summarizer-expectedinputlanguages",
+    "https://webmachinelearning.github.io/writing-assistance-apis/#dom-summarizer-format",
+    "https://webmachinelearning.github.io/writing-assistance-apis/#dom-summarizer-inputquota",
+    "https://webmachinelearning.github.io/writing-assistance-apis/#dom-summarizer-length",
+    "https://webmachinelearning.github.io/writing-assistance-apis/#dom-summarizer-measureinputusage",
+    "https://webmachinelearning.github.io/writing-assistance-apis/#dom-summarizer-outputlanguage",
+    "https://webmachinelearning.github.io/writing-assistance-apis/#dom-summarizer-sharedcontext",
+    "https://webmachinelearning.github.io/writing-assistance-apis/#dom-summarizer-summarize",
+    "https://webmachinelearning.github.io/writing-assistance-apis/#dom-summarizer-summarizestreaming",
+    "https://webmachinelearning.github.io/writing-assistance-apis/#dom-summarizer-type",
+    "https://webmachinelearning.github.io/writing-assistance-apis/#summarizer-permissions-policy"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/summarizer",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "138",
+      "versions": [
+        {
+          "version": "138",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "138",
+      "versions": [
+        {
+          "version": "138",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "138",
+      "versions": [
+        {
+          "version": "138",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "138",
+      "versions": [
+        {
+          "version": "138",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 63.51,
+      "partial": 0,
+      "total": 63.51
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 19.39
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "summarizer"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Summarizer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Summarizer.availability_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Summarizer.create_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Summarizer.destroy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Summarizer.expectedContextLanguages",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Summarizer.expectedInputLanguages",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Summarizer.format",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Summarizer.inputQuota",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Summarizer.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Summarizer.measureInputUsage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Summarizer.outputLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Summarizer.sharedContext",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Summarizer.summarize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Summarizer.summarizeStreaming",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Summarizer.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.summarizer",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

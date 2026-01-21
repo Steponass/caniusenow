@@ -1,0 +1,137 @@
+{
+  "id": "wf-webgl-compressed-texture-etc",
+  "source": "webfeatures",
+  "name": "WEBGL_compressed_texture_etc WebGL extension",
+  "description": "The WEBGL_compressed_texture_etc extension for WebGL 1.0 and 2.0 contexts adds many ETC2 and EAC compressed texture formats to compressedTexImage2D() and compressedTexSubImage2D().",
+  "category": "Other",
+  "spec": [
+    "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc/"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WEBGL_compressed_texture_etc",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "63",
+      "versions": [
+        {
+          "version": "63",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "13.1",
+      "versions": [
+        {
+          "version": "13.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "63",
+      "versions": [
+        {
+          "version": "63",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "13.1",
+      "versions": [
+        {
+          "version": "13.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "63",
+      "versions": [
+        {
+          "version": "63",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "63",
+      "versions": [
+        {
+          "version": "63",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.81,
+      "partial": 0,
+      "total": 89.81
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.2,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.91,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webgl-compressed-texture-etc"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.WEBGL_compressed_texture_etc",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

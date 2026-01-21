@@ -1,0 +1,298 @@
+{
+  "id": "wf-keyboard-events",
+  "source": "webfeatures",
+  "name": "Keyboard events",
+  "description": "The keydown and keyup events fire for each key press (or, with modifier keys, a combination of key presses) on a keyboard.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/uievents/#events-keyboardevents",
+    "https://w3c.github.io/uievents/#event-type-keydown",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onkeydown",
+    "https://w3c.github.io/uievents/#event-type-keyup",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onkeyup",
+    "https://w3c.github.io/uievents/#interface-keyboardevent",
+    "https://w3c.github.io/uievents/#dom-keyboardevent-keyboardevent",
+    "https://w3c.github.io/uievents/#dom-keyboardevent-altkey",
+    "https://w3c.github.io/uievents/#dom-keyboardevent-code",
+    "https://w3c.github.io/uievents/#dom-keyboardevent-ctrlkey",
+    "https://w3c.github.io/uievents/#dom-keyboardevent-getmodifierstate",
+    "https://w3c.github.io/uievents/#dom-keyboardevent-iscomposing",
+    "https://w3c.github.io/uievents/#dom-keyboardevent-key",
+    "https://w3c.github.io/uievents/#dom-keyboardevent-location",
+    "https://w3c.github.io/uievents/#dom-keyboardevent-metakey",
+    "https://w3c.github.io/uievents/#dom-keyboardevent-repeat",
+    "https://w3c.github.io/uievents/#dom-keyboardevent-shiftkey"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/KeyboardEvent/shiftKey",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "6",
+      "versions": [
+        {
+          "version": "6",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "1.2",
+      "versions": [
+        {
+          "version": "1.2",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "1.2",
+      "versions": [
+        {
+          "version": "1.2",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "6",
+      "versions": [
+        {
+          "version": "6",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.41,
+      "partial": 0,
+      "total": 94.41
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.82,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "keyboard-events"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.keydown_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.keyup_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.KeyboardEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.altKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.code",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.ctrlKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.getModifierState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.getModifierState.key_parameter_alt",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.getModifierState.key_parameter_altgraph",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.getModifierState.key_parameter_capslock",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.getModifierState.key_parameter_control",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.getModifierState.key_parameter_fn",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.getModifierState.key_parameter_meta",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.getModifierState.key_parameter_numlock",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.getModifierState.key_parameter_scrolllock",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.getModifierState.key_parameter_shift",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.getModifierState.key_parameter_symbol",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.isComposing",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.key",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.key.dead_key",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.key.non_printable_keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.key.printable_key",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.location",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.metaKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.repeat",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.shiftKey",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

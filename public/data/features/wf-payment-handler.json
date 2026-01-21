@@ -1,0 +1,270 @@
+{
+  "id": "wf-payment-handler",
+  "source": "webfeatures",
+  "name": "Payment handler",
+  "description": "The payment handler API registers a web application as a payment handler and responds to payment requests in the browser's user interface, rather than redirecting users to a separate site to complete a payment.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/payment-handler/",
+    "https://w3c.github.io/payment-handler/#the-canmakepaymentevent",
+    "https://w3c.github.io/payment-handler/#dom-canmakepaymentevent-constructor",
+    "https://w3c.github.io/payment-handler/#dom-canmakepaymentevent-respondwith",
+    "https://w3c.github.io/payment-handler/#paymentmanager-interface",
+    "https://w3c.github.io/payment-handler/#dom-paymentmanager-enabledelegations",
+    "https://w3c.github.io/payment-handler/#dom-paymentmanager-userhint",
+    "https://w3c.github.io/payment-handler/#the-paymentrequestevent",
+    "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-constructor",
+    "https://w3c.github.io/payment-handler/#changepaymentmethod-method",
+    "https://w3c.github.io/payment-handler/#changeshippingaddress-method",
+    "https://w3c.github.io/payment-handler/#changeshippingoption-method",
+    "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-methoddata",
+    "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-modifiers",
+    "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-openwindow",
+    "https://w3c.github.io/payment-handler/#paymentoptions-attribute",
+    "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-paymentrequestid",
+    "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-paymentrequestorigin",
+    "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-respondwith",
+    "https://w3c.github.io/payment-handler/#shippingoptions-attribute",
+    "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-toporigin",
+    "https://w3c.github.io/payment-handler/#dom-paymentrequestevent-total",
+    "https://w3c.github.io/payment-handler/#dom-serviceworkerregistration-paymentmanager"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/paymentManager",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "70",
+      "versions": [
+        {
+          "version": "70",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "70",
+      "versions": [
+        {
+          "version": "70",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "70",
+      "versions": [
+        {
+          "version": "70",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "70",
+      "versions": [
+        {
+          "version": "70",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.43,
+      "partial": 0,
+      "total": 76.43
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.14,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "payment-handler"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CanMakePaymentEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanMakePaymentEvent.CanMakePaymentEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanMakePaymentEvent.respondWith",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentManager",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentManager.enableDelegations",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentManager.secure_context_required",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentManager.userHint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentRequestEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentRequestEvent.PaymentRequestEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentRequestEvent.changePaymentMethod",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentRequestEvent.changeShippingAddress",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentRequestEvent.changeShippingOption",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentRequestEvent.methodData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentRequestEvent.modifiers",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentRequestEvent.openWindow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentRequestEvent.paymentOptions",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentRequestEvent.paymentRequestId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentRequestEvent.paymentRequestOrigin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentRequestEvent.respondWith",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentRequestEvent.shippingOptions",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentRequestEvent.topOrigin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentRequestEvent.total",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Permissions.permission_payment-handler",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.canmakepayment_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.paymentrequest_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerRegistration.paymentManager",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

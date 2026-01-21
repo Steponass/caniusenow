@@ -1,0 +1,96 @@
+{
+  "id": "wf-case-sensitive-attributes",
+  "source": "webfeatures",
+  "name": "Case-sensitive attribute selector",
+  "description": "The s identifier in a CSS attribute selector matches attribute values case-sensitively in document languages like HTML where attribute values are case-insensitive.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/selectors-4/#attribute-case"
+  ],
+  "links": [],
+  "support": {
+    "firefox": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 2.06,
+      "partial": 0,
+      "total": 2.06
+    },
+    "byBrowser": {
+      "desktop": {
+        "firefox": 1.75
+      },
+      "mobile": {
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "case-sensitive-attributes"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.attribute.case_sensitive_modifier",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

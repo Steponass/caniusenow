@@ -1,0 +1,160 @@
+{
+  "id": "wf-sanitizer",
+  "source": "webfeatures",
+  "name": "Sanitizer API",
+  "description": "The Document.parseHTML() static method and the setHTML() method of Element and ShadowRoot objects parse and insert HTML into the DOM in a way that can prevent cross-site scripting attacks. The Sanitizer API can customize the sanitization process.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/sanitizer-api/",
+    "https://wicg.github.io/sanitizer-api/#dom-document-parsehtml",
+    "https://wicg.github.io/sanitizer-api/#dom-element-sethtml",
+    "https://wicg.github.io/sanitizer-api/#sanitizer",
+    "https://wicg.github.io/sanitizer-api/#dom-sanitizer-sanitizer",
+    "https://wicg.github.io/sanitizer-api/#dom-sanitizer-allowattribute",
+    "https://wicg.github.io/sanitizer-api/#dom-sanitizer-allowelement",
+    "https://wicg.github.io/sanitizer-api/#dom-sanitizer-get",
+    "https://wicg.github.io/sanitizer-api/#dom-sanitizer-removeattribute",
+    "https://wicg.github.io/sanitizer-api/#dom-sanitizer-removeelement",
+    "https://wicg.github.io/sanitizer-api/#dom-sanitizer-removeunsafe",
+    "https://wicg.github.io/sanitizer-api/#dom-sanitizer-replaceelementwithchildren",
+    "https://wicg.github.io/sanitizer-api/#dom-sanitizer-setcomments",
+    "https://wicg.github.io/sanitizer-api/#dom-sanitizer-setdataattributes",
+    "https://wicg.github.io/sanitizer-api/#dom-shadowroot-sethtml"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/ShadowRoot/setHTML",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 0,
+      "total": 0
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "sanitizer"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.parseHTML_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.setHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sanitizer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sanitizer.Sanitizer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sanitizer.allowAttribute",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sanitizer.allowElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sanitizer.get",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sanitizer.removeAttribute",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sanitizer.removeElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sanitizer.removeUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sanitizer.replaceElementWithChildren",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sanitizer.setComments",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Sanitizer.setDataAttributes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.setHTML",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

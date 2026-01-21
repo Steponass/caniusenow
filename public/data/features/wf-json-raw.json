@@ -1,0 +1,150 @@
+{
+  "id": "wf-json-raw",
+  "source": "webfeatures",
+  "name": "JSON source text access",
+  "description": "To serialize and parse JSON in a lossless way, JSON.stringify() handles rawJSON values and JSON.parse()'s reviver callback takes a source context parameter.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/proposal-json-parse-with-source/#sec-json-object",
+    "https://tc39.es/proposal-json-parse-with-source/#sec-json.israwjson",
+    "https://tc39.es/proposal-json-parse-with-source/#sec-internalizejsonproperty",
+    "https://tc39.es/proposal-json-parse-with-source/#sec-json.rawjson"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/rawJSON",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 74.32,
+      "partial": 0,
+      "total": 74.32
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 23.41,
+        "firefox": 1.48,
+        "edge": 4.21,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "json-raw"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.JSON.isRawJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.JSON.parse.reviver_parameter_context_argument",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.JSON.rawJSON",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

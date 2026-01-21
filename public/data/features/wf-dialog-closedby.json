@@ -1,0 +1,142 @@
+{
+  "id": "wf-dialog-closedby",
+  "source": "webfeatures",
+  "name": "<dialog closedby>",
+  "description": "The closedby HTML attribute for <dialog> sets which user actions close a dialog. For example, closedby=\"any\" allows the dialog to be closed by clicking outside of it.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby",
+    "https://html.spec.whatwg.org/multipage/interactive-elements.html#dom-dialog-closedby"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/closedBy",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 69.66,
+      "partial": 0,
+      "total": 69.66
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 19.74,
+        "firefox": 1.35,
+        "edge": 4.13
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "dialog-closedby"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLDialogElement.closedBy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.dialog.closedby",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

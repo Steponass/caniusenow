@@ -1,0 +1,126 @@
+{
+  "id": "wf-popover-hint",
+  "source": "webfeatures",
+  "name": "popover=\"hint\"",
+  "description": "The popover=\"hint\" global HTML attribute creates a popover that is subordinate to popovers with a popover=\"auto\" attribute. You can use this to create tooltips that don't dismiss auto popovers.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/popover.html#attr-popover-hint"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 68.21,
+      "partial": 0,
+      "total": 68.21
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 19.95,
+        "edge": 4.14
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "popover-hint"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.popover.hint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.global_attributes.popover.hint",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

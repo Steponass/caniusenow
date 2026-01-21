@@ -1,0 +1,151 @@
+{
+  "id": "wf-clipboard-supports",
+  "source": "webfeatures",
+  "name": "ClipboardItem.supports()",
+  "description": "The ClipboardItem.supports() static method checks if the browser supports writing data types such as \"image/svg+xml\" or other custom formats to the system clipboard.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/clipboard-apis/#dom-clipboarditem-supports"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/ClipboardItem/supports_static",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "127",
+      "versions": [
+        {
+          "version": "127",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "18.4",
+      "versions": [
+        {
+          "version": "18.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "18.4",
+      "versions": [
+        {
+          "version": "18.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "127",
+      "versions": [
+        {
+          "version": "127",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 84.08,
+      "partial": 0,
+      "total": 84.08
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 22.61,
+        "firefox": 1.48,
+        "safari": 0.65,
+        "edge": 4.19,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 9.93,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "clipboard-supports"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardItem.supports_static",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

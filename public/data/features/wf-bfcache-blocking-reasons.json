@@ -1,0 +1,188 @@
+{
+  "id": "wf-bfcache-blocking-reasons",
+  "source": "webfeatures",
+  "name": "Back/forward cache blocking reasons",
+  "description": "The notRestoredReasons property of a PerformanceNavigationTiming object explains why the current document was blocked from using the back/forward cache (also known as the bfcache) on navigation.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-notrestoredreasons-interface",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#notrestoredreasondetails",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-not-restored-reason-details-reason",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#notrestoredreasons",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-not-restored-reasons-children",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-not-restored-reasons-id",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-not-restored-reasons-name",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-not-restored-reasons-reasons",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-not-restored-reasons-src",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-not-restored-reasons-url",
+    "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-notrestoredreasons"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/notRestoredReasons",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "125",
+      "versions": [
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "125",
+      "versions": [
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "125",
+      "versions": [
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "125",
+      "versions": [
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "125",
+      "versions": [
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "125",
+      "versions": [
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 70.68,
+      "partial": 0,
+      "total": 70.68
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 22.16,
+        "edge": 4.18,
+        "opera": 0.22
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "bfcache-blocking-reasons"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.NotRestoredReasonDetails",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NotRestoredReasonDetails.reason",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NotRestoredReasonDetails.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NotRestoredReasons",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NotRestoredReasons.children",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NotRestoredReasons.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NotRestoredReasons.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NotRestoredReasons.reasons",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NotRestoredReasons.src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NotRestoredReasons.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NotRestoredReasons.url",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceNavigationTiming.notRestoredReasons",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

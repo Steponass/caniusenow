@@ -1,0 +1,741 @@
+{
+  "id": "wf-javascript",
+  "source": "webfeatures",
+  "name": "JavaScript (initial core language support)",
+  "description": "JavaScript is a programming language that runs in browsers, usually through the <script> element. JavaScript has changed over many years. This feature represents the oldest language features, such as built-in objects, statements, and operators. Also known as ECMAScript.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/#sec-intro",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-boolean-objects",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-boolean-constructor",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-boolean.prototype.tostring",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-boolean.prototype.valueof",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error-objects",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error-constructor",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error.prototype.message",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error.prototype.name",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error.prototype.tostring",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-evalerror",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-nativeerror-constructors",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-rangeerror",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-referenceerror",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-syntaxerror",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-typeerror",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-urierror",
+    "https://tc39.es/ecma262/multipage/global-object.html#sec-decodeuri-encodeduri",
+    "https://tc39.es/ecma262/multipage/global-object.html#sec-decodeuricomponent-encodeduricomponent",
+    "https://tc39.es/ecma262/multipage/global-object.html#sec-encodeuri-uri",
+    "https://tc39.es/ecma262/multipage/global-object.html#sec-encodeuricomponent-uricomponent",
+    "https://tc39.es/ecma262/multipage/global-object.html#sec-eval-x",
+    "https://tc39.es/ecma262/multipage/global-object.html#sec-isfinite-number",
+    "https://tc39.es/ecma262/multipage/global-object.html#sec-parsefloat-string",
+    "https://tc39.es/ecma262/multipage/global-object.html#sec-undefined",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#sec-boolean-literals",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#prod-HexEscapeSequence",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#sec-null-literals",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-Elision",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-ObjectLiteral",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-ArrayLiteral",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-Arguments",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#prod-FormalParameters",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-CoverParenthesizedExpressionAndArrowParameterList",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#prod-NamedImports",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#prod-NamedExports",
+    "https://tc39.es/ecma262/multipage/text-processing.html#prod-QuantifierPrefix",
+    "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#prod-annexB-InvalidBracedQuantifier",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-unicodeescape",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-addition-operator-plus",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-BitwiseANDExpression",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-bitwise-not-operator",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-BitwiseORExpression",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-BitwiseXORExpression",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-comma-operator",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-conditional-operator",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-postfix-decrement-operator",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-delete-operator",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-multiplicative-operators",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-equality-operators",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-relational-operators",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-grouping-operator",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-postfix-increment-operator",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-left-shift-operator",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-LogicalANDExpression",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-logical-not-operator",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-LogicalORExpression",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-new-operator",
+    "https://tc39.es/ecma262/multipage/overview.html#sec-null-value",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-property-accessors",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-signed-right-shift-operator",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-subtraction-operator-minus",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-this-keyword",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-typeof-operator",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-unary-minus-operator",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-unary-plus-operator",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-unsigned-right-shift-operator",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-void-operator",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-block",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-break-statement",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-continue-statement",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-debugger-statement",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-do-while-statement",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-empty-statement",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-for-statement",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-for-in-and-for-of-statements",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-if-statement",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-labelled-statements",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-return-statement",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-switch-statement",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-throw-statement",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-try-statement",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-variable-statement",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-while-statement"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/while",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "5",
+      "versions": [
+        {
+          "version": "5",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "5",
+      "versions": [
+        {
+          "version": "5",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "5",
+      "versions": [
+        {
+          "version": "5",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "5",
+      "versions": [
+        {
+          "version": "5",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "5",
+      "versions": [
+        {
+          "version": "5",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "5",
+      "versions": [
+        {
+          "version": "5",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "javascript"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Boolean",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Boolean.Boolean",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Boolean.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Boolean.valueOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Error.Error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Error.message",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Error.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Error.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.EvalError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.EvalError.EvalError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.RangeError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.RangeError.RangeError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.ReferenceError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.ReferenceError.ReferenceError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.SyntaxError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.SyntaxError.SyntaxError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypeError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypeError.TypeError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.URIError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.URIError.URIError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.decodeURI",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.decodeURIComponent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.encodeURI",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.encodeURIComponent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.eval",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.isFinite",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.parseFloat",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.undefined",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.grammar.boolean_literals",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.grammar.hexadecimal_escape_sequences",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.grammar.null_literal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.grammar.trailing_commas",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.grammar.trailing_commas.trailing_commas_in_object_literals",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.grammar.unicode_escape_sequences",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.addition",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.addition_assignment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.assignment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.bitwise_and",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.bitwise_and_assignment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.bitwise_not",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.bitwise_or",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.bitwise_or_assignment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.bitwise_xor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.bitwise_xor_assignment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.comma",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.conditional",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.decrement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.delete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.division",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.division_assignment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.equality",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.greater_than",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.greater_than_or_equal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.grouping",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.in",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.increment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.inequality",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.instanceof",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.left_shift",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.left_shift_assignment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.less_than",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.less_than_or_equal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.logical_and",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.logical_not",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.logical_or",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.multiplication",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.multiplication_assignment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.new",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.null",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.property_accessors",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.remainder",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.remainder_assignment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.right_shift",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.right_shift_assignment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.strict_equality",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.strict_inequality",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.subtraction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.subtraction_assignment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.this",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.typeof",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.unary_negation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.unary_plus",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.unsigned_right_shift",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.unsigned_right_shift_assignment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.void",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.block",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.break",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.continue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.debugger",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.do_while",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.empty",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.for",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.for_in",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.if_else",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.return",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.switch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.throw",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.try_catch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.var",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.while",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

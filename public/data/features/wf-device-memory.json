@@ -1,0 +1,135 @@
+{
+  "id": "wf-device-memory",
+  "source": "webfeatures",
+  "name": "Device memory",
+  "description": "The navigator.deviceMemory property is the approximate amount of device memory, in gigabytes.",
+  "category": "Other",
+  "spec": [
+    "https://www.w3.org/TR/device-memory/",
+    "https://www.w3.org/TR/device-memory/#sec-device-memory-js-api",
+    "https://www.w3.org/TR/device-memory/#iana-device-memory"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Sec-CH-Device-Memory",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "97",
+      "versions": [
+        {
+          "version": "97",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "97",
+      "versions": [
+        {
+          "version": "97",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "97",
+      "versions": [
+        {
+          "version": "97",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "97",
+      "versions": [
+        {
+          "version": "97",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "97",
+      "versions": [
+        {
+          "version": "97",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "97",
+      "versions": [
+        {
+          "version": "97",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.09,
+      "partial": 0,
+      "total": 76.09
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.93,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "device-memory"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.deviceMemory",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.deviceMemory",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Sec-CH-Device-Memory",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

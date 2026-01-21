@@ -1,0 +1,123 @@
+{
+  "id": "wf-webgl2-desynchronized",
+  "source": "webfeatures",
+  "name": "Desynchronized WebGL2 canvas",
+  "description": "The optional desynchronized parameter of a canvas's getContext() method permits the browser to draw a WebGL2 canvas independently of the event loop. This can reduce drawing latency.",
+  "category": "Other",
+  "spec": [
+    "https://registry.khronos.org/webgl/specs/latest/2.0/",
+    "https://registry.khronos.org/webgl/specs/latest/1.0/#WebGLContextAttributes"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.35,
+      "partial": 0,
+      "total": 76.35
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.06,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webgl2-desynchronized"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.getContext.webgl2_context.options_desynchronized_parameter",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

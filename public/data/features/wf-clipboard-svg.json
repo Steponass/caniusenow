@@ -1,0 +1,123 @@
+{
+  "id": "wf-clipboard-svg",
+  "source": "webfeatures",
+  "name": "SVG clipboard items",
+  "description": "The image/svg+xml data type (also known as the MIME type) for ClipboardItem objects represents SVG data written to or read from the clipboard.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/clipboard-apis/#optional-data-types-x",
+    "https://w3c.github.io/clipboard-apis/#optional-data-types"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "124",
+      "versions": [
+        {
+          "version": "124",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "124",
+      "versions": [
+        {
+          "version": "124",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "124",
+      "versions": [
+        {
+          "version": "124",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "124",
+      "versions": [
+        {
+          "version": "124",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "124",
+      "versions": [
+        {
+          "version": "124",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "124",
+      "versions": [
+        {
+          "version": "124",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 71.37,
+      "partial": 0,
+      "total": 71.37
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 22.3,
+        "edge": 4.18,
+        "opera": 0.78
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "clipboard-svg"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardItem.type_image_svg_xml",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

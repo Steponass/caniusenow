@@ -1,0 +1,218 @@
+{
+  "id": "wf-visual-viewport",
+  "source": "webfeatures",
+  "name": "Visual viewport API",
+  "description": "The visualViewport API provides a way to query and modify the user-visible viewport of a web page.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/cssom-view-1/#visualViewport",
+    "https://drafts.csswg.org/cssom-view/#the-visualviewport-interface",
+    "https://drafts.csswg.org/cssom-view/#dom-visualviewport-height",
+    "https://drafts.csswg.org/cssom-view/#dom-visualviewport-offsetleft",
+    "https://drafts.csswg.org/cssom-view/#dom-visualviewport-offsettop",
+    "https://drafts.csswg.org/cssom-view/#dom-visualviewport-pageleft",
+    "https://drafts.csswg.org/cssom-view/#dom-visualviewport-pagetop",
+    "https://drafts.csswg.org/cssom-view/#eventdef-window-resize",
+    "https://drafts.csswg.org/cssom-view/#dom-visualviewport-scale",
+    "https://drafts.csswg.org/cssom-view/#eventdef-document-scroll",
+    "https://drafts.csswg.org/cssom-view/#eventdef-document-scrollend",
+    "https://drafts.csswg.org/cssom-view/#dom-visualviewport-width",
+    "https://drafts.csswg.org/cssom-view/#dom-window-visualviewport"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/visualViewport",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "61",
+      "versions": [
+        {
+          "version": "61",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "91",
+      "versions": [
+        {
+          "version": "91",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "13",
+      "versions": [
+        {
+          "version": "13",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "61",
+      "versions": [
+        {
+          "version": "61",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "13",
+      "versions": [
+        {
+          "version": "13",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "61",
+      "versions": [
+        {
+          "version": "61",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "61",
+      "versions": [
+        {
+          "version": "61",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "91",
+      "versions": [
+        {
+          "version": "91",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.87,
+      "partial": 0,
+      "total": 91.87
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.2,
+        "firefox": 1.75,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.91,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "visual-viewport"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.VisualViewport",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VisualViewport.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VisualViewport.offsetLeft",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VisualViewport.offsetTop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VisualViewport.pageLeft",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VisualViewport.pageTop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VisualViewport.resize_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VisualViewport.scale",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VisualViewport.scroll_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VisualViewport.scrollend_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VisualViewport.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.visualViewport",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

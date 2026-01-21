@@ -1,0 +1,374 @@
+{
+  "id": "wf-form",
+  "source": "webfeatures",
+  "name": "<form>",
+  "description": "The <form> element contains interactive controls for submitting information.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/forms.html#the-form-element",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-formdataevent-interface",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-formdataevent-interface:dom-formdataevent-formdata-2",
+    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#htmlformcontrolscollection",
+    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#dom-htmlformcontrolscollection-nameditem-dev",
+    "https://html.spec.whatwg.org/multipage/forms.html#htmlformelement",
+    "https://html.spec.whatwg.org/multipage/forms.html#dom-form-acceptcharset",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-action",
+    "https://html.spec.whatwg.org/multipage/forms.html#dom-form-autocomplete",
+    "https://html.spec.whatwg.org/multipage/forms.html#dom-form-elements-dev",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-encoding",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-enctype",
+    "https://html.spec.whatwg.org/multipage/indices.html#event-formdata",
+    "https://html.spec.whatwg.org/multipage/forms.html#dom-form-length-dev",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-method",
+    "https://html.spec.whatwg.org/multipage/forms.html#dom-form-name",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-novalidate",
+    "https://html.spec.whatwg.org/multipage/forms.html#dom-form-rel",
+    "https://html.spec.whatwg.org/multipage/forms.html#dom-form-rellist",
+    "https://html.spec.whatwg.org/multipage/forms.html#dom-form-requestsubmit-dev",
+    "https://html.spec.whatwg.org/multipage/forms.html#dom-form-reset-dev",
+    "https://html.spec.whatwg.org/multipage/indices.html#event-reset",
+    "https://html.spec.whatwg.org/multipage/forms.html#dom-form-submit-dev",
+    "https://html.spec.whatwg.org/multipage/indices.html#event-submit",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onsubmit",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-target",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-submitevent-interface",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#submitevent",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-submitevent-interface:dom-submitevent-submitter-2",
+    "https://html.spec.whatwg.org/multipage/forms.html#attr-form-accept-charset",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-action",
+    "https://html.spec.whatwg.org/multipage/forms.html#attr-form-autocomplete",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-method",
+    "https://html.spec.whatwg.org/multipage/forms.html#attr-form-name",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-novalidate",
+    "https://html.spec.whatwg.org/multipage/forms.html#attr-form-rel",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-target"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Attributes/rel",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "3",
+      "versions": [
+        {
+          "version": "3",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "3",
+      "versions": [
+        {
+          "version": "3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "form"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.FormDataEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FormDataEvent.FormDataEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FormDataEvent.formData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormControlsCollection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormControlsCollection.namedItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.acceptCharset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.action",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.autocomplete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.elements",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.encoding",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.enctype",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.formdata_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.method",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.noValidate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.rel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.relList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.requestSubmit",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.reset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.reset_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.submit",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.submit_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLFormElement.target",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubmitEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubmitEvent.SubmitEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubmitEvent.submitter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.form",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.form.accept-charset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.form.action",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.form.autocomplete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.form.enctype",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.form.method",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.form.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.form.novalidate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.form.rel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.form.target",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

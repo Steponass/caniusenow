@@ -1,0 +1,224 @@
+{
+  "id": "wf-iterator-methods",
+  "source": "webfeatures",
+  "name": "Iterator methods",
+  "description": "The Iterator object is an abstract base for objects that implement the iterator protocol. It provides methods common to built-in iterators, such as filter(), find(), map(), and reduce(). You can also use the static method Iterator.from() to convert an existing iterable into an Iterator.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-helper-objects",
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-constructor",
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.drop",
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.every",
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.filter",
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.find",
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.flatmap",
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.foreach",
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.from",
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.map",
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.reduce",
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.some",
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.take",
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.toarray"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Iterator/toArray",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "122",
+      "versions": [
+        {
+          "version": "122",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "131",
+      "versions": [
+        {
+          "version": "131",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "18.4",
+      "versions": [
+        {
+          "version": "18.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "122",
+      "versions": [
+        {
+          "version": "122",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "122",
+      "versions": [
+        {
+          "version": "122",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "122",
+      "versions": [
+        {
+          "version": "122",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "18.4",
+      "versions": [
+        {
+          "version": "18.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "122",
+      "versions": [
+        {
+          "version": "122",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "122",
+      "versions": [
+        {
+          "version": "122",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "131",
+      "versions": [
+        {
+          "version": "131",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 84.02,
+      "partial": 0,
+      "total": 84.02
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 22.55,
+        "firefox": 1.48,
+        "safari": 0.65,
+        "edge": 4.19,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 9.93,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "iterator-methods"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Iterator.Iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Iterator.drop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Iterator.every",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Iterator.filter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Iterator.find",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Iterator.flatMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Iterator.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Iterator.from",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Iterator.map",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Iterator.reduce",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Iterator.some",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Iterator.take",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Iterator.toArray",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

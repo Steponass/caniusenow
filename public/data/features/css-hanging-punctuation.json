@@ -1,0 +1,517 @@
+{
+  "id": "css-hanging-punctuation",
+  "source": "caniuse",
+  "name": "CSS hanging-punctuation",
+  "description": "Allows some punctuation characters from start (or the end) of text elements to be placed \"outside\" of the box in order to preserve the reading flow.",
+  "category": "CSS",
+  "spec": [
+    "https://w3c.github.io/csswg-drafts/css-text-3/#hanging-punctuation-property",
+    "https://drafts.csswg.org/css-text-4/#hanging-punctuation-property",
+    "https://drafts.csswg.org/css-text/#hanging-punctuation-property",
+    "https://drafts.csswg.org/css-text/#valdef-hanging-punctuation-allow-end",
+    "https://drafts.csswg.org/css-text/#valdef-hanging-punctuation-first",
+    "https://drafts.csswg.org/css-text/#valdef-hanging-punctuation-last",
+    "https://drafts.csswg.org/css-text/#valdef-hanging-punctuation-none"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/hanging-punctuation",
+  "links": [
+    {
+      "url": "https://css-tricks.com/almanac/properties/h/hanging-punctuation/",
+      "title": "CSS tricks article"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1253615",
+      "title": "Firefox bug #1253615"
+    },
+    {
+      "url": "https://issues.chromium.org/issues/41491716",
+      "title": "Chrome bug #41491716"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "137",
+          "status": "n"
+        },
+        {
+          "version": "138",
+          "status": "n"
+        },
+        {
+          "version": "139",
+          "status": "n"
+        },
+        {
+          "version": "140",
+          "status": "n"
+        },
+        {
+          "version": "141",
+          "status": "n"
+        },
+        {
+          "version": "142",
+          "status": "n"
+        },
+        {
+          "version": "143",
+          "status": "n"
+        },
+        {
+          "version": "144",
+          "status": "n"
+        },
+        {
+          "version": "145",
+          "status": "n"
+        },
+        {
+          "version": "146",
+          "status": "n"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "140",
+          "status": "n"
+        },
+        {
+          "version": "141",
+          "status": "n"
+        },
+        {
+          "version": "142",
+          "status": "n"
+        },
+        {
+          "version": "143",
+          "status": "n"
+        },
+        {
+          "version": "144",
+          "status": "n"
+        },
+        {
+          "version": "145",
+          "status": "n"
+        },
+        {
+          "version": "146",
+          "status": "n"
+        },
+        {
+          "version": "147",
+          "status": "n"
+        },
+        {
+          "version": "148",
+          "status": "n"
+        },
+        {
+          "version": "149",
+          "status": "n"
+        }
+      ]
+    },
+    "safari": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.4",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "TP",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "edge": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "134",
+          "status": "n"
+        },
+        {
+          "version": "135",
+          "status": "n"
+        },
+        {
+          "version": "136",
+          "status": "n"
+        },
+        {
+          "version": "137",
+          "status": "n"
+        },
+        {
+          "version": "138",
+          "status": "n"
+        },
+        {
+          "version": "139",
+          "status": "n"
+        },
+        {
+          "version": "140",
+          "status": "n"
+        },
+        {
+          "version": "141",
+          "status": "n"
+        },
+        {
+          "version": "142",
+          "status": "n"
+        },
+        {
+          "version": "143",
+          "status": "n"
+        }
+      ]
+    },
+    "opera": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "116",
+          "status": "n"
+        },
+        {
+          "version": "117",
+          "status": "n"
+        },
+        {
+          "version": "118",
+          "status": "n"
+        },
+        {
+          "version": "119",
+          "status": "n"
+        },
+        {
+          "version": "120",
+          "status": "n"
+        },
+        {
+          "version": "121",
+          "status": "n"
+        },
+        {
+          "version": "122",
+          "status": "n"
+        },
+        {
+          "version": "123",
+          "status": "n"
+        },
+        {
+          "version": "124",
+          "status": "n"
+        },
+        {
+          "version": "125",
+          "status": "n"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.4",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "143",
+          "status": "n"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "20",
+          "status": "n"
+        },
+        {
+          "version": "21",
+          "status": "n"
+        },
+        {
+          "version": "22",
+          "status": "n"
+        },
+        {
+          "version": "23",
+          "status": "n"
+        },
+        {
+          "version": "24",
+          "status": "n"
+        },
+        {
+          "version": "25",
+          "status": "n"
+        },
+        {
+          "version": "26",
+          "status": "n"
+        },
+        {
+          "version": "27",
+          "status": "n"
+        },
+        {
+          "version": "28",
+          "status": "n"
+        },
+        {
+          "version": "29",
+          "status": "n"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "146",
+          "status": "n"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 13.62,
+      "total": 13.62
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Safari does not support the `force-end` keyword, though it does recognize it. ([see bug](https://bugs.webkit.org/show_bug.cgi?id=233761))."
+    }
+  },
+  "status": "cr",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-hanging-punctuation"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "hanging-punctuation",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.hanging-punctuation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.hanging-punctuation.allow-end",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.hanging-punctuation.first",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.hanging-punctuation.last",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.hanging-punctuation.none",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

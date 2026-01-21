@@ -1,0 +1,151 @@
+{
+  "id": "wf-lh",
+  "source": "webfeatures",
+  "name": "lh unit",
+  "description": "The lh CSS length unit corresponds to the requested line height, the computed value of the line-height property. Some lines may be higher than this based on their content.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-values-4/#lh",
+    "https://drafts.csswg.org/css-values/#lh"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "109",
+      "versions": [
+        {
+          "version": "109",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "120",
+      "versions": [
+        {
+          "version": "120",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "109",
+      "versions": [
+        {
+          "version": "109",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "109",
+      "versions": [
+        {
+          "version": "109",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "109",
+      "versions": [
+        {
+          "version": "109",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "109",
+      "versions": [
+        {
+          "version": "109",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "109",
+      "versions": [
+        {
+          "version": "109",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "120",
+      "versions": [
+        {
+          "version": "120",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.54,
+      "partial": 0,
+      "total": 89.54
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.01,
+        "firefox": 1.48,
+        "safari": 1.23,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.35,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "lh"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.types.length.lh",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

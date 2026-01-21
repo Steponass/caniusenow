@@ -1,0 +1,346 @@
+{
+  "id": "wf-presentation-api",
+  "source": "webfeatures",
+  "name": "Presentation API",
+  "description": "The Presentation API shows or controls content on another display, such as a network-connected TV or projector.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/presentation-api/",
+    "https://w3c.github.io/presentation-api/#dom-navigator-presentation",
+    "https://w3c.github.io/presentation-api/#interface-presentation",
+    "https://w3c.github.io/presentation-api/#dom-presentation-defaultrequest",
+    "https://w3c.github.io/presentation-api/#dom-presentation-receiver",
+    "https://w3c.github.io/presentation-api/#interface-presentationavailability",
+    "https://w3c.github.io/presentation-api/#dom-presentationavailability-onchange",
+    "https://w3c.github.io/presentation-api/#dom-presentationavailability-value",
+    "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+    "https://w3c.github.io/presentation-api/#dom-presentationconnection-binarytype",
+    "https://w3c.github.io/presentation-api/#dom-presentationconnection-close",
+    "https://w3c.github.io/presentation-api/#dom-presentationconnection-id",
+    "https://w3c.github.io/presentation-api/#dom-presentationconnection-send",
+    "https://w3c.github.io/presentation-api/#dom-presentationconnection-state",
+    "https://w3c.github.io/presentation-api/#dom-presentationconnection-terminate",
+    "https://w3c.github.io/presentation-api/#dom-presentationconnection-url",
+    "https://w3c.github.io/presentation-api/#interface-presentationconnectionavailableevent",
+    "https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableevent-constructor",
+    "https://w3c.github.io/presentation-api/#dom-presentationconnectionavailableevent-connection",
+    "https://w3c.github.io/presentation-api/#interface-presentationconnectioncloseevent",
+    "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseevent-constructor",
+    "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseevent-message",
+    "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseevent-reason",
+    "https://w3c.github.io/presentation-api/#interface-presentationconnectionlist",
+    "https://w3c.github.io/presentation-api/#dom-presentationconnectionlist-connections",
+    "https://w3c.github.io/presentation-api/#interface-presentationreceiver",
+    "https://w3c.github.io/presentation-api/#dom-presentationreceiver-connectionlist",
+    "https://w3c.github.io/presentation-api/#interface-presentationrequest",
+    "https://w3c.github.io/presentation-api/#constructing-a-presentationrequest",
+    "https://w3c.github.io/presentation-api/#dom-presentationrequest-onconnectionavailable",
+    "https://w3c.github.io/presentation-api/#getting-the-presentation-displays-availability-information",
+    "https://w3c.github.io/presentation-api/#reconnecting-to-a-presentation",
+    "https://w3c.github.io/presentation-api/#selecting-a-presentation-display",
+    "https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-presentation"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/PresentationRequest/start",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "47",
+      "versions": [
+        {
+          "version": "47",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "47",
+      "versions": [
+        {
+          "version": "47",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "47",
+      "versions": [
+        {
+          "version": "47",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "47",
+      "versions": [
+        {
+          "version": "47",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.63,
+      "partial": 0,
+      "total": 76.63
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.34,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "presentation-api"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.presentation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Presentation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Presentation.defaultRequest",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Presentation.receiver",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationAvailability",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationAvailability.change_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationAvailability.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnection.binaryType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnection.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnection.close_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnection.connect_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnection.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnection.message_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnection.send",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnection.state",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnection.terminate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnection.terminate_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnection.url",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnectionAvailableEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnectionAvailableEvent.PresentationConnectionAvailableEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnectionAvailableEvent.connection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnectionCloseEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnectionCloseEvent.PresentationConnectionCloseEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnectionCloseEvent.message",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnectionCloseEvent.reason",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnectionList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnectionList.connectionavailable_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationConnectionList.connections",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationReceiver",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationReceiver.connectionList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationRequest",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationRequest.PresentationRequest",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationRequest.connectionavailable_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationRequest.getAvailability",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationRequest.reconnect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationRequest.secure_context_required",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PresentationRequest.start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.sandbox.allow-presentation",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "id": "wf-wasm-memory64",
+  "source": "webfeatures",
+  "name": "Memory64 (WebAssembly)",
+  "description": "Instructions accept 64-bit memory indexes.",
+  "category": "Other",
+  "spec": [
+    "https://github.com/WebAssembly/memory64/blob/main/proposals/memory64/Overview.md"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 69.99,
+      "partial": 0,
+      "total": 69.99
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 19.95,
+        "firefox": 1.48,
+        "edge": 4.14
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "wasm-memory64"
+    },
+    "supplementary": []
+  }
+}

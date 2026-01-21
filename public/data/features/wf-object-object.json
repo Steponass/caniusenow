@@ -1,0 +1,362 @@
+{
+  "id": "wf-object-object",
+  "source": "webfeatures",
+  "name": "Object",
+  "description": "Objects in JavaScript are collections of key-value pairs.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object-objects",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object-constructor",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.assign",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.constructor",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.create",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.defineproperties",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.defineproperty",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.entries",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.freeze",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.fromentries",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertydescriptor",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertydescriptors",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertynames",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertysymbols",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getprototypeof",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.hasownproperty",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.is",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.isextensible",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.isfrozen",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.isprototypeof",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.issealed",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.keys",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.preventextensions",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.propertyisenumerable",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.seal",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.setprototypeof",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.tostring",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.valueof",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.values",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-object-initializer",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-OptionalExpression"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Optional_chaining",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "object-object"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.Object",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.assign",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.constructor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.create",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.defineProperties",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.defineProperty",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.freeze",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.fromEntries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.getOwnPropertyDescriptor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.getOwnPropertyDescriptors",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.getOwnPropertyNames",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.getOwnPropertySymbols",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.getPrototypeOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.hasOwnProperty",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.is",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.isExtensible",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.isFrozen",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.isPrototypeOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.isSealed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.preventExtensions",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.preventExtensions.ES2015_behavior",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.propertyIsEnumerable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.seal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.setPrototypeOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.valueOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.grammar.shorthand_object_literals",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.object_initializer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.object_initializer.computed_property_names",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.object_initializer.shorthand_method_names",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.object_initializer.shorthand_property_names",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.object_initializer.spread_properties",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.optional_chaining",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

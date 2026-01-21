@@ -1,0 +1,270 @@
+{
+  "id": "wf-symbol",
+  "source": "webfeatures",
+  "name": "Symbol",
+  "description": "A Symbol value is a unique, non-enumerable primitive value used for encapsulation or information hiding. For example, a symbol can be a key of an object that can never collide with any other key.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol-objects",
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-array-%symbol.species%",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.prototype-%symbol.toprimitive%",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol-constructor",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.prototype.description",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.for",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.hasinstance",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.isconcatspreadable",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.iterator",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.keyfor",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.match",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.matchall",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.replace",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.search",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.species",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.split",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.toprimitive",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.prototype.tostring",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.tostringtag",
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.prototype.valueof"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/valueOf",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "38",
+      "versions": [
+        {
+          "version": "38",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "36",
+      "versions": [
+        {
+          "version": "36",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "9",
+      "versions": [
+        {
+          "version": "9",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "38",
+      "versions": [
+        {
+          "version": "38",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "9",
+      "versions": [
+        {
+          "version": "9",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "38",
+      "versions": [
+        {
+          "version": "38",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "38",
+      "versions": [
+        {
+          "version": "38",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "36",
+      "versions": [
+        {
+          "version": "36",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.42,
+      "partial": 0,
+      "total": 92.42
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "symbol"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.@@species",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.@@toPrimitive",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.Symbol",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.description",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.for",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.hasInstance",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.isConcatSpreadable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.keyFor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.match",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.matchAll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.replace",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.search",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.species",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.split",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.toPrimitive",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.toStringTag",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.toStringTag.dom_objects",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Symbol.valueOf",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

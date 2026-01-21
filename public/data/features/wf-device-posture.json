@@ -1,0 +1,147 @@
+{
+  "id": "wf-device-posture",
+  "source": "webfeatures",
+  "name": "Device posture",
+  "description": "The device posture API and the device-posture CSS media feature reflect the physical posture of a device, such as whether a foldable device is folded or unfolded.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/device-posture/",
+    "https://w3c.github.io/device-posture/#dom-deviceposture",
+    "https://w3c.github.io/device-posture/#dom-deviceposture-onchange",
+    "https://w3c.github.io/device-posture/#dom-deviceposture-type",
+    "https://w3c.github.io/device-posture/#dom-navigator-deviceposture",
+    "https://w3c.github.io/device-posture/#the-device-posture-media-feature"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@media/device-posture",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "132",
+      "versions": [
+        {
+          "version": "132",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 68.3,
+      "partial": 0,
+      "total": 68.3
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 20.03,
+        "edge": 4.15
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "device-posture"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.DevicePosture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DevicePosture.change_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DevicePosture.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.devicePosture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.media.device-posture",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

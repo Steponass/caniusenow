@@ -1,0 +1,173 @@
+{
+  "id": "wf-serializable-errors",
+  "source": "webfeatures",
+  "name": "Serializable errors",
+  "description": "The DOMException, Error, EvalError, RangeError, ReferenceError, SyntaxError, TypeError, and URIError objects are serializable. You can call structuredClone() on an error object or pass it to a worker using postMessage().",
+  "category": "Other",
+  "spec": [
+    "https://webidl.spec.whatwg.org/#idl-DOMException",
+    "https://html.spec.whatwg.org/multipage/structured-data.html#serializable-objects"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Glossary/Serializable_object",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "77",
+      "versions": [
+        {
+          "version": "77",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "103",
+      "versions": [
+        {
+          "version": "103",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "77",
+      "versions": [
+        {
+          "version": "77",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "77",
+      "versions": [
+        {
+          "version": "77",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "77",
+      "versions": [
+        {
+          "version": "77",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "103",
+      "versions": [
+        {
+          "version": "103",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 78.48,
+      "partial": 0,
+      "total": 78.48
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.14,
+        "firefox": 1.75,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "serializable-errors"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMException.serializable_object",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Error.serializable_object",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.EvalError.serializable_object",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.RangeError.serializable_object",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.ReferenceError.serializable_object",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.SyntaxError.serializable_object",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypeError.serializable_object",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.URIError.serializable_object",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

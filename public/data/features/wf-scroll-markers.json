@@ -1,0 +1,153 @@
+{
+  "id": "wf-scroll-markers",
+  "source": "webfeatures",
+  "name": "Scroll markers",
+  "description": "A scroll marker scrolls a container to a scroll target. The ::scroll-marker CSS pseudo-element selects a scroll marker in a ::scroll-marker-group pseudo-element, generated before or after the scroll container. You can use them to navigate and style tables of contents, tab panels, and carousels.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-overflow-5/#scroll-markers",
+    "https://drafts.csswg.org/css-overflow-5/#scroll-marker-group-property",
+    "https://drafts.csswg.org/css-overflow-5/#valdef-scroll-marker-group-after",
+    "https://drafts.csswg.org/css-overflow-5/#valdef-scroll-marker-group-before",
+    "https://drafts.csswg.org/css-overflow-5/#valdef-scroll-marker-group-none",
+    "https://drafts.csswg.org/css-overflow-5/#scroll-marker-pseudo",
+    "https://drafts.csswg.org/css-overflow-5/#scroll-marker-group-pseudo"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Selectors/::scroll-marker-group",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "135",
+      "versions": [
+        {
+          "version": "135",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 67.84,
+      "partial": 0,
+      "total": 67.84
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 19.6,
+        "edge": 4.12
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "scroll-markers"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.scroll-marker-group",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.scroll-marker-group.after",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.scroll-marker-group.before",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.scroll-marker-group.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.scroll-marker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.scroll-marker-group",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

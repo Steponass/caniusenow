@@ -1,0 +1,137 @@
+{
+  "id": "wf-canvas-2d-desynchronized",
+  "source": "webfeatures",
+  "name": "Desynchronized 2D canvas",
+  "description": "The optional desynchronized parameter of a canvas's getContext() method permits the browser to draw a 2D canvas independently of the event loop. This can reduce drawing latency.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-desynchronized",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvasrenderingcontext2dsettings-desynchronized"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "15",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "15",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.57,
+      "partial": 0,
+      "total": 89.57
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.06,
+        "safari": 1.37,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.86,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "canvas-2d-desynchronized"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.getContext.2d_context.options_desynchronized_parameter",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "id": "wf-container-anchor-position-queries",
+  "source": "webfeatures",
+  "name": "Anchor position container queries",
+  "description": "Anchor position container queries with the @container anchored(fallback: …) at-rule apply styles to an element based on the element's anchor position.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-anchor-position-2/#anchored-container-queries",
+    "https://drafts.csswg.org/css-anchor-position-2/#descdef-container-fallback",
+    "https://drafts.csswg.org/css-anchor-position-2/#valdef-position-area-query-any",
+    "https://drafts.csswg.org/css-anchor-position-2/#valdef-container-type-anchored"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 55.5,
+      "partial": 0,
+      "total": 55.5
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 8.55,
+        "edge": 2.83
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "container-anchor-position-queries"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.container.anchor_position_queries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.container.anchor_position_queries.fallback",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.container.anchor_position_queries.fallback.any_value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.container-type.anchored",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

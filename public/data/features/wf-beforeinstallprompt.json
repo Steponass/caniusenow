@@ -1,0 +1,155 @@
+{
+  "id": "wf-beforeinstallprompt",
+  "source": "webfeatures",
+  "name": "beforeinstallprompt",
+  "description": "The beforeinstallprompt event fires when a Progressive Web App (PWA) is installable. You can cancel the event and later call event.prompt() to control when the installation prompt is shown. The appinstalled event fires when the PWA is successfully installed.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/manifest-incubations/#installation-events",
+    "https://wicg.github.io/manifest-incubations/#dom-window-onappinstalled",
+    "https://wicg.github.io/manifest-incubations/#onbeforeinstallprompt-attribute"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/beforeinstallprompt_event",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "76",
+      "versions": [
+        {
+          "version": "76",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "76",
+      "versions": [
+        {
+          "version": "76",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "76",
+      "versions": [
+        {
+          "version": "76",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "76",
+      "versions": [
+        {
+          "version": "76",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.43,
+      "partial": 0,
+      "total": 76.43
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.14,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "beforeinstallprompt"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.BeforeInstallPromptEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BeforeInstallPromptEvent.BeforeInstallPromptEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BeforeInstallPromptEvent.platforms",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BeforeInstallPromptEvent.prompt",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BeforeInstallPromptEvent.userChoice",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.appinstalled_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.beforeinstallprompt_event",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

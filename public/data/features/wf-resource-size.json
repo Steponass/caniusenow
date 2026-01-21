@@ -1,0 +1,163 @@
+{
+  "id": "wf-resource-size",
+  "source": "webfeatures",
+  "name": "Resource size",
+  "description": "The decodedBodySize, encodedBodySize, and transferSize properties of the PerformanceResourceTiming API reports the size of resources loaded.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-decodedbodysize",
+    "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-encodedbodysize",
+    "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-transfersize"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/transferSize",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "54",
+      "versions": [
+        {
+          "version": "54",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "45",
+      "versions": [
+        {
+          "version": "45",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "54",
+      "versions": [
+        {
+          "version": "54",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "54",
+      "versions": [
+        {
+          "version": "54",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "54",
+      "versions": [
+        {
+          "version": "54",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "45",
+      "versions": [
+        {
+          "version": "45",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.2,
+      "partial": 0,
+      "total": 91.2
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.26,
+        "firefox": 1.76,
+        "safari": 1.23,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.35,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "resource-size"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceResourceTiming.decodedBodySize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceResourceTiming.encodedBodySize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceResourceTiming.transferSize",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

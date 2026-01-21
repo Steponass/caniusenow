@@ -1,0 +1,151 @@
+{
+  "id": "wf-atomics-pause",
+  "source": "webfeatures",
+  "name": "Atomics.pause()",
+  "description": "The Atomics.pause() static method gives a hint to the CPU that the code calling the method is in a short-duration wait for shared memory, known as spinning or a spinlock.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/proposal-atomics-microwait/",
+    "https://tc39.es/proposal-atomics-microwait/#Atomics.pause"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Atomics/pause",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "137",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "18.4",
+      "versions": [
+        {
+          "version": "18.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "18.4",
+      "versions": [
+        {
+          "version": "18.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "137",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 80.56,
+      "partial": 0,
+      "total": 80.56
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 19.95,
+        "firefox": 1.46,
+        "safari": 0.65,
+        "edge": 4.14
+      },
+      "mobile": {
+        "ios_saf": 9.93,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "atomics-pause"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Atomics.pause",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

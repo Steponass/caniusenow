@@ -1,0 +1,657 @@
+{
+  "id": "transforms2d",
+  "source": "caniuse",
+  "name": "CSS3 2D Transforms",
+  "description": "Method of transforming an element including rotating, scaling, etc. Includes support for `transform` as well as `transform-origin` properties.",
+  "category": "CSS",
+  "spec": [
+    "https://www.w3.org/TR/css3-2d-transforms/",
+    "https://drafts.csswg.org/css-transforms-1/",
+    "https://drafts.csswg.org/css-transforms-2/#transform-functions",
+    "https://drafts.csswg.org/css-transforms/#transform-property",
+    "https://svgwg.org/svg2-draft/coords.html#TransformProperty",
+    "https://drafts.csswg.org/css-transforms-1/#transform-property:~:text=Value%3A-,none",
+    "https://drafts.csswg.org/css-transforms/#transform-origin-property",
+    "https://drafts.csswg.org/css-transforms/#valdef-transform-origin-bottom",
+    "https://drafts.csswg.org/css-transforms/#valdef-transform-origin-center",
+    "https://drafts.csswg.org/css-transforms/#valdef-transform-origin-left",
+    "https://drafts.csswg.org/css-transforms/#valdef-transform-origin-right",
+    "https://drafts.csswg.org/css-transforms/#valdef-transform-origin-top",
+    "https://drafts.csswg.org/css-values/#angles",
+    "https://drafts.csswg.org/css-values/#mixed-percentages",
+    "https://drafts.csswg.org/css-values/#position",
+    "https://drafts.csswg.org/css-transforms/#transform-functions",
+    "https://drafts.csswg.org/css-transforms/#funcdef-transform-matrix",
+    "https://drafts.csswg.org/css-transforms/#funcdef-transform-rotate",
+    "https://drafts.csswg.org/css-transforms/#funcdef-transform-scale",
+    "https://drafts.csswg.org/css-transforms/#funcdef-transform-scalex",
+    "https://drafts.csswg.org/css-transforms/#funcdef-transform-scaley",
+    "https://drafts.csswg.org/css-transforms/#funcdef-transform-skew",
+    "https://drafts.csswg.org/css-transforms/#funcdef-transform-skewx",
+    "https://drafts.csswg.org/css-transforms/#funcdef-transform-skewy",
+    "https://drafts.csswg.org/css-transforms/#funcdef-transform-translate",
+    "https://drafts.csswg.org/css-transforms/#funcdef-transform-translatex",
+    "https://drafts.csswg.org/css-transforms/#funcdef-transform-translatey"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/transform-function/translateY",
+  "links": [
+    {
+      "url": "https://www.westciv.com/tools/transforms/",
+      "title": "Live editor"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/transform",
+      "title": "MDN Web Docs - CSS transform"
+    },
+    {
+      "url": "http://www.webresourcesdepot.com/cross-browser-css-transforms-csssandpaper/",
+      "title": "Workaround script for IE"
+    },
+    {
+      "url": "https://www.useragentman.com/IETransformsTranslator/",
+      "title": "Converter for IE"
+    },
+    {
+      "url": "https://raw.github.com/phiggins42/has.js/master/detect/css.js#css-transform",
+      "title": "has.js test"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/css/properties/transform/",
+      "title": "WebPlatform Docs"
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/microsoft-edge/status/supportcsstransformsonsvg/",
+      "title": "Microsoft Edge Platform Status (SVG)"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "3.5",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "3.1",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "10.5",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "u",
+          "flags": [
+            "polyfill"
+          ]
+        },
+        {
+          "version": "7",
+          "status": "u",
+          "flags": [
+            "polyfill"
+          ]
+        },
+        {
+          "version": "8",
+          "status": "u",
+          "flags": [
+            "polyfill"
+          ]
+        },
+        {
+          "version": "9",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "10",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "11",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "3.2",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.9,
+      "partial": 0,
+      "total": 96.9
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "The scale transform can be emulated in IE < 9 using Microsoft's \"zoom\" extension, others are (not easily) possible using the MS Matrix filter",
+    "byNum": {
+      "1": "Does not support CSS transforms on SVG elements (transform attribute can be used instead)"
+    }
+  },
+  "status": "cr",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "transforms2d"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "transforms2d",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform-origin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform-origin.bottom",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform-origin.center",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform-origin.left",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform-origin.right",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform-origin.three_value_syntax",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform-origin.top",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.angle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.angle.deg",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.angle.grad",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.angle.rad",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.angle.turn",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.angle-percentage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.position",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.position.four_value_syntax",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.position.keyword_value_syntax",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.matrix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.rotate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.scale",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.scaleX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.scaleY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.skew",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.skewX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.skewY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.translate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.translateX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.translateY",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

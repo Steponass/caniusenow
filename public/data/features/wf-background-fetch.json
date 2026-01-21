@@ -1,0 +1,304 @@
+{
+  "id": "wf-background-fetch",
+  "source": "webfeatures",
+  "name": "Background fetch",
+  "description": "Background fetch downloads data in the background even when the web page is closed.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/background-fetch/",
+    "https://wicg.github.io/background-fetch/#background-fetch-event",
+    "https://wicg.github.io/background-fetch/#dom-backgroundfetchevent-backgroundfetchevent",
+    "https://wicg.github.io/background-fetch/#dom-backgroundfetchevent-registration",
+    "https://wicg.github.io/background-fetch/#background-fetch-manager",
+    "https://wicg.github.io/background-fetch/#background-fetch-manager-fetch",
+    "https://wicg.github.io/background-fetch/#background-fetch-manager-get",
+    "https://wicg.github.io/background-fetch/#background-fetch-manager-get-ids",
+    "https://wicg.github.io/background-fetch/#background-fetch-record-interface",
+    "https://wicg.github.io/background-fetch/#dom-backgroundfetchrecord-request",
+    "https://wicg.github.io/background-fetch/#dom-backgroundfetchrecord-responseready",
+    "https://wicg.github.io/background-fetch/#background-fetch-registration",
+    "https://wicg.github.io/background-fetch/#background-fetch-registration-abort",
+    "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-downloadtotal",
+    "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-downloaded",
+    "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-failurereason",
+    "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-id",
+    "https://wicg.github.io/background-fetch/#background-fetch-registration-match",
+    "https://wicg.github.io/background-fetch/#background-fetch-registration-match-all",
+    "https://wicg.github.io/background-fetch/#background-fetch-registration-events",
+    "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-recordsavailable",
+    "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-result",
+    "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-uploadtotal",
+    "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-uploaded",
+    "https://wicg.github.io/background-fetch/#background-fetch-update-ui-event",
+    "https://wicg.github.io/background-fetch/#dom-backgroundfetchupdateuievent-backgroundfetchupdateuievent",
+    "https://wicg.github.io/background-fetch/#background-fetch-update-ui-event-update-ui",
+    "https://wicg.github.io/background-fetch/#dom-serviceworkerglobalscope-onbackgroundfetchabort",
+    "https://wicg.github.io/background-fetch/#dom-serviceworkerglobalscope-onbackgroundfetchclick",
+    "https://wicg.github.io/background-fetch/#dom-serviceworkerglobalscope-onbackgroundfetchfail",
+    "https://wicg.github.io/background-fetch/#dom-serviceworkerglobalscope-onbackgroundfetchsuccess",
+    "https://wicg.github.io/background-fetch/#dom-serviceworkerregistration-backgroundfetch"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/backgroundFetch",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "74",
+      "versions": [
+        {
+          "version": "74",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "74",
+      "versions": [
+        {
+          "version": "74",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "74",
+      "versions": [
+        {
+          "version": "74",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "74",
+      "versions": [
+        {
+          "version": "74",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.43,
+      "partial": 0,
+      "total": 76.43
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.14,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "background-fetch"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchEvent.BackgroundFetchEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchEvent.registration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchManager",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchManager.fetch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchManager.get",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchManager.getIds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRecord",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRecord.request",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRecord.responseReady",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.abort",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.downloadTotal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.downloaded",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.failureReason",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.match",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.matchAll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.progress_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.recordsAvailable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.result",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.uploadTotal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.uploaded",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchUpdateUIEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchUpdateUIEvent.BackgroundFetchUpdateUIEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchUpdateUIEvent.updateUI",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.backgroundfetchabort_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.backgroundfetchclick_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.backgroundfetchfail_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.backgroundfetchsuccess_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerRegistration.backgroundFetch",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

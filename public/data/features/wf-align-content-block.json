@@ -1,0 +1,151 @@
+{
+  "id": "wf-align-content-block",
+  "source": "webfeatures",
+  "name": "align-content in block layouts",
+  "description": "The align-content property vertically aligns content in block layouts, like it does in flex or grid layouts.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-align-3/#align-justify-content",
+    "https://drafts.csswg.org/css-align/#align-justify-content"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "125",
+      "versions": [
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "17.4",
+      "versions": [
+        {
+          "version": "17.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.4",
+      "versions": [
+        {
+          "version": "17.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "125",
+      "versions": [
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 85.08,
+      "partial": 0,
+      "total": 85.08
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 22.39,
+        "firefox": 1.48,
+        "safari": 0.96,
+        "edge": 4.18,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.86,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "align-content-block"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.align-content.block_context",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

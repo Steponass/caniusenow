@@ -1,0 +1,232 @@
+{
+  "id": "wf-long-animation-frames",
+  "source": "webfeatures",
+  "name": "Long animation frames",
+  "description": "The long-animation-frame performance event type and the PerformanceLongAnimationFrameTiming API provide information about rendering updates that take longer than 50 milliseconds. Also known as LoAFs.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/long-animation-frames/",
+    "https://w3c.github.io/long-animation-frames/#sec-PerformanceLongAnimationFrameTiming",
+    "https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-blockingduration",
+    "https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-firstuieventtimestamp",
+    "https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-renderstart",
+    "https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-scripts",
+    "https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-styleandlayoutstart",
+    "https://w3c.github.io/long-animation-frames/#dom-performancelonganimationframetiming-tojson",
+    "https://w3c.github.io/long-animation-frames/#sec-PerformanceScriptTiming",
+    "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-executionstart",
+    "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-forcedstyleandlayoutduration",
+    "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-invoker",
+    "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-invokertype",
+    "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-pauseduration",
+    "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-sourcecharposition",
+    "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-sourcefunctionname",
+    "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-sourceurl",
+    "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-tojson",
+    "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-window",
+    "https://w3c.github.io/long-animation-frames/#dom-performancescripttiming-windowattribution"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/PerformanceScriptTiming/windowAttribution",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "123",
+      "versions": [
+        {
+          "version": "123",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 71.48,
+      "partial": 0,
+      "total": 71.48
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 22.39,
+        "edge": 4.18,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "long-animation-frames"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceLongAnimationFrameTiming",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceLongAnimationFrameTiming.blockingDuration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceLongAnimationFrameTiming.firstUIEventTimestamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceLongAnimationFrameTiming.renderStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceLongAnimationFrameTiming.scripts",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceLongAnimationFrameTiming.styleAndLayoutStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceLongAnimationFrameTiming.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceScriptTiming",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceScriptTiming.executionStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceScriptTiming.forcedStyleAndLayoutDuration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceScriptTiming.invoker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceScriptTiming.invokerType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceScriptTiming.pauseDuration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceScriptTiming.sourceCharPosition",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceScriptTiming.sourceFunctionName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceScriptTiming.sourceURL",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceScriptTiming.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceScriptTiming.window",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceScriptTiming.windowAttribution",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

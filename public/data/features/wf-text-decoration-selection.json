@@ -1,0 +1,122 @@
+{
+  "id": "wf-text-decoration-selection",
+  "source": "webfeatures",
+  "name": "text-decoration in ::selection",
+  "description": "The text-decoration CSS property in a ::selection rule sets the underline and other text decoration styles on the text a user has highlighted.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-pseudo-4/#highlight-styling"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 75.83,
+      "partial": 0,
+      "total": 75.83
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.67,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "text-decoration-selection"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.selection.text-decoration",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

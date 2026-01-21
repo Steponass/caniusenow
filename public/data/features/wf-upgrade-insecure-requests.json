@@ -1,0 +1,158 @@
+{
+  "id": "wf-upgrade-insecure-requests",
+  "source": "webfeatures",
+  "name": "Upgrade insecure requests",
+  "description": "The Upgrade-Insecure-Requests HTTP request header tells the server that the response should redirect to a secure (HTTPS) resource.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/webappsec-upgrade-insecure-requests/",
+    "https://w3c.github.io/webappsec-upgrade-insecure-requests/#delivery",
+    "https://w3c.github.io/webappsec-upgrade-insecure-requests/#preference"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Upgrade-Insecure-Requests",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "44",
+      "versions": [
+        {
+          "version": "44",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "48",
+      "versions": [
+        {
+          "version": "48",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "10.1",
+      "versions": [
+        {
+          "version": "10.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "44",
+      "versions": [
+        {
+          "version": "44",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10.1",
+      "versions": [
+        {
+          "version": "10.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "44",
+      "versions": [
+        {
+          "version": "44",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "44",
+      "versions": [
+        {
+          "version": "44",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "48",
+      "versions": [
+        {
+          "version": "48",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.35,
+      "partial": 0,
+      "total": 92.35
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.37,
+        "firefox": 1.76,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "upgrade-insecure-requests"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.upgrade-insecure-requests",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Upgrade-Insecure-Requests",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

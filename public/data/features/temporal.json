@@ -1,0 +1,1906 @@
+{
+  "id": "temporal",
+  "source": "caniuse",
+  "name": "Temporal",
+  "description": "A modern API for working with date and time, meant to supersede the original `Date` API.",
+  "category": "JS API",
+  "spec": [
+    "https://tc39.es/proposal-temporal/docs/",
+    "https://tc39.es/proposal-temporal/",
+    "https://tc39.es/proposal-temporal/#sec-date.prototype.totemporalinstant",
+    "https://tc39.es/proposal-temporal/#sec-temporal-objects",
+    "https://tc39.es/proposal-temporal/#sec-temporal-duration-objects",
+    "https://tc39.es/proposal-temporal/#sec-temporal-duration-constructor",
+    "https://tc39.es/proposal-temporal/#sec-temporal.duration.prototype.abs",
+    "https://tc39.es/proposal-temporal/#sec-temporal.duration.prototype.add",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.duration.prototype.blank",
+    "https://tc39.es/proposal-temporal/#sec-temporal.duration.compare",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.duration.prototype.days",
+    "https://tc39.es/proposal-temporal/#sec-temporal.duration.from",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.duration.prototype.hours",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.duration.prototype.microseconds",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.duration.prototype.milliseconds",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.duration.prototype.minutes",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.duration.prototype.months",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.duration.prototype.nanoseconds",
+    "https://tc39.es/proposal-temporal/#sec-temporal.duration.prototype.negated",
+    "https://tc39.es/proposal-temporal/#sec-temporal.duration.prototype.round",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.duration.prototype.seconds",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.duration.prototype.sign",
+    "https://tc39.es/proposal-temporal/#sec-temporal.duration.prototype.subtract",
+    "https://tc39.es/proposal-temporal/#sec-temporal.duration.prototype.tojson",
+    "https://tc39.es/proposal-temporal/#sec-temporal.duration.prototype.tolocalestring",
+    "https://tc39.es/proposal-temporal/#sec-temporal.duration.prototype.tostring",
+    "https://tc39.es/proposal-temporal/#sec-temporal.duration.prototype.total",
+    "https://tc39.es/proposal-temporal/#sec-temporal.duration.prototype.valueof",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.duration.prototype.weeks",
+    "https://tc39.es/proposal-temporal/#sec-temporal.duration.prototype.with",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.duration.prototype.years",
+    "https://tc39.es/proposal-temporal/#sec-temporal-instant-objects",
+    "https://tc39.es/proposal-temporal/#sec-temporal-instant-constructor",
+    "https://tc39.es/proposal-temporal/#sec-temporal.instant.prototype.add",
+    "https://tc39.es/proposal-temporal/#sec-temporal.instant.compare",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.instant.prototype.epochmilliseconds",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.instant.prototype.epochnanoseconds",
+    "https://tc39.es/proposal-temporal/#sec-temporal.instant.prototype.equals",
+    "https://tc39.es/proposal-temporal/#sec-temporal.instant.from",
+    "https://tc39.es/proposal-temporal/#sec-temporal.instant.fromepochmilliseconds",
+    "https://tc39.es/proposal-temporal/#sec-temporal.instant.fromepochnanoseconds",
+    "https://tc39.es/proposal-temporal/#sec-temporal.instant.prototype.round",
+    "https://tc39.es/proposal-temporal/#sec-temporal.instant.prototype.since",
+    "https://tc39.es/proposal-temporal/#sec-temporal.instant.prototype.subtract",
+    "https://tc39.es/proposal-temporal/#sec-temporal.instant.prototype.tojson",
+    "https://tc39.es/proposal-temporal/#sec-temporal.instant.prototype.tolocalestring",
+    "https://tc39.es/proposal-temporal/#sec-temporal.instant.prototype.tostring",
+    "https://tc39.es/proposal-temporal/#sec-temporal.instant.prototype.tozoneddatetimeiso",
+    "https://tc39.es/proposal-temporal/#sec-temporal.instant.prototype.until",
+    "https://tc39.es/proposal-temporal/#sec-temporal.instant.prototype.valueof",
+    "https://tc39.es/proposal-temporal/#sec-temporal-now-object",
+    "https://tc39.es/proposal-temporal/#sec-temporal.now.instant",
+    "https://tc39.es/proposal-temporal/#sec-temporal.now.plaindateiso",
+    "https://tc39.es/proposal-temporal/#sec-temporal.now.plaindatetimeiso",
+    "https://tc39.es/proposal-temporal/#sec-temporal.now.plaintimeiso",
+    "https://tc39.es/proposal-temporal/#sec-temporal.now.timezoneid",
+    "https://tc39.es/proposal-temporal/#sec-temporal.now.zoneddatetimeiso",
+    "https://tc39.es/proposal-temporal/#sec-temporal-plaindate-objects",
+    "https://tc39.es/proposal-temporal/#sec-temporal-plaindate-constructor",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.add",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindate.prototype.calendarid",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.compare",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindate.prototype.day",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindate.prototype.dayofweek",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindate.prototype.dayofyear",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindate.prototype.daysinmonth",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindate.prototype.daysinweek",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindate.prototype.daysinyear",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.equals",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindate.prototype.era",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindate.prototype.erayear",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.from",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindate.prototype.inleapyear",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindate.prototype.month",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindate.prototype.monthcode",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindate.prototype.monthsinyear",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.since",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.subtract",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.tojson",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.tolocalestring",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.toplaindatetime",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.toplainmonthday",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.toplainyearmonth",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.tostring",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.tozoneddatetime",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.until",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.valueof",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindate.prototype.weekofyear",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.with",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.withcalendar",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindate.prototype.year",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindate.prototype.yearofweek",
+    "https://tc39.es/proposal-temporal/#sec-temporal-plaindatetime-objects",
+    "https://tc39.es/proposal-temporal/#sec-temporal-plaindatetime-constructor",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.prototype.add",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.calendarid",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.compare",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.day",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.dayofweek",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.dayofyear",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.daysinmonth",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.daysinweek",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.daysinyear",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.prototype.equals",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.era",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.erayear",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.from",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.hour",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.inleapyear",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.microsecond",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.millisecond",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.minute",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.month",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.monthcode",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.monthsinyear",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.nanosecond",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.prototype.round",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.second",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.prototype.since",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.prototype.subtract",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.prototype.tojson",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.prototype.tolocalestring",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.prototype.toplaindate",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.prototype.toplaintime",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.prototype.tostring",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.prototype.tozoneddatetime",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.prototype.until",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.prototype.valueof",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.weekofyear",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.prototype.with",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.prototype.withcalendar",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.prototype.withplaintime",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.year",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.yearofweek",
+    "https://tc39.es/proposal-temporal/#sec-temporal-plainmonthday-objects",
+    "https://tc39.es/proposal-temporal/#sec-temporal-plainmonthday-constructor",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plainmonthday.prototype.calendarid",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plainmonthday.prototype.day",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainmonthday.prototype.equals",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainmonthday.from",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plainmonthday.prototype.monthcode",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainmonthday.prototype.tojson",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainmonthday.prototype.tolocalestring",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainmonthday.prototype.toplaindate",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainmonthday.prototype.tostring",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainmonthday.prototype.valueof",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainmonthday.prototype.with",
+    "https://tc39.es/proposal-temporal/#sec-temporal-plaintime-objects",
+    "https://tc39.es/proposal-temporal/#sec-properties-of-the-temporal-plaintime-constructor",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.add",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.compare",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.equals",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.from",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.hour",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.microsecond",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.millisecond",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.minute",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.nanosecond",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.round",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.second",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.since",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.subtract",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.tojson",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.tolocalestring",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.tostring",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.until",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.valueof",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.with",
+    "https://tc39.es/proposal-temporal/#sec-temporal-plainyearmonth-objects",
+    "https://tc39.es/proposal-temporal/#sec-temporal-plainyearmonth-constructor",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainyearmonth.prototype.add",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plainyearmonth.prototype.calendarid",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainyearmonth.compare",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plainyearmonth.prototype.daysinmonth",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plainyearmonth.prototype.daysinyear",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainyearmonth.prototype.equals",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plainyearmonth.prototype.era",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plainyearmonth.prototype.erayear",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainyearmonth.from",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plainyearmonth.prototype.inleapyear",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plainyearmonth.prototype.month",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plainyearmonth.prototype.monthcode",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plainyearmonth.prototype.monthsinyear",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainyearmonth.prototype.since",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainyearmonth.prototype.subtract",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainyearmonth.prototype.tojson",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainyearmonth.prototype.tolocalestring",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainyearmonth.prototype.toplaindate",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainyearmonth.prototype.tostring",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainyearmonth.prototype.until",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainyearmonth.prototype.valueof",
+    "https://tc39.es/proposal-temporal/#sec-temporal.plainyearmonth.prototype.with",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.plainyearmonth.prototype.year",
+    "https://tc39.es/proposal-temporal/#sec-temporal-zoneddatetime-objects",
+    "https://tc39.es/proposal-temporal/#sec-temporal-zoneddatetime-constructor",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.add",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.calendarid",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.compare",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.day",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.dayofweek",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.dayofyear",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.daysinmonth",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.daysinweek",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.daysinyear",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.epochmilliseconds",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.epochnanoseconds",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.equals",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.era",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.erayear",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.from",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.gettimezonetransition",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.hour",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.hoursinday",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.inleapyear",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.microsecond",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.millisecond",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.minute",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.month",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.monthcode",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.monthsinyear",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.nanosecond",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.offset",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.offsetnanoseconds",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.round",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.second",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.since",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.startofday",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.subtract",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.timezoneid",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.toinstant",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.tojson",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.tolocalestring",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.toplaindate",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.toplaindatetime",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.toplaintime",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.tostring",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.until",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.valueof",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.weekofyear",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.with",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.withcalendar",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.withplaintime",
+    "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.withtimezone",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.year",
+    "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.yearofweek"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/ZonedDateTime/yearOfWeek",
+  "links": [
+    {
+      "url": "https://maggiepint.com/2017/04/11/fixing-javascript-date-web-compatibility-and-reality/",
+      "title": "Fixing JavaScript Date"
+    },
+    {
+      "url": "https://bugs.chromium.org/p/v8/issues/detail?id=11544",
+      "title": "Chromium implementation bug"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1839673",
+      "title": "Firefox implementation bug"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=223166",
+      "title": "WebKit implementation bug"
+    },
+    {
+      "url": "https://2ality.com/2021/06/temporal-api.html",
+      "title": "Blog post: Temporal: getting started with JavaScript’s new date time API"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "144",
+      "versions": [
+        {
+          "version": "137",
+          "status": "n"
+        },
+        {
+          "version": "138",
+          "status": "n"
+        },
+        {
+          "version": "139",
+          "status": "n"
+        },
+        {
+          "version": "140",
+          "status": "n"
+        },
+        {
+          "version": "141",
+          "status": "n"
+        },
+        {
+          "version": "142",
+          "status": "n"
+        },
+        {
+          "version": "143",
+          "status": "n"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "139",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "n"
+        },
+        {
+          "version": "18.2",
+          "status": "n"
+        },
+        {
+          "version": "18.3",
+          "status": "n"
+        },
+        {
+          "version": "18.4",
+          "status": "n"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "n"
+        },
+        {
+          "version": "26.0",
+          "status": "n"
+        },
+        {
+          "version": "26.1",
+          "status": "n"
+        },
+        {
+          "version": "26.2",
+          "status": "n"
+        },
+        {
+          "version": "26.3",
+          "status": "n"
+        },
+        {
+          "version": "TP",
+          "status": "u",
+          "flags": [
+            "disabled",
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "edge": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "134",
+          "status": "n"
+        },
+        {
+          "version": "135",
+          "status": "n"
+        },
+        {
+          "version": "136",
+          "status": "n"
+        },
+        {
+          "version": "137",
+          "status": "n"
+        },
+        {
+          "version": "138",
+          "status": "n"
+        },
+        {
+          "version": "139",
+          "status": "n"
+        },
+        {
+          "version": "140",
+          "status": "n"
+        },
+        {
+          "version": "141",
+          "status": "n"
+        },
+        {
+          "version": "142",
+          "status": "n"
+        },
+        {
+          "version": "143",
+          "status": "n"
+        }
+      ]
+    },
+    "opera": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "116",
+          "status": "n"
+        },
+        {
+          "version": "117",
+          "status": "n"
+        },
+        {
+          "version": "118",
+          "status": "n"
+        },
+        {
+          "version": "119",
+          "status": "n"
+        },
+        {
+          "version": "120",
+          "status": "n"
+        },
+        {
+          "version": "121",
+          "status": "n"
+        },
+        {
+          "version": "122",
+          "status": "n"
+        },
+        {
+          "version": "123",
+          "status": "n"
+        },
+        {
+          "version": "124",
+          "status": "n"
+        },
+        {
+          "version": "125",
+          "status": "n"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "n"
+        },
+        {
+          "version": "18.1",
+          "status": "n"
+        },
+        {
+          "version": "18.2",
+          "status": "n"
+        },
+        {
+          "version": "18.3",
+          "status": "n"
+        },
+        {
+          "version": "18.4",
+          "status": "n"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "n"
+        },
+        {
+          "version": "26.0",
+          "status": "n"
+        },
+        {
+          "version": "26.1",
+          "status": "n"
+        },
+        {
+          "version": "26.2",
+          "status": "n"
+        },
+        {
+          "version": "26.3",
+          "status": "n"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "143",
+          "status": "n"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "20",
+          "status": "n"
+        },
+        {
+          "version": "21",
+          "status": "n"
+        },
+        {
+          "version": "22",
+          "status": "n"
+        },
+        {
+          "version": "23",
+          "status": "n"
+        },
+        {
+          "version": "24",
+          "status": "n"
+        },
+        {
+          "version": "25",
+          "status": "n"
+        },
+        {
+          "version": "26",
+          "status": "n"
+        },
+        {
+          "version": "27",
+          "status": "n"
+        },
+        {
+          "version": "28",
+          "status": "n"
+        },
+        {
+          "version": "29",
+          "status": "n"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 1.81,
+      "partial": 0,
+      "total": 1.81
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 0.05,
+        "firefox": 1.45
+      },
+      "mobile": {
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Supported in Firefox Nightly behind the `javascript.options.experimental.temporal` flag, enabled by default since 137",
+      "2": "Can be enabled via the `useTemporal` runtime flag"
+    }
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "temporal"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "temporal",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Date.toTemporalInstant",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.Duration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.abs",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.add",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.blank",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.compare",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.days",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.from",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.hours",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.microseconds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.milliseconds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.minutes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.months",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.nanoseconds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.negated",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.round",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.seconds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.sign",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.subtract",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.toLocaleString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.total",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.valueOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.weeks",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.with",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Duration.years",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant.Instant",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant.add",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant.compare",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant.epochMilliseconds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant.epochNanoseconds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant.equals",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant.from",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant.fromEpochMilliseconds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant.fromEpochNanoseconds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant.round",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant.since",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant.subtract",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant.toLocaleString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant.toZonedDateTimeISO",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant.until",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Instant.valueOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Now",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Now.instant",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Now.plainDateISO",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Now.plainDateTimeISO",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Now.plainTimeISO",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Now.timeZoneId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.Now.zonedDateTimeISO",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.PlainDate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.add",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.calendarId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.compare",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.day",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.dayOfWeek",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.dayOfYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.daysInMonth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.daysInWeek",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.daysInYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.equals",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.era",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.eraYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.from",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.inLeapYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.month",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.monthCode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.monthsInYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.since",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.subtract",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.toLocaleString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.toPlainDateTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.toPlainMonthDay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.toPlainYearMonth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.toZonedDateTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.until",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.valueOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.weekOfYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.with",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.withCalendar",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.year",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDate.yearOfWeek",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.PlainDateTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.add",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.calendarId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.compare",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.day",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.dayOfWeek",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.dayOfYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.daysInMonth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.daysInWeek",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.daysInYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.equals",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.era",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.eraYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.from",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.hour",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.inLeapYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.microsecond",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.millisecond",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.minute",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.month",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.monthCode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.monthsInYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.nanosecond",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.round",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.second",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.since",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.subtract",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.toLocaleString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.toPlainDate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.toPlainTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.toZonedDateTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.until",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.valueOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.weekOfYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.with",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.withCalendar",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.withPlainTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.year",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainDateTime.yearOfWeek",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainMonthDay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainMonthDay.PlainMonthDay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainMonthDay.calendarId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainMonthDay.day",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainMonthDay.equals",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainMonthDay.from",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainMonthDay.monthCode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainMonthDay.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainMonthDay.toLocaleString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainMonthDay.toPlainDate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainMonthDay.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainMonthDay.valueOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainMonthDay.with",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.PlainTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.add",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.compare",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.equals",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.from",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.hour",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.microsecond",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.millisecond",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.minute",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.nanosecond",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.round",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.second",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.since",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.subtract",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.toLocaleString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.until",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.valueOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainTime.with",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.PlainYearMonth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.add",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.calendarId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.compare",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.daysInMonth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.daysInYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.equals",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.era",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.eraYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.from",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.inLeapYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.month",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.monthCode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.monthsInYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.since",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.subtract",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.toLocaleString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.toPlainDate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.until",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.valueOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.with",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.PlainYearMonth.year",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.ZonedDateTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.add",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.calendarId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.compare",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.day",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.dayOfWeek",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.dayOfYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.daysInMonth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.daysInWeek",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.daysInYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.epochMilliseconds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.epochNanoseconds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.equals",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.era",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.eraYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.from",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.getTimeZoneTransition",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.hour",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.hoursInDay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.inLeapYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.microsecond",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.millisecond",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.minute",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.month",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.monthCode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.monthsInYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.nanosecond",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.offset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.offsetNanoseconds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.round",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.second",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.since",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.startOfDay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.subtract",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.timeZoneId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.toInstant",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.toLocaleString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.toPlainDate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.toPlainDateTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.toPlainTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.until",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.valueOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.weekOfYear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.with",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.withCalendar",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.withPlainTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.withTimeZone",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.year",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Temporal.ZonedDateTime.yearOfWeek",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

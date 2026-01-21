@@ -1,0 +1,172 @@
+{
+  "id": "wf-longtasks",
+  "source": "webfeatures",
+  "name": "Long tasks",
+  "description": "The longtask performance event type and the PerformanceLongTaskTiming API provides information about tasks that occupy the UI thread for 50 milliseconds or more, a metric for input latency, delayed animations, and other sources of \"jank.\"",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/longtasks/",
+    "https://w3c.github.io/longtasks/#sec-PerformanceLongTaskTiming",
+    "https://w3c.github.io/longtasks/#dom-performancelongtasktiming-attribution",
+    "https://w3c.github.io/longtasks/#dom-performancelongtasktiming-tojson",
+    "https://w3c.github.io/longtasks/#sec-TaskAttributionTiming",
+    "https://w3c.github.io/longtasks/#dom-taskattributiontiming-containerid",
+    "https://w3c.github.io/longtasks/#dom-taskattributiontiming-containername",
+    "https://w3c.github.io/longtasks/#dom-taskattributiontiming-containersrc",
+    "https://w3c.github.io/longtasks/#dom-taskattributiontiming-containertype",
+    "https://w3c.github.io/longtasks/#dom-taskattributiontiming-tojson"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/TaskAttributionTiming/toJSON",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "58",
+      "versions": [
+        {
+          "version": "58",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "58",
+      "versions": [
+        {
+          "version": "58",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "58",
+      "versions": [
+        {
+          "version": "58",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "58",
+      "versions": [
+        {
+          "version": "58",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.51,
+      "partial": 0,
+      "total": 76.51
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.23,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "longtasks"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceLongTaskTiming",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceLongTaskTiming.attribution",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceLongTaskTiming.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskAttributionTiming",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskAttributionTiming.containerId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskAttributionTiming.containerName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskAttributionTiming.containerSrc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskAttributionTiming.containerType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskAttributionTiming.toJSON",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

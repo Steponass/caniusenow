@@ -1,0 +1,3945 @@
+{
+  "id": "svg",
+  "source": "caniuse",
+  "name": "SVG (basic support)",
+  "description": "Method of displaying basic Vector Graphics features using the embed or object elements. Refers to the SVG 1.1 spec.",
+  "category": "SVG",
+  "spec": [
+    "https://www.w3.org/TR/SVG/",
+    "https://svgwg.org/svg2-draft/",
+    "https://svgwg.org/svg2-draft/linking.html#InterfaceSVGAElement",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGURIReference__href",
+    "https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__hreflang",
+    "https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__referrerPolicy",
+    "https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__rel",
+    "https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__relList",
+    "https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__target",
+    "https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__type",
+    "https://svgwg.org/svg2-draft/types.html#InterfaceSVGAngle",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__convertToSpecifiedUnits",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__newValueSpecifiedUnits",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__unitType",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__value",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__valueAsString",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__valueInSpecifiedUnits",
+    "https://svgwg.org/svg2-draft/shapes.html#InterfaceSVGCircleElement",
+    "https://svgwg.org/svg2-draft/shapes.html#__svg__SVGCircleElement__cx",
+    "https://svgwg.org/svg2-draft/shapes.html#__svg__SVGCircleElement__cy",
+    "https://svgwg.org/svg2-draft/shapes.html#__svg__SVGCircleElement__r",
+    "https://drafts.csswg.org/filter-effects/#InterfaceSVGComponentTransferFunctionElement",
+    "https://drafts.csswg.org/filter-effects/#dom-svgcomponenttransferfunctionelement-amplitude",
+    "https://drafts.csswg.org/filter-effects/#dom-svgcomponenttransferfunctionelement-exponent",
+    "https://drafts.csswg.org/filter-effects/#dom-svgcomponenttransferfunctionelement-intercept",
+    "https://drafts.csswg.org/filter-effects/#dom-svgcomponenttransferfunctionelement-offset",
+    "https://drafts.csswg.org/filter-effects/#dom-svgcomponenttransferfunctionelement-slope",
+    "https://drafts.csswg.org/filter-effects/#dom-svgcomponenttransferfunctionelement-tablevalues",
+    "https://drafts.csswg.org/filter-effects/#dom-svgcomponenttransferfunctionelement-type",
+    "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGDefsElement",
+    "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGDescElement",
+    "https://svgwg.org/svg2-draft/types.html#InterfaceSVGElement",
+    "https://drafts.css-houdini.org/css-typed-om/#dom-elementcssinlinestyle-attributestylemap",
+    "https://html.spec.whatwg.org/multipage/interaction.html#dom-blur-dev",
+    "https://svgwg.org/svg2-draft/interact.html#ErrorEvent",
+    "https://html.spec.whatwg.org/multipage/interaction.html#dom-focus-dev",
+    "https://svgwg.org/svg2-draft/interact.html#LoadEvent",
+    "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#dom-noncedelement-nonce",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGElement__ownerSVGElement",
+    "https://drafts.csswg.org/cssom/#dom-elementcssinlinestyle-style",
+    "https://html.spec.whatwg.org/multipage/interaction.html#dom-tabindex",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGElement__viewportElement",
+    "https://svgwg.org/svg2-draft/shapes.html#InterfaceSVGEllipseElement",
+    "https://svgwg.org/svg2-draft/shapes.html#__svg__SVGEllipseElement__cx",
+    "https://svgwg.org/svg2-draft/shapes.html#__svg__SVGEllipseElement__cy",
+    "https://svgwg.org/svg2-draft/shapes.html#__svg__SVGEllipseElement__rx",
+    "https://svgwg.org/svg2-draft/shapes.html#__svg__SVGEllipseElement__ry",
+    "https://svgwg.org/svg2-draft/embedded.html#InterfaceSVGForeignObjectElement",
+    "https://svgwg.org/svg2-draft/embedded.html#__svg__SVGForeignObjectElement__height",
+    "https://svgwg.org/svg2-draft/embedded.html#__svg__SVGForeignObjectElement__width",
+    "https://svgwg.org/svg2-draft/embedded.html#__svg__SVGForeignObjectElement__x",
+    "https://svgwg.org/svg2-draft/embedded.html#__svg__SVGForeignObjectElement__y",
+    "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGGElement",
+    "https://svgwg.org/svg2-draft/types.html#InterfaceSVGGeometryElement",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGGeometryElement__getPointAtLength",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGGeometryElement__getTotalLength",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGGeometryElement__isPointInFill",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGGeometryElement__isPointInStroke",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGGeometryElement__pathLength",
+    "https://svgwg.org/svg2-draft/pservers.html#InterfaceSVGGradientElement",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGGradientElement__gradientTransform",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGGradientElement__gradientUnits",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGGradientElement__spreadMethod",
+    "https://svgwg.org/svg2-draft/types.html#InterfaceSVGGraphicsElement",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGGraphicsElement__getBBox",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGGraphicsElement__getCTM",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGGraphicsElement__getScreenCTM",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGTests__requiredExtensions",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGTests__systemLanguage",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGGraphicsElement__transform",
+    "https://svgwg.org/svg2-draft/embedded.html#InterfaceSVGImageElement",
+    "https://svgwg.org/svg2-draft/embedded.html#__svg__SVGImageElement__crossOrigin",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-decode-dev",
+    "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-decoding",
+    "https://svgwg.org/svg2-draft/embedded.html#__svg__SVGImageElement__height",
+    "https://svgwg.org/svg2-draft/coords.html#PreserveAspectRatioAttribute",
+    "https://svgwg.org/svg2-draft/embedded.html#__svg__SVGImageElement__width",
+    "https://svgwg.org/svg2-draft/embedded.html#__svg__SVGImageElement__x",
+    "https://svgwg.org/svg2-draft/embedded.html#__svg__SVGImageElement__y",
+    "https://svgwg.org/svg2-draft/types.html#InterfaceSVGLength",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGLength__convertToSpecifiedUnits",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGLength__newValueSpecifiedUnits",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGLength__unitType",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGLength__value",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGLength__valueAsString",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGLength__valueInSpecifiedUnits",
+    "https://svgwg.org/svg2-draft/types.html#InterfaceSVGLengthList",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGNameList__appendItem",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGNameList__clear",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGNameList__getItem",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGNameList__initialize",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGNameList__insertItemBefore",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGNameList__length",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGNameList__numberOfItems",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGNameList__removeItem",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGNameList__replaceItem",
+    "https://svgwg.org/svg2-draft/shapes.html#InterfaceSVGLineElement",
+    "https://svgwg.org/svg2-draft/shapes.html#__svg__SVGLineElement__x1",
+    "https://svgwg.org/svg2-draft/shapes.html#__svg__SVGLineElement__x2",
+    "https://svgwg.org/svg2-draft/shapes.html#__svg__SVGLineElement__y1",
+    "https://svgwg.org/svg2-draft/shapes.html#__svg__SVGLineElement__y2",
+    "https://svgwg.org/svg2-draft/pservers.html#InterfaceSVGLinearGradientElement",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGLinearGradientElement__x1",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGLinearGradientElement__x2",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGLinearGradientElement__y1",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGLinearGradientElement__y2",
+    "https://svgwg.org/specs/animations/#InterfaceSVGMPathElement",
+    "https://svgwg.org/svg2-draft/painting.html#InterfaceSVGMarkerElement",
+    "https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__markerHeight",
+    "https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__markerUnits",
+    "https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__markerWidth",
+    "https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__orient",
+    "https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__orientAngle",
+    "https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__orientType",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGFitToViewBox__preserveAspectRatio",
+    "https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__refX",
+    "https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__refY",
+    "https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__setOrientToAngle",
+    "https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__setOrientToAuto",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGFitToViewBox__viewBox",
+    "https://drafts.csswg.org/css-masking/#InterfaceSVGMaskElement",
+    "https://drafts.csswg.org/css-masking/#dom-svgmaskelement-height",
+    "https://drafts.csswg.org/css-masking/#dom-svgmaskelement-maskcontentunits",
+    "https://drafts.csswg.org/css-masking/#dom-svgmaskelement-maskunits",
+    "https://drafts.csswg.org/css-masking/#dom-svgmaskelement-width",
+    "https://drafts.csswg.org/css-masking/#dom-svgmaskelement-x",
+    "https://drafts.csswg.org/css-masking/#dom-svgmaskelement-y",
+    "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGMetadataElement",
+    "https://svgwg.org/svg2-draft/types.html#InterfaceSVGNumber",
+    "https://svgwg.org/svg2-draft/types.html#__svg__SVGNumber__value",
+    "https://svgwg.org/svg2-draft/types.html#InterfaceSVGNumberList",
+    "https://svgwg.org/svg2-draft/paths.html#InterfaceSVGPathElement",
+    "https://svgwg.org/svg2-draft/pservers.html#InterfaceSVGPatternElement",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGPatternElement__height",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGPatternElement__patternContentUnits",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGPatternElement__patternTransform",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGPatternElement__patternUnits",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGPatternElement__width",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGPatternElement__x",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGPatternElement__y",
+    "https://svgwg.org/svg2-draft/shapes.html#InterfaceSVGPointList",
+    "https://svgwg.org/svg2-draft/shapes.html#InterfaceSVGPolygonElement",
+    "https://svgwg.org/svg2-draft/shapes.html#__svg__SVGAnimatedPoints__points",
+    "https://svgwg.org/svg2-draft/shapes.html#InterfaceSVGPolylineElement",
+    "https://svgwg.org/svg2-draft/coords.html#InterfaceSVGPreserveAspectRatio",
+    "https://svgwg.org/svg2-draft/coords.html#__svg__SVGPreserveAspectRatio__align",
+    "https://svgwg.org/svg2-draft/coords.html#__svg__SVGPreserveAspectRatio__meetOrSlice",
+    "https://svgwg.org/svg2-draft/pservers.html#InterfaceSVGRadialGradientElement",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGRadialGradientElement__cx",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGRadialGradientElement__cy",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGRadialGradientElement__fr",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGRadialGradientElement__fx",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGRadialGradientElement__fy",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGRadialGradientElement__r",
+    "https://drafts.csswg.org/geometry/#DOMRect",
+    "https://svgwg.org/svg2-draft/shapes.html#InterfaceSVGRectElement",
+    "https://svgwg.org/svg2-draft/shapes.html#__svg__SVGRectElement__height",
+    "https://svgwg.org/svg2-draft/shapes.html#__svg__SVGRectElement__rx",
+    "https://svgwg.org/svg2-draft/shapes.html#__svg__SVGRectElement__ry",
+    "https://svgwg.org/svg2-draft/shapes.html#__svg__SVGRectElement__width",
+    "https://svgwg.org/svg2-draft/shapes.html#__svg__SVGRectElement__x",
+    "https://svgwg.org/svg2-draft/shapes.html#__svg__SVGRectElement__y",
+    "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGSVGElement",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__checkEnclosure",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__checkIntersection",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__createSVGAngle",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__createSVGLength",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__createSVGMatrix",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__createSVGNumber",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__createSVGPoint",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__createSVGRect",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__createSVGTransform",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__createSVGTransformFromMatrix",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__currentScale",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__currentTranslate",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__deselectAll",
+    "https://svgwg.org/specs/animations/#__svg__SVGSVGElement__getCurrentTime",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__getElementById",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__getEnclosureList",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__getIntersectionList",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__height",
+    "https://svgwg.org/specs/animations/#__svg__SVGSVGElement__setCurrentTime",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__width",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__x",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__y",
+    "https://svgwg.org/svg2-draft/interact.html#InterfaceSVGScriptElement",
+    "https://svgwg.org/svg2-draft/interact.html#__svg__SVGScriptElement__crossOrigin",
+    "https://svgwg.org/svg2-draft/interact.html#__svg__SVGScriptElement__type",
+    "https://svgwg.org/specs/animations/#InterfaceSVGSetElement",
+    "https://svgwg.org/svg2-draft/pservers.html#InterfaceSVGStopElement",
+    "https://svgwg.org/svg2-draft/pservers.html#__svg__SVGStopElement__offset",
+    "https://svgwg.org/svg2-draft/types.html#InterfaceSVGStringList",
+    "https://svgwg.org/svg2-draft/styling.html#InterfaceSVGStyleElement",
+    "https://svgwg.org/svg2-draft/styling.html#__svg__SVGStyleElement__disabled",
+    "https://svgwg.org/svg2-draft/styling.html#__svg__SVGStyleElement__media",
+    "https://drafts.csswg.org/cssom/#dom-linkstyle-sheet",
+    "https://svgwg.org/svg2-draft/styling.html#__svg__SVGStyleElement__title",
+    "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGSwitchElement",
+    "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGSymbolElement",
+    "https://svgwg.org/svg2-draft/text.html#InterfaceSVGTSpanElement",
+    "https://svgwg.org/svg2-draft/text.html#InterfaceSVGTextContentElement",
+    "https://svgwg.org/svg2-draft/text.html#__svg__SVGTextContentElement__getCharNumAtPosition",
+    "https://svgwg.org/svg2-draft/text.html#__svg__SVGTextContentElement__getComputedTextLength",
+    "https://svgwg.org/svg2-draft/text.html#__svg__SVGTextContentElement__getEndPositionOfChar",
+    "https://svgwg.org/svg2-draft/text.html#__svg__SVGTextContentElement__getExtentOfChar",
+    "https://svgwg.org/svg2-draft/text.html#__svg__SVGTextContentElement__getNumberOfChars",
+    "https://svgwg.org/svg2-draft/text.html#__svg__SVGTextContentElement__getRotationOfChar",
+    "https://svgwg.org/svg2-draft/text.html#__svg__SVGTextContentElement__getStartPositionOfChar",
+    "https://svgwg.org/svg2-draft/text.html#__svg__SVGTextContentElement__getSubStringLength",
+    "https://svgwg.org/svg2-draft/text.html#__svg__SVGTextContentElement__lengthAdjust",
+    "https://svgwg.org/svg2-draft/text.html#__svg__SVGTextContentElement__textLength",
+    "https://svgwg.org/svg2-draft/text.html#InterfaceSVGTextElement",
+    "https://svgwg.org/svg2-draft/text.html#InterfaceSVGTextPathElement",
+    "https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPathElement__method",
+    "https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPathElement__spacing",
+    "https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPathElement__startOffset",
+    "https://svgwg.org/svg2-draft/text.html#InterfaceSVGTextPositioningElement",
+    "https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPositioningElement__dx",
+    "https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPositioningElement__dy",
+    "https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPositioningElement__rotate",
+    "https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPositioningElement__x",
+    "https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPositioningElement__y",
+    "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGTitleElement",
+    "https://svgwg.org/svg2-draft/coords.html#InterfaceSVGTransform",
+    "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__angle",
+    "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__matrix",
+    "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__setMatrix",
+    "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__setRotate",
+    "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__setScale",
+    "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__setSkewX",
+    "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__setSkewY",
+    "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__setTranslate",
+    "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__type",
+    "https://svgwg.org/svg2-draft/coords.html#InterfaceSVGTransformList",
+    "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransformList__consolidate",
+    "https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransformList__createSVGTransformFromMatrix",
+    "https://svgwg.org/svg2-draft/types.html#InterfaceSVGUnitTypes",
+    "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGUseElement",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGUseElement__height",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGUseElement__width",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGUseElement__x",
+    "https://svgwg.org/svg2-draft/struct.html#__svg__SVGUseElement__y",
+    "https://svgwg.org/svg2-draft/linking.html#InterfaceSVGViewElement",
+    "https://drafts.csswg.org/css-masking/#the-clip-rule",
+    "https://drafts.csswg.org/css-masking-1/#valdef-clip-rule-evenodd",
+    "https://drafts.csswg.org/css-masking-1/#valdef-clip-rule-nonzero",
+    "https://svgwg.org/svg2-draft/painting.html#ColorInterpolationProperty",
+    "https://svgwg.org/svg2-draft/painting.html#ColorInterpolationProperty:~:text=auto,-%7C%20sRGB",
+    "https://svgwg.org/svg2-draft/painting.html#ColorInterpolationProperty:~:text=sRGB",
+    "https://svgwg.org/svg2-draft/geometry.html#CX",
+    "https://svgwg.org/svg2-draft/geometry.html#CY",
+    "https://svgwg.org/svg2-draft/paths.html#TheDProperty",
+    "https://svgwg.org/svg2-draft/painting.html#FillProperty",
+    "https://svgwg.org/svg2-draft/painting.html#SpecifyingPaint:~:text=none",
+    "https://drafts.csswg.org/fill-stroke-3/#fill-rule",
+    "https://drafts.csswg.org/fill-stroke-3/#valdef-fill-rule-evenodd",
+    "https://drafts.csswg.org/fill-stroke-3/#valdef-fill-rule-nonzero",
+    "https://svgwg.org/svg2-draft/painting.html#MarkerShorthand",
+    "https://svgwg.org/svg2-draft/painting.html#MarkerProperty:~:text=marker-,Value",
+    "https://svgwg.org/svg2-draft/painting.html#MarkerEndProperty",
+    "https://svgwg.org/svg2-draft/painting.html#MarkerEndProperty:~:text=none,-%7C%20%3Cmarker",
+    "https://svgwg.org/svg2-draft/painting.html#MarkerMidProperty",
+    "https://svgwg.org/svg2-draft/painting.html#MarkerMidProperty:~:text=none,-%7C%20%3Cmarker",
+    "https://svgwg.org/svg2-draft/painting.html#MarkerStartProperty",
+    "https://svgwg.org/svg2-draft/painting.html#MarkerStartProperty:~:text=none,-%7C%20%3Cmarker",
+    "https://svgwg.org/svg2-draft/geometry.html#R",
+    "https://svgwg.org/svg2-draft/geometry.html#RX",
+    "https://svgwg.org/svg2-draft/geometry.html#RY",
+    "https://svgwg.org/svg2-draft/painting.html#ShapeRendering",
+    "https://svgwg.org/svg2-draft/painting.html#ShapeRenderingProperty:~:text=auto,-%7C%20optimizeSpeed",
+    "https://svgwg.org/svg2-draft/pservers.html#StopColorProperty",
+    "https://svgwg.org/svg2-draft/pservers.html#StopOpacityProperty",
+    "https://svgwg.org/svg2-draft/painting.html#StrokeProperty",
+    "https://svgwg.org/svg2-draft/painting.html#SpecifyingPaint:~:text=none,-No",
+    "https://drafts.csswg.org/fill-stroke-3/#stroke-color",
+    "https://drafts.csswg.org/fill-stroke-3/#stroke-dasharray",
+    "https://drafts.csswg.org/fill-stroke-3/#valdef-stroke-dasharray-none",
+    "https://drafts.csswg.org/fill-stroke-3/#stroke-dashoffset",
+    "https://drafts.csswg.org/fill-stroke-3/#stroke-linecap",
+    "https://drafts.csswg.org/fill-stroke-3/#valdef-stroke-linecap-butt",
+    "https://drafts.csswg.org/fill-stroke-3/#valdef-stroke-linecap-round",
+    "https://drafts.csswg.org/fill-stroke-3/#valdef-stroke-linecap-square",
+    "https://drafts.csswg.org/fill-stroke-3/#stroke-linejoin",
+    "https://drafts.csswg.org/fill-stroke-3/#valdef-stroke-linejoin-bevel",
+    "https://drafts.csswg.org/fill-stroke-3/#valdef-stroke-linejoin-miter",
+    "https://drafts.csswg.org/fill-stroke-3/#valdef-stroke-linejoin-round",
+    "https://drafts.csswg.org/fill-stroke-3/#stroke-miterlimit",
+    "https://drafts.csswg.org/fill-stroke-3/#stroke-width",
+    "https://svgwg.org/svg2-draft/text.html#TextAnchorProperty",
+    "https://svgwg.org/svg2-draft/text.html#TextAnchorProperty:~:text=end,-The",
+    "https://svgwg.org/svg2-draft/text.html#TextAnchorProperty:~:text=middle,-The",
+    "https://svgwg.org/svg2-draft/text.html#TextAnchorProperty:~:text=start,-The",
+    "https://svgwg.org/svg2-draft/painting.html#TextRenderingProperty",
+    "https://svgwg.org/svg2-draft/coords.html#VectorEffectProperty",
+    "https://svgwg.org/svg2-draft/geometry.html#X",
+    "https://svgwg.org/svg2-draft/geometry.html#Y",
+    "https://svgwg.org/svg2-draft/linking.html#AElement",
+    "https://svgwg.org/svg2-draft/linking.html#AElementHrefAttribute",
+    "https://svgwg.org/svg2-draft/linking.html#AElementHreflangAttribute",
+    "https://svgwg.org/svg2-draft/linking.html#AElementReferrerpolicyAttribute",
+    "https://svgwg.org/svg2-draft/linking.html#AElementRelAttribute",
+    "https://svgwg.org/svg2-draft/linking.html#AElementTargetAttribute",
+    "https://svgwg.org/svg2-draft/linking.html#AElementTypeAttribute",
+    "https://svgwg.org/svg2-draft/shapes.html#CircleElement",
+    "https://svgwg.org/svg2-draft/painting.html#SpecifyingFillPaint",
+    "https://svgwg.org/svg2-draft/struct.html#Head",
+    "https://svgwg.org/svg2-draft/struct.html#DescriptionAndTitleElements",
+    "https://svgwg.org/svg2-draft/shapes.html#EllipseElement",
+    "https://svgwg.org/svg2-draft/embedded.html#ForeignObjectElement",
+    "https://svgwg.org/svg2-draft/geometry.html#Sizing",
+    "https://svgwg.org/svg2-draft/geometry.html#XProperty",
+    "https://svgwg.org/svg2-draft/geometry.html#YProperty",
+    "https://svgwg.org/svg2-draft/struct.html#GElement",
+    "https://svgwg.org/svg2-draft/embedded.html#ImageElement",
+    "https://svgwg.org/svg2-draft/embedded.html#ImageElementCrossoriginAttribute",
+    "https://svgwg.org/svg2-draft/embedded.html#ImageElementHrefAttribute",
+    "https://svgwg.org/svg2-draft/shapes.html#LineElement",
+    "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElement",
+    "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementGradientTransformAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementGradientUnitsAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementHrefAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementSpreadMethodAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementX1Attribute",
+    "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementX2Attribute",
+    "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementY1Attribute",
+    "https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementY2Attribute",
+    "https://svgwg.org/svg2-draft/painting.html#MarkerElement",
+    "https://svgwg.org/svg2-draft/painting.html#MarkerHeightAttribute",
+    "https://svgwg.org/svg2-draft/painting.html#MarkerUnitsAttribute",
+    "https://svgwg.org/svg2-draft/painting.html#MarkerWidthAttribute",
+    "https://svgwg.org/svg2-draft/painting.html#OrientAttribute",
+    "https://drafts.csswg.org/css-masking/#MaskElement",
+    "https://drafts.csswg.org/css-masking/#element-attrdef-mask-maskcontentunits",
+    "https://drafts.csswg.org/css-masking/#element-attrdef-mask-maskunits",
+    "https://svgwg.org/svg2-draft/struct.html#MetadataElement",
+    "https://svgwg.org/specs/animations/#MPathElement",
+    "https://svgwg.org/specs/animations/#MPathElementHrefAttribute",
+    "https://svgwg.org/svg2-draft/paths.html#PathElement",
+    "https://svgwg.org/svg2-draft/paths.html#DProperty",
+    "https://www.w3.org/TR/SVG11/fonts.html#GlyphElementDAttribute",
+    "https://www.w3.org/TR/SVG11/paths.html#DAttribute",
+    "https://drafts.csswg.org/css-shapes/#funcdef-basic-shape-path",
+    "https://svgwg.org/svg2-draft/pservers.html#PatternElement",
+    "https://svgwg.org/svg2-draft/pservers.html#PatternElementHeightAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#PatternElementHrefAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#PatternElementPatternContentUnitsAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#PatternElementPatternTransformAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#PatternElementPatternUnitsAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#PatternElementWidthAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#PatternElementXAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#PatternElementYAttribute",
+    "https://svgwg.org/svg2-draft/shapes.html#PolygonElement",
+    "https://svgwg.org/svg2-draft/shapes.html#PolylineElement",
+    "https://svgwg.org/svg2-draft/pservers.html#RadialGradientElement",
+    "https://svgwg.org/svg2-draft/pservers.html#RadialGradientElementCXAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#RadialGradientElementCYAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#RadialGradientElementFRAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#RadialGradientElementFXAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#RadialGradientElementFYAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#RadialGradientElementGradientTransformAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#RadialGradientElementGradientUnitsAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#RadialGradientElementHrefAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#RadialGradientElementRAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#RadialGradientElementSpreadMethodAttribute",
+    "https://svgwg.org/svg2-draft/shapes.html#RectElement",
+    "https://svgwg.org/svg2-draft/interact.html#ScriptElement",
+    "https://svgwg.org/svg2-draft/interact.html#ScriptElementHrefAttribute",
+    "https://svgwg.org/svg2-draft/interact.html#ScriptElementTypeAttribute",
+    "https://svgwg.org/specs/animations/#SetElement",
+    "https://svgwg.org/specs/animations/#FillAttribute",
+    "https://svgwg.org/specs/animations/#HrefAttribute",
+    "https://svgwg.org/svg2-draft/pservers.html#StopElement",
+    "https://svgwg.org/svg2-draft/pservers.html#StopElementOffsetAttribute",
+    "https://svgwg.org/svg2-draft/styling.html#StyleElement",
+    "https://svgwg.org/svg2-draft/styling.html#StyleElementMediaAttribute",
+    "https://svgwg.org/svg2-draft/styling.html#StyleElementTitleAttribute",
+    "https://svgwg.org/svg2-draft/styling.html#StyleElementTypeAttribute",
+    "https://svgwg.org/svg2-draft/struct.html#NewDocument",
+    "https://svgwg.org/svg2-draft/struct.html#SwitchElement",
+    "https://svgwg.org/svg2-draft/struct.html#SymbolElement",
+    "https://svgwg.org/svg2-draft/text.html#TextElement",
+    "https://svgwg.org/svg2-draft/text.html#TextElementDXAttribute",
+    "https://svgwg.org/svg2-draft/text.html#TextElementDYAttribute",
+    "https://svgwg.org/svg2-draft/text.html#TextElementLengthAdjustAttribute",
+    "https://svgwg.org/specs/animations/#RotateAttribute",
+    "https://svgwg.org/svg2-draft/text.html#TextElementTextLengthAttribute",
+    "https://svgwg.org/svg2-draft/text.html#TextElementXAttribute",
+    "https://svgwg.org/svg2-draft/text.html#TextElementYAttribute",
+    "https://svgwg.org/svg2-draft/text.html#TextPathElement",
+    "https://svgwg.org/svg2-draft/text.html#TextPathElementHrefAttribute",
+    "https://svgwg.org/svg2-draft/text.html#TextPathElementSideAttribute",
+    "https://svgwg.org/svg2-draft/text.html#TextPathElementSpacingAttribute",
+    "https://svgwg.org/svg2-draft/text.html#TextPathElementStartOffsetAttribute",
+    "https://svgwg.org/svg2-draft/struct.html#TitleElement",
+    "https://svgwg.org/svg2-draft/struct.html#UseElement",
+    "https://svgwg.org/svg2-draft/struct.html#UseElementHrefAttribute",
+    "https://svgwg.org/svg2-draft/linking.html#ViewElement",
+    "https://svgwg.org/svg2-draft/coords.html#ViewBoxAttribute",
+    "https://drafts.csswg.org/css-inline/#alignment-baseline-property",
+    "https://svgwg.org/svg2-draft/text.html#AlignmentBaselineProperty",
+    "https://drafts.csswg.org/css-inline/#baseline-shift-property",
+    "https://svgwg.org/svg2-draft/text.html#BaselineShiftProperty",
+    "https://svgwg.org/svg2-draft/styling.html#ElementSpecificStyling",
+    "https://drafts.csswg.org/css-color/#the-color-property",
+    "https://svgwg.org/svg2-draft/painting.html#ColorProperty",
+    "https://svgwg.org/svg2-draft/painting.html#ColorInterpolation",
+    "https://drafts.csswg.org/filter-effects/#ColorInterpolationFiltersProperty",
+    "https://svgwg.org/svg2-draft/struct.html#DataAttributes",
+    "https://drafts.csswg.org/css-writing-modes/#direction",
+    "https://svgwg.org/svg2-draft/text.html#DirectionProperty",
+    "https://drafts.csswg.org/css-display/#the-display-properties",
+    "https://svgwg.org/svg2-draft/render.html#VisibilityControl",
+    "https://drafts.csswg.org/css-inline/#dominant-baseline-property",
+    "https://svgwg.org/svg2-draft/text.html#DominantBaselineProperty",
+    "https://svgwg.org/svg2-draft/painting.html#WindingRule",
+    "https://svgwg.org/svg2-draft/struct.html#Core.attrib",
+    "https://drafts.csswg.org/css-images/#the-image-rendering",
+    "https://svgwg.org/svg2-draft/painting.html#ImageRendering",
+    "https://svgwg.org/svg2-draft/struct.html#LangSpaceAttrs",
+    "https://drafts.csswg.org/filter-effects/#LightingColorProperty",
+    "https://drafts.csswg.org/css-masking/#the-mask",
+    "https://drafts.csswg.org/css-overflow/#propdef-overflow",
+    "https://svgwg.org/svg2-draft/render.html#OverflowAndClipProperties",
+    "https://svgwg.org/svg2-draft/interact.html#PointerEventsProperty",
+    "https://svgwg.org/svg2-draft/painting.html#SpecifyingStrokePaint",
+    "https://svgwg.org/svg2-draft/painting.html#StrokeDashing",
+    "https://svgwg.org/svg2-draft/painting.html#StrokeDashoffsetProperty",
+    "https://svgwg.org/svg2-draft/painting.html#LineCaps",
+    "https://svgwg.org/svg2-draft/painting.html#LineJoin",
+    "https://svgwg.org/svg2-draft/painting.html#StrokeMiterlimitProperty",
+    "https://svgwg.org/svg2-draft/painting.html#StrokeWidth",
+    "https://svgwg.org/svg2-draft/struct.html#tabindexattribute",
+    "https://drafts.csswg.org/css-text-decor/#text-decoration-property",
+    "https://svgwg.org/svg2-draft/text.html#TextDecorationProperties",
+    "https://drafts.csswg.org/css-transforms/#svg-transform",
+    "https://svgwg.org/svg2-draft/coords.html#TransformProperty",
+    "https://drafts.csswg.org/css-transforms/#transform-origin-property",
+    "https://svgwg.org/svg2-draft/styling.html#PresentationAttributes",
+    "https://drafts.csswg.org/css-writing-modes/#unicode-bidi",
+    "https://drafts.csswg.org/css-display/#visibility"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/visibility",
+  "links": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Scalable_Vector_Graphics",
+      "title": "Wikipedia"
+    },
+    {
+      "url": "https://alistapart.com/article/using-svg-for-flexible-scalable-and-fun-backgrounds-part-i/",
+      "title": "A List Apart article"
+    },
+    {
+      "url": "http://svg-wow.org/",
+      "title": "SVG showcase site"
+    },
+    {
+      "url": "https://github.com/SVG-Edit/svgedit",
+      "title": "Web-based SVG editor"
+    },
+    {
+      "url": "https://raw.github.com/phiggins42/has.js/master/detect/graphics.js#svg",
+      "title": "has.js test"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "3",
+      "firstPartial": "2",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "3.2",
+      "firstPartial": "3.1",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "9",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "u",
+          "flags": [
+            "polyfill"
+          ]
+        },
+        {
+          "version": "7",
+          "status": "u",
+          "flags": [
+            "polyfill"
+          ]
+        },
+        {
+          "version": "8",
+          "status": "u",
+          "flags": [
+            "polyfill"
+          ]
+        },
+        {
+          "version": "9",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "10",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "11",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "3.2",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.53,
+      "partial": 0.42,
+      "total": 96.95
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Partial support in Android 3 & 4 refers to not supporting masking.",
+      "2": "Partial support in IE9-11 refers to not supporting animations.",
+      "3": "IE9-11 & Edge don't properly scale SVG files. [Adding height, width, viewBox, and CSS rules](https://codepen.io/tomByrer/pen/qEBbzw?editors=110) seems to be the best workaround."
+    }
+  },
+  "status": "cr",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "svg"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "svg",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CanvasRenderingContext2D.drawImage.SVGImageElement_source_image",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMParser.parseFromString.svg",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGAElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGAElement.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGAElement.hreflang",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGAElement.referrerPolicy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGAElement.rel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGAElement.relList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGAElement.target",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGAElement.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGAngle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGAngle.convertToSpecifiedUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGAngle.newValueSpecifiedUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGAngle.unitType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGAngle.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGAngle.valueAsString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGAngle.valueInSpecifiedUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGCircleElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGCircleElement.cx",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGCircleElement.cy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGCircleElement.r",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGComponentTransferFunctionElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGComponentTransferFunctionElement.amplitude",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGComponentTransferFunctionElement.exponent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGComponentTransferFunctionElement.intercept",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGComponentTransferFunctionElement.offset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGComponentTransferFunctionElement.slope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGComponentTransferFunctionElement.tableValues",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGComponentTransferFunctionElement.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGDefsElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGDescElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGElement.attributeStyleMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGElement.blur",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGElement.error_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGElement.focus",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGElement.focus.options_preventScroll_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGElement.load_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGElement.nonce",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGElement.ownerSVGElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGElement.style",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGElement.tabIndex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGElement.viewportElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGEllipseElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGEllipseElement.cx",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGEllipseElement.cy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGEllipseElement.rx",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGEllipseElement.ry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGForeignObjectElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGForeignObjectElement.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGForeignObjectElement.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGForeignObjectElement.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGForeignObjectElement.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGeometryElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGeometryElement.getPointAtLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGeometryElement.getTotalLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGeometryElement.isPointInFill",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGeometryElement.isPointInFill.point_parameter_DOMPoint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGeometryElement.isPointInStroke",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGeometryElement.isPointInStroke.point_parameter_DOMPoint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGeometryElement.pathLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGradientElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGradientElement.gradientTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGradientElement.gradientUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGradientElement.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGradientElement.spreadMethod",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGraphicsElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGraphicsElement.getBBox",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGraphicsElement.getCTM",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGraphicsElement.getScreenCTM",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGraphicsElement.requiredExtensions",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGraphicsElement.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGGraphicsElement.transform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGImageElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGImageElement.crossOrigin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGImageElement.decode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGImageElement.decoding",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGImageElement.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGImageElement.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGImageElement.preserveAspectRatio",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGImageElement.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGImageElement.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGImageElement.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLength.convertToSpecifiedUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLength.newValueSpecifiedUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLength.unitType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLength.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLength.valueAsString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLength.valueInSpecifiedUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLengthList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLengthList.appendItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLengthList.clear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLengthList.getItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLengthList.initialize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLengthList.insertItemBefore",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLengthList.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLengthList.numberOfItems",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLengthList.removeItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLengthList.replaceItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLineElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLineElement.x1",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLineElement.x2",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLineElement.y1",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLineElement.y2",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLinearGradientElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLinearGradientElement.x1",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLinearGradientElement.x2",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLinearGradientElement.y1",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGLinearGradientElement.y2",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMPathElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMPathElement.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMarkerElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMarkerElement.markerHeight",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMarkerElement.markerUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMarkerElement.markerWidth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMarkerElement.orient",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMarkerElement.orientAngle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMarkerElement.orientType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMarkerElement.preserveAspectRatio",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMarkerElement.refX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMarkerElement.refY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMarkerElement.setOrientToAngle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMarkerElement.setOrientToAuto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMarkerElement.viewBox",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMaskElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMaskElement.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMaskElement.maskContentUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMaskElement.maskUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMaskElement.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMaskElement.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMaskElement.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGMetadataElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGNumber",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGNumber.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGNumberList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGNumberList.appendItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGNumberList.clear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGNumberList.getItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGNumberList.initialize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGNumberList.insertItemBefore",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGNumberList.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGNumberList.numberOfItems",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGNumberList.removeItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGNumberList.replaceItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPathElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPatternElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPatternElement.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPatternElement.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPatternElement.patternContentUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPatternElement.patternTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPatternElement.patternUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPatternElement.preserveAspectRatio",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPatternElement.viewBox",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPatternElement.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPatternElement.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPatternElement.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPointList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPointList.appendItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPointList.clear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPointList.getItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPointList.initialize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPointList.insertItemBefore",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPointList.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPointList.numberOfItems",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPointList.removeItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPointList.replaceItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPolygonElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPolygonElement.points",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPolylineElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPolylineElement.points",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPreserveAspectRatio",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPreserveAspectRatio.align",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGPreserveAspectRatio.meetOrSlice",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRadialGradientElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRadialGradientElement.cx",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRadialGradientElement.cy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRadialGradientElement.fr",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRadialGradientElement.fx",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRadialGradientElement.fy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRadialGradientElement.r",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRect.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRect.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRect.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRect.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRectElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRectElement.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRectElement.rx",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRectElement.ry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRectElement.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRectElement.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGRectElement.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.checkEnclosure",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.checkIntersection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.createSVGAngle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.createSVGLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.createSVGMatrix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.createSVGNumber",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.createSVGPoint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.createSVGRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.createSVGTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.createSVGTransformFromMatrix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.currentScale",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.currentTranslate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.deselectAll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.getCurrentTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.getElementById",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.getEnclosureList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.getIntersectionList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.preserveAspectRatio",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.setCurrentTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.viewBox",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSVGElement.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGScriptElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGScriptElement.async",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGScriptElement.crossOrigin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGScriptElement.defer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGScriptElement.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGScriptElement.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSetElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGStopElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGStopElement.offset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGStringList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGStringList.appendItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGStringList.clear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGStringList.getItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGStringList.initialize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGStringList.insertItemBefore",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGStringList.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGStringList.numberOfItems",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGStringList.removeItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGStringList.replaceItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGStyleElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGStyleElement.disabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGStyleElement.media",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGStyleElement.sheet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGStyleElement.title",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSwitchElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSymbolElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSymbolElement.preserveAspectRatio",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGSymbolElement.viewBox",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTSpanElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextContentElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextContentElement.getCharNumAtPosition",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextContentElement.getComputedTextLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextContentElement.getEndPositionOfChar",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextContentElement.getExtentOfChar",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextContentElement.getNumberOfChars",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextContentElement.getRotationOfChar",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextContentElement.getStartPositionOfChar",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextContentElement.getSubStringLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextContentElement.lengthAdjust",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextContentElement.textLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextPathElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextPathElement.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextPathElement.method",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextPathElement.spacing",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextPathElement.startOffset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextPositioningElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextPositioningElement.dx",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextPositioningElement.dy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextPositioningElement.rotate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextPositioningElement.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTextPositioningElement.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTitleElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransform.angle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransform.matrix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransform.setMatrix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransform.setRotate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransform.setScale",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransform.setSkewX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransform.setSkewY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransform.setTranslate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransform.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransformList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransformList.appendItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransformList.clear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransformList.consolidate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransformList.createSVGTransformFromMatrix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransformList.getItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransformList.initialize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransformList.insertItemBefore",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransformList.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransformList.numberOfItems",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransformList.removeItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGTransformList.replaceItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGUnitTypes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGUseElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGUseElement.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGUseElement.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGUseElement.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGUseElement.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGUseElement.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGViewElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGViewElement.preserveAspectRatio",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGViewElement.viewBox",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.font-face.OpenType_SVG",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.background.SVG_image_as_background",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.background-image.svg_images",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.clip-rule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.clip-rule.evenodd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.clip-rule.nonzero",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.color-interpolation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.color-interpolation.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.color-interpolation.linearGradient",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.color-interpolation.sRGB",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.cx",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.cy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.d",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.fill",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.fill.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.fill-rule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.fill-rule.evenodd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.fill-rule.nonzero",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.letter-spacing.svg_elements",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.marker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.marker.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.marker-end",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.marker-end.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.marker-mid",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.marker-mid.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.marker-start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.marker-start.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.r",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.rx",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.ry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.shape-rendering",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.shape-rendering.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.stop-color",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.stop-opacity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.stroke",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.stroke.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.stroke-color",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.stroke-dasharray",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.stroke-dasharray.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.stroke-dashoffset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.stroke-linecap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.stroke-linecap.butt",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.stroke-linecap.round",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.stroke-linecap.square",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.stroke-linejoin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.stroke-linejoin.bevel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.stroke-linejoin.miter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.stroke-linejoin.round",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.stroke-miterlimit",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.stroke-width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-anchor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-anchor.end",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-anchor.middle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-anchor.start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-rendering",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-rendering.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-rendering.geometricPrecision",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform-origin.svg_elements",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.vector-effect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.word-spacing.svg_elements",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.a",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.a.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.a.hreflang",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.a.referrerpolicy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.a.referrerpolicy.no-referrer-when-downgrade",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.a.referrerpolicy.origin-when-cross-origin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.a.referrerpolicy.unsafe-url",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.a.rel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.a.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.a.target",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.a.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.circle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.circle.cx",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.circle.cy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.circle.fill",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.circle.r",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.circle.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.defs",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.defs.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.desc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.ellipse",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.ellipse.cx",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.ellipse.cy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.ellipse.fill",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.ellipse.rx",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.ellipse.ry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.ellipse.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.foreignObject",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.foreignObject.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.foreignObject.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.foreignObject.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.foreignObject.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.foreignObject.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.g",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.g.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.image",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.image.crossorigin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.image.decoding",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.image.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.image.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.image.preserveAspectRatio",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.image.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.image.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.image.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.image.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.line",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.line.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.line.x1",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.line.x2",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.line.y1",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.line.y2",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.linearGradient",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.linearGradient.gradientTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.linearGradient.gradientUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.linearGradient.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.linearGradient.spreadMethod",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.linearGradient.x1",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.linearGradient.x2",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.linearGradient.y1",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.linearGradient.y2",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.marker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.marker.markerHeight",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.marker.markerUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.marker.markerWidth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.marker.orient",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.marker.refX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.marker.refY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.marker.viewBox",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.mask",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.mask.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.mask.maskContentUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.mask.maskUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.mask.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.mask.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.mask.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.mask.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.metadata",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.mpath",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.mpath.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.path",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.path.d",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.path.d.path",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.path.fill",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.path.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.pattern",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.pattern.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.pattern.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.pattern.patternContentUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.pattern.patternTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.pattern.patternUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.pattern.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.pattern.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.pattern.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.pattern.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.polygon",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.polygon.fill",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.polygon.points",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.polygon.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.polyline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.polyline.fill",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.polyline.points",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.polyline.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.radialGradient",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.radialGradient.cx",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.radialGradient.cy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.radialGradient.fr",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.radialGradient.fx",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.radialGradient.fy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.radialGradient.gradientTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.radialGradient.gradientUnits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.radialGradient.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.radialGradient.r",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.radialGradient.spreadMethod",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.rect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.rect.fill",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.rect.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.rect.rx",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.rect.ry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.rect.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.rect.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.rect.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.rect.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.script",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.script.async",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.script.defer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.script.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.script.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.set",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.set.fill",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.set.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.set.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.set.to",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.stop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.stop.offset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.style",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.style.media",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.style.title",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.style.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.svg",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.svg.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.svg.preserveAspectRatio",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.svg.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.svg.viewBox",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.svg.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.svg.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.svg.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.switch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.switch.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.symbol",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.symbol.preserveAspectRatio",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.symbol.viewBox",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.text",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.text.dx",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.text.dy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.text.fill",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.text.lengthAdjust",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.text.rotate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.text.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.text.textLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.text.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.text.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.textPath",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.textPath.fill",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.textPath.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.textPath.path",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.textPath.side",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.textPath.spacing",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.textPath.startOffset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.textPath.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.textPath.textLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.title",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.title.tooltip_display",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.tspan",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.tspan.dx",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.tspan.dy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.tspan.fill",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.tspan.lengthAdjust",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.tspan.rotate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.tspan.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.tspan.textLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.tspan.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.tspan.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.use",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.use.data_uri",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.use.external_uri",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.use.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.use.href",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.use.systemLanguage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.use.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.use.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.use.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.view",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.view.preserveAspectRatio",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.view.viewBox",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.alignment-baseline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.baseline-shift",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.class",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.clip-rule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.color",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.color-interpolation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.color-interpolation.linearGradient",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.color-interpolation.sRGB",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.color-interpolation-filters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.data_attributes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.direction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.display",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.dominant-baseline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.fill-rule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.image-rendering",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.lang",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.lighting-color",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.marker-end",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.marker-mid",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.marker-start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.mask",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.overflow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.pointer-events",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.requiredExtensions",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.requiredExtensions.mathml",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.shape-rendering",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.stop-color",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.stop-opacity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.stroke",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.stroke-dasharray",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.stroke-dashoffset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.stroke-linecap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.stroke-linejoin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.stroke-miterlimit",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.stroke-width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.style",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.tabindex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.text-anchor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.text-decoration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.text-rendering",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.transform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.transform-origin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.unicode-bidi",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.vector-effect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.visibility",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "wf-badging",
+  "source": "webfeatures",
+  "name": "Badging",
+  "description": "The navigator.setAppBadge() method allows installed web applications to display an application badge, typically a dot or number shown alongside the application's icon on the device's home screen or application dock.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/badging/",
+    "https://w3c.github.io/badging/#clearappbadge-method",
+    "https://w3c.github.io/badging/#setappbadge-method"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/setAppBadge",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "81",
+      "versions": [
+        {
+          "version": "81",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 88.39,
+      "partial": 0,
+      "total": 88.39
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.06,
+        "safari": 1.07,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 10.97,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "badging"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.clearAppBadge",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.setAppBadge",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

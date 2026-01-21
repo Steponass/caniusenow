@@ -1,0 +1,193 @@
+{
+  "id": "wf-web-locks",
+  "source": "webfeatures",
+  "name": "Locks",
+  "description": "The navigator.locks API coordinates work with shared resources through mutually exclusive ownership of a resource's name. Also known as web locks.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/web-locks/",
+    "https://w3c.github.io/web-locks/#api-lock",
+    "https://w3c.github.io/web-locks/#dom-lock-mode",
+    "https://w3c.github.io/web-locks/#dom-lock-name",
+    "https://w3c.github.io/web-locks/#api-lock-manager",
+    "https://w3c.github.io/web-locks/#api-lock-manager-query",
+    "https://w3c.github.io/web-locks/#api-lock-manager-request",
+    "https://w3c.github.io/web-locks/#dom-navigatorlocks-locks"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WorkerNavigator/locks",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "69",
+      "versions": [
+        {
+          "version": "69",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "96",
+      "versions": [
+        {
+          "version": "96",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "15.4",
+      "versions": [
+        {
+          "version": "15.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "69",
+      "versions": [
+        {
+          "version": "69",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.4",
+      "versions": [
+        {
+          "version": "15.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "69",
+      "versions": [
+        {
+          "version": "69",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "69",
+      "versions": [
+        {
+          "version": "69",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "96",
+      "versions": [
+        {
+          "version": "96",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.71,
+      "partial": 0,
+      "total": 91.71
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.18,
+        "firefox": 1.75,
+        "safari": 1.37,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.82,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "web-locks"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Lock",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Lock.mode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Lock.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.LockManager",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.LockManager.query",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.LockManager.request",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.locks",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.locks",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

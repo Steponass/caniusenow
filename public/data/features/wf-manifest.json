@@ -1,0 +1,138 @@
+{
+  "id": "wf-manifest",
+  "source": "webfeatures",
+  "name": "Web app manifest",
+  "description": "A web app manifest file provides metadata about the site. The browser can use the metadata to install the site as a standalone application on the user's device. The metadata usually includes the app's name, icon, description, and ways in which the app wishes to integrate with the device.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/manifest/",
+    "https://html.spec.whatwg.org/multipage/links.html#link-type-manifest"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Attributes/rel/manifest",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "53",
+      "versions": [
+        {
+          "version": "53",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "53",
+      "versions": [
+        {
+          "version": "53",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "53",
+      "versions": [
+        {
+          "version": "53",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "53",
+      "versions": [
+        {
+          "version": "53",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 88.6,
+      "partial": 0,
+      "total": 88.6
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.27,
+        "safari": 1.07,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 10.97,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "manifest"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.link.rel.manifest",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

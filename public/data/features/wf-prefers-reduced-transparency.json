@@ -1,0 +1,129 @@
+{
+  "id": "wf-prefers-reduced-transparency",
+  "source": "webfeatures",
+  "name": "prefers-reduced-transparency media query",
+  "description": "The prefers-reduced-transparency CSS media query sets styles based on whether the user prefers to reduce the amount of transparent effects on their device, for example to improve contrast and legibility.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-transparency",
+    "https://wicg.github.io/user-preference-media-features-headers/#sec-ch-prefers-reduced-transparency"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Sec-CH-Prefers-Reduced-Transparency",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "119",
+      "versions": [
+        {
+          "version": "119",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "119",
+      "versions": [
+        {
+          "version": "119",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "119",
+      "versions": [
+        {
+          "version": "119",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "119",
+      "versions": [
+        {
+          "version": "119",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "119",
+      "versions": [
+        {
+          "version": "119",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "119",
+      "versions": [
+        {
+          "version": "119",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 72.03,
+      "partial": 0,
+      "total": 72.03
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 22.9,
+        "edge": 4.21,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "prefers-reduced-transparency"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.media.prefers-reduced-transparency",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Sec-CH-Prefers-Reduced-Transparency",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

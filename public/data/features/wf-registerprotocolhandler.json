@@ -1,0 +1,269 @@
+{
+  "id": "wf-registerprotocolhandler",
+  "source": "webfeatures",
+  "name": "registerProtocolHandler",
+  "description": "The navigator.registerProtocolHandler() method declares a site's ability to handle an address scheme (also known as a protocol). For example, an email site can register to open mailto: URLs or a VoIP site to open tel: URLs.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
+    "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-unregisterprotocolhandler-dev"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/unregisterProtocolHandler",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "13",
+      "versions": [
+        {
+          "version": "13",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "2",
+      "versions": [
+        {
+          "version": "2",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "13",
+      "versions": [
+        {
+          "version": "13",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "13",
+      "versions": [
+        {
+          "version": "13",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "13",
+      "versions": [
+        {
+          "version": "13",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "2",
+      "versions": [
+        {
+          "version": "2",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 80.79,
+      "partial": 0,
+      "total": 80.79
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "registerprotocolhandler"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_bitcoin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_ftp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_ftps",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_geo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_im",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_irc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_ircs",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_magnet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_mailto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_matrix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_mms",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_news",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_nntp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_openpgp4fpr",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_sftp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_sip",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_sms",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_smsto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_ssh",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_tel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_urn",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_webcal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_wtai",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.scheme_parameter_xmpp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.registerProtocolHandler.secure_context_required",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.unregisterProtocolHandler",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

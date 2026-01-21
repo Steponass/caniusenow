@@ -1,0 +1,320 @@
+{
+  "id": "wf-performancetiming",
+  "source": "webfeatures",
+  "name": "PerformanceTiming and PerformanceNavigation",
+  "description": "The window.performance.timing and window.performance.navigation APIs report performance timing information for events that occur during the loading and use of the current page.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/navigation-timing/#obsolete",
+    "https://w3c.github.io/navigation-timing/#dom-performance-navigation",
+    "https://w3c.github.io/navigation-timing/#dom-performance-timing",
+    "https://w3c.github.io/navigation-timing/#dom-performancenavigation",
+    "https://w3c.github.io/navigation-timing/#dom-performancenavigation-redirectcount",
+    "https://w3c.github.io/navigation-timing/#dom-performancenavigation-tojson",
+    "https://w3c.github.io/navigation-timing/#dom-performancenavigation-type",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-connectend",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-connectstart",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-domcomplete",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-domcontentloadedeventend",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-domcontentloadedeventstart",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-dominteractive",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-domloading",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-domainlookupend",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-domainlookupstart",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-fetchstart",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-loadeventend",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-loadeventstart",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-navigationstart",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-redirectend",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-redirectstart",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-requeststart",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-responseend",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-responsestart",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-secureconnectionstart",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-tojson",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-unloadeventend",
+    "https://w3c.github.io/navigation-timing/#dom-performancetiming-unloadeventstart"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/PerformanceTiming/unloadEventStart",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "56",
+      "versions": [
+        {
+          "version": "56",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "56",
+      "versions": [
+        {
+          "version": "56",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "14.1",
+      "versions": [
+        {
+          "version": "14.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "18",
+      "versions": [
+        {
+          "version": "18",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "56",
+      "versions": [
+        {
+          "version": "56",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "18",
+      "versions": [
+        {
+          "version": "18",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14.1",
+      "versions": [
+        {
+          "version": "14.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "56",
+      "versions": [
+        {
+          "version": "56",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "56",
+      "versions": [
+        {
+          "version": "56",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "56",
+      "versions": [
+        {
+          "version": "56",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.87,
+      "partial": 0,
+      "total": 91.87
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.24,
+        "firefox": 1.75,
+        "safari": 1.39,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.89,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "performancetiming"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Performance.navigation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Performance.timing",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceNavigation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceNavigation.redirectCount",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceNavigation.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceNavigation.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.connectEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.connectStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.domComplete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.domContentLoadedEventEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.domContentLoadedEventStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.domInteractive",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.domLoading",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.domainLookupEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.domainLookupStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.fetchStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.loadEventEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.loadEventStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.navigationStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.redirectEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.redirectStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.requestStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.responseEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.responseStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.secureConnectionStart",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.unloadEventEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTiming.unloadEventStart",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

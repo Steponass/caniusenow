@@ -1,0 +1,122 @@
+{
+  "id": "mdn-api.MediaDevices.getDisplayMedia.windowAudio_option",
+  "source": "mdnbcd",
+  "name": "<code>windowAudio</code> option",
+  "description": "<code>windowAudio</code> option",
+  "category": "JS API",
+  "spec": [
+    "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions-windowaudio"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "a",
+      "firstPartial": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "a",
+          "notes": "Defaults to <code>\"system\"</code>. Only supports values <code>\"exclude\"</code> and <code>\"system\"</code>, not <code>\"window\"</code>."
+        }
+      ]
+    },
+    "edge": {
+      "current": "a",
+      "firstPartial": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "a",
+          "notes": "Defaults to <code>\"system\"</code>. Before Edge 142, it defaulted to <code>\"exclude\"</code>. Only supports values <code>\"exclude\"</code> and <code>\"system\"</code>, not <code>\"window\"</code>."
+        }
+      ]
+    },
+    "opera": {
+      "current": "a",
+      "firstPartial": "125",
+      "versions": [
+        {
+          "version": "125",
+          "status": "a",
+          "notes": "Defaults to <code>\"system\"</code>. Only supports values <code>\"exclude\"</code> and <code>\"system\"</code>, not <code>\"window\"</code>."
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "a",
+      "firstPartial": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "a",
+          "notes": "Defaults to <code>\"system\"</code>. Before Edge 142, it defaulted to <code>\"exclude\"</code>. Only supports values <code>\"exclude\"</code> and <code>\"system\"</code>, not <code>\"window\"</code>."
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "a",
+      "firstPartial": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "a",
+          "notes": "Defaults to <code>\"system\"</code>. Only supports values <code>\"exclude\"</code> and <code>\"system\"</code>, not <code>\"window\"</code>."
+        }
+      ]
+    },
+    "samsung": {
+      "current": "a",
+      "firstPartial": "141",
+      "versions": [
+        {
+          "version": "141",
+          "status": "a",
+          "notes": "Defaults to <code>\"system\"</code>. Only supports values <code>\"exclude\"</code> and <code>\"system\"</code>, not <code>\"window\"</code>."
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 63.6,
+      "total": 63.6
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 15.25,
+        "edge": 4.01,
+        "opera": 0.22
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "api.MediaDevices.getDisplayMedia.windowAudio_option"
+    },
+    "supplementary": []
+  }
+}

@@ -1,0 +1,526 @@
+{
+  "id": "css-deviceadaptation",
+  "source": "caniuse",
+  "name": "CSS Device Adaptation",
+  "description": "Method of overriding the size of viewport in web page using the `@viewport` rule, replacing Apple's own popular `<meta>` viewport implementation. Includes the `extend-to-zoom` width value.",
+  "category": "CSS",
+  "spec": [
+    "https://www.w3.org/TR/css-device-adapt/"
+  ],
+  "links": [
+    {
+      "url": "https://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/",
+      "title": "Introduction to meta viewport and @viewport in Opera Mobile"
+    },
+    {
+      "url": "https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/dev-guides/hh708740(v=vs.85)",
+      "title": "Device adaptation in Internet Explorer 10"
+    },
+    {
+      "url": "https://code.google.com/p/chromium/issues/detail?id=155477",
+      "title": "Chrome tracking bug"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=95959",
+      "title": "WebKit tracking bug"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=747754",
+      "title": "Mozilla tracking bug"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "137",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "138",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "139",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "140",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "144",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "145",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "146",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "140",
+          "status": "n"
+        },
+        {
+          "version": "141",
+          "status": "n"
+        },
+        {
+          "version": "142",
+          "status": "n"
+        },
+        {
+          "version": "143",
+          "status": "n"
+        },
+        {
+          "version": "144",
+          "status": "n"
+        },
+        {
+          "version": "145",
+          "status": "n"
+        },
+        {
+          "version": "146",
+          "status": "n"
+        },
+        {
+          "version": "147",
+          "status": "n"
+        },
+        {
+          "version": "148",
+          "status": "n"
+        },
+        {
+          "version": "149",
+          "status": "n"
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "n"
+        },
+        {
+          "version": "18.2",
+          "status": "n"
+        },
+        {
+          "version": "18.3",
+          "status": "n"
+        },
+        {
+          "version": "18.4",
+          "status": "n"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "n"
+        },
+        {
+          "version": "26.0",
+          "status": "n"
+        },
+        {
+          "version": "26.1",
+          "status": "n"
+        },
+        {
+          "version": "26.2",
+          "status": "n"
+        },
+        {
+          "version": "26.3",
+          "status": "n"
+        },
+        {
+          "version": "TP",
+          "status": "n"
+        }
+      ]
+    },
+    "edge": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "134",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "135",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "136",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "137",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "138",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "139",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "140",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        }
+      ]
+    },
+    "opera": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "116",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "117",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "118",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "119",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "120",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "121",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "122",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "123",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "124",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        },
+        {
+          "version": "125",
+          "status": "n",
+          "flags": [
+            "disabled"
+          ]
+        }
+      ]
+    },
+    "ie": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        },
+        {
+          "version": "11",
+          "status": "u",
+          "flags": [
+            "prefix",
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "n"
+        },
+        {
+          "version": "18.1",
+          "status": "n"
+        },
+        {
+          "version": "18.2",
+          "status": "n"
+        },
+        {
+          "version": "18.3",
+          "status": "n"
+        },
+        {
+          "version": "18.4",
+          "status": "n"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "n"
+        },
+        {
+          "version": "26.0",
+          "status": "n"
+        },
+        {
+          "version": "26.1",
+          "status": "n"
+        },
+        {
+          "version": "26.2",
+          "status": "n"
+        },
+        {
+          "version": "26.3",
+          "status": "n"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "143",
+          "status": "n"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "20",
+          "status": "n"
+        },
+        {
+          "version": "21",
+          "status": "n"
+        },
+        {
+          "version": "22",
+          "status": "n"
+        },
+        {
+          "version": "23",
+          "status": "n"
+        },
+        {
+          "version": "24",
+          "status": "n"
+        },
+        {
+          "version": "25",
+          "status": "n"
+        },
+        {
+          "version": "26",
+          "status": "n"
+        },
+        {
+          "version": "27",
+          "status": "n"
+        },
+        {
+          "version": "28",
+          "status": "n"
+        },
+        {
+          "version": "29",
+          "status": "n"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "146",
+          "status": "n"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 0.4,
+      "total": 0.4
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Due to lack of implementation this specification [is slated to be retired](https://github.com/w3c/csswg-drafts/issues/4766).",
+    "byNum": {
+      "1": "IE only supports the 'width' and 'height' properties.",
+      "2": "Opera Mobile and Opera Mini only support the 'orientation' property."
+    }
+  },
+  "status": "wd",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-deviceadaptation"
+    },
+    "supplementary": []
+  }
+}

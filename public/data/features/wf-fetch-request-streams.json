@@ -1,0 +1,138 @@
+{
+  "id": "wf-fetch-request-streams",
+  "source": "webfeatures",
+  "name": "Fetch upload streams",
+  "description": "A fetch() request uploads a stream of data to the server when a request's body property is a ReadableStream object.",
+  "category": "Other",
+  "spec": [
+    "https://fetch.spec.whatwg.org/#concept-body-stream",
+    "https://fetch.spec.whatwg.org/#ref-for-dom-body-body①"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Request/body",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "11.1",
+      "versions": [
+        {
+          "version": "11.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11.1",
+      "versions": [
+        {
+          "version": "11.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.34,
+      "partial": 0,
+      "total": 89.34
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.67,
+        "safari": 1.42,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 12.09,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "fetch-request-streams"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Request.body",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

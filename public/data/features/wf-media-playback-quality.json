@@ -1,0 +1,176 @@
+{
+  "id": "wf-media-playback-quality",
+  "source": "webfeatures",
+  "name": "Media playback quality",
+  "description": "The getVideoPlaybackQuality() method of HTMLVideoElement returns metrics that can be used to determine the playback quality of a video, such as how many frames were dropped.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/media-playback-quality/",
+    "https://w3c.github.io/media-playback-quality/#dom-htmlvideoelement-getvideoplaybackquality",
+    "https://w3c.github.io/media-playback-quality/#videoplaybackquality-interface",
+    "https://w3c.github.io/media-playback-quality/#dom-videoplaybackquality-creationtime",
+    "https://w3c.github.io/media-playback-quality/#dom-videoplaybackquality-droppedvideoframes",
+    "https://w3c.github.io/media-playback-quality/#dom-videoplaybackquality-totalvideoframes"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/totalVideoFrames",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "80",
+      "versions": [
+        {
+          "version": "80",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "42",
+      "versions": [
+        {
+          "version": "42",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "8",
+      "versions": [
+        {
+          "version": "8",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "80",
+      "versions": [
+        {
+          "version": "80",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "8",
+      "versions": [
+        {
+          "version": "8",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "80",
+      "versions": [
+        {
+          "version": "80",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "80",
+      "versions": [
+        {
+          "version": "80",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "42",
+      "versions": [
+        {
+          "version": "42",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.08,
+      "partial": 0,
+      "total": 92.08
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.07,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "media-playback-quality"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLVideoElement.getVideoPlaybackQuality",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VideoPlaybackQuality",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VideoPlaybackQuality.creationTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VideoPlaybackQuality.droppedVideoFrames",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VideoPlaybackQuality.totalVideoFrames",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,559 @@
+{
+  "id": "datalist",
+  "source": "caniuse",
+  "name": "Datalist element",
+  "description": "Method of setting a list of options for a user to select in a text field, while leaving the ability to enter a custom value.",
+  "category": "HTML5",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/forms.html#the-datalist-element",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#htmldatalistelement",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-datalist-options-dev"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/datalist",
+  "links": [
+    {
+      "url": "https://hacks.mozilla.org/2010/11/firefox-4-html5-forms/",
+      "title": "Mozilla Hacks article"
+    },
+    {
+      "url": "https://afarkas.github.io/webshim/demos/",
+      "title": "HTML5 Library including datalist support"
+    },
+    {
+      "url": "https://developer.mozilla.org/en/HTML/Element/datalist",
+      "title": "MDN Web Docs - datalist"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/html/elements/datalist",
+      "title": "WebPlatform Docs"
+    },
+    {
+      "url": "https://demo.agektmr.com/datalist/",
+      "title": "Eiji Kitamura's options demos & tests"
+    },
+    {
+      "url": "https://github.com/thgreasi/datalist-polyfill",
+      "title": "Minimal Datalist polyfill w/tutorial"
+    },
+    {
+      "url": "https://github.com/mfranzke/datalist-polyfill",
+      "title": "Minimal and library dependency-free vanilla JavaScript polyfill"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "69",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "144",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "145",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "147",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "148",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "149",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "12.1",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "9",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "u",
+          "flags": [
+            "polyfill"
+          ]
+        },
+        {
+          "version": "7",
+          "status": "u",
+          "flags": [
+            "polyfill"
+          ]
+        },
+        {
+          "version": "8",
+          "status": "u",
+          "flags": [
+            "polyfill"
+          ]
+        },
+        {
+          "version": "9",
+          "status": "u",
+          "flags": [
+            "polyfill"
+          ]
+        },
+        {
+          "version": "10",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "11",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.4",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.0",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.1",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.2",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26.3",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "146",
+          "status": "n"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 81.86,
+      "partial": 14.4,
+      "total": 96.26
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.18,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "samsung": 1.93
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "While most commonly used on text fields, datalists can also be used on other input types. IE11 supports the element on `range` fields. Chrome and Opera also support datalists to suggest given values on `range`, `color` and date/time fields. ",
+    "byNum": {
+      "1": "Partial support refers to [a bug](https://bugs.chromium.org/p/chromium/issues/detail?id=773041) where long lists of items are unscrollable resulting in unselectable options.",
+      "2": "Partial support in IE refers to [significantly buggy behavior](https://web.archive.org/web/20170121011936/http://playground.onereason.eu/2013/04/ie10s-lousy-support-for-datalists/) (IE11+ does send the input and change events upon selection). ",
+      "3": "Partial support refers to no support for datalists on non-text fields (e.g. number, [range](https://bugzilla.mozilla.org/show_bug.cgi?id=841942), [color](https://bugzilla.mozilla.org/show_bug.cgi?id=960984), [date and time](https://bugzilla.mozilla.org/show_bug.cgi?id=1905313)).",
+      "4": "Partial support in Edge refers [to disappearing option elements on focusing the input element via tab](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/20066595/).",
+      "5": "Supported through WKWebView and Safari but not through UIWebView",
+      "6": "In Firefox, autocomplete must be set to off to make dynamic datalist work due to [a bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1474137)",
+      "7": "Partial support refers to no support for datalists on [date and time](https://bugzilla.mozilla.org/show_bug.cgi?id=1905313) fields.",
+      "8": "If both a value and label are provided for an option iOS will only display the value as suggested selection. (see [bug](https://bugs.webkit.org/show_bug.cgi?id=289668))"
+    }
+  },
+  "status": "ls",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "datalist"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "datalist",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLDataListElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLDataListElement.options",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.datalist",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

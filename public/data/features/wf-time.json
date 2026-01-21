@@ -1,0 +1,168 @@
+{
+  "id": "wf-time",
+  "source": "webfeatures",
+  "name": "<time>",
+  "description": "The <time> HTML element represents a time, such as a calendar date, clock time, or duration. It may include the datetime attribute to translate dates into machine-readable format.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element",
+    "https://html.spec.whatwg.org/multipage/text-level-semantics.html#htmltimeelement",
+    "https://html.spec.whatwg.org/multipage/text-level-semantics.html#dom-time-datetime"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/time",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "62",
+      "versions": [
+        {
+          "version": "62",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "22",
+      "versions": [
+        {
+          "version": "22",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "10",
+      "versions": [
+        {
+          "version": "10",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "14",
+      "versions": [
+        {
+          "version": "14",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "62",
+      "versions": [
+        {
+          "version": "62",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "14",
+      "versions": [
+        {
+          "version": "14",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10",
+      "versions": [
+        {
+          "version": "10",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "62",
+      "versions": [
+        {
+          "version": "62",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "62",
+      "versions": [
+        {
+          "version": "62",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "22",
+      "versions": [
+        {
+          "version": "22",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.2,
+      "partial": 0,
+      "total": 92.2
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.2,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "time"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTimeElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTimeElement.dateTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.time",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.time.datetime",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

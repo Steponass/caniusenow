@@ -1,0 +1,110 @@
+{
+  "id": "wf-origin",
+  "source": "webfeatures",
+  "name": "Origin",
+  "description": "An Origin object represents an origin, as in a scheme, hostname, and port. You can use it to make same-site and same-origin comparisons.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/browsers.html#the-origin-interface",
+    "https://html.spec.whatwg.org/multipage/browsers.html#dom-origin-constructor",
+    "https://html.spec.whatwg.org/multipage/browsers.html#dom-origin-from",
+    "https://html.spec.whatwg.org/multipage/browsers.html#dom-origin-issameorigin",
+    "https://html.spec.whatwg.org/multipage/browsers.html#dom-origin-issamesite",
+    "https://html.spec.whatwg.org/multipage/browsers.html#dom-origin-opaque"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 0,
+      "total": 0
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "origin"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Origin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Origin.Origin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Origin.from_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Origin.isSameOrigin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Origin.isSameSite",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Origin.opaque",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

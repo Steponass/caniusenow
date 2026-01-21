@@ -1,0 +1,181 @@
+{
+  "id": "wf-network-information",
+  "source": "webfeatures",
+  "name": "Network Information",
+  "description": "The navigator.connection API provides information about the network connection a device is using and fires events when the connection type changes.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/netinfo/",
+    "https://wicg.github.io/netinfo/#connection-attribute",
+    "https://wicg.github.io/netinfo/#networkinformation-interface",
+    "https://wicg.github.io/netinfo/#dom-networkinformation-onchange",
+    "https://wicg.github.io/netinfo/#dom-networkinformation-downlink",
+    "https://wicg.github.io/netinfo/#dom-networkinformation-downlinkmax",
+    "https://wicg.github.io/netinfo/#dom-networkinformation-effectivetype",
+    "https://wicg.github.io/netinfo/#dom-networkinformation-rtt",
+    "https://wicg.github.io/netinfo/#dom-networkinformation-type",
+    "https://wicg.github.io/netinfo/#downlink-request-header-field",
+    "https://wicg.github.io/netinfo/#ect-request-header-field",
+    "https://wicg.github.io/netinfo/#rtt-request-header-field"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/RTT",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "67",
+      "versions": [
+        {
+          "version": "67",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "67",
+      "versions": [
+        {
+          "version": "67",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "67",
+      "versions": [
+        {
+          "version": "67",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "67",
+      "versions": [
+        {
+          "version": "67",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 72.21,
+      "partial": 0,
+      "total": 72.21
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.18,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "network-information"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.connection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NetworkInformation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NetworkInformation.change_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NetworkInformation.downlink",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NetworkInformation.downlinkMax",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NetworkInformation.effectiveType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NetworkInformation.rtt",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NetworkInformation.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NetworkInformation.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.connection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Downlink",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.ECT",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.RTT",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

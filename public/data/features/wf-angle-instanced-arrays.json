@@ -1,0 +1,166 @@
+{
+  "id": "wf-angle-instanced-arrays",
+  "source": "webfeatures",
+  "name": "ANGLE_instanced_arrays WebGL extension",
+  "description": "The ANGLE_instanced_arrays extension for WebGL 1.0 contexts draws the same object multiple times or groups of similar objects multiple times, if the group shares the same vertex data, primitive count and type.",
+  "category": "Other",
+  "spec": [
+    "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/ANGLE_instanced_arrays/vertexAttribDivisorANGLE",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "32",
+      "versions": [
+        {
+          "version": "32",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "47",
+      "versions": [
+        {
+          "version": "47",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "8",
+      "versions": [
+        {
+          "version": "8",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "32",
+      "versions": [
+        {
+          "version": "32",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "8",
+      "versions": [
+        {
+          "version": "8",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "32",
+      "versions": [
+        {
+          "version": "32",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "32",
+      "versions": [
+        {
+          "version": "32",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "47",
+      "versions": [
+        {
+          "version": "47",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.41,
+      "partial": 0,
+      "total": 92.41
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.76,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "angle-instanced-arrays"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ANGLE_instanced_arrays",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ANGLE_instanced_arrays.drawArraysInstancedANGLE",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ANGLE_instanced_arrays.drawElementsInstancedANGLE",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ANGLE_instanced_arrays.vertexAttribDivisorANGLE",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

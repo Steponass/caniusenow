@@ -1,0 +1,129 @@
+{
+  "id": "wf-wasm-string-builtins",
+  "source": "webfeatures",
+  "name": "String builtins (WebAssembly)",
+  "description": "The WebAssembly builtin string functions mirror a subset of the JavaScript String API and adapt it to be efficiently callable without JavaScript glue code.",
+  "category": "Other",
+  "spec": [
+    "https://github.com/WebAssembly/js-string-builtins/blob/main/proposals/js-string-builtins/Overview.md"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "130",
+      "versions": [
+        {
+          "version": "130",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "130",
+      "versions": [
+        {
+          "version": "130",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "130",
+      "versions": [
+        {
+          "version": "130",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "130",
+      "versions": [
+        {
+          "version": "130",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "130",
+      "versions": [
+        {
+          "version": "130",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "130",
+      "versions": [
+        {
+          "version": "130",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 70.64,
+      "partial": 0,
+      "total": 70.64
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 20.57,
+        "firefox": 1.48,
+        "edge": 4.17
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "wasm-string-builtins"
+    },
+    "supplementary": []
+  }
+}

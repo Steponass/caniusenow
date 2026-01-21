@@ -1,0 +1,438 @@
+{
+  "id": "wf-select",
+  "source": "webfeatures",
+  "name": "<select>",
+  "description": "The <select> element provides a menu of options for a user to pick from, typically rendered as a dropdown list.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#htmloptgroupelement",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-optgroup-disabled",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-optgroup-label",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#htmloptionelement",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-option-dev",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-option-defaultselected",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-option-disabled",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-option-form-dev",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-option-index-dev",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-option-label",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-option-selected-dev",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-option-text-dev",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-option-value",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#htmlselectelement",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-add-dev",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fe-autocomplete",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fe-disabled",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fae-form-dev",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-item-dev",
+    "https://html.spec.whatwg.org/multipage/forms.html#dom-lfe-labels-dev",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-length-dev",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-multiple",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fe-name",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-nameditem-dev",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-options-dev",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-remove",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-required",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-selectedindex-dev",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-selectedoptions-dev",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-size",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-type-dev",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-value-dev",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-disabled",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-label",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-disabled",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-label",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-selected",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-value",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-required",
+    "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-size"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Attributes/size",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "select"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLOptGroupElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLOptGroupElement.disabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLOptGroupElement.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLOptionElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLOptionElement.Option",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLOptionElement.defaultSelected",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLOptionElement.disabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLOptionElement.form",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLOptionElement.index",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLOptionElement.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLOptionElement.selected",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLOptionElement.text",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLOptionElement.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.add",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.add.index_before_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.autocomplete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.disabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.form",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.item",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.labels",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.multiple",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.namedItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.options",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.remove",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.required",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.selectedIndex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.selectedOptions",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLSelectElement.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.optgroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.optgroup.disabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.optgroup.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.option",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.option.disabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.option.label",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.option.selected",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.option.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.select",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.select.disabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.select.form",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.select.hr_in_select",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.select.multiple",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.select.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.select.required",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.select.size",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "id": "wf-gyroscope",
+  "source": "webfeatures",
+  "name": "Gyroscope",
+  "description": "The Gyroscope API reads the angular velocity of a device in three dimensions.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/gyroscope/#gyroscope-interface",
+    "https://w3c.github.io/gyroscope/#dom-gyroscope-gyroscope",
+    "https://w3c.github.io/gyroscope/#gyroscope-x",
+    "https://w3c.github.io/gyroscope/#gyroscope-y",
+    "https://w3c.github.io/gyroscope/#gyroscope-z",
+    "https://w3c.github.io/sensors/#permissions-policy"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/gyroscope",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "67",
+      "versions": [
+        {
+          "version": "67",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "67",
+      "versions": [
+        {
+          "version": "67",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "67",
+      "versions": [
+        {
+          "version": "67",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "67",
+      "versions": [
+        {
+          "version": "67",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.47,
+      "partial": 0,
+      "total": 76.47
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.18,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "gyroscope"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Gyroscope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Gyroscope.Gyroscope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Gyroscope.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Gyroscope.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Gyroscope.z",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Permissions.permission_gyroscope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.gyroscope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.gyroscope",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

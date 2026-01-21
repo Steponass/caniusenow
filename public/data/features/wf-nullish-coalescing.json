@@ -1,0 +1,157 @@
+{
+  "id": "wf-nullish-coalescing",
+  "source": "webfeatures",
+  "name": "Nullish coalescing",
+  "description": "The nullish coalescing (??) and nullish coalescing assignment (??=) operators return (or assign) its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-CoalesceExpression",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "14",
+      "versions": [
+        {
+          "version": "14",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14",
+      "versions": [
+        {
+          "version": "14",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "85",
+      "versions": [
+        {
+          "version": "85",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.64,
+      "partial": 0,
+      "total": 91.64
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.01,
+        "firefox": 1.75,
+        "safari": 1.4,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.89,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "nullish-coalescing"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.nullish_coalescing",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.nullish_coalescing_assignment",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

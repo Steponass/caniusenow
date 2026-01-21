@@ -1,0 +1,183 @@
+{
+  "id": "wf-webvtt-cue-settings",
+  "source": "webfeatures",
+  "name": "WebVTT cue settings",
+  "description": "The VTTCue API updates various aspects of cues dynamically, such as alignment, size and position.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/webvtt/#the-vttcue-interface",
+    "https://w3c.github.io/webvtt/#dom-vttcue-align",
+    "https://w3c.github.io/webvtt/#dom-vttcue-line",
+    "https://w3c.github.io/webvtt/#dom-vttcue-position",
+    "https://w3c.github.io/webvtt/#dom-vttcue-size",
+    "https://w3c.github.io/webvtt/#dom-vttcue-snaptolines",
+    "https://w3c.github.io/webvtt/#dom-vttcue-vertical"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/VTTCue/vertical",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "23",
+      "versions": [
+        {
+          "version": "23",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "31",
+      "versions": [
+        {
+          "version": "31",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "6",
+      "versions": [
+        {
+          "version": "6",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "23",
+      "versions": [
+        {
+          "version": "23",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "6",
+      "versions": [
+        {
+          "version": "6",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "23",
+      "versions": [
+        {
+          "version": "23",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "23",
+      "versions": [
+        {
+          "version": "23",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "31",
+      "versions": [
+        {
+          "version": "31",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.34,
+      "partial": 0,
+      "total": 94.34
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.91,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webvtt-cue-settings"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTCue.align",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTCue.line",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTCue.position",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTCue.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTCue.snapToLines",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTCue.vertical",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

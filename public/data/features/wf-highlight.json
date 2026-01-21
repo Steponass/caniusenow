@@ -1,0 +1,280 @@
+{
+  "id": "wf-highlight",
+  "source": "webfeatures",
+  "name": "Custom highlights",
+  "description": "Custom highlights style arbitrary text ranges, without adding extra elements to the DOM.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-highlight-api-1/",
+    "https://drafts.csswg.org/css-highlight-api/#dom-css-highlights",
+    "https://drafts.csswg.org/css-highlight-api/#highlight",
+    "https://drafts.csswg.org/css-highlight-api/#dom-highlight-highlight",
+    "https://drafts.csswg.org/css-highlight-api/#dom-highlight-priority",
+    "https://drafts.csswg.org/css-highlight-api/#enumdef-highlighttype",
+    "https://drafts.csswg.org/css-highlight-api/#highlight-registry",
+    "https://drafts.csswg.org/css-highlight-api/#custom-highlight-pseudo",
+    "https://drafts.csswg.org/css-pseudo/#selectordef-highlight-custom-ident"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Selectors/::highlight",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "17.2",
+      "versions": [
+        {
+          "version": "17.2",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.2",
+      "versions": [
+        {
+          "version": "17.2",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "105",
+      "versions": [
+        {
+          "version": "105",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 87.73,
+      "partial": 0,
+      "total": 87.73
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.67,
+        "safari": 0.98,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.92,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "highlight"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.highlights_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Highlight",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Highlight.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Highlight.Highlight",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Highlight.add",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Highlight.clear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Highlight.delete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Highlight.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Highlight.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Highlight.has",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Highlight.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Highlight.priority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Highlight.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Highlight.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Highlight.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HighlightRegistry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HighlightRegistry.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HighlightRegistry.clear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HighlightRegistry.delete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HighlightRegistry.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HighlightRegistry.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HighlightRegistry.get",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HighlightRegistry.has",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HighlightRegistry.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HighlightRegistry.set",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HighlightRegistry.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HighlightRegistry.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.highlight",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

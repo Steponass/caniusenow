@@ -1,0 +1,653 @@
+{
+  "id": "addeventlistener",
+  "source": "caniuse",
+  "name": "EventTarget.addEventListener()",
+  "description": "The modern standard API for adding DOM event handlers. Introduced in the DOM Level 2 Events spec. Also implies support for `removeEventListener`, the [capture phase](https://dom.spec.whatwg.org/#dom-event-capturing_phase) of DOM event dispatch, as well as the `stopPropagation()` and `preventDefault()` event methods.",
+  "category": "Other",
+  "spec": [
+    "https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener",
+    "https://html.spec.whatwg.org/multipage/indices.html#events-2",
+    "https://dom.spec.whatwg.org/#interface-customevent",
+    "https://dom.spec.whatwg.org/#interface-eventtarget",
+    "https://dom.spec.whatwg.org/#ref-for-dom-customevent-customevent",
+    "https://dom.spec.whatwg.org/#ref-for-dom-customevent-detail②",
+    "https://dom.spec.whatwg.org/#interface-event",
+    "https://dom.spec.whatwg.org/#ref-for-dom-event-event",
+    "https://dom.spec.whatwg.org/#ref-for-dom-event-bubbles③",
+    "https://dom.spec.whatwg.org/#ref-for-dom-event-cancelable②",
+    "https://dom.spec.whatwg.org/#ref-for-dom-event-currenttarget②",
+    "https://dom.spec.whatwg.org/#ref-for-dom-event-defaultprevented①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-event-eventphase③",
+    "https://dom.spec.whatwg.org/#ref-for-dom-event-istrusted①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-event-preventdefault③",
+    "https://dom.spec.whatwg.org/#ref-for-dom-event-stopimmediatepropagation①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-event-stoppropagation①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-event-target③",
+    "https://dom.spec.whatwg.org/#ref-for-dom-event-timestamp①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-event-type④",
+    "https://dom.spec.whatwg.org/#ref-for-dom-eventtarget-eventtarget①",
+    "https://dom.spec.whatwg.org/#ref-for-dom-eventtarget-addeventlistener③",
+    "https://dom.spec.whatwg.org/#dom-eventlisteneroptions-capture",
+    "https://dom.spec.whatwg.org/#dom-addeventlisteneroptions-once",
+    "https://dom.spec.whatwg.org/#dom-addeventlisteneroptions-passive",
+    "https://dom.spec.whatwg.org/#dom-addeventlisteneroptions-signal",
+    "https://dom.spec.whatwg.org/#ref-for-dom-eventtarget-dispatchevent③",
+    "https://dom.spec.whatwg.org/#ref-for-dom-eventtarget-removeeventlistener②"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener",
+      "title": "MDN Web Docs - addEventListener"
+    },
+    {
+      "url": "https://github.com/Financial-Times/polyfill-service/blob/master/polyfills/Event/polyfill.js",
+      "title": "Financial Times IE8 polyfill"
+    },
+    {
+      "url": "https://github.com/WebReflection/ie8",
+      "title": "WebReflection ie8 polyfill"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "7",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "3.1",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "9",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "9",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "6",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "7",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "8",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "9",
+          "status": "y"
+        },
+        {
+          "version": "10",
+          "status": "y"
+        },
+        {
+          "version": "11",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "3.2",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.94,
+      "partial": 0,
+      "total": 96.94
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.82,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91,
+        "ie": 0.41
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "IE<=8 instead only supports the [proprietary `.attachEvent()` method](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener). It also does not support the [capture phase](https://www.w3.org/TR/DOM-Level-3-Events/#event-flow) of DOM event dispatch; it only supports event bubbling.",
+      "2": "The `useCapture` parameter is non-optional and must be provided. Future versions made it optional, with a default value of `false`."
+    }
+  },
+  "status": "ls",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "addeventlistener"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "events",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomEvent.CustomEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomEvent.detail",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomEvent.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Event.Event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Event.bubbles",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Event.cancelable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Event.currentTarget",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Event.defaultPrevented",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Event.eventPhase",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Event.isTrusted",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Event.preventDefault",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Event.stopImmediatePropagation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Event.stopPropagation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Event.target",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Event.timeStamp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Event.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EventTarget",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EventTarget.EventTarget",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EventTarget.addEventListener",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EventTarget.addEventListener.options_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EventTarget.addEventListener.options_parameter.options_capture_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EventTarget.addEventListener.options_parameter.options_once_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EventTarget.addEventListener.options_parameter.options_passive_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EventTarget.addEventListener.options_parameter.options_passive_parameter_default_true_touch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EventTarget.addEventListener.options_parameter.options_passive_parameter_default_true_wheel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EventTarget.addEventListener.options_parameter.options_signal_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EventTarget.addEventListener.useCapture_parameter_optional",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EventTarget.dispatchEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EventTarget.removeEventListener",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EventTarget.removeEventListener.options_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.EventTarget.removeEventListener.useCapture_parameter_optional",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1141 @@
+{
+  "id": "indexeddb",
+  "source": "caniuse",
+  "name": "IndexedDB",
+  "description": "Method of storing data client-side, allows indexed database queries.",
+  "category": "JS API",
+  "spec": [
+    "https://www.w3.org/TR/IndexedDB/",
+    "https://w3c.github.io/IndexedDB/",
+    "https://w3c.github.io/IndexedDB/#cursor-interface",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbcursor-advance①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbcursor-continue①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbcursor-continueprimarykey①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbcursor-delete①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbcursor-direction①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbcursor-key①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbcursor-primarykey①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbcursor-request①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbcursor-source①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbcursor-update①",
+    "https://w3c.github.io/IndexedDB/#idbcursorwithvalue",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbcursorwithvalue-value①",
+    "https://w3c.github.io/IndexedDB/#database-interface",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbdatabase-close②",
+    "https://w3c.github.io/IndexedDB/#closing-connection",
+    "https://w3c.github.io/IndexedDB/#dom-idbdatabase-onclose",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbdatabase-createobjectstore①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbdatabase-deleteobjectstore①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbdatabase-name①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbdatabase-objectstorenames①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbdatabase-transaction③",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbdatabase-version①",
+    "https://w3c.github.io/IndexedDB/#eventdef-idbdatabase-versionchange",
+    "https://w3c.github.io/IndexedDB/#dom-idbdatabase-onversionchange",
+    "https://w3c.github.io/IndexedDB/#factory-interface",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbfactory-cmp①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbfactory-databases①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbfactory-deletedatabase①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbfactory-open②",
+    "https://w3c.github.io/IndexedDB/#index-interface",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbindex-count①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbindex-get①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbindex-getall①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbindex-getallkeys①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbindex-getkey①",
+    "https://w3c.github.io/IndexedDB/#dom-idbindex-keypath",
+    "https://w3c.github.io/IndexedDB/#dom-idbindex-multientry",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbindex-name①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbindex-objectstore①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbindex-opencursor②",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbindex-openkeycursor①",
+    "https://w3c.github.io/IndexedDB/#dom-idbindex-unique",
+    "https://w3c.github.io/IndexedDB/#keyrange",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbkeyrange-bound①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbkeyrange-includes①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbkeyrange-lower①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbkeyrange-lowerbound①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbkeyrange-loweropen①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbkeyrange-only①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbkeyrange-upper①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbkeyrange-upperbound①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbkeyrange-upperopen①",
+    "https://w3c.github.io/IndexedDB/#object-store-interface",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-add①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-autoincrement①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-clear③",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-count①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-createindex①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-delete①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-deleteindex①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-get①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-getall①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-getallkeys①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-getkey①",
+    "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-index",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-indexnames①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-keypath①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-name①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-opencursor②",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-openkeycursor①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-put①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-transaction①",
+    "https://w3c.github.io/IndexedDB/#idbopendbrequest",
+    "https://w3c.github.io/IndexedDB/#eventdef-idbopendbrequest-blocked",
+    "https://w3c.github.io/IndexedDB/#eventdef-idbopendbrequest-upgradeneeded",
+    "https://w3c.github.io/IndexedDB/#request-api",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbrequest-error①",
+    "https://w3c.github.io/IndexedDB/#eventdef-idbrequest-error",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbrequest-readystate①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbrequest-result①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbrequest-source①",
+    "https://w3c.github.io/IndexedDB/#eventdef-idbrequest-success",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbrequest-transaction①",
+    "https://w3c.github.io/IndexedDB/#transaction",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbtransaction-abort②",
+    "https://w3c.github.io/IndexedDB/#eventdef-idbtransaction-abort",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbtransaction-commit②",
+    "https://w3c.github.io/IndexedDB/#eventdef-idbtransaction-complete",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbtransaction-db①",
+    "https://w3c.github.io/IndexedDB/#dom-idbtransaction-durability",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbtransaction-error①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbtransaction-mode①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbtransaction-objectstore①",
+    "https://w3c.github.io/IndexedDB/#ref-for-dom-idbtransaction-objectstorenames①",
+    "https://w3c.github.io/IndexedDB/#events",
+    "https://w3c.github.io/IndexedDB/#dom-idbversionchangeevent-idbversionchangeevent",
+    "https://w3c.github.io/IndexedDB/#dom-idbversionchangeevent-newversion",
+    "https://w3c.github.io/IndexedDB/#dom-idbversionchangeevent-oldversion",
+    "https://w3c.github.io/IndexedDB/#dom-windoworworkerglobalscope-indexeddb"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/indexedDB",
+  "links": [
+    {
+      "url": "https://hacks.mozilla.org/2010/06/comparing-indexeddb-and-webdatabase/",
+      "title": "Mozilla Hacks article"
+    },
+    {
+      "url": "https://github.com/axemclion/IndexedDBShim",
+      "title": "Polyfill for browsers supporting WebSQL"
+    },
+    {
+      "url": "https://raw.github.com/phiggins42/has.js/master/detect/features.js#native-indexeddb",
+      "title": "has.js test"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/apis/indexeddb",
+      "title": "WebPlatform Docs"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "23",
+      "firstPartial": "11",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "10",
+      "firstPartial": "4",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "10",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "15",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "11",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10.0-10.2",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.4,
+      "partial": 0.43,
+      "total": 96.83
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Partial support in IE 10 & 11 refers to a number of subfeatures [not being supported](https://indexdb-support-test.glitch.me/). Edge does not support IndexedDB inside blob web workers. [See issue](https://web.archive.org/web/20171213082727/https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/5942817/)",
+      "2": "Partial support in Safari 7.1 – 9.3 refers to [seriously buggy behavior](http://www.raymondcamden.com/2014/09/25/IndexedDB-on-iOS-8-Broken-Bad/) as well as a lack of support in WebViews.",
+      "3": "Partial support [refers to a bug](https://bugs.webkit.org/show_bug.cgi?id=226547) in Safari 14.1.1 that causes indexedDB to not load when the browser is initially opened."
+    }
+  },
+  "status": "rec",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "indexeddb"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "indexeddb",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBCursor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBCursor.advance",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBCursor.continue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBCursor.continuePrimaryKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBCursor.delete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBCursor.direction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBCursor.key",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBCursor.key.binary_keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBCursor.primaryKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBCursor.request",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBCursor.source",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBCursor.update",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBCursor.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBCursorWithValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBCursorWithValue.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBCursorWithValue.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBDatabase",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBDatabase.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBDatabase.close_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBDatabase.createObjectStore",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBDatabase.deleteObjectStore",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBDatabase.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBDatabase.objectStoreNames",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBDatabase.transaction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBDatabase.version",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBDatabase.versionchange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBDatabase.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBFactory",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBFactory.cmp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBFactory.databases",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBFactory.deleteDatabase",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBFactory.open",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBFactory.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBIndex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBIndex.count",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBIndex.get",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBIndex.getAll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBIndex.getAllKeys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBIndex.getKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBIndex.keyPath",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBIndex.multiEntry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBIndex.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBIndex.name.renaming_through_name_setter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBIndex.objectStore",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBIndex.openCursor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBIndex.openKeyCursor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBIndex.unique",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBIndex.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBKeyRange",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBKeyRange.bound_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBKeyRange.includes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBKeyRange.lower",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBKeyRange.lowerBound_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBKeyRange.lowerOpen",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBKeyRange.only_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBKeyRange.upper",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBKeyRange.upperBound_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBKeyRange.upperOpen",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBKeyRange.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.add",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.autoIncrement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.clear",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.count",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.createIndex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.delete",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.deleteIndex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.get",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.getAll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.getAllKeys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.getKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.index",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.indexNames",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.keyPath",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.name.renaming_through_name_setter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.openCursor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.openKeyCursor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.put",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.transaction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBOpenDBRequest",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBOpenDBRequest.blocked_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBOpenDBRequest.upgradeneeded_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBOpenDBRequest.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBRequest",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBRequest.error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBRequest.error.DOMException",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBRequest.error_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBRequest.readyState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBRequest.result",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBRequest.source",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBRequest.success_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBRequest.transaction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBRequest.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBTransaction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBTransaction.abort",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBTransaction.abort_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBTransaction.commit",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBTransaction.complete_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBTransaction.db",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBTransaction.durability",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBTransaction.error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBTransaction.error.DOMException",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBTransaction.error_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBTransaction.mode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBTransaction.objectStore",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBTransaction.objectStoreNames",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBTransaction.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBVersionChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBVersionChangeEvent.IDBVersionChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBVersionChangeEvent.newVersion",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBVersionChangeEvent.oldVersion",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBVersionChangeEvent.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.indexedDB",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.indexedDB.worker_support",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

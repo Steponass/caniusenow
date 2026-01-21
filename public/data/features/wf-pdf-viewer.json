@@ -1,0 +1,152 @@
+{
+  "id": "wf-pdf-viewer",
+  "source": "webfeatures",
+  "name": "pdfViewerEnabled",
+  "description": "The navigator.pdfViewerEnabled property is a boolean for whether the browser navigates to and shows a PDF in the browser window or downloads the PDF.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
+    "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator-pdfviewerenabled"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/pdfViewerEnabled",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "94",
+      "versions": [
+        {
+          "version": "94",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "99",
+      "versions": [
+        {
+          "version": "99",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "94",
+      "versions": [
+        {
+          "version": "94",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "94",
+      "versions": [
+        {
+          "version": "94",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "94",
+      "versions": [
+        {
+          "version": "94",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "94",
+      "versions": [
+        {
+          "version": "94",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "94",
+      "versions": [
+        {
+          "version": "94",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "99",
+      "versions": [
+        {
+          "version": "99",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 90.75,
+      "partial": 0,
+      "total": 90.75
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.93,
+        "firefox": 1.75,
+        "safari": 1.23,
+        "edge": 4.25,
+        "opera": 0.82
+      },
+      "mobile": {
+        "ios_saf": 11.35,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "pdf-viewer"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.pdfViewerEnabled",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

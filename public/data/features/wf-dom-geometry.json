@@ -1,0 +1,949 @@
+{
+  "id": "wf-dom-geometry",
+  "source": "webfeatures",
+  "name": "DOM Geometry",
+  "description": "The DOMMatrix, DOMPoint, DOMQuad and DOMRect APIs represent points, rectangles, quadrilaterals and transformation matrices within JavaScript. They can be used in transformations in CSS, <canvas>, and SVG.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/geometry-1/",
+    "https://drafts.csswg.org/geometry/#DOMMatrix",
+    "https://drafts.csswg.org/geometry/#dom-dommatrix-dommatrix",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-a",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-b",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-c",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-d",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-e",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-f",
+    "https://drafts.csswg.org/geometry/#dom-dommatrix-fromfloat32array",
+    "https://drafts.csswg.org/geometry/#dom-dommatrix-fromfloat64array",
+    "https://drafts.csswg.org/geometry/#dom-dommatrix-frommatrix",
+    "https://drafts.csswg.org/geometry/#dom-dommatrix-invertself",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m11",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m12",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m13",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m14",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m21",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m22",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m23",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m24",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m31",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m32",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m33",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m34",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m41",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m42",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m43",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-m44",
+    "https://drafts.csswg.org/geometry/#dom-dommatrix-multiplyself",
+    "https://drafts.csswg.org/geometry/#dom-dommatrix-premultiplyself",
+    "https://drafts.csswg.org/geometry/#dom-dommatrix-rotateaxisangleself",
+    "https://drafts.csswg.org/geometry/#dom-dommatrix-rotatefromvectorself",
+    "https://drafts.csswg.org/geometry/#dom-dommatrix-rotateself",
+    "https://drafts.csswg.org/geometry/#dom-dommatrix-scale3dself",
+    "https://drafts.csswg.org/geometry/#dom-dommatrix-scaleself",
+    "https://drafts.csswg.org/geometry/#dom-dommatrix-setmatrixvalue",
+    "https://drafts.csswg.org/geometry/#dom-dommatrix-skewxself",
+    "https://drafts.csswg.org/geometry/#dom-dommatrix-skewyself",
+    "https://drafts.csswg.org/geometry/#dom-dommatrix-translateself",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-dommatrixreadonly",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-flipx",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-flipy",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-fromfloat32array",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-fromfloat64array",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-frommatrix",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-inverse",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-is2d",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-isidentity",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-multiply",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-rotate",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-rotateaxisangle",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-rotatefromvector",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-scale",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-scale3d",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-skewx",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-skewy",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-tofloat32array",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-tofloat64array",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-tojson",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-transformpoint",
+    "https://drafts.csswg.org/geometry/#dom-dommatrixreadonly-translate",
+    "https://drafts.csswg.org/geometry/#DOMPoint",
+    "https://drafts.csswg.org/geometry/#dom-dompoint-dompoint",
+    "https://drafts.csswg.org/geometry/#dom-dompoint-frompoint",
+    "https://drafts.csswg.org/geometry/#dom-dompointreadonly-w",
+    "https://drafts.csswg.org/geometry/#dom-dompointreadonly-x",
+    "https://drafts.csswg.org/geometry/#dom-dompointreadonly-y",
+    "https://drafts.csswg.org/geometry/#dom-dompointreadonly-z",
+    "https://drafts.csswg.org/geometry/#dom-dompointreadonly-dompointreadonly",
+    "https://drafts.csswg.org/geometry/#dom-dompointreadonly-frompoint",
+    "https://drafts.csswg.org/geometry/#dom-dompointreadonly-matrixtransform",
+    "https://drafts.csswg.org/geometry/#dom-dompointreadonly-tojson",
+    "https://drafts.csswg.org/geometry/#DOMQuad",
+    "https://drafts.csswg.org/geometry/#dom-domquad-domquad",
+    "https://drafts.csswg.org/geometry/#dom-domquad-fromquad",
+    "https://drafts.csswg.org/geometry/#dom-domquad-fromrect",
+    "https://drafts.csswg.org/geometry/#dom-domquad-getbounds",
+    "https://drafts.csswg.org/geometry/#dom-domquad-p1",
+    "https://drafts.csswg.org/geometry/#dom-domquad-p2",
+    "https://drafts.csswg.org/geometry/#dom-domquad-p3",
+    "https://drafts.csswg.org/geometry/#dom-domquad-p4",
+    "https://drafts.csswg.org/geometry/#dom-domquad-tojson",
+    "https://drafts.csswg.org/geometry/#DOMRect",
+    "https://drafts.csswg.org/geometry/#dom-domrect-domrect",
+    "https://drafts.csswg.org/geometry/#dom-domrect-fromrect",
+    "https://drafts.csswg.org/geometry/#dom-domrect-height",
+    "https://drafts.csswg.org/geometry/#dom-domrect-width",
+    "https://drafts.csswg.org/geometry/#dom-domrect-x",
+    "https://drafts.csswg.org/geometry/#dom-domrect-y",
+    "https://drafts.csswg.org/geometry/#DOMRectList",
+    "https://drafts.csswg.org/geometry/#dom-domrectlist-item",
+    "https://drafts.csswg.org/geometry/#dom-domrectlist-length",
+    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-domrectreadonly",
+    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-bottom",
+    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-fromrect",
+    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-height",
+    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-left",
+    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-right",
+    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-tojson",
+    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-top",
+    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-width",
+    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-x",
+    "https://drafts.csswg.org/geometry/#dom-domrectreadonly-y"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/y",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "61",
+      "versions": [
+        {
+          "version": "61",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "33",
+      "versions": [
+        {
+          "version": "33",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "11",
+      "versions": [
+        {
+          "version": "11",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "61",
+      "versions": [
+        {
+          "version": "61",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11",
+      "versions": [
+        {
+          "version": "11",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "61",
+      "versions": [
+        {
+          "version": "61",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "61",
+      "versions": [
+        {
+          "version": "61",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "33",
+      "versions": [
+        {
+          "version": "33",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.18,
+      "partial": 0,
+      "total": 92.18
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.2,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.19,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "dom-geometry"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.DOMMatrix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.a",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.b",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.c",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.d",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.e",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.f",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.fromFloat32Array_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.fromFloat64Array_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.fromMatrix_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.invertSelf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.m11",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.m12",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.m13",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.m14",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.m21",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.m22",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.m23",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.m24",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.m31",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.m32",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.m33",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.m34",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.m41",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.m42",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.m43",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.m44",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.multiplySelf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.preMultiplySelf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.rotateAxisAngleSelf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.rotateFromVectorSelf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.rotateSelf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.scale3dSelf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.scaleSelf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.setMatrixValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.skewXSelf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.skewYSelf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.translateSelf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.DOMMatrixReadOnly",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.a",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.b",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.c",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.d",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.e",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.f",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.flipX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.flipY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.fromFloat32Array_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.fromFloat64Array_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.fromMatrix_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.inverse",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.is2D",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.isIdentity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.m11",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.m12",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.m13",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.m14",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.m21",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.m22",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.m23",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.m24",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.m31",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.m32",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.m33",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.m34",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.m41",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.m42",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.m43",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.m44",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.multiply",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.rotate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.rotateAxisAngle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.rotateFromVector",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.scale",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.scale3d",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.skewX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.skewY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.toFloat32Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.toFloat64Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.transformPoint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.translate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrixReadOnly.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMPoint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMPoint.DOMPoint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMPoint.fromPoint_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMPoint.w",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMPoint.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMPoint.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMPoint.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMPoint.z",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMPointReadOnly",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMPointReadOnly.DOMPointReadOnly",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMPointReadOnly.fromPoint_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMPointReadOnly.matrixTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMPointReadOnly.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMPointReadOnly.w",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMPointReadOnly.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMPointReadOnly.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMPointReadOnly.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMPointReadOnly.z",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMQuad",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMQuad.DOMQuad",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMQuad.fromQuad_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMQuad.fromRect_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMQuad.getBounds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMQuad.p1",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMQuad.p2",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMQuad.p3",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMQuad.p4",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMQuad.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMQuad.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRect.DOMRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRect.fromRect_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRect.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRect.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRect.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRect.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRect.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRectList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRectList.item",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRectList.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRectReadOnly",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRectReadOnly.DOMRectReadOnly",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRectReadOnly.bottom",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRectReadOnly.fromRect_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRectReadOnly.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRectReadOnly.left",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRectReadOnly.right",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRectReadOnly.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRectReadOnly.top",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRectReadOnly.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRectReadOnly.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRectReadOnly.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMRectReadOnly.y",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

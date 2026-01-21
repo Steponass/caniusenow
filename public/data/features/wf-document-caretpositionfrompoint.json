@@ -1,0 +1,180 @@
+{
+  "id": "wf-document-caretpositionfrompoint",
+  "source": "webfeatures",
+  "name": "document.caretPositionFromPoint()",
+  "description": "The document.caretPositionFromPoint() method finds an insertion point, represented by a DOM node and an offset within that node, for given coordinates in the viewport.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/cssom-view-1/#dom-document-caretpositionfrompoint",
+    "https://drafts.csswg.org/cssom-view/#caret-position",
+    "https://drafts.csswg.org/cssom-view/#dom-caretposition-getclientrect",
+    "https://drafts.csswg.org/cssom-view/#dom-caretposition-offset",
+    "https://drafts.csswg.org/cssom-view/#dom-caretposition-offsetnode",
+    "https://drafts.csswg.org/cssom-view/#dom-document-caretpositionfrompoint"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Document/caretPositionFromPoint",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "128",
+      "versions": [
+        {
+          "version": "128",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "20",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "26.2",
+      "versions": [
+        {
+          "version": "26.2",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "128",
+      "versions": [
+        {
+          "version": "128",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "128",
+      "versions": [
+        {
+          "version": "128",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "128",
+      "versions": [
+        {
+          "version": "128",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "26.2",
+      "versions": [
+        {
+          "version": "26.2",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "128",
+      "versions": [
+        {
+          "version": "128",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "128",
+      "versions": [
+        {
+          "version": "128",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "20",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 71.44,
+      "partial": 0,
+      "total": 71.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 20.72,
+        "firefox": 1.77,
+        "safari": 0.09,
+        "edge": 4.17
+      },
+      "mobile": {
+        "ios_saf": 0.26,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "document-caretpositionfrompoint"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CaretPosition",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CaretPosition.getClientRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CaretPosition.offset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CaretPosition.offsetNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.caretPositionFromPoint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.caretPositionFromPoint.options_parameter",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "id": "wf-set-methods",
+  "source": "webfeatures",
+  "name": "Set methods",
+  "description": "The difference(), intersection(), isDisjointFrom(), isSubsetOf(), isSupersetOf(), symmetricDifference(), and union() methods of the JavaScript Set object performs operations between two sets.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-properties-of-the-set-prototype-object",
+    "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.difference",
+    "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.intersection",
+    "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.isdisjointfrom",
+    "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.issubsetof",
+    "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.issupersetof",
+    "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.symmetricdifference",
+    "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.union"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Set/union",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "122",
+      "versions": [
+        {
+          "version": "122",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "127",
+      "versions": [
+        {
+          "version": "127",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "122",
+      "versions": [
+        {
+          "version": "122",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "122",
+      "versions": [
+        {
+          "version": "122",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "122",
+      "versions": [
+        {
+          "version": "122",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "122",
+      "versions": [
+        {
+          "version": "122",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "122",
+      "versions": [
+        {
+          "version": "122",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "127",
+      "versions": [
+        {
+          "version": "127",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 85.49,
+      "partial": 0,
+      "total": 85.49
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 22.55,
+        "firefox": 1.48,
+        "safari": 1.07,
+        "edge": 4.19,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.97,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "set-methods"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Set.difference",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Set.intersection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Set.isDisjointFrom",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Set.isSubsetOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Set.isSupersetOf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Set.symmetricDifference",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Set.union",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

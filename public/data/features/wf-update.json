@@ -1,0 +1,152 @@
+{
+  "id": "wf-update",
+  "source": "webfeatures",
+  "name": "Update frequency media query",
+  "description": "The update CSS media query sets styles based on whether and how fast the user's device can modify display after it has been rendered. For example, you can avoid animations on devices that aren't fast enough to display them smoothly.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/mediaqueries-5/#update",
+    "https://drafts.csswg.org/mediaqueries/#update"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@media/update",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "113",
+      "versions": [
+        {
+          "version": "113",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "113",
+      "versions": [
+        {
+          "version": "113",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "113",
+      "versions": [
+        {
+          "version": "113",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "113",
+      "versions": [
+        {
+          "version": "113",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "113",
+      "versions": [
+        {
+          "version": "113",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "113",
+      "versions": [
+        {
+          "version": "113",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 86.64,
+      "partial": 0,
+      "total": 86.64
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 23.42,
+        "firefox": 1.75,
+        "safari": 1.07,
+        "edge": 4.21,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.97,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "update"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.media.update",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

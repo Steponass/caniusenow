@@ -1,0 +1,182 @@
+{
+  "id": "wf-background-sync",
+  "source": "webfeatures",
+  "name": "Background sync",
+  "description": "The background synchronization API registers a service worker callback to run only when the device is no longer offline. You can use this to let users continue using your app while offline and synchronize with a server after reconnecting.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/background-sync/spec/",
+    "https://wicg.github.io/background-sync/spec/#dom-serviceworkerglobalscope-onsync",
+    "https://wicg.github.io/background-sync/spec/#dom-serviceworkerregistration-sync",
+    "https://wicg.github.io/background-sync/spec/#sync-event",
+    "https://wicg.github.io/background-sync/spec/#dom-syncevent-syncevent",
+    "https://wicg.github.io/background-sync/spec/#dom-syncevent-lastchance",
+    "https://wicg.github.io/background-sync/spec/#dom-syncevent-tag",
+    "https://wicg.github.io/background-sync/spec/#sync-manager-interface",
+    "https://wicg.github.io/background-sync/spec/#dom-syncmanager-gettags",
+    "https://wicg.github.io/background-sync/spec/#dom-syncmanager-register"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/SyncManager/register",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "49",
+      "versions": [
+        {
+          "version": "49",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "49",
+      "versions": [
+        {
+          "version": "49",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "49",
+      "versions": [
+        {
+          "version": "49",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "49",
+      "versions": [
+        {
+          "version": "49",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.6,
+      "partial": 0,
+      "total": 76.6
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.32,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "background-sync"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Permissions.permission_background-sync",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.sync_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerRegistration.sync",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SyncEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SyncEvent.SyncEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SyncEvent.lastChance",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SyncEvent.tag",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SyncManager",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SyncManager.getTags",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SyncManager.register",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SyncManager.worker_support",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

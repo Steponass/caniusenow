@@ -1,0 +1,165 @@
+{
+  "id": "mdn-api.UIEvent.which",
+  "source": "mdnbcd",
+  "name": "Which",
+  "description": "",
+  "category": "JS API",
+  "spec": [
+    "https://w3c.github.io/uievents/#dom-uievent-which"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/UIEvent/which",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y",
+          "notes": "When selecting an autocomplete suggestion, a <code>keydown</code> event fires where the event's <code>which</code> property is <code>undefined</code>. See <a href=\"https://crbug.com/41425904\">bug 41425904</a>."
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y",
+          "notes": "On <code>mousemove</code> events, the <code>which</code> property is incorrectly always set to <code>1</code>."
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "firstPartial": "12",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        },
+        {
+          "version": "12",
+          "status": "a",
+          "notes": "Only supported for <a href=\"https://developer.mozilla.org/docs/Web/API/KeyboardEvent\"><code>KeyboardEvent</code></a> and <a href=\"https://developer.mozilla.org/docs/Web/API/MouseEvent\"><code>MouseEvent</code></a>, not all <code>UIEvent</code> objects."
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "15",
+      "firstPartial": "≤12.1",
+      "versions": [
+        {
+          "version": "15",
+          "status": "y"
+        },
+        {
+          "version": "≤12.1",
+          "status": "a",
+          "notes": "Only supported for <a href=\"https://developer.mozilla.org/docs/Web/API/KeyboardEvent\"><code>KeyboardEvent</code></a> and <a href=\"https://developer.mozilla.org/docs/Web/API/MouseEvent\"><code>MouseEvent</code></a>, not all <code>UIEvent</code> objects."
+        }
+      ]
+    },
+    "ie": {
+      "current": "a",
+      "firstPartial": "9",
+      "versions": [
+        {
+          "version": "9",
+          "status": "a",
+          "notes": "Only supported for <a href=\"https://developer.mozilla.org/docs/Web/API/KeyboardEvent\"><code>KeyboardEvent</code></a> and <a href=\"https://developer.mozilla.org/docs/Web/API/MouseEvent\"><code>MouseEvent</code></a>, not all <code>UIEvent</code> objects."
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y",
+          "notes": "When selecting an autocomplete suggestion, a <code>keydown</code> event fires where the event's <code>which</code> property is <code>undefined</code>. See <a href=\"https://crbug.com/41425904\">bug 41425904</a>."
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y",
+          "notes": "When selecting an autocomplete suggestion, a <code>keydown</code> event fires where the event's <code>which</code> property is <code>undefined</code>. See <a href=\"https://crbug.com/41425904\">bug 41425904</a>."
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y",
+          "notes": "On <code>mousemove</code> events, the <code>which</code> property is incorrectly always set to <code>1</code>."
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0.41,
+      "total": 94.85
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91,
+        "ie": 0.41
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "api.UIEvent.which"
+    },
+    "supplementary": []
+  }
+}

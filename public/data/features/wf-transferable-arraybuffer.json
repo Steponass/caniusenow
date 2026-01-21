@@ -1,0 +1,163 @@
+{
+  "id": "wf-transferable-arraybuffer",
+  "source": "webfeatures",
+  "name": "Transferable ArrayBuffer",
+  "description": "The transfer() and transferToFixedLength() methods of ArrayBuffer move a buffer from one context to another (for example, to a worker).",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.prototype.transfer",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.detached",
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.prototype.transfertofixedlength"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer/transferToFixedLength",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "122",
+      "versions": [
+        {
+          "version": "122",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "17.4",
+      "versions": [
+        {
+          "version": "17.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.4",
+      "versions": [
+        {
+          "version": "17.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "114",
+      "versions": [
+        {
+          "version": "114",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "122",
+      "versions": [
+        {
+          "version": "122",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 86.14,
+      "partial": 0,
+      "total": 86.14
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 23.41,
+        "firefox": 1.48,
+        "safari": 0.96,
+        "edge": 4.21,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.86,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "transferable-arraybuffer"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.ArrayBuffer.detached",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.ArrayBuffer.transfer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.ArrayBuffer.transferToFixedLength",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

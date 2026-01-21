@@ -1,0 +1,725 @@
+{
+  "id": "css-at-counter-style",
+  "source": "caniuse",
+  "name": "CSS Counter Styles",
+  "description": "The @counter-style CSS at-rule allows custom counter styles to be defined. A @counter-style rule defines how to convert a counter value into a string representation.",
+  "category": "CSS",
+  "spec": [
+    "https://w3c.github.io/csswg-drafts/css-counter-styles/",
+    "https://drafts.csswg.org/css-counter-styles-3/",
+    "https://drafts.csswg.org/css-counter-styles/#the-csscounterstylerule-interface",
+    "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-additivesymbols",
+    "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-fallback",
+    "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-name",
+    "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-negative",
+    "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-pad",
+    "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-prefix",
+    "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-range",
+    "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-speakas",
+    "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-suffix",
+    "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-symbols",
+    "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-system",
+    "https://drafts.csswg.org/css-counter-styles/#the-counter-style-rule",
+    "https://drafts.csswg.org/css-counter-styles/#counter-style-symbols",
+    "https://drafts.csswg.org/css-counter-styles/#counter-style-fallback",
+    "https://drafts.csswg.org/css-counter-styles/#counter-style-system",
+    "https://drafts.csswg.org/css-counter-styles/#counter-style-pad",
+    "https://drafts.csswg.org/css-counter-styles/#counter-style-prefix",
+    "https://drafts.csswg.org/css-counter-styles/#counter-style-range",
+    "https://drafts.csswg.org/css-counter-styles/#counter-style-speak-as",
+    "https://drafts.csswg.org/css-counter-styles/#counter-style-suffix"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@counter-style/system",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style",
+      "title": "MDN Web Docs - CSS counter style"
+    },
+    {
+      "url": "https://mdn.github.io/css-examples/counter-style-demo/",
+      "title": "CSS @counter-style Demo"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=167645",
+      "title": "WebKit bug on support for @counter-style"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "137",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "138",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "139",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "144",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "145",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "firefox": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "144",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "145",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "147",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "148",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "149",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "safari": {
+      "current": "a",
+      "firstPartial": "17.0",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "a"
+        },
+        {
+          "version": "18.2",
+          "status": "a"
+        },
+        {
+          "version": "18.3",
+          "status": "a"
+        },
+        {
+          "version": "18.4",
+          "status": "a"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "a"
+        },
+        {
+          "version": "26.0",
+          "status": "a"
+        },
+        {
+          "version": "26.1",
+          "status": "a"
+        },
+        {
+          "version": "26.2",
+          "status": "a"
+        },
+        {
+          "version": "26.3",
+          "status": "a"
+        },
+        {
+          "version": "TP",
+          "status": "a"
+        }
+      ]
+    },
+    "edge": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "134",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "135",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "136",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "137",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "138",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "139",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "opera": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "116",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "117",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "118",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "119",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "120",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "121",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "122",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "123",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "124",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "125",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "a",
+      "firstPartial": "17.0",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "a"
+        },
+        {
+          "version": "18.1",
+          "status": "a"
+        },
+        {
+          "version": "18.2",
+          "status": "a"
+        },
+        {
+          "version": "18.3",
+          "status": "a"
+        },
+        {
+          "version": "18.4",
+          "status": "a"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "a"
+        },
+        {
+          "version": "26.0",
+          "status": "a"
+        },
+        {
+          "version": "26.1",
+          "status": "a"
+        },
+        {
+          "version": "26.2",
+          "status": "a"
+        },
+        {
+          "version": "26.3",
+          "status": "a"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "samsung": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "20",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "21",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "22",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "23",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "24",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "25",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "26",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "27",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "28",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "29",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "u",
+      "versions": [
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0.5,
+      "partial": 93.7,
+      "total": 94.2
+    },
+    "byBrowser": {
+      "desktop": {
+        "safari": 1.07
+      },
+      "mobile": {
+        "ios_saf": 10.97
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Partial support refers to lacking support for image symbols: [Firefox bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1024179), [Chrome bug](https://bugs.chromium.org/p/chromium/issues/detail?id=1176323)"
+    }
+  },
+  "status": "cr",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-at-counter-style"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "counter-style",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSCounterStyleRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSCounterStyleRule.additiveSymbols",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSCounterStyleRule.fallback",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSCounterStyleRule.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSCounterStyleRule.negative",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSCounterStyleRule.pad",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSCounterStyleRule.prefix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSCounterStyleRule.range",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSCounterStyleRule.speakAs",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSCounterStyleRule.suffix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSCounterStyleRule.symbols",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSCounterStyleRule.system",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.counter-style",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.counter-style.additive-symbols",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.counter-style.fallback",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.counter-style.negative",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.counter-style.pad",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.counter-style.prefix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.counter-style.range",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.counter-style.speak-as",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.counter-style.suffix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.counter-style.symbols",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.counter-style.system",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

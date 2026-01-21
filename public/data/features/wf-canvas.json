@@ -1,0 +1,200 @@
+{
+  "id": "wf-canvas",
+  "source": "webfeatures",
+  "name": "<canvas>",
+  "description": "The <canvas> HTML element is a space to draw graphics in, using the 2D canvas API, WebGL, or WebGPU.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/canvas.html#canvas",
+    "https://html.spec.whatwg.org/multipage/canvas.html#htmlcanvaselement",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvas-getcontext-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvas-height",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvas-toblob-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvas-todataurl-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element",
+    "https://html.spec.whatwg.org/multipage/canvas.html#attr-canvas-height",
+    "https://html.spec.whatwg.org/multipage/canvas.html#attr-canvas-width"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/canvas",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "1.5",
+      "versions": [
+        {
+          "version": "1.5",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "2",
+      "versions": [
+        {
+          "version": "2",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "2",
+      "versions": [
+        {
+          "version": "2",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "1",
+      "versions": [
+        {
+          "version": "1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "1.5",
+      "versions": [
+        {
+          "version": "1.5",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.85,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "canvas"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.getContext",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.toBlob",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.toDataURL",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.canvas",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.canvas.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.canvas.width",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

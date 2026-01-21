@@ -1,0 +1,292 @@
+{
+  "id": "wf-webgl-sab",
+  "source": "webfeatures",
+  "name": "SharedArrayBuffer in WebGL",
+  "description": "SharedArrayBuffer objects can be used in WebGL APIs that previously only worked with ArrayBuffer objects.",
+  "category": "Other",
+  "spec": [
+    "https://registry.khronos.org/webgl/specs/latest/1.0/",
+    "https://registry.khronos.org/webgl/specs/latest/2.0/"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "60",
+      "versions": [
+        {
+          "version": "60",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "60",
+      "versions": [
+        {
+          "version": "60",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "60",
+      "versions": [
+        {
+          "version": "60",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "60",
+      "versions": [
+        {
+          "version": "60",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 78.55,
+      "partial": 0,
+      "total": 78.55
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.21,
+        "firefox": 1.75,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webgl-sab"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.bufferData.srcData_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.bufferSubData.srcData_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.clearBufferfv.values_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.clearBufferiv.values_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.clearBufferuiv.values_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.compressedTexImage2D.pixels_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.compressedTexImage3D.pixels_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.compressedTexSubImage2D.srcData_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.getBufferSubData.dstData_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.readPixels.pixels_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.texImage3D.srcData_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.texSubImage3D.srcData_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.uniformMatrix2fv.value_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.uniformMatrix2x3fv.data_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.uniformMatrix2x4fv.data_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.uniformMatrix3fv.value_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.uniformMatrix3x2fv.data_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.uniformMatrix3x4fv.data_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.uniformMatrix4fv.value_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.uniformMatrix4x2fv.data_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.uniformMatrix4x3fv.data_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.vertexAttrib1fv.value_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.vertexAttrib2fv.value_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.vertexAttrib3fv.value_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.vertexAttrib4fv.value_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.vertexAttribI4iv.value_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGL2RenderingContext.vertexAttribI4uiv.value_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.compressedTexImage2D.pixels_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.vertexAttrib1fv.value_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.vertexAttrib2fv.value_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.vertexAttrib3fv.value_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLRenderingContext.vertexAttrib4fv.value_param_accepts_SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

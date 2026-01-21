@@ -1,0 +1,127 @@
+{
+  "id": "wf-scoped-custom-element-registries",
+  "source": "webfeatures",
+  "name": "Scoped custom element registries",
+  "description": "The CustomElementRegistry() constructor creates a new custom element registry that's separate from the global window.customElements registry. Creating more than one registry is useful for multiple custom elements that have the same tag name to coexist.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
+    "https://dom.spec.whatwg.org/#element-custom-element-registry",
+    "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry",
+    "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry-initialize",
+    "https://dom.spec.whatwg.org/#dom-documentorshadowroot-customelementregistry",
+    "https://dom.spec.whatwg.org/#dom-element-customelementregistry",
+    "https://html.spec.whatwg.org/multipage/scripting.html#dom-template-shadowrootcustomelementregistry"
+  ],
+  "links": [],
+  "support": {
+    "safari": {
+      "current": "y",
+      "firstFull": "26",
+      "versions": [
+        {
+          "version": "26",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "26",
+      "versions": [
+        {
+          "version": "26",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 2.25,
+      "partial": 0,
+      "total": 2.25
+    },
+    "byBrowser": {
+      "desktop": {
+        "safari": 0.52
+      },
+      "mobile": {
+        "ios_saf": 1.73
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "scoped-custom-element-registries"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomElementRegistry.CustomElementRegistry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomElementRegistry.initialize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.customElementRegistry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.customElementRegistry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTemplateElement.shadowRootCustomElementRegistry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.customElementRegistry",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

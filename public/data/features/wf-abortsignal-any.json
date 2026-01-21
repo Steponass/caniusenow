@@ -1,0 +1,151 @@
+{
+  "id": "wf-abortsignal-any",
+  "source": "webfeatures",
+  "name": "AbortSignal.any()",
+  "description": "The AbortSignal.any() static method combines an iterable of abort signals into a single signal, with the abort reason taken from the first signal to abort.",
+  "category": "Other",
+  "spec": [
+    "https://dom.spec.whatwg.org/#dom-abortsignal-any"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/AbortSignal/any_static",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "116",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "124",
+      "versions": [
+        {
+          "version": "124",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "17.4",
+      "versions": [
+        {
+          "version": "17.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "116",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "116",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "116",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.4",
+      "versions": [
+        {
+          "version": "17.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "116",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "116",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "124",
+      "versions": [
+        {
+          "version": "124",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 85.99,
+      "partial": 0,
+      "total": 85.99
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 23.26,
+        "firefox": 1.48,
+        "safari": 0.96,
+        "edge": 4.21,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.86,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "abortsignal-any"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.AbortSignal.any_static",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

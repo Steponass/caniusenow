@@ -1,0 +1,192 @@
+{
+  "id": "wf-webxr-hand-input",
+  "source": "webfeatures",
+  "name": "Hand input",
+  "description": "An XRHand object, from the hand attribute of an XRInputSource object, represents a WebXR session's fully-articulated hand tracking model.",
+  "category": "Other",
+  "spec": [
+    "https://immersive-web.github.io/webxr-hand-input/",
+    "https://immersive-web.github.io/webxr-hand-input/#dom-xrframe-filljointradii",
+    "https://immersive-web.github.io/webxr-hand-input/#dom-xrframe-fillposes",
+    "https://immersive-web.github.io/webxr-hand-input/#dom-xrframe-getjointpose",
+    "https://immersive-web.github.io/webxr-hand-input/#xrhand-interface",
+    "https://immersive-web.github.io/webxr-hand-input/#dom-xrinputsource-hand",
+    "https://immersive-web.github.io/webxr-hand-input/#xrjointpose-interface",
+    "https://immersive-web.github.io/webxr-hand-input/#dom-xrjointpose-radius",
+    "https://immersive-web.github.io/webxr-hand-input/#dom-xrjointspace-jointname"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/XRJointSpace/jointName",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "131",
+      "versions": [
+        {
+          "version": "131",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "edge": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "131",
+      "versions": [
+        {
+          "version": "131",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": []
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "131",
+      "versions": [
+        {
+          "version": "131",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "131",
+      "versions": [
+        {
+          "version": "131",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 64.52,
+      "partial": 0,
+      "total": 64.52
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 20.4
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webxr-hand-input"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.XRFrame.fillJointRadii",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRFrame.fillPoses",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRFrame.getJointPose",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRHand",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRHand.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRHand.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRHand.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRHand.get",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRHand.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRHand.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRHand.values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRInputSource.hand",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRJointPose",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRJointPose.radius",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRJointSpace",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRJointSpace.jointName",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

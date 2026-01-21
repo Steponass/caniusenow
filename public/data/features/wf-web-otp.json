@@ -1,0 +1,147 @@
+{
+  "id": "wf-web-otp",
+  "source": "webfeatures",
+  "name": "WebOTP",
+  "description": "The OTPCredential API represents a one-time-password (OTP).",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/web-otp/",
+    "https://wicg.github.io/web-otp/#dom-credentialrequestoptions-otp",
+    "https://wicg.github.io/web-otp/#OTPCredential",
+    "https://wicg.github.io/web-otp/#dom-otpcredential-code",
+    "https://wicg.github.io/web-otp/#sctn-permissions-policy"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/otp-credentials",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "93",
+      "versions": [
+        {
+          "version": "93",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.21,
+      "partial": 0,
+      "total": 76.21
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.94,
+        "edge": 4.25,
+        "opera": 0.9
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "web-otp"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CredentialsContainer.get.otp_option",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OTPCredential",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OTPCredential.code",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.otp-credentials",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.otp-credentials",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "wf-iterators",
+  "source": "webfeatures",
+  "name": "Iterators and the for...of loop",
+  "description": "The for...of loop operates on a sequence of values sourced from an iterable object, such as arrays, array-like objects, DOM collections, iterators, generators, and user-defined iterables. All built-in iterators inherit from the Iterator class.",
+  "category": "Other",
+  "spec": [
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%iteratorprototype%-object",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-for-in-and-for-of-statements",
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%iteratorprototype%-%symbol.iterator%"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for...of",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "38",
+      "versions": [
+        {
+          "version": "38",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "13",
+      "versions": [
+        {
+          "version": "13",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "7",
+      "versions": [
+        {
+          "version": "7",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "38",
+      "versions": [
+        {
+          "version": "38",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "7",
+      "versions": [
+        {
+          "version": "7",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "38",
+      "versions": [
+        {
+          "version": "38",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "38",
+      "versions": [
+        {
+          "version": "38",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "13",
+      "versions": [
+        {
+          "version": "13",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.42,
+      "partial": 0,
+      "total": 92.42
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "iterators"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Iterator.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.for_of",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.for_of.closing_iterators",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

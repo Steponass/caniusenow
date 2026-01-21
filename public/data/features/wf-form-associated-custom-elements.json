@@ -1,0 +1,212 @@
+{
+  "id": "wf-form-associated-custom-elements",
+  "source": "webfeatures",
+  "name": "Form-associated custom elements",
+  "description": "Custom elements may act like built-in form elements, via the the attachInternals() method of HTMLElement and the ElementInternals API.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/custom-elements.html#form-associated-custom-elements",
+    "https://html.spec.whatwg.org/multipage/custom-elements.html#the-elementinternals-interface",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-elementinternals-checkvalidity",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-elementinternals-form",
+    "https://html.spec.whatwg.org/multipage/forms.html#dom-elementinternals-labels",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-elementinternals-reportvalidity",
+    "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-elementinternals-setformvalue",
+    "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-elementinternals-setvalidity",
+    "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-elementinternals-validationmessage",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-elementinternals-validity",
+    "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-elementinternals-willvalidate",
+    "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-attachinternals"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLElement/attachInternals",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "77",
+      "versions": [
+        {
+          "version": "77",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "98",
+      "versions": [
+        {
+          "version": "98",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "77",
+      "versions": [
+        {
+          "version": "77",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4",
+      "versions": [
+        {
+          "version": "16.4",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "77",
+      "versions": [
+        {
+          "version": "77",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "77",
+      "versions": [
+        {
+          "version": "77",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "98",
+      "versions": [
+        {
+          "version": "98",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.07,
+      "partial": 0,
+      "total": 91.07
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.14,
+        "firefox": 1.75,
+        "safari": 1.23,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.35,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "form-associated-custom-elements"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ElementInternals",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ElementInternals.checkValidity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ElementInternals.form",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ElementInternals.labels",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ElementInternals.reportValidity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ElementInternals.setFormValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ElementInternals.setValidity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ElementInternals.validationMessage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ElementInternals.validity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ElementInternals.willValidate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.attachInternals",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

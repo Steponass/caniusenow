@@ -1,0 +1,196 @@
+{
+  "id": "wf-column-breaks",
+  "source": "webfeatures",
+  "name": "Column breaks",
+  "description": "In columnar layouts (created by the columns or column-count CSS properties), the break-after, break-before, break-inside properties control where columns start or end.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-break-3/#breaking-controls",
+    "https://drafts.csswg.org/css-break/#break-between",
+    "https://drafts.csswg.org/css-regions/#region-flow-break",
+    "https://drafts.csswg.org/css-multicol/#break-before-break-after-break-inside",
+    "https://drafts.csswg.org/css-break/#break-within"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76,
+      "partial": 0,
+      "total": 76
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.85,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "column-breaks"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.break-after.avoid-column",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.break-after.column",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.break-after.multicol_context",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.break-after.multicol_context.avoid",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.break-after.multicol_context.avoid-column",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.break-after.multicol_context.column",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.break-before.avoid-column",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.break-before.column",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.break-before.multicol_context",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.break-before.multicol_context.avoid",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.break-before.multicol_context.avoid-column",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.break-before.multicol_context.column",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.break-inside.avoid-column",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.break-inside.multicol_context",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.break-inside.multicol_context.avoid-column",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

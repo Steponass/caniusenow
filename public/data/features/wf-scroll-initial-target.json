@@ -1,0 +1,134 @@
+{
+  "id": "wf-scroll-initial-target",
+  "source": "webfeatures",
+  "name": "scroll-initial-target",
+  "description": "The scroll-initial-target: nearest CSS declaration sets the initial scroll position of its scroll container to the top of the element, much like scrolling to a URL fragment.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-scroll-snap-2/#properties-on-the-scroll-container",
+    "https://drafts.csswg.org/css-scroll-snap-2/#propdef-scroll-initial-target",
+    "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-initial-target-nearest",
+    "https://drafts.csswg.org/css-scroll-snap-2/#valdef-scroll-initial-target-none"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "133",
+      "versions": [
+        {
+          "version": "133",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 68.21,
+      "partial": 0,
+      "total": 68.21
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 19.95,
+        "edge": 4.14
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "scroll-initial-target"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.scroll-initial-target",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.scroll-initial-target.nearest",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.scroll-initial-target.none",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

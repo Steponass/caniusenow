@@ -1,0 +1,177 @@
+{
+  "id": "wf-oes-vertex-array-object",
+  "source": "webfeatures",
+  "name": "OES_vertex_array_object WebGL extension",
+  "description": "The OES_vertex_array_object extension for WebGL 1.0 contexts adds vertex array objects (VAOs) which encapsulate vertex array states. These objects keep pointers to vertex data and names for different sets of vertex data.",
+  "category": "Other",
+  "spec": [
+    "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WebGLVertexArrayObject",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "24",
+      "versions": [
+        {
+          "version": "24",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "25",
+      "versions": [
+        {
+          "version": "25",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "8",
+      "versions": [
+        {
+          "version": "8",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "24",
+      "versions": [
+        {
+          "version": "24",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "17",
+      "versions": [
+        {
+          "version": "17",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "8",
+      "versions": [
+        {
+          "version": "8",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "24",
+      "versions": [
+        {
+          "version": "24",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "24",
+      "versions": [
+        {
+          "version": "24",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "25",
+      "versions": [
+        {
+          "version": "25",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.31,
+      "partial": 0,
+      "total": 94.31
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "and_chr": 44.12,
+        "samsung": 1.89,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "oes-vertex-array-object"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.OES_vertex_array_object",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OES_vertex_array_object.bindVertexArrayOES",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OES_vertex_array_object.createVertexArrayOES",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OES_vertex_array_object.deleteVertexArrayOES",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OES_vertex_array_object.isVertexArrayOES",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebGLVertexArrayObjectOES",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

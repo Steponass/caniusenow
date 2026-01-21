@@ -1,0 +1,184 @@
+{
+  "id": "wf-clipboard-events",
+  "source": "webfeatures",
+  "name": "Clipboard events",
+  "description": "The \"copy\", \"cut\", and \"paste\" events fire on elements when the user starts an action with the clipboard.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/clipboard-apis/#clipboard-event-interfaces",
+    "https://w3c.github.io/clipboard-apis/#dom-clipboardevent-clipboardevent",
+    "https://w3c.github.io/clipboard-apis/#clipboardevent-clipboarddata",
+    "https://w3c.github.io/clipboard-apis/#clipboard-event-copy",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncopy",
+    "https://w3c.github.io/clipboard-apis/#clipboard-event-cut",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncut",
+    "https://w3c.github.io/clipboard-apis/#clipboard-event-paste",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onpaste"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Element/paste_event",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "41",
+      "versions": [
+        {
+          "version": "41",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "22",
+      "versions": [
+        {
+          "version": "22",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "10.1",
+      "versions": [
+        {
+          "version": "10.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "41",
+      "versions": [
+        {
+          "version": "41",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12",
+      "versions": [
+        {
+          "version": "12",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10.1",
+      "versions": [
+        {
+          "version": "10.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "41",
+      "versions": [
+        {
+          "version": "41",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "41",
+      "versions": [
+        {
+          "version": "41",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "22",
+      "versions": [
+        {
+          "version": "22",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.39,
+      "partial": 0,
+      "total": 92.39
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.39,
+        "firefox": 1.77,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "clipboard-events"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardEvent.ClipboardEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardEvent.clipboardData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.copy_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.cut_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.paste_event",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

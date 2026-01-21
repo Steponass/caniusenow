@@ -1,0 +1,95 @@
+{
+  "id": "wf-digital-goods",
+  "source": "webfeatures",
+  "name": "Digital goods",
+  "description": "The window.getDigitalGoodsService API connects to stores or billing services for in-app products and subscriptions.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/digital-goods/",
+    "https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method"
+  ],
+  "links": [],
+  "support": {
+    "edge": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "chrome": {
+      "current": "n",
+      "versions": []
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "n",
+      "versions": []
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "134",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "n",
+      "versions": []
+    },
+    "samsung": {
+      "current": "n",
+      "versions": []
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 4.13,
+      "partial": 0,
+      "total": 4.13
+    },
+    "byBrowser": {
+      "desktop": {
+        "edge": 4.13
+      },
+      "mobile": {}
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "digital-goods"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.getDigitalGoodsService",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

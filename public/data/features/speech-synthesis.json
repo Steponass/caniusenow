@@ -1,0 +1,804 @@
+{
+  "id": "speech-synthesis",
+  "source": "caniuse",
+  "name": "Speech Synthesis API",
+  "description": "A web API for controlling a text-to-speech output.",
+  "category": "JS API",
+  "spec": [
+    "https://w3c.github.io/speech-api/speechapi.html#tts-section",
+    "https://webaudio.github.io/web-speech-api/#tts-section",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesis-cancel",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesis-getvoices",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesis-pause",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesis-paused",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesis-pending",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesis-resume",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesis-speak",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesis-speaking",
+    "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesis-voiceschanged",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesis-onvoiceschanged",
+    "https://webaudio.github.io/web-speech-api/#speechsynthesiserrorevent",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesiserrorevent-speechsynthesiserrorevent",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesiserrorevent-error",
+    "https://webaudio.github.io/web-speech-api/#speechsynthesisevent",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisevent-speechsynthesisevent",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisevent-charindex",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisevent-charlength",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisevent-elapsedtime",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisevent-name",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisevent-utterance",
+    "https://webaudio.github.io/web-speech-api/#speechsynthesisutterance",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisutterance-speechsynthesisutterance",
+    "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-boundary",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisutterance-onboundary",
+    "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-end",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisutterance-onend",
+    "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-error",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisutterance-onerror",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisutterance-lang",
+    "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-mark",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisutterance-onmark",
+    "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-pause",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisutterance-onpause",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisutterance-pitch",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisutterance-rate",
+    "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-resume",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisutterance-onresume",
+    "https://webaudio.github.io/web-speech-api/#eventdef-speechsynthesisutterance-start",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisutterance-onstart",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisutterance-text",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisutterance-voice",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisutterance-volume",
+    "https://webaudio.github.io/web-speech-api/#speechsynthesisvoice",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisvoice-default",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisvoice-lang",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisvoice-localservice",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisvoice-name",
+    "https://webaudio.github.io/web-speech-api/#dom-speechsynthesisvoice-voiceuri"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/speechSynthesis",
+  "links": [
+    {
+      "url": "https://www.sitepoint.com/talking-web-pages-and-the-speech-synthesis-api/",
+      "title": "SitePoint article"
+    },
+    {
+      "url": "https://www.audero.it/demo/speech-synthesis-api-demo.html",
+      "title": "Demo"
+    },
+    {
+      "url": "https://zenorocha.github.io/voice-elements/",
+      "title": "Advanced demo and resource"
+    },
+    {
+      "url": "https://developer.mozilla.org//docs/Web/API/SpeechSynthesis",
+      "title": "MDN article"
+    },
+    {
+      "url": "https://developers.google.com/web/updates/2014/01/Web-apps-that-talk-Introduction-to-the-Speech-Synthesis-API",
+      "title": "Google Developers article"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "u",
+      "firstFull": "33",
+      "versions": [
+        {
+          "version": "137",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "138",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "139",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "144",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "145",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "146",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "49",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "7",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "u",
+      "firstFull": "14",
+      "versions": [
+        {
+          "version": "134",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "135",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "136",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "137",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "138",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "139",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "140",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "141",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "142",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "143",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "opera": {
+      "current": "u",
+      "firstFull": "27",
+      "versions": [
+        {
+          "version": "116",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "117",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "118",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "119",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "120",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "121",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "122",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "123",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "124",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        },
+        {
+          "version": "125",
+          "status": "u",
+          "flags": [
+            "footnote"
+          ]
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "7.0-7.1",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "5.0-5.4",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.51,
+      "partial": 0,
+      "total": 94.51
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.41,
+        "firefox": 1.76,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Samsung Internet for GearVR: In Development, release based on Chromium m53 due Q1/2017",
+    "byNum": {
+      "1": "Can be enabled in Firefox using the `media.webspeech.synth.enabled` about:config flag.",
+      "2": "Speech Synthesis in Chrome since version 55 stops playback after about 15 seconds on Windows 7 & 10, and Ubuntu 14.04, possibly other platforms"
+    }
+  },
+  "status": "unoff",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "speech-synthesis"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "speech-synthesis",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis.cancel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis.getVoices",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis.pause",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis.paused",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis.pending",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis.resume",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis.speak",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis.speaking",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis.voiceschanged_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisErrorEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisErrorEvent.SpeechSynthesisErrorEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisErrorEvent.error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisEvent.SpeechSynthesisEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisEvent.charIndex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisEvent.charLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisEvent.elapsedTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisEvent.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisEvent.utterance",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.SpeechSynthesisUtterance",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.boundary_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.end_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.error_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.lang",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.mark_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.pause_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.pitch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.rate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.resume_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.start_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.text",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.voice",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.volume",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisVoice",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisVoice.default",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisVoice.lang",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisVoice.localService",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisVoice.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisVoice.voiceURI",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.speechSynthesis",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

@@ -1,0 +1,497 @@
+{
+  "id": "wf-navigation",
+  "source": "webfeatures",
+  "name": "Navigation API",
+  "description": "The navigation API initiates, intercepts, or modifies browser navigation actions. Not to be confused with the navigator API.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigateevent-interface",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateevent-canintercept-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateevent-destination-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateevent-downloadrequest-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateevent-formdata-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateevent-hasuavisualtransition",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateevent-hashchange-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateevent-info-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateevent-intercept-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateevent-navigationtype-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateevent-scroll-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateevent-signal-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateevent-userinitiated-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-interface",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigation-activation",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigation-back-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigation-cangoback-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigation-cangoforward-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigation-currententry-dev",
+    "https://html.spec.whatwg.org/multipage/indices.html#event-currententrychange",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigation-entries-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigation-forward-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigation-navigate-dev",
+    "https://html.spec.whatwg.org/multipage/indices.html#event-navigate",
+    "https://html.spec.whatwg.org/multipage/indices.html#event-navigateerror",
+    "https://html.spec.whatwg.org/multipage/indices.html#event-navigatesuccess",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigation-reload-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigation-transition-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigation-traverseto-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigation-updatecurrententry-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigationactivation",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationactivation-entry",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationactivation-from",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationactivation-navigationtype",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationcurrententrychangeevent-interface",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationcurrententrychangeevent-from-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationcurrententrychangeevent-navigationtype-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface:dom-navigationdestination-getstate-2",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface:dom-navigationdestination-id-2",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface:dom-navigationdestination-index-2",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface:dom-navigationdestination-key-2",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface:dom-navigationdestination-samedocument-2",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface:dom-navigationdestination-url-2",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationhistoryentry-interface",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#handler-navigationhistoryentry-ondispose",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationhistoryentry-getstate-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationhistoryentry-id-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationhistoryentry-index-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationhistoryentry-key-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationhistoryentry-samedocument-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationhistoryentry-url-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigationtransition",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationtransition-finished-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationtransition-from-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationtransition-navigationtype-dev",
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigation"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/navigation",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "147",
+      "versions": [
+        {
+          "version": "147",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "26.2",
+      "versions": [
+        {
+          "version": "26.2",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "26.2",
+      "versions": [
+        {
+          "version": "26.2",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "102",
+      "versions": [
+        {
+          "version": "102",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "147",
+      "versions": [
+        {
+          "version": "147",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.66,
+      "partial": 0,
+      "total": 76.66
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.85,
+        "safari": 0.09,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 0.26,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "navigation"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.NavigateEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.canIntercept",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.destination",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.downloadRequest",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.formData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.hasUAVisualTransition",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.hashChange",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.info",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.intercept",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.navigationType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.scroll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.signal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.userInitiated",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.activation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.back",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.canGoBack",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.canGoForward",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.currentEntry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.currententrychange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.forward",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.navigate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.navigate_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.navigateerror_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.navigatesuccess_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.reload",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.transition",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.traverseTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.updateCurrentEntry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationActivation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationActivation.entry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationActivation.from",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationActivation.navigationType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationCurrentEntryChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationCurrentEntryChangeEvent.NavigationCurrentEntryChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationCurrentEntryChangeEvent.from",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationCurrentEntryChangeEvent.navigationType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationDestination",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationDestination.getState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationDestination.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationDestination.index",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationDestination.key",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationDestination.sameDocument",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationDestination.url",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationHistoryEntry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationHistoryEntry.dispose_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationHistoryEntry.getState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationHistoryEntry.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationHistoryEntry.index",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationHistoryEntry.key",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationHistoryEntry.sameDocument",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationHistoryEntry.url",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationTransition",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationTransition.finished",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationTransition.from",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationTransition.navigationType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.navigation",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

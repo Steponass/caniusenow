@@ -1,0 +1,123 @@
+{
+  "id": "wf-clipboard-custom-format",
+  "source": "webfeatures",
+  "name": "Custom formats for clipboard items",
+  "description": "The web  prefix for ClipboardItem data types (also known as MIME types) allows reading and writing ununsanitized custom data from the device clipboard.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/clipboard-apis/#optional-data-types-x",
+    "https://w3c.github.io/clipboard-apis/#optional-data-types"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "104",
+      "versions": [
+        {
+          "version": "104",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 75.89,
+      "partial": 0,
+      "total": 75.89
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.73,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "clipboard-custom-format"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardItem.type_web",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

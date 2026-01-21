@@ -1,0 +1,163 @@
+{
+  "id": "wf-display-animation",
+  "source": "webfeatures",
+  "name": "display animation",
+  "description": "You can animate elements between display: none and any other display value or animate between content-visibility: hidden and any other content-visibility value. This also applies to transitions.",
+  "category": "Other",
+  "spec": [
+    "https://drafts.csswg.org/css-display-4/#display-animation",
+    "https://drafts.csswg.org/css-contain-3/#content-visibility-animation",
+    "https://drafts.csswg.org/css-contain/#content-visibility-animation"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "117",
+      "versions": [
+        {
+          "version": "117",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "18",
+      "versions": [
+        {
+          "version": "18",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "117",
+      "versions": [
+        {
+          "version": "117",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "117",
+      "versions": [
+        {
+          "version": "117",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "117",
+      "versions": [
+        {
+          "version": "117",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "18",
+      "versions": [
+        {
+          "version": "18",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "117",
+      "versions": [
+        {
+          "version": "117",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "117",
+      "versions": [
+        {
+          "version": "117",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 83.39,
+      "partial": 0,
+      "total": 83.39
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 23.11,
+        "safari": 0.74,
+        "edge": 4.21,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.41,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "display-animation"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.content-visibility.is_transitionable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.content-visibility.keyframe_animatable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.display.is_transitionable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.display.keyframe_animatable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transition-behavior.transitionable_content-visibility",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transition-behavior.transitionable_display",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

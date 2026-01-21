@@ -1,0 +1,174 @@
+{
+  "id": "wf-imagebitmaprenderingcontext",
+  "source": "webfeatures",
+  "name": "ImageBitmapRenderingContext",
+  "description": "The ImageBitmapRenderingContext API is the \"bitmaprenderer\" rendering context for the <canvas> element. It is commonly used to transfer frames from an OffscreenCanvas to a user-visible <canvas> element.",
+  "category": "Other",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/canvas.html#the-imagebitmaprenderingcontext-interface",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagebitmaprenderingcontextsettings-alpha",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagebitmaprenderingcontext-canvas-dev",
+    "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagebitmaprenderingcontext-transferfromimagebitmap-dev"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/ImageBitmapRenderingContext/transferFromImageBitmap",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "50",
+      "versions": [
+        {
+          "version": "50",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "11.1",
+      "versions": [
+        {
+          "version": "11.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11.1",
+      "versions": [
+        {
+          "version": "11.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "66",
+      "versions": [
+        {
+          "version": "66",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "50",
+      "versions": [
+        {
+          "version": "50",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.06,
+      "partial": 0,
+      "total": 92.06
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.2,
+        "firefox": 1.76,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.09,
+        "and_chr": 44.12,
+        "and_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "imagebitmaprenderingcontext"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.getContext.bitmaprenderer_context",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.getContext.bitmaprenderer_context.options_alpha_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ImageBitmapRenderingContext",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ImageBitmapRenderingContext.canvas",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ImageBitmapRenderingContext.transferFromImageBitmap",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

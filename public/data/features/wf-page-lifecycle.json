@@ -1,0 +1,135 @@
+{
+  "id": "wf-page-lifecycle",
+  "source": "webfeatures",
+  "name": "Page lifecycle",
+  "description": "The page lifecycle API helps you safely handle page suspensions or discards from memory. The freeze and resume events fire when the browser suspends or resumes a page from memory while the document.wasDiscarded property reports whether the page was reloaded after being dropped.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/page-lifecycle/",
+    "https://wicg.github.io/page-lifecycle/#dom-document-onfreeze",
+    "https://wicg.github.io/page-lifecycle/#dom-document-onresume",
+    "https://wicg.github.io/page-lifecycle/#dom-document-wasdiscarded"
+  ],
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "68",
+      "versions": [
+        {
+          "version": "68",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "68",
+      "versions": [
+        {
+          "version": "68",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "79",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "68",
+      "versions": [
+        {
+          "version": "68",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "68",
+      "versions": [
+        {
+          "version": "68",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.47,
+      "partial": 0,
+      "total": 76.47
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.18,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "page-lifecycle"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.freeze_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.resume_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.wasDiscarded",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

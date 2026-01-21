@@ -1,0 +1,558 @@
+{
+  "id": "es6-module",
+  "source": "caniuse",
+  "name": "JavaScript modules via script tag",
+  "description": "Loading JavaScript module scripts (aka ES6 modules) using `<script type=\"module\">` Includes support for the `nomodule` attribute.",
+  "category": "JS API",
+  "spec": [
+    "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#javascript-module-script",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-modules",
+    "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-nomodule",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-import-calls",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-ImportMeta",
+    "https://html.spec.whatwg.org/multipage/webappapis.html#import-meta-resolve",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-exports",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-imports",
+    "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#prod-WithClause"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/import/with",
+  "links": [
+    {
+      "url": "https://strongloop.com/strongblog/an-introduction-to-javascript-es6-modules/",
+      "title": "Intro to ES6 modules"
+    },
+    {
+      "url": "https://blogs.windows.com/msedgedev/2016/05/17/es6-modules-and-beyond/",
+      "title": "MS Edge blog post"
+    },
+    {
+      "url": "https://hacks.mozilla.org/2015/08/es6-in-depth-modules/",
+      "title": "Mozilla hacks article"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=568953",
+      "title": "Firefox support bug"
+    },
+    {
+      "url": "https://blog.hospodarets.com/native-ecmascript-modules-the-first-overview",
+      "title": "Blog post: Native ECMAScript modules - the first overview"
+    },
+    {
+      "url": "https://tc39.es/ecma262/#sec-modules",
+      "title": "Counterpart ECMAScript specification for import/export syntax"
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-nomodule",
+      "title": "Specification for nomodule attribute"
+    },
+    {
+      "url": "https://hospodarets.com/native-ecmascript-modules-nomodule",
+      "title": "Blog post on using nomodule"
+    },
+    {
+      "url": "https://gist.github.com/jakub-g/5fc11af85a061ca29cc84892f1059fec",
+      "title": "Will it double-fetch? Browser behavior with `module` / `nomodule` scripts"
+    }
+  ],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "61",
+      "versions": [
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "y",
+      "firstFull": "60",
+      "versions": [
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        },
+        {
+          "version": "144",
+          "status": "y"
+        },
+        {
+          "version": "145",
+          "status": "y"
+        },
+        {
+          "version": "146",
+          "status": "y"
+        },
+        {
+          "version": "147",
+          "status": "y"
+        },
+        {
+          "version": "148",
+          "status": "y"
+        },
+        {
+          "version": "149",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "11",
+      "versions": [
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.6",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        },
+        {
+          "version": "TP",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "79",
+      "versions": [
+        {
+          "version": "134",
+          "status": "y"
+        },
+        {
+          "version": "135",
+          "status": "y"
+        },
+        {
+          "version": "136",
+          "status": "y"
+        },
+        {
+          "version": "137",
+          "status": "y"
+        },
+        {
+          "version": "138",
+          "status": "y"
+        },
+        {
+          "version": "139",
+          "status": "y"
+        },
+        {
+          "version": "140",
+          "status": "y"
+        },
+        {
+          "version": "141",
+          "status": "y"
+        },
+        {
+          "version": "142",
+          "status": "y"
+        },
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "48",
+      "versions": [
+        {
+          "version": "116",
+          "status": "y"
+        },
+        {
+          "version": "117",
+          "status": "y"
+        },
+        {
+          "version": "118",
+          "status": "y"
+        },
+        {
+          "version": "119",
+          "status": "y"
+        },
+        {
+          "version": "120",
+          "status": "y"
+        },
+        {
+          "version": "121",
+          "status": "y"
+        },
+        {
+          "version": "122",
+          "status": "y"
+        },
+        {
+          "version": "123",
+          "status": "y"
+        },
+        {
+          "version": "124",
+          "status": "y"
+        },
+        {
+          "version": "125",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "n",
+      "versions": [
+        {
+          "version": "5.5",
+          "status": "n"
+        },
+        {
+          "version": "6",
+          "status": "n"
+        },
+        {
+          "version": "7",
+          "status": "n"
+        },
+        {
+          "version": "8",
+          "status": "n"
+        },
+        {
+          "version": "9",
+          "status": "n"
+        },
+        {
+          "version": "10",
+          "status": "n"
+        },
+        {
+          "version": "11",
+          "status": "n"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11.0-11.2",
+      "versions": [
+        {
+          "version": "18.0",
+          "status": "y"
+        },
+        {
+          "version": "18.1",
+          "status": "y"
+        },
+        {
+          "version": "18.2",
+          "status": "y"
+        },
+        {
+          "version": "18.3",
+          "status": "y"
+        },
+        {
+          "version": "18.4",
+          "status": "y"
+        },
+        {
+          "version": "18.5-18.7",
+          "status": "y"
+        },
+        {
+          "version": "26.0",
+          "status": "y"
+        },
+        {
+          "version": "26.1",
+          "status": "y"
+        },
+        {
+          "version": "26.2",
+          "status": "y"
+        },
+        {
+          "version": "26.3",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "143",
+      "versions": [
+        {
+          "version": "143",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "8.2",
+      "versions": [
+        {
+          "version": "20",
+          "status": "y"
+        },
+        {
+          "version": "21",
+          "status": "y"
+        },
+        {
+          "version": "22",
+          "status": "y"
+        },
+        {
+          "version": "23",
+          "status": "y"
+        },
+        {
+          "version": "24",
+          "status": "y"
+        },
+        {
+          "version": "25",
+          "status": "y"
+        },
+        {
+          "version": "26",
+          "status": "y"
+        },
+        {
+          "version": "27",
+          "status": "y"
+        },
+        {
+          "version": "28",
+          "status": "y"
+        },
+        {
+          "version": "29",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "y",
+      "firstFull": "146",
+      "versions": [
+        {
+          "version": "146",
+          "status": "y"
+        }
+      ]
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.12,
+      "partial": 0.02,
+      "total": 96.14
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 27.2,
+        "firefox": 1.75,
+        "safari": 1.42,
+        "edge": 4.26,
+        "opera": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.19,
+        "and_chr": 44.12,
+        "samsung": 1.93,
+        "and_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Support can be enabled via `about:flags`",
+      "2": "Support can be enabled via `about:config`",
+      "3": "Does not support the `nomodule` attribute",
+      "4": "A [polyfill is available](https://gist.github.com/samthor/64b114e4a4f539915a95b91ffd340acc) for Safari 10.1/iOS Safari 10.3",
+      "5": "`nomodule` scripts are not executed, but they're still fetched"
+    }
+  },
+  "status": "ls",
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "es6-module"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "js-modules",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Worklet.ecmascript_modules",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.script.nomodule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.script.type.module",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.import",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.import_meta",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.import_meta.resolve",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.export",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.export.arbitrary_module_namespace_identifier_names",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.export.default",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.export.namespace",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.import",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.import.arbitrary_module_namespace_identifier_names",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.import.import_attributes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.import.worklet_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.script.type.module",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

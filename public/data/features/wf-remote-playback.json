@@ -1,0 +1,202 @@
+{
+  "id": "wf-remote-playback",
+  "source": "webfeatures",
+  "name": "Remote playback",
+  "description": "The Remote Playback API initiates and controls playback of media on connected remote devices, such as smart TVs with AirPlay or Chromecast capabilities.",
+  "category": "Other",
+  "spec": [
+    "https://w3c.github.io/remote-playback/",
+    "https://w3c.github.io/remote-playback/#the-disableremoteplayback-attribute",
+    "https://w3c.github.io/remote-playback/#dom-htmlmediaelement-remote",
+    "https://w3c.github.io/remote-playback/#remoteplayback-interface",
+    "https://w3c.github.io/remote-playback/#dom-remoteplayback-cancelwatchavailability",
+    "https://w3c.github.io/remote-playback/#dom-remoteplayback-onconnect",
+    "https://w3c.github.io/remote-playback/#dom-remoteplayback-onconnecting",
+    "https://w3c.github.io/remote-playback/#dom-remoteplayback-ondisconnect",
+    "https://w3c.github.io/remote-playback/#dom-remoteplayback-prompt",
+    "https://w3c.github.io/remote-playback/#dom-remoteplayback-state",
+    "https://w3c.github.io/remote-playback/#dom-remoteplayback-watchavailability"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/API/RemotePlayback/watchAvailability",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "safari": {
+      "current": "y",
+      "firstFull": "13.1",
+      "versions": [
+        {
+          "version": "13.1",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "13.1",
+      "versions": [
+        {
+          "version": "13.1",
+          "status": "y"
+        }
+      ]
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "121",
+      "versions": [
+        {
+          "version": "121",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 85.04,
+      "partial": 0,
+      "total": 85.04
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 22.61,
+        "safari": 1.42,
+        "edge": 4.19,
+        "opera": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.91,
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "remote-playback"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.disableRemotePlayback",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.remote",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RemotePlayback",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RemotePlayback.cancelWatchAvailability",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RemotePlayback.connect_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RemotePlayback.connecting_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RemotePlayback.disconnect_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RemotePlayback.prompt",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RemotePlayback.state",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RemotePlayback.watchAvailability",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.audio.disableremoteplayback",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.video.disableremoteplayback",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}

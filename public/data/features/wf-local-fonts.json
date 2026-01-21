@@ -1,0 +1,176 @@
+{
+  "id": "wf-local-fonts",
+  "source": "webfeatures",
+  "name": "Local fonts",
+  "description": "The window.queryLocalFonts() method returns an array of locally-installed fonts, each represented by a FontData object.",
+  "category": "Other",
+  "spec": [
+    "https://wicg.github.io/local-font-access/",
+    "https://wicg.github.io/local-font-access/#fontdata-interface",
+    "https://wicg.github.io/local-font-access/#ref-for-dom-fontdata-blob①",
+    "https://wicg.github.io/local-font-access/#ref-for-dom-fontdata-family",
+    "https://wicg.github.io/local-font-access/#ref-for-dom-fontdata-fullname",
+    "https://wicg.github.io/local-font-access/#dom-fontdata-postscriptname",
+    "https://wicg.github.io/local-font-access/#ref-for-dom-fontdata-style",
+    "https://wicg.github.io/local-font-access/#dom-window-querylocalfonts",
+    "https://wicg.github.io/local-font-access/#permissions-policy"
+  ],
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/local-fonts",
+  "links": [],
+  "support": {
+    "chrome": {
+      "current": "y",
+      "firstFull": "103",
+      "versions": [
+        {
+          "version": "103",
+          "status": "y"
+        }
+      ]
+    },
+    "edge": {
+      "current": "y",
+      "firstFull": "103",
+      "versions": [
+        {
+          "version": "103",
+          "status": "y"
+        }
+      ]
+    },
+    "firefox": {
+      "current": "n",
+      "versions": []
+    },
+    "safari": {
+      "current": "n",
+      "versions": []
+    },
+    "opera": {
+      "current": "y",
+      "firstFull": "103",
+      "versions": [
+        {
+          "version": "103",
+          "status": "y"
+        }
+      ]
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "103",
+      "versions": [
+        {
+          "version": "103",
+          "status": "y"
+        }
+      ]
+    },
+    "ios_saf": {
+      "current": "n",
+      "versions": []
+    },
+    "and_chr": {
+      "current": "y",
+      "firstFull": "103",
+      "versions": [
+        {
+          "version": "103",
+          "status": "y"
+        }
+      ]
+    },
+    "samsung": {
+      "current": "y",
+      "firstFull": "103",
+      "versions": [
+        {
+          "version": "103",
+          "status": "y"
+        }
+      ]
+    },
+    "and_ff": {
+      "current": "n",
+      "versions": []
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76,
+      "partial": 0,
+      "total": 76
+    },
+    "byBrowser": {
+      "desktop": {
+        "chrome": 26.84,
+        "edge": 4.25,
+        "opera": 0.79
+      },
+      "mobile": {
+        "and_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "status": "other",
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "local-fonts"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.FontData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FontData.blob",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FontData.family",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FontData.fullName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FontData.postscriptName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FontData.style",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Permissions.permission_local-fonts",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.queryLocalFonts",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.local-fonts",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.local-fonts",
+        "matched": "via-webfeatures"
+      }
+    ]
+  }
+}
