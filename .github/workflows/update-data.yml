@@ -28,7 +28,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2  # Need at least 2 commits for comparison
+          fetch-depth: 0  # Fetch full history for proper git operations
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -71,9 +72,35 @@ jobs:
       - name: Commit and push changes
         if: steps.git-check.outputs.changes == 'true'
         run: |
+          # Pull latest changes first to avoid conflicts
+          git pull --rebase origin main
+          
+          # Stage and commit our changes
           git add public/data/
           git commit -m "chore: update browser compat data - $(date +'%Y-%m-%d')"
-          git push
+          
+          # Push with retry logic
+          max_attempts=3
+          attempt=1
+          
+          while [ $attempt -le $max_attempts ]; do
+            echo "Push attempt $attempt of $max_attempts"
+            
+            if git push origin main; then
+              echo "Push successful!"
+              break
+            else
+              if [ $attempt -lt $max_attempts ]; then
+                echo "Push failed, pulling and retrying..."
+                git pull --rebase origin main
+                attempt=$((attempt + 1))
+                sleep 5
+              else
+                echo "Push failed after $max_attempts attempts"
+                exit 1
+              fi
+            fi
+          done
       
       # ========================================================================
       # CHANGE DETECTION & NOTIFICATIONS
@@ -87,7 +114,7 @@ jobs:
         if: steps.git-check.outputs.changes == 'true'
         env:
           VITE_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          VITE_SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
           NOTIFICATIONAPI_CLIENT_ID: ${{ secrets.NOTIFICATIONAPI_CLIENT_ID }}
           NOTIFICATIONAPI_CLIENT_SECRET: ${{ secrets.NOTIFICATIONAPI_CLIENT_SECRET }}
           APP_URL: ${{ secrets.APP_URL }}
