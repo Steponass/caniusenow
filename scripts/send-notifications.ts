@@ -1,6 +1,8 @@
 import * as fs from "fs";
+import * as path from "path";
 import { createClient } from "@supabase/supabase-js";
 import NotificationAPI from "notificationapi-node-server-sdk";
+import type { NormalizedFeature, FeatureIndex } from "./types.js";
 
 // ============================================================================
 // TYPES
@@ -59,6 +61,9 @@ type Trigger =
       targetStatus: "high" | "low";
     };
 
+// Cache for loaded features to avoid repeated file reads
+const featureCache = new Map<string, NormalizedFeature>();
+
 // ============================================================================
 // MAIN
 // ============================================================================
@@ -115,10 +120,10 @@ async function main(): Promise<void> {
 
   // Load feature index for feature titles
   console.log("\n📂 Loading feature index...");
-  const featureIndex = JSON.parse(
+  const featureIndex: FeatureIndex[] = JSON.parse(
     fs.readFileSync("./public/data/index.json", "utf8")
   );
-  const featureMap = new Map(featureIndex.map((f: any) => [f.id, f]));
+  const featureMap = new Map(featureIndex.map((f) => [f.id, f]));
 
   let notificationsSent = 0;
   let trackingsProcessed = 0;
@@ -127,9 +132,9 @@ async function main(): Promise<void> {
   console.log("\n🔍 Processing changed features...");
 
   for (const change of report.changes) {
-    const feature = featureMap.get(change.featureId);
+    const indexFeature = featureMap.get(change.featureId);
 
-    if (!feature) {
+    if (!indexFeature) {
       console.log(`  ⚠️  Feature ${change.featureId} not found in index`);
       continue;
     }
@@ -152,6 +157,14 @@ async function main(): Promise<void> {
 
     console.log(`\n📢 ${change.featureId}: ${trackings.length} user(s) tracking`);
 
+    // Load full feature data (needed for usage threshold evaluation)
+    const fullFeature = await loadFullFeature(change.featureId);
+
+    if (!fullFeature) {
+      console.log(`  ⚠️  Could not load full feature data for ${change.featureId}`);
+      continue;
+    }
+
     // Fetch user emails
     const userIds = [...new Set(trackings.map((t) => t.user_id))];
     const { data: users, error: usersError } =
@@ -172,7 +185,8 @@ async function main(): Promise<void> {
 
       const metTriggers = evaluateTriggers(
         tracking.triggers,
-        feature,
+        indexFeature,
+        fullFeature,
         change.changes
       );
 
@@ -190,7 +204,7 @@ async function main(): Promise<void> {
           await sendEmailNotification(
             tracking,
             metTriggers,
-            feature,
+            fullFeature,
             change.changes,
             userEmail
           );
@@ -223,12 +237,40 @@ async function main(): Promise<void> {
 }
 
 // ============================================================================
+// FEATURE LOADING
+// ============================================================================
+
+async function loadFullFeature(featureId: string): Promise<NormalizedFeature | null> {
+  // Check cache first
+  if (featureCache.has(featureId)) {
+    return featureCache.get(featureId)!;
+  }
+
+  const featurePath = path.join("./public/data/features", `${featureId}.json`);
+
+  if (!fs.existsSync(featurePath)) {
+    console.log(`  ⚠️  Feature file not found: ${featurePath}`);
+    return null;
+  }
+
+  try {
+    const featureData = JSON.parse(fs.readFileSync(featurePath, "utf8")) as NormalizedFeature;
+    featureCache.set(featureId, featureData);
+    return featureData;
+  } catch (error) {
+    console.error(`  ❌ Error loading feature ${featureId}:`, error);
+    return null;
+  }
+}
+
+// ============================================================================
 // TRIGGER EVALUATION
 // ============================================================================
 
 function evaluateTriggers(
   triggers: Trigger[],
-  feature: any,
+  indexFeature: FeatureIndex,
+  fullFeature: NormalizedFeature,
   changes: FeatureChange["changes"]
 ): Trigger[] {
   const metTriggers: Trigger[] = [];
@@ -238,15 +280,15 @@ function evaluateTriggers(
 
     switch (trigger.type) {
       case "usage_threshold":
-        isMet = checkUsageThreshold(trigger, feature, changes);
+        isMet = checkUsageThreshold(trigger, fullFeature, changes);
         break;
 
       case "browser_support":
-        isMet = checkBrowserSupport(trigger, feature, changes);
+        isMet = checkBrowserSupport(trigger, indexFeature, changes);
         break;
 
       case "baseline_status":
-        isMet = checkBaselineStatus(trigger, feature, changes);
+        isMet = checkBaselineStatus(trigger, indexFeature, changes);
         break;
     }
 
@@ -260,30 +302,61 @@ function evaluateTriggers(
 
 function checkUsageThreshold(
   trigger: Extract<Trigger, { type: "usage_threshold" }>,
-  feature: any,
+  fullFeature: NormalizedFeature,
   changes: FeatureChange["changes"]
 ): boolean {
   // Only trigger if usage actually changed
   if (!changes.usage) return false;
 
-  const currentUsage = feature.usage; // This is the "total" usage
+  // Get the usage value based on the trigger's usageType
+  let currentUsage: number;
+  let previousUsage: number;
 
-  // Map usageType to the actual value
-  // Note: Our normalized data only has "total" usage in the index
-  // If you need full/partial breakdown, you'd need to load the full feature file
-  const usageValue = currentUsage;
+  switch (trigger.usageType) {
+    case "full":
+      currentUsage = fullFeature.usage.global.full;
+      // Calculate previous full usage from the delta
+      previousUsage = currentUsage - changes.usage.delta;
+      break;
+
+    case "partial":
+      currentUsage = fullFeature.usage.global.partial;
+      // Calculate previous partial usage from the delta
+      previousUsage = currentUsage - changes.usage.delta;
+      break;
+
+    case "total":
+    default:
+      currentUsage = fullFeature.usage.global.total;
+      previousUsage = changes.usage.old;
+      break;
+  }
+
+  console.log(`    🔍 Checking usage threshold: ${trigger.usageType} usage`);
+  console.log(`       Current: ${currentUsage.toFixed(2)}%, Previous: ${previousUsage.toFixed(2)}%, Threshold: ${trigger.threshold}%`);
 
   // Check if current usage meets or exceeds threshold
-  // AND the change crossed the threshold
-  return (
-    usageValue >= trigger.threshold &&
-    changes.usage.old < trigger.threshold
-  );
+  // AND the change crossed the threshold (was below, now above or equal)
+  const meetsThreshold = currentUsage >= trigger.threshold;
+  const crossedThreshold = previousUsage < trigger.threshold;
+
+  if (meetsThreshold && crossedThreshold) {
+    console.log(`       ✅ Threshold crossed! (was ${previousUsage.toFixed(2)}%, now ${currentUsage.toFixed(2)}%)`);
+    return true;
+  }
+
+  if (meetsThreshold && !crossedThreshold) {
+    console.log(`       ⏭️  Already above threshold (was ${previousUsage.toFixed(2)}%)`);
+  } else if (!meetsThreshold) {
+    console.log(`       ❌ Below threshold (${currentUsage.toFixed(2)}% < ${trigger.threshold}%)`);
+  }
+
+  return false;
 }
 
 function checkBrowserSupport(
   trigger: Extract<Trigger, { type: "browser_support" }>,
-  feature: any,
+  indexFeature: FeatureIndex,
   changes: FeatureChange["changes"]
 ): boolean {
   // Only trigger if support actually changed for this browser
@@ -295,27 +368,56 @@ function checkBrowserSupport(
 
   if (!browserChange) return false;
 
+  // Map frontend "full"/"partial" to backend "y"/"a"
+  const targetStatus = trigger.targetStatus === "y" ? "y" : "a";
+
+  console.log(`    🔍 Checking browser support: ${trigger.browser}`);
+  console.log(`       Target: ${targetStatus}, New: ${browserChange.new}, Old: ${browserChange.old}`);
+
   // Check if the new status matches the target
-  return browserChange.new === trigger.targetStatus;
+  const matches = browserChange.new === targetStatus;
+  
+  if (matches) {
+    console.log(`       ✅ Browser support matches target!`);
+  } else {
+    console.log(`       ❌ Browser support doesn't match target`);
+  }
+
+  return matches;
 }
 
 function checkBaselineStatus(
   trigger: Extract<Trigger, { type: "baseline_status" }>,
-  feature: any,
+  indexFeature: FeatureIndex,
   changes: FeatureChange["changes"]
 ): boolean {
   // Only trigger if baseline actually changed
   if (!changes.baseline) return false;
 
+  console.log(`    🔍 Checking baseline status`);
+  console.log(`       Target: ${trigger.targetStatus}, New: ${changes.baseline.new}, Old: ${changes.baseline.old}`);
+
   // Check if new baseline matches target
   // Also handle the case where target is "low" and baseline went from false -> "low"
   if (trigger.targetStatus === "low") {
-    return (
-      changes.baseline.new === "low" || changes.baseline.new === "high"
-    );
+    const matches = changes.baseline.new === "low" || changes.baseline.new === "high";
+    if (matches) {
+      console.log(`       ✅ Baseline status reached!`);
+    } else {
+      console.log(`       ❌ Baseline status not reached`);
+    }
+    return matches;
   }
 
-  return changes.baseline.new === trigger.targetStatus;
+  const matches = changes.baseline.new === trigger.targetStatus;
+  
+  if (matches) {
+    console.log(`       ✅ Baseline status matches target!`);
+  } else {
+    console.log(`       ❌ Baseline status doesn't match target`);
+  }
+
+  return matches;
 }
 
 // ============================================================================
@@ -325,14 +427,20 @@ function checkBaselineStatus(
 async function sendEmailNotification(
   tracking: UserFeatureTracking,
   metTriggers: Trigger[],
-  feature: any,
+  feature: NormalizedFeature,
   changes: FeatureChange["changes"],
   userEmail: string
 ): Promise<void> {
   const conditionsMet = metTriggers.map((trigger) => {
     switch (trigger.type) {
       case "usage_threshold":
-        return `Global usage reached ${trigger.threshold}% (now ${feature.usage.toFixed(1)}%)`;
+        const usageLabel = trigger.usageType === "full" ? "full support" :
+                          trigger.usageType === "partial" ? "partial support" :
+                          "total";
+        const currentValue = trigger.usageType === "full" ? feature.usage.global.full :
+                           trigger.usageType === "partial" ? feature.usage.global.partial :
+                           feature.usage.global.total;
+        return `${usageLabel} usage reached ${trigger.threshold}% (now ${currentValue.toFixed(1)}%)`;
 
       case "browser_support":
         const statusLabel = trigger.targetStatus === "y" ? "full" : "partial";

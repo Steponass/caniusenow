@@ -28,7 +28,10 @@ function getTriggerDescription(trigger: any): string {
   } else if (trigger.type === 'browser_version') {
     return `${trigger.browser} ${trigger.version}+ has ${trigger.targetStatus} support`;
   } else {
-    return `${trigger.usageType} usage ≥ ${trigger.threshold}%`;
+    const usageLabel = trigger.usageType === 'full' ? 'full support' :
+                      trigger.usageType === 'partial' ? 'partial support' :
+                      'total (full + partial)';
+    return `${usageLabel} usage ≥ ${trigger.threshold}%`;
   }
 }
 </script>

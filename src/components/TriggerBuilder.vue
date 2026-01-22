@@ -25,7 +25,7 @@ const selectedType = ref<TriggerType>('browser_support');
 const selectedBrowser = ref('chrome');
 const selectedStatus = ref<'full' | 'partial'>('full');
 const selectedVersion = ref('');
-const selectedUsageType = ref<'full' | 'partial' | 'combined'>('combined');
+const selectedUsageType = ref<'full' | 'partial' | 'total'>('total');
 const selectedThreshold = ref(95);
 
 const availableBrowsers = computed(() => {
@@ -80,7 +80,10 @@ function getTriggerDescription(trigger: Trigger): string {
   } else if (trigger.type === 'browser_version') {
     return `${trigger.browser} ${trigger.version}+ has ${trigger.targetStatus} support`;
   } else {
-    return `${trigger.usageType} usage ≥ ${trigger.threshold}%`;
+    const usageLabel = trigger.usageType === 'full' ? 'full support' :
+                      trigger.usageType === 'partial' ? 'partial support' :
+                      'total (full + partial)';
+    return `${usageLabel} usage ≥ ${trigger.threshold}%`;
   }
 }
 </script>
@@ -157,7 +160,7 @@ function getTriggerDescription(trigger: Trigger): string {
           <select v-model="selectedUsageType">
             <option value="full">Full Support Only</option>
             <option value="partial">Partial Support Only</option>
-            <option value="combined">Combined (Full + Partial)</option>
+            <option value="total">Total (Full + Partial)</option>
           </select>
         </div>
 

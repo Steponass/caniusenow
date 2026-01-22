@@ -20,7 +20,7 @@ export interface BrowserVersionTrigger {
 
 export interface UsageThresholdTrigger {
   type: 'usage_threshold';
-  usageType: 'full' | 'partial' | 'combined';
+  usageType: 'full' | 'partial' | 'total';
   threshold: number;
 }
 
