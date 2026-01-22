@@ -6,6 +6,7 @@
   "scripts": {
     "clone-sources": "tsx scripts/clone-sources.ts",
     "normalize-data": "tsx scripts/normalize-data.ts",
+    "detect-changes": "tsx scripts/detect-changes.ts",
     "send-notifications": "tsx scripts/send-notifications.ts",
     "build-data": "npm run clone-sources && npm run normalize-data",
     "dev": "vite",
