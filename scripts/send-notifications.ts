@@ -48,7 +48,7 @@ interface UserFeatureTracking {
 type Trigger =
   | {
       type: "usage_threshold";
-      usageType: "full" | "partial" | "total";
+      usageType: "full" | "partial" | "total" | "combined";
       threshold: number;
     }
   | {
@@ -326,6 +326,7 @@ function checkUsageThreshold(
       break;
 
     case "total":
+    case "combined":
     default:
       currentUsage = fullFeature.usage.global.total;
       previousUsage = changes.usage.old;
@@ -436,7 +437,7 @@ async function sendEmailNotification(
       case "usage_threshold":
         const usageLabel = trigger.usageType === "full" ? "full support" :
                           trigger.usageType === "partial" ? "partial support" :
-                          "total";
+                          "total (full + partial)";
         const currentValue = trigger.usageType === "full" ? feature.usage.global.full :
                            trigger.usageType === "partial" ? feature.usage.global.partial :
                            feature.usage.global.total;

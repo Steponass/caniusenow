@@ -82,6 +82,7 @@ function getTriggerDescription(trigger: Trigger): string {
   } else {
     const usageLabel = trigger.usageType === 'full' ? 'full support' :
                       trigger.usageType === 'partial' ? 'partial support' :
+                      (trigger.usageType === 'total' || trigger.usageType === 'combined') ? 'total (full + partial)' :
                       'total (full + partial)';
     return `${usageLabel} usage ≥ ${trigger.threshold}%`;
   }
