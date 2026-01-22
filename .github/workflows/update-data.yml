@@ -5,8 +5,14 @@ on:
   schedule:
     - cron: '0 2 * * *'
   
-  # Allow manual trigger
+  # Allow manual trigger with optional test mode
   workflow_dispatch:
+    inputs:
+      test_mode:
+        description: 'Enable test mode (allows manual edits for testing)'
+        required: false
+        type: boolean
+        default: false
 
 # Cancel in-progress runs if a new one is triggered
 concurrency:
@@ -72,35 +78,40 @@ jobs:
       - name: Commit and push changes
         if: steps.git-check.outputs.changes == 'true'
         run: |
-          # Pull latest changes first to avoid conflicts
-          git pull --rebase origin main
+          # Fetch latest remote state
+          git fetch origin main
           
-          # Stage and commit our changes
-          git add public/data/
-          git commit -m "chore: update browser compat data - $(date +'%Y-%m-%d')"
-          
-          # Push with retry logic
-          max_attempts=3
-          attempt=1
-          
-          while [ $attempt -le $max_attempts ]; do
-            echo "Push attempt $attempt of $max_attempts"
+          # Check if we're in test mode
+          if [ "${{ inputs.test_mode }}" = "true" ]; then
+            echo "🧪 TEST MODE: Allowing merge with remote changes"
+            git add public/data/
+            git pull --rebase --autostash origin main
+            git commit -m "chore: update browser compat data - $(date +'%Y-%m-%d') [TEST]"
+          else
+            echo "🚀 PRODUCTION MODE: Enforcing clean state"
             
-            if git push origin main; then
-              echo "Push successful!"
-              break
-            else
-              if [ $attempt -lt $max_attempts ]; then
-                echo "Push failed, pulling and retrying..."
-                git pull --rebase origin main
-                attempt=$((attempt + 1))
-                sleep 5
-              else
-                echo "Push failed after $max_attempts attempts"
-                exit 1
-              fi
+            # Check if remote has changes we don't have
+            if ! git diff --quiet origin/main HEAD; then
+              echo "❌ ERROR: Remote branch has changes not in local branch."
+              echo ""
+              echo "This usually means manual edits were made to public/data/"
+              echo "The public/data/ directory should only be modified by this Action."
+              echo ""
+              echo "To fix:"
+              echo "1. Revert the manual changes on GitHub"
+              echo "2. Re-run this Action to regenerate clean data"
+              echo ""
+              echo "For testing diff detection, use manual trigger with test_mode=true"
+              exit 1
             fi
-          done
+            
+            # Clean state confirmed - commit and push
+            git add public/data/
+            git commit -m "chore: update browser compat data - $(date +'%Y-%m-%d')"
+          fi
+          
+          # Push changes
+          git push origin main
       
       # ========================================================================
       # CHANGE DETECTION & NOTIFICATIONS
@@ -113,8 +124,8 @@ jobs:
       - name: Send notifications
         if: steps.git-check.outputs.changes == 'true'
         env:
-          VITE_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
           NOTIFICATIONAPI_CLIENT_ID: ${{ secrets.NOTIFICATIONAPI_CLIENT_ID }}
           NOTIFICATIONAPI_CLIENT_SECRET: ${{ secrets.NOTIFICATIONAPI_CLIENT_SECRET }}
           APP_URL: ${{ secrets.APP_URL }}
