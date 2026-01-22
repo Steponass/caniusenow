@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import type { Feature } from '../types/caniuse';
-import type { 
-  Trigger, 
+import type { NormalizedFeature } from '../types/caniuse';
+import type {
+  Trigger,
   BrowserSupportTrigger,
   BrowserVersionTrigger,
   UsageThresholdTrigger
 } from '../types/featureTracking';
 
 interface Props {
-  feature: Feature;
+  feature: NormalizedFeature;
   triggers: Trigger[];
 }
 
@@ -29,7 +29,13 @@ const selectedUsageType = ref<'full' | 'partial' | 'combined'>('combined');
 const selectedThreshold = ref(95);
 
 const availableBrowsers = computed(() => {
-  return Object.keys(props.feature.stats);
+  return Object.keys(props.feature.support);
+});
+
+const browserVersionsForSelected = computed(() => {
+  const browserSupport = props.feature.support[selectedBrowser.value];
+  if (!browserSupport || !browserSupport.versions) return [];
+  return browserSupport.versions.map(v => v.version);
 });
 
 function addTrigger() {
@@ -122,11 +128,18 @@ function getTriggerDescription(trigger: Trigger): string {
 
         <div class="form-group">
           <label>Version</label>
-          <input 
-            v-model="selectedVersion" 
-            type="text" 
+          <input
+            v-model="selectedVersion"
+            type="text"
             placeholder="e.g., 130"
+            list="version-suggestions"
           />
+          <datalist id="version-suggestions">
+            <option v-for="version in browserVersionsForSelected.slice(0, 5)" :key="version" :value="version" />
+          </datalist>
+          <small v-if="browserVersionsForSelected.length > 0" class="hint">
+            Recent versions: {{ browserVersionsForSelected.slice(0, 3).join(', ') }}
+          </small>
         </div>
 
         <div class="form-group">
@@ -207,6 +220,12 @@ function getTriggerDescription(trigger: Trigger): string {
 
 .form-group input[type="range"] {
   width: 100%;
+}
+
+.form-group .hint {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: -0.25rem;
 }
 
 

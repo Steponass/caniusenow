@@ -1,39 +1,19 @@
-export type SupportStatus = 'full' | 'partial' | 'none' | 'prefixed' | 'unknown';
+// Re-export types from backend for frontend use
+export type {
+  NormalizedFeature,
+  FeatureIndex,
+  BrowserSupport,
+  BrowserSupportDetail,
+  VersionSupport,
+  SupportStatus
+} from '../../scripts/types';
 
-export interface BrowserVersion {
-  status: SupportStatus;
-  usage: number;
+// Additional frontend-specific types
+export interface FeatureSearchResult {
+  index: FeatureIndex[];
+  total: number;
 }
 
-export interface BrowserStats {
-  [browser: string]: {
-    [version: string]: BrowserVersion;
-  };
-}
-
-export interface UsageStats {
-  full: number;
-  partial: number;
-  combined: number;
-  none: number;
-}
-
-export interface Feature {
-  id: string;
-  title: string;
-  caniuseUrl: string;
-  stats: BrowserStats;
-  usage: UsageStats;
-}
-
-export interface BrowserData {
-  name: string;
-  versions: string[];
-  usage: Record<string, number>;
-}
-
-export interface CaniuseData {
-  lastUpdated: string;
-  features: Record<string, Feature>;
-  browsers: Record<string, BrowserData>;
+export interface FeatureCache {
+  [featureId: string]: NormalizedFeature;
 }

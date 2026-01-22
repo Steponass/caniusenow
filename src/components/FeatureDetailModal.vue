@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import type { Feature } from '../types/caniuse';
+import type { NormalizedFeature } from '../types/caniuse';
 import type { Trigger } from '../types/featureTracking';
 import TriggerBuilder from './TriggerBuilder.vue';
 
 interface Props {
-  feature: Feature | null;
+  feature: NormalizedFeature | null;
   isOpen: boolean;
 }
 
@@ -21,19 +21,44 @@ const triggers = ref<Trigger[]>([]);
 const browserList = computed(() => {
   if (!props.feature) return [];
 
-  return Object.entries(props.feature.stats).map(([browserId, versions]) => {
-    const versionNumbers = Object.keys(versions);
-    const latestVersion = versionNumbers[0];
+  return Object.entries(props.feature.support).map(([browserId, supportDetail]) => {
+    const latestVersion = supportDetail.versions?.[0]?.version || 'current';
+    const currentStatus = supportDetail.current;
 
     return {
       id: browserId,
       name: browserId,
       latestVersion,
-      //@ts-ignore
-      latestSupport: versions[latestVersion]
+      currentStatus,
+      firstFull: supportDetail.firstFull,
+      firstPartial: supportDetail.firstPartial
     };
   });
 });
+
+const usageByCategory = computed(() => {
+  if (!props.feature) return { desktop: 0, mobile: 0 };
+
+  const desktop = Object.values(props.feature.usage.byBrowser.desktop).reduce((a, b) => a + b, 0) /
+    Object.keys(props.feature.usage.byBrowser.desktop).length || 0;
+  const mobile = Object.values(props.feature.usage.byBrowser.mobile).reduce((a, b) => a + b, 0) /
+    Object.keys(props.feature.usage.byBrowser.mobile).length || 0;
+
+  return { desktop, mobile };
+});
+
+function getSupportStatusLabel(status: string): string {
+  const statusMap: Record<string, string> = {
+    'y': 'Full',
+    'a': 'Partial',
+    'n': 'None',
+    'p': 'Prefix',
+    'd': 'Disabled',
+    'x': 'Prefixed',
+    'u': 'Unknown'
+  };
+  return statusMap[status] || 'Unknown';
+}
 
 function handleClose() {
   triggers.value = [];
@@ -61,15 +86,35 @@ function handleTriggersUpdate(newTriggers: Trigger[]) {
       <div class="modal-content" @click.stop>
         <div class="modal-header">
           <div>
-            <h2>{{ feature.title }}</h2>
-            <a 
-              :href="feature.caniuseUrl" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="external-link"
-            >
-              Full details on caniuse.com ↗
-            </a>
+            <h2>{{ feature.name }}</h2>
+            <p class="feature-description">{{ feature.description }}</p>
+            <div class="meta-badges">
+              <span class="category-badge">{{ feature.category }}</span>
+              <span v-if="feature.baseline" class="baseline-badge">
+                Baseline {{ feature.baseline }}
+              </span>
+            </div>
+            <div v-if="feature.links.length > 0" class="links">
+              <a
+                v-for="link in feature.links.slice(0, 3)"
+                :key="link.url"
+                :href="link.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="external-link"
+              >
+                {{ link.title }} ↗
+              </a>
+              <a
+                v-if="feature.mdn"
+                :href="feature.mdn"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="external-link"
+              >
+                MDN Docs ↗
+              </a>
+            </div>
           </div>
           <button class="close-btn" @click="handleClose">✕</button>
         </div>
@@ -80,34 +125,51 @@ function handleTriggersUpdate(newTriggers: Trigger[]) {
             <div class="usage-stats">
               <div class="stat">
                 <span class="label">Full Support:</span>
-                <span class="value">{{ feature.usage.full }}%</span>
+                <span class="value">{{ Math.round(feature.usage.global.full) }}%</span>
               </div>
               <div class="stat">
                 <span class="label">Partial Support:</span>
-                <span class="value">{{ feature.usage.partial }}%</span>
+                <span class="value">{{ Math.round(feature.usage.global.partial) }}%</span>
               </div>
               <div class="stat">
-                <span class="label">Combined:</span>
-                <span class="value">{{ feature.usage.combined }}%</span>
+                <span class="label">Total:</span>
+                <span class="value">{{ Math.round(feature.usage.global.total) }}%</span>
+              </div>
+            </div>
+            <div class="usage-breakdown">
+              <div class="stat">
+                <span class="label">Desktop Avg:</span>
+                <span class="value">{{ Math.round(usageByCategory.desktop) }}%</span>
+              </div>
+              <div class="stat">
+                <span class="label">Mobile Avg:</span>
+                <span class="value">{{ Math.round(usageByCategory.mobile) }}%</span>
+              </div>
+              <div class="stat">
+                <span class="label">Data Type:</span>
+                <span class="value">{{ feature.usage.type }}</span>
               </div>
             </div>
           </section>
 
           <section class="browser-section">
-            <h3>Browser Support (Latest Versions)</h3>
+            <h3>Browser Support</h3>
             <div class="browser-list">
-              <div 
-                v-for="browser in browserList.slice(0, 10)" 
+              <div
+                v-for="browser in browserList"
                 :key="browser.id"
                 class="browser-row"
               >
                 <span class="browser-name">{{ browser.name }}</span>
-                <span class="version">v{{ browser.latestVersion }}</span>
-                <span 
+                <span class="version">{{ browser.latestVersion }}</span>
+                <span
                   class="status-badge"
-                  :class="browser.latestSupport.status"
+                  :class="`status-${browser.currentStatus}`"
                 >
-                  {{ browser.latestSupport.status }}
+                  {{ getSupportStatusLabel(browser.currentStatus) }}
+                </span>
+                <span v-if="browser.firstFull" class="first-support">
+                  Since v{{ browser.firstFull }}
                 </span>
               </div>
             </div>
@@ -170,11 +232,61 @@ function handleTriggersUpdate(newTriggers: Trigger[]) {
   display: flex;
   justify-content: space-between;
   align-items: start;
+  gap: 1rem;
+}
+
+.feature-description {
+  margin: 0.5rem 0;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.meta-badges {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.category-badge {
+  padding: 0.25rem 0.625rem;
+  border-radius: 4px;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.baseline-badge {
+  padding: 0.25rem 0.625rem;
+  border-radius: 4px;
+  background-color: #10b981;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.external-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.external-link:hover {
+  text-decoration: underline;
 }
 
 .close-btn {
   width: 2rem;
   height: 2rem;
+  flex-shrink: 0;
 }
 
 .modal-body {
@@ -187,10 +299,12 @@ function handleTriggersUpdate(newTriggers: Trigger[]) {
   margin-bottom: 1rem;
 }
 
-.usage-stats {
+.usage-stats,
+.usage-breakdown {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .stat {
@@ -200,6 +314,17 @@ function handleTriggersUpdate(newTriggers: Trigger[]) {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.stat .label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.stat .value {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
 }
 
 .browser-list {
@@ -225,7 +350,40 @@ function handleTriggersUpdate(newTriggers: Trigger[]) {
 .status-badge {
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;
-  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-badge.status-y {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.status-a {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge.status-n {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.status-badge.status-p,
+.status-badge.status-x {
+  background-color: #e0e7ff;
+  color: #3730a3;
+}
+
+.status-badge.status-d,
+.status-badge.status-u {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.first-support {
+  font-size: 0.75rem;
+  color: #6b7280;
 }
 
 .modal-footer {

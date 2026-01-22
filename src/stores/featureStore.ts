@@ -1,89 +1,118 @@
 import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
-import type { CaniuseData, Feature } from '../types/caniuse';
+import type {
+  FeatureIndex,
+  NormalizedFeature,
+  FeatureCache
+} from '../types/caniuse';
 
 export const useCaniuseStore = defineStore('featureStore', () => {
   // State
-  const data = ref<CaniuseData | null>(null);
+  const index = ref<FeatureIndex[]>([]);
+  const featureCache = ref<FeatureCache>({});
   const loading = ref(false);
   const error = ref<string | null>(null);
 
   // Getters
-  const isLoaded = computed(() => data.value !== null);
-  
-  const lastUpdated = computed(() => {
-    if (!data.value) return null;
-    return new Date(data.value.lastUpdated);
-  });
+  const isLoaded = computed(() => index.value.length > 0);
 
-  const featureCount = computed(() => {
-    if (!data.value) return 0;
-    return Object.keys(data.value.features).length;
-  });
+  const featureCount = computed(() => index.value.length);
 
   // Actions
-  async function loadData() {
+  async function loadIndex() {
     // Already loaded
-    if (data.value) return;
+    if (index.value.length > 0) return;
 
     loading.value = true;
     error.value = null;
 
     try {
-      const response = await fetch('/caniuse-data.json');
-      
+      const response = await fetch('/data/index.json');
+
       if (!response.ok) {
-        throw new Error(`Failed to load data: ${response.statusText}`);
+        throw new Error(`Failed to load index: ${response.statusText}`);
       }
 
-      const jsonData = await response.json() as CaniuseData;
-      data.value = jsonData;
+      const indexData = await response.json() as FeatureIndex[];
+      index.value = indexData;
 
-      console.log(`✅ Loaded ${Object.keys(jsonData.features).length} features`);
+      console.log(`✅ Loaded index with ${indexData.length} features`);
     } catch (err) {
-      error.value = err instanceof Error ? err.message : 'Failed to load data';
-      console.error('Error loading caniuse data:', err);
+      error.value = err instanceof Error ? err.message : 'Failed to load index';
+      console.error('Error loading feature index:', err);
     } finally {
       loading.value = false;
     }
   }
 
-  function searchFeatures(query: string): Feature[] {
-    if (!data.value || !query) return [];
+  async function loadFeature(featureId: string): Promise<NormalizedFeature | null> {
+    // Check cache first
+    if (featureCache.value[featureId]) {
+      return featureCache.value[featureId];
+    }
+
+    try {
+      const response = await fetch(`/data/features/${featureId}.json`);
+
+      if (!response.ok) {
+        throw new Error(`Failed to load feature ${featureId}: ${response.statusText}`);
+      }
+
+      const featureData = await response.json() as NormalizedFeature;
+
+      // Cache the loaded feature
+      featureCache.value[featureId] = featureData;
+
+      return featureData;
+    } catch (err) {
+      console.error(`Error loading feature ${featureId}:`, err);
+      return null;
+    }
+  }
+
+  function searchFeatures(query: string): FeatureIndex[] {
+    if (!query || query.trim().length < 2) {
+      return [];
+    }
 
     const lowerQuery = query.toLowerCase().trim();
-    
-    return Object.values(data.value.features).filter((feature) => 
-      feature.title.toLowerCase().includes(lowerQuery) ||
-      feature.id.toLowerCase().includes(lowerQuery)
+
+    return index.value.filter((feature) =>
+      feature.name.toLowerCase().includes(lowerQuery) ||
+      feature.id.toLowerCase().includes(lowerQuery) ||
+      feature.description.toLowerCase().includes(lowerQuery)
     );
   }
 
-  function getFeature(id: string): Feature | null {
-    if (!data.value) return null;
-    return data.value.features[id] || null;
+  function getFeatureFromIndex(featureId: string): FeatureIndex | null {
+    return index.value.find(f => f.id === featureId) || null;
   }
 
-  function getAllFeatures(): Feature[] {
-    if (!data.value) return [];
-    return Object.values(data.value.features);
+  function getAllFeaturesFromIndex(): FeatureIndex[] {
+    return index.value;
+  }
+
+  function getFeatureFromCache(featureId: string): NormalizedFeature | null {
+    return featureCache.value[featureId] || null;
   }
 
   return {
     // State
-    data,
+    index,
+    featureCache,
     loading,
     error,
-    
+
     // Getters
     isLoaded,
-    lastUpdated,
     featureCount,
-    
+
     // Actions
-    loadData,
+    loadIndex,
+    loadFeature,
     searchFeatures,
-    getFeature,
-    getAllFeatures
+    getFeatureFromIndex,
+    getAllFeaturesFromIndex,
+    getFeatureFromCache
   };
 });
