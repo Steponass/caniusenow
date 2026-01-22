@@ -6,11 +6,15 @@
   "scripts": {
     "clone-sources": "tsx scripts/clone-sources.ts",
     "normalize-data": "tsx scripts/normalize-data.ts",
+    "send-notifications": "tsx scripts/send-notifications.ts",
+    "build-data": "npm run clone-sources && npm run normalize-data",
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.91.0",
+    "notificationapi-node-server-sdk": "^2.8.0",
     "vue": "^3.5.24"
   },
   "devDependencies": {
