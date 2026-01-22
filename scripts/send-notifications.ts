@@ -75,7 +75,7 @@ async function main(): Promise<void> {
   console.log("=".repeat(70));
 
   // Validate environment variables
-  if (!process.env.VITE_SUPABASE_URL || !process.env.VITE_SUPABASE_PUBLISHABLE_KEY) {
+  if (!process.env.VITE_SUPABASE_URL || !process.env.SUPABASE_SECRET_KEY) {
     console.error("❌ Missing Supabase credentials");
     process.exit(1);
   }
@@ -91,7 +91,7 @@ async function main(): Promise<void> {
   // Initialize clients
   const supabase = createClient(
     process.env.VITE_SUPABASE_URL,
-    process.env.VITE_SUPABASE_PUBLISHABLE_KEY
+    process.env.SUPABASE_SECRET_KEY
   );
 
   NotificationAPI.init(
