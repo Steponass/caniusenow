@@ -8,12 +8,3 @@ export type {
   SupportStatus
 } from '../../scripts/types';
 
-// Additional frontend-specific types
-export interface FeatureSearchResult {
-  index: FeatureIndex[];
-  total: number;
-}
-
-export interface FeatureCache {
-  [featureId: string]: NormalizedFeature;
-}

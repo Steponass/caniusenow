@@ -5,11 +5,8 @@ import type { FeatureIndex, NormalizedFeature } from '../types/caniuse';
 
 const featureStore = useCaniuseStore();
 
-const emit = defineEmits<{
-  featureClick: [feature: NormalizedFeature];
-}>();
-
 const searchQuery = ref('');
+const selectedFeature = ref<NormalizedFeature | null>(null);
 
 const filteredFeatures = computed(() => {
   // Only filter when search query has 2+ characters
@@ -26,7 +23,10 @@ async function handleFeatureClick(feature: FeatureIndex) {
   // Load full feature data when card is clicked
   const fullFeature = await featureStore.loadFeature(feature.id);
   if (fullFeature) {
-    emit('featureClick', fullFeature);
+    selectedFeature.value = fullFeature;
+    // Emit event or open modal here
+    // For now, just log
+    console.log('Feature clicked:', fullFeature);
   }
 }
 
