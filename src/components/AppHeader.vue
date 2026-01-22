@@ -1,11 +1,18 @@
 <script setup lang="ts">
-import { useAuthStore } from "../stores/authStore";
+
+import FeatureSearch from "./FeatureSearch.vue";
+import { useAuthStore } from "@/stores/authStore";
 
 const authStore = useAuthStore();
 
 const emit = defineEmits<{
   openAuthModal: [];
+  search: [query: string];
 }>();
+
+function handleSearch(query: string) {
+  emit('search', query);
+}
 
 async function handleSignOut() {
   try {
@@ -26,6 +33,7 @@ function handleSignIn() {
       <h1>CanIUse Tracker</h1>
     </div>
 
+    <FeatureSearch @search="handleSearch" />
     <nav>
       <div v-if="authStore.isAuthenticated">
         <span>{{ authStore.user?.email }}</span>

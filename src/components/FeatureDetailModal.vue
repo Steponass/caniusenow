@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
-import type { NormalizedFeature } from '../types/caniuse';
-import type { Trigger } from '../types/featureTracking';
-import TriggerBuilder from './TriggerBuilder.vue';
+import { ref, computed } from "vue";
+import type { NormalizedFeature } from "@/types/feature";
+import type { Trigger } from "@/types/featureTracking";
+import TriggerBuilder from "./TriggerBuilder.vue";
 
 interface Props {
   feature: NormalizedFeature | null;
@@ -21,57 +21,65 @@ const triggers = ref<Trigger[]>([]);
 const browserList = computed(() => {
   if (!props.feature) return [];
 
-  return Object.entries(props.feature.support).map(([browserId, supportDetail]) => {
-    const latestVersion = supportDetail.versions?.[0]?.version || 'current';
-    const currentStatus = supportDetail.current;
+  return Object.entries(props.feature.support).map(
+    ([browserId, supportDetail]) => {
+      const latestVersion = supportDetail.versions?.[0]?.version || "current";
+      const currentStatus = supportDetail.current;
 
-    return {
-      id: browserId,
-      name: browserId,
-      latestVersion,
-      currentStatus,
-      firstFull: supportDetail.firstFull,
-      firstPartial: supportDetail.firstPartial
-    };
-  });
+      return {
+        id: browserId,
+        name: browserId,
+        latestVersion,
+        currentStatus,
+        firstFull: supportDetail.firstFull,
+        firstPartial: supportDetail.firstPartial,
+      };
+    },
+  );
 });
 
 const usageByCategory = computed(() => {
   if (!props.feature) return { desktop: 0, mobile: 0 };
 
-  const desktop = Object.values(props.feature.usage.byBrowser.desktop).reduce((a, b) => a + b, 0) /
-    Object.keys(props.feature.usage.byBrowser.desktop).length || 0;
-  const mobile = Object.values(props.feature.usage.byBrowser.mobile).reduce((a, b) => a + b, 0) /
-    Object.keys(props.feature.usage.byBrowser.mobile).length || 0;
+  const desktop =
+    Object.values(props.feature.usage.byBrowser.desktop).reduce(
+      (a, b) => a + b,
+      0,
+    ) / Object.keys(props.feature.usage.byBrowser.desktop).length || 0;
+  const mobile =
+    Object.values(props.feature.usage.byBrowser.mobile).reduce(
+      (a, b) => a + b,
+      0,
+    ) / Object.keys(props.feature.usage.byBrowser.mobile).length || 0;
 
   return { desktop, mobile };
 });
 
 function getSupportStatusLabel(status: string): string {
   const statusMap: Record<string, string> = {
-    'y': 'Full',
-    'a': 'Partial',
-    'n': 'None',
-    'p': 'Prefix',
-    'd': 'Disabled',
-    'x': 'Prefixed',
-    'u': 'Unknown'
+    y: "Full",
+    a: "Partial",
+    n: "None",
+    p: "Prefix",
+    d: "Disabled",
+    x: "Prefixed",
+    u: "Unknown",
   };
-  return statusMap[status] || 'Unknown';
+  return statusMap[status] || "Unknown";
 }
 
 function handleClose() {
   triggers.value = [];
-  emit('close');
+  emit("close");
 }
 
 function handleStartTracking() {
   if (triggers.value.length === 0) {
-    alert('Please add at least one notification trigger');
+    alert("Please add at least one notification trigger");
     return;
   }
 
-  emit('startTracking', triggers.value);
+  emit("startTracking", triggers.value);
   triggers.value = [];
 }
 
@@ -125,25 +133,35 @@ function handleTriggersUpdate(newTriggers: Trigger[]) {
             <div class="usage-stats">
               <div class="stat">
                 <span class="label">Full Support:</span>
-                <span class="value">{{ Math.round(feature.usage.global.full) }}%</span>
+                <span class="value"
+                  >{{ Math.round(feature.usage.global.full) }}%</span
+                >
               </div>
               <div class="stat">
                 <span class="label">Partial Support:</span>
-                <span class="value">{{ Math.round(feature.usage.global.partial) }}%</span>
+                <span class="value"
+                  >{{ Math.round(feature.usage.global.partial) }}%</span
+                >
               </div>
               <div class="stat">
                 <span class="label">Total:</span>
-                <span class="value">{{ Math.round(feature.usage.global.total) }}%</span>
+                <span class="value"
+                  >{{ Math.round(feature.usage.global.total) }}%</span
+                >
               </div>
             </div>
             <div class="usage-breakdown">
               <div class="stat">
                 <span class="label">Desktop Avg:</span>
-                <span class="value">{{ Math.round(usageByCategory.desktop) }}%</span>
+                <span class="value"
+                  >{{ Math.round(usageByCategory.desktop) }}%</span
+                >
               </div>
               <div class="stat">
                 <span class="label">Mobile Avg:</span>
-                <span class="value">{{ Math.round(usageByCategory.mobile) }}%</span>
+                <span class="value"
+                  >{{ Math.round(usageByCategory.mobile) }}%</span
+                >
               </div>
               <div class="stat">
                 <span class="label">Data Type:</span>
@@ -178,9 +196,10 @@ function handleTriggersUpdate(newTriggers: Trigger[]) {
           <section class="trigger-section">
             <h3>Notification Triggers</h3>
             <p class="section-description">
-              Set conditions to receive an email when this feature becomes production-ready.
+              Set conditions to receive an email when this feature becomes
+              production-ready.
             </p>
-            <TriggerBuilder 
+            <TriggerBuilder
               :feature="feature"
               :triggers="triggers"
               @update:triggers="handleTriggersUpdate"
@@ -189,11 +208,9 @@ function handleTriggersUpdate(newTriggers: Trigger[]) {
         </div>
 
         <div class="modal-footer">
-          <button class="btn-secondary" @click="handleClose">
-            Cancel
-          </button>
-          <button 
-            class="btn-primary" 
+          <button class="btn-secondary" @click="handleClose">Cancel</button>
+          <button
+            class="btn-primary"
             @click="handleStartTracking"
             :disabled="triggers.length === 0"
           >
@@ -206,7 +223,6 @@ function handleTriggersUpdate(newTriggers: Trigger[]) {
 </template>
 
 <style scoped>
-
 .modal-overlay {
   position: fixed;
   inset: 0;

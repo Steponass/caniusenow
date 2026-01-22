@@ -20,7 +20,7 @@ export interface BrowserVersionTrigger {
 
 export interface UsageThresholdTrigger {
   type: 'usage_threshold';
-  usageType: 'full' | 'partial' | 'total' | 'combined';
+  usageType: 'full' | 'partial' | 'combined';
   threshold: number;
 }
 
@@ -32,6 +32,7 @@ export type Trigger =
 export interface FeatureTracking {
   id: string;
   user_id: string;
+  user_email: string;
   feature_id: string;
   feature_title: string;
   triggers: Trigger[];

@@ -13,6 +13,7 @@ export interface Database {
         Row: {
           id: string;
           user_id: string;
+          user_email: string;
           feature_id: string;
           feature_title: string;
           triggers: Json;
@@ -24,6 +25,7 @@ export interface Database {
         Insert: {
           id?: string;
           user_id: string;
+          user_email: string;
           feature_id: string;
           feature_title: string;
           triggers: Json;
@@ -35,6 +37,7 @@ export interface Database {
         Update: {
           id?: string;
           user_id?: string;
+          user_email?: string;
           feature_id?: string;
           feature_title?: string;
           triggers?: Json;

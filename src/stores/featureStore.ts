@@ -1,51 +1,48 @@
-import { defineStore } from 'pinia';
-import { ref, computed } from 'vue';
+import { defineStore } from "pinia";
+import { ref, computed } from "vue";
 import type {
   FeatureIndex,
   NormalizedFeature,
-  FeatureCache
-} from '../types/caniuse';
+  FeatureCache,
+} from "@/types/feature";
 
-export const useCaniuseStore = defineStore('featureStore', () => {
-  // State
+export const useFeatureStore = defineStore("featureStore", () => {
   const index = ref<FeatureIndex[]>([]);
   const featureCache = ref<FeatureCache>({});
   const loading = ref(false);
   const error = ref<string | null>(null);
 
-  // Getters
   const isLoaded = computed(() => index.value.length > 0);
-
   const featureCount = computed(() => index.value.length);
 
-  // Actions
   async function loadIndex() {
-    // Already loaded
     if (index.value.length > 0) return;
 
     loading.value = true;
     error.value = null;
 
     try {
-      const response = await fetch('/data/index.json');
+      const response = await fetch("/data/index.json");
 
       if (!response.ok) {
         throw new Error(`Failed to load index: ${response.statusText}`);
       }
 
-      const indexData = await response.json() as FeatureIndex[];
+      const indexData = (await response.json()) as FeatureIndex[];
       index.value = indexData;
 
       console.log(`✅ Loaded index with ${indexData.length} features`);
     } catch (err) {
-      error.value = err instanceof Error ? err.message : 'Failed to load index';
-      console.error('Error loading feature index:', err);
+      error.value = err instanceof Error ? err.message : "Failed to load index";
+      console.error("Error loading feature index:", err);
     } finally {
       loading.value = false;
     }
   }
 
-  async function loadFeature(featureId: string): Promise<NormalizedFeature | null> {
+  async function loadFeature(
+    featureId: string,
+  ): Promise<NormalizedFeature | null> {
     // Check cache first
     if (featureCache.value[featureId]) {
       return featureCache.value[featureId];
@@ -55,10 +52,12 @@ export const useCaniuseStore = defineStore('featureStore', () => {
       const response = await fetch(`/data/features/${featureId}.json`);
 
       if (!response.ok) {
-        throw new Error(`Failed to load feature ${featureId}: ${response.statusText}`);
+        throw new Error(
+          `Failed to load feature ${featureId}: ${response.statusText}`,
+        );
       }
 
-      const featureData = await response.json() as NormalizedFeature;
+      const featureData = (await response.json()) as NormalizedFeature;
 
       // Cache the loaded feature
       featureCache.value[featureId] = featureData;
@@ -77,15 +76,16 @@ export const useCaniuseStore = defineStore('featureStore', () => {
 
     const lowerQuery = query.toLowerCase().trim();
 
-    return index.value.filter((feature) =>
-      feature.name.toLowerCase().includes(lowerQuery) ||
-      feature.id.toLowerCase().includes(lowerQuery) ||
-      feature.description.toLowerCase().includes(lowerQuery)
+    return index.value.filter(
+      (feature) =>
+        feature.name.toLowerCase().includes(lowerQuery) ||
+        feature.id.toLowerCase().includes(lowerQuery) ||
+        feature.description.toLowerCase().includes(lowerQuery),
     );
   }
 
   function getFeatureFromIndex(featureId: string): FeatureIndex | null {
-    return index.value.find(f => f.id === featureId) || null;
+    return index.value.find((f) => f.id === featureId) || null;
   }
 
   function getAllFeaturesFromIndex(): FeatureIndex[] {
@@ -97,22 +97,17 @@ export const useCaniuseStore = defineStore('featureStore', () => {
   }
 
   return {
-    // State
     index,
     featureCache,
     loading,
     error,
-
-    // Getters
     isLoaded,
     featureCount,
-
-    // Actions
     loadIndex,
     loadFeature,
     searchFeatures,
     getFeatureFromIndex,
     getAllFeaturesFromIndex,
-    getFeatureFromCache
+    getFeatureFromCache,
   };
 });

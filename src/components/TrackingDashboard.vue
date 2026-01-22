@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useTrackingStore } from '../stores/featureTrackingStore';
+import { useTrackingStore } from '@stores/featureTrackingStore';
 import TrackingCard from './TrackingCard.vue';
 
 type Tab = 'active' | 'notified' | 'completed';

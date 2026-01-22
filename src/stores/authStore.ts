@@ -1,18 +1,15 @@
 import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
-import { supabase } from '../utils/supabase';
-import type { User, Session } from '../types/auth';
+import { supabase } from '@utils/supabase';
+import type { User, Session } from '@/types/auth';
 
 export const useAuthStore = defineStore('auth', () => {
-  // State
   const user = ref<User | null>(null);
   const session = ref<Session | null>(null);
   const loading = ref(true);
 
-  // Getters
   const isAuthenticated = computed(() => !!user.value);
 
-  // Actions
   async function initialize() {
     loading.value = true;
 
@@ -76,15 +73,10 @@ export const useAuthStore = defineStore('auth', () => {
   }
 
   return {
-    // State
     user,
     session,
     loading,
-    
-    // Getters
     isAuthenticated,
-    
-    // Actions
     initialize,
     signInWithGithub,
     signInWithMagicLink,

@@ -39,6 +39,7 @@ interface ChangeReport {
 interface UserFeatureTracking {
   id: string;
   user_id: string;
+  user_email: string;
   feature_id: string;
   feature_title: string;
   triggers: Trigger[];
@@ -142,7 +143,7 @@ async function main(): Promise<void> {
     // Query users tracking this feature
     const { data: trackings, error } = await supabase
       .from("user_feature_tracking")
-      .select("id, user_id, feature_id, feature_title, triggers, status")
+      .select("id, user_id, user_email, feature_id, feature_title, triggers, status")
       .eq("feature_id", change.featureId)
       .eq("status", "active");
 
@@ -166,23 +167,15 @@ async function main(): Promise<void> {
       continue;
     }
 
-    // Fetch user emails
-    const userIds = [...new Set(trackings.map((t) => t.user_id))];
-    const { data: users, error: usersError } =
-      await supabase.auth.admin.listUsers();
-
-    if (usersError) {
-      console.error(`  ❌ Error fetching users:`, usersError);
-      continue;
-    }
-
-    const userEmailMap = new Map(
-      users.users.map((u) => [u.id, u.email || ""])
-    );
-
     // Evaluate triggers for each tracking
     for (const tracking of trackings as unknown as UserFeatureTracking[]) {
       trackingsProcessed++;
+
+      // Skip if no email stored (legacy trackings before migration)
+      if (!tracking.user_email) {
+        console.log(`  ⚠️  No email stored for tracking ${tracking.id} (user: ${tracking.user_id})`);
+        continue;
+      }
 
       const metTriggers = evaluateTriggers(
         tracking.triggers,
@@ -192,14 +185,7 @@ async function main(): Promise<void> {
       );
 
       if (metTriggers.length > 0) {
-        const userEmail = userEmailMap.get(tracking.user_id);
-
-        if (!userEmail) {
-          console.log(`  ⚠️  No email found for user ${tracking.user_id}`);
-          continue;
-        }
-
-        console.log(`  ✉️  Notifying ${userEmail}`);
+        console.log(`  ✉️  Notifying ${tracking.user_email}`);
 
         try {
           await sendEmailNotification(
@@ -207,7 +193,7 @@ async function main(): Promise<void> {
             metTriggers,
             fullFeature,
             change.changes,
-            userEmail
+            tracking.user_email
           );
 
           // Update status to notified

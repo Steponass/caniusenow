@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
-import type { NormalizedFeature } from '../types/caniuse';
+import { ref, computed } from "vue";
+import type { NormalizedFeature } from "@/types/feature";
 import type {
   Trigger,
   BrowserSupportTrigger,
   BrowserVersionTrigger,
-  UsageThresholdTrigger
-} from '../types/featureTracking';
+  UsageThresholdTrigger,
+} from "@/types/featureTracking";
 
 interface Props {
   feature: NormalizedFeature;
@@ -16,16 +16,16 @@ interface Props {
 const props = defineProps<Props>();
 
 const emit = defineEmits<{
-  'update:triggers': [triggers: Trigger[]];
+  "update:triggers": [triggers: Trigger[]];
 }>();
 
-type TriggerType = 'browser_support' | 'browser_version' | 'usage_threshold';
+type TriggerType = "browser_support" | "browser_version" | "usage_threshold";
 
-const selectedType = ref<TriggerType>('browser_support');
-const selectedBrowser = ref('chrome');
-const selectedStatus = ref<'full' | 'partial'>('full');
-const selectedVersion = ref('');
-const selectedUsageType = ref<'full' | 'partial' | 'total'>('total');
+const selectedType = ref<TriggerType>("browser_support");
+const selectedBrowser = ref("chrome");
+const selectedStatus = ref<"full" | "partial">("full");
+const selectedVersion = ref("");
+const selectedUsageType = ref<"full" | "partial" | "combined">("combined");
 const selectedThreshold = ref(95);
 
 const availableBrowsers = computed(() => {
@@ -35,55 +35,59 @@ const availableBrowsers = computed(() => {
 const browserVersionsForSelected = computed(() => {
   const browserSupport = props.feature.support[selectedBrowser.value];
   if (!browserSupport || !browserSupport.versions) return [];
-  return browserSupport.versions.map(v => v.version);
+  return browserSupport.versions.map((v) => v.version);
 });
 
 function addTrigger() {
   let newTrigger: Trigger;
 
-  if (selectedType.value === 'browser_support') {
+  if (selectedType.value === "browser_support") {
     newTrigger = {
-      type: 'browser_support',
+      type: "browser_support",
       browser: selectedBrowser.value,
-      targetStatus: selectedStatus.value
+      targetStatus: selectedStatus.value,
     } as BrowserSupportTrigger;
-  } else if (selectedType.value === 'browser_version') {
+  } else if (selectedType.value === "browser_version") {
     if (!selectedVersion.value) {
-      alert('Please enter a version number');
+      alert("Please enter a version number");
       return;
     }
     newTrigger = {
-      type: 'browser_version',
+      type: "browser_version",
       browser: selectedBrowser.value,
       version: selectedVersion.value,
-      targetStatus: selectedStatus.value
+      targetStatus: selectedStatus.value,
     } as BrowserVersionTrigger;
   } else {
     newTrigger = {
-      type: 'usage_threshold',
+      type: "usage_threshold",
       usageType: selectedUsageType.value,
-      threshold: selectedThreshold.value
+      threshold: selectedThreshold.value,
     } as UsageThresholdTrigger;
   }
 
-  emit('update:triggers', [...props.triggers, newTrigger]);
+  emit("update:triggers", [...props.triggers, newTrigger]);
 }
 
 function removeTrigger(index: number) {
   const updated = props.triggers.filter((_, i) => i !== index);
-  emit('update:triggers', updated);
+  emit("update:triggers", updated);
 }
 
 function getTriggerDescription(trigger: Trigger): string {
-  if (trigger.type === 'browser_support') {
+  if (trigger.type === "browser_support") {
     return `${trigger.browser} has ${trigger.targetStatus} support`;
-  } else if (trigger.type === 'browser_version') {
+  } else if (trigger.type === "browser_version") {
     return `${trigger.browser} ${trigger.version}+ has ${trigger.targetStatus} support`;
   } else {
-    const usageLabel = trigger.usageType === 'full' ? 'full support' :
-                      trigger.usageType === 'partial' ? 'partial support' :
-                      (trigger.usageType === 'total' || trigger.usageType === 'combined') ? 'total (full + partial)' :
-                      'total (full + partial)';
+    const usageLabel =
+      trigger.usageType === "full"
+        ? "full support"
+        : trigger.usageType === "partial"
+          ? "partial support"
+          : trigger.usageType === "combined"
+            ? "total (full + partial)"
+            : "total (full + partial)";
     return `${usageLabel} usage ≥ ${trigger.threshold}%`;
   }
 }
@@ -105,7 +109,11 @@ function getTriggerDescription(trigger: Trigger): string {
         <div class="form-group">
           <label>Browser</label>
           <select v-model="selectedBrowser">
-            <option v-for="browser in availableBrowsers" :key="browser" :value="browser">
+            <option
+              v-for="browser in availableBrowsers"
+              :key="browser"
+              :value="browser"
+            >
               {{ browser }}
             </option>
           </select>
@@ -124,7 +132,11 @@ function getTriggerDescription(trigger: Trigger): string {
         <div class="form-group">
           <label>Browser</label>
           <select v-model="selectedBrowser">
-            <option v-for="browser in availableBrowsers" :key="browser" :value="browser">
+            <option
+              v-for="browser in availableBrowsers"
+              :key="browser"
+              :value="browser"
+            >
               {{ browser }}
             </option>
           </select>
@@ -139,10 +151,15 @@ function getTriggerDescription(trigger: Trigger): string {
             list="version-suggestions"
           />
           <datalist id="version-suggestions">
-            <option v-for="version in browserVersionsForSelected.slice(0, 5)" :key="version" :value="version" />
+            <option
+              v-for="version in browserVersionsForSelected.slice(0, 5)"
+              :key="version"
+              :value="version"
+            />
           </datalist>
           <small v-if="browserVersionsForSelected.length > 0" class="hint">
-            Recent versions: {{ browserVersionsForSelected.slice(0, 3).join(', ') }}
+            Recent versions:
+            {{ browserVersionsForSelected.slice(0, 3).join(", ") }}
           </small>
         </div>
 
@@ -167,32 +184,28 @@ function getTriggerDescription(trigger: Trigger): string {
 
         <div class="form-group">
           <label>Threshold: {{ selectedThreshold }}%</label>
-          <input 
-            v-model.number="selectedThreshold" 
-            type="range" 
-            min="50" 
-            max="100" 
+          <input
+            v-model.number="selectedThreshold"
+            type="range"
+            min="50"
+            max="100"
             step="5"
           />
         </div>
       </template>
 
-      <button @click="addTrigger">
-        + Add Trigger
-      </button>
+      <button @click="addTrigger">+ Add Trigger</button>
     </div>
 
     <div v-if="triggers.length > 0" class="triggers-list">
       <h4>Configured Triggers ({{ triggers.length }})</h4>
-      <div 
-        v-for="(trigger, index) in triggers" 
+      <div
+        v-for="(trigger, index) in triggers"
         :key="index"
         class="trigger-item"
       >
         <span>{{ getTriggerDescription(trigger) }}</span>
-        <button @click="removeTrigger(index)">
-          Remove
-        </button>
+        <button @click="removeTrigger(index)">Remove</button>
       </div>
     </div>
 
@@ -231,7 +244,6 @@ function getTriggerDescription(trigger: Trigger): string {
   color: #6b7280;
   margin-top: -0.25rem;
 }
-
 
 .triggers-list {
   display: flex;

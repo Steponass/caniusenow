@@ -63,6 +63,10 @@ export const useTrackingStore = defineStore('tracking', () => {
       throw new Error('Must be authenticated to track features');
     }
 
+    if (!authStore.user.email) {
+      throw new Error('User email is required to track features');
+    }
+
     if (triggers.length === 0) {
       throw new Error('At least one trigger is required');
     }
@@ -76,6 +80,7 @@ export const useTrackingStore = defineStore('tracking', () => {
         // @ts-ignore
         .insert({
           user_id: authStore.user.id,
+          user_email: authStore.user.email,
           feature_id: featureId,
           feature_title: featureTitle,
           triggers: triggers,
