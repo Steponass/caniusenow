@@ -152,6 +152,7 @@ async function main(): Promise<void> {
     }
 
     if (!trackings || trackings.length === 0) {
+      console.log(`  ℹ️  ${change.featureId}: No active trackings found`);
       continue; // No users tracking this feature
     }
 
