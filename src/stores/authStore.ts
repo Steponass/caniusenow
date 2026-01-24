@@ -46,6 +46,20 @@ export const useAuthStore = defineStore('auth', () => {
     }
   }
 
+    async function signInWithGoogle() {
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: 'google',
+      options: {
+        redirectTo: window.location.origin
+      }
+    });
+
+    if (error) {
+      console.error('Google sign in error:', error);
+      throw error;
+    }
+  }
+
   async function signInWithMagicLink(email: string) {
     const { error } = await supabase.auth.signInWithOtp({
       email,
@@ -79,6 +93,7 @@ export const useAuthStore = defineStore('auth', () => {
     isAuthenticated,
     initialize,
     signInWithGithub,
+    signInWithGoogle,
     signInWithMagicLink,
     signOut
   };

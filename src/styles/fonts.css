@@ -1,0 +1,56 @@
+/* @font-face {
+  font-family: 'Asap Variable';
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Asap-Variable.woff2') format('woff2-variations');
+}
+
+@font-face {
+    font-family: 'Adjusted Arial Fallback';
+    src: local(Arial);
+    size-adjust: 100%;
+    ascent-override: 91%;
+    descent-override: normal;
+    line-gap-override: 3%;
+} */
+
+/* https://www.fluid-type-scale.com/calculate?minFontSize=16&minWidth=360&minRatio=1.2&maxFontSize=18&maxWidth=1280&maxRatio=1.25&steps=xs%2C+s%2C+body%2Ch6%2Ch5%2Ch4%2Ch3%2Ch2%2Ch1&baseStep=body&prefix=fontsize&useContainerWidth=true&includeFallbacks=false&useRems=true&remValue=16&decimals=2&previewFont=Asap&previewText=Almost+before+we+knew+it%2C+we+had+left+the+ground&previewWidth=360 */
+
+:root {
+--fontsize-s: clamp(0.83rem, 0.07vi + 0.82rem, 0.9rem);
+--fontsize-body: clamp(1rem, 0.13vi + 0.97rem, 1.13rem);
+--fontsize-h6: clamp(1.2rem, 0.21vi + 1.15rem, 1.41rem);
+--fontsize-h5: clamp(1.44rem, 0.33vi + 1.37rem, 1.76rem);
+--fontsize-h4: clamp(1.73rem, 0.48vi + 1.62rem, 2.2rem);
+--fontsize-h3: clamp(2.07rem, 0.69vi + 1.92rem, 2.75rem);
+--fontsize-h2: clamp(2.49rem, 0.97vi + 2.27rem, 3.43rem);
+--fontsize-h1: clamp(2.99rem, 1.34vi + 2.68rem, 4.29rem);
+}
+
+:where(span) {font-size: var(--fontsize-s)}
+:where(p) {font-size: var(--fontsize-p)}
+:where(h6) {font-size: var(--fontsize-h6)}
+:where(h5) {font-size: var(--fontsize-h5)}
+:where(h4) {font-size: var(--fontsize-h4)}
+:where(h3) {font-size: var(--fontsize-h3)}
+:where(h2) {font-size: var(--fontsize-h2)}
+:where(h1) {font-size: var(--fontsize-h1)}
+
+:where(h6, h5, h4, h3, h2, h1) {
+  font-family:  system-ui, sans-serif;
+  font-weight: 600;
+}
+
+:where(p, ul, ol, li, a, span, button, label, input, textarea, select, summary, dd, dt) {
+  font-size: var(--fontsize-p);
+  font-family:  system-ui, sans-serif;
+  font-weight: 400;
+}
+
+:where(h6, h5, h4, h3, h2, h1, button, input, label) {
+  line-height: 1.2;
+}
+
+:where(p, li) {
+  line-height: 1.5;
+}

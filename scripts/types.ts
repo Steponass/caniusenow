@@ -112,7 +112,7 @@ export interface AltWwData {
 }
 
 // ============================================================================
-// NORMALIZED OUTPUT TYPES (Our unified format)
+// NORMALIZED OUTPUT TYPES (Unified format)
 // ============================================================================
 
 export interface NormalizedFeature {
@@ -150,6 +150,7 @@ export interface NormalizedFeature {
       matched: "exact" | "via-webfeatures" | "inferred";
     }>;
   };
+  caniuseUrl: string;
 }
 
 export interface BrowserSupport {
@@ -233,4 +234,18 @@ export const BROWSER_CATEGORIES: Record<TargetBrowser, "desktop" | "mobile"> = {
   and_chr: "mobile",
   samsung: "mobile",
   and_ff: "mobile"
+};
+
+// Short names for JSON output to reduce file size
+export const BROWSER_SHORT_NAMES: Record<TargetBrowser, string> = {
+  chrome: "chr",
+  firefox: "ffx",
+  safari: "saf",
+  edge: "edg",
+  opera: "opr",
+  ie: "ie",
+  ios_saf: "ios_saf",
+  and_chr: "an_chr",
+  samsung: "smsg",
+  and_ff: "an_ff"
 };

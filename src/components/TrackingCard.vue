@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useTrackingStore } from '@stores/featureTrackingStore';
+import { getBrowserDisplayName } from '@/types/feature';
 import type { FeatureTracking } from '@/types/featureTracking';
 
 interface Props {
@@ -24,9 +25,9 @@ async function handleDelete() {
 
 function getTriggerDescription(trigger: any): string {
   if (trigger.type === 'browser_support') {
-    return `${trigger.browser} has ${trigger.targetStatus} support`;
+    return `${getBrowserDisplayName(trigger.browser)} has ${trigger.targetStatus} support`;
   } else if (trigger.type === 'browser_version') {
-    return `${trigger.browser} ${trigger.version}+ has ${trigger.targetStatus} support`;
+    return `${getBrowserDisplayName(trigger.browser)} ${trigger.version}+ has ${trigger.targetStatus} support`;
   } else {
     const usageLabel = trigger.usageType === 'full' ? 'full support' :
                       trigger.usageType === 'partial' ? 'partial support' :

@@ -37,7 +37,21 @@ onMounted(async () => {
   if (authStore.isAuthenticated) {
     await trackingStore.loadUserTrackings();
   }
+
+    // NEW: Check for feature in URL
+  const params = new URLSearchParams(window.location.search);
+  const featureId = params.get('feature');
+  if (featureId) {
+    const feature = await featureStore.loadFeature(featureId);
+    if (feature) {
+      handleFeatureClick(feature);
+    }
+  }
+
+  // NEW: Handle browser back/forward
+  window.addEventListener('popstate', handlePopState);
 });
+
 
 function handleOpenAuthModal() {
   isAuthModalOpen.value = true;
@@ -47,18 +61,38 @@ function handleCloseAuthModal() {
   isAuthModalOpen.value = false;
 }
 
+function handlePopState() {
+  const params = new URLSearchParams(window.location.search);
+  const featureId = params.get('feature');
+  
+  if (!featureId && isFeatureModalOpen.value) {
+    // User hit back, close modal
+    handleCloseFeatureModal();
+  }
+}
+
 function handleFeatureClick(feature: NormalizedFeature) {
   selectedFeature.value = feature;
   isFeatureModalOpen.value = true;
+  
+  window.history.pushState({}, '', `?feature=${feature.id}`);
 }
 
 function handleCloseFeatureModal() {
   isFeatureModalOpen.value = false;
   selectedFeature.value = null;
+
+  window.history.pushState({}, '', '/');
 }
 
 async function handleStartTracking(triggers: Trigger[]) {
   if (!selectedFeature.value) return;
+
+  if (!authStore.isAuthenticated) {
+    handleCloseFeatureModal();
+    handleOpenAuthModal();
+    return;
+  }
 
   try {
     await trackingStore.addTracking(
@@ -71,7 +105,7 @@ async function handleStartTracking(triggers: Trigger[]) {
     showTrackingDashboard.value = true;
   } catch (error) {
     console.error("Failed to start tracking:", error);
-    alert("Failed to start tracking. Please try again.");
+    alert("Failed to add tracking. Contact Step!");
   }
 }
 
@@ -140,15 +174,6 @@ function handleSearch(query: string) {
     />
   </div>
 </template>
-
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-</style>
 
 <style scoped>
 #app {

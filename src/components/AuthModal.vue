@@ -14,7 +14,7 @@ const emit = defineEmits<{
 
 const authStore = useAuthStore();
 
-type AuthTab = 'github' | 'email';
+type AuthTab = 'github' | 'google' | 'email';
 const activeTab = ref<AuthTab>('github');
 const email = ref('');
 const loading = ref(false);
@@ -27,6 +27,19 @@ async function handleGithubSignIn() {
 
   try {
     await authStore.signInWithGithub();
+  } catch (err) {
+    error.value = err instanceof Error ? err.message : 'Sign in failed';
+  } finally {
+    loading.value = false;
+  }
+}
+
+async function handleGoogleSignIn() {
+  loading.value = true;
+  error.value = null;
+
+  try {
+    await authStore.signInWithGoogle();
   } catch (err) {
     error.value = err instanceof Error ? err.message : 'Sign in failed';
   } finally {
@@ -72,6 +85,12 @@ async function handleMagicLink() {
               GitHub
             </button>
             <button 
+              :class="{ active: activeTab === 'google' }"
+              @click="activeTab = 'google'"
+            >
+              Google  
+            </button>
+            <button 
               :class="{ active: activeTab === 'email' }"
               @click="activeTab = 'email'"
             >
@@ -93,6 +112,19 @@ async function handleMagicLink() {
               {{ loading ? 'Signing in...' : 'Continue with GitHub' }}
             </button>
           </div>
+
+          <div v-else-if="activeTab === 'google'" class="tab-content">
+            <p>Sign in with your Google account to start tracking features.</p>
+            <button 
+              class="btn-oauth" 
+              @click="handleGoogleSignIn"
+              :disabled="loading"
+            >
+              {{ loading ? 'Signing in...' : 'Continue with Google' }}
+            </button>
+          </div>
+
+
 
           <div v-else-if="activeTab === 'email'" class="tab-content">
             <div v-if="magicLinkSent" class="success-message">

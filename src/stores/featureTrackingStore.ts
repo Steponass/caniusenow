@@ -97,7 +97,7 @@ export const useTrackingStore = defineStore('tracking', () => {
       
       return newTracking;
     } catch (err) {
-      error.value = err instanceof Error ? err.message : 'Failed to add tracking';
+      error.value = err instanceof Error ? err.message : 'Failed to add tracking. Contact Step!';
       console.error('Error adding tracking:', err);
       throw err;
     } finally {

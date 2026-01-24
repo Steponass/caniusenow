@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
 import type { NormalizedFeature } from "@/types/feature";
+import { getBrowserDisplayName } from "@/types/feature";
 import type {
   Trigger,
   BrowserSupportTrigger,
@@ -76,9 +77,9 @@ function removeTrigger(index: number) {
 
 function getTriggerDescription(trigger: Trigger): string {
   if (trigger.type === "browser_support") {
-    return `${trigger.browser} has ${trigger.targetStatus} support`;
+    return `${getBrowserDisplayName(trigger.browser)} has ${trigger.targetStatus} support`;
   } else if (trigger.type === "browser_version") {
-    return `${trigger.browser} ${trigger.version}+ has ${trigger.targetStatus} support`;
+    return `${getBrowserDisplayName(trigger.browser)} ${trigger.version}+ has ${trigger.targetStatus} support`;
   } else {
     const usageLabel =
       trigger.usageType === "full"
@@ -114,7 +115,7 @@ function getTriggerDescription(trigger: Trigger): string {
               :key="browser"
               :value="browser"
             >
-              {{ browser }}
+              {{ getBrowserDisplayName(browser) }}
             </option>
           </select>
         </div>
@@ -137,7 +138,7 @@ function getTriggerDescription(trigger: Trigger): string {
               :key="browser"
               :value="browser"
             >
-              {{ browser }}
+              {{ getBrowserDisplayName(browser) }}
             </option>
           </select>
         </div>

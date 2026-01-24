@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useFeatureStore } from "@stores/featureStore";
 import type { FeatureIndex, NormalizedFeature } from "@/types/feature";
+import { getBrowserDisplayName } from "@/types/feature";
 
 interface Props {
   features: FeatureIndex[];
@@ -108,9 +109,9 @@ function getCategoryColor(category: string): string {
               :key="browser"
               class="browser-icon"
               :class="`support-${status}`"
-              :title="`${browser}: ${getSupportStatusLabel(status)}`"
+              :title="`${getBrowserDisplayName(String(browser))}: ${getSupportStatusLabel(status)}`"
             >
-              {{ browser }}
+              {{ getBrowserDisplayName(String(browser)) }}
             </div>
           </div>
         </div>

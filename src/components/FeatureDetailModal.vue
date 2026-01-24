@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
 import type { NormalizedFeature } from "@/types/feature";
+import { getBrowserDisplayName } from "@/types/feature";
 import type { Trigger } from "@/types/featureTracking";
 import TriggerBuilder from "./TriggerBuilder.vue";
 
@@ -28,7 +29,7 @@ const browserList = computed(() => {
 
       return {
         id: browserId,
-        name: browserId,
+        name: getBrowserDisplayName(browserId),
         latestVersion,
         currentStatus,
         firstFull: supportDetail.firstFull,
@@ -102,7 +103,16 @@ function handleTriggersUpdate(newTriggers: Trigger[]) {
                 Baseline {{ feature.baseline }}
               </span>
             </div>
-            <div v-if="feature.links.length > 0" class="links">
+            <div v-if="feature.caniuseUrl" class="links">
+              <a
+                v-if="feature.caniuseUrl"
+                :href="feature.caniuseUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="external-link"
+              >
+                Caniuse.com ↗
+              </a>
               <a
                 v-for="link in feature.links.slice(0, 3)"
                 :key="link.url"

@@ -15,7 +15,8 @@ import {
   TargetBrowser,
   TARGET_BROWSERS,
   BrowserSupport,
-  BrowserSupportDetail
+  BrowserSupportDetail,
+  BROWSER_SHORT_NAMES
 } from "./types.js";
 import {
   mapCaniuseCategory,
@@ -542,12 +543,19 @@ function generateIndex(
       delete quickSupport[browser];
     }
 
+    // Remap browser names to short names
+    const shortSupport: Record<string, "y" | "a" | "n" | "p"> = {};
+    for (const [browser, status] of Object.entries(quickSupport)) {
+      const shortName = BROWSER_SHORT_NAMES[browser as TargetBrowser] || browser;
+      shortSupport[shortName] = status;
+    }
+
     index.push({
       id,
       name: feature.name,
       description: feature.description.substring(0, 120), // Truncate for index
       category: feature.category,
-      support: quickSupport,
+      support: shortSupport,
       usage: feature.usage.global.total,
       baseline: feature.baseline
     });
@@ -585,18 +593,38 @@ async function writeOutput(
   let written = 0;
   for (const [id, feature] of features) {
     // Create a cleaned version of the feature without the versions array
-    const cleanedSupport: BrowserSupport = {};
+    // and with short browser names
+    const cleanedSupport: Record<string, { current: string; firstFull?: string; firstPartial?: string }> = {};
     for (const [browser, browserSupport] of Object.entries(feature.support)) {
-      cleanedSupport[browser] = {
+      const shortName = BROWSER_SHORT_NAMES[browser as TargetBrowser] || browser;
+      cleanedSupport[shortName] = {
         current: browserSupport.current,
         firstFull: browserSupport.firstFull,
         firstPartial: browserSupport.firstPartial
       };
     }
 
+    // Also remap usage.byBrowser to use short names
+    const shortByBrowser = {
+      desktop: {} as Record<string, number>,
+      mobile: {} as Record<string, number>
+    };
+    for (const [browser, usage] of Object.entries(feature.usage.byBrowser.desktop)) {
+      const shortName = BROWSER_SHORT_NAMES[browser as TargetBrowser] || browser;
+      shortByBrowser.desktop[shortName] = usage;
+    }
+    for (const [browser, usage] of Object.entries(feature.usage.byBrowser.mobile)) {
+      const shortName = BROWSER_SHORT_NAMES[browser as TargetBrowser] || browser;
+      shortByBrowser.mobile[shortName] = usage;
+    }
+
     const cleanedFeature = {
       ...feature,
       support: cleanedSupport,
+      usage: {
+        ...feature.usage,
+        byBrowser: shortByBrowser
+      },
       caniuseUrl: `https://caniuse.com/?search=${encodeURIComponent(id)}`
     };
 
