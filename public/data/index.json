@@ -1068,7 +1068,7 @@
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 75.86,
+    "usage": 76.17,
     "baseline": false
   },
   {
@@ -2828,7 +2828,7 @@
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 79.69,
+    "usage": 79.91,
     "baseline": false
   },
   {
@@ -2837,7 +2837,7 @@
     "description": "The `text-indent` property applies indentation to lines of inline content in a block.",
     "category": "CSS",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
       "edg": "n",
@@ -7560,11 +7560,11 @@
       "chr": "y",
       "ffx": "y",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 1.81,
+    "usage": 46.48,
     "baseline": false
   },
   {
@@ -22640,6 +22640,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.Document.requestStorageAccess.strict_same_origin_policy",
+    "name": "Third-party cookies sent only with requests to the calling embed's exact origin, not the whole site.",
+    "description": "Third-party cookies sent only with requests to the calling embed's exact origin, not the whole site.",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 65.35,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.Document.rootElement",
     "name": "Document.rootElement",
     "description": "",
@@ -22901,14 +22917,14 @@
     "description": "Serializes `&lt;` and `&gt;` in attributes as `&amp;lt;` and `&amp;gt;` (see <a href=\"https://github.com/whatwg/html/iss",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 4,
+    "usage": 72.39,
     "baseline": false
   },
   {
@@ -22917,14 +22933,14 @@
     "description": "Serializes `&lt;` and `&gt;` in attributes as `&amp;lt;` and `&amp;gt;` (see <a href=\"https://github.com/whatwg/html/iss",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 4,
+    "usage": 72.39,
     "baseline": false
   },
   {
@@ -22997,14 +23013,14 @@
     "description": "Serializes `&lt;` and `&gt;` in attributes as `&amp;lt;` and `&amp;gt;` (see <a href=\"https://github.com/whatwg/html/iss",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 4,
+    "usage": 72.39,
     "baseline": false
   },
   {
@@ -36741,14 +36757,14 @@
     "description": "Serializes `&lt;` and `&gt;` in attributes as `&amp;lt;` and `&amp;gt;` (see <a href=\"https://github.com/whatwg/html/iss",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 4,
+    "usage": 72.39,
     "baseline": false
   },
   {
@@ -36789,14 +36805,14 @@
     "description": "Serializes `&lt;` and `&gt;` in attributes as `&amp;lt;` and `&amp;gt;` (see <a href=\"https://github.com/whatwg/html/iss",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 4,
+    "usage": 72.39,
     "baseline": false
   },
   {
@@ -36813,6 +36829,22 @@
       "an_chr": "y"
     },
     "usage": 92.25,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.ShadowRoot.referenceTarget",
+    "name": "ShadowRoot.referenceTarget",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
     "baseline": false
   },
   {
@@ -40173,6 +40205,86 @@
       "an_chr": "y"
     },
     "usage": 88.03,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.at-rules.media.display-mode.browser",
+    "name": "`browser` value",
+    "description": "`browser` value",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 92.07,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.at-rules.media.display-mode.fullscreen",
+    "name": "`fullscreen` value",
+    "description": "`fullscreen` value",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "a",
+      "saf": "a",
+      "edg": "y",
+      "ios_saf": "a",
+      "an_chr": "y"
+    },
+    "usage": 92.02,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.at-rules.media.display-mode.minimal-ui",
+    "name": "`minimal-ui` value",
+    "description": "`minimal-ui` value",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 92.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.at-rules.media.display-mode.standalone",
+    "name": "`standalone` value",
+    "description": "`standalone` value",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 92.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.at-rules.media.display-mode.window-controls-overlay",
+    "name": "`window-controls-overlay` value",
+    "description": "`window-controls-overlay` value",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 75.95,
     "baseline": false
   },
   {
@@ -55232,6 +55344,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.types.random",
+    "name": "`random()`",
+    "description": "`random()`",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 0.35,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.types.type",
     "name": "`type()`",
     "description": "`type()`",
@@ -55622,7 +55750,7 @@
     "category": "HTML5",
     "support": {
       "chr": "n",
-      "ffx": "a",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
@@ -56221,6 +56349,22 @@
       "an_chr": "y"
     },
     "usage": 78.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-html.elements.template.shadowrootreferencetarget",
+    "name": "`<template>`",
+    "description": "",
+    "category": "HTML5",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
     "baseline": false
   },
   {
@@ -57968,6 +58112,38 @@
     "baseline": false
   },
   {
+    "id": "mdn-javascript.builtins.AsyncFunction.AsyncFunction.enforces_trusted_types",
+    "name": "Requires arguments to be `TrustedScript` instance when trusted types are enforced",
+    "description": "Requires arguments to be `TrustedScript` instance when trusted types are enforced",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 4.41,
+    "baseline": false
+  },
+  {
+    "id": "mdn-javascript.builtins.AsyncGeneratorFunction.AsyncGeneratorFunction.enforces_trusted_types",
+    "name": "Requires arguments to be `TrustedScript` instance when trusted types are enforced",
+    "description": "Requires arguments to be `TrustedScript` instance when trusted types are enforced",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 4.41,
+    "baseline": false
+  },
+  {
     "id": "mdn-javascript.builtins.Error.Error.fileName_parameter",
     "name": "`fileName` parameter",
     "description": "`fileName` parameter",
@@ -58125,6 +58301,22 @@
       "an_chr": "n"
     },
     "usage": 2.08,
+    "baseline": false
+  },
+  {
+    "id": "mdn-javascript.builtins.GeneratorFunction.GeneratorFunction.enforces_trusted_types",
+    "name": "Requires arguments to be `TrustedScript` instance when trusted types are enforced",
+    "description": "Requires arguments to be `TrustedScript` instance when trusted types are enforced",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 4.41,
     "baseline": false
   },
   {
