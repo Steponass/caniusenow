@@ -36,7 +36,7 @@ export const useAuthStore = defineStore('auth', () => {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'github',
       options: {
-        redirectTo: window.location.origin
+        redirectTo: window.location.href
       }
     });
 
@@ -50,7 +50,7 @@ export const useAuthStore = defineStore('auth', () => {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
-        redirectTo: window.location.origin
+        redirectTo: window.location.href
       }
     });
 
@@ -64,7 +64,7 @@ export const useAuthStore = defineStore('auth', () => {
     const { error } = await supabase.auth.signInWithOtp({
       email,
       options: {
-        emailRedirectTo: window.location.origin
+        emailRedirectTo: window.location.href
       }
     });
 

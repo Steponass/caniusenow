@@ -1,6 +1,8 @@
 
 [data-theme="light"] {
   --clr-primary: hsl(46, 97%, 40%);
+  --clr-text-strong: black;
+  --clr-bg-base: wheat;
 
   /* SHADOWS */
   /* 1st - "direct"
@@ -28,6 +30,8 @@
 
 :root[data-theme="dark"] {
   --clr-primary: hsl(46, 97%, 40%);
+  --clr-text-strong: white;
+  --clr-bg-base: midnightblue;
 }
 
 /* SPACING, RADIUS */

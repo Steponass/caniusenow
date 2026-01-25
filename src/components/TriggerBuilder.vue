@@ -188,9 +188,9 @@ function getTriggerDescription(trigger: Trigger): string {
           <input
             v-model.number="selectedThreshold"
             type="range"
-            min="50"
+            min="20"
             max="100"
-            step="5"
+            step="1"
           />
         </div>
       </template>

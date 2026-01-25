@@ -39,12 +39,14 @@
 :where(h6, h5, h4, h3, h2, h1) {
   font-family:  system-ui, sans-serif;
   font-weight: 600;
+  color: var(--clr-text-strong);
 }
 
 :where(p, ul, ol, li, a, span, button, label, input, textarea, select, summary, dd, dt) {
   font-size: var(--fontsize-p);
   font-family:  system-ui, sans-serif;
   font-weight: 400;
+  color: var(--clr-text-strong);
 }
 
 :where(h6, h5, h4, h3, h2, h1, button, input, label) {

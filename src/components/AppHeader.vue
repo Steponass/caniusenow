@@ -1,6 +1,7 @@
 <script setup lang="ts">
 
 import FeatureSearch from "./FeatureSearch.vue";
+import ThemeToggle from "./ThemeToggle.vue";
 import { useAuthStore } from "@/stores/authStore";
 
 const authStore = useAuthStore();
@@ -32,6 +33,7 @@ function handleSignIn() {
     <div class="logo">
       <h1>CanIUse Tracker</h1>
     </div>
+    <ThemeToggle />
 
     <FeatureSearch @search="handleSearch" />
     <nav>

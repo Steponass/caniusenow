@@ -89,7 +89,6 @@ async function handleStartTracking(triggers: Trigger[]) {
   if (!selectedFeature.value) return;
 
   if (!authStore.isAuthenticated) {
-    handleCloseFeatureModal();
     handleOpenAuthModal();
     return;
   }
@@ -180,6 +179,7 @@ function handleSearch(query: string) {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: var(--clr-bg-base);
 }
 
 .main-content {
