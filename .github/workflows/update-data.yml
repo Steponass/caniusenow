@@ -4,15 +4,6 @@ on:
   # Run daily at 2 AM UTC
   schedule:
     - cron: '0 2 * * *'
-  
-  # Allow manual trigger with optional test mode
-  workflow_dispatch:
-    inputs:
-      test_mode:
-        description: 'Enable test mode (allows manual edits for testing)'
-        required: false
-        type: boolean
-        default: false
 
 # Cancel in-progress runs if a new one is triggered
 concurrency:
@@ -80,15 +71,6 @@ jobs:
         run: |
           # Fetch latest remote state
           git fetch origin main
-          
-          # Check if we're in test mode
-          if [ "${{ inputs.test_mode }}" = "true" ]; then
-            echo "🧪 TEST MODE: Allowing merge with remote changes"
-            git add public/data/
-            git pull --rebase --autostash origin main
-            git commit -m "chore: update browser compat data - $(date +'%Y-%m-%d') [TEST]"
-          else
-            echo "🚀 PRODUCTION MODE: Enforcing clean state"
             
             # Check if remote has changes we don't have
             if ! git diff --quiet origin/main HEAD; then
