@@ -70,13 +70,18 @@
     },
     "type": "estimated"
   },
-  "baseline": "high",
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "webfeatures",
       "id": "ex"
     },
     "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "rex",
+        "matched": "exact"
+      },
       {
         "source": "mdnbcd",
         "id": "css.types.length.ex",

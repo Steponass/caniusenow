@@ -4,6 +4,7 @@
   "name": "CSS print-color-adjust",
   "description": "The `print-color-adjust` (or `-webkit-print-color-adjust` as prefixed in WebKit/Blink browsers) property is a CSS extension that can be used to force printing of background colors and images.",
   "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/print-color-adjust",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/print-color-adjust",
@@ -82,13 +83,34 @@
     "general": "",
     "byNum": {}
   },
-  "baseline": false,
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "css-color-adjust"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "color-adjust",
+        "matched": "exact"
+      },
+      {
+        "source": "webfeatures",
+        "id": "print-color-adjust",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.print-color-adjust",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.print-color-adjust.exact",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=css-color-adjust"
 }

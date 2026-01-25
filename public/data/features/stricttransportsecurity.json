@@ -4,6 +4,7 @@
   "name": "Strict Transport Security",
   "description": "Declare that a website is only accessible over a secure connection (HTTPS).",
   "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Strict-Transport-Security",
   "links": [
     {
       "url": "https://www.chromium.org/hsts/",
@@ -88,13 +89,24 @@
       "1": "IE 11 added support [in an update](https://blogs.windows.com/msedgedev/2015/06/09/http-strict-transport-security-comes-to-internet-explorer-11-on-windows-8-1-and-windows-7/) on June 9, 2015"
     }
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "stricttransportsecurity"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "hsts",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Strict-Transport-Security",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=stricttransportsecurity"
 }

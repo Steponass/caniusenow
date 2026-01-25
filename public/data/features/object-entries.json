@@ -4,6 +4,7 @@
   "name": "Object.entries",
   "description": "The `Object.entries()` method creates a multi-dimensional array of key value pairs from the given object.",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/entries",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries",
@@ -92,7 +93,13 @@
       "source": "caniuse",
       "id": "object-entries"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Object.entries",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=object-entries"
 }

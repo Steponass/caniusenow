@@ -4,6 +4,7 @@
   "name": "CSS Appearance",
   "description": "The `appearance` property defines how elements (particularly form controls) appear by default. By setting the value to `none` the default appearance can be entirely redefined using other CSS properties.",
   "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/appearance",
   "links": [
     {
       "url": "https://css-tricks.com/almanac/properties/a/appearance/",
@@ -86,13 +87,34 @@
       "3": "`-moz-appearance:none` did not remove the dropdown arrow in the select tag"
     }
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "css-appearance"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "appearance",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.appearance",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.appearance.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.appearance.none",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=css-appearance"
 }

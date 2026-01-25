@@ -71,13 +71,18 @@
     },
     "type": "estimated"
   },
-  "baseline": "high",
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "webfeatures",
       "id": "font-family"
     },
     "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "font-family-math",
+        "matched": "exact"
+      },
       {
         "source": "mdnbcd",
         "id": "css.properties.font-family",
@@ -106,6 +111,11 @@
       {
         "source": "mdnbcd",
         "id": "css.properties.font-family.khmer-mul",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-family.math",
         "matched": "via-webfeatures"
       },
       {

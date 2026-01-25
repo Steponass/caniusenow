@@ -558,21 +558,6 @@ export function extractAllMdnFeatures(
   return features;
 }
 
-/**
- * Infer human-readable name from MDN path
- */
-export function inferNameFromMdnPath(path: string): string {
-  const parts = path.split(".");
-  const lastPart = parts[parts.length - 1];
-  
-  // Convert snake_case or camelCase to Title Case
-  return lastPart
-    .replace(/_/g, " ")
-    .replace(/([A-Z])/g, " $1")
-    .replace(/^./, str => str.toUpperCase())
-    .trim();
-}
-
 // ============================================================================
 // INDEX GENERATION HELPERS
 // ============================================================================
@@ -608,3 +593,4 @@ export function extractQuickSupport(
   
   return quick;
 }
+

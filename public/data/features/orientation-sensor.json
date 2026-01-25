@@ -4,6 +4,7 @@
   "name": "Orientation Sensor",
   "description": "Defines a base orientation sensor interface and concrete sensor subclasses to monitor the device’s physical orientation in relation to a stationary three dimensional Cartesian coordinate system.",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/OrientationSensor",
   "links": [
     {
       "url": "https://intel.github.io/generic-sensor-demos/orientation-phone/",
@@ -80,7 +81,18 @@
       "source": "caniuse",
       "id": "orientation-sensor"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "orientation-sensor",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.OrientationSensor",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=orientation-sensor"
 }

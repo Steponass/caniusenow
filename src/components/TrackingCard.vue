@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useTrackingStore } from '@stores/featureTrackingStore';
 import { getBrowserDisplayName } from '@/types/feature';
+import FormattedText from "./FormattedText.vue";
 import type { FeatureTracking } from '@/types/featureTracking';
 
 interface Props {
@@ -41,7 +42,7 @@ function getTriggerDescription(trigger: any): string {
 <template>
   <div class="tracking-card">
     <div class="card-header">
-      <h3>{{ tracking.feature_title }}</h3>
+      <FormattedText :text="tracking.feature_title" tag="h3" />
       <span 
         class="status-badge"
         :class="tracking.status"

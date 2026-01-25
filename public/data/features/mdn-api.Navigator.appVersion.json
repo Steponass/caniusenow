@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.Navigator.appVersion",
   "source": "mdnbcd",
-  "name": "App Version",
+  "name": "Navigator.appVersion",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/appVersion",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WorkerNavigator/appVersion",
   "links": [],
   "support": {
     "chr": {
@@ -78,7 +78,13 @@
       "source": "mdnbcd",
       "id": "api.Navigator.appVersion"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.appVersion",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=mdn-api.Navigator.appVersion"
 }

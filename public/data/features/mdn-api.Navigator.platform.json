@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.Navigator.platform",
   "source": "mdnbcd",
-  "name": "Platform",
+  "name": "Navigator.platform",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/platform",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WorkerNavigator/platform",
   "links": [],
   "support": {
     "chr": {
@@ -78,7 +78,13 @@
       "source": "mdnbcd",
       "id": "api.Navigator.platform"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.platform",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=mdn-api.Navigator.platform"
 }

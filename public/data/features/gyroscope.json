@@ -4,6 +4,7 @@
   "name": "Gyroscope",
   "description": "Defines a concrete sensor interface to monitor the rate of rotation around the device’s local three primary axes.",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/gyroscope",
   "links": [
     {
       "url": "https://intel.github.io/generic-sensor-demos/",
@@ -80,7 +81,38 @@
       "source": "caniuse",
       "id": "gyroscope"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "gyroscope",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Gyroscope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Gyroscope.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Gyroscope.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Gyroscope.z",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.gyroscope",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=gyroscope"
 }

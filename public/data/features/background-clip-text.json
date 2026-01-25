@@ -4,6 +4,7 @@
   "name": "Background-clip: text",
   "description": "Clipping a background image to the foreground text.",
   "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/background-clip",
   "links": [
     {
       "url": "https://lists.w3.org/Archives/Public/www-style/2016Mar/0283.html",
@@ -79,13 +80,34 @@
       "2": "Doesn't work with flex/grid container, see [WebKit bug](https://bugs.webkit.org/show_bug.cgi?id=169125)"
     }
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "background-clip-text"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "background-clip",
+        "matched": "exact"
+      },
+      {
+        "source": "webfeatures",
+        "id": "background-clip-text",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.background-clip",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.background-clip.text",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=background-clip-text"
 }

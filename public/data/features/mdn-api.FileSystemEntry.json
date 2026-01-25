@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.FileSystemEntry",
   "source": "mdnbcd",
-  "name": "File System Entry",
+  "name": "FileSystemEntry",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/FileSystemEntry",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/FileSystemEntry/toURL",
   "links": [],
   "support": {
     "chr": {
@@ -77,7 +77,38 @@
       "source": "mdnbcd",
       "id": "api.FileSystemEntry"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemEntry.copyTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemEntry.isFile",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemEntry.moveTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemEntry.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemEntry.remove",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemEntry.toURL",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=mdn-api.FileSystemEntry"
 }

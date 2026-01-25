@@ -4,7 +4,7 @@
   "name": "ariaNotify()",
   "description": "The ariaNotify() method of Element and Document requests assistive technology software, if activated, to announce a message to the user. This can help make dynamic content changes more accessible to users.",
   "category": "Other",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/Element/ariaNotify",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/aria-notify",
   "links": [],
   "support": {
     "chr": {
@@ -65,6 +65,11 @@
       {
         "source": "mdnbcd",
         "id": "api.Element.ariaNotify",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.aria-notify",
         "matched": "via-webfeatures"
       }
     ]

@@ -2,6 +2,7 @@
 import { useFeatureStore } from "@stores/featureStore";
 import type { FeatureIndex, NormalizedFeature } from "@/types/feature";
 import { getBrowserDisplayName } from "@/types/feature";
+import FormattedText from "./FormattedText.vue";
 
 interface Props {
   features: FeatureIndex[];
@@ -72,7 +73,8 @@ function getCategoryColor(category: string): string {
         @click="handleFeatureClick(feature)"
       >
         <div class="card-header">
-          <h3 class="feature-title">{{ feature.name }}</h3>
+        <!-- Title -->
+        <FormattedText :text="feature.name" tag="h3" class="feature-title" />
           <div
             class="usage-badge"
             :style="{ backgroundColor: getStatusColor(feature.usage) }"
@@ -81,7 +83,8 @@ function getCategoryColor(category: string): string {
           </div>
         </div>
 
-        <p class="feature-description">{{ feature.description }}</p>
+        <!-- Description -->
+        <FormattedText :text="feature.description" tag="p" class="feature-description" />
 
         <div class="card-meta">
           <div class="meta-row">

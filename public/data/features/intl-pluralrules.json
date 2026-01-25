@@ -4,6 +4,7 @@
   "name": "Intl.PluralRules API",
   "description": "API for plural sensitive formatting and plural language rules.",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/supportedLocalesOf",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/PluralRules",
@@ -84,13 +85,44 @@
       "1": "Intl.PluralRules exists, but methods are not implemented."
     }
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "intl-pluralrules"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "intl-plural-rules",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.PluralRules",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.PluralRules.resolvedOptions",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.PluralRules.select",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.PluralRules.selectRange",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.PluralRules.supportedLocalesOf",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=intl-pluralrules"
 }

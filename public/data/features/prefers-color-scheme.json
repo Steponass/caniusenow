@@ -90,13 +90,19 @@
     "general": "Support will also depend on whether or not the OS has support for a light/dark theme preference.",
     "byNum": {}
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "prefers-color-scheme"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "prefers-color-scheme",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=prefers-color-scheme"
 }

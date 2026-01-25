@@ -4,6 +4,7 @@
   "name": "ImageCapture API",
   "description": "The Image Capture API provides access to the Video Camera for taking photos while configuring picture-specific settings such as e.g. zoom or auto focus metering area.",
   "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/ImageCapture",
   "links": [
     {
       "url": "https://codepen.io/miguelao/pen/ZOkOQw",
@@ -88,7 +89,13 @@
       "source": "caniuse",
       "id": "imagecapture"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ImageCapture",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=imagecapture"
 }

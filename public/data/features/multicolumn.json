@@ -91,13 +91,19 @@
       "4": "Does not support the values `avoid` (in the column context) for the properties `break-after`, `break-before`, and `break-inside`; does not support the values `avoid-column`, `avoid-page`, and `column` for the properties `break-before` and `break-after`."
     }
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "multicolumn"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "multi-column",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=multicolumn"
 }

@@ -4,6 +4,7 @@
   "name": "KeyboardEvent.key",
   "description": "A `KeyboardEvent` property whose value is a string identifying the key that was pressed. Covers character keys, non-character keys (e.g. arrow keys), and dead keys.",
   "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/KeyboardEvent/keyCode",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key",
@@ -107,7 +108,13 @@
       "source": "caniuse",
       "id": "keyboardevent-key"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.keyCode",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=keyboardevent-key"
 }

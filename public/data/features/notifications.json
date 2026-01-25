@@ -4,6 +4,7 @@
   "name": "Web Notifications",
   "description": "Method of alerting the user outside of a web page by displaying notifications (that do not require interaction by the user).",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Notification",
   "links": [
     {
       "url": "https://www.html5rocks.com/tutorials/notifications/quick/",
@@ -112,8 +113,18 @@
     "supplementary": [
       {
         "source": "webfeatures",
+        "id": "notifications",
+        "matched": "exact"
+      },
+      {
+        "source": "webfeatures",
         "id": "notifications-apps",
         "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Notification",
+        "matched": "via-webfeatures"
       }
     ]
   },

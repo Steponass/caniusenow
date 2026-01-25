@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.ErrorEvent.error",
   "source": "mdnbcd",
-  "name": "Error",
+  "name": "ErrorEvent.error",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/ErrorEvent/error",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/SensorErrorEvent/error",
   "links": [],
   "support": {
     "chr": {
@@ -77,7 +77,13 @@
       "source": "mdnbcd",
       "id": "api.ErrorEvent.error"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.SensorErrorEvent.error",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=mdn-api.ErrorEvent.error"
 }

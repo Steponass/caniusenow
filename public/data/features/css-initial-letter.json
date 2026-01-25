@@ -4,6 +4,7 @@
   "name": "CSS Initial Letter",
   "description": "Method of creating an enlarged cap, including a drop or raised cap, in a robust way.",
   "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/initial-letter",
   "links": [
     {
       "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1273019",
@@ -83,7 +84,18 @@
       "source": "caniuse",
       "id": "css-initial-letter"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "initial-letter",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.initial-letter",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=css-initial-letter"
 }

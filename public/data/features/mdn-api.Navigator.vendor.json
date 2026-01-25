@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.Navigator.vendor",
   "source": "mdnbcd",
-  "name": "Vendor",
+  "name": "Navigator.vendor",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/vendor",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/vendorSub",
   "links": [],
   "support": {
     "chr": {
@@ -78,7 +78,13 @@
       "source": "mdnbcd",
       "id": "api.Navigator.vendor"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.vendorSub",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=mdn-api.Navigator.vendor"
 }

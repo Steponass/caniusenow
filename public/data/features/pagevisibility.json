@@ -4,7 +4,7 @@
   "name": "Page Visibility",
   "description": "JavaScript API for determining whether a document is visible on the display",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/Document/visibilitychange_event",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/visibility",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/DOM/Using_the_Page_Visibility_API",
@@ -102,6 +102,16 @@
         "matched": "exact"
       },
       {
+        "source": "webfeatures",
+        "id": "page-visibility-state",
+        "matched": "exact"
+      },
+      {
+        "source": "webfeatures",
+        "id": "visibility",
+        "matched": "exact"
+      },
+      {
         "source": "mdnbcd",
         "id": "api.Document.hidden",
         "matched": "via-webfeatures"
@@ -114,6 +124,11 @@
       {
         "source": "mdnbcd",
         "id": "api.Document.visibilitychange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.visibility",
         "matched": "via-webfeatures"
       }
     ]

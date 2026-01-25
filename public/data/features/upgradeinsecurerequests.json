@@ -4,6 +4,7 @@
   "name": "Upgrade Insecure Requests",
   "description": "Declare that browsers should transparently upgrade HTTP resources on a website to HTTPS.",
   "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Upgrade-Insecure-Requests",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/Security/CSP/CSP_policy_directives#upgrade-insecure-requests",
@@ -86,13 +87,29 @@
     "general": "The HTTP header is `Content-Security-Policy: upgrade-insecure-requests`. Alternatively, the HTML tag is `<meta http-equiv=\"Content-Security-Policy\" content=\"upgrade-insecure-requests\">`.",
     "byNum": {}
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "upgradeinsecurerequests"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "upgrade-insecure-requests",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.upgrade-insecure-requests",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Upgrade-Insecure-Requests",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=upgradeinsecurerequests"
 }

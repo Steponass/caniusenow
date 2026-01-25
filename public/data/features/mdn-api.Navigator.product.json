@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.Navigator.product",
   "source": "mdnbcd",
-  "name": "Product",
+  "name": "Navigator.product",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/product",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WorkerNavigator/product",
   "links": [],
   "support": {
     "chr": {
@@ -78,7 +78,18 @@
       "source": "mdnbcd",
       "id": "api.Navigator.product"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.productSub",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.product",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=mdn-api.Navigator.product"
 }

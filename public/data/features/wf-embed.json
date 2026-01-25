@@ -4,7 +4,7 @@
   "name": "<embed>",
   "description": "The <embed> element represents an external resource such as a PDF or SVG document. It was historically used for plugins such as Shockwave Flash.",
   "category": "Other",
-  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/embed",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/noembed",
   "links": [],
   "support": {
     "chr": {
@@ -115,7 +115,17 @@
       },
       {
         "source": "mdnbcd",
+        "id": "html.elements.embed.align",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
         "id": "html.elements.embed.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.embed.name",
         "matched": "via-webfeatures"
       },
       {
@@ -131,6 +141,11 @@
       {
         "source": "mdnbcd",
         "id": "html.elements.embed.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.noembed",
         "matched": "via-webfeatures"
       }
     ]

@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.WebSocketStream",
   "source": "mdnbcd",
-  "name": "Web Socket Stream",
+  "name": "WebSocketStream",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/WebSocketStream",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WebSocketStream/url",
   "links": [],
   "support": {
     "chr": {
@@ -68,7 +68,28 @@
       "source": "mdnbcd",
       "id": "api.WebSocketStream"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.WebSocketStream.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebSocketStream.closed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebSocketStream.opened",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebSocketStream.url",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=mdn-api.WebSocketStream"
 }

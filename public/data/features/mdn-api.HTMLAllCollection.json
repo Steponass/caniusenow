@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.HTMLAllCollection",
   "source": "mdnbcd",
-  "name": "H T M L All Collection",
+  "name": "HTMLAllCollection",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLAllCollection",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLAllCollection/length",
   "links": [],
   "support": {
     "chr": {
@@ -78,7 +78,18 @@
       "source": "mdnbcd",
       "id": "api.HTMLAllCollection"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAllCollection.item",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAllCollection.length",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=mdn-api.HTMLAllCollection"
 }

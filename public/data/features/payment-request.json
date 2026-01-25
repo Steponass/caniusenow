@@ -4,6 +4,7 @@
   "name": "Payment Request API",
   "description": "Payment Request is a new API for the open web that makes checkout flows easier, faster and consistent on shopping sites.",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/PaymentRequest",
   "links": [
     {
       "url": "https://github.com/w3c/browser-payment-api/",
@@ -107,7 +108,18 @@
       "source": "caniuse",
       "id": "payment-request"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "payment-request",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaymentRequest",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=payment-request"
 }

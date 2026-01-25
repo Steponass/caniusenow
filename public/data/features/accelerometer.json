@@ -4,6 +4,7 @@
   "name": "Accelerometer",
   "description": "Defines `Accelerometer`, `LinearAccelerationSensor` and `GravitySensor` interfaces for obtaining information about acceleration applied to the X, Y and Z axis of a device that hosts the sensor.",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/accelerometer",
   "links": [
     {
       "url": "https://intel.github.io/generic-sensor-demos/punchmeter/",
@@ -80,7 +81,38 @@
       "source": "caniuse",
       "id": "accelerometer"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "accelerometer",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Accelerometer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Accelerometer.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Accelerometer.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Accelerometer.z",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.accelerometer",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=accelerometer"
 }

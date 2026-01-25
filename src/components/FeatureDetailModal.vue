@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
 import type { NormalizedFeature } from "@/types/feature";
+import FormattedText from "./FormattedText.vue";
 import { getBrowserDisplayName } from "@/types/feature";
 import type { Trigger } from "@/types/featureTracking";
 import TriggerBuilder from "./TriggerBuilder.vue";
@@ -95,8 +96,8 @@ function handleTriggersUpdate(newTriggers: Trigger[]) {
       <div class="modal-content" @click.stop>
         <div class="modal-header">
           <div>
-            <h2>{{ feature.name }}</h2>
-            <p class="feature-description">{{ feature.description }}</p>
+            <FormattedText :text="feature.name" tag="h2" />
+            <FormattedText :text="feature.description" tag="p" class="feature-description" />
             <div class="meta-badges">
               <span class="category-badge">{{ feature.category }}</span>
               <span v-if="feature.baseline" class="baseline-badge">

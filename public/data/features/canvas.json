@@ -107,13 +107,19 @@
       "2": "Opera Mini supports the canvas element, but is unable to play animations or run other more complex applications."
     }
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "canvas"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "canvas",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=canvas"
 }

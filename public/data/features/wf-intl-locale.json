@@ -4,7 +4,7 @@
   "name": "Intl.Locale",
   "description": "The Intl.Locale API parses Unicode locale identifiers, with language, region, and script codes, such as zh-Hans-CN or en-GB.",
   "category": "Other",
-  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/toString",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/variants",
   "links": [],
   "support": {
     "chr": {
@@ -78,6 +78,11 @@
     },
     "supplementary": [
       {
+        "source": "webfeatures",
+        "id": "intl-locale-info",
+        "matched": "exact"
+      },
+      {
         "source": "mdnbcd",
         "id": "javascript.builtins.Intl.Locale",
         "matched": "via-webfeatures"
@@ -105,6 +110,36 @@
       {
         "source": "mdnbcd",
         "id": "javascript.builtins.Intl.Locale.collation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Locale.getCalendars",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Locale.getCollations",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Locale.getHourCycles",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Locale.getNumberingSystems",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Locale.getTextInfo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Locale.getTimeZones",
         "matched": "via-webfeatures"
       },
       {
@@ -150,6 +185,11 @@
       {
         "source": "mdnbcd",
         "id": "javascript.builtins.Intl.Locale.toString",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Intl.Locale.variants",
         "matched": "via-webfeatures"
       }
     ]

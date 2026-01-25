@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.NavigationPrecommitController",
   "source": "mdnbcd",
-  "name": "Navigation Precommit Controller",
+  "name": "NavigationPrecommitController",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/NavigationPrecommitController",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/NavigationPrecommitController/redirect",
   "links": [],
   "support": {
     "chr": {
@@ -71,7 +71,18 @@
       "source": "mdnbcd",
       "id": "api.NavigationPrecommitController"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationPrecommitController.addHandler",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationPrecommitController.redirect",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=mdn-api.NavigationPrecommitController"
 }

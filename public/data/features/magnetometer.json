@@ -4,6 +4,7 @@
   "name": "Magnetometer",
   "description": "Defines a concrete sensor interface to measure magnetic field in the X, Y and Z axis.",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/magnetometer",
   "links": [
     {
       "url": "https://intel.github.io/generic-sensor-demos/vr-button/build/bundled/",
@@ -70,7 +71,38 @@
       "source": "caniuse",
       "id": "magnetometer"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "magnetometer",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Magnetometer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Magnetometer.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Magnetometer.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Magnetometer.z",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.magnetometer",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=magnetometer"
 }

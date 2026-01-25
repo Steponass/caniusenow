@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.PromiseRejectionEvent",
   "source": "mdnbcd",
-  "name": "Promise Rejection Event",
+  "name": "PromiseRejectionEvent",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/PromiseRejectionEvent",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/PromiseRejectionEvent/reason",
   "links": [],
   "support": {
     "chr": {
@@ -76,7 +76,18 @@
       "source": "mdnbcd",
       "id": "api.PromiseRejectionEvent"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.PromiseRejectionEvent.promise",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PromiseRejectionEvent.reason",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=mdn-api.PromiseRejectionEvent"
 }

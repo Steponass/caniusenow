@@ -4,6 +4,7 @@
   "name": "KeyboardEvent.charCode",
   "description": "A legacy `KeyboardEvent` property that gives the Unicode codepoint number of a character key pressed during a `keypress` event.",
   "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/KeyboardEvent/charCode",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/charCode",
@@ -86,7 +87,13 @@
       "source": "caniuse",
       "id": "keyboardevent-charcode"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.charCode",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=keyboardevent-charcode"
 }

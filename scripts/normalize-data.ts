@@ -27,9 +27,14 @@ import {
   extractAllMdnFeatures,
   extractMdnBrowserSupport,
   inferCategoryFromMdnPath,
-  inferNameFromMdnPath,
   extractQuickSupport,
 } from "./helpers.js";
+import {
+  normalizeCodeTags,
+  inferNameFromMdnPath,
+  areLikelyDuplicates,
+  formatFeatureName
+} from "./format-utils.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -159,37 +164,42 @@ function processCaniuse(
       // Calculate actual usage with browser breakdown
       const usageData = calculateActualUsage(feature, support, usage);
 
+      // Compute category first so it can be used in formatFeatureName
+      const category = mapCaniuseCategory(feature.categories);
+
       // Create normalized feature
       const normalized: NormalizedFeature = {
         id,
         source: "caniuse",
-        name: feature.title,
-        description: feature.description || "",
-        category: mapCaniuseCategory(feature.categories),
-        
+        name: normalizeCodeTags(feature.title),
+        description: normalizeCodeTags(feature.description || ""),
+        category,
+
         mdn: undefined,
         links: feature.links || [],
-        
+
         support,
-        
+
         usage: {
           ...usageData,
           type: "actual"
         },
-        
+
         notes: {
           general: feature.notes,
           byNum: feature.notes_by_num
         },
-        
+
         flags: undefined,
-        
+
         baseline: false, // Will be updated by Web Features if available
-        
+
         sourceData: {
           primary: { source: "caniuse", id },
           supplementary: []
-        }
+        },
+
+        caniuseUrl: `https://caniuse.com/?search=${encodeURIComponent(id)}`
       };
 
       features.set(id, normalized);
@@ -218,23 +228,36 @@ function processWebFeatures(
 
   for (const [wfId, wfFeature] of wfFeatures) {
     try {
-      // Check if this WF feature maps to existing Caniuse feature
-      const caniuseIds = wfFeature.caniuse 
+      // Check if this WF feature maps to existing Caniuse feature via explicit mapping
+      const caniuseIds = wfFeature.caniuse
         ? (Array.isArray(wfFeature.caniuse) ? wfFeature.caniuse : [wfFeature.caniuse])
         : [];
 
       let merged = false;
 
-      // Try to merge with existing Caniuse features
+      // Strategy 1: Try to merge via explicit caniuse mapping
       for (const caniuseId of caniuseIds) {
         const existingFeature = features.get(caniuseId);
-        
+
         if (existingFeature) {
-          // Supplement existing feature with WF data
           supplementWithWebFeatures(existingFeature, wfFeature, wfId);
           stats.webFeatures.merged++;
           merged = true;
-          break; // Only merge with first matching feature
+          break;
+        }
+      }
+
+      // Strategy 2: Check for duplicates by ID/name similarity
+      if (!merged) {
+        const wfNormalized = { id: wfId, name: wfFeature.name };
+
+        for (const [existingId, existingFeature] of features) {
+          if (areLikelyDuplicates(wfNormalized, { id: existingId, name: existingFeature.name })) {
+            supplementWithWebFeatures(existingFeature, wfFeature, wfId);
+            stats.webFeatures.merged++;
+            merged = true;
+            break;
+          }
         }
       }
 
@@ -302,14 +325,14 @@ function createFeatureFromWebFeatures(
   return {
     id: `wf-${wfId}`,
     source: "webfeatures",
-    name: wfFeature.name,
-    description: wfFeature.description || wfFeature.description_html || "",
+    name: normalizeCodeTags(wfFeature.name),
+    description: normalizeCodeTags(wfFeature.description || ""),
     category: "Other", // Will try to infer from MDN if available
     mdn: undefined,
     links: [],
-    
+
     support,
-    
+
     usage: {
       ...usageData,
       type: "estimated"
@@ -317,11 +340,13 @@ function createFeatureFromWebFeatures(
     notes: undefined,
     flags: undefined,
     baseline: wfFeature.status.baseline || false,
-    
+
     sourceData: {
       primary: { source: "webfeatures", id: wfId },
       supplementary: []
-    }
+    },
+
+    caniuseUrl: `https://caniuse.com/?search=${encodeURIComponent(wfId)}`
   };
 }
 
@@ -358,7 +383,7 @@ function inferBrowserSupport(
   };
 }
 
-// // ============================================================================
+// ============================================================================
 // STEP 5: PROCESS MDN BCD (TERTIARY SOURCE)
 // ============================================================================
 
@@ -371,7 +396,7 @@ function processMdnBcd(
 
   // Only process specific top-level categories
   const ALLOWED_CATEGORIES = ['api', 'css', 'html', 'http', 'javascript', 'svg'];
-  
+
   // Filter MDN data to only allowed categories
   const filteredMdnData: Record<string, any> = {};
   for (const category of ALLOWED_CATEGORIES) {
@@ -401,9 +426,10 @@ function processMdnBcd(
     try {
       if (!compat.__compat) continue;
 
-      // Check if this MDN feature is linked via Web Features
-      const linkedWfId = mdnToWfMap.get(path);
       let merged = false;
+
+      // Strategy 1: Check if this MDN feature is linked via Web Features
+      const linkedWfId = mdnToWfMap.get(path);
 
       if (linkedWfId) {
         // Try to find existing feature via WF mapping
@@ -412,7 +438,7 @@ function processMdnBcd(
 
         for (const caniuseId of caniuseIdArray) {
           const existingFeature = features.get(caniuseId);
-          
+
           if (existingFeature) {
             supplementWithMdn(existingFeature, path, compat);
             stats.mdnBcd.merged++;
@@ -428,6 +454,22 @@ function processMdnBcd(
             supplementWithMdn(wfFeature, path, compat);
             stats.mdnBcd.merged++;
             merged = true;
+          }
+        }
+      }
+
+      // Strategy 2: Check for duplicates by ID/name similarity
+      if (!merged) {
+        // Infer a name for comparison
+        const mdnName = compat.__compat.description || inferNameFromMdnPath(path);
+        const mdnNormalized = { id: path, name: mdnName };
+
+        for (const [existingId, existingFeature] of features) {
+          if (areLikelyDuplicates(mdnNormalized, { id: existingId, name: existingFeature.name })) {
+            supplementWithMdn(existingFeature, path, compat);
+            stats.mdnBcd.merged++;
+            merged = true;
+            break;
           }
         }
       }
@@ -478,7 +520,7 @@ function createFeatureFromMdn(
   // Extract browser support from MDN
   const support: BrowserSupport = {};
   const browsersWithData = new Set<string>();
-  
+
   for (const browser of TARGET_BROWSERS) {
     const mdnSupport = compat.__compat.support[browser];
     if (mdnSupport) {
@@ -489,7 +531,7 @@ function createFeatureFromMdn(
       }
     }
   }
-  
+
   // For browsers without explicit data, infer from related browsers
   for (const browser of TARGET_BROWSERS) {
     if (!browsersWithData.has(browser)) {
@@ -501,11 +543,20 @@ function createFeatureFromMdn(
   // Estimate usage
   const usageData = estimateUsage(support, usage);
 
+  // Use the improved inferNameFromMdnPath from format-utils.ts
+  const inferredName = inferNameFromMdnPath(mdnPath);
+
+  // Use description if available, otherwise use inferred name
+  const name = compat.__compat.description || inferredName;
+
+  // Format the name (add backticks for code elements)
+  const formattedName = formatFeatureName(name, inferCategoryFromMdnPath(mdnPath));
+
   return {
     id: `mdn-${mdnPath}`,
     source: "mdnbcd",
-    name: compat.__compat.description || inferNameFromMdnPath(mdnPath),
-    description: compat.__compat.description || "",
+    name: formattedName,
+    description: normalizeCodeTags(compat.__compat.description || ""),
     category: inferCategoryFromMdnPath(mdnPath),
     mdn: compat.__compat.mdn_url,
     links: [],
@@ -520,7 +571,8 @@ function createFeatureFromMdn(
     sourceData: {
       primary: { source: "mdnbcd", id: mdnPath },
       supplementary: []
-    }
+    },
+    caniuseUrl: `https://caniuse.com/?search=${encodeURIComponent(mdnPath)}`
   };
 }
 
@@ -642,7 +694,7 @@ async function writeOutput(
 }
 
 // ============================================================================
-// RUN
+// RUN STEPPY RUN
 // ============================================================================
 
 main().catch(error => {

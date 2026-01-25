@@ -4,7 +4,7 @@
   "name": ":lang()",
   "description": "The :lang() CSS functional pseudo-class matches elements based on their content language.",
   "category": "Other",
-  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Selectors/:lang",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Global_attributes/lang",
   "links": [],
   "support": {
     "chr": {
@@ -79,6 +79,11 @@
     },
     "supplementary": [
       {
+        "source": "webfeatures",
+        "id": "lang-attr",
+        "matched": "exact"
+      },
+      {
         "source": "mdnbcd",
         "id": "css.selectors.lang",
         "matched": "via-webfeatures"
@@ -91,6 +96,11 @@
       {
         "source": "mdnbcd",
         "id": "css.selectors.lang.wildcards",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.global_attributes.lang",
         "matched": "via-webfeatures"
       }
     ]

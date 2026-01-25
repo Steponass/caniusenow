@@ -88,13 +88,19 @@
       "3": "Partial support refers to supporting only `innerHTML` and `insertAdjacentHTML`."
     }
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "xml-serializer"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "xml-serializer",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=xml-serializer"
 }

@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.crossOriginIsolated",
   "source": "mdnbcd",
-  "name": "Cross Origin Isolated",
+  "name": "crossOriginIsolated",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/crossOriginIsolated",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/cross-origin-isolated",
   "links": [],
   "support": {
     "chr": {
@@ -76,7 +76,13 @@
       "source": "mdnbcd",
       "id": "api.crossOriginIsolated"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.cross-origin-isolated",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=mdn-api.crossOriginIsolated"
 }

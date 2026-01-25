@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.MediaStreamEvent",
   "source": "mdnbcd",
-  "name": "Media Stream Event",
+  "name": "MediaStreamEvent",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/MediaStreamEvent",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/MediaStreamEvent/stream",
   "links": [],
   "support": {
     "chr": {
@@ -77,7 +77,13 @@
       "source": "mdnbcd",
       "id": "api.MediaStreamEvent"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamEvent.stream",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=mdn-api.MediaStreamEvent"
 }

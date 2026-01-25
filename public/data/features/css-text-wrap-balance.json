@@ -4,6 +4,7 @@
   "name": "CSS text-wrap: balance",
   "description": "Allows multiple lines of text to have their lines broken in such a way that each line is roughly the same width, often used to make headlines more readable and visually appealing.",
   "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/text-wrap",
   "links": [
     {
       "url": "https://bugs.webkit.org/show_bug.cgi?id=249840",
@@ -90,13 +91,24 @@
       "1": "Only supports text-wrap: balance, not text-wrap-style: balance."
     }
   },
-  "baseline": false,
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "css-text-wrap-balance"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "text-wrap-balance",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-wrap.balance",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=css-text-wrap-balance"
 }

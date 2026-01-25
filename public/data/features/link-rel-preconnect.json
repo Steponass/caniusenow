@@ -82,13 +82,19 @@
       "3": "Firefox support regressed from versions 71 - 114. See [bug 1543990](https://bugzilla.mozilla.org/show_bug.cgi?id=1543990) for details."
     }
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "link-rel-preconnect"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "link-rel-preconnect",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=link-rel-preconnect"
 }

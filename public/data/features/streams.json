@@ -90,7 +90,7 @@
       "6": "No support for the `pipeTo` or `pipeThrough` methods"
     }
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
@@ -100,6 +100,11 @@
       {
         "source": "webfeatures",
         "id": "readable-byte-streams",
+        "matched": "exact"
+      },
+      {
+        "source": "webfeatures",
+        "id": "streams",
         "matched": "exact"
       },
       {

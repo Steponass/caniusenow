@@ -4,6 +4,7 @@
   "name": "CSS Gradients",
   "description": "Method of defining a linear or radial color gradient as a CSS image.",
   "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/gradient",
   "links": [
     {
       "url": "https://www.colorzilla.com/gradient-editor/",
@@ -92,13 +93,24 @@
       "3": "Implements an earlier prefixed syntax as `-webkit-gradient`"
     }
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "css-gradients"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "gradients",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.background-image.gradients",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=css-gradients"
 }

@@ -4,6 +4,7 @@
   "name": "window.external",
   "description": "The window.external.AddSearchProvider() and window.external.IsSearchProviderInstalled() do nothing. Historically, they added external search providers to the browser.",
   "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/external",
   "links": [],
   "support": {
     "chr": {
@@ -86,6 +87,11 @@
       {
         "source": "mdnbcd",
         "id": "api.External.IsSearchProviderInstalled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.external",
         "matched": "via-webfeatures"
       }
     ]

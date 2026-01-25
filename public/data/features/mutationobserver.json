@@ -4,6 +4,7 @@
   "name": "Mutation Observer",
   "description": "Method for observing and reacting to changes to the DOM. Replaces MutationEvents, which is deprecated.",
   "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/MutationObserver",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver",
@@ -84,13 +85,24 @@
     "general": "When changing the `innerHTML` content of a node containing a single `CharacterData` node, resulting in a single-but-different `CharacterData` child node, WebKit browsers consider this a `characterData` mutation of the child `CharacterData` node, while other browsers consider it a `childList` mutation of the parent node.",
     "byNum": {}
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "mutationobserver"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "mutationobserver",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MutationObserver",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=mutationobserver"
 }

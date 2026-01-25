@@ -1,10 +1,10 @@
 {
   "id": "mdn-http.headers.Sec-Private-State-Token",
   "source": "mdnbcd",
-  "name": "Sec- Private- State- Token",
+  "name": "Sec-Private-State-Token",
   "description": "",
   "category": "Other",
-  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Sec-Private-State-Token",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Sec-Private-State-Token-Lifetime",
   "links": [],
   "support": {
     "chr": {
@@ -68,7 +68,13 @@
       "source": "mdnbcd",
       "id": "http.headers.Sec-Private-State-Token"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Sec-Private-State-Token-Lifetime",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=mdn-http.headers.Sec-Private-State-Token"
 }

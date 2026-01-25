@@ -4,6 +4,7 @@
   "name": "speak",
   "description": "The speak CSS property sets whether or not text should be spoken.",
   "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/speak-as",
   "links": [],
   "support": {
     "chr": {
@@ -57,8 +58,18 @@
     },
     "supplementary": [
       {
+        "source": "webfeatures",
+        "id": "speak-as",
+        "matched": "exact"
+      },
+      {
         "source": "mdnbcd",
         "id": "css.properties.speak",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.speak-as",
         "matched": "via-webfeatures"
       }
     ]

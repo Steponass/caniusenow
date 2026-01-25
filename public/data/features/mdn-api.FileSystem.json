@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.FileSystem",
   "source": "mdnbcd",
-  "name": "File System",
+  "name": "FileSystem",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/FileSystem",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/FileSystemSync",
   "links": [],
   "support": {
     "chr": {
@@ -78,7 +78,23 @@
       "source": "mdnbcd",
       "id": "api.FileSystem"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystem.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystem.root",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemSync",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=mdn-api.FileSystem"
 }

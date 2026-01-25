@@ -64,13 +64,18 @@
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "webfeatures",
       "id": "css-modules"
     },
     "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "json-modules",
+        "matched": "exact"
+      },
       {
         "source": "mdnbcd",
         "id": "javascript.statements.import.import_attributes.type_css",

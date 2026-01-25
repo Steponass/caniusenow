@@ -4,6 +4,7 @@
   "name": "Mutation events",
   "description": "Deprecated mechanism for listening to changes made to the DOM, replaced by Mutation Observers.",
   "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/MutationEvent",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/MutationEvent",
@@ -70,7 +71,18 @@
       "source": "caniuse",
       "id": "mutation-events"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "mutation-events",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MutationEvent",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=mutation-events"
 }

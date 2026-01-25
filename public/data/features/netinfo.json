@@ -4,6 +4,7 @@
   "name": "Network Information API",
   "description": "The Network Information API enables web applications to access information about the network connection in use by the device. Accessed via `navigator.connection`",
   "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/NetworkInformation",
   "links": [
     {
       "url": "https://www.igvita.com/2014/12/15/capability-reporting-with-service-worker/",
@@ -74,7 +75,18 @@
       "source": "caniuse",
       "id": "netinfo"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "network-information",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NetworkInformation",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=netinfo"
 }

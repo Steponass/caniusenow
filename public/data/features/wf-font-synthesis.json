@@ -4,7 +4,7 @@
   "name": "font-synthesis",
   "description": "The font-synthesis CSS shorthand property disables all font synthesis except the given kinds. To disable a specific kind of font synthesis, instead use the longhand properties such as font-synthesis-style and font-synthesis-weight.",
   "category": "Other",
-  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/font-synthesis",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/font-synthesis-style",
   "links": [],
   "support": {
     "chr": {
@@ -78,8 +78,18 @@
     },
     "supplementary": [
       {
+        "source": "webfeatures",
+        "id": "font-synthesis-style",
+        "matched": "exact"
+      },
+      {
         "source": "mdnbcd",
         "id": "css.properties.font-synthesis",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-synthesis.none",
         "matched": "via-webfeatures"
       },
       {
@@ -100,6 +110,11 @@
       {
         "source": "mdnbcd",
         "id": "css.properties.font-synthesis.weight",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-synthesis-style",
         "matched": "via-webfeatures"
       }
     ]

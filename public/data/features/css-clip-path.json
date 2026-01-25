@@ -86,13 +86,19 @@
       "5": "While Edge doesn't seem to recognize any `<basic-shape>` function, it does allow you to use `polygon()` in HTML and SVG"
     }
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "css-clip-path"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "clip-path",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=css-clip-path"
 }

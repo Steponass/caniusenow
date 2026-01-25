@@ -4,6 +4,7 @@
   "name": "Element.scrollIntoViewIfNeeded()",
   "description": "If the element is fully within the visible area of the viewport, it does nothing. Otherwise, the element is scrolled into view. A proprietary variant of the standard `Element.scrollIntoView()` method.",
   "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Element/scrollIntoViewIfNeeded",
   "links": [
     {
       "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=403510",
@@ -84,7 +85,13 @@
       "source": "caniuse",
       "id": "scrollintoviewifneeded"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.scrollIntoViewIfNeeded",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=scrollintoviewifneeded"
 }

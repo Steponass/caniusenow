@@ -88,13 +88,19 @@
     "general": "Removed in iOS 8.1 due to poor performance.",
     "byNum": {}
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "nav-timing"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "navigation-timing",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=nav-timing"
 }
