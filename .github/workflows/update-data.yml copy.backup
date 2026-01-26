@@ -1,0 +1,135 @@
+name: Update Browser Compatibility Data
+
+on:
+  # Run daily at 2 AM UTC
+  schedule:
+    - cron: '0 2 * * *'
+
+# Cancel in-progress runs if a new one is triggered
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write  # Required to commit changes
+    
+    steps:
+      # ========================================================================
+      # SETUP
+      # ========================================================================
+      
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch full history for proper git operations
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      # ========================================================================
+      # DATA PIPELINE
+      # ========================================================================
+      
+      - name: Clone source data
+        run: npm run clone-sources
+      
+      - name: Normalize data
+        run: npm run normalize-data
+      
+      # ========================================================================
+      # GIT COMMIT (ONLY IF CHANGES DETECTED)
+      # ========================================================================
+      
+      - name: Check for changes
+        id: git-check
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Check if there are any changes in public/data/
+          if git diff --quiet public/data/; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected in public/data/"
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in public/data/"
+          fi
+      
+      - name: Commit and push changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          # Fetch latest remote state
+          git fetch origin main
+            
+            # Check if remote has changes we don't have
+            if ! git diff --quiet origin/main HEAD; then
+              echo "❌ ERROR: Remote branch has changes not in local branch."
+              echo ""
+              echo "This usually means manual edits were made to public/data/"
+              echo "The public/data/ directory should only be modified by this Action."
+              echo ""
+              echo "To fix:"
+              echo "1. Revert the manual changes on GitHub"
+              echo "2. Re-run this Action to regenerate clean data"
+              echo ""
+              echo "For testing diff detection, use manual trigger with test_mode=true"
+              exit 1
+            fi
+            
+            # Clean state confirmed - commit and push
+            git add public/data/
+            git commit -m "chore: update browser compat data - $(date +'%Y-%m-%d')"
+          fi
+          
+          # Push changes
+          git push origin main
+      
+      # ========================================================================
+      # CHANGE DETECTION & NOTIFICATIONS
+      # ========================================================================
+      
+      - name: Detect changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: npm run detect-changes
+      
+      - name: Send notifications
+        if: steps.git-check.outputs.changes == 'true'
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          NOTIFICATIONAPI_CLIENT_ID: ${{ secrets.NOTIFICATIONAPI_CLIENT_ID }}
+          NOTIFICATIONAPI_CLIENT_SECRET: ${{ secrets.NOTIFICATIONAPI_CLIENT_SECRET }}
+          APP_URL: ${{ secrets.APP_URL }}
+        run: npm run send-notifications
+      
+      # ========================================================================
+      # CLEANUP & REPORTING
+      # ========================================================================
+      
+      - name: Upload change report (artifact)
+        if: steps.git-check.outputs.changes == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: change-report-${{ github.run_number }}
+          path: data/change-report.json
+          retention-days: 30
+      
+      - name: Summary
+        if: always()
+        run: |
+          if [ "${{ steps.git-check.outputs.changes }}" = "true" ]; then
+            echo "✅ Data updated and notifications sent"
+          else
+            echo "ℹ️ No changes detected, skipped notifications"
+          fi

@@ -2,11 +2,19 @@ name: Update Browser Compatibility Data
 
 on:
   schedule:
+<<<<<<< HEAD
     - cron: "0 2 * * *"
   workflow_dispatch:
     inputs:
       test_mode:
         description: "Run in test mode (skip notifications)"
+=======
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      test_mode:
+        description: 'Run in test mode (skip notifications)'
+>>>>>>> 233e566b62aff6b766ead7a0c03a5874d75adce3
         required: false
         type: boolean
         default: false
@@ -20,6 +28,10 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 233e566b62aff6b766ead7a0c03a5874d75adce3
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -35,13 +47,21 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> 233e566b62aff6b766ead7a0c03a5874d75adce3
       - name: Clone source data
         run: npm run clone-sources
 
       - name: Normalize data
         run: npm run normalize-data
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> 233e566b62aff6b766ead7a0c03a5874d75adce3
       - name: Check for changes
         id: check_changes
         run: |
@@ -62,7 +82,11 @@ jobs:
           git add public/data/
           git commit -m "chore: update browser compat data - $(date -u +'%Y-%m-%d')"
           git push
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> 233e566b62aff6b766ead7a0c03a5874d75adce3
       - name: Detect changes
         if: steps.check_changes.outputs.changed == 'true'
         run: npm run detect-changes
@@ -76,7 +100,11 @@ jobs:
           NOTIFICATIONAPI_CLIENT_SECRET: ${{ secrets.NOTIFICATIONAPI_CLIENT_SECRET }}
           APP_URL: ${{ secrets.APP_URL }}
         run: npm run send-notifications
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> 233e566b62aff6b766ead7a0c03a5874d75adce3
       - name: Upload change report
         if: steps.check_changes.outputs.changed == 'true'
         uses: actions/upload-artifact@v4
