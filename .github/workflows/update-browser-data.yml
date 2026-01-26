@@ -2,14 +2,8 @@ name: Update Browser Compatibility Data
 
 on:
   schedule:
-    - cron: "*/30 * * * *"  # Every 15 minutes (temporary for testing)
+    - cron: "*/15 * * * *"  # Every 15 minutes (temporary for testing)
   workflow_dispatch:
-    inputs:
-      test_mode:
-        description: "Run in test mode (skip notifications)"
-        required: false
-        type: boolean
-        default: false
 
 jobs:
   update-data:
@@ -65,7 +59,7 @@ jobs:
         run: npm run detect-changes
 
       - name: Send notifications
-        if: steps.check_changes.outputs.changed == 'true' && inputs.test_mode != 'true'
+        if: steps.check_changes.outputs.changed == 'true'
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
@@ -86,9 +80,6 @@ jobs:
         if: always()
         run: |
           if [ "${{ steps.check_changes.outputs.changed }}" = "true" ]; then
-            if [ "${{ inputs.test_mode }}" = "true" ]; then
-              echo "✅ Data updated (test mode - notifications skipped)"
-            else
               echo "✅ Data updated and notifications sent"
             fi
           else
