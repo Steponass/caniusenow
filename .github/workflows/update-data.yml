@@ -4,6 +4,7 @@ on:
   # Run daily at 2 AM UTC
   schedule:
     - cron: '0/30 * * * *'
+  workflow_dispatch:
 
 # Cancel in-progress runs if a new one is triggered
 concurrency:
