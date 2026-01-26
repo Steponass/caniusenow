@@ -3,7 +3,7 @@ name: Update Browser Compatibility Data
 on:
   # Run daily at 2 AM UTC
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0/30 * * * *'
 
 # Cancel in-progress runs if a new one is triggered
 concurrency:
