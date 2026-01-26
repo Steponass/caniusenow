@@ -1,78 +1,48 @@
 <script setup lang="ts">
-import { ref, computed } from "vue";
+import { computed } from "vue";
 import type { NormalizedFeature } from "@/types/feature";
 import { getBrowserDisplayName } from "@/types/feature";
-import type {
-  Trigger,
-  BrowserSupportTrigger,
-  BrowserVersionTrigger,
-  UsageThresholdTrigger,
-} from "@/types/featureTracking";
+import type { Trigger } from "@/types/featureTracking";
+import { useFeatureUrl } from "@/composables/useFeatureUrl";
 
 interface Props {
   feature: NormalizedFeature;
-  triggers: Trigger[];
 }
 
 const props = defineProps<Props>();
 
-const emit = defineEmits<{
-  "update:triggers": [triggers: Trigger[]];
-}>();
-
-type TriggerType = "browser_support" | "browser_version" | "usage_threshold";
-
-const selectedType = ref<TriggerType>("browser_support");
-const selectedBrowser = ref("chrome");
-const selectedStatus = ref<"full" | "partial">("full");
-const selectedVersion = ref("");
-const selectedUsageType = ref<"full" | "partial" | "combined">("combined");
-const selectedThreshold = ref(95);
+const {
+  triggerType,
+  browser,
+  status,
+  version,
+  usageType,
+  threshold,
+  triggers,
+  addTrigger: composableAddTrigger,
+  removeTrigger: composableRemoveTrigger,
+} = useFeatureUrl();
 
 const availableBrowsers = computed(() => {
   return Object.keys(props.feature.support);
 });
 
 const browserVersionsForSelected = computed(() => {
-  const browserSupport = props.feature.support[selectedBrowser.value];
+  const browserSupport = props.feature.support[browser.value];
   if (!browserSupport || !browserSupport.versions) return [];
   return browserSupport.versions.map((v) => v.version);
 });
 
-function addTrigger() {
-  let newTrigger: Trigger;
-
-  if (selectedType.value === "browser_support") {
-    newTrigger = {
-      type: "browser_support",
-      browser: selectedBrowser.value,
-      targetStatus: selectedStatus.value,
-    } as BrowserSupportTrigger;
-  } else if (selectedType.value === "browser_version") {
-    if (!selectedVersion.value) {
-      alert("Please enter a version number");
-      return;
-    }
-    newTrigger = {
-      type: "browser_version",
-      browser: selectedBrowser.value,
-      version: selectedVersion.value,
-      targetStatus: selectedStatus.value,
-    } as BrowserVersionTrigger;
-  } else {
-    newTrigger = {
-      type: "usage_threshold",
-      usageType: selectedUsageType.value,
-      threshold: selectedThreshold.value,
-    } as UsageThresholdTrigger;
+function handleAddTrigger() {
+  if (triggerType.value === "browser_version" && !version.value) {
+    alert("Please enter a version number");
+    return;
   }
-
-  emit("update:triggers", [...props.triggers, newTrigger]);
+  composableAddTrigger();
 }
 
-function removeTrigger(index: number) {
-  const updated = props.triggers.filter((_, i) => i !== index);
-  emit("update:triggers", updated);
+function handleRemoveTrigger(index: number) {
+  composableRemoveTrigger(index);
 }
 
 function getTriggerDescription(trigger: Trigger): string {
@@ -99,46 +69,46 @@ function getTriggerDescription(trigger: Trigger): string {
     <div class="trigger-form">
       <div class="form-group">
         <label>Trigger Type</label>
-        <select v-model="selectedType">
+        <select v-model="triggerType">
           <option value="browser_support">Browser Support</option>
           <option value="browser_version">Specific Browser Version</option>
           <option value="usage_threshold">Usage Threshold</option>
         </select>
       </div>
 
-      <template v-if="selectedType === 'browser_support'">
+      <template v-if="triggerType === 'browser_support'">
         <div class="form-group">
           <label>Browser</label>
-          <select v-model="selectedBrowser">
+          <select v-model="browser">
             <option
-              v-for="browser in availableBrowsers"
-              :key="browser"
-              :value="browser"
+              v-for="browserOption in availableBrowsers"
+              :key="browserOption"
+              :value="browserOption"
             >
-              {{ getBrowserDisplayName(browser) }}
+              {{ getBrowserDisplayName(browserOption) }}
             </option>
           </select>
         </div>
 
         <div class="form-group">
           <label>Target Status</label>
-          <select v-model="selectedStatus">
+          <select v-model="status">
             <option value="full">Full Support</option>
             <option value="partial">Partial Support</option>
           </select>
         </div>
       </template>
 
-      <template v-else-if="selectedType === 'browser_version'">
+      <template v-else-if="triggerType === 'browser_version'">
         <div class="form-group">
           <label>Browser</label>
-          <select v-model="selectedBrowser">
+          <select v-model="browser">
             <option
-              v-for="browser in availableBrowsers"
-              :key="browser"
-              :value="browser"
+              v-for="browserOption in availableBrowsers"
+              :key="browserOption"
+              :value="browserOption"
             >
-              {{ getBrowserDisplayName(browser) }}
+              {{ getBrowserDisplayName(browserOption) }}
             </option>
           </select>
         </div>
@@ -146,16 +116,16 @@ function getTriggerDescription(trigger: Trigger): string {
         <div class="form-group">
           <label>Version</label>
           <input
-            v-model="selectedVersion"
+            v-model="version"
             type="text"
             placeholder="e.g., 130"
             list="version-suggestions"
           />
           <datalist id="version-suggestions">
             <option
-              v-for="version in browserVersionsForSelected.slice(0, 5)"
-              :key="version"
-              :value="version"
+              v-for="versionOption in browserVersionsForSelected.slice(0, 5)"
+              :key="versionOption"
+              :value="versionOption"
             />
           </datalist>
           <small v-if="browserVersionsForSelected.length > 0" class="hint">
@@ -166,17 +136,17 @@ function getTriggerDescription(trigger: Trigger): string {
 
         <div class="form-group">
           <label>Target Status</label>
-          <select v-model="selectedStatus">
+          <select v-model="status">
             <option value="full">Full Support</option>
             <option value="partial">Partial Support</option>
           </select>
         </div>
       </template>
 
-      <template v-else-if="selectedType === 'usage_threshold'">
+      <template v-else-if="triggerType === 'usage_threshold'">
         <div class="form-group">
           <label>Usage Type</label>
-          <select v-model="selectedUsageType">
+          <select v-model="usageType">
             <option value="full">Full Support Only</option>
             <option value="partial">Partial Support Only</option>
             <option value="total">Total (Full + Partial)</option>
@@ -184,9 +154,9 @@ function getTriggerDescription(trigger: Trigger): string {
         </div>
 
         <div class="form-group">
-          <label>Threshold: {{ selectedThreshold }}%</label>
+          <label>Threshold: {{ threshold }}%</label>
           <input
-            v-model.number="selectedThreshold"
+            v-model.number="threshold"
             type="range"
             min="20"
             max="100"
@@ -195,7 +165,7 @@ function getTriggerDescription(trigger: Trigger): string {
         </div>
       </template>
 
-      <button @click="addTrigger">+ Add Trigger</button>
+      <button @click="handleAddTrigger">+ Add Trigger</button>
     </div>
 
     <div v-if="triggers.length > 0" class="triggers-list">
@@ -206,7 +176,7 @@ function getTriggerDescription(trigger: Trigger): string {
         class="trigger-item"
       >
         <span>{{ getTriggerDescription(trigger) }}</span>
-        <button @click="removeTrigger(index)">Remove</button>
+        <button @click="handleRemoveTrigger(index)">Remove</button>
       </div>
     </div>
 

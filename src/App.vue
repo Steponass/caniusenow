@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { ref, computed, onMounted } from "vue";
+import { ref, computed, onMounted, watch } from "vue";
 import { useFeatureStore } from "@stores/featureStore";
 import { useAuthStore } from "@stores/authStore";
 import { useTrackingStore } from "@stores/featureTrackingStore";
+import { useFeatureUrl } from "@/composables/useFeatureUrl";
 
 import AppHeader from "@components/AppHeader.vue";
 import AuthModal from "@components/AuthModal.vue";
@@ -11,11 +12,17 @@ import FeatureDetailModal from "@components/FeatureDetailModal.vue";
 import TrackingDashboard from "@components/TrackingDashboard.vue";
 
 import type { NormalizedFeature } from "@/types/feature";
-import type { Trigger } from "@/types/featureTracking";
 
 const featureStore = useFeatureStore();
 const authStore = useAuthStore();
 const trackingStore = useTrackingStore();
+const {
+  featureId,
+  triggers,
+  setFeature,
+  clearUrl,
+  resetTriggerState,
+} = useFeatureUrl();
 
 const isAuthModalOpen = ref(false);
 const isFeatureModalOpen = ref(false);
@@ -38,18 +45,33 @@ onMounted(async () => {
     await trackingStore.loadUserTrackings();
   }
 
-    // NEW: Check for feature in URL
-  const params = new URLSearchParams(window.location.search);
-  const featureId = params.get('feature');
-  if (featureId) {
-    const feature = await featureStore.loadFeature(featureId);
+  // If feature ID is in URL (from composable), load and open modal
+  if (featureId.value) {
+    const feature = await featureStore.loadFeature(featureId.value);
     if (feature) {
-      handleFeatureClick(feature);
+      selectedFeature.value = feature;
+      isFeatureModalOpen.value = true;
     }
   }
+});
 
-  // NEW: Handle browser back/forward
-  window.addEventListener('popstate', handlePopState);
+// Watch for URL-driven feature changes (e.g., browser back/forward)
+watch(featureId, async (newFeatureId, oldFeatureId) => {
+  // Feature removed from URL (user hit back)
+  if (!newFeatureId && oldFeatureId && isFeatureModalOpen.value) {
+    isFeatureModalOpen.value = false;
+    selectedFeature.value = null;
+    return;
+  }
+
+  // Feature added to URL (external navigation)
+  if (newFeatureId && newFeatureId !== selectedFeature.value?.id) {
+    const feature = await featureStore.loadFeature(newFeatureId);
+    if (feature) {
+      selectedFeature.value = feature;
+      isFeatureModalOpen.value = true;
+    }
+  }
 });
 
 
@@ -61,31 +83,20 @@ function handleCloseAuthModal() {
   isAuthModalOpen.value = false;
 }
 
-function handlePopState() {
-  const params = new URLSearchParams(window.location.search);
-  const featureId = params.get('feature');
-  
-  if (!featureId && isFeatureModalOpen.value) {
-    // User hit back, close modal
-    handleCloseFeatureModal();
-  }
-}
-
 function handleFeatureClick(feature: NormalizedFeature) {
   selectedFeature.value = feature;
   isFeatureModalOpen.value = true;
-  
-  window.history.pushState({}, '', `?feature=${feature.id}`);
+  setFeature(feature.id);
 }
 
 function handleCloseFeatureModal() {
   isFeatureModalOpen.value = false;
   selectedFeature.value = null;
-
-  window.history.pushState({}, '', '/');
+  resetTriggerState();
+  clearUrl();
 }
 
-async function handleStartTracking(triggers: Trigger[]) {
+async function handleStartTracking() {
   if (!selectedFeature.value) return;
 
   if (!authStore.isAuthenticated) {
@@ -97,7 +108,7 @@ async function handleStartTracking(triggers: Trigger[]) {
     await trackingStore.addTracking(
       selectedFeature.value.id,
       selectedFeature.value.name,
-      triggers,
+      triggers.value,
     );
 
     handleCloseFeatureModal();

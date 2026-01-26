@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { ref, computed } from "vue";
+import { computed } from "vue";
 import type { NormalizedFeature } from "@/types/feature";
 import FormattedText from "./FormattedText.vue";
 import { getBrowserDisplayName } from "@/types/feature";
-import type { Trigger } from "@/types/featureTracking";
 import TriggerBuilder from "./TriggerBuilder.vue";
+import { useFeatureUrl } from "@/composables/useFeatureUrl";
 
 interface Props {
   feature: NormalizedFeature | null;
@@ -15,10 +15,10 @@ const props = defineProps<Props>();
 
 const emit = defineEmits<{
   close: [];
-  startTracking: [triggers: Trigger[]];
+  startTracking: [];
 }>();
 
-const triggers = ref<Trigger[]>([]);
+const { triggers } = useFeatureUrl();
 
 const browserList = computed(() => {
   if (!props.feature) return [];
@@ -71,7 +71,6 @@ function getSupportStatusLabel(status: string): string {
 }
 
 function handleClose() {
-  triggers.value = [];
   emit("close");
 }
 
@@ -81,12 +80,7 @@ function handleStartTracking() {
     return;
   }
 
-  emit("startTracking", triggers.value);
-  triggers.value = [];
-}
-
-function handleTriggersUpdate(newTriggers: Trigger[]) {
-  triggers.value = newTriggers;
+  emit("startTracking");
 }
 </script>
 
@@ -210,11 +204,7 @@ function handleTriggersUpdate(newTriggers: Trigger[]) {
               Set conditions to receive an email when this feature becomes
               production-ready.
             </p>
-            <TriggerBuilder
-              :feature="feature"
-              :triggers="triggers"
-              @update:triggers="handleTriggersUpdate"
-            />
+            <TriggerBuilder :feature="feature" />
           </section>
         </div>
 
