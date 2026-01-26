@@ -1,11 +1,8 @@
 name: Update Browser Compatibility Data
 
 on:
-  # Run daily at 2 AM UTC
   schedule:
     - cron: '0 2 * * *'
-  
-  # ADD: Manual trigger for testing
   workflow_dispatch:
     inputs:
       test_mode:
@@ -26,14 +23,10 @@ jobs:
       contents: write
     
     steps:
-      # ========================================================================
-      # SETUP
-      # ========================================================================
-      
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth:
           token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Setup Node.js
@@ -45,51 +38,64 @@ jobs:
       - name: Install dependencies
         run: npm ci
       
-      # ========================================================================
-      # DATA PIPELINE
-      # ========================================================================
-      
       - name: Clone source data
         run: npm run clone-sources
       
       - name: Normalize data
         run: npm run normalize-data
       
-      # ========================================================================
-      # GIT COMMIT (ONLY IF CHANGES DETECTED)
-      # ========================================================================
-      
       - name: Check for changes
-        id: git-check
+        id: check_changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
           if git diff --quiet public/data/; then
-            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "changed=false" >> $GITHUB_OUTPUT
             echo "No changes detected in public/data/"
           else
-            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "changed=true" >> $GITHUB_OUTPUT
             echo "Changes detected in public/data/"
           fi
       
       - name: Commit and push changes
-        if: steps.git-check.outputs.changes == 'true'
+        if: steps.check_changes.outputs.changed == 'true'
         run: |
-          # Fetch latest remote state
-          git fetch origin main
-          
-          # Check if remote has changes we don't have
-          if ! git diff --quiet origin/main HEAD; then
-            echo "❌ ERROR: Remote branch has changes not in local branch."
-            echo ""
-            echo "This usually means manual edits were made to public/data/"
-            echo "The public/data/ directory should only be modified by this Action."
-            echo ""
-            echo "To fix:"
-            echo "1. Revert the manual changes on GitHub"
-            echo "2. Re-run this Action to regenerate clean data"
-            echo ""
-            echo "For testing diff detection, use manual trigger with test_mode=true"
-            exit 1
+          git add public/data/
+          git commit -m "chore: update browser compat data - $(date -u +'%Y-%m-%d')"
+          git push
+      
+      - name: Detect changes
+        if: steps.check_changes.outputs.changed == 'true'
+        run: npm run detect-changes
+      
+      - name: Send notifications
+        if: steps.check_changes.outputs.changed == 'true' && inputs.test_mode != 'true'
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          NOTIFICATIONAPI_CLIENT_ID: ${{ secrets.NOTIFICATIONAPI_CLIENT_ID }}
+          NOTIFICATIONAPI_CLIENT_SECRET: ${{ secrets.NOTIFICATIONAPI_CLIENT_SECRET }}
+          APP_URL: ${{ secrets.APP_URL }}
+        run: npm run send-notifications
+      
+      - name: Upload change report
+        if: steps.check_changes.outputs.changed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: change-report-${{ github.run_number }}
+          path: data/change-report.json
+          retention-days: 30
+      
+      - name: Summary
+        if: always()
+        run: |
+          if [ "${{ steps.check_changes.outputs.changed }}" = "true" ]; then
+            if [ "${{ inputs.test_mode }}" = "true" ]; then
+              echo "✅ Data updated (test mode - notifications skipped)"
+            else
+              echo "✅ Data updated and notifications sent"
+            fi
+          else
+            echo "ℹ️ No changes detected, skipped notifications"
           fi
