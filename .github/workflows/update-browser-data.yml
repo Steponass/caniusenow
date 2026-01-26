@@ -2,7 +2,7 @@ name: Update Browser Compatibility Data
 
 on:
   schedule:
-    - cron: "0 2 * * *"
+    - cron: "*/15 * * * *"  # Every 15 minutes (temporary for testing)
   workflow_dispatch:
     inputs:
       test_mode:
