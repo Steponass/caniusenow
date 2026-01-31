@@ -1,7 +1,8 @@
-export type TriggerType = 
+export type TriggerType =
   | 'browser_support'
   | 'browser_version'
-  | 'usage_threshold';
+  | 'usage_threshold'
+  | 'baseline_status';
 
 export type TrackingStatus = 'active' | 'notified' | 'completed';
 
@@ -24,10 +25,16 @@ export interface UsageThresholdTrigger {
   threshold: number;
 }
 
-export type Trigger = 
-  | BrowserSupportTrigger 
-  | BrowserVersionTrigger 
-  | UsageThresholdTrigger;
+export interface BaselineStatusTrigger {
+  type: 'baseline_status';
+  targetStatus: 'low' | 'high';
+}
+
+export type Trigger =
+  | BrowserSupportTrigger
+  | BrowserVersionTrigger
+  | UsageThresholdTrigger
+  | BaselineStatusTrigger;
 
 export interface FeatureTracking {
   id: string;

@@ -5,6 +5,7 @@ import type {
   BrowserSupportTrigger,
   BrowserVersionTrigger,
   UsageThresholdTrigger,
+  BaselineStatusTrigger,
 } from "@/types/featureTracking";
 
 /**
@@ -31,6 +32,7 @@ const status = ref<"full" | "partial">("full");
 const version = ref("");
 const usageType = ref<"full" | "partial" | "combined">("combined");
 const threshold = ref(95);
+const baselineStatus = ref<"low" | "high">("low");
 
 // Added triggers array
 const triggers = ref<Trigger[]>([]);
@@ -53,7 +55,7 @@ function readFromUrl(): void {
   const triggerTypeParam = params.get("triggerType");
   if (
     triggerTypeParam &&
-    ["browser_support", "browser_version", "usage_threshold"].includes(
+    ["browser_support", "browser_version", "usage_threshold", "baseline_status"].includes(
       triggerTypeParam
     )
   ) {
@@ -91,6 +93,11 @@ function readFromUrl(): void {
     }
   }
 
+  const baselineStatusParam = params.get("baselineStatus");
+  if (baselineStatusParam && ["low", "high"].includes(baselineStatusParam)) {
+    baselineStatus.value = baselineStatusParam as "low" | "high";
+  }
+
   const triggersParam = params.get("triggers");
   if (triggersParam) {
     try {
@@ -124,6 +131,7 @@ function buildUrlString(): string {
 
   params.set("usageType", usageType.value);
   params.set("threshold", threshold.value.toString());
+  params.set("baselineStatus", baselineStatus.value);
 
   if (triggers.value.length > 0) {
     params.set("triggers", encodeURIComponent(JSON.stringify(triggers.value)));
@@ -159,7 +167,7 @@ function handlePopState(): void {
 function setupWatchers(): void {
   // Watch form state changes - use replaceState (no history entry)
   watch(
-    [triggerType, browser, status, version, usageType, threshold, triggers],
+    [triggerType, browser, status, version, usageType, threshold, baselineStatus, triggers],
     () => {
       if (featureId.value) {
         updateUrlSilently();
@@ -215,6 +223,7 @@ function resetFormState(): void {
   version.value = "";
   usageType.value = "combined";
   threshold.value = 95;
+  baselineStatus.value = "low";
 }
 
 /**
@@ -247,12 +256,17 @@ function addTrigger(): Trigger | null {
       version: version.value,
       targetStatus: status.value,
     } as BrowserVersionTrigger;
-  } else {
+  } else if (triggerType.value === "usage_threshold") {
     newTrigger = {
       type: "usage_threshold",
       usageType: usageType.value,
       threshold: threshold.value,
     } as UsageThresholdTrigger;
+  } else {
+    newTrigger = {
+      type: "baseline_status",
+      targetStatus: baselineStatus.value,
+    } as BaselineStatusTrigger;
   }
 
   triggers.value = [...triggers.value, newTrigger];
@@ -279,6 +293,7 @@ export function useFeatureUrl() {
     version,
     usageType,
     threshold,
+    baselineStatus,
     triggers,
 
     // Actions
