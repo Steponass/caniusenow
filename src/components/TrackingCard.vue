@@ -29,12 +29,17 @@ function getTriggerDescription(trigger: any): string {
     return `${getBrowserDisplayName(trigger.browser)} has ${trigger.targetStatus} support`;
   } else if (trigger.type === 'browser_version') {
     return `${getBrowserDisplayName(trigger.browser)} ${trigger.version}+ has ${trigger.targetStatus} support`;
-  } else {
+  } else if (trigger.type === 'usage_threshold') {
     const usageLabel = trigger.usageType === 'full' ? 'full support' :
                       trigger.usageType === 'partial' ? 'partial support' :
                       (trigger.usageType === 'combined') ? 'total (full + partial)' :
                       'total (full + partial)';
     return `${usageLabel} usage ≥ ${trigger.threshold}%`;
+  } else {
+    const baselineLabel = trigger.targetStatus === 'low'
+      ? 'newly available (low)'
+      : 'widely available (high)';
+    return `Baseline status reaches ${baselineLabel}`;
   }
 }
 </script>
