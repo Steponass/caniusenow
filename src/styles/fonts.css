@@ -1,18 +1,18 @@
-/* @font-face {
-  font-family: 'Asap Variable';
+@font-face {
+  font-family: 'REM Variable';
   font-style: normal;
   font-display: swap;
-  src: url('/fonts/Asap-Variable.woff2') format('woff2-variations');
+  src: url('/fonts/REM-Latin-subset.woff2') format('woff2-variations');
 }
 
 @font-face {
     font-family: 'Adjusted Arial Fallback';
     src: local(Arial);
-    size-adjust: 100%;
-    ascent-override: 91%;
+    size-adjust: 106%;
+    ascent-override: 93%;
     descent-override: normal;
-    line-gap-override: 3%;
-} */
+    line-gap-override: normal;
+}
 
 /* https://www.fluid-type-scale.com/calculate?minFontSize=16&minWidth=360&minRatio=1.2&maxFontSize=18&maxWidth=1280&maxRatio=1.25&steps=xs%2C+s%2C+body%2Ch6%2Ch5%2Ch4%2Ch3%2Ch2%2Ch1&baseStep=body&prefix=fontsize&useContainerWidth=true&includeFallbacks=false&useRems=true&remValue=16&decimals=2&previewFont=Asap&previewText=Almost+before+we+knew+it%2C+we+had+left+the+ground&previewWidth=360 */
 
@@ -37,14 +37,14 @@
 :where(h1) {font-size: var(--fontsize-h1)}
 
 :where(h6, h5, h4, h3, h2, h1) {
-  font-family:  system-ui, sans-serif;
-  font-weight: 600;
+  font-family: 'REM Variable', 'Adjusted Arial Fallback', sans-serif;
+  font-weight: 500;
   color: var(--clr-text-strong);
 }
 
 :where(p, ul, ol, li, a, span, button, label, input, textarea, select, summary, dd, dt) {
   font-size: var(--fontsize-p);
-  font-family:  system-ui, sans-serif;
+  font-family: 'REM Variable', 'Adjusted Arial Fallback', sans-serif;
   font-weight: 400;
   color: var(--clr-text-strong);
 }

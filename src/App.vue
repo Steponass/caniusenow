@@ -132,21 +132,15 @@ function handleSearch(query: string) {
   <div id="app">
     <AppHeader @open-auth-modal="handleOpenAuthModal" @search="handleSearch" />
 
-    <main class="main-content">
-      <div class="container">
-        <section class="hero-section">
-          <h1 class="hero-title">Browser Feature Compatibility Tracker</h1>
-        </section>
-
-        <section v-if="authStore.isAuthenticated" class="tracking-toggle">
-          <button class="toggle-btn" @click="toggleTrackingDashboard">
+    <main>
+        <section v-if="authStore.isAuthenticated">
+          <button @click="toggleTrackingDashboard">
             {{ showTrackingDashboard ? "Browse Features" : "My Trackings" }}
             <span
               v-if="
                 !showTrackingDashboard &&
                 trackingStore.activeTrackings.length > 0
               "
-              class="badge"
             >
               {{ trackingStore.activeTrackings.length }}
             </span>
@@ -158,20 +152,11 @@ function handleSearch(query: string) {
         </section>
 
         <section
-          v-else-if="authStore.isAuthenticated"
-          class="dashboard-section"
+          v-else="authStore.isAuthenticated"
         >
           <h2>My Tracked Features</h2>
           <TrackingDashboard />
         </section>
-
-        <section v-else class="auth-prompt">
-          <p>Sign in to view your tracked features</p>
-          <button class="btn-primary" @click="handleOpenAuthModal">
-            Sign In
-          </button>
-        </section>
-      </div>
     </main>
 
     <AuthModal :is-open="isAuthModalOpen" @close="handleCloseAuthModal" />
@@ -193,71 +178,10 @@ function handleSearch(query: string) {
   background-color: var(--clr-bg-base);
 }
 
-.main-content {
-  flex: 1;
-  padding: 2rem 1rem;
-}
-
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.hero-section {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.hero-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #111827;
-  margin-bottom: 1rem;
-}
-
-.tracking-toggle {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-
-.toggle-btn {
-  padding: 0.75rem 1.5rem;
-  background: #3b82f6;
-  color: white;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background-color 0.2s;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.toggle-btn:hover {
-  background: #2563eb;
-}
-
-.toggle-btn .badge {
-  background: #1e40af;
-  padding: 0.125rem 0.5rem;
-  border-radius: 9999px;
-  font-size: 0.875rem;
-  font-weight: 700;
-}
-
-
-.auth-prompt {
-  text-align: center;
-  padding: 4rem 2rem;
-}
-
-.btn-primary {
-  padding: 0.75rem 1.5rem;
-  background: #3b82f6;
-  color: white;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background-color 0.2s;
+main {
+  width: min(1920px, 98%);
+  margin-inline: auto;
+  margin-top: var(--space-24-32px);
 }
 
 </style>

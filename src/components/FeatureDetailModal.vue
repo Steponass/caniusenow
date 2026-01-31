@@ -40,23 +40,6 @@ const browserList = computed(() => {
   );
 });
 
-const usageByCategory = computed(() => {
-  if (!props.feature) return { desktop: 0, mobile: 0 };
-
-  const desktop =
-    Object.values(props.feature.usage.byBrowser.desktop).reduce(
-      (a, b) => a + b,
-      0,
-    ) / Object.keys(props.feature.usage.byBrowser.desktop).length || 0;
-  const mobile =
-    Object.values(props.feature.usage.byBrowser.mobile).reduce(
-      (a, b) => a + b,
-      0,
-    ) / Object.keys(props.feature.usage.byBrowser.mobile).length || 0;
-
-  return { desktop, mobile };
-});
-
 function getSupportStatusLabel(status: string): string {
   const statusMap: Record<string, string> = {
     y: "Full",
@@ -76,7 +59,7 @@ function handleClose() {
 
 function handleStartTracking() {
   if (triggers.value.length === 0) {
-    alert("Please add at least one notification trigger");
+    alert("Gotta add at least one notification trigger");
     return;
   }
 
@@ -85,142 +68,79 @@ function handleStartTracking() {
 </script>
 
 <template>
-  <Teleport to="body">
-    <div v-if="isOpen && feature" class="modal-overlay" @click="handleClose">
-      <div class="modal-content" @click.stop>
-        <div class="modal-header">
-          <div>
-            <FormattedText :text="feature.name" tag="h2" />
-            <FormattedText :text="feature.description" tag="p" class="feature-description" />
-            <div class="meta-badges">
-              <span class="category-badge">{{ feature.category }}</span>
-              <span v-if="feature.baseline" class="baseline-badge">
-                Baseline {{ feature.baseline }}
-              </span>
+  <div v-if="isOpen && feature" class="modal-overlay" @click="handleClose">
+    <div class="modal-content" @click.stop>
+      <div class="modal-header">
+        <div>
+          <FormattedText :text="feature.name" tag="h3" />
+          <FormattedText :text="feature.description" tag="p"/>
+          <div class="meta-badges">
+            <span class="category-badge">{{ feature.category }}</span>
+            <img v-if="feature.baseline" class="baseline-badge" :src="`/images/Baseline-${feature.baseline}.svg`"
+              :alt="`Baseline ${feature.baseline}`" />
+          </div>
+          <div v-if="feature.caniuseUrl" class="links">
+            <a v-if="feature.caniuseUrl" :href="feature.caniuseUrl" target="_blank" rel="noopener noreferrer">
+              <strong>Caniuse.com ↗</strong>
+            </a>
+            <!-- Are other links even necessary when this tool is for reminders only? -->
+            <!-- <a v-for="link in feature.links.slice(0, 3)" :key="link.url" :href="link.url" target="_blank"
+              rel="noopener noreferrer" class="external-link">
+              {{ link.title }} ↗
+            </a> -->
+          </div>
+        </div>
+        <button @click="handleClose">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <section>
+          <h3>Support stats <span class="value">({{ feature.usage.type }})</span></h3>
+          <div class="usage-stats">
+            <div class="stat">
+              <span class="label">Full Support:</span>
+              <span class="value">{{ Math.round(feature.usage.global.full) }}%</span>
             </div>
-            <div v-if="feature.caniuseUrl" class="links">
-              <a
-                v-if="feature.caniuseUrl"
-                :href="feature.caniuseUrl"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="external-link"
-              >
-                Caniuse.com ↗
-              </a>
-              <a
-                v-for="link in feature.links.slice(0, 3)"
-                :key="link.url"
-                :href="link.url"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="external-link"
-              >
-                {{ link.title }} ↗
-              </a>
-              <a
-                v-if="feature.mdn"
-                :href="feature.mdn"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="external-link"
-              >
-                MDN Docs ↗
-              </a>
+            <div class="stat">
+              <span class="label">Partial Support:</span>
+              <span class="value">{{ Math.round(feature.usage.global.partial) }}%</span>
+            </div>
+            <div class="stat">
+              <span class="label">Total:</span>
+              <span class="value">{{ Math.round(feature.usage.global.total) }}%</span>
             </div>
           </div>
-          <button class="close-btn" @click="handleClose">✕</button>
-        </div>
+        </section>
 
-        <div class="modal-body">
-          <section class="usage-section">
-            <h3>Global Usage</h3>
-            <div class="usage-stats">
-              <div class="stat">
-                <span class="label">Full Support:</span>
-                <span class="value"
-                  >{{ Math.round(feature.usage.global.full) }}%</span
-                >
-              </div>
-              <div class="stat">
-                <span class="label">Partial Support:</span>
-                <span class="value"
-                  >{{ Math.round(feature.usage.global.partial) }}%</span
-                >
-              </div>
-              <div class="stat">
-                <span class="label">Total:</span>
-                <span class="value"
-                  >{{ Math.round(feature.usage.global.total) }}%</span
-                >
-              </div>
+        <section>
+          <h3>Browsers</h3>
+          <div class="browser-list">
+            <div v-for="browser in browserList" :key="browser.id" class="browser-row">
+              <span class="browser-name">{{ browser.name }}</span>
+              <span class="status-badge" :class="`status-${browser.currentStatus}`">
+                {{ getSupportStatusLabel(browser.currentStatus) }}
+              </span>
             </div>
-            <div class="usage-breakdown">
-              <div class="stat">
-                <span class="label">Desktop Avg:</span>
-                <span class="value"
-                  >{{ Math.round(usageByCategory.desktop) }}%</span
-                >
-              </div>
-              <div class="stat">
-                <span class="label">Mobile Avg:</span>
-                <span class="value"
-                  >{{ Math.round(usageByCategory.mobile) }}%</span
-                >
-              </div>
-              <div class="stat">
-                <span class="label">Data Type:</span>
-                <span class="value">{{ feature.usage.type }}</span>
-              </div>
-            </div>
-          </section>
+          </div>
+        </section>
 
-          <section class="browser-section">
-            <h3>Browser Support</h3>
-            <div class="browser-list">
-              <div
-                v-for="browser in browserList"
-                :key="browser.id"
-                class="browser-row"
-              >
-                <span class="browser-name">{{ browser.name }}</span>
-                <span class="version">{{ browser.latestVersion }}</span>
-                <span
-                  class="status-badge"
-                  :class="`status-${browser.currentStatus}`"
-                >
-                  {{ getSupportStatusLabel(browser.currentStatus) }}
-                </span>
-                <span v-if="browser.firstFull" class="first-support">
-                  Since v{{ browser.firstFull }}
-                </span>
-              </div>
-            </div>
-          </section>
+        <section>
+          <h3>Notification Triggers</h3>
+          <p class="section-description">
+            Get an email once selected criteria are true
+          </p>
+          <TriggerBuilder :feature="feature" />
+        </section>
+      </div>
 
-          <section class="trigger-section">
-            <h3>Notification Triggers</h3>
-            <p class="section-description">
-              Set conditions to receive an email when this feature becomes
-              production-ready.
-            </p>
-            <TriggerBuilder :feature="feature" />
-          </section>
-        </div>
-
-        <div class="modal-footer">
-          <button class="btn-secondary" @click="handleClose">Cancel</button>
-          <button
-            class="btn-primary"
-            @click="handleStartTracking"
-            :disabled="triggers.length === 0"
-          >
-            Start Tracking
-          </button>
-        </div>
+      <div class="modal-footer">
+        <button @click="handleClose">Cancel</button>
+        <button @click="handleStartTracking" :disabled="triggers.length === 0">
+          Start Tracking
+        </button>
       </div>
     </div>
-  </Teleport>
+  </div>
 </template>
 
 <style scoped>
@@ -235,33 +155,27 @@ function handleStartTracking() {
 }
 
 .modal-content {
+  overscroll-behavior: contain;
   background-color: lightblue;
-  border-radius: 0.75rem;
-  max-width: 800px;
-  width: 100%;
-  max-height: 90vh;
+  border-radius: var(--radius-16px);
+  width: min(600px, 98%);
+  max-height: 95vh;
   display: flex;
   flex-direction: column;
 }
 
 .modal-header {
-  padding: 1.5rem;
+  padding: var(--space-16-24px);
   display: flex;
   justify-content: space-between;
   align-items: start;
   gap: 1rem;
 }
 
-.feature-description {
-  margin: 0.5rem 0;
-  color: #6b7280;
-  font-size: 0.875rem;
-}
-
 .meta-badges {
   display: flex;
-  gap: 0.5rem;
-  margin: 0.75rem 0;
+  align-items: center;
+  gap: var(--space-16px);
 }
 
 .category-badge {
@@ -269,59 +183,32 @@ function handleStartTracking() {
   border-radius: 4px;
   background-color: #3b82f6;
   color: white;
-  font-size: 0.75rem;
-  font-weight: 600;
   text-transform: uppercase;
 }
 
 .baseline-badge {
-  padding: 0.25rem 0.625rem;
-  border-radius: 4px;
-  background-color: #10b981;
-  color: white;
-  font-size: 0.75rem;
-  font-weight: 600;
+  max-height: var(--space-16px);
 }
 
-.links {
+.links a {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 0.75rem;
-}
-
-.external-link {
-  color: #3b82f6;
-  text-decoration: none;
-  font-size: 0.875rem;
-}
-
-.external-link:hover {
   text-decoration: underline;
 }
 
-.close-btn {
-  width: 2rem;
-  height: 2rem;
-  flex-shrink: 0;
-}
-
 .modal-body {
-  padding: 1.5rem;
+  padding: var(--space-16-24px);
   overflow-y: auto;
-  flex: 1;
 }
 
-.section-description {
-  margin-bottom: 1rem;
+section {
+  padding-block-end: var(--space-16px);
 }
 
-.usage-stats,
-.usage-breakdown {
+.usage-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  margin-bottom: 1rem;
+  gap: var(--space-16px);
 }
 
 .stat {
@@ -333,42 +220,19 @@ function handleStartTracking() {
   gap: 0.5rem;
 }
 
-.stat .label {
-  font-size: 0.875rem;
-  color: #6b7280;
-}
-
-.stat .value {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #111827;
-}
-
-.browser-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.browser-list {  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+  gap: var(--space-8px);
 }
 
 .browser-row {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center; 
   gap: 1rem;
-  padding: 0.75rem;
   background: #f9fafb;
   border-radius: 0.375rem;
-}
-
-.browser-name {
-  flex: 1;
-  font-weight: 500;
-}
-
-.status-badge {
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-  font-size: 0.75rem;
-  font-weight: 600;
 }
 
 .status-badge.status-y {
@@ -398,26 +262,10 @@ function handleStartTracking() {
   color: #374151;
 }
 
-.first-support {
-  font-size: 0.75rem;
-  color: #6b7280;
-}
-
 .modal-footer {
-  padding: 1.5rem;
-  border-top: 1px solid #e5e7eb;
+  padding: var(--space-16-24px);
   display: flex;
   justify-content: flex-end;
-  gap: 1rem;
-}
-
-.btn-secondary,
-.btn-primary {
-  padding: 0.625rem 1.25rem;
-}
-
-.btn-primary:disabled {
-  background: #9ca3af;
-  cursor: not-allowed;
+  gap: var(--space-16px);
 }
 </style>

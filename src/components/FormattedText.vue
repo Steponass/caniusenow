@@ -83,6 +83,9 @@ const hasCodeElements = computed(() => props.text?.includes("`") ?? false);
   background-color: #f1f5f9;
   padding: 0.125rem 0.375rem;
   border-radius: 0.25rem;
-  color: #0f172a;
+  color: var(--clr-text-strong);
 }
+
+
+
 </style>
