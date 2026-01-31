@@ -91,7 +91,6 @@ jobs:
             # Clean state confirmed - commit and push
             git add public/data/
             git commit -m "chore: update browser compat data - $(date +'%Y-%m-%d')"
-          fi
           
           # Push changes
           git push origin main
