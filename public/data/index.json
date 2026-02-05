@@ -365,7 +365,7 @@
       "an_chr": "y"
     },
     "usage": 96.34,
-    "baseline": "high"
+    "baseline": false
   },
   {
     "id": "background-clip-text",
@@ -9680,6 +9680,38 @@
     "baseline": "high"
   },
   {
+    "id": "wf-audiolistener",
+    "name": "AudioListener",
+    "description": "An AudioListener object represents the virtual position and orientation of a person relative to sound sources, to spatia",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 89.85,
+    "baseline": false
+  },
+  {
+    "id": "wf-audiolistener-setposition-setorientation",
+    "name": "AudioListener setPosition() and setOrientation()",
+    "description": "The setPosition() and setOrientation() methods of the AudioListener API set the virtual position and orientation of a pe",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 94.36,
+    "baseline": false
+  },
+  {
     "id": "wf-autocapitalize",
     "name": "autocapitalize",
     "description": "The autocapitalize global HTML attribute sets the virtual keyboard capitalization behavior for user input on an element,",
@@ -9718,14 +9750,14 @@
     "category": "Other",
     "support": {
       "chr": "y",
-      "ffx": "y",
+      "ffx": "n",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 89.7,
-    "baseline": "low"
+    "usage": 87.65,
+    "baseline": false
   },
   {
     "id": "wf-autonomous-custom-elements",
@@ -10392,7 +10424,7 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
@@ -10616,7 +10648,7 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
@@ -10701,7 +10733,7 @@
       "an_chr": "y"
     },
     "usage": 92.2,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "wf-color-mix",
@@ -12839,12 +12871,12 @@
     "support": {
       "chr": "n",
       "ffx": "y",
-      "saf": "y",
+      "saf": "n",
       "edg": "n",
-      "ios_saf": "y",
+      "ios_saf": "n",
       "an_chr": "n"
     },
-    "usage": 15.72,
+    "usage": 2.08,
     "baseline": false
   },
   {
@@ -18845,7 +18877,7 @@
       "an_chr": "y"
     },
     "usage": 87.7,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "wf-u",
@@ -19776,6 +19808,22 @@
     "baseline": false
   },
   {
+    "id": "wf-webgpu-subgroups",
+    "name": "WebGPU subgroups",
+    "description": "The subgroups extension for the WebGPU Shading Language (WGSL) enables SIMD parallelism. Using subgroups, threads in a w",
+    "category": "Other",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
     "id": "wf-webnn",
     "name": "WebNN",
     "description": "The WebNN API constructs and executes computational graphs of neural networks by making use of the various machine learn",
@@ -20477,38 +20525,6 @@
       "an_chr": "y"
     },
     "usage": 94.87,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.AudioListener.setOrientation",
-    "name": "AudioListener.setOrientation",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.36,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.AudioListener.setPosition",
-    "name": "AudioListener.setPosition",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.36,
     "baseline": false
   },
   {
@@ -24221,22 +24237,6 @@
       "an_chr": "a"
     },
     "usage": 62.71,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.GPUSupportedFeatures.feature_subgroups",
-    "name": "`subgroups` feature",
-    "description": "`subgroups` feature",
-    "category": "JS API",
-    "support": {
-      "chr": "a",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "a",
-      "ios_saf": "n",
-      "an_chr": "a"
-    },
-    "usage": 68.79,
     "baseline": false
   },
   {
@@ -35133,6 +35133,22 @@
       "an_chr": "y"
     },
     "usage": 80.75,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Range.detach",
+    "name": "Range.detach",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 94.85,
     "baseline": false
   },
   {
@@ -54781,22 +54797,6 @@
       "an_chr": "n"
     },
     "usage": 0.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.selectors.nesting.at-scope",
-    "name": "`&amp;` treated as `:where(:scope)` in `@scope` blocks",
-    "description": "`&amp;` treated as `:where(:scope)` in `@scope` blocks",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 57.51,
     "baseline": false
   },
   {
