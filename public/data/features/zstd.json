@@ -55,7 +55,8 @@
       "current": "n"
     },
     "ios_saf": {
-      "current": "u"
+      "current": "y",
+      "firstFull": "26.3"
     },
     "an_chr": {
       "current": "y",
@@ -71,9 +72,9 @@
   },
   "usage": {
     "global": {
-      "full": 71.21,
-      "partial": 4.78,
-      "total": 75.99
+      "full": 71.28,
+      "partial": 4.72,
+      "total": 76
     },
     "byBrowser": {
       "desktop": {
@@ -83,6 +84,7 @@
         "opr": 0.79
       },
       "mobile": {
+        "ios_saf": 0.01,
         "an_chr": 44.12,
         "an_ff": 0.31
       }
@@ -93,7 +95,8 @@
     "general": "",
     "byNum": {
       "1": "Enabled through the `enable-zstd-content-encoding` feature flag in `chrome://flags`",
-      "2": "Partial support refers to supporting Zstandard, but not requesting it"
+      "2": "Partial support refers to supporting Zstandard, but not requesting it",
+      "3": "Requires macOS 26.3 Tahoe or later."
     }
   },
   "baseline": false,
