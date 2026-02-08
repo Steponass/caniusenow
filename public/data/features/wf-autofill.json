@@ -11,10 +11,6 @@
       "current": "y",
       "firstFull": "110"
     },
-    "ffx": {
-      "current": "y",
-      "firstFull": "86"
-    },
     "saf": {
       "current": "y",
       "firstFull": "15"
@@ -22,6 +18,9 @@
     "edg": {
       "current": "y",
       "firstFull": "110"
+    },
+    "ffx": {
+      "current": "n"
     },
     "opr": {
       "current": "y",
@@ -44,33 +43,30 @@
       "firstFull": "110"
     },
     "an_ff": {
-      "current": "y",
-      "firstFull": "86"
+      "current": "n"
     }
   },
   "usage": {
     "global": {
-      "full": 89.7,
+      "full": 87.65,
       "partial": 0,
-      "total": 89.7
+      "total": 87.65
     },
     "byBrowser": {
       "desktop": {
         "chr": 25.29,
-        "ffx": 1.75,
         "saf": 1.37,
         "edg": 4.21,
         "opr": 0.79
       },
       "mobile": {
         "ios_saf": 11.86,
-        "an_chr": 44.12,
-        "an_ff": 0.31
+        "an_chr": 44.12
       }
     },
     "type": "estimated"
   },
-  "baseline": "low",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "webfeatures",
