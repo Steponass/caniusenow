@@ -13,13 +13,13 @@ const props = defineProps<Props>();
 const trackingStore = useTrackingStore();
 
 async function handleMarkComplete() {
-  if (confirm('Mark this feature as completed?')) {
+  if (confirm('Ya done tracking this? You\'ll find this in Completed tab')) {
     await trackingStore.markAsCompleted(props.tracking.id);
   }
 }
 
 async function handleDelete() {
-  if (confirm('Delete this tracking?')) {
+  if (confirm('Sure you\'re done tracking this?')) {
     await trackingStore.deleteTracking(props.tracking.id);
   }
 }
@@ -47,7 +47,7 @@ function getTriggerDescription(trigger: any): string {
 <template>
   <div class="tracking-card">
     <div class="card-header">
-      <FormattedText :text="tracking.feature_title" tag="h3" />
+      <FormattedText :text="tracking.feature_title" tag="h4" />
       <span 
         class="status-badge"
         :class="tracking.status"
@@ -58,7 +58,7 @@ function getTriggerDescription(trigger: any): string {
 
     <div>
       <div>
-        <strong>Triggers:</strong>
+        <h6>Triggers:</h6>
         <ul>
           <li v-for="(trigger, index) in tracking.triggers" :key="index">
             {{ getTriggerDescription(trigger) }}
@@ -76,7 +76,7 @@ function getTriggerDescription(trigger: any): string {
         v-if="tracking.status === 'notified'"
         @click="handleMarkComplete"
       >
-        Mark Complete
+        Mark as complete
       </button>
       <button @click="handleDelete">
         Delete
@@ -87,37 +87,30 @@ function getTriggerDescription(trigger: any): string {
 
 <style scoped>
 .tracking-card {
-  background: white;
+  padding: var(--space-16px);
+  background: var(--clr-bg-raised);
+  border-radius: var(--radius-8px);
+  box-shadow: var(--shadow-elevation-3);
+  cursor: pointer;
+  transition: var(--transition-hover);
+}
+
+.tracking-card:hover {
+  box-shadow: var(--shadow-elevation-5);
+  transform: translateY(-2px);
 }
 
 .card-header {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  margin-bottom: 0.75rem;
+  margin-bottom: var(--space-12-16px);
 }
 
 .status-badge {
-  padding: 0.25rem 0.75rem;
+  padding: var(--space-4px) var(--space-12px);
   border-radius: 9999px;
-  font-size: 0.75rem;
-  font-weight: 600;
   text-transform: uppercase;
-}
-
-.status-badge.active {
-  background: #dbeafe;
-  color: #1e40af;
-}
-
-.status-badge.notified {
-  background: #d1fae5;
-  color: #065f46;
-}
-
-.status-badge.completed {
-  background: #e5e7eb;
-  color: #374151;
 }
 
 .card-actions {

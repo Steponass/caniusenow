@@ -184,4 +184,15 @@ function getTriggerDescription(trigger: Trigger): string {
   justify-content: space-between;
   align-items: center;
 }
+
+select, input {
+  border: 1px solid var(--clr-stroke-weak);
+  border-radius: var(--radius-2px);
+  padding: var(--space-4px) var(--space-8px);
+}
+
+option {
+  background-color: red;
+}
+
 </style>

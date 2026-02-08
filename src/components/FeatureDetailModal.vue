@@ -156,7 +156,7 @@ function handleStartTracking() {
 
 .modal-content {
   overscroll-behavior: contain;
-  background-color: lightblue;
+  background-color: var(--clr-bg-overlay);
   border-radius: var(--radius-16px);
   width: min(600px, 98%);
   max-height: 95vh;
@@ -170,6 +170,7 @@ function handleStartTracking() {
   justify-content: space-between;
   align-items: start;
   gap: 1rem;
+  box-shadow: var(--shadow-elevation-2);
 }
 
 .meta-badges {
@@ -267,5 +268,10 @@ section {
   display: flex;
   justify-content: flex-end;
   gap: var(--space-16px);
+}
+
+.modal-footer button:disabled {
+  background-color: var(--clr-disabled);
+  border: none;
 }
 </style>

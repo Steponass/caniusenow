@@ -24,9 +24,9 @@ async function handleFeatureClick(feature: FeatureIndex) {
 }
 
 function getStatusColor(usage: number): string {
-  if (usage >= 95) return "#10b981";
-  if (usage >= 80) return "#f59e0b";
-  return "#ef4444";
+  if (usage >= 95) return "#0C8D62";
+  if (usage >= 80) return "#BA7908";
+  return "#CA4E4E";
 }
 
 </script>
@@ -122,8 +122,12 @@ function getStatusColor(usage: number): string {
   border-radius: var(--radius-16px);
 }
 
+.feature-usage-badge p {
+    color: white;
+}
+
 .feature-description {
-  color: #6b7280;
+  color: var(--clr-text-weak);
   display: -webkit-box;
   -webkit-line-clamp: 2;
   line-clamp: 2;

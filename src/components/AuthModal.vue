@@ -72,11 +72,9 @@ async function handleMagicLink() {
     <div v-if="isOpen" class="modal-overlay" @click="emit('close')">
       <div class="modal-content" @click.stop>
         <div class="modal-header">
-          <h2>Sign in to track features</h2>
+          <h5>Sign in to track features</h5>
           <button @click="emit('close')">✕</button>
         </div>
-
-        <div class="modal-body">
           <div class="tabs">
             <button 
               :class="{ active: activeTab === 'github' }"
@@ -103,7 +101,7 @@ async function handleMagicLink() {
           </div>
 
           <div v-if="activeTab === 'github'" class="tab-content">
-            <p>Sign in with your GitHub account to start tracking features.</p>
+            <p>Sign in with your GitHub account</p>
             <button 
               class="btn-oauth" 
               @click="handleGithubSignIn"
@@ -114,7 +112,7 @@ async function handleMagicLink() {
           </div>
 
           <div v-else-if="activeTab === 'google'" class="tab-content">
-            <p>Sign in with your Google account to start tracking features.</p>
+            <p>Sign in with your Google account</p>
             <button 
               class="btn-oauth" 
               @click="handleGoogleSignIn"
@@ -128,11 +126,10 @@ async function handleMagicLink() {
 
           <div v-else-if="activeTab === 'email'" class="tab-content">
             <div v-if="magicLinkSent" class="success-message">
-              <p>✓ Magic link sent to {{ email }}</p>
-              <p>Check your email and click the link to sign in.</p>
+              <p>Magic link sent to {{ email }}</p>
+              <p>Check your email und sign in with the link</p>
             </div>
-            <div v-else>
-              <p>Enter your email to receive a magic sign-in link.</p>
+            <div v-else class="tab-content">
               <input 
                 v-model="email" 
                 type="email" 
@@ -140,7 +137,6 @@ async function handleMagicLink() {
                 @keyup.enter="handleMagicLink"
               />
               <button 
-                class="btn-oauth" 
                 @click="handleMagicLink"
                 :disabled="loading"
               >
@@ -148,7 +144,6 @@ async function handleMagicLink() {
               </button>
             </div>
           </div>
-        </div>
       </div>
     </div>
   </Teleport>
@@ -158,32 +153,32 @@ async function handleMagicLink() {
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: hsla(0, 0%, 0%, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 11;
-  padding: 1rem;
 }
 
 .modal-content {
-    background-color: lightblue;
-  max-width: 450px;
-  width: 100%;
+  background-color: var(--clr-bg-overlay);
+  width: min(98%, 480px);
+  min-height: 240px;
+  border-radius: var(--radius-4px);
+  padding: var(--space-8-12px);
 }
 
 .modal-header {
-  padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-block-end: var(--space-24-32px);
 }
 
 .tabs {
   display: flex;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid #e5e7eb;
+  gap: var(--space-12-16px);
+  margin-block-end: var(--space-16-24px);
 }
 
 .tabs button {
@@ -193,38 +188,20 @@ async function handleMagicLink() {
 .tab-content {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--space-8-12px);
 }
 
-.btn-oauth {
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 0.375rem;
-  cursor: pointer;
-  font-weight: 500;
-  background: #3b82f6;
-  color: white;
-}
-
-.btn-oauth:disabled {
-  background: #9ca3af;
-  cursor: not-allowed;
+.tab-content input {
+  padding: var(--space-4-8px);
+  border-radius: var(--radius-2px);
+  border: 1px solid var(--clr-stroke-weak);
 }
 
 .error-message {
-  padding: 0.75rem;
+  padding-block: var(--space-12-16px);
   background: #fee2e2;
-  color: #991b1b;
-  border-radius: 0.375rem;
-  font-size: 0.875rem;
-  margin-bottom: 1rem;
+  color: var(--clr-text-strong);
+  border: 1px solid var(--clr-support-low);
 }
 
-.success-message {
-  padding: 1rem;
-  background: #d1fae5;
-  color: #065f46;
-  border-radius: 0.375rem;
-  text-align: center;
-}
 </style>

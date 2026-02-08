@@ -175,7 +175,7 @@ function handleSearch(query: string) {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--clr-bg-base);
+  background: var(--clr-bg-base);
 }
 
 main {

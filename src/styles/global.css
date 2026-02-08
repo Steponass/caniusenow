@@ -1,0 +1,15 @@
+button {
+  padding: var(--space-8px) var(--space-16px);
+  border-radius: var(--radius-2px);
+  background-color: var(--clr-primary);
+  border: 1px solid var(--clr-stroke-strong);
+  @media (hover: hover ) {
+    &:hover {
+      background-color: var(--clr-hover);
+    }
+  }
+}
+
+input[type="email"], input[type="text"]{
+  caret-color: var(--clr-stroke-weak);
+}

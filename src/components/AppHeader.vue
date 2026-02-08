@@ -31,7 +31,7 @@ function handleSignIn() {
 <template>
   <header>
     <div class="logo">
-      <h1>CanIUse Tracker</h1>
+      <h1>Can I Use It  Now?</h1>
     </div>
     <ThemeToggle />
 
@@ -54,6 +54,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+h1 {
+  font-size: var(--fontsize-h3);
 }
 
 nav {

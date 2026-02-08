@@ -1,9 +1,16 @@
 
 [data-theme="light"] {
-  --clr-primary: hsl(46, 97%, 40%);
-  --clr-text-strong: black;
-  --clr-bg-base: wheat;
-
+  --clr-primary: hsl(21, 98%, 80%);
+  --clr-bg-base: hsl(21, 30%, 95%);
+  --clr-bg-raised: hsl(21, 25%, 97%);
+  --clr-bg-overlay: hsl(21, 20%, 98%);
+  --clr-text-strong: hsl(21, 50%, 3%);
+  --clr-text-weak: hsl(21, 5%, 23%);
+  --clr-stroke-strong: hsl(21, 65%, 73%);
+  --clr-stroke-weak: hsl(21, 40%, 75%);
+  --clr-disabled: hsl(21, 10%, 85%);
+  --clr-hover: hsl(21, 96%, 70%);
+  --clr-low-support: hsl(0, 54%, 55%);
   /* SHADOWS */
   /* 1st - "direct"
    2nd - "ambient" */
@@ -29,10 +36,17 @@
 }
 
 :root[data-theme="dark"] {
-  --clr-primary: hsl(46, 97%, 40%);
-  --clr-text-strong: white;
-  --clr-bg-base: midnightblue;
-  --clr-bg-raised: hsl(240, 60%, 35%);
+  --clr-primary: hsl(21, 80%, 70%);
+  --clr-text-strong: hsl(21, 21%, 98%);
+  --clr-text-weak: hsl(21, 11%, 72%);
+  --clr-bg-base: hsl(21, 16%, 10%);
+  --clr-bg-raised: hsl(21, 12%, 14%);
+  --clr-bg-overlay: hsl(21, 10%, 16%);
+  --clr-stroke-strong: hsl(21, 55%, 53%);
+  --clr-stroke-weak: hsl(21, 35%, 33%);
+  --clr-disabled: hsl(21, 10%, 55%);
+  --clr-hover: hsl(21, 90%, 60%);
+  --clr-low-support: hsl(0, 54%, 55%);
 }
 
 /* SPACING, RADIUS */
