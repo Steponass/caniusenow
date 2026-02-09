@@ -43,15 +43,11 @@ const DATA_DIR = path.resolve(__dirname, "../data/sources");
 const OUTPUT_DIR = path.resolve(__dirname, "../public/data");
 const FEATURES_DIR = path.resolve(OUTPUT_DIR, "features");
 
-// ============================================================================
+// ================================================================
 // MAIN PIPELINE
-// ============================================================================
+// ================================================================
 
 async function main(): Promise<void> {
-  console.log("=".repeat(70));
-  console.log("NORMALIZE BROWSER COMPATIBILITY DATA");
-  console.log("=".repeat(70));
-
   const startTime = Date.now();
 
   // Initialize stats
@@ -66,7 +62,6 @@ async function main(): Promise<void> {
     // Step 1: Load all source files
     console.log("\n📂 Step 1: Loading source files...");
     const sources = await loadSources();
-    console.log("  ✅ All sources loaded");
 
     // Step 2: Initialize feature registry
     console.log("\n🗄️  Step 2: Initializing feature registry...");
@@ -99,13 +94,9 @@ async function main(): Promise<void> {
 
     // Summary
     const duration = ((Date.now() - startTime) / 1000).toFixed(2);
-    console.log("\n" + "=".repeat(70));
-    console.log("✅ NORMALIZATION COMPLETE");
-    console.log("=".repeat(70));
     console.log(`Total features: ${stats.output.features}`);
     console.log(`Index size: ${(stats.output.indexSize / 1024).toFixed(2)} KB`);
     console.log(`Duration: ${duration}s`);
-    console.log("=".repeat(70));
 
   } catch (error) {
     console.error("\n❌ Fatal error during normalization:");
@@ -124,16 +115,12 @@ async function loadSources(): Promise<SourceFiles> {
   const mdnBcdPath = path.join(DATA_DIR, "mdnbcd.json");
   const usagePath = path.join(DATA_DIR, "alt-ww.json");
 
-  console.log(`  Loading: ${caniusePath}`);
   const caniuse: CaniuseData = JSON.parse(fs.readFileSync(caniusePath, "utf-8"));
 
-  console.log(`  Loading: ${webFeaturesPath}`);
   const webFeatures: WebFeaturesData = JSON.parse(fs.readFileSync(webFeaturesPath, "utf-8"));
 
-  console.log(`  Loading: ${mdnBcdPath}`);
   const mdnBcd: MdnBcdData = JSON.parse(fs.readFileSync(mdnBcdPath, "utf-8"));
 
-  console.log(`  Loading: ${usagePath}`);
   const usage: AltWwData = JSON.parse(fs.readFileSync(usagePath, "utf-8"));
 
   return { caniuse, webFeatures, mdnBcd, usage };
@@ -543,7 +530,6 @@ function createFeatureFromMdn(
   // Estimate usage
   const usageData = estimateUsage(support, usage);
 
-  // Use the improved inferNameFromMdnPath from format-utils.ts
   const inferredName = inferNameFromMdnPath(mdnPath);
 
   // Use description if available, otherwise use inferred name
@@ -639,8 +625,6 @@ async function writeOutput(
   fs.writeFileSync(indexPath, indexJson, "utf-8");
   stats.output.indexSize = indexJson.length;
 
-  console.log(`  Writing ${features.size} feature files...`);
-
   // Write individual feature files
   let written = 0;
   for (const [id, feature] of features) {
@@ -689,7 +673,6 @@ async function writeOutput(
     }
   }
 
-  console.log(`\r  Written ${written}/${features.size} files...`);
   stats.output.features = written;
 }
 

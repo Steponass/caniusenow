@@ -71,7 +71,7 @@ function getStatusColor(usage: number): string {
 
     <!-- Empty State -->
     <div v-else class="empty-state">
-      <p>No features to display</p>
+      <h5>Use the search bar to find features</h5>
     </div>
 </template>
 
@@ -145,4 +145,6 @@ function getStatusColor(usage: number): string {
 .baseline-badge {
   max-height: var(--space-16px);
 }
+
+
 </style>

@@ -1,23 +1,8 @@
 import { useColorMode } from '@vueuse/core';
 import { computed } from 'vue';
 
-/**
- * Theme management composable
- * 
- * Provides theme switching with smooth transitions using View Transitions API.
- * Supports three modes:
- * - 'light': Always light theme
- * - 'dark': Always dark theme  
- * - 'auto': Follow system preference (default)
- * 
- * The actual theme applied is stored in data-theme attribute on <html>
- * which can be 'light' or 'dark' (auto resolves to one of these)
- */
 export function useTheme() {
-  /**
-   * User's theme preference (light/dark/auto)
-   * Persists to localStorage as 'vueuse-color-scheme'
-   */
+
   const mode = useColorMode({
     selector: 'html',
     attribute: 'data-theme',
@@ -27,7 +12,7 @@ export function useTheme() {
       auto: 'auto',
     },
     storageKey: 'theme-preference',
-    emitAuto: true, // Keep 'auto' as the value instead of resolving to actual theme
+    emitAuto: true,
   });
 
   /**
@@ -42,14 +27,8 @@ export function useTheme() {
     return mode.value as 'light' | 'dark';
   });
 
-  /**
-   * Whether dark theme is currently active
-   */
   const isDark = computed(() => currentTheme.value === 'dark');
 
-  /**
-   * Cycle through theme modes: light → dark → auto → light...
-   */
   function cycleTheme() {
     const order: Array<'light' | 'dark' | 'auto'> = ['light', 'dark', 'auto'];
     const currentIndex = order.indexOf(mode.value as 'light' | 'dark' | 'auto');
@@ -60,7 +39,7 @@ export function useTheme() {
   }
 
   /**
-   * Toggle to a specific theme with smooth transition
+   * Toggle to a specific theme
    * Uses View Transitions API if available, falls back to instant change
    */
   function toggleTheme(newMode: 'light' | 'dark' | 'auto') {
@@ -70,29 +49,20 @@ export function useTheme() {
       return;
     }
 
-    // Use View Transitions for smooth theme change
+    // Use View Transitions
     document.startViewTransition(() => {
       mode.value = newMode;
     });
   }
 
-  /**
-   * Set theme to light
-   */
   function setLight() {
     toggleTheme('light');
   }
 
-  /**
-   * Set theme to dark
-   */
   function setDark() {
     toggleTheme('dark');
   }
 
-  /**
-   * Set theme to auto (follow system)
-   */
   function setAuto() {
     toggleTheme('auto');
   }
@@ -112,16 +82,13 @@ export function useTheme() {
   }
 
   return {
-    // Current state
-    mode,              // 'light' | 'dark' | 'auto'
-    currentTheme,      // 'light' | 'dark' (resolved)
-    isDark,            // boolean
-    
-    // Actions
-    cycleTheme,        // Cycle through all modes
-    toggleTheme,       // Set specific mode with transition
-    setLight,          // Shorthand: set to light
-    setDark,           // Shorthand: set to dark
-    setAuto,           // Shorthand: set to auto
+    mode,
+    currentTheme,
+    isDark,
+    cycleTheme,
+    toggleTheme,
+    setLight,
+    setDark,
+    setAuto,
   };
 }

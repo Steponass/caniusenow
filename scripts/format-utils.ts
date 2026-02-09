@@ -17,6 +17,7 @@
  * @param path - The MDN BCD path (e.g., "api.AbortController.abort")
  * @returns A human-readable feature name
  */
+
 export function inferNameFromMdnPath(path: string): string {
   const parts = path.split(".");
   const category = parts[0];
@@ -204,13 +205,6 @@ function formatSnakeCase(name: string): string {
 // FEATURE DEDUPLICATION
 // ============================================================================
 
-/**
- * Normalizes a feature ID for deduplication comparison.
- * Removes common prefixes and normalizes casing.
- *
- * @param id - The feature ID
- * @returns Normalized ID for comparison
- */
 export function normalizeFeatureId(id: string): string {
   return id
     .toLowerCase()
@@ -218,13 +212,6 @@ export function normalizeFeatureId(id: string): string {
     .replace(/[^a-z0-9]/g, "");        // Remove non-alphanumeric
 }
 
-/**
- * Normalizes a feature name for deduplication comparison.
- * Removes common prefixes like "CSS " and normalizes casing.
- *
- * @param name - The feature name
- * @returns Normalized name for comparison
- */
 export function normalizeFeatureName(name: string): string {
   return name
     .toLowerCase()
@@ -233,13 +220,6 @@ export function normalizeFeatureName(name: string): string {
     .replace(/[^a-z0-9]/g, "");        // Remove non-alphanumeric
 }
 
-/**
- * Checks if two features are likely duplicates based on ID and name.
- *
- * @param feature1 - First feature { id, name }
- * @param feature2 - Second feature { id, name }
- * @returns true if likely duplicates
- */
 export function areLikelyDuplicates(
   feature1: { id: string; name: string },
   feature2: { id: string; name: string }
@@ -274,7 +254,7 @@ export function areLikelyDuplicates(
 }
 
 // ============================================================================
-// CODE TAG NORMALIZATION (the only text transformation we do)
+// CODE TAG NORMALIZATION)
 // ============================================================================
 
 /**
@@ -287,9 +267,8 @@ export function areLikelyDuplicates(
  * We convert this to backticks so the UI can render it consistently:
  *   "The `options` parameter"
  *
- * @param text - Text that may contain HTML <code> tags
- * @returns Text with <code> tags converted to backticks
  */
+
 export function normalizeCodeTags(text: string): string {
   if (!text) return text;
   return text.replace(/<code>([^<]+)<\/code>/g, "`$1`");
@@ -310,9 +289,6 @@ export function normalizeCodeTags(text: string): string {
  * - Attribute syntax: hidden="until-found" → `hidden="until-found"`
  * - CSS properties: accent-color, grid-template → `accent-color`, `grid-template`
  *
- * @param name - The raw feature name from the data source
- * @param category - The feature category (CSS, HTML5, JS API, etc.) for context
- * @returns The formatted name with backticks around code elements
  */
 export function formatFeatureName(name: string, category?: string): string {
   if (!name) return name;

@@ -147,7 +147,7 @@ function handleSearch(query: string) {
           </button>
         </section>
 
-        <section v-if="!showTrackingDashboard" class="features-section">
+        <section v-if="!showTrackingDashboard" class="feature-section">
           <FeatureGrid :features="filteredFeatures" @feature-click="handleFeatureClick" />
         </section>
 
@@ -184,4 +184,8 @@ main {
   margin-top: var(--space-24-32px);
 }
 
+.feature-section {
+  display: flex;
+  justify-content: center;
+}
 </style>

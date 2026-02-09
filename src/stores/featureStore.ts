@@ -27,11 +27,9 @@ export const useFeatureStore = defineStore("featureStore", () => {
       if (!response.ok) {
         throw new Error(`Failed to load index: ${response.statusText}`);
       }
-
       const indexData = (await response.json()) as FeatureIndex[];
       index.value = indexData;
-
-      console.log(`✅ Loaded index with ${indexData.length} features`);
+      
     } catch (err) {
       error.value = err instanceof Error ? err.message : "Failed to load index";
       console.error("Error loading feature index:", err);

@@ -171,6 +171,7 @@ function getTriggerDescription(trigger: Trigger): string {
 
 .form-group input[type="range"] {
   width: 100%;
+  accent-color: var(--clr-primary);
 }
 
 .triggers-list {
@@ -187,12 +188,13 @@ function getTriggerDescription(trigger: Trigger): string {
 
 select, input {
   border: 1px solid var(--clr-stroke-weak);
+    background-color: var(--clr-bg-overlay);
   border-radius: var(--radius-2px);
   padding: var(--space-4px) var(--space-8px);
 }
 
 option {
-  background-color: red;
+  background-color: var(--clr-bg-overlay);
 }
 
 </style>

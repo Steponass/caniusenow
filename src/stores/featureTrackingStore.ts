@@ -2,7 +2,7 @@ import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
 import { supabase } from '../utils/supabase';
 import { useAuthStore } from './authStore';
-import type { FeatureTracking, Trigger } from '../types/featureTracking';
+import type { FeatureTracking, Trigger } from '@/types/featureTracking';
 
 export const useTrackingStore = defineStore('tracking', () => {
   // State
@@ -61,10 +61,6 @@ export const useTrackingStore = defineStore('tracking', () => {
 
     if (!authStore.user) {
       throw new Error('Must be authenticated to track features');
-    }
-
-    if (!authStore.user.email) {
-      throw new Error('User email is required to track features');
     }
 
     if (triggers.length === 0) {
@@ -179,16 +175,13 @@ export const useTrackingStore = defineStore('tracking', () => {
   }
 
   return {
-    // State
     trackings,
     loading,
     error,
-    
     // Getters
     activeTrackings,
     notifiedTrackings,
     completedTrackings,
-    
     // Actions
     loadUserTrackings,
     addTracking,

@@ -4,10 +4,6 @@ import { createClient } from "@supabase/supabase-js";
 import NotificationAPI from "notificationapi-node-server-sdk";
 import type { NormalizedFeature, FeatureIndex } from "./types.js";
 
-// ============================================================================
-// TYPES
-// ============================================================================
-
 interface FeatureChange {
   featureId: string;
   changes: {
@@ -70,9 +66,6 @@ const featureCache = new Map<string, NormalizedFeature>();
 // ============================================================================
 
 async function main(): Promise<void> {
-  console.log("=".repeat(70));
-  console.log("SEND NOTIFICATIONS FOR CHANGED FEATURES");
-  console.log("=".repeat(70));
 
   // Validate environment variables
   if (!process.env.VITE_SUPABASE_URL || !process.env.SUPABASE_SECRET_KEY) {
@@ -100,7 +93,6 @@ async function main(): Promise<void> {
   );
 
   // Load change report
-  console.log("\n📂 Loading change report...");
   const reportPath = "./data/change-report.json";
 
   if (!fs.existsSync(reportPath)) {
@@ -120,7 +112,6 @@ async function main(): Promise<void> {
   }
 
   // Load feature index for feature titles
-  console.log("\n📂 Loading feature index...");
   const featureIndex: FeatureIndex[] = JSON.parse(
     fs.readFileSync("./public/data/index.json", "utf8")
   );
@@ -130,8 +121,6 @@ async function main(): Promise<void> {
   let trackingsProcessed = 0;
 
   // Process each changed feature
-  console.log("\n🔍 Processing changed features...");
-
   for (const change of report.changes) {
     const indexFeature = featureMap.get(change.featureId);
 
@@ -215,12 +204,8 @@ async function main(): Promise<void> {
   }
 
   // Summary
-  console.log("\n" + "=".repeat(70));
-  console.log("✅ NOTIFICATIONS COMPLETE");
-  console.log("=".repeat(70));
   console.log(`Trackings processed: ${trackingsProcessed}`);
   console.log(`Notifications sent: ${notificationsSent}`);
-  console.log("=".repeat(70));
 }
 
 // ============================================================================
@@ -359,16 +344,16 @@ function checkBrowserSupport(
   // Map frontend "full"/"partial" to backend "y"/"a"
   const targetStatus = trigger.targetStatus === "y" ? "y" : "a";
 
-  console.log(`    🔍 Checking browser support: ${trigger.browser}`);
-  console.log(`       Target: ${targetStatus}, New: ${browserChange.new}, Old: ${browserChange.old}`);
+  console.log(`Checking browser support: ${trigger.browser}`);
+  console.log(`Target: ${targetStatus}, New: ${browserChange.new}, Old: ${browserChange.old}`);
 
   // Check if the new status matches the target
   const matches = browserChange.new === targetStatus;
   
   if (matches) {
-    console.log(`       ✅ Browser support matches target!`);
+    console.log(`Browser support matches target!`);
   } else {
-    console.log(`       ❌ Browser support doesn't match target`);
+    console.log(`Browser support doesn't match target`);
   }
 
   return matches;
@@ -382,17 +367,17 @@ function checkBaselineStatus(
   // Only trigger if baseline actually changed
   if (!changes.baseline) return false;
 
-  console.log(`    🔍 Checking baseline status`);
-  console.log(`       Target: ${trigger.targetStatus}, New: ${changes.baseline.new}, Old: ${changes.baseline.old}`);
+  console.log(`Checking baseline status`);
+  console.log(`Target: ${trigger.targetStatus}, New: ${changes.baseline.new}, Old: ${changes.baseline.old}`);
 
   // Check if new baseline matches target
   // Also handle the case where target is "low" and baseline went from false -> "low"
   if (trigger.targetStatus === "low") {
     const matches = changes.baseline.new === "low" || changes.baseline.new === "high";
     if (matches) {
-      console.log(`       ✅ Baseline status reached!`);
+      console.log(`Baseline status reached!`);
     } else {
-      console.log(`       ❌ Baseline status not reached`);
+      console.log(`Baseline status not reached`);
     }
     return matches;
   }
@@ -400,9 +385,9 @@ function checkBaselineStatus(
   const matches = changes.baseline.new === trigger.targetStatus;
   
   if (matches) {
-    console.log(`       ✅ Baseline status matches target!`);
+    console.log(`Baseline status matches target!`);
   } else {
-    console.log(`       ❌ Baseline status doesn't match target`);
+    console.log(`Baseline status doesn't match target`);
   }
 
   return matches;
@@ -456,10 +441,6 @@ async function sendEmailNotification(
     },
   });
 }
-
-// ============================================================================
-// RUN
-// ============================================================================
 
 main().catch((error) => {
   console.error("\n❌ Fatal error:", error);

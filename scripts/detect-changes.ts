@@ -2,10 +2,6 @@ import * as fs from "fs";
 import { execSync } from "child_process";
 import type { FeatureIndex } from "./types.js";
 
-// ============================================================================
-// TYPES
-// ============================================================================
-
 interface FeatureChange {
   featureId: string;
   changes: {
@@ -34,32 +30,24 @@ interface ChangeReport {
   changes: FeatureChange[];
 }
 
-// ============================================================================
+// =================================================================
 // MAIN
-// ============================================================================
+// =================================================================
 
 async function main(): Promise<void> {
-  console.log("=".repeat(70));
-  console.log("DETECT BROWSER COMPATIBILITY DATA CHANGES");
-  console.log("=".repeat(70));
-
   try {
     // Get current commit SHA
     const currentCommit = execSync("git rev-parse HEAD", {
       encoding: "utf8",
     }).trim();
 
-    console.log(`\n📍 Current commit: ${currentCommit.substring(0, 7)}`);
-
     // Load current index
-    console.log("\n📂 Loading current index...");
     const currentIndex: FeatureIndex[] = JSON.parse(
       fs.readFileSync("./public/data/index.json", "utf8")
     );
     console.log(`  ✅ Loaded ${currentIndex.length} features`);
 
     // Load previous index from git
-    console.log("\n📂 Loading previous index from git...");
     let previousIndex: FeatureIndex[];
     let previousCommit: string;
 
@@ -110,9 +98,6 @@ async function main(): Promise<void> {
     writeChangeReport(report);
 
     // Summary
-    console.log("\n" + "=".repeat(70));
-    console.log("✅ CHANGE DETECTION COMPLETE");
-    console.log("=".repeat(70));
     console.log(`Total changes: ${changes.length}`);
 
     if (changes.length > 0) {
@@ -124,8 +109,6 @@ async function main(): Promise<void> {
         console.log(`  ... and ${changes.length - 10} more`);
       }
     }
-
-    console.log("=".repeat(70));
   } catch (error) {
     console.error("\n❌ Fatal error during change detection:");
     console.error(error);
@@ -148,7 +131,7 @@ function detectChanges(
     const prevFeature = prevMap.get(currFeature.id);
 
     if (!prevFeature) {
-      // New feature - skip (per requirement: don't notify about new features)
+      // New feature - skip
       continue;
     }
 

@@ -47,9 +47,7 @@ const SOURCES: SourceConfig[] = [
 const DATA_DIR = path.resolve(__dirname, "../data/sources");
 const PROJECT_ROOT = path.resolve(__dirname, "..");
 
-async function downloadFile(url: string, outputPath: string): Promise<void> {
-  console.log(`  Downloading from: ${url}`);
-  
+async function downloadFile(url: string, outputPath: string): Promise<void> {  
   const response = await fetch(url);
   
   if (!response.ok) {
@@ -59,20 +57,15 @@ async function downloadFile(url: string, outputPath: string): Promise<void> {
   const data = await response.text();
   
   fs.writeFileSync(outputPath, data, "utf-8");
-  
-  const sizeKB = (data.length / 1024).toFixed(2);
-  console.log(`  Saved to: ${outputPath} (${sizeKB} KB)`);
 }
 
 function installNpmPackages(packages: string[]): void {
-  console.log(`\n📦 Installing npm packages: ${packages.join(", ")}`);
   
   try {
     execSync(`npm install --no-save ${packages.join(" ")}`, {
       cwd: PROJECT_ROOT,
       stdio: "inherit"
     });
-    console.log(`  ✅ Packages installed`);
   } catch (error) {
     throw new Error(`Failed to install npm packages: ${error}`);
   }
@@ -93,8 +86,6 @@ function copyNpmFile(sourcePath: string, outputPath: string): void {
 }
 
 async function processSource(source: SourceConfig): Promise<boolean> {
-  console.log(`\n📥 ${source.name}`);
-  
   const outputPath = path.join(DATA_DIR, source.outputFilename);
   
   try {
@@ -104,7 +95,6 @@ async function processSource(source: SourceConfig): Promise<boolean> {
       copyNpmFile(source.sourcePath, outputPath);
     }
     
-    console.log(`  ✅ Success`);
     return true;
   } catch (error) {
     console.error(`  ❌ Failed: ${error instanceof Error ? error.message : error}`);
@@ -113,10 +103,6 @@ async function processSource(source: SourceConfig): Promise<boolean> {
 }
 
 async function main(): Promise<void> {
-  console.log("=".repeat(60));
-  console.log("CLONE SOURCE DATA");
-  console.log("=".repeat(60));
-  
   // Ensure data directory exists
   if (!fs.existsSync(DATA_DIR)) {
     console.log(`\n📁 Creating directory: ${DATA_DIR}`);
@@ -141,10 +127,6 @@ async function main(): Promise<void> {
   // Summary
   const successCount = results.filter(Boolean).length;
   const totalCount = results.length;
-  
-  console.log("\n" + "=".repeat(60));
-  console.log(`SUMMARY: ${successCount}/${totalCount} sources downloaded successfully`);
-  console.log("=".repeat(60));
   
   if (successCount < totalCount) {
     process.exit(1);

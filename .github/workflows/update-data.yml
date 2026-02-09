@@ -75,16 +75,9 @@ jobs:
             
             # Check if remote has changes we don't have
             if ! git diff --quiet origin/main HEAD; then
-              echo "❌ ERROR: Remote branch has changes not in local branch."
+              echo "ERROR: Remote branch has changes not in local branch."
               echo ""
               echo "This usually means manual edits were made to public/data/"
-              echo "The public/data/ directory should only be modified by this Action."
-              echo ""
-              echo "To fix:"
-              echo "1. Revert the manual changes on GitHub"
-              echo "2. Re-run this Action to regenerate clean data"
-              echo ""
-              echo "For testing diff detection, use manual trigger with test_mode=true"
               exit 1
             fi
             
@@ -129,7 +122,7 @@ jobs:
         if: always()
         run: |
           if [ "${{ steps.git-check.outputs.changes }}" = "true" ]; then
-            echo "✅ Data updated and notifications sent"
+            echo "Data updated and notifications sent"
           else
-            echo "ℹ️ No changes detected, skipped notifications"
+            echo "No changes detected, skipped notifications"
           fi

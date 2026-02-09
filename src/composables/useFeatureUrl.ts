@@ -9,17 +9,12 @@ import type {
 } from "@/types/featureTracking";
 
 /**
- * URL state management composable for feature modal and trigger configuration.
- *
- * This composable manages:
- * 1. Feature selection (which feature modal is open)
- * 2. Trigger builder form state (current dropdown selections)
- * 3. Added triggers array (triggers that have been configured)
+ * URL state management composable for feature modal and trigger configuration. 
+ * Important if users signs in while the FeatureDetailModal is open (first time or forgot to sign in)
  *
  * URL updates use replaceState for form changes (no history entry)
  * and pushState for feature open/close (creates history entry for back button).
  *
- * Uses singleton pattern - all components share the same state.
  */
 
 // Module-level refs (shared across all usages)
@@ -281,11 +276,9 @@ function removeTrigger(index: number): void {
 }
 
 export function useFeatureUrl() {
-  // Initialize on first use
   initialize();
 
   return {
-    // State
     featureId,
     triggerType,
     browser,
@@ -296,7 +289,6 @@ export function useFeatureUrl() {
     baselineStatus,
     triggers,
 
-    // Actions
     setFeature,
     clearUrl,
     resetFormState,
