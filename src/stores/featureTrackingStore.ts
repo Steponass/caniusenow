@@ -19,10 +19,6 @@ export const useTrackingStore = defineStore('tracking', () => {
     trackings.value.filter(t => t.status === 'notified')
   );
 
-  const completedTrackings = computed(() => 
-    trackings.value.filter(t => t.status === 'completed')
-  );
-
   // Actions
   async function loadUserTrackings() {
     const authStore = useAuthStore();
@@ -181,7 +177,6 @@ export const useTrackingStore = defineStore('tracking', () => {
     // Getters
     activeTrackings,
     notifiedTrackings,
-    completedTrackings,
     // Actions
     loadUserTrackings,
     addTracking,

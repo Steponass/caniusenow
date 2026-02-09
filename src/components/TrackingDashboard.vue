@@ -3,7 +3,7 @@ import { computed } from 'vue';
 import { useTrackingStore } from '@stores/featureTrackingStore';
 import TrackingCard from './TrackingCard.vue';
 
-type Tab = 'active' | 'notified' | 'completed';
+type Tab = 'active' | 'notified';
 
 const trackingStore = useTrackingStore();
 
@@ -15,8 +15,6 @@ const displayedTrackings = computed(() => {
       return trackingStore.activeTrackings;
     case 'notified':
       return trackingStore.notifiedTrackings;
-    case 'completed':
-      return trackingStore.completedTrackings;
     default:
       return [];
   }
@@ -37,12 +35,6 @@ const displayedTrackings = computed(() => {
         @click="activeTab = 'notified'"
       >
         Notified ({{ trackingStore.notifiedTrackings.length }})
-      </button>
-      <button
-        :class="{ active: activeTab === 'completed' }"
-        @click="activeTab = 'completed'"
-      >
-        Completed ({{ trackingStore.completedTrackings.length }})
       </button>
     </div>
 

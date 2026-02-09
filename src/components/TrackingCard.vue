@@ -12,12 +12,6 @@ const props = defineProps<Props>();
 
 const trackingStore = useTrackingStore();
 
-async function handleMarkComplete() {
-  if (confirm('Ya done tracking this? You\'ll find this in Completed tab')) {
-    await trackingStore.markAsCompleted(props.tracking.id);
-  }
-}
-
 async function handleDelete() {
   if (confirm('Sure you\'re done tracking this?')) {
     await trackingStore.deleteTracking(props.tracking.id);
@@ -72,12 +66,6 @@ function getTriggerDescription(trigger: any): string {
     </div>
 
     <div class="card-actions">
-      <button 
-        v-if="tracking.status === 'notified'"
-        @click="handleMarkComplete"
-      >
-        Mark as complete
-      </button>
       <button @click="handleDelete">
         Delete
       </button>
