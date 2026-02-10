@@ -38,7 +38,7 @@ function clearSearch() {
         class="search-input"
         @input="handleInput"
       />
-      <span v-if="searchQuery" class="clear-btn" @click="clearSearch">
+      <span v-if="searchQuery" class="clear-button" @click="clearSearch">
         ✕
       </span>
     </div>
@@ -61,13 +61,13 @@ function clearSearch() {
 
 .search-input {
   width: 100%;
-  padding: 0.75rem 2.5rem 0.75rem 1rem;
-  border: 2px solid #e5e7eb;
+  padding: var(--space-8px);
+  border: 1px solid var(--clr-stroke-strong);
 }
 
-.clear-btn {
+.clear-button {
   position: absolute;
-  right: 1rem;
+  right: var(--space-16px);
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;

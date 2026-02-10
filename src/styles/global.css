@@ -3,6 +3,10 @@ button {
   border-radius: var(--radius-2px);
   background-color: var(--clr-primary);
   border: 1px solid var(--clr-stroke-strong);
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8px);
   @media (hover: hover ) {
     &:hover {
       background-color: var(--clr-hover);
