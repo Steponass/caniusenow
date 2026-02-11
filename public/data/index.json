@@ -11629,7 +11629,7 @@
       "an_chr": "y"
     },
     "usage": 94.19,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "wf-display-animation",
@@ -11670,14 +11670,14 @@
     "category": "Other",
     "support": {
       "chr": "y",
-      "ffx": "y",
-      "saf": "y",
+      "ffx": "n",
+      "saf": "n",
       "edg": "y",
-      "ios_saf": "y",
+      "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 92.07,
-    "baseline": "low"
+    "usage": 76.63,
+    "baseline": false
   },
   {
     "id": "wf-display-ruby",
@@ -14910,22 +14910,6 @@
     },
     "usage": 94.31,
     "baseline": "high"
-  },
-  {
-    "id": "wf-masonry",
-    "name": "Masonry",
-    "description": "The display: grid-lanes or display: inline-grid-lanes CSS declaration creates a layout where items are tightly packed, l",
-    "category": "Other",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
   },
   {
     "id": "wf-math-sum-precise",
@@ -40272,134 +40256,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.at-rules.media.color-gamut.p3",
-    "name": "`p3` value",
-    "description": "`p3` value",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 92.2,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.at-rules.media.color-gamut.rec2020",
-    "name": "`rec2020` value",
-    "description": "`rec2020` value",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 92.2,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.at-rules.media.color-gamut.srgb",
-    "name": "`srgb` value",
-    "description": "`srgb` value",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 92.2,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.at-rules.media.display-mode.browser",
-    "name": "`browser` value",
-    "description": "`browser` value",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 92.07,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.at-rules.media.display-mode.fullscreen",
-    "name": "`fullscreen` value",
-    "description": "`fullscreen` value",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "a",
-      "saf": "a",
-      "edg": "y",
-      "ios_saf": "a",
-      "an_chr": "y"
-    },
-    "usage": 92.02,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.at-rules.media.display-mode.minimal-ui",
-    "name": "`minimal-ui` value",
-    "description": "`minimal-ui` value",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 92.06,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.at-rules.media.display-mode.standalone",
-    "name": "`standalone` value",
-    "description": "`standalone` value",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 92.06,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.at-rules.media.display-mode.window-controls-overlay",
-    "name": "`window-controls-overlay` value",
-    "description": "`window-controls-overlay` value",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 75.95,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.at-rules.media.overflow-block",
     "name": "`overflow-block` media feature",
     "description": "`overflow-block` media feature",
@@ -54976,54 +54832,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.types.color.system-color.buttonborder",
-    "name": "`ButtonBorder`",
-    "description": "`ButtonBorder`",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 78.19,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.types.color.system-color.mark",
-    "name": "`Mark`",
-    "description": "`Mark`",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 78.18,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.types.color.system-color.marktext",
-    "name": "`MarkText`",
-    "description": "`MarkText`",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 78.18,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.types.dashed-function",
     "name": "`&lt;dashed-function&gt;`",
     "description": "`&lt;dashed-function&gt;`",
@@ -55437,22 +55245,6 @@
       "an_chr": "y"
     },
     "usage": 94.79,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.types.image.filter",
-    "name": "`filter()`",
-    "description": "`filter()`",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "n"
-    },
-    "usage": 13.64,
     "baseline": false
   },
   {
