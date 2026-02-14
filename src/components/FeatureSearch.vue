@@ -63,6 +63,8 @@ function clearSearch() {
   width: 100%;
   padding: var(--space-8px);
   border: 1px solid var(--clr-stroke-strong);
+  border-radius: var(--radius-2px);
+  box-shadow: var(--shadow-elevation-3);
 }
 
 .clear-button {

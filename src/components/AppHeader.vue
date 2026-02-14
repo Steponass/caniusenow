@@ -67,7 +67,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: var(--space-4px);
+  padding-block: var(--space-8px);
   padding-inline: var(--space-8-12px);
 }
 

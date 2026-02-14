@@ -3,17 +3,47 @@ button {
   border-radius: var(--radius-2px);
   background-color: var(--clr-primary);
   border: 1px solid var(--clr-stroke-strong);
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: var(--space-8px);
-  @media (hover: hover ) {
+  transition: var(--transition-hover-quick);
+  box-shadow: var(--shadow-elevation-3);
+  @media (hover: hover) {
     &:hover {
-      background-color: var(--clr-hover);
+      box-shadow: var(--shadow-elevation-5);
+      transform: translateY(-2px);
+
+    }
+  }
+  &:active {
+    transform: translateY(0px);
+    box-shadow: none;
+  }
+}
+
+/* Somehow didn't apply to #feature-details-popover a */
+a {
+  text-decoration: underline;
+  transform: var(--transition-hover);
+
+  @media (hover: hover) {
+    &:hover {
+      text-decoration: none;
     }
   }
 }
 
-input[type="email"], input[type="text"]{
+input[type="email"],
+input[type="text"] {
+  background-color: var(--clr-bg-raised);
+  color: var(--clr-text-strong);
   caret-color: var(--clr-stroke-weak);
+  position: relative;
+  box-shadow: 0 3px 0px 0px var(--clr-stroke-strong);
+}
+
+*:focus-visible {
+  outline: 3px dotted var(--clr-text-strong);
+  outline-offset: 1px;
 }

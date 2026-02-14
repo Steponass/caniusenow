@@ -38,6 +38,7 @@ function getStatusColor(usage: number): string {
         v-for="feature in features"
         :key="feature.id"
         class="feature-card"
+        tabindex="1"
         @click="handleFeatureClick(feature)"
       >
         <div class="card-header">
