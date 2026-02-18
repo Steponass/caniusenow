@@ -1,46 +1,43 @@
 {
-  "id": "wf-text-wrap-pretty",
+  "id": "wf-capture-handle",
   "source": "webfeatures",
-  "name": "text-wrap: pretty",
-  "description": "The text-wrap: pretty CSS declaration prioritizes better layout over speed when text is broken into multiple lines.",
+  "name": "Capture Handle",
+  "description": "The capture handle API allows you to share a custom handle (a string) from a web application being captured by getDisplayMedia() to the capturing web application.",
   "category": "Other",
-  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/text-wrap",
   "links": [],
   "support": {
     "chr": {
       "current": "y",
-      "firstFull": "117"
-    },
-    "saf": {
-      "current": "y",
-      "firstFull": "26"
+      "firstFull": "102"
     },
     "edg": {
       "current": "y",
-      "firstFull": "117"
+      "firstFull": "102"
     },
     "ffx": {
       "current": "n"
     },
+    "saf": {
+      "current": "n"
+    },
     "opr": {
       "current": "y",
-      "firstFull": "117"
+      "firstFull": "102"
     },
     "ie": {
       "current": "y",
-      "firstFull": "117"
+      "firstFull": "102"
     },
     "ios_saf": {
-      "current": "y",
-      "firstFull": "26"
+      "current": "n"
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "117"
+      "firstFull": "102"
     },
     "smsg": {
       "current": "y",
-      "firstFull": "117"
+      "firstFull": "102"
     },
     "an_ff": {
       "current": "n"
@@ -48,19 +45,17 @@
   },
   "usage": {
     "global": {
-      "full": 74.49,
+      "full": 76,
       "partial": 0,
-      "total": 74.49
+      "total": 76
     },
     "byBrowser": {
       "desktop": {
-        "chr": 23.11,
-        "saf": 0.52,
-        "edg": 4.21,
+        "chr": 26.85,
+        "edg": 4.25,
         "opr": 0.79
       },
       "mobile": {
-        "ios_saf": 1.73,
         "an_chr": 44.12
       }
     },
@@ -70,20 +65,25 @@
   "sourceData": {
     "primary": {
       "source": "webfeatures",
-      "id": "text-wrap-pretty"
+      "id": "capture-handle"
     },
     "supplementary": [
       {
         "source": "mdnbcd",
-        "id": "css.properties.text-wrap.pretty",
+        "id": "api.MediaDevices.setCaptureHandleConfig",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "css.properties.text-wrap-style.pretty",
+        "id": "api.MediaStreamTrack.capturehandlechange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrack.getCaptureHandle",
         "matched": "via-webfeatures"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=wf-text-wrap-pretty"
+  "caniuseUrl": "https://caniuse.com/?search=wf-capture-handle"
 }
