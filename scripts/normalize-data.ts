@@ -730,7 +730,7 @@ async function writeOutput(
         ...feature.usage,
         byBrowser: shortByBrowser,
       },
-      caniuseUrl: `https://caniuse.com/?search=${encodeURIComponent(id)}`,
+      caniuseUrl: `https://caniuse.com/?search=${encodeURIComponent(feature.name)}`,
     };
 
     const featurePath = path.join(FEATURES_DIR, `${id}.json`);
