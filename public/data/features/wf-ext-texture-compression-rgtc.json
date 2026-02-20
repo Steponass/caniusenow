@@ -1,0 +1,84 @@
+{
+  "id": "wf-ext-texture-compression-rgtc",
+  "source": "webfeatures",
+  "name": "EXT_texture_compression_rgtc WebGL extension",
+  "description": "The EXT_texture_compression_rgtc extension for WebGL 1.0 and 2.0 contexts adds RGTC compressed texture formats. RGTC is a block-based texture compression format suited for unsigned and signed red and red-green textures. Also known as Red-Green Texture Compression.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/EXT_texture_compression_rgtc",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "93"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "14.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "93"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "93"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "93"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "93"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "93"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.49,
+      "partial": 0,
+      "total": 89.49
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.94,
+        "saf": 1.39,
+        "edg": 4.25,
+        "opr": 0.9
+      },
+      "mobile": {
+        "ios_saf": 11.89,
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "ext-texture-compression-rgtc"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.EXT_texture_compression_rgtc",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-ext-texture-compression-rgtc"
+}

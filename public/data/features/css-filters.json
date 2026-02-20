@@ -1,0 +1,224 @@
+{
+  "id": "css-filters",
+  "source": "caniuse",
+  "name": "CSS Filter Effects",
+  "description": "Method of applying filter effects using the `filter` property to elements, matching filters available in SVG. Filter functions include blur, brightness, contrast, drop-shadow, grayscale, hue-rotate, invert, opacity, sepia and saturate.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/filter-function/sepia",
+  "links": [
+    {
+      "url": "https://fhtr.org/css-filters/",
+      "title": "Demo"
+    },
+    {
+      "url": "https://www.html5rocks.com/en/tutorials/filters/understanding-css/",
+      "title": "HTML5Rocks article"
+    },
+    {
+      "url": "https://web.archive.org/web/20160219005748/https://dl.dropboxusercontent.com/u/3260327/angular/CSS3ImageManipulation.html",
+      "title": "Filter editor"
+    },
+    {
+      "url": "https://web.archive.org/web/20160310041612/http://bennettfeely.com/filters/",
+      "title": "Filter Playground"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "18"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "35"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "6"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "6.0-6.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.36,
+      "partial": 0.1,
+      "total": 96.46
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Note that this property is significantly different from and incompatible with Microsoft's [older \"filter\" property](http://msdn.microsoft.com/en-us/library/ie/ms530752%28v=vs.85%29.aspx).",
+    "byNum": {
+      "1": "Supported in Firefox under the `layout.css.filters.enabled` flag.",
+      "2": "Supported in MS Edge under the \"Enable CSS filter property\" flag.",
+      "3": "Partial support in Firefox before version 34 [only implemented the url() function of the filter property](https://developer.mozilla.org/en-US/docs/Web/CSS/filter#Browser_compatibility)",
+      "4": "Partial support refers to supporting filter functions, but not the `url` function."
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-filters"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "filter",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.blur",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.brightness",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.contrast",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.drop-shadow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.grayscale",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.hue-rotate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.invert",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.opacity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.saturate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.filter.sepia",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.blur",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.brightness",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.contrast",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.drop-shadow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.grayscale",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.hue-rotate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.invert",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.opacity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.saturate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.filter-function.sepia",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=css-filters"
+}

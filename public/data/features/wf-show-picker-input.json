@@ -1,0 +1,108 @@
+{
+  "id": "wf-show-picker-input",
+  "source": "webfeatures",
+  "name": "showPicker() for <input>",
+  "description": "The showPicker() method for <input> elements shows the user interface for picking a value. For example, for <input type=\"date\"> it shows the interface for picking a date.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLInputElement/showPicker",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "99"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "101"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "17.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "99"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "99"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "99"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "99"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "99"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "101"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.9,
+      "partial": 0,
+      "total": 89.9
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.88,
+        "ffx": 1.75,
+        "saf": 0.96,
+        "edg": 4.25,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.86,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "show-picker-input"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.showPicker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.showPicker.color_input",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.showPicker.date_input",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.showPicker.datetime_local_input",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.showPicker.file_input",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-show-picker-input"
+}

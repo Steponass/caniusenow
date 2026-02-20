@@ -1,0 +1,88 @@
+{
+  "id": "wf-structured-clone",
+  "source": "webfeatures",
+  "name": "structuredClone()",
+  "description": "The structuredClone() global method creates a deep copy of an object. Values that cannot be cloned can instead be transferred, making the original value no longer usable.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/structuredClone",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "98"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "94"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "15.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "98"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "98"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "98"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "98"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "98"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "94"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.33,
+      "partial": 0,
+      "total": 91.33
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.92,
+        "ffx": 1.75,
+        "saf": 1.37,
+        "edg": 4.25,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.82,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "structured-clone"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.structuredClone",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-structured-clone"
+}

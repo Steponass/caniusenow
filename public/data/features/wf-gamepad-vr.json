@@ -1,0 +1,129 @@
+{
+  "id": "wf-gamepad-vr",
+  "source": "webfeatures",
+  "name": "Gamepad VR hands and poses",
+  "description": "The hand and pose properties of a Gamepad object represent the position in space and the hand that WebVR controllers are held in.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/GamepadPose/position",
+  "links": [],
+  "support": {
+    "ffx": {
+      "current": "y",
+      "firstFull": "55"
+    },
+    "chr": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "55"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 2.06,
+      "partial": 0,
+      "total": 2.06
+    },
+    "byBrowser": {
+      "desktop": {
+        "ffx": 1.75
+      },
+      "mobile": {
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "gamepad-vr"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Gamepad.hand",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Gamepad.pose",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.angularAcceleration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.angularVelocity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.hasOrientation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.hasPosition",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.linearAcceleration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.linearVelocity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.orientation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.position",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.secure_context_required",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-gamepad-vr"
+}

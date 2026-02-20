@@ -1,0 +1,345 @@
+{
+  "id": "css-paint-api",
+  "source": "caniuse",
+  "name": "CSS Painting API",
+  "description": "Allows programmatic generation of images used by CSS",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/image/paint",
+  "links": [
+    {
+      "url": "https://developers.google.com/web/updates/2018/01/paintapi",
+      "title": "Google CSS Paint API Introduction"
+    },
+    {
+      "url": "https://ishoudinireadyyet.com/",
+      "title": "Is Houdini Ready Yet?"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "65"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "u"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "52"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "9.2"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 80.32,
+      "partial": 0,
+      "total": 80.32
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.2,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_chr": 44.12,
+        "smsg": 1.93
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Can be enabled using the Develop > Experimental Features menu."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-paint-api"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "paint",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSS.paintWorklet_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.beginPath",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.clearRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.clip",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.createLinearGradient",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.createPattern",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.createRadialGradient",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.drawImage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.fill",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.fillRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.fillStyle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.filter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.getLineDash",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.getTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.globalAlpha",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.globalCompositeOperation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.imageSmoothingEnabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.imageSmoothingQuality",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.isPointInPath",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.isPointInStroke",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.lineCap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.lineDashOffset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.lineJoin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.lineWidth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.miterLimit",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.resetTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.restore",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.rotate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.save",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.scale",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.setLineDash",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.setTransform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.shadowBlur",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.shadowColor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.shadowOffsetX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.shadowOffsetY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.stroke",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.strokeRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.strokeStyle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.transform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintRenderingContext2D.translate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintSize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintSize.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintSize.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintWorkletGlobalScope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintWorkletGlobalScope.devicePixelRatio",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PaintWorkletGlobalScope.registerPaint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.image.paint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.image.paint.additional_parameters",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=css-paint-api"
+}

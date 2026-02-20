@@ -1,0 +1,325 @@
+{
+  "id": "webtransport",
+  "source": "caniuse",
+  "name": "WebTransport",
+  "description": "Protocol framework to send and receive data from servers using [HTTP3](/http3). Similar to [WebSockets](/websockets) but with support for multiple streams, unidirectional streams, out-of-order delivery, and reliable as well as unreliable transport.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WebTransportSendStream/sendOrder",
+  "links": [
+    {
+      "url": "https://web.dev/webtransport/",
+      "title": "web.dev article"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1709355",
+      "title": "Firefox support bug"
+    },
+    {
+      "url": "https://github.com/w3c/webtransport/blob/main/explainer.md",
+      "title": "Explainer with examples"
+    },
+    {
+      "url": "https://github.com/WebKit/standards-positions/issues/18",
+      "title": "WebKit position on WebTransport"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "97"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "98"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "83"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "18.0"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 81.71,
+      "partial": 0,
+      "total": 81.71
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.93,
+        "ffx": 1.75,
+        "edg": 4.25,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "webtransport"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "webtransport",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.WebTransport",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.WebTransport.options_allowPooling_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.WebTransport.options_congestionControl_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.WebTransport.options_requireUnreliable_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.WebTransport.options_serverCertificateHashes_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.byob_readers",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.closed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.congestionControl",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.createBidirectionalStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.createBidirectionalStream.options_sendOrder_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.createUnidirectionalStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.createUnidirectionalStream.byob_readers",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.createUnidirectionalStream.options_sendOrder_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.datagrams",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.getStats",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.incomingBidirectionalStreams",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.incomingUnidirectionalStreams",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.ready",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.reliability",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportBidirectionalStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportBidirectionalStream.readable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportBidirectionalStream.readable.returns_WebTransportReceiveStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportBidirectionalStream.writable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportBidirectionalStream.writable.returns_WebTransportSendStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportDatagramDuplexStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportDatagramDuplexStream.byob_readers",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportDatagramDuplexStream.incomingHighWaterMark",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportDatagramDuplexStream.incomingMaxAge",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportDatagramDuplexStream.maxDatagramSize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportDatagramDuplexStream.outgoingHighWaterMark",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportDatagramDuplexStream.outgoingMaxAge",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportDatagramDuplexStream.readable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportError.WebTransportError",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportError.source",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportError.streamErrorCode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportReceiveStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportReceiveStream.getStats",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportSendStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportSendStream.getStats",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportSendStream.getWriter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransportSendStream.sendOrder",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=webtransport"
+}

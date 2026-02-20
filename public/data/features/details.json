@@ -1,0 +1,166 @@
+{
+  "id": "details",
+  "source": "caniuse",
+  "name": "Details & Summary elements",
+  "description": "The <details> element generates a simple no-JavaScript widget to show/hide element contents, optionally by clicking on its child <summary> element.",
+  "category": "HTML5",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/summary",
+  "links": [
+    {
+      "url": "https://mathiasbynens.be/notes/html5-details-jquery",
+      "title": "jQuery fallback script"
+    },
+    {
+      "url": "https://gist.github.com/370590",
+      "title": "Fallback script"
+    },
+    {
+      "url": "https://html5doctor.com/summary-figcaption-element/",
+      "title": "HTML5 Doctor article"
+    },
+    {
+      "url": "https://raw.github.com/phiggins42/has.js/master/detect/features.js#native-details",
+      "title": "has.js test"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/html/elements/details",
+      "title": "WebPlatform Docs"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=591737",
+      "title": "Bug on Firefox support"
+    },
+    {
+      "url": "https://github.com/javan/details-element-polyfill",
+      "title": "Details Element Polyfill"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "36"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "49"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "6.0-6.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.35,
+      "partial": 0,
+      "total": 96.35
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.76,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Enabled in Firefox through the `dom.details_element.enabled` flag",
+      "2": "'toggle' event is not supported",
+      "3": "<summary> is not keyboard accessible",
+      "4": "Some versions of Safari display smaller font-size than intended when using `rem` units with system fonts. (See: https://colloq.io/blog/safaris-detailssummary-rem-font-size-issue)"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "details"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "details",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLDetailsElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLDetailsElement.open",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.toggle_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.toggle_event.details_elements",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.details",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.details.open",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.summary",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.summary.display_list_item",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=details"
+}

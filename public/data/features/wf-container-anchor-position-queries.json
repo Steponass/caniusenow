@@ -1,0 +1,93 @@
+{
+  "id": "wf-container-anchor-position-queries",
+  "source": "webfeatures",
+  "name": "Anchor position container queries",
+  "description": "Anchor position container queries with the @container anchored(fallback: …) at-rule apply styles to an element based on the element's anchor position.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "143"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "143"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "143"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "143"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "143"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "143"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 55.5,
+      "partial": 0,
+      "total": 55.5
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 8.55,
+        "edg": 2.83
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "container-anchor-position-queries"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.container.anchor_position_queries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.container.anchor_position_queries.fallback",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.container.anchor_position_queries.fallback.any_value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.container-type.anchored",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-container-anchor-position-queries"
+}

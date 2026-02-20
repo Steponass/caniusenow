@@ -1,0 +1,98 @@
+{
+  "id": "wf-paint-order",
+  "source": "webfeatures",
+  "name": "paint-order",
+  "description": "The paint-order CSS property sets the z-order of strokes, fills, and (in SVG content) markers. For example, paint-order: markers stroke fill; draws the markers, then stroke on top of markers, then fill on top of both markers and stroke.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/paint-order",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "123"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "≤66"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "≤12"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "123"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "123"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "123"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "≤12"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "123"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "123"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "≤66"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 87.29,
+      "partial": 0,
+      "total": 87.29
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 22.39,
+        "ffx": 1.85,
+        "saf": 1.42,
+        "edg": 4.18,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "paint-order"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.paint-order",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.paint-order.fill",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.paint-order",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-paint-order"
+}

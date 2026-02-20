@@ -1,0 +1,84 @@
+{
+  "id": "wf-audio-session",
+  "source": "webfeatures",
+  "name": "Audio session",
+  "description": "The navigator.audioSession API controls how audio playback interacts with other applications. For example, playing music can pause audio from other applications, while ambient audio can play at the same time.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/audioSession",
+  "links": [],
+  "support": {
+    "saf": {
+      "current": "y",
+      "firstFull": "16.4"
+    },
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 12.58,
+      "partial": 0,
+      "total": 12.58
+    },
+    "byBrowser": {
+      "desktop": {
+        "saf": 1.23
+      },
+      "mobile": {
+        "ios_saf": 11.35
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "audio-session"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioSession",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioSession.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.audioSession",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-audio-session"
+}

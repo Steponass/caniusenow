@@ -1,0 +1,118 @@
+{
+  "id": "wf-array-by-copy",
+  "source": "webfeatures",
+  "name": "Array by copy",
+  "description": "The toReversed(), toSorted(), toSpliced(), and with() methods of arrays and typed arrays return changed copies of arrays. They stand in contrast to methods such as sort() or reverse() that change arrays in place.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/with",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "110"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "115"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "16"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "110"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "110"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "110"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "110"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "110"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "115"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.27,
+      "partial": 0,
+      "total": 89.27
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 25.29,
+        "ffx": 1.75,
+        "saf": 1.27,
+        "edg": 4.21,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.52,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "array-by-copy"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.toReversed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.toSorted",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.toSpliced",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.with",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.toReversed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.toSorted",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.with",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-array-by-copy"
+}

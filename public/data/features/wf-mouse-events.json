@@ -1,0 +1,254 @@
+{
+  "id": "wf-mouse-events",
+  "source": "webfeatures",
+  "name": "Mouse events",
+  "description": "Mouse events, such as click, mousedown, or mousemove, fire when users interact with an input or pointing device such as a mouse, trackpad, or touchscreen.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/MouseEvent/y",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "1"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "1"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "1"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "1"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "1"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "1"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.85,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "mouse-events"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.auxclick_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.click_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.contextmenu_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.dblclick_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.mousedown_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.mouseenter_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.mouseleave_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.mousemove_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.mouseout_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.mouseover_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.mouseup_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.click",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.MouseEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.altKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.button",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.buttons",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.clientX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.clientY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.ctrlKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.getModifierState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.metaKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.movementX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.movementY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.offsetX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.offsetY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.pageX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.pageY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.relatedTarget",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.screenX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.screenY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.shiftKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MouseEvent.y",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-mouse-events"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "wf-wasm-tail-call-optimization",
+  "source": "webfeatures",
+  "name": "Tail call optimization (WebAssembly)",
+  "description": "Tail call optimization discards a caller frame and replaces the call with a jump instruction.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "112"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "121"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "18.2"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "112"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "112"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "112"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "18.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "112"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "112"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "121"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 86.9,
+      "partial": 0,
+      "total": 86.9
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 25.05,
+        "ffx": 1.48,
+        "saf": 0.71,
+        "edg": 4.21,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.22,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "wasm-tail-call-optimization"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-wasm-tail-call-optimization"
+}

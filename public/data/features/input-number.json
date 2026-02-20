@@ -1,0 +1,153 @@
+{
+  "id": "input-number",
+  "source": "caniuse",
+  "name": "Number input type",
+  "description": "Form field type for numbers.",
+  "category": "HTML5",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/number",
+  "links": [
+    {
+      "url": "https://github.com/jonstipe/number-polyfill",
+      "title": "Polyfill"
+    },
+    {
+      "url": "https://raw.github.com/phiggins42/has.js/master/detect/form.js#input-type-number",
+      "title": "has.js test"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/html/elements/input/type/number",
+      "title": "WebPlatform Docs"
+    },
+    {
+      "url": "https://www.ctrl.blog/entry/html5-input-number-localization.html",
+      "title": "Poor browser support for localized decimal marks, commas"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "6"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "5"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "9"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "u"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 38.88,
+      "partial": 57.78,
+      "total": 96.66
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Does not support increment/decrement, either via buttons in UI or via arrow up & down keys.",
+      "2": "UI widget does not take the \"step\", \"min\" or \"max\" attributes into account.",
+      "3": "Firefox doesn't support [autocomplete content via datalist](https://codepen.io/graste/pen/bNoVKW) elements.",
+      "4": "Does not include increment/decrement buttons, but does support increment/decrement via arrow up & down keys."
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "input-number"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "input-number",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.max",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.min",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.step",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.stepDown",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.stepUp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.valueAsNumber",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.max",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.min",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.step",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.type_number",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=input-number"
+}

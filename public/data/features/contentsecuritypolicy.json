@@ -1,0 +1,378 @@
+{
+  "id": "contentsecuritypolicy",
+  "source": "caniuse",
+  "name": "Content Security Policy 1.0",
+  "description": "Mitigate cross-site scripting attacks by only allowing certain sources of script, style, and other resources.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Content-Security-Policy-Report-Only",
+  "links": [
+    {
+      "url": "https://www.html5rocks.com/en/tutorials/security/content-security-policy/",
+      "title": "HTML5Rocks article"
+    },
+    {
+      "url": "https://content-security-policy.com/",
+      "title": "CSP Examples & Quick Reference"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP",
+      "title": "MDN Web Docs - Content Security Policy"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "25"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "23"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "7"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "7.0-7.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.46,
+      "partial": 0.3,
+      "total": 96.76
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "The standard HTTP header is `Content-Security-Policy` which is used unless otherwise noted.",
+    "byNum": {
+      "1": "Supported through the `X-Content-Security-Policy` header",
+      "2": "Supported through the `X-WebKit-CSP` header"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "contentsecuritypolicy"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "csp",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.securitypolicyviolation_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.securitypolicyviolation_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.nonce",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLIFrameElement.csp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SecurityPolicyViolationEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SecurityPolicyViolationEvent.SecurityPolicyViolationEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SecurityPolicyViolationEvent.blockedURI",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SecurityPolicyViolationEvent.columnNumber",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SecurityPolicyViolationEvent.disposition",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SecurityPolicyViolationEvent.documentURI",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SecurityPolicyViolationEvent.effectiveDirective",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SecurityPolicyViolationEvent.lineNumber",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SecurityPolicyViolationEvent.originalPolicy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SecurityPolicyViolationEvent.referrer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SecurityPolicyViolationEvent.sample",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SecurityPolicyViolationEvent.sourceFile",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SecurityPolicyViolationEvent.statusCode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SecurityPolicyViolationEvent.violatedDirective",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SecurityPolicyViolationEvent.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerGlobalScope.securitypolicyviolation_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.csp",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.meta.http-equiv.content-security-policy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.global_attributes.nonce",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.global_attributes.nonce.nonce_hiding",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.base-uri",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.child-src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.connect-src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.default-src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.font-src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.form-action",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.frame-ancestors",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.frame-src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.img-src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.manifest-src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.media-src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.meta-element-support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.object-src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.report-sample",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.report-to",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.sandbox",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.script-src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.script-src.external_scripts",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.script-src.wasm-unsafe-eval",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.script-src-attr",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.script-src-elem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.strict-dynamic",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.style-src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.style-src-attr",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.style-src-elem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.unsafe-hashes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.worker-src",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy-Report-Only",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=contentsecuritypolicy"
+}

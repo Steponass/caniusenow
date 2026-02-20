@@ -1,0 +1,78 @@
+{
+  "id": "wf-private-click-measurement",
+  "source": "webfeatures",
+  "name": "Private click measurement",
+  "description": "The attributionsourceid and attributiondestination attributes for <a> elements measure clicks across websites without associating a click to a specific session. Not to be confused with attribution reporting. Also known as PCM.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "saf": {
+      "current": "y",
+      "firstFull": "15.4"
+    },
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.4"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 13.19,
+      "partial": 0,
+      "total": 13.19
+    },
+    "byBrowser": {
+      "desktop": {
+        "saf": 1.37
+      },
+      "mobile": {
+        "ios_saf": 11.82
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "private-click-measurement"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAnchorElement.attributionSourceId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.a.attributionsourceid",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-private-click-measurement"
+}

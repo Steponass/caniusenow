@@ -1,0 +1,135 @@
+{
+  "id": "picture",
+  "source": "caniuse",
+  "name": "Picture element",
+  "description": "A responsive images method to control which image resource a user agent presents to a user, based on resolution, media query and/or support for a particular image format",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/picture",
+  "links": [
+    {
+      "url": "https://responsiveimages.org/demos/",
+      "title": "Demo"
+    },
+    {
+      "url": "https://code.tutsplus.com/tutorials/better-responsive-images-with-the-picture-element--net-36583",
+      "title": "Tutorial"
+    },
+    {
+      "url": "https://usecases.responsiveimages.org/",
+      "title": "Read about the use cases"
+    },
+    {
+      "url": "https://responsiveimages.org/",
+      "title": "General information about Responsive Images"
+    },
+    {
+      "url": "https://dev.opera.com/articles/responsive-images/",
+      "title": "Blog post on usage"
+    },
+    {
+      "url": "https://www.html5rocks.com/tutorials/responsive/picture-element/",
+      "title": "HTML5 Rocks tutorial"
+    },
+    {
+      "url": "https://github.com/scottjehl/picturefill",
+      "title": "Picturefill - polyfill for picture, srcset, sizes, and more"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "38"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "38"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "9.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "13"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "25"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "9.3"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.35,
+      "partial": 0,
+      "total": 96.35
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Enabled in Chrome through the \"experimental Web Platform features\" flag in chrome://flags",
+      "2": "Enabled in Opera through the \"experimental Web Platform features\" flag in opera://flags",
+      "3": "Enabled in Firefox by setting the about:config preference dom.image.picture.enable to true"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "picture"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "picture",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLPictureElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.picture",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=picture"
+}

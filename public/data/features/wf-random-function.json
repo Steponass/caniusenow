@@ -1,0 +1,73 @@
+{
+  "id": "wf-random-function",
+  "source": "webfeatures",
+  "name": "random()",
+  "description": "The random() CSS function chooses a random numeric value within a specified range. This allows for dynamic, randomized styling using CSS.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "saf": {
+      "current": "y",
+      "firstFull": "26.2"
+    },
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "26.2"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0.35,
+      "partial": 0,
+      "total": 0.35
+    },
+    "byBrowser": {
+      "desktop": {
+        "saf": 0.09
+      },
+      "mobile": {
+        "ios_saf": 0.26
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "random-function"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.types.random",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-random-function"
+}

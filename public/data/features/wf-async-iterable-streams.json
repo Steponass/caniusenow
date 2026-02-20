@@ -1,0 +1,89 @@
+{
+  "id": "wf-async-iterable-streams",
+  "source": "webfeatures",
+  "name": "Asynchronously iterable streams",
+  "description": "Asynchronous iteration of a stream allows you to use for await … of loops to iterate through a stream's incoming data.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/asyncIterator",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "124"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "110"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "124"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "124"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "124"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "124"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "124"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "110"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 73.43,
+      "partial": 0,
+      "total": 73.43
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 22.3,
+        "ffx": 1.75,
+        "edg": 4.18,
+        "opr": 0.78
+      },
+      "mobile": {
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "async-iterable-streams"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream.@@asyncIterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream.values",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-async-iterable-streams"
+}

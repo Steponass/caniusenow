@@ -1,0 +1,88 @@
+{
+  "id": "mutation-events",
+  "source": "caniuse",
+  "name": "Mutation events",
+  "description": "Deprecated mechanism for listening to changes made to the DOM, replaced by Mutation Observers.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/MutationEvent",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/MutationEvent",
+      "title": "MDN Web Docs - MutationEvent"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n",
+      "firstFull": "11.6"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 21.44,
+      "total": 21.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "opr": 0.91
+      },
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Mutation events are deprecated and have been removed from the spec as of 2024-09-07. Instead see support for [Mutation Observer](/mutationobserver), which replaces mutation events and does not have the same performance drawbacks.",
+    "byNum": {
+      "1": "Does not support `DOMAttrModified`",
+      "2": "Does not support `DOMNodeInsertedIntoDocument` & `DOMNodeRemovedFromDocument`"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "mutation-events"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "mutation-events",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MutationEvent",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=mutation-events"
+}

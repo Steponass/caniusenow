@@ -1,0 +1,108 @@
+{
+  "id": "wf-media-capabilities",
+  "source": "webfeatures",
+  "name": "Media capabilities",
+  "description": "The navigator.mediaCapabilities API queries the encoding and decoding abilities of the device, such as supported codecs, resolutions, and bitrates.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WorkerNavigator/mediaCapabilities",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "101"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "63"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "15.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "101"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "101"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "101"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "101"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "101"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "63"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.27,
+      "partial": 0,
+      "total": 91.27
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.86,
+        "ffx": 1.75,
+        "saf": 1.37,
+        "edg": 4.25,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.82,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "media-capabilities"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaCapabilities",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaCapabilities.decodingInfo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaCapabilities.encodingInfo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.mediaCapabilities",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.mediaCapabilities",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-media-capabilities"
+}

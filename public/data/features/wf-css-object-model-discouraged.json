@@ -1,0 +1,189 @@
+{
+  "id": "wf-css-object-model-discouraged",
+  "source": "webfeatures",
+  "name": "CSS object model (DOM level 2)",
+  "description": "The DOM level 2 style specification defined interfaces to access and modify CSS styles, such as CSSValue and CSSPrimitiveValue, that were later excluded from the CSS object model.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/CSSValueList/length",
+  "links": [],
+  "support": {
+    "saf": {
+      "current": "y",
+      "firstFull": "10"
+    },
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 13.63,
+      "partial": 0,
+      "total": 13.63
+    },
+    "byBrowser": {
+      "desktop": {
+        "saf": 1.42
+      },
+      "mobile": {
+        "ios_saf": 12.21
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "css-object-model-discouraged"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPrimitiveValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPrimitiveValue.getCounterValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPrimitiveValue.getFloatValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPrimitiveValue.getRGBColorValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPrimitiveValue.getRectValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPrimitiveValue.getStringValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPrimitiveValue.primitiveType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPrimitiveValue.setFloatValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSPrimitiveValue.setStringValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSValue.cssText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSValue.cssValueType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSValueList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSValueList.item",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSValueList.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Counter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Counter.identifier",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Counter.listStyle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Counter.separator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Rect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Rect.bottom",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Rect.left",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Rect.right",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Rect.top",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-css-object-model-discouraged"
+}

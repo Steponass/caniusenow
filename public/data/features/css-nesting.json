@@ -1,0 +1,143 @@
+{
+  "id": "css-nesting",
+  "source": "caniuse",
+  "name": "CSS Nesting",
+  "description": "CSS nesting provides the ability to nest one style rule inside another, with the selector of the child rule relative to the selector of the parent rule. Similar behavior previously required a CSS pre-processor.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Selectors/Nesting_selector",
+  "links": [
+    {
+      "url": "https://bugs.chromium.org/p/chromium/issues/detail?id=1095675",
+      "title": "Chrome support bug"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1648037",
+      "title": "Firefox support bug"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=223497",
+      "title": "Safari support bug"
+    },
+    {
+      "url": "https://kilianvalkhof.com/2021/css-html/css-nesting-specificity-and-you/",
+      "title": "Blog post: CSS Nesting, specificity and you"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "120"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "117"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "17.2"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "120"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "106"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "25"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 86.4,
+      "partial": 4.31,
+      "total": 90.71
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 22.88,
+        "ffx": 1.6,
+        "saf": 0.98,
+        "edg": 4.21,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.92,
+        "an_chr": 44.12,
+        "smsg": 1.87,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Available behind the [Experimental Web Platform features](chrome://flags/#enable-experimental-web-platform-features) flag",
+      "2": "Available behind the `layout.css.nesting.enabled` flag",
+      "3": "Does not allow nesting of type (element) selectors without starting with a symbol, like the `&` nesting selector. [Chromium issue](https://bugs.chromium.org/p/chromium/issues/detail?id=1427259)"
+    }
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-nesting"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "nesting",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNestedDeclarations",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSNestedDeclarations.style",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleRule.cssRules",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleRule.deleteRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSStyleRule.insertRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.nesting",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=css-nesting"
+}

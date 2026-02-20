@@ -1,0 +1,113 @@
+{
+  "id": "background-clip-text",
+  "source": "caniuse",
+  "name": "Background-clip: text",
+  "description": "Clipping a background image to the foreground text.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/background-clip",
+  "links": [
+    {
+      "url": "https://lists.w3.org/Archives/Public/www-style/2016Mar/0283.html",
+      "title": "[css-backgrounds] Standardize 'background-clip: text'"
+    },
+    {
+      "url": "https://drafts.csswg.org/css-backgrounds-4/#background-clip",
+      "title": "CSS Backgrounds and Borders Module Level 4"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip",
+      "title": "MDN Web Docs - background-clip"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "49"
+    },
+    "saf": {
+      "current": "u"
+    },
+    "edg": {
+      "current": "u",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "u"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "25"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 95.84,
+      "partial": 0.51,
+      "total": 96.35
+    },
+    "byBrowser": {
+      "desktop": {
+        "ffx": 1.76,
+        "edg": 4.26
+      },
+      "mobile": {
+        "smsg": 1.87,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Firefox and legacy Edge also support this property with the `-webkit-` prefix.",
+    "byNum": {
+      "1": "Doesn't work with a stacking context (e.g. `position: relative`), see [Chromium bug](https://crbug.com/1500148)",
+      "2": "Doesn't work with flex/grid container, see [WebKit bug](https://bugs.webkit.org/show_bug.cgi?id=169125)"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "background-clip-text"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "background-clip",
+        "matched": "exact"
+      },
+      {
+        "source": "webfeatures",
+        "id": "background-clip-text",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.background-clip",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.background-clip.text",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=background-clip-text"
+}

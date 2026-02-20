@@ -1,0 +1,90 @@
+{
+  "id": "font-smooth",
+  "source": "caniuse",
+  "name": "CSS font-smooth",
+  "description": "Controls the application of anti-aliasing when fonts are rendered.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/font-smooth",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth",
+      "title": "MDN Web Docs - font-smooth"
+    },
+    {
+      "url": "https://www.w3.org/TR/WD-font/#font-smooth",
+      "title": "Old version of W3C recommendation containing font-smooth"
+    },
+    {
+      "url": "https://github.com/whatwg/compat/issues/115",
+      "title": "WHATWG compat issue to spec `-webkit-font-smoothing: antialiased`"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "u"
+    },
+    "edg": {
+      "current": "u"
+    },
+    "opr": {
+      "current": "u"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 38.29,
+      "total": 38.29
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Though present in early (2002) drafts of CSS3 Fonts, `font-smooth` has been removed from this specification and is currently not on the standard track.",
+    "byNum": {
+      "1": "WebKit implements something similar with a different name `-webkit-font-smoothing` and different values: `none`, `antialiased` and `subpixel-antialiased`.",
+      "2": "Firefox implements something similar with a different name `-moz-osx-font-smoothing` and different values: `auto`, `inherit`, `unset`, `grayscale`.",
+      "3": "Works only on Mac OS X platform.",
+      "4": "Firefox 128 and later supports `-webkit-font-smoothing: antialiased` (by mapping to `-moz-osx-font-smoothing: grayscale`)"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "font-smooth"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-smooth",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=font-smooth"
+}

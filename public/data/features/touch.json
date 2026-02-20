@@ -1,0 +1,285 @@
+{
+  "id": "touch",
+  "source": "caniuse",
+  "name": "Touch events",
+  "description": "Method of registering when, where and how the interface is touched, for devices with a touch screen. These DOM events are similar to mousedown, mousemove, etc.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/TouchList/length",
+  "links": [
+    {
+      "url": "https://www.quirksmode.org/mobile/tableTouch.html",
+      "title": "Detailed support tables"
+    },
+    {
+      "url": "https://www.quirksmode.org/m/tests/drag2.html",
+      "title": "Multi-touch demo"
+    },
+    {
+      "url": "http://schepers.cc/getintouch",
+      "title": "Information on the spec development"
+    },
+    {
+      "url": "https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/dev-guides/hh673557(v=vs.85)",
+      "title": "Internet Explorer's gesture and touch implementation."
+    },
+    {
+      "url": "https://github.com/CamHenlin/TouchPolyfill",
+      "title": "Touch polyfill for supporting touch events on Internet Explorer"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Touch_events",
+      "title": "MDN – Touch events"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "22"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "18",
+      "firstPartial": "4"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "3.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.58,
+      "partial": 0.1,
+      "total": 94.68
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.85,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Internet Explorer implements Pointer Events specification which supports more input devices than Touch Events one.\r\n\r\nThere is a library on GitHub that is working toward bringing W3C touch events to IE 10 and 11: https://github.com/CamHenlin/TouchPolyfill \r\n\r\nRemoved support in Firefox refers to desktop Firefox only.",
+    "byNum": {
+      "1": "Can be enabled in Firefox using the dom.w3c_touch_events.enabled flag (disabled by default for site compatibility reasons)",
+      "2": "Supported on IE11 Mobile for phones with \"[Windows Phone 8.1 Update](http://blogs.msdn.com/b/ie/archive/2014/07/31/the-mobile-web-should-just-work-for-everyone.aspx)\"",
+      "3": "Can be enabled in Edge using the \"Enable touch events\" flag under `about:flags`"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "touch"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "touch-events",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.touchcancel_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.touchend_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.touchmove_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.touchstart_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Touch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Touch.Touch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Touch.altitudeAngle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Touch.azimuthAngle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Touch.clientX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Touch.clientY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Touch.force",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Touch.identifier",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Touch.pageX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Touch.pageY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Touch.radiusX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Touch.radiusY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Touch.rotationAngle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Touch.screenX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Touch.screenY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Touch.target",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Touch.touchType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TouchEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TouchEvent.TouchEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TouchEvent.altKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TouchEvent.changedTouches",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TouchEvent.ctrlKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TouchEvent.metaKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TouchEvent.shiftKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TouchEvent.targetTouches",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TouchEvent.touches",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TouchList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TouchList.item",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TouchList.length",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=touch"
+}

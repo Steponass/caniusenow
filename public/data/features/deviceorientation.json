@@ -1,0 +1,235 @@
+{
+  "id": "deviceorientation",
+  "source": "caniuse",
+  "name": "DeviceOrientation & DeviceMotion events",
+  "description": "API for detecting orientation and motion events from the device running the browser.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/deviceorientationabsolute_event",
+  "links": [
+    {
+      "url": "https://www.html5rocks.com/en/tutorials/device/orientation/",
+      "title": "HTML5 Rocks tutorial"
+    },
+    {
+      "url": "https://raw.github.com/phiggins42/has.js/master/detect/features.js#native-orientation",
+      "title": "has.js test"
+    },
+    {
+      "url": "http://html5labs.interoperabilitybridges.com/prototypes/device-orientation-events/device-orientation-events/info",
+      "title": "DeviceOrientation implementation prototype for IE10"
+    },
+    {
+      "url": "https://audero.it/demo/device-orientation-api-demo.html",
+      "title": "Demo"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "a",
+      "firstPartial": "7"
+    },
+    "ffx": {
+      "current": "a",
+      "firstPartial": "6"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "a",
+      "firstFull": "12",
+      "firstPartial": "79"
+    },
+    "opr": {
+      "current": "a",
+      "firstPartial": "15"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "a",
+      "firstPartial": "4.2-4.3"
+    },
+    "an_chr": {
+      "current": "a",
+      "firstPartial": "144"
+    },
+    "smsg": {
+      "current": "a",
+      "firstPartial": "4"
+    },
+    "an_ff": {
+      "current": "a",
+      "firstPartial": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 94.98,
+      "total": 94.98
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.82,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Partial support refers to the lack of compassneedscalibration event. Partial support also refers to the lack of devicemotion event support for Chrome 30- and Opera. Opera Mobile 14 lost the ondevicemotion event support. Firefox 3.6, 4 and 5 support the non-standard [MozOrientation](https://developer.mozilla.org/en/DOM/MozOrientation) event.",
+    "byNum": {
+      "1": "`compassneedscalibration` supported in IE11 only for compatible devices with Windows 8.1+."
+    }
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "deviceorientation"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "device-orientation-events",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceMotionEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceMotionEvent.DeviceMotionEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceMotionEvent.acceleration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceMotionEvent.accelerationIncludingGravity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceMotionEvent.interval",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceMotionEvent.requestPermission_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceMotionEvent.rotationRate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceMotionEventAcceleration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceMotionEventAcceleration.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceMotionEventAcceleration.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceMotionEventAcceleration.z",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceMotionEventRotationRate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceMotionEventRotationRate.alpha",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceMotionEventRotationRate.beta",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceMotionEventRotationRate.gamma",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceOrientationEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceOrientationEvent.DeviceOrientationEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceOrientationEvent.absolute",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceOrientationEvent.alpha",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceOrientationEvent.beta",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceOrientationEvent.gamma",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeviceOrientationEvent.requestPermission_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.devicemotion_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.deviceorientation_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.deviceorientationabsolute_event",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=deviceorientation"
+}

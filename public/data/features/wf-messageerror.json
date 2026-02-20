@@ -1,0 +1,113 @@
+{
+  "id": "wf-messageerror",
+  "source": "webfeatures",
+  "name": "messageerror",
+  "description": "The messageerror event fires on a target, such as a window or worker, when an incoming message cannot be deserialized. This event can fire for many types of messages, such as cross-document messages or broadcast channel messages.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Worker/messageerror_event",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "60"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "57"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "16.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "18"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "60"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "18"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "60"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "60"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "57"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.13,
+      "partial": 0,
+      "total": 91.13
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.21,
+        "ffx": 1.75,
+        "saf": 1.23,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.35,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "messageerror"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.DedicatedWorkerGlobalScope.messageerror_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MessagePort.messageerror_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerContainer.messageerror_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.messageerror_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.messageerror_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Worker.messageerror_event",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-messageerror"
+}

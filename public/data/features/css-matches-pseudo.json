@@ -1,0 +1,128 @@
+{
+  "id": "css-matches-pseudo",
+  "source": "caniuse",
+  "name": ":is() CSS pseudo-class",
+  "description": "The `:is()` (formerly `:matches()`, formerly `:any()`) pseudo-class checks whether the element at its position in the outer selector matches any of the selectors in its selector list. It's useful syntactic sugar that allows you to avoid writing out all the combinations manually as separate selectors. The effect is similar to nesting in Sass and most other CSS preprocessors.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Selectors/:is",
+  "links": [
+    {
+      "url": "https://webkit.org/blog/3615/css-selectors-inside-selectors-discover-matches-not-and-nth-child/",
+      "title": "WebKit blog post about adding `:matches()` and other Selectors Level 4 features"
+    },
+    {
+      "url": "https://bugs.chromium.org/p/chromium/issues/detail?id=568705",
+      "title": "Chrome support bug for :is()"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/:is",
+      "title": "MDN Web Docs - CSS :is()"
+    },
+    {
+      "url": "https://codepen.io/atjn/full/MWKErBe",
+      "title": "Codepen - Modern tests"
+    },
+    {
+      "url": "https://output.jsbin.com/lehina",
+      "title": "JS Bin - Legacy tests"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "88"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "78"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "14"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "88"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "75"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14.0-14.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "15.0"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 95.19,
+      "partial": 1.27,
+      "total": 96.46
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.97,
+        "ffx": 1.75,
+        "saf": 1.4,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.89,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Only supports the deprecated `:-webkit-any()` pseudo-class",
+      "2": "Only supports the deprecated `:-webkit-any()` and `:matches()` pseudo-classes",
+      "3": "Only supports the deprecated `:-moz-any()` pseudo-class.",
+      "4": "Support for `:is()` can be enabled with the `Experimental Web Platform features` flag"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-matches-pseudo"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "is",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.is",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.is.forgiving_selector_list",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=css-matches-pseudo"
+}

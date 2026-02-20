@@ -1,0 +1,77 @@
+{
+  "id": "wf-wasm-simd-relaxed",
+  "source": "webfeatures",
+  "name": "Relaxed-width SIMD (WebAssembly)",
+  "description": "Relaxed SIMD (Single Instruction Multiple Data) introduces local non-determinism, where the results of the instructions may vary based on hardware support.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "146"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "146"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 73.61,
+      "partial": 0,
+      "total": 73.61
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 23.41,
+        "ffx": 0.77,
+        "edg": 4.21,
+        "opr": 0.79
+      },
+      "mobile": {
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "wasm-simd-relaxed"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-wasm-simd-relaxed"
+}

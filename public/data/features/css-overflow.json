@@ -1,0 +1,202 @@
+{
+  "id": "css-overflow",
+  "source": "caniuse",
+  "name": "CSS overflow property",
+  "description": "Originally a single property for controlling overflowing content in both horizontal & vertical directions, the `overflow` property is now a shorthand for `overflow-x` & `overflow-y`. The latest version of the specification also introduces the `clip` value that blocks programmatic scrolling.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/overflow_value",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow",
+      "title": "CSS overflow on MDN"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=184691",
+      "title": "WebKit bug on support for two values syntax"
+    },
+    {
+      "url": "https://web.archive.org/web/20190401105108/https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/16993428/",
+      "title": "Edge bug on support for two values syntax"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=198230",
+      "title": "WebKit bug on support for clip value"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "90"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "81"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "16.0"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "90"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "76"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.0"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "15.0"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.15,
+      "partial": 2.74,
+      "total": 96.89
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.96,
+        "ffx": 1.75,
+        "saf": 1.27,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.52,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Effectively all browsers support the CSS 2.1 definition for single-value `overflow` as well as `overflow-x` & `overflow-y` and values `visible`, `hidden`, `scroll` & `auto`",
+    "byNum": {
+      "1": "Does not support the two value `overflow` shorthand",
+      "2": "Does not support the `clip` value"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-overflow"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "overflow",
+        "matched": "exact"
+      },
+      {
+        "source": "webfeatures",
+        "id": "overflow-shorthand",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow.hidden",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow.multiple_keywords",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow.scroll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow.visible",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow-x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow-x.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow-x.hidden",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow-x.scroll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow-x.visible",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow-y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow-y.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow-y.hidden",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow-y.scroll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow-y.visible",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.overflow",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=css-overflow"
+}

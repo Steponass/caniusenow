@@ -1,0 +1,88 @@
+{
+  "id": "wf-linear-easing",
+  "source": "webfeatures",
+  "name": "linear() easing",
+  "description": "The linear() easing function for animations and transitions interpolates linearly between the control points, and can be used to approximate complex easing functions, such as a bounce effect.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/easing-function/linear",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "113"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "112"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "17.2"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "113"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "113"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "113"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "113"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "113"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "112"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 86.49,
+      "partial": 0,
+      "total": 86.49
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 23.42,
+        "ffx": 1.75,
+        "saf": 0.98,
+        "edg": 4.21,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.92,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "linear-easing"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.types.easing-function.linear-function",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-linear-easing"
+}

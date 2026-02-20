@@ -1,0 +1,113 @@
+{
+  "id": "wf-check-visibility",
+  "source": "webfeatures",
+  "name": "checkVisibility()",
+  "description": "The checkVisibility() method checks if an element is potentially visible, with optional parameters for the kinds of visibility to check. For example, it checks whether the element has the style display: none, but can also check for visibility: hidden.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Element/checkVisibility",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "105"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "106"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "17.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "105"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "105"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "105"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "105"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "105"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "106"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.7,
+      "partial": 0,
+      "total": 89.7
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.67,
+        "ffx": 1.75,
+        "saf": 0.96,
+        "edg": 4.25,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.86,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "check-visibility"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.checkVisibility",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.checkVisibility.options_checkOpacity_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.checkVisibility.options_checkVisibilityCSS_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.checkVisibility.options_contentVisibilityAuto_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.checkVisibility.options_opacityProperty_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.checkVisibility.options_visibilityProperty_parameter",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-check-visibility"
+}

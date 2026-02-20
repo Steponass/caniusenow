@@ -1,0 +1,108 @@
+{
+  "id": "wf-forced-colors",
+  "source": "webfeatures",
+  "name": "Forced colors",
+  "description": "The forced-colors CSS @media rule detects when a user has chosen to use a forced colors mode, also known as high-contrast mode, and the forced-color-adjust CSS property sets whether forced colors apply to an element.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/forced-color-adjust",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "89"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "89"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "16"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "89"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "89"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "89"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "89"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.1,
+      "partial": 0,
+      "total": 91.1
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.96,
+        "ffx": 1.75,
+        "saf": 1.27,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.52,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "forced-colors"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.media.forced-colors",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.forced-color-adjust",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.forced-color-adjust.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.forced-color-adjust.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.forced-color-adjust.preserve-parent-color",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-forced-colors"
+}

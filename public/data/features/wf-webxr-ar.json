@@ -1,0 +1,90 @@
+{
+  "id": "wf-webxr-ar",
+  "source": "webfeatures",
+  "name": "Augmented reality",
+  "description": "The \"immersive-ar\" value for navigator.xr.requestSession() starts an augmented reality WebXR session that renders content aligned with the visible environment.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/XRView/isFirstPersonObserver",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "86"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "86"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "86"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "86"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "86"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "86"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.29,
+      "partial": 0,
+      "total": 76.29
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webxr-ar"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.XRSession.environmentBlendMode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRSession.interactionMode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRView.isFirstPersonObserver",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-webxr-ar"
+}

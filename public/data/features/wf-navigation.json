@@ -1,0 +1,377 @@
+{
+  "id": "wf-navigation",
+  "source": "webfeatures",
+  "name": "Navigation API",
+  "description": "The navigation API initiates, intercepts, or modifies browser navigation actions. Not to be confused with the navigator API.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/navigation",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "102"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "147"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "26.2"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "102"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "102"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "102"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "26.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "102"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "102"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.66,
+      "partial": 0,
+      "total": 76.66
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.85,
+        "saf": 0.09,
+        "edg": 4.25,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 0.26,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "navigation"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.NavigateEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.canIntercept",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.destination",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.downloadRequest",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.formData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.hasUAVisualTransition",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.hashChange",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.info",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.intercept",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.navigationType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.scroll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.signal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigateEvent.userInitiated",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.activation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.back",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.canGoBack",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.canGoForward",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.currentEntry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.currententrychange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.forward",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.navigate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.navigate_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.navigateerror_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.navigatesuccess_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.reload",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.transition",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.traverseTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigation.updateCurrentEntry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationActivation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationActivation.entry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationActivation.from",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationActivation.navigationType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationCurrentEntryChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationCurrentEntryChangeEvent.NavigationCurrentEntryChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationCurrentEntryChangeEvent.from",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationCurrentEntryChangeEvent.navigationType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationDestination",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationDestination.getState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationDestination.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationDestination.index",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationDestination.key",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationDestination.sameDocument",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationDestination.url",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationHistoryEntry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationHistoryEntry.dispose_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationHistoryEntry.getState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationHistoryEntry.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationHistoryEntry.index",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationHistoryEntry.key",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationHistoryEntry.sameDocument",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationHistoryEntry.url",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationTransition",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationTransition.finished",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationTransition.from",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationTransition.navigationType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.navigation",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-navigation"
+}

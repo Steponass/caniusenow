@@ -1,0 +1,130 @@
+{
+  "id": "css3-boxsizing",
+  "source": "caniuse",
+  "name": "CSS3 Box-sizing",
+  "description": "Method of specifying whether or not an element's borders and padding should be included in size units",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/box-sizing",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/En/CSS/Box-sizing",
+      "title": "MDN Web Docs - CSS box-sizing"
+    },
+    {
+      "url": "https://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/",
+      "title": "Blog post"
+    },
+    {
+      "url": "https://github.com/Schepp/box-sizing-polyfill",
+      "title": "Polyfill for IE"
+    },
+    {
+      "url": "https://css-tricks.com/box-sizing/",
+      "title": "CSS Tricks"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/css/properties/box-sizing",
+      "title": "WebPlatform Docs"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "2"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "3.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "9.5-9.6"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "8"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "3.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.89,
+      "partial": 0,
+      "total": 96.89
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.85,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.43
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Firefox versions before 57 also supported the `padding-box` value for `box-sizing`, though this value was been removed from the specification and later versions of the browser.",
+    "byNum": {}
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css3-boxsizing"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "box-sizing",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.box-sizing",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.box-sizing.border-box",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.box-sizing.content-box",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=css3-boxsizing"
+}

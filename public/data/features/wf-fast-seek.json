@@ -1,0 +1,78 @@
+{
+  "id": "wf-fast-seek",
+  "source": "webfeatures",
+  "name": "fastSeek()",
+  "description": "The fastSeek() method seeks an <audio> or <video> element as fast as possible, by seeking to a keyframe instead of exactly the requested time.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/fastSeek",
+  "links": [],
+  "support": {
+    "ffx": {
+      "current": "y",
+      "firstFull": "31"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "8"
+    },
+    "chr": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "8"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "31"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 15.72,
+      "partial": 0,
+      "total": 15.72
+    },
+    "byBrowser": {
+      "desktop": {
+        "ffx": 1.77,
+        "saf": 1.42
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "fast-seek"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.fastSeek",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-fast-seek"
+}

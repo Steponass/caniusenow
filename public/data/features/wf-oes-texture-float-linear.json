@@ -1,0 +1,89 @@
+{
+  "id": "wf-oes-texture-float-linear",
+  "source": "webfeatures",
+  "name": "OES_texture_float_linear WebGL extension",
+  "description": "The OES_texture_float_linear extension for WebGL 1.0 and 2.0 contexts adds linear filtering with floating-point pixel types for textures.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/OES_texture_float_linear",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "29"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "24"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "8"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "29"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "8"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "29"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "29"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "24"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.05,
+      "partial": 0,
+      "total": 94.05
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "an_chr": 44.12,
+        "smsg": 1.63,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "oes-texture-float-linear"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.OES_texture_float_linear",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-oes-texture-float-linear"
+}

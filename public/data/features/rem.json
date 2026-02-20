@@ -1,0 +1,110 @@
+{
+  "id": "rem",
+  "source": "caniuse",
+  "name": "rem (root em) units",
+  "description": "Type of unit similar to `em`, but relative only to the root element, not any parent element. Thus compounding does not occur as it does with `em` units.",
+  "category": "CSS",
+  "links": [
+    {
+      "url": "https://snook.ca/archives/html_and_css/font-size-with-rem",
+      "title": "Article on usage"
+    },
+    {
+      "url": "https://github.com/chuckcarpenter/REM-unit-polyfill",
+      "title": "REM Polyfill"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "3.6"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "5"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "11.6"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "11"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "4.0-4.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.79,
+      "partial": 0.07,
+      "total": 96.86
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.85,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.36
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "IE 9 & IE 10 do not support `rem` units when used in the `font` shorthand property (the entire declaration is ignored) or when used on pseudo elements.",
+      "2": "iOS Safari 5.0-5.1 support `rem` but not in combination with media queries."
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "rem"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "rem",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.length.rem",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=rem"
+}

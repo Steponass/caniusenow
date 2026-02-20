@@ -1,0 +1,88 @@
+{
+  "id": "link-rel-prerender",
+  "source": "caniuse",
+  "name": "Resource Hints: prerender",
+  "description": "Gives a hint to the browser to render the specified page in the background, speeding up page load if the user navigates to it. This is indicated using `<link rel=\"prerender\" href=\"(url)\">`",
+  "category": "Other",
+  "links": [
+    {
+      "url": "https://msdn.microsoft.com/en-us/library/dn265039(v=vs.85).aspx",
+      "title": "Prerender and prefetch support"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=730101",
+      "title": "Firefox implementation bug"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "13"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "11"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 80.4,
+      "partial": 0,
+      "total": 80.4
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.36
+      },
+      "mobile": {
+        "an_chr": 44.12,
+        "smsg": 1.93
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Chrome treats the prerender hint as a [NoState Prefetch](https://developers.google.com/web/updates/2018/07/nostate-prefetch) instead, and unlike a full prerender it won't execute JavaScript or render any part of the page in advance.",
+    "byNum": {}
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "link-rel-prerender"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=link-rel-prerender"
+}

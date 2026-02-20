@@ -1,0 +1,212 @@
+{
+  "id": "wf-non-cookie-storage-access",
+  "source": "webfeatures",
+  "name": "Non-cookie storage access",
+  "description": "Non-cookie storage access extends the requestStorageAccess() API to let content in cross-site iframes request access to first-party data beyond cookies.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/sessionStorage",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "125"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "125"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "125"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "125"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 66.5,
+      "partial": 0,
+      "total": 66.5
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 22.16,
+        "opr": 0.22
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "non-cookie-storage-access"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.hasUnpartitionedCookieAccess",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.requestStorageAccess.types_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.requestStorageAccess.types_parameter.types_BroadcastChannel_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.requestStorageAccess.types_parameter.types_SharedWorker_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.requestStorageAccess.types_parameter.types_all_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.requestStorageAccess.types_parameter.types_caches_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.requestStorageAccess.types_parameter.types_cookies_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.requestStorageAccess.types_parameter.types_createObjectURL_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.requestStorageAccess.types_parameter.types_estimate_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.requestStorageAccess.types_parameter.types_getDirectory_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.requestStorageAccess.types_parameter.types_indexedDB_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.requestStorageAccess.types_parameter.types_localStorage_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.requestStorageAccess.types_parameter.types_locks_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.requestStorageAccess.types_parameter.types_revokeObjectURL_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.requestStorageAccess.types_parameter.types_sessionStorage_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedWorker.SharedWorker.options_sameSiteCookies_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StorageAccessHandle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StorageAccessHandle.BroadcastChannel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StorageAccessHandle.SharedWorker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StorageAccessHandle.caches",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StorageAccessHandle.createObjectURL",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StorageAccessHandle.estimate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StorageAccessHandle.getDirectory",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StorageAccessHandle.indexedDB",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StorageAccessHandle.localStorage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StorageAccessHandle.locks",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StorageAccessHandle.revokeObjectURL",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.StorageAccessHandle.sessionStorage",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-non-cookie-storage-access"
+}

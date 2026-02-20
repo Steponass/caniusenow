@@ -1,0 +1,88 @@
+{
+  "id": "wf-url-canparse",
+  "source": "webfeatures",
+  "name": "URL.canParse()",
+  "description": "The URL.canParse() static method checks whether a URL can be parsed into a valid URL object. It's an alternative to calling new URL() in a try … catch statement.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/URL/canParse_static",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "120"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "115"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "17"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "120"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "120"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "120"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "120"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "120"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "115"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 86.1,
+      "partial": 0,
+      "total": 86.1
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 22.88,
+        "ffx": 1.75,
+        "saf": 1.07,
+        "edg": 4.21,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.97,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "url-canparse"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.URL.canParse_static",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-url-canparse"
+}

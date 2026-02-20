@@ -1,0 +1,178 @@
+{
+  "id": "mathml",
+  "source": "caniuse",
+  "name": "MathML",
+  "description": "Special tags that allow mathematical formulas and notations to be written on web pages.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/math-style",
+  "links": [
+    {
+      "url": "https://en.wikipedia.org/wiki/MathML",
+      "title": "Wikipedia"
+    },
+    {
+      "url": "https://www.mathjax.org",
+      "title": "Cross-browser support script"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/MathML",
+      "title": "MDN Web Docs - MathML"
+    },
+    {
+      "url": "https://fred-wang.github.io/MathFonts/mozilla_mathml_test/",
+      "title": "MathML torture test"
+    },
+    {
+      "url": "https://mathml.igalia.com/project/",
+      "title": "MathML in Chromium Project Roadmap"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u",
+      "firstFull": "24"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "10"
+    },
+    "edg": {
+      "current": "u"
+    },
+    "opr": {
+      "current": "u"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "5.0-5.1"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "21"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 93.46,
+      "partial": 0,
+      "total": 93.46
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.85,
+        "saf": 1.42
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Support was added in Chrome 24, but temporarily removed afterwards due to instability.",
+    "byNum": {
+      "1": "Before version 4, Firefox only supports the XHTML notation",
+      "2": "Before version 10, Safari had issues rendering significant portions of the MathML torture test",
+      "3": "Can be enabled via the `#enable-experimental-web-platform-features` flag in `chrome://flags`",
+      "4": "Browsers based on Chromium 109+ specifically support [MathML Core](https://www.w3.org/TR/mathml-core/). While there is significant support overlap with other MathML implementations there are some differences ([see details](https://groups.google.com/a/chromium.org/g/blink-dev/c/n4zf_3FWmAA/m/oait3tsMAQAJ)).",
+      "5": "Opera's support is limited to a CSS profile of MathML"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "mathml"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "mathml",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MathMLElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MathMLElement.attributeStyleMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MathMLElement.blur",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MathMLElement.focus",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MathMLElement.nonce",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MathMLElement.style",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MathMLElement.tabIndex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.display.math",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-size.math",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.math-depth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.math-shift",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.math-style",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-transform.math-auto",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=mathml"
+}

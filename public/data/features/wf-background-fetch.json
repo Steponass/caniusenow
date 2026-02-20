@@ -1,0 +1,230 @@
+{
+  "id": "wf-background-fetch",
+  "source": "webfeatures",
+  "name": "Background fetch",
+  "description": "Background fetch downloads data in the background even when the web page is closed.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/backgroundFetch",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "74"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "74"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "74"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "74"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.43,
+      "partial": 0,
+      "total": 76.43
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.14,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "background-fetch"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchEvent.BackgroundFetchEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchEvent.registration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchManager",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchManager.fetch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchManager.get",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchManager.getIds",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRecord",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRecord.request",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRecord.responseReady",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.abort",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.downloadTotal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.downloaded",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.failureReason",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.match",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.matchAll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.progress_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.recordsAvailable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.result",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.uploadTotal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchRegistration.uploaded",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchUpdateUIEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchUpdateUIEvent.BackgroundFetchUpdateUIEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BackgroundFetchUpdateUIEvent.updateUI",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.backgroundfetchabort_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.backgroundfetchclick_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.backgroundfetchfail_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.backgroundfetchsuccess_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerRegistration.backgroundFetch",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-background-fetch"
+}
