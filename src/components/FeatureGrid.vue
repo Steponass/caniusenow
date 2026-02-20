@@ -96,12 +96,19 @@ function getStatusColor(usage: number): string {
   box-shadow: var(--shadow-elevation-3);
   cursor: pointer;
   transition: var(--transition-hover);
+  @media (hover: hover) {
+    &:hover {
+      box-shadow: var(--shadow-elevation-5);
+      transform: translateY(-2px);
+
+    }
+  }
+  &:active {
+    transform: translateY(1px);
+      box-shadow: var(--shadow-elevation-2);
+  }
 }
 
-.feature-card:hover {
-  box-shadow: var(--shadow-elevation-5);
-  transform: translateY(-2px);
-}
 
 .card-header {
   max-width: 100%;

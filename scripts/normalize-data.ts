@@ -16,7 +16,7 @@ import {
   TARGET_BROWSERS,
   BrowserSupport,
   BrowserSupportDetail,
-  BROWSER_SHORT_NAMES
+  BROWSER_SHORT_NAMES,
 } from "./types.js";
 import {
   mapCaniuseCategory,
@@ -33,7 +33,7 @@ import {
   normalizeCodeTags,
   inferNameFromMdnPath,
   areLikelyDuplicates,
-  formatFeatureName
+  formatFeatureName,
 } from "./format-utils.js";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -55,7 +55,7 @@ async function main(): Promise<void> {
     caniuse: { total: 0, processed: 0, errors: 0 },
     webFeatures: { total: 0, new: 0, merged: 0, errors: 0 },
     mdnBcd: { total: 0, new: 0, merged: 0, errors: 0 },
-    output: { features: 0, indexSize: 0 }
+    output: { features: 0, indexSize: 0 },
   };
 
   try {
@@ -70,17 +70,23 @@ async function main(): Promise<void> {
     // Step 3: Process Caniuse (Primary source)
     console.log("\n🔵 Step 3: Processing Caniuse features...");
     processCaniuse(features, sources, stats);
-    console.log(`  ✅ Processed ${stats.caniuse.processed} features (${stats.caniuse.errors} errors)`);
+    console.log(
+      `  ✅ Processed ${stats.caniuse.processed} features (${stats.caniuse.errors} errors)`,
+    );
 
     // Step 4: Merge Web Features (Secondary source)
     console.log("\n🟢 Step 4: Merging Web Features...");
     processWebFeatures(features, sources, stats);
-    console.log(`  ✅ Merged ${stats.webFeatures.merged} features, added ${stats.webFeatures.new} new (${stats.webFeatures.errors} errors)`);
+    console.log(
+      `  ✅ Merged ${stats.webFeatures.merged} features, added ${stats.webFeatures.new} new (${stats.webFeatures.errors} errors)`,
+    );
 
     // Step 5: Merge MDN BCD (Tertiary source)
     console.log("\n🟡 Step 5: Merging MDN Browser Compat Data...");
     processMdnBcd(features, sources, stats);
-    console.log(`  ✅ Merged ${stats.mdnBcd.merged} features, added ${stats.mdnBcd.new} new (${stats.mdnBcd.errors} errors)`);
+    console.log(
+      `  ✅ Merged ${stats.mdnBcd.merged} features, added ${stats.mdnBcd.new} new (${stats.mdnBcd.errors} errors)`,
+    );
 
     // Step 6: Generate search index
     console.log("\n📑 Step 6: Generating search index...");
@@ -97,7 +103,6 @@ async function main(): Promise<void> {
     console.log(`Total features: ${stats.output.features}`);
     console.log(`Index size: ${(stats.output.indexSize / 1024).toFixed(2)} KB`);
     console.log(`Duration: ${duration}s`);
-
   } catch (error) {
     console.error("\n❌ Fatal error during normalization:");
     console.error(error);
@@ -115,9 +120,13 @@ async function loadSources(): Promise<SourceFiles> {
   const mdnBcdPath = path.join(DATA_DIR, "mdnbcd.json");
   const usagePath = path.join(DATA_DIR, "alt-ww.json");
 
-  const caniuse: CaniuseData = JSON.parse(fs.readFileSync(caniusePath, "utf-8"));
+  const caniuse: CaniuseData = JSON.parse(
+    fs.readFileSync(caniusePath, "utf-8"),
+  );
 
-  const webFeatures: WebFeaturesData = JSON.parse(fs.readFileSync(webFeaturesPath, "utf-8"));
+  const webFeatures: WebFeaturesData = JSON.parse(
+    fs.readFileSync(webFeaturesPath, "utf-8"),
+  );
 
   const mdnBcd: MdnBcdData = JSON.parse(fs.readFileSync(mdnBcdPath, "utf-8"));
 
@@ -133,7 +142,7 @@ async function loadSources(): Promise<SourceFiles> {
 function processCaniuse(
   features: Map<string, NormalizedFeature>,
   sources: SourceFiles,
-  stats: PipelineStats
+  stats: PipelineStats,
 ): void {
   const { caniuse, usage } = sources;
   const caniuseFeatures = Object.entries(caniuse.data);
@@ -154,11 +163,14 @@ function processCaniuse(
       // Compute category first so it can be used in formatFeatureName
       const category = mapCaniuseCategory(feature.categories);
 
+      // Extract name as variable for use in both name property and caniuseUrl
+      const name = normalizeCodeTags(feature.title);
+
       // Create normalized feature
       const normalized: NormalizedFeature = {
         id,
         source: "caniuse",
-        name: normalizeCodeTags(feature.title),
+        name,
         description: normalizeCodeTags(feature.description || ""),
         category,
 
@@ -169,12 +181,12 @@ function processCaniuse(
 
         usage: {
           ...usageData,
-          type: "actual"
+          type: "actual",
         },
 
         notes: {
           general: feature.notes,
-          byNum: feature.notes_by_num
+          byNum: feature.notes_by_num,
         },
 
         flags: undefined,
@@ -183,17 +195,19 @@ function processCaniuse(
 
         sourceData: {
           primary: { source: "caniuse", id },
-          supplementary: []
+          supplementary: [],
         },
 
-        caniuseUrl: `https://caniuse.com/?search=${encodeURIComponent(id)}`
+        caniuseUrl: `https://caniuse.com/?search=${encodeURIComponent(name)}`,
       };
 
       features.set(id, normalized);
       stats.caniuse.processed++;
-
     } catch (error) {
-      console.warn(`  ⚠️  Error processing Caniuse feature ${id}:`, error instanceof Error ? error.message : error);
+      console.warn(
+        `  ⚠️  Error processing Caniuse feature ${id}:`,
+        error instanceof Error ? error.message : error,
+      );
       stats.caniuse.errors++;
     }
   }
@@ -206,7 +220,7 @@ function processCaniuse(
 function processWebFeatures(
   features: Map<string, NormalizedFeature>,
   sources: SourceFiles,
-  stats: PipelineStats
+  stats: PipelineStats,
 ): void {
   const { webFeatures, usage } = sources;
   const wfFeatures = Object.entries(webFeatures.features);
@@ -217,7 +231,9 @@ function processWebFeatures(
     try {
       // Check if this WF feature maps to existing Caniuse feature via explicit mapping
       const caniuseIds = wfFeature.caniuse
-        ? (Array.isArray(wfFeature.caniuse) ? wfFeature.caniuse : [wfFeature.caniuse])
+        ? Array.isArray(wfFeature.caniuse)
+          ? wfFeature.caniuse
+          : [wfFeature.caniuse]
         : [];
 
       let merged = false;
@@ -239,7 +255,12 @@ function processWebFeatures(
         const wfNormalized = { id: wfId, name: wfFeature.name };
 
         for (const [existingId, existingFeature] of features) {
-          if (areLikelyDuplicates(wfNormalized, { id: existingId, name: existingFeature.name })) {
+          if (
+            areLikelyDuplicates(wfNormalized, {
+              id: existingId,
+              name: existingFeature.name,
+            })
+          ) {
             supplementWithWebFeatures(existingFeature, wfFeature, wfId);
             stats.webFeatures.merged++;
             merged = true;
@@ -254,9 +275,11 @@ function processWebFeatures(
         features.set(`wf-${wfId}`, newFeature);
         stats.webFeatures.new++;
       }
-
     } catch (error) {
-      console.warn(`  ⚠️  Error processing Web Feature ${wfId}:`, error instanceof Error ? error.message : error);
+      console.warn(
+        `  ⚠️  Error processing Web Feature ${wfId}:`,
+        error instanceof Error ? error.message : error,
+      );
       stats.webFeatures.errors++;
     }
   }
@@ -265,7 +288,7 @@ function processWebFeatures(
 function supplementWithWebFeatures(
   feature: NormalizedFeature,
   wfFeature: WebFeature,
-  wfId: string
+  wfId: string,
 ): void {
   // Add baseline status
   if (wfFeature.status.baseline) {
@@ -276,32 +299,39 @@ function supplementWithWebFeatures(
   feature.sourceData.supplementary.push({
     source: "webfeatures",
     id: wfId,
-    matched: "exact"
+    matched: "exact",
   });
 }
 
 function createFeatureFromWebFeatures(
   wfId: string,
   wfFeature: WebFeature,
-  usage: AltWwData
+  usage: AltWwData,
 ): NormalizedFeature {
   // Extract browser support from WF status
   const support: BrowserSupport = {};
-  
+
   // First, collect browsers that Web Features has data for
   const browsersWithData = new Set<string>();
   for (const browser of TARGET_BROWSERS) {
-    const wfSupport = extractWebFeaturesBrowserSupport(wfFeature.status.support, browser);
+    const wfSupport = extractWebFeaturesBrowserSupport(
+      wfFeature.status.support,
+      browser,
+    );
     if (wfSupport) {
       support[browser] = wfSupport;
       browsersWithData.add(browser);
     }
   }
-  
+
   // For browsers without explicit data, infer from related browsers
   for (const browser of TARGET_BROWSERS) {
     if (!browsersWithData.has(browser)) {
-      const inferredSupport = inferBrowserSupport(browser, browsersWithData, support);
+      const inferredSupport = inferBrowserSupport(
+        browser,
+        browsersWithData,
+        support,
+      );
       support[browser] = inferredSupport;
     }
   }
@@ -309,10 +339,12 @@ function createFeatureFromWebFeatures(
   // Estimate usage
   const usageData = estimateUsage(support, usage);
 
+  const name = normalizeCodeTags(wfFeature.name);
+
   return {
     id: `wf-${wfId}`,
     source: "webfeatures",
-    name: normalizeCodeTags(wfFeature.name),
+    name,
     description: normalizeCodeTags(wfFeature.description || ""),
     category: "Other", // Will try to infer from MDN if available
     mdn: undefined,
@@ -322,7 +354,7 @@ function createFeatureFromWebFeatures(
 
     usage: {
       ...usageData,
-      type: "estimated"
+      type: "estimated",
     },
     notes: undefined,
     flags: undefined,
@@ -330,10 +362,10 @@ function createFeatureFromWebFeatures(
 
     sourceData: {
       primary: { source: "webfeatures", id: wfId },
-      supplementary: []
+      supplementary: [],
     },
 
-    caniuseUrl: `https://caniuse.com/?search=${encodeURIComponent(wfId)}`
+    caniuseUrl: `https://caniuse.com/?search=${encodeURIComponent(name)}`,
   };
 }
 
@@ -344,7 +376,7 @@ function createFeatureFromWebFeatures(
 function inferBrowserSupport(
   browser: TargetBrowser,
   browsersWithData: Set<string>,
-  support: BrowserSupport
+  support: BrowserSupport,
 ): BrowserSupportDetail {
   // Map mobile browsers to their desktop counterparts
   const inferenceMap: Record<string, TargetBrowser> = {
@@ -353,20 +385,20 @@ function inferBrowserSupport(
     samsung: "chrome",
     and_ff: "firefox",
     opera: "chrome", // Opera is Chromium-based
-    ie: "edge" // IE can sometimes be inferred from Edge, though not always accurate
+    ie: "edge", // IE can sometimes be inferred from Edge, though not always accurate
   };
-  
+
   const relatedBrowser = inferenceMap[browser];
-  
+
   if (relatedBrowser && browsersWithData.has(relatedBrowser)) {
     // Copy support from related browser
     return { ...support[relatedBrowser] };
   }
-  
+
   // If no related browser, mark as unsupported
   return {
     current: "n",
-    versions: []
+    versions: [],
   };
 }
 
@@ -377,12 +409,19 @@ function inferBrowserSupport(
 function processMdnBcd(
   features: Map<string, NormalizedFeature>,
   sources: SourceFiles,
-  stats: PipelineStats
+  stats: PipelineStats,
 ): void {
   const { mdnBcd, webFeatures, usage } = sources;
 
   // Only process specific top-level categories
-  const ALLOWED_CATEGORIES = ['api', 'css', 'html', 'http', 'javascript', 'svg'];
+  const ALLOWED_CATEGORIES = [
+    "api",
+    "css",
+    "html",
+    "http",
+    "javascript",
+    "svg",
+  ];
 
   // Filter MDN data to only allowed categories
   const filteredMdnData: Record<string, any> = {};
@@ -397,7 +436,9 @@ function processMdnBcd(
   const mdnFeatures = extractAllMdnFeatures(filteredMdnData);
   stats.mdnBcd.total = mdnFeatures.length;
 
-  console.log(`  Found ${mdnFeatures.length} MDN features (filtered to: ${ALLOWED_CATEGORIES.join(', ')})`);
+  console.log(
+    `  Found ${mdnFeatures.length} MDN features (filtered to: ${ALLOWED_CATEGORIES.join(", ")})`,
+  );
 
   // Build a map of compat_features -> WF feature for quick lookup
   const mdnToWfMap = new Map<string, string>();
@@ -421,7 +462,9 @@ function processMdnBcd(
       if (linkedWfId) {
         // Try to find existing feature via WF mapping
         const caniuseIds = webFeatures.features[linkedWfId]?.caniuse || [];
-        const caniuseIdArray = Array.isArray(caniuseIds) ? caniuseIds : [caniuseIds];
+        const caniuseIdArray = Array.isArray(caniuseIds)
+          ? caniuseIds
+          : [caniuseIds];
 
         for (const caniuseId of caniuseIdArray) {
           const existingFeature = features.get(caniuseId);
@@ -448,11 +491,17 @@ function processMdnBcd(
       // Strategy 2: Check for duplicates by ID/name similarity
       if (!merged) {
         // Infer a name for comparison
-        const mdnName = compat.__compat.description || inferNameFromMdnPath(path);
+        const mdnName =
+          compat.__compat.description || inferNameFromMdnPath(path);
         const mdnNormalized = { id: path, name: mdnName };
 
         for (const [existingId, existingFeature] of features) {
-          if (areLikelyDuplicates(mdnNormalized, { id: existingId, name: existingFeature.name })) {
+          if (
+            areLikelyDuplicates(mdnNormalized, {
+              id: existingId,
+              name: existingFeature.name,
+            })
+          ) {
             supplementWithMdn(existingFeature, path, compat);
             stats.mdnBcd.merged++;
             merged = true;
@@ -467,9 +516,11 @@ function processMdnBcd(
         features.set(`mdn-${path}`, newFeature);
         stats.mdnBcd.new++;
       }
-
     } catch (error) {
-      console.warn(`  ⚠️  Error processing MDN feature ${path}:`, error instanceof Error ? error.message : error);
+      console.warn(
+        `  ⚠️  Error processing MDN feature ${path}:`,
+        error instanceof Error ? error.message : error,
+      );
       stats.mdnBcd.errors++;
     }
   }
@@ -478,7 +529,7 @@ function processMdnBcd(
 function supplementWithMdn(
   feature: NormalizedFeature,
   mdnPath: string,
-  compat: MdnCompatStatement
+  compat: MdnCompatStatement,
 ): void {
   if (!compat.__compat) return;
 
@@ -491,14 +542,14 @@ function supplementWithMdn(
   feature.sourceData.supplementary.push({
     source: "mdnbcd",
     id: mdnPath,
-    matched: "via-webfeatures"
+    matched: "via-webfeatures",
   });
 }
 
 function createFeatureFromMdn(
   mdnPath: string,
   compat: MdnCompatStatement,
-  usage: AltWwData
+  usage: AltWwData,
 ): NormalizedFeature {
   if (!compat.__compat) {
     throw new Error("Missing __compat data");
@@ -522,7 +573,11 @@ function createFeatureFromMdn(
   // For browsers without explicit data, infer from related browsers
   for (const browser of TARGET_BROWSERS) {
     if (!browsersWithData.has(browser)) {
-      const inferredSupport = inferBrowserSupport(browser, browsersWithData, support);
+      const inferredSupport = inferBrowserSupport(
+        browser,
+        browsersWithData,
+        support,
+      );
       support[browser] = inferredSupport;
     }
   }
@@ -536,7 +591,10 @@ function createFeatureFromMdn(
   const name = compat.__compat.description || inferredName;
 
   // Format the name (add backticks for code elements)
-  const formattedName = formatFeatureName(name, inferCategoryFromMdnPath(mdnPath));
+  const formattedName = formatFeatureName(
+    name,
+    inferCategoryFromMdnPath(mdnPath),
+  );
 
   return {
     id: `mdn-${mdnPath}`,
@@ -549,16 +607,16 @@ function createFeatureFromMdn(
     support,
     usage: {
       ...usageData,
-      type: "estimated"
+      type: "estimated",
     },
     notes: undefined,
     flags: undefined,
     baseline: false,
     sourceData: {
       primary: { source: "mdnbcd", id: mdnPath },
-      supplementary: []
+      supplementary: [],
     },
-    caniuseUrl: `https://caniuse.com/?search=${encodeURIComponent(mdnPath)}`
+    caniuseUrl: `https://caniuse.com/?search=${encodeURIComponent(name)}`,
   };
 }
 
@@ -568,10 +626,10 @@ function createFeatureFromMdn(
 
 function generateIndex(
   features: Map<string, NormalizedFeature>,
-  sources: SourceFiles
+  sources: SourceFiles,
 ): FeatureIndex[] {
   const index: FeatureIndex[] = [];
-  const EXCLUDED_BROWSERS = ['opera', 'ie', 'samsung', 'and_ff'];
+  const EXCLUDED_BROWSERS = ["opera", "ie", "samsung", "and_ff"];
 
   for (const [id, feature] of features) {
     const quickSupport = extractQuickSupport(feature.support);
@@ -584,7 +642,8 @@ function generateIndex(
     // Remap browser names to short names
     const shortSupport: Record<string, "y" | "a" | "n" | "p"> = {};
     for (const [browser, status] of Object.entries(quickSupport)) {
-      const shortName = BROWSER_SHORT_NAMES[browser as TargetBrowser] || browser;
+      const shortName =
+        BROWSER_SHORT_NAMES[browser as TargetBrowser] || browser;
       shortSupport[shortName] = status;
     }
 
@@ -595,7 +654,7 @@ function generateIndex(
       category: feature.category,
       support: shortSupport,
       usage: feature.usage.global.total,
-      baseline: feature.baseline
+      baseline: feature.baseline,
     });
   }
 
@@ -609,7 +668,7 @@ function generateIndex(
 async function writeOutput(
   index: FeatureIndex[],
   features: Map<string, NormalizedFeature>,
-  stats: PipelineStats
+  stats: PipelineStats,
 ): Promise<void> {
   // Ensure output directories exist
   if (!fs.existsSync(OUTPUT_DIR)) {
@@ -630,27 +689,37 @@ async function writeOutput(
   for (const [id, feature] of features) {
     // Create a cleaned version of the feature without the versions array
     // and with short browser names
-    const cleanedSupport: Record<string, { current: string; firstFull?: string; firstPartial?: string }> = {};
+    const cleanedSupport: Record<
+      string,
+      { current: string; firstFull?: string; firstPartial?: string }
+    > = {};
     for (const [browser, browserSupport] of Object.entries(feature.support)) {
-      const shortName = BROWSER_SHORT_NAMES[browser as TargetBrowser] || browser;
+      const shortName =
+        BROWSER_SHORT_NAMES[browser as TargetBrowser] || browser;
       cleanedSupport[shortName] = {
         current: browserSupport.current,
         firstFull: browserSupport.firstFull,
-        firstPartial: browserSupport.firstPartial
+        firstPartial: browserSupport.firstPartial,
       };
     }
 
     // Also remap usage.byBrowser to use short names
     const shortByBrowser = {
       desktop: {} as Record<string, number>,
-      mobile: {} as Record<string, number>
+      mobile: {} as Record<string, number>,
     };
-    for (const [browser, usage] of Object.entries(feature.usage.byBrowser.desktop)) {
-      const shortName = BROWSER_SHORT_NAMES[browser as TargetBrowser] || browser;
+    for (const [browser, usage] of Object.entries(
+      feature.usage.byBrowser.desktop,
+    )) {
+      const shortName =
+        BROWSER_SHORT_NAMES[browser as TargetBrowser] || browser;
       shortByBrowser.desktop[shortName] = usage;
     }
-    for (const [browser, usage] of Object.entries(feature.usage.byBrowser.mobile)) {
-      const shortName = BROWSER_SHORT_NAMES[browser as TargetBrowser] || browser;
+    for (const [browser, usage] of Object.entries(
+      feature.usage.byBrowser.mobile,
+    )) {
+      const shortName =
+        BROWSER_SHORT_NAMES[browser as TargetBrowser] || browser;
       shortByBrowser.mobile[shortName] = usage;
     }
 
@@ -659,13 +728,17 @@ async function writeOutput(
       support: cleanedSupport,
       usage: {
         ...feature.usage,
-        byBrowser: shortByBrowser
+        byBrowser: shortByBrowser,
       },
-      caniuseUrl: `https://caniuse.com/?search=${encodeURIComponent(id)}`
+      caniuseUrl: `https://caniuse.com/?search=${encodeURIComponent(id)}`,
     };
 
     const featurePath = path.join(FEATURES_DIR, `${id}.json`);
-    fs.writeFileSync(featurePath, JSON.stringify(cleanedFeature, null, 2), "utf-8");
+    fs.writeFileSync(
+      featurePath,
+      JSON.stringify(cleanedFeature, null, 2),
+      "utf-8",
+    );
     written++;
 
     if (written % 100 === 0) {
@@ -680,7 +753,7 @@ async function writeOutput(
 // RUN STEPPY RUN
 // ============================================================================
 
-main().catch(error => {
+main().catch((error) => {
   console.error("\n❌ Fatal error:", error);
   process.exit(1);
 });

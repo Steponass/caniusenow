@@ -61,6 +61,7 @@ function clearSearch() {
 
 .search-input {
   width: 100%;
+  min-height: 40px;
   padding: var(--space-8px);
   border: 1px solid var(--clr-stroke-strong);
   border-radius: var(--radius-2px);
