@@ -1,0 +1,93 @@
+{
+  "id": "wf-is-secure-context",
+  "source": "webfeatures",
+  "name": "isSecureContext",
+  "description": "The isSecureContext global property is a boolean for whether the current browsing context is secure. This is primarily a check that the page has been served over an HTTPS URL.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/isSecureContext",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "55"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "52"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "11.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "55"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "55"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "55"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "52"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.11,
+      "partial": 0,
+      "total": 92.11
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.25,
+        "ffx": 1.76,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.09,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "is-secure-context"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.isSecureContext",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.isSecureContext.worker_support",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-is-secure-context"
+}

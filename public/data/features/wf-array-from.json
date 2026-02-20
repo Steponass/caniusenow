@@ -1,0 +1,93 @@
+{
+  "id": "wf-array-from",
+  "source": "webfeatures",
+  "name": "Array.from()",
+  "description": "The Array.from() and typed array .from() static methods copy items from an iterable or array-like object to make a new array.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/from",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "45"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "38"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "10"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "45"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "45"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "45"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "38"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.35,
+      "partial": 0,
+      "total": 92.35
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.36,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "array-from"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.from",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.from",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-array-from"
+}

@@ -1,0 +1,96 @@
+{
+  "id": "sql-storage",
+  "source": "caniuse",
+  "name": "Web SQL Database",
+  "description": "Method of storing data client-side, allows SQLite database queries for access and manipulation.",
+  "category": "JS API",
+  "links": [
+    {
+      "url": "https://html5doctor.com/introducing-web-sql-databases/",
+      "title": "HTML5 Doctor article"
+    },
+    {
+      "url": "https://raw.github.com/phiggins42/has.js/master/detect/features.js#native-sql-db",
+      "title": "has.js test"
+    },
+    {
+      "url": "https://chromestatus.com/feature/5175124599767040",
+      "title": "Chrome platform status: Deprecate and remove WebSQL in non-secure contexts"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "n",
+      "firstFull": "4"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n",
+      "firstFull": "3.1"
+    },
+    "edg": {
+      "current": "n",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "n",
+      "firstFull": "10.5"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n",
+      "firstFull": "3.2"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 11.57,
+      "partial": 0,
+      "total": 11.57
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "smsg": 1.93
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "The Web SQL Database specification is no longer being maintained and support is intended to be dropped in future versions. Migrate to e.g. [Web Storage](/namevalue-storage) or [IndexedDB](/?search=IndexedDB).",
+    "byNum": {
+      "1": "Not available in third-party contexts",
+      "2": "Requires a [secure context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts)",
+      "3": "Requires a deprecation Origin Trial token"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "sql-storage"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=sql-storage"
+}

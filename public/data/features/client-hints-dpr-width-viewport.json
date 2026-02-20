@@ -1,0 +1,90 @@
+{
+  "id": "client-hints-dpr-width-viewport",
+  "source": "caniuse",
+  "name": "Client Hints: DPR, Width, Viewport-Width",
+  "description": "DPR, Width, and Viewport-Width hints enable proactive content negotiation between client and server, enabling automated delivery of optimized assets - e.g. auto-negotiating image DPR resolution.",
+  "category": "Other",
+  "links": [
+    {
+      "url": "https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints",
+      "title": "Automating resource selection with Client Hints"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=935216",
+      "title": "Mozilla Bug 935216 - Implement Client-Hints HTTP header"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=145380",
+      "title": "WebKit Bug 145380 - Add Content-DPR header support"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "46"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "33"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "5.0-5.4"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 80.52,
+      "partial": 0,
+      "total": 80.52
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.35,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_chr": 44.12,
+        "smsg": 1.93
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "client-hints-dpr-width-viewport"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=client-hints-dpr-width-viewport"
+}

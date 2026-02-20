@@ -1,0 +1,71 @@
+{
+  "id": "wf-digital-goods",
+  "source": "webfeatures",
+  "name": "Digital goods",
+  "description": "The window.getDigitalGoodsService API connects to stores or billing services for in-app products and subscriptions.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "edg": {
+      "current": "y",
+      "firstFull": "134"
+    },
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "134"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 4.13,
+      "partial": 0,
+      "total": 4.13
+    },
+    "byBrowser": {
+      "desktop": {
+        "edg": 4.13
+      },
+      "mobile": {}
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "digital-goods"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.getDigitalGoodsService",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-digital-goods"
+}

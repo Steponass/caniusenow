@@ -1,0 +1,132 @@
+{
+  "id": "viewport-units",
+  "source": "caniuse",
+  "name": "Viewport units: vw, vh, vmin, vmax",
+  "description": "Length units representing a percentage of the current viewport dimensions: width (vw), height (vh), the smaller of the two (vmin), or the larger of the two (vmax).",
+  "category": "CSS",
+  "links": [
+    {
+      "url": "https://css-tricks.com/viewport-sized-typography/",
+      "title": "Blog post"
+    },
+    {
+      "url": "https://github.com/saabi/vminpoly",
+      "title": "Polyfill"
+    },
+    {
+      "url": "https://github.com/rodneyrehm/viewport-units-buggyfill",
+      "title": "Buggyfill - Polyfill that fixes buggy support"
+    },
+    {
+      "url": "https://blog.rodneyrehm.de/archives/34-iOS7-Mobile-Safari-And-Viewport-Units.html",
+      "title": "Back-Forward issue blog post"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "26"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "19"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "6.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "16"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "8"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.35,
+      "partial": 0.38,
+      "total": 96.73
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Partial support in IE9 refers to supporting \"vm\" instead of \"vmin\".",
+      "2": "Partial support refers to not supporting the \"vmax\" unit. ",
+      "3": "Partial support in iOS7 is due to buggy behavior of the \"vh\" unit (see workarounds: [1](https://gist.github.com/pburtchaell/e702f441ba9b3f76f587), [2](https://gist.github.com/BenMorel/e9e34c08360ebbbd0634))."
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "viewport-units"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "viewport-units",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.length.vh",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.length.vmax",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.length.vmin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.length.vw",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=viewport-units"
+}

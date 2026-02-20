@@ -1,0 +1,101 @@
+{
+  "id": "customevent",
+  "source": "caniuse",
+  "name": "CustomEvent",
+  "description": "A DOM event interface that can carry custom application-defined data.",
+  "category": "Other",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent",
+      "title": "MDN Web Docs - CustomEvent"
+    },
+    {
+      "url": "https://github.com/krambuhl/custom-event-polyfill",
+      "title": "Polyfill based on the MDN snippet"
+    },
+    {
+      "url": "https://github.com/jonathantneal/EventListener",
+      "title": "EventListener polyfill which includes a CustomEvent polyfill"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "11"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "6.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "11.6"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "6.0-6.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.46,
+      "partial": 0.37,
+      "total": 96.83
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.82,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Not supported in some versions of Android's old WebKit-based WebView.",
+    "byNum": {
+      "1": "While a `window.CustomEvent` object exists, it cannot be called as a constructor. Instead of `new CustomEvent(...)`, you must use `e = document.createEvent('CustomEvent')` and then `e.initCustomEvent(...)`",
+      "2": "There is no `window.CustomEvent` object, but `document.createEvent('CustomEvent')` still works."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "customevent"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=customevent"
+}

@@ -1,0 +1,98 @@
+{
+  "id": "wf-move-before",
+  "source": "webfeatures",
+  "name": "moveBefore()",
+  "description": "The moveBefore() DOM method relocates a node while preserving its state. For example, you can move the active element without losing focus, move an animated element without resetting the animation, or move an iframe without reloading its content.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Element/moveBefore",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "133"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "133"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "133"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "133"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "133"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "133"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "144"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 69.84,
+      "partial": 0,
+      "total": 69.84
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 19.95,
+        "ffx": 1.33,
+        "edg": 4.14
+      },
+      "mobile": {
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "move-before"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomElementRegistry.define.connectedMoveCallback_lifecycle_callback",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.moveBefore",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentFragment.moveBefore",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.moveBefore",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-move-before"
+}

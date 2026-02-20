@@ -1,0 +1,115 @@
+{
+  "id": "pad-start-end",
+  "source": "caniuse",
+  "name": "String.prototype.padStart(), String.prototype.padEnd()",
+  "description": "The `padStart()` and `padEnd()` methods pad the current string with a given string (eventually repeated) so that the resulting string reaches a given length. The pad is applied from the start (left) of the current string for `padStart()`, and applied from the end (right) of the current string for `padEnd()`.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/padStart",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart",
+      "title": "MDN Web Docs - padStart()"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd",
+      "title": "MDN Web Docs - padEnd()"
+    },
+    {
+      "url": "https://github.com/zloirock/core-js#ecmascript-string-and-regexp",
+      "title": "Polyfill for this feature is available in the core-js library"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "57"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "48"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "10"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "44"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10.0-10.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "7.2-7.4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.17,
+      "partial": 0,
+      "total": 96.17
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.23,
+        "ffx": 1.76,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "pad-start-end"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "string-pad",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.padEnd",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.padStart",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=pad-start-end"
+}

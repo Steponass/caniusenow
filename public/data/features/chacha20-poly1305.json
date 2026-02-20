@@ -1,0 +1,96 @@
+{
+  "id": "chacha20-poly1305",
+  "source": "caniuse",
+  "name": "ChaCha20-Poly1305 cipher suites for TLS",
+  "description": "A set of cipher suites used in Transport Layer Security (TLS) protocol, using ChaCha20 for symmetric encryption and Poly1305 for authentication.",
+  "category": "Other",
+  "links": [
+    {
+      "url": "https://security.googleblog.com/2014/04/speeding-up-and-strengthening-https.html",
+      "title": "Chrome article"
+    },
+    {
+      "url": "https://www.ssllabs.com/ssltest/viewMyClient.html",
+      "title": "SSL/TLS Capabilities of Your Browser by Qualys SSL Labs"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "49"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "47"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "11.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "36"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11.0-11.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.31,
+      "partial": 0,
+      "total": 96.31
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.32,
+        "ffx": 1.76,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.19,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Old versions of Chrome use non-standard code points for ChaCha20-Poly1305 cipher suites."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "chacha20-poly1305"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=chacha20-poly1305"
+}

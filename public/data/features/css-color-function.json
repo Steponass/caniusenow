@@ -1,0 +1,123 @@
+{
+  "id": "css-color-function",
+  "source": "caniuse",
+  "name": "CSS color() function",
+  "description": "The CSS `color()` function allows the browser to display colors in any color space, such as the P3 color space which can display colors outside of the default sRGB color space.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/color_value/color",
+  "links": [
+    {
+      "url": "https://bugs.chromium.org/p/chromium/issues/detail?id=1068610",
+      "title": "Chromium implementation bug"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1128204",
+      "title": "Firefox implementation bug"
+    },
+    {
+      "url": "https://webkit.org/blog/10042/wide-gamut-color-in-css-with-display-p3/",
+      "title": "WebKit article on using color() with the P3 color space"
+    },
+    {
+      "url": "https://p3colorpicker.cool/",
+      "title": "Color generator that uses color() with the P3 color space"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "111"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "113"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "111"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "98"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.0-15.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "22"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.74,
+      "partial": 0.44,
+      "total": 92.18
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 25.19,
+        "ffx": 1.75,
+        "saf": 1.37,
+        "edg": 4.21,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.86,
+        "an_chr": 44.12,
+        "smsg": 1.92,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "For this function to work properly, the device screen and OS also needs to support the color space being used.",
+    "byNum": {
+      "1": "Only supports `display-p3` predefined color profile.",
+      "2": "Available behind the [Experimental Web Platform features](chrome://flags/#enable-experimental-web-platform-features) flag",
+      "3": "Can be enabled by setting about:config flag `layout.css.more_color_4.enabled` to true"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-color-function"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "color-function",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.color.color",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.color.color.mixed_type_parameters",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=css-color-function"
+}

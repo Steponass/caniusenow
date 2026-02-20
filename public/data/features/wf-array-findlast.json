@@ -1,0 +1,103 @@
+{
+  "id": "wf-array-findlast",
+  "source": "webfeatures",
+  "name": "Array findLast() and findLastIndex()",
+  "description": "The findLast() and findLastIndex() methods of arrays and typed arrays search an array in reverse order for the first item that satisfies a test function.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/findLastIndex",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "97"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "104"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "15.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "97"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "97"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "97"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "97"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "97"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "104"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.34,
+      "partial": 0,
+      "total": 91.34
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.93,
+        "ffx": 1.75,
+        "saf": 1.37,
+        "edg": 4.25,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.82,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "array-findlast"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.findLast",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Array.findLastIndex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.findLast",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.TypedArray.findLastIndex",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-array-findlast"
+}

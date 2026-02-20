@@ -1,0 +1,126 @@
+{
+  "id": "css-crisp-edges",
+  "source": "caniuse",
+  "name": "Crisp edges/pixelated images",
+  "description": "Scales images with an algorithm that preserves edges and contrast, without smoothing colors or introducing blur. This is intended for images such as pixel art. Official values that accomplish this for the `image-rendering` property are `crisp-edges` and `pixelated`.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/image-rendering",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering",
+      "title": "MDN Web Docs - CSS Image rendering"
+    },
+    {
+      "url": "https://developer.chrome.com/blog/pixelated/",
+      "title": "HTML5Rocks article"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=856337",
+      "title": "Firefox bug #856337: Implement image-rendering: pixelated"
+    },
+    {
+      "url": "https://bugs.chromium.org/p/chromium/issues/detail?id=317991",
+      "title": "Chrome bug #317991: Implement image-rendering:crisp-edges"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "93"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "10"
+    },
+    "edg": {
+      "current": "u"
+    },
+    "opr": {
+      "current": "u"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10.0-10.2"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.43,
+      "partial": 0.42,
+      "total": 96.85
+    },
+    "byBrowser": {
+      "desktop": {
+        "ffx": 1.75,
+        "saf": 1.42
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Note that prefixes apply to the value (e.g. `-moz-crisp-edges`), not the `image-rendering` property.",
+    "byNum": {
+      "1": "Supported using the non-standard value `-webkit-optimize-contrast`",
+      "2": "Internet Explorer accomplishes support using the non-standard declaration `-ms-interpolation-mode: nearest-neighbor`",
+      "3": "Supports the `crisp-edges` value, but not `pixelated`.",
+      "4": "Supports the `pixelated` value, but not `crisp-edges`.",
+      "5": "Only works on `<img>`, not CSS backgrounds or `<canvas>`.",
+      "6": "Only works on `<img>` and CSS backgrounds, _not_ `<canvas>`. "
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-crisp-edges"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "crisp-edges",
+        "matched": "exact"
+      },
+      {
+        "source": "webfeatures",
+        "id": "image-rendering",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.image-rendering",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.image-rendering.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.image-rendering.pixelated",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=css-crisp-edges"
+}

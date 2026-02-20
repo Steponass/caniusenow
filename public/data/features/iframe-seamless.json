@@ -1,0 +1,80 @@
+{
+  "id": "iframe-seamless",
+  "source": "caniuse",
+  "name": "seamless attribute for iframes",
+  "description": "The seamless attribute makes an iframe's contents actually part of a page, and adopts the styles from its hosting page. The attribute has been removed from both [the WHATWG](https://github.com/whatwg/html/issues/331) and [the W3C](https://github.com/w3c/html/pull/325) HTML5 specifications.",
+  "category": "HTML5",
+  "links": [
+    {
+      "url": "https://github.com/ornj/seamless-polyfill",
+      "title": "Experimental polyfill"
+    },
+    {
+      "url": "https://labs.ft.com/2013/01/seamless-iframes-not-quite-seamless/",
+      "title": "Article"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=631218",
+      "title": "Bug on Firefox support: wontfix"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 0,
+      "total": 0
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Chrome 20-26 had partial support behind a flag, though this was [later removed](https://bugs.chromium.org/p/chromium/issues/detail?id=229421).",
+    "byNum": {
+      "1": "Hides the border of seamless iframes and recognizes the 'seamless' DOM property, but does not provide actual support."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "iframe-seamless"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=iframe-seamless"
+}

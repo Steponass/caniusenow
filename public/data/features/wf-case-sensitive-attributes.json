@@ -1,0 +1,73 @@
+{
+  "id": "wf-case-sensitive-attributes",
+  "source": "webfeatures",
+  "name": "Case-sensitive attribute selector",
+  "description": "The s identifier in a CSS attribute selector matches attribute values case-sensitively in document languages like HTML where attribute values are case-insensitive.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "ffx": {
+      "current": "y",
+      "firstFull": "66"
+    },
+    "chr": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "66"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 2.06,
+      "partial": 0,
+      "total": 2.06
+    },
+    "byBrowser": {
+      "desktop": {
+        "ffx": 1.75
+      },
+      "mobile": {
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "case-sensitive-attributes"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.attribute.case_sensitive_modifier",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-case-sensitive-attributes"
+}

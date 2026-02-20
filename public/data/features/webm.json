@@ -1,0 +1,99 @@
+{
+  "id": "webm",
+  "source": "caniuse",
+  "name": "WebM video format",
+  "description": "Multimedia format designed to provide a royalty-free, high-quality open video compression format for use with HTML5 video. WebM supports the video codec VP8 and VP9.",
+  "category": "Other",
+  "links": [
+    {
+      "url": "https://www.webmproject.org",
+      "title": "Official website"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/WebM",
+      "title": "Wikipedia article"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "25"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "28"
+    },
+    "saf": {
+      "current": "u"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "16"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "5.0-5.4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.89,
+      "partial": 1.26,
+      "total": 96.15
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Older browser versions did not support all codecs.",
+      "2": "Older Edge versions did not support progressive sources.",
+      "3": "Can be enabled in Internet Explorer and Safari for MacOS by manually installing the codecs in the operating system.",
+      "4": "Supports [VP8 codec used in WebRTC](https://webkit.org/blog/8672).",
+      "5": "Supports [VP9 codec used in WebRTC](https://webkit.org/blog/10929) (off by default.)",
+      "6": "Supports [VP9 WebM used in MediaSource](https://bugs.webkit.org/show_bug.cgi?id=216652#c1) on [macOS Big Sur or later.](https://trac.webkit.org/changeset/264747/webkit)",
+      "7": "Safari 14.1 – 15.6 has full support of WebM, but requires macOS 11.3 Big Sur or later.",
+      "8": "Does not support alpha transparency"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "webm"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=webm"
+}

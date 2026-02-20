@@ -1,0 +1,149 @@
+{
+  "id": "sharedworkers",
+  "source": "caniuse",
+  "name": "Shared Web Workers",
+  "description": "Method of allowing multiple scripts to communicate with a single web worker.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/SharedWorkerGlobalScope/name",
+  "links": [
+    {
+      "url": "https://www.sitepoint.com/javascript-shared-web-workers-html5/",
+      "title": "Sitepoint article"
+    },
+    {
+      "url": "https://greenido.wordpress.com/2011/11/03/web-workers-part-3-out-of-3-shared-wrokers/",
+      "title": "Blog post"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "29"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "5"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "10.6"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "5.0-5.1"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 49.77,
+      "partial": 0,
+      "total": 49.77
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "sharedworkers"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "shared-workers",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedWorker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedWorker.SharedWorker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedWorker.SharedWorker.mime_checks",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedWorker.SharedWorker.options_name_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedWorker.error_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedWorker.port",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedWorkerGlobalScope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedWorkerGlobalScope.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedWorkerGlobalScope.connect_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedWorkerGlobalScope.name",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=sharedworkers"
+}

@@ -1,0 +1,89 @@
+{
+  "id": "svg-fonts",
+  "source": "caniuse",
+  "name": "SVG fonts",
+  "description": "Method of using fonts defined as SVG shapes. Removed from [SVG 2.0](https://www.w3.org/TR/SVG2/changes.html#fonts) and considered as a deprecated feature with support being removed from browsers.",
+  "category": "SVG",
+  "links": [
+    {
+      "url": "http://jeremie.patonnier.net/post/2011/02/07/Why-are-SVG-Fonts-so-different",
+      "title": "Blog post"
+    },
+    {
+      "url": "https://opentype.info/blog/2010/04/13/the-ipad-and-svg-fonts-in-mobile-safari.html?redirect=true",
+      "title": "Blog post on usage for iPad"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "n",
+      "firstFull": "4"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "3.2"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n",
+      "firstFull": "9"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "3.2"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "u",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 13.81,
+      "partial": 0,
+      "total": 13.81
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "saf": 1.42,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "smsg": 1.93
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Chrome 38 and newer support SVG fonts only on Windows Vista and XP.",
+      "2": "Supported in Opera Mini in SVG images only, not in HTML."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "svg-fonts"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=svg-fonts"
+}

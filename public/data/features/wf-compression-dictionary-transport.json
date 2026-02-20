@@ -1,0 +1,114 @@
+{
+  "id": "wf-compression-dictionary-transport",
+  "source": "webfeatures",
+  "name": "Compression Dictionary Transport",
+  "description": "Compression Dictionary Transport is a mechanism for using designated HTTP responses as an external dictionary for future HTTP responses for compression schemes that support using external dictionaries (e.g., Brotli and Zstandard)",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Use-As-Dictionary",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "130"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "130"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "130"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "130"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "130"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "130"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 68.86,
+      "partial": 0,
+      "total": 68.86
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 20.57,
+        "edg": 4.17
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "compression-dictionary-transport"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.link.rel.compression-dictionary",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Accept-Encoding.dcb",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Accept-Encoding.dcz",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Available-Dictionary",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Encoding.dcb",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Encoding.dcz",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Dictionary-ID",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Use-As-Dictionary",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-compression-dictionary-transport"
+}

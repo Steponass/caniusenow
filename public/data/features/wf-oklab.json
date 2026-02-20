@@ -1,0 +1,103 @@
+{
+  "id": "wf-oklab",
+  "source": "webfeatures",
+  "name": "Oklab and OkLCh",
+  "description": "The Oklab color space expresses colors in terms of lightness and how red/green and blue/yellow a color is, aiming to match how humans perceive colors. OkLCh is a variant of Oklab with polar coordinates. These color spaces can be used with the CSS oklab() and oklch() functions.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/color_value/oklch",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "111"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "113"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "15.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "111"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "111"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "111"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "111"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "111"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "113"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.57,
+      "partial": 0,
+      "total": 89.57
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 25.19,
+        "ffx": 1.75,
+        "saf": 1.37,
+        "edg": 4.21,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.82,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "oklab"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.types.color.oklab",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.color.oklab.mixed_type_parameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.color.oklch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.color.oklch.mixed_type_parameters",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-oklab"
+}

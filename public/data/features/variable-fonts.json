@@ -1,0 +1,125 @@
+{
+  "id": "variable-fonts",
+  "source": "caniuse",
+  "name": "Variable fonts",
+  "description": "OpenType font settings that allows a single font file to behave like multiple fonts: it can contain all the allowed variations in width, weight, slant, optical size, or any other exposed axes of variation as defined by the font designer. Variations can be applied via the `font-variation-settings` property.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/font-variation-settings",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings",
+      "title": "MDN Web docs article"
+    },
+    {
+      "url": "https://medium.com/clear-left-thinking/how-to-use-variable-fonts-in-the-real-world-e6d73065a604",
+      "title": "How to use variable fonts in the real world"
+    },
+    {
+      "url": "https://v-fonts.com",
+      "title": "v-fonts.com - A simple resource for finding and trying variable fonts"
+    },
+    {
+      "url": "https://www.axis-praxis.org/about",
+      "title": "Axis-Praxis - Tool & info on variable fonts"
+    },
+    {
+      "url": "https://evilmartians.com/chronicles/the-joy-of-variable-fonts-getting-started-on-the-frontend",
+      "title": "Getting started with Variable Fonts on the Frontend (2022)"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "67"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "17"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "54"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "13.0-13.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "u"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.02,
+      "partial": 0.04,
+      "total": 96.06
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.18,
+        "saf": 1.37,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.91,
+        "an_chr": 44.12
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Works with Experimental Web Platform features enabled",
+      "2": "Requires macOS 10.12 Sierra or later and the following about:config flags to be enabled:\r\n`layout.css.font-variations.enabled`,\r\n`gfx.downloadable_fonts.keep_variation_tables`",
+      "3": "Requires macOS 10.13 High Sierra or later or [Windows 10 1709 \"Fall Creators Update\" or later](https://bugzilla.mozilla.org/show_bug.cgi?id=1742970#c2)",
+      "4": "Does not support the `font-weight` and `font-stretch` properties.",
+      "5": "Does not support `format('truetype-variations')`, `format('woff-variations')`, `format('woff2-variations')`",
+      "6": "Does not support OpenType-CFF2 fonts",
+      "7": "OpenType-CFF2 support requires macOS 10.15 Catalina or later"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "variable-fonts"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "font-variation-settings",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.font-face.font-variation-settings",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-variation-settings",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=variable-fonts"
+}

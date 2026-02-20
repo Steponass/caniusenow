@@ -1,0 +1,74 @@
+{
+  "id": "wf-webdriver",
+  "source": "webfeatures",
+  "name": "WebDriver",
+  "description": "The WebDriver protocol allows out-of-process programs to inspect and control browsers to, for example, run tests of web applications. Also known as WebDriver classic.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/webdriver",
+  "links": [],
+  "support": {
+    "ffx": {
+      "current": "y",
+      "firstFull": "66"
+    },
+    "chr": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "66"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 2.06,
+      "partial": 0,
+      "total": 2.06
+    },
+    "byBrowser": {
+      "desktop": {
+        "ffx": 1.75
+      },
+      "mobile": {
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webdriver"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.webdriver",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-webdriver"
+}

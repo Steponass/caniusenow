@@ -1,0 +1,83 @@
+{
+  "id": "wf-style-query-range-syntax",
+  "source": "webfeatures",
+  "name": "Range syntax for style queries",
+  "description": "The @container style() CSS at-rule and if(style()) CSS function queries accept a range syntax, such as >, <, >=, <=, to query for inexact values.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "142"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "142"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "142"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "142"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "142"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "142"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 62.71,
+      "partial": 0,
+      "total": 62.71
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 14.64,
+        "edg": 3.94
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "style-query-range-syntax"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.container.style_queries_for_custom_properties.range_syntax",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.if.style.range_syntax",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-style-query-range-syntax"
+}

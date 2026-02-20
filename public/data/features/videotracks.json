@@ -1,0 +1,81 @@
+{
+  "id": "videotracks",
+  "source": "caniuse",
+  "name": "Video Tracks",
+  "description": "Method of specifying and selecting between multiple video tracks. Useful for providing sign language tracks, burnt-in captions or subtitles, alternative camera angles, etc.",
+  "category": "HTML5",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement",
+      "title": "MDN Web Docs - HTMLMediaElement"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "6.1"
+    },
+    "edg": {
+      "current": "u",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "u"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "7.0-7.1"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 13.8,
+      "partial": 0,
+      "total": 13.8
+    },
+    "byBrowser": {
+      "desktop": {
+        "saf": 1.42,
+        "edg": 4.26
+      },
+      "mobile": {
+        "ios_saf": 12.22
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Supported in Firefox by enabling \"media.track.enabled\" in about:config",
+      "2": "Supported in Chrome and Opera by enabling \"enable-experimental-web-platform-features\" in chrome:flags"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "videotracks"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=videotracks"
+}

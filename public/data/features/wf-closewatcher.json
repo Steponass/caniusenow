@@ -1,0 +1,109 @@
+{
+  "id": "wf-closewatcher",
+  "source": "webfeatures",
+  "name": "CloseWatcher",
+  "description": "The CloseWatcher API listens and responds to close requests on in-page components, such as modals, popovers, and sidebars.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/CloseWatcher/requestClose",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "126"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "126"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "126"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "126"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "126"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "126"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 69.88,
+      "partial": 0,
+      "total": 69.88
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 21.58,
+        "edg": 4.18
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "closewatcher"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CloseWatcher",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CloseWatcher.CloseWatcher",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CloseWatcher.cancel_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CloseWatcher.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CloseWatcher.close_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CloseWatcher.destroy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CloseWatcher.requestClose",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-closewatcher"
+}

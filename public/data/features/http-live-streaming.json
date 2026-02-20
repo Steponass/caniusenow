@@ -1,0 +1,90 @@
+{
+  "id": "http-live-streaming",
+  "source": "caniuse",
+  "name": "HTTP Live Streaming (HLS)",
+  "description": "HTTP-based media streaming communications protocol",
+  "category": "Other",
+  "links": [
+    {
+      "url": "https://en.wikipedia.org/wiki/HTTP_Live_Streaming",
+      "title": "Wikipedia article"
+    },
+    {
+      "url": "https://developer.apple.com/streaming/",
+      "title": "Apple developer article"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "142"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "6"
+    },
+    "edg": {
+      "current": "n",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "3.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 75.33,
+      "partial": 0,
+      "total": 75.33
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 14.64,
+        "saf": 1.42,
+        "edg": 4.26
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "HLS can be used with a JavaScript library in browsers that doesn't support it natively as long as they support [Media Source Extensions](/mediasource).",
+    "byNum": {}
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "http-live-streaming"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=http-live-streaming"
+}

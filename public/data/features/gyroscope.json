@@ -1,0 +1,118 @@
+{
+  "id": "gyroscope",
+  "source": "caniuse",
+  "name": "Gyroscope",
+  "description": "Defines a concrete sensor interface to monitor the rate of rotation around the device’s local three primary axes.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/gyroscope",
+  "links": [
+    {
+      "url": "https://intel.github.io/generic-sensor-demos/",
+      "title": "Demo"
+    },
+    {
+      "url": "https://developers.google.com/web/updates/2017/09/sensors-for-the-web#gyroscope-sensor",
+      "title": "Article"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "67"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "54"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 78.4,
+      "partial": 0,
+      "total": 78.4
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.18,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Available by enabling the \"Generic Sensor\" experimental flag in `about:flags`"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "gyroscope"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "gyroscope",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Gyroscope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Gyroscope.x",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Gyroscope.y",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Gyroscope.z",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.gyroscope",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=gyroscope"
+}

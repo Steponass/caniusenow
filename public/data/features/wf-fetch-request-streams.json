@@ -1,0 +1,84 @@
+{
+  "id": "wf-fetch-request-streams",
+  "source": "webfeatures",
+  "name": "Fetch upload streams",
+  "description": "A fetch() request uploads a stream of data to the server when a request's body property is a ReadableStream object.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Request/body",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "105"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "11.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "105"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "105"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "105"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "105"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "105"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.34,
+      "partial": 0,
+      "total": 89.34
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.67,
+        "saf": 1.42,
+        "edg": 4.25,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 12.09,
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "fetch-request-streams"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Request.body",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-fetch-request-streams"
+}

@@ -1,0 +1,97 @@
+{
+  "id": "opus",
+  "source": "caniuse",
+  "name": "Opus audio format",
+  "description": "Royalty-free open audio codec by IETF, which incorporated SILK from Skype and CELT from Xiph.org, to serve higher sound quality and lower latency at the same bitrate.",
+  "category": "Other",
+  "links": [
+    {
+      "url": "https://hacks.mozilla.org/2012/07/firefox-beta-15-supports-the-new-opus-audio-format/",
+      "title": "Introduction of Opus by Mozilla"
+    },
+    {
+      "url": "https://www.ietf.org/mail-archive/web/rtcweb/current/msg04953.html",
+      "title": "Google's statement about the use of VP8 and Opus codec for WebRTC standard"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "33"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "saf": {
+      "current": "u"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "14"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "20"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "18.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "5.0-5.4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.46,
+      "partial": 3.86,
+      "total": 96.32
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 9.93,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Support refers to this format's use in the `audio` element, not other conditions.\r\n\r\nFor Opera the Linux version may be able to play it when the GStreamer module is up to date and the served mime-type is 'audio/ogg'.",
+    "byNum": {
+      "1": "Supported only when packaged in a CAF file and on macOS High Sierra/iOS 11 or later (constant bit-rate only).",
+      "2": "Supported in a WebM container (all bitrates). Has a [known regression](https://bugs.webkit.org/show_bug.cgi?id=245428).",
+      "3": "Supported in a WebM container (all bitrates).",
+      "4": "Partial support refers to requiring macOS 15.4 Sequoia or later."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "opus"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=opus"
+}

@@ -1,0 +1,133 @@
+{
+  "id": "wf-layout-direction-override",
+  "source": "webfeatures",
+  "name": "Layout direction override",
+  "description": "The unicode-bidi and direction CSS properties override the Unicode layout algorithm. They are intended for Document Type Definition (DTD) designers. For HTML documents, you should use the dir global HTML attribute and <bdo> HTML element instead.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/unicode-bidi",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "48"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "50"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "11"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "48"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "48"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "48"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "50"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.3,
+      "partial": 0,
+      "total": 92.3
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.33,
+        "ffx": 1.76,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.19,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "layout-direction-override"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.direction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.direction.ltr",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.direction.rtl",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.unicode-bidi",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.unicode-bidi.bidi-override",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.unicode-bidi.embed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.unicode-bidi.isolate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.unicode-bidi.isolate-override",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.unicode-bidi.normal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.unicode-bidi.plaintext",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-layout-direction-override"
+}

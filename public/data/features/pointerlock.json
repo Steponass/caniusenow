@@ -1,0 +1,120 @@
+{
+  "id": "pointerlock",
+  "source": "caniuse",
+  "name": "Pointer Lock API",
+  "description": "API that provides access to raw mouse movement data. This is done by ignoring boundaries resulting from screen edges where the cursor can't go beyond, providing proper control for first person or real time strategy games. ",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Element/requestPointerLock",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Pointer_Lock_API",
+      "title": "MDN Web Docs - Pointer Lock"
+    },
+    {
+      "url": "https://mdn.github.io/dom-examples/pointer-lock/",
+      "title": "Simple demo"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "22"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "14"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "10.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "13"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 38.58,
+      "partial": 0,
+      "total": 38.58
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "pointerlock"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "pointer-lock",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.exitPointerLock",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.pointerLockElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.pointerlockchange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.pointerlockerror_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.requestPointerLock",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=pointerlock"
+}

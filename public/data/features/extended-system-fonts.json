@@ -1,0 +1,122 @@
+{
+  "id": "extended-system-fonts",
+  "source": "caniuse",
+  "name": "ui-serif, ui-sans-serif, ui-monospace and ui-rounded values for font-family",
+  "description": "Allows more control when choosing system interface fonts",
+  "category": "CSS",
+  "links": [
+    {
+      "url": "https://webkit.org/blog/10247/new-webkit-features-in-safari-13-1/",
+      "title": "WebKit Safari 13.1 announcement"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1598879",
+      "title": "ui-serif Firefox support bug"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1598880",
+      "title": "ui-sans-serif Firefox support bug"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1598881",
+      "title": "ui-monospace Firefox support bug"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1598883",
+      "title": "ui-rounded Firefox support bug"
+    },
+    {
+      "url": "https://bugs.chromium.org/p/chromium/issues/detail?id=1029069",
+      "title": "Chromium support bug"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "13.1"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "13.4-13.7"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 13.43,
+      "partial": 0,
+      "total": 13.43
+    },
+    "byBrowser": {
+      "desktop": {
+        "saf": 1.42
+      },
+      "mobile": {
+        "ios_saf": 11.9
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "extended-system-fonts"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "font-family-ui",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-family.ui-monospace",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-family.ui-rounded",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-family.ui-sans-serif",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-family.ui-serif",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=extended-system-fonts"
+}

@@ -1,0 +1,98 @@
+{
+  "id": "css-display-contents",
+  "source": "caniuse",
+  "name": "CSS display: contents",
+  "description": "`display: contents` causes an element's children to appear as if they were direct children of the element's parent, ignoring the element itself. This can be useful when a wrapper element should be ignored when using CSS grid or similar layout techniques.",
+  "category": "CSS",
+  "links": [
+    {
+      "url": "https://rachelandrew.co.uk/archives/2016/01/29/vanishing-boxes-with-display-contents/",
+      "title": "Vanishing boxes with display contents"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "u"
+    },
+    "edg": {
+      "current": "u"
+    },
+    "opr": {
+      "current": "u"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.0"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "u"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 10.82,
+      "partial": 85.01,
+      "total": 95.83
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {
+        "ios_saf": 10.97
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Partial support refers to [severe implementation bugs](https://hidde.blog/more-accessible-markup-with-display-contents/) that renders content inaccessible for many element types.",
+      "2": "Buttons are not accessible with `display: contents` applied. See issues for [Chromium](https://bugs.chromium.org/p/chromium/issues/detail?id=1366037), [Firefox](https://bugzilla.mozilla.org/show_bug.cgi?id=1791648), and [WebKit](https://bugs.webkit.org/show_bug.cgi?id=255149)",
+      "3": "HTML tables and nodes with ARIA roles `directory`, `grid`, `treegrid`, `table`, `row`, `gridcell`, `cell`, `columnheader`, `tree`, and `treeitem` are not accessible with `display: contents` applied. See WebKit bugs [239478](https://bugs.webkit.org/show_bug.cgi?id=239478), [239479](https://bugs.webkit.org/show_bug.cgi?id=239479), [239478](https://bugs.webkit.org/show_bug.cgi?id=239478), and [257458](https://bugs.webkit.org/show_bug.cgi?id=257458)"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-display-contents"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "display-contents",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.display.contents",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.display.contents.contents_unusual",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.display.contents.focusable_elements",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=css-display-contents"
+}

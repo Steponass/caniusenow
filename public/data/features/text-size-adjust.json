@@ -1,0 +1,120 @@
+{
+  "id": "text-size-adjust",
+  "source": "caniuse",
+  "name": "CSS text-size-adjust",
+  "description": "On mobile devices, the text-size-adjust CSS property allows Web authors to control if and how the text-inflating algorithm is applied to the textual content of the element it is applied to.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/text-size-adjust",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust",
+      "title": "MDN Web Docs - text-size-adjust"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1226116",
+      "title": "Mozilla Bug #1226116: Unprefix -moz-text-size-adjust"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "54"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "43"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "5.0-5.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "5.0-5.4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.77,
+      "partial": 0,
+      "total": 92.77
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.26,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "If the viewport size is set using a `<meta>` element, the `-ms-text-size-adjust` property is ignored. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust)",
+      "2": "Old versions of WebKit-based desktop browsers (Chrome<27, Safari<6) [suffer from a bug](https://bugs.webkit.org/show_bug.cgi?id=56543) where if `-webkit-text-size-adjust` is explicitly set to `none`, instead of ignoring the property, the browsers will prevent the user from zooming in or out on the webpage."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "text-size-adjust"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "text-size-adjust",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-size-adjust",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-size-adjust.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-size-adjust.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-size-adjust.percentages",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=text-size-adjust"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "wf-clipboardchange",
+  "source": "webfeatures",
+  "name": "clipboardchange",
+  "description": "The clipboardchange event for navigator.clipboard fires when the user modifies the clipboard's contents.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/ClipboardChangeEvent/types",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 44.17,
+      "partial": 0,
+      "total": 44.17
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 0.05
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "clipboardchange"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardChangeEvent.ClipboardChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardChangeEvent.changeId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardChangeEvent.types",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-clipboardchange"
+}

@@ -1,0 +1,101 @@
+{
+  "id": "css-initial-letter",
+  "source": "caniuse",
+  "name": "CSS Initial Letter",
+  "description": "Method of creating an enlarged cap, including a drop or raised cap, in a robust way.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/initial-letter",
+  "links": [
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1273019",
+      "title": "Firefox Implementation Ticket"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter",
+      "title": "MDN Web Docs - CSS initial-letter"
+    },
+    {
+      "url": "https://webdesign.tutsplus.com/tutorials/better-css-drop-caps-with-initial-letter--cms-26350",
+      "title": "Blog post on Envato Tuts+, \"Better CSS Drop Caps With initial-letter\""
+    },
+    {
+      "url": "https://labs.jensimmons.com/#initialletter",
+      "title": "Demos at Jen Simmons Labs"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=229090",
+      "title": "WebKit bug to unprefix -webkit-initial-letter"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "u"
+    },
+    "edg": {
+      "current": "u"
+    },
+    "opr": {
+      "current": "u"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 90.52,
+      "total": 90.52
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Web fonts have no affect on the initial letter. Instead a fallback system font is used.",
+      "2": "Only supports the `initial-letter` property (not `initial-letter-align` or `initial-letter-wrap`)."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-initial-letter"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "initial-letter",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.initial-letter",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=css-initial-letter"
+}

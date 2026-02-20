@@ -1,0 +1,99 @@
+{
+  "id": "wf-fetchlater",
+  "source": "webfeatures",
+  "name": "fetchLater",
+  "description": "The fetchLater() method requests a deferred fetch sent at an unknown time. The browser chooses a reliable time to send the request, ideally when the document is unloaded, and ignores the response. This API is useful for sending beacons to a server without expecting a particular response.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/deferred-fetch-minimal",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "135"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "135"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "135"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "135"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "135"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "135"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 67.84,
+      "partial": 0,
+      "total": 67.84
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 19.6,
+        "edg": 4.12
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "fetchlater"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.FetchLaterResult",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FetchLaterResult.activated",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.fetchLater",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.deferred-fetch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.deferred-fetch-minimal",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=wf-fetchlater"
+}
