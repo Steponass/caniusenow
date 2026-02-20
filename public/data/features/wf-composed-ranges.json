@@ -1,0 +1,87 @@
+{
+  "id": "wf-composed-ranges",
+  "source": "webfeatures",
+  "name": "Selection composed ranges",
+  "description": "The window.getSelection().getComposedRanges() method returns ranges that represent the current user selection, even if the selection spans across shadow tree boundaries.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Selection/getComposedRanges",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "137"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "142"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "17"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "137"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "137"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "137"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "137"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "137"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "142"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 81.39,
+      "partial": 0,
+      "total": 81.39
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 19.47,
+        "ffx": 1.35,
+        "saf": 1.07,
+        "edg": 4.1
+      },
+      "mobile": {
+        "ios_saf": 10.97,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "composed-ranges"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Selection.getComposedRanges",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Selection%20composed%20ranges"
+}

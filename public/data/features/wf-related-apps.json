@@ -1,0 +1,72 @@
+{
+  "id": "wf-related-apps",
+  "source": "webfeatures",
+  "name": "Related apps",
+  "description": "The related_applications web app manifest member lists operating system-specific applications that are related to the current web app, such as an Android app that provides similar functionality. The getInstalledRelatedApps() method lists which of those are installed on the current device.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/getInstalledRelatedApps",
+  "links": [],
+  "support": {
+    "edg": {
+      "current": "y",
+      "firstFull": "85"
+    },
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "85"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 4.26,
+      "partial": 0,
+      "total": 4.26
+    },
+    "byBrowser": {
+      "desktop": {
+        "edg": 4.26
+      },
+      "mobile": {}
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "related-apps"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.getInstalledRelatedApps",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Related%20apps"
+}

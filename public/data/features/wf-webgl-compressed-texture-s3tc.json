@@ -1,0 +1,89 @@
+{
+  "id": "wf-webgl-compressed-texture-s3tc",
+  "source": "webfeatures",
+  "name": "WEBGL_compressed_texture_s3tc WebGL extension",
+  "description": "The WEBGL_compressed_texture_s3tc extension for WebGL 1.0 and 2.0 contexts adds S3TC compressed texture formats to compressedTexImage2D() and compressedTexSubImage2D().",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WEBGL_compressed_texture_s3tc",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "26"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "22"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "8"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "26"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "8"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "26"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "26"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "22"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.26,
+      "partial": 0,
+      "total": 94.26
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "an_chr": 44.12,
+        "smsg": 1.85,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webgl-compressed-texture-s3tc"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.WEBGL_compressed_texture_s3tc",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=WEBGL_compressed_texture_s3tc%20WebGL%20extension"
+}

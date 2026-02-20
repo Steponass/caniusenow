@@ -1,0 +1,129 @@
+{
+  "id": "calc",
+  "source": "caniuse",
+  "name": "calc() as CSS unit value",
+  "description": "Method of allowing calculated values for length units, i.e. `width: calc(100% - 3em)`",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/calc",
+  "links": [
+    {
+      "url": "https://hacks.mozilla.org/2010/06/css3-calc/",
+      "title": "Mozilla Hacks article"
+    },
+    {
+      "url": "https://developer.mozilla.org/en/docs/Web/CSS/calc",
+      "title": "MDN Web Docs - calc"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/css/functions/calc",
+      "title": "WebPlatform Docs"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "19"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "6"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "6.0-6.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.46,
+      "partial": 0.37,
+      "total": 96.83
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.85,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Support can be somewhat emulated in older versions of IE using the non-standard `expression()` syntax.\r\n\r\nDue to the way browsers handle [sub-pixel rounding](https://johnresig.com/blog/sub-pixel-problems-in-css/) differently, layouts using `calc()` expressions may have unexpected results.",
+    "byNum": {
+      "1": "Partial support in Android Browser 4.4 refers to the browser lacking the ability to multiply and divide values.",
+      "2": "Partial support in IE9 refers to the browser crashing when used as a `background-position` value.",
+      "3": "Partial support in IE10/IE11 refers to calc not working properly with various use cases mentioned in known issues"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "calc"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "calc",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.calc",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.calc.gradient_color_stops",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.calc.nested",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.calc.number_values",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=calc()%20as%20CSS%20unit%20value"
+}

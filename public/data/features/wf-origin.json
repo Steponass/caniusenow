@@ -1,0 +1,106 @@
+{
+  "id": "wf-origin",
+  "source": "webfeatures",
+  "name": "Origin",
+  "description": "An Origin object represents an origin, as in a scheme, hostname, and port. You can use it to make same-site and same-origin comparisons.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/origin",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "145"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "145"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "145"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "145"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 44.13,
+      "partial": 0,
+      "total": 44.13
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 0.01
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "origin"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Origin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Origin.Origin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Origin.from_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Origin.isSameOrigin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Origin.isSameSite",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Origin.opaque",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.origin",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Origin"
+}

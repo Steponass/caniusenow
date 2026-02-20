@@ -1,0 +1,103 @@
+{
+  "id": "wf-managed-media-source",
+  "source": "webfeatures",
+  "name": "Managed media source",
+  "description": "The ManagedMediaSource API is a MediaSource where the browser manages the memory of source buffers and may evict data if needed.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "saf": {
+      "current": "y",
+      "firstFull": "17"
+    },
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 12.04,
+      "partial": 0,
+      "total": 12.04
+    },
+    "byBrowser": {
+      "desktop": {
+        "saf": 1.07
+      },
+      "mobile": {
+        "ios_saf": 10.97
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "managed-media-source"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ManagedMediaSource",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ManagedMediaSource.ManagedMediaSource",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ManagedMediaSource.endstreaming_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ManagedMediaSource.startstreaming_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ManagedMediaSource.streaming",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ManagedSourceBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ManagedSourceBuffer.bufferedchange_event",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Managed%20media%20source"
+}

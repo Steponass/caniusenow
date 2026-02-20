@@ -1,0 +1,98 @@
+{
+  "id": "wf-scoped-custom-element-registries",
+  "source": "webfeatures",
+  "name": "Scoped custom element registries",
+  "description": "The CustomElementRegistry() constructor creates a new custom element registry that's separate from the global window.customElements registry. Creating more than one registry is useful for multiple custom elements that have the same tag name to coexist.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "saf": {
+      "current": "y",
+      "firstFull": "26"
+    },
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "26"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 2.25,
+      "partial": 0,
+      "total": 2.25
+    },
+    "byBrowser": {
+      "desktop": {
+        "saf": 0.52
+      },
+      "mobile": {
+        "ios_saf": 1.73
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "scoped-custom-element-registries"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomElementRegistry.CustomElementRegistry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CustomElementRegistry.initialize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.customElementRegistry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.customElementRegistry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTemplateElement.shadowRootCustomElementRegistry",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.customElementRegistry",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Scoped%20custom%20element%20registries"
+}

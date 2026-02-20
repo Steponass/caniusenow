@@ -1,0 +1,94 @@
+{
+  "id": "wf-functions-caller-arguments",
+  "source": "webfeatures",
+  "name": "Function caller and arguments",
+  "description": "The caller and arguments properties of a non-strict mode Function object are the function that called it and the arguments it was called with. Not to be confused with the arguments variable in a function body's local scope.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/caller",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "1"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "1"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "3"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "1"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "3"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "1"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "1"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "1"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.44,
+      "partial": 0,
+      "total": 94.44
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.85,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "functions-caller-arguments"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Function.arguments",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Function.caller",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Function%20caller%20and%20arguments"
+}

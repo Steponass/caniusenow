@@ -1,0 +1,139 @@
+{
+  "id": "wf-gamepad-haptics",
+  "source": "webfeatures",
+  "name": "Gamepad haptic feedback",
+  "description": "The gamepad.vibrationActuator property represents a gamepad's haptics hardware, which allows you to control the vibration motors in a gamepad.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/GamepadHapticActuator/reset",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "68"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "16.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "68"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "68"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "68"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.05,
+      "partial": 0,
+      "total": 89.05
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.18,
+        "saf": 1.23,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.35,
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "gamepad-haptics"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Gamepad.hapticActuators",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Gamepad.vibrationActuator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadHapticActuator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadHapticActuator.effects",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadHapticActuator.effects.type_trigger-rumble",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadHapticActuator.playEffect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadHapticActuator.playEffect.params_leftTrigger_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadHapticActuator.playEffect.params_rightTrigger_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadHapticActuator.playEffect.type_trigger-rumble",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadHapticActuator.pulse",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadHapticActuator.reset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.GamepadHapticActuator.secure_context_required",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Gamepad%20haptic%20feedback"
+}

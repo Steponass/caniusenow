@@ -1,0 +1,119 @@
+{
+  "id": "css-widows-orphans",
+  "source": "caniuse",
+  "name": "CSS widows & orphans",
+  "description": "CSS properties to control when lines break across pages or columns by defining the amount of lines that must be left before or after the break.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/widows",
+  "links": [
+    {
+      "url": "https://thenewcode.com/946/CSS-last-line-Controlling-Widows-amp-Orphans",
+      "title": "CSS last-line: Controlling Widows & Orphans"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=137367",
+      "title": "Firefox support bug"
+    },
+    {
+      "url": "https://tympanus.net/codrops/css_reference/orphans/",
+      "title": "codrops article on orphans"
+    },
+    {
+      "url": "https://tympanus.net/codrops/css_reference/widows/",
+      "title": "codrops article on widows"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "25"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "7"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "10"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "7.0-7.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.79,
+      "partial": 0,
+      "total": 94.79
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.36
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "an_chr": 44.12,
+        "smsg": 1.93
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Some older WebKit-based browsers recognize the properties, but do not appear to have actual support",
+    "byNum": {
+      "1": "Supports widows & orphans properties, but due to not supporting CSS multi-columns the support is only for page breaks (for print)"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-widows-orphans"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "widows-orphans",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.orphans",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.widows",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS%20widows%20%26%20orphans"
+}

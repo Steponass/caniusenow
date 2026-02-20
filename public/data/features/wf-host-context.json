@@ -1,0 +1,80 @@
+{
+  "id": "wf-host-context",
+  "source": "webfeatures",
+  "name": ":host-context()",
+  "description": "The :host-context() CSS pseudo-class selects the containing element of the shadow tree in which it is used if that element or an ancestor matches the provided selector.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Selectors/:host-context",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "54"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "54"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "54"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "54"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.55,
+      "partial": 0,
+      "total": 76.55
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.26,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "host-context"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.host-context",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=%3Ahost-context()"
+}

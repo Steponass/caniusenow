@@ -1,0 +1,128 @@
+{
+  "id": "css-focus-within",
+  "source": "caniuse",
+  "name": ":focus-within CSS pseudo-class",
+  "description": "The `:focus-within` pseudo-class matches elements that either themselves match `:focus` or that have descendants which match `:focus`.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Selectors/:focus-within",
+  "links": [
+    {
+      "url": "https://www.sitepoint.com/future-generation-css-selectors-level-4/#generalized-input-focus-pseudo-class-focus-within",
+      "title": "The Future Generation of CSS Selectors: Level 4: Generalized Input Focus Pseudo-class"
+    },
+    {
+      "url": "https://allyjs.io/api/style/focus-within.html",
+      "title": "ally.style.focusWithin Polyfill, part of ally.js"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=140144",
+      "title": "WebKit bug #140144: Add support for CSS4 `:focus-within` pseudo"
+    },
+    {
+      "url": "https://bugs.chromium.org/p/chromium/issues/detail?id=617371",
+      "title": "Chromium issue #617371: Implement `:focus-within` pseudo-class from Selectors Level 4"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1176997",
+      "title": "Mozilla bug #1176997: Add support for pseudo class `:focus-within`"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within",
+      "title": "MDN Web Docs - :focus-within"
+    },
+    {
+      "url": "https://jsbin.com/qevoqa/edit?html,css,output",
+      "title": "JS Bin testcase"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "60"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "52"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "10.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "47"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10.3"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "8.2"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.14,
+      "partial": 0,
+      "total": 96.14
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.21,
+        "ffx": 1.76,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Can be enabled via the \"Experimental Web Platform Features\" flag"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-focus-within"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "focus-within",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.focus-within",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=%3Afocus-within%20CSS%20pseudo-class"
+}

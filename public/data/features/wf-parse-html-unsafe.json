@@ -1,0 +1,98 @@
+{
+  "id": "wf-parse-html-unsafe",
+  "source": "webfeatures",
+  "name": "Unsanitized HTML parsing methods",
+  "description": "The Document.parseHTMLUnsafe() static method parses HTML into a DOM tree, while the setHTMLUnsafe() method of Element and ShadowRoot parses and inserts HTML into an existing tree. No sanitization applies to these methods, so never call them with user-provided HTML strings.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/ShadowRoot/setHTMLUnsafe",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "124"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "128"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "26"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "124"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "124"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "124"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "26"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "124"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "124"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "128"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 75.41,
+      "partial": 0,
+      "total": 75.41
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 22.3,
+        "ffx": 1.48,
+        "saf": 0.52,
+        "edg": 4.18,
+        "opr": 0.78
+      },
+      "mobile": {
+        "ios_saf": 1.73,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "parse-html-unsafe"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.parseHTMLUnsafe_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.setHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.setHTMLUnsafe",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Unsanitized%20HTML%20parsing%20methods"
+}

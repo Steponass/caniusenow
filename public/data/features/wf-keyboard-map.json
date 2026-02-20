@@ -1,0 +1,125 @@
+{
+  "id": "wf-keyboard-map",
+  "source": "webfeatures",
+  "name": "Keyboard map",
+  "description": "The navigator.keyboard.getLayoutMap() API returns a map from key codes to human readable key names. It can be used to describe buttons to the user when using the keyboard as a set of buttons, such as in games.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/values",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "69"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "69"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "69"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "69"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.47,
+      "partial": 0,
+      "total": 76.47
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.18,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "keyboard-map"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Keyboard.getLayoutMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardLayoutMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardLayoutMap.@@iterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardLayoutMap.entries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardLayoutMap.forEach",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardLayoutMap.get",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardLayoutMap.has",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardLayoutMap.keys",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardLayoutMap.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardLayoutMap.values",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Keyboard%20map"
+}

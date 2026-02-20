@@ -1,0 +1,125 @@
+{
+  "id": "css-subgrid",
+  "source": "caniuse",
+  "name": "CSS Subgrid",
+  "description": "Feature of the CSS Grid Layout Module Level 2 that allows a grid-item with its own grid to align in one or both dimensions with its parent grid.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Guides/Grid_layout/Subgrid",
+  "links": [
+    {
+      "url": "https://www.smashingmagazine.com/2018/07/css-grid-2/",
+      "title": "CSS Grid Level 2: Here Comes Subgrid"
+    },
+    {
+      "url": "https://dev.to/kenbellows/why-we-need-css-subgrid-53mh",
+      "title": " Why we need CSS subgrid "
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1240834",
+      "title": "Firefox support bug"
+    },
+    {
+      "url": "https://crbug.com/618969",
+      "title": "Chromium support bug"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=202115",
+      "title": "Webkit support bug"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "117"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "71"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "16.0"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "117"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "103"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.0"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "24"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 87.8,
+      "partial": 0,
+      "total": 87.8
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 23.11,
+        "ffx": 1.75,
+        "saf": 1.27,
+        "edg": 4.21,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.52,
+        "an_chr": 44.12,
+        "smsg": 1.89,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Available behind the [Experimental Web Platform features](chrome://flags/#enable-experimental-web-platform-features) flag"
+    }
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-subgrid"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "subgrid",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.grid-template-columns.subgrid",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.grid-template-rows.subgrid",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS%20Subgrid"
+}

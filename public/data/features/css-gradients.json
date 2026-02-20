@@ -1,0 +1,116 @@
+{
+  "id": "css-gradients",
+  "source": "caniuse",
+  "name": "CSS Gradients",
+  "description": "Method of defining a linear or radial color gradient as a CSS image.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/gradient",
+  "links": [
+    {
+      "url": "https://www.colorzilla.com/gradient-editor/",
+      "title": "Cross-browser editor"
+    },
+    {
+      "url": "http://css3pie.com/",
+      "title": "Tool to emulate support in IE"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/css/functions/linear-gradient",
+      "title": "WebPlatform Docs"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "10"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "36"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "15.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "11.6"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "10"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.17,
+      "partial": 0.59,
+      "total": 96.76
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.37,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.36
+      },
+      "mobile": {
+        "ios_saf": 11.82,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Syntax used by browsers with prefixed support may be incompatible with that for proper support.\r\n\r\nSupport can be somewhat emulated in older IE versions using the non-standard \"gradient\" filter. \r\n\r\nFirefox 10+, Opera 11.6+, Chrome 26+ and IE10+ also support the new \"to (side)\" syntax.",
+    "byNum": {
+      "1": "Partial support in Opera 11.10 and 11.50 also refers to only having support for linear gradients.",
+      "2": "Partial support in Safari and Older Firefox versions refers to not using premultiplied colors which results in unexpected behavior when using the transparent keyword as advised by the [spec](https://www.w3.org/TR/2012/CR-css3-images-20120417/#color-stop-syntax).",
+      "3": "Implements an earlier prefixed syntax as `-webkit-gradient`"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-gradients"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "gradients",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.background-image.gradients",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS%20Gradients"
+}

@@ -1,0 +1,135 @@
+{
+  "id": "online-status",
+  "source": "caniuse",
+  "name": "Online/offline status",
+  "description": "Events to indicate when the user's connected (`online` and `offline` events) and the `navigator.onLine` property to see current status.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WorkerNavigator/onLine",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine.onLine#Specification",
+      "title": "MDN Web Docs - NavigatorOnLine.onLine"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "14"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "3.5"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "5"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "15",
+      "firstPartial": "12.1"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "9"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "4.2-4.3"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.74,
+      "partial": 0.12,
+      "total": 96.86
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.85,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.41
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "\"online\" does not always mean connection to the internet, it can also just mean connection to some network.\r\n\r\nEarly versions of Chrome and Safari always reported \"true\" for `navigator.onLine`",
+    "byNum": {
+      "1": "Seems to support `navigator.onLine` but not `online`/`offline` events.",
+      "2": "IE8 only supports the `online`/`offline` events on `document.body`, rather than `window`.",
+      "3": "Desktop Firefox responds to the status of its \"Work Offline\" mode. If not in that mode, `navigator.onLine` is always `true`, regardless of the actual network connectivity status. [See bug](https://bugzilla.mozilla.org/show_bug.cgi?id=654579) for details.",
+      "4": "Safari 7.0 supports only the event listener on `window`, and not on `document.body`"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "online-status"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "online",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.onLine",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.offline_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.online_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerGlobalScope.offline_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerGlobalScope.online_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.onLine",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Online%2Foffline%20status"
+}

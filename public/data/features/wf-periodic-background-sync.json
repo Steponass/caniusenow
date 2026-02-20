@@ -1,0 +1,120 @@
+{
+  "id": "wf-periodic-background-sync",
+  "source": "webfeatures",
+  "name": "Periodic background sync",
+  "description": "The periodic background synchronization API fires a recurring periodicsync event in a service worker. You can use this to update data in the background at regular intervals.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/periodicSync",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "80"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "80"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "80"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "80"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "80"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "80"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.36,
+      "partial": 0,
+      "total": 76.36
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.07,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "periodic-background-sync"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.PeriodicSyncEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PeriodicSyncEvent.PeriodicSyncEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PeriodicSyncEvent.tag",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PeriodicSyncManager",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PeriodicSyncManager.getTags",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PeriodicSyncManager.register",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PeriodicSyncManager.unregister",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerGlobalScope.periodicsync_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ServiceWorkerRegistration.periodicSync",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Periodic%20background%20sync"
+}

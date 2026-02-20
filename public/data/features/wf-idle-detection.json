@@ -1,0 +1,120 @@
+{
+  "id": "wf-idle-detection",
+  "source": "webfeatures",
+  "name": "Idle detection",
+  "description": "The IdleDetector API is used to notify a webpage of the user's idle, active, and locked state.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/idle-detection",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "94"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "94"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "94"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "94"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.09,
+      "partial": 0,
+      "total": 76.09
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.93,
+        "edg": 4.21,
+        "opr": 0.82
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "idle-detection"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.IdleDetector",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IdleDetector.IdleDetector",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IdleDetector.change_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IdleDetector.requestPermission_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IdleDetector.screenState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IdleDetector.start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IdleDetector.userState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.idle-detection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.idle-detection",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Idle%20detection"
+}

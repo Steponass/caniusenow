@@ -1,0 +1,107 @@
+{
+  "id": "ch-unit",
+  "source": "caniuse",
+  "name": "ch (character) unit",
+  "description": "Unit representing the width of the character \"0\" in the current font, of particular use in combination with monospace fonts.",
+  "category": "CSS",
+  "links": [
+    {
+      "url": "https://johndjameson.com/posts/making-sense-of-ch-units",
+      "title": "Blog post on using ch units"
+    },
+    {
+      "url": "https://meyerweb.com/eric/thoughts/2018/06/28/what-is-the-css-ch-unit/",
+      "title": "What is the CSS ‘ch’ Unit?"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "27"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "2"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "7"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "7.0-7.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.45,
+      "partial": 0.37,
+      "total": 96.82
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.85,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "IE supports the `ch` unit, but unlike other browsers its width is that specifically of the \"0\" glyph, not its surrounding space. As a result, 3ch for example is shorter than the width of the string \"000\" in IE."
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "ch-unit"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "ch",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.length.ch",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=ch%20(character)%20unit"
+}

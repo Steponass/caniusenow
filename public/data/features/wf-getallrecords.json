@@ -1,0 +1,84 @@
+{
+  "id": "wf-getallrecords",
+  "source": "webfeatures",
+  "name": "IndexedDB getAllRecords()",
+  "description": "The getAllRecords() method of IDBObjectStore and IDBIndex return records and their primary keys from an IndexedDB store or index. The records can be read in batches and in reverse order. The getAllRecords() methods speed up read operations on large datasets.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/IDBObjectStore/getAllRecords",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "141"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "141"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "141"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "141"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "141"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "141"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 63.38,
+      "partial": 0,
+      "total": 63.38
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 15.25,
+        "edg": 4.01
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "getallrecords"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBIndex.getAllRecords",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IDBObjectStore.getAllRecords",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=IndexedDB%20getAllRecords()"
+}

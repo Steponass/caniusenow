@@ -1,0 +1,288 @@
+{
+  "id": "speech-recognition",
+  "source": "caniuse",
+  "name": "Speech Recognition API",
+  "description": "Method to provide speech input in a web browser.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/SpeechRecognitionResultList/length",
+  "links": [
+    {
+      "url": "https://developer.chrome.com/blog/voice-driven-web-apps-introduction-to-the-web-speech-api/",
+      "title": "HTML5Rocks article"
+    },
+    {
+      "url": "https://www.sitepoint.com/introducing-web-speech-api/",
+      "title": "SitePoint article"
+    },
+    {
+      "url": "https://www.audero.it/demo/web-speech-api-demo.html",
+      "title": "Demo"
+    },
+    {
+      "url": "https://zenorocha.github.io/voice-elements/#recognition-element",
+      "title": "Advanced demo and resource"
+    },
+    {
+      "url": "https://bugs.chromium.org/p/chromium/issues/detail?id=570968",
+      "title": "Chromium bug to unprefix the Speech Recognition API"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "u"
+    },
+    "edg": {
+      "current": "u"
+    },
+    "opr": {
+      "current": "u"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 88.36,
+      "total": 88.36
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Partial support refers to some attributes missing.",
+      "2": "Firefox currently has a `media.webspeech.recognition.enable` flag in about:config for this, but actual support is waiting for permissions to be sorted out.",
+      "3": "Edge and Opera appear to have support for the `SpeechRecognition` API but no events for it appear to fire.",
+      "4": "Safari 14.1 and TP 119+ include prefixed support for `webkitSpeechRecognition` without support for `SpeechGrammar` or `SpeechGrammarList`. Siri needs to be enabled. [Not available in SafariViewController and web apps added to Home Screen](https://bugs.webkit.org/show_bug.cgi?id=225298#c3)."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "speech-recognition"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "speech-recognition",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.SpeechRecognition",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.abort",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.audioend_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.audiostart_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.continuous",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.end_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.error_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.interimResults",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.lang",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.maxAlternatives",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.nomatch_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.result_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.soundend_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.soundstart_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.speechend_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.speechstart_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.start_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognition.stop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognitionAlternative",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognitionAlternative.confidence",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognitionAlternative.transcript",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognitionErrorEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognitionErrorEvent.SpeechRecognitionErrorEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognitionErrorEvent.error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognitionErrorEvent.message",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognitionEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognitionEvent.SpeechRecognitionEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognitionEvent.resultIndex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognitionEvent.results",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognitionResult",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognitionResult.isFinal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognitionResult.item",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognitionResult.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognitionResultList",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognitionResultList.item",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechRecognitionResultList.length",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Speech%20Recognition%20API"
+}

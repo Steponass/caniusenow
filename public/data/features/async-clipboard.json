@@ -1,0 +1,187 @@
+{
+  "id": "async-clipboard",
+  "source": "caniuse",
+  "name": "Asynchronous Clipboard API",
+  "description": "A modern, asynchronous Clipboard API based on Promises",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/clipboard",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API",
+      "title": "MDN Web Docs - Clipboard API"
+    },
+    {
+      "url": "https://github.com/w3c/clipboard-apis/blob/master/explainer.adoc",
+      "title": "W3C Async Clipboard Explainer"
+    },
+    {
+      "url": "https://web.dev/async-clipboard/",
+      "title": "Unlocking Clipboard Access"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1619251",
+      "title": "Firefox implementation bug"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "66"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "125"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "13.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "53"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14.0-14.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "25"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 95.04,
+      "partial": 0.64,
+      "total": 95.68
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.2,
+        "ffx": 1.48,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.89,
+        "an_chr": 44.12,
+        "smsg": 1.87,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Browsers differ on how they handle the security considerations for clipboard operations:\r\n\r\nChromium browsers require the `clipboard-write` permission to be granted before allowing clipboard reading & writing.\r\n\r\nSafari browsers will display a \"Paste\" option for users to select first before reading the clipboard.",
+    "byNum": {
+      "1": "Partial support refers to only supporting the \"writeText\" method.",
+      "2": "Supports writing to clipboard but not reading."
+    }
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "async-clipboard"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "async-clipboard",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Clipboard",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Clipboard.read",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Clipboard.readText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Clipboard.type_image-png",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Clipboard.type_text-html",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Clipboard.type_text-plain",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Clipboard.write",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Clipboard.writeText",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardItem.ClipboardItem",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardItem.getType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardItem.presentationStyle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardItem.types",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.clipboard",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Permissions.permission_clipboard-write",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Asynchronous%20Clipboard%20API"
+}

@@ -1,0 +1,118 @@
+{
+  "id": "wf-share",
+  "source": "webfeatures",
+  "name": "navigator.share()",
+  "description": "The navigator.share() method invokes the device's native sharing mechanism and passes text, links, files, and other content to share targets. Also known as the Web Share API.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/web-share",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "128"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "12.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "93"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "128"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "93"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "12.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "128"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "128"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 82.47,
+      "partial": 0,
+      "total": 82.47
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 20.72,
+        "saf": 1.42,
+        "edg": 4.25
+      },
+      "mobile": {
+        "ios_saf": 11.97,
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "share"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.canShare",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.canShare.data_files_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.canShare.data_text_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.share",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.share.data_files_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.share.data_text_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.web-share",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.web-share",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=navigator.share()"
+}

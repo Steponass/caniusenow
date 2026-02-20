@@ -1,0 +1,99 @@
+{
+  "id": "wf-device-posture",
+  "source": "webfeatures",
+  "name": "Device posture",
+  "description": "The device posture API and the device-posture CSS media feature reflect the physical posture of a device, such as whether a foldable device is folded or unfolded.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@media/device-posture",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "132"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "132"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "132"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "132"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "132"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "132"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 68.3,
+      "partial": 0,
+      "total": 68.3
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 20.03,
+        "edg": 4.15
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "device-posture"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.DevicePosture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DevicePosture.change_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DevicePosture.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.devicePosture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.media.device-posture",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Device%20posture"
+}

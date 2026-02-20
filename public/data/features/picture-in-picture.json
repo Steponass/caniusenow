@@ -1,0 +1,214 @@
+{
+  "id": "picture-in-picture",
+  "source": "caniuse",
+  "name": "Picture-in-Picture",
+  "description": "Allows websites to create a floating video window that is always on top of other windows so that users may continue consuming media while they interact with other sites or applications on their device.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/picture-in-picture",
+  "links": [
+    {
+      "url": "https://googlechrome.github.io/samples/picture-in-picture/",
+      "title": "Sample video"
+    },
+    {
+      "url": "https://developer.apple.com/documentation/webkitjs/adding_picture_in_picture_to_your_safari_media_controls",
+      "title": "Safari equivalent API"
+    },
+    {
+      "url": "https://blogs.opera.com/desktop/2016/04/opera-beta-update-video-pop/",
+      "title": "Opera equivalent Video Pop Out feature"
+    },
+    {
+      "url": "https://github.com/WICG/picture-in-picture/blob/master/implementation-status.md",
+      "title": "Implementation Status"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1519885",
+      "title": "Firefox implementation bug"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "70"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "13.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "73"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14.0-14.4"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "u"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 48.66,
+      "partial": 44.26,
+      "total": 92.92
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.14,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.89
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Partial support in Firefox refers to the fact that Mozilla provides an equivalent proprietary feature, which allows users to use Picture-in-Picture mode for all playing videos.",
+      "2": "Partial support in Firefox 71 refers to being enabled by default only for Windows users.",
+      "3": "Partial support in Firefox 68–70 refers to being enabled by default in Firefox pre-release channels for Windows users only.",
+      "4": "Can be enabled in Firefox via the `media.videocontrols.picture-in-picture.enabled` pref in `about:config`.",
+      "5": "Can be enabled in Chrome via the `#enable-picture-in-picture` & `#enable-surfaces-for-videos` flags in `chrome://flags`.",
+      "6": "Partial support in Safari refers to the fact that Apple provides an equivalent proprietary API for Picture-in-Picture, which is only supported by macOS 10.12 Sierra & iOS 9 and newer.",
+      "7": "Partial support in Opera refers to the fact that Opera provides an equivalent proprietary feature named Video Pop Out, which allows users to use Picture-in-Picture mode for all playing videos.",
+      "8": "Automatically plays fullscreen videos in Picture-in-Picture mode after user hits Home Screen button. Only Android 8.0 Oreo and newer provide appropriate API for Picture-in-Picture."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "picture-in-picture"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "picture-in-picture",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.exitPictureInPicture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.pictureInPictureElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.pictureInPictureEnabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLVideoElement.disablePictureInPicture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLVideoElement.enterpictureinpicture_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLVideoElement.leavepictureinpicture_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLVideoElement.requestPictureInPicture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PictureInPictureEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PictureInPictureEvent.PictureInPictureEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PictureInPictureEvent.pictureInPictureWindow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PictureInPictureWindow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PictureInPictureWindow.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PictureInPictureWindow.resize_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PictureInPictureWindow.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.pictureInPictureElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.media.display-mode.picture-in-picture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.picture-in-picture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.picture-in-picture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.video.disablepictureinpicture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.picture-in-picture",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Picture-in-Picture"
+}

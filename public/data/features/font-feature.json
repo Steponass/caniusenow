@@ -1,0 +1,143 @@
+{
+  "id": "font-feature",
+  "source": "caniuse",
+  "name": "CSS font-feature-settings",
+  "description": "Method of applying advanced typographic and language-specific font features to supported OpenType fonts.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/font-feature-settings",
+  "links": [
+    {
+      "url": "https://testdrive-archive.azurewebsites.net/Graphics/opentype/",
+      "title": "Demo pages (IE/Firefox only)"
+    },
+    {
+      "url": "https://hacks.mozilla.org/2010/11/firefox-4-font-feature-support/",
+      "title": "Mozilla hacks article"
+    },
+    {
+      "url": "https://html5accessibility.com/",
+      "title": "Detailed tables on accessibility support"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/css/properties/font-feature-settings",
+      "title": "WebPlatform Docs"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings",
+      "title": "MDN Web Docs - font-feature-settings"
+    },
+    {
+      "url": "https://www.microsoft.com/typography/otspec/featuretags.htm",
+      "title": "OpenType layout feature tag registry"
+    },
+    {
+      "url": "https://helpx.adobe.com/fonts/using/open-type-syntax.html#salt",
+      "title": "Syntax for OpenType features in CSS (Adobe Typekit Help)"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "21"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "9.1",
+      "firstPartial": "4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "10"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "9.3",
+      "firstPartial": "3.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.65,
+      "partial": 0.1,
+      "total": 96.75
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.36
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Whenever possible, font-variant shorthand property or an associated longhand property, font-variant-ligatures, font-variant-caps, font-variant-east-asian, font-variant-alternates, font-variant-numeric or font-variant-position should be used. This property is a low-level feature designed to handle special cases where no other way to enable or access an OpenType font feature exists. In particular, this CSS property shouldn't be used to enable small caps.",
+    "byNum": {
+      "1": "From Gecko 2.0 (Firefox 4.0) to Gecko 14.0 (Firefox 14.0) included, Gecko supported an older syntax, slightly different from the modern one: https://hacks.mozilla.org/2010/11/firefox-4-font-feature-support/",
+      "2": "Partial support in older Chrome versions refers to lacking support in Mac OS X."
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "font-feature"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "font-feature-settings",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.font-face.font-feature-settings",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-feature-settings",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-feature-settings.normal",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS%20font-feature-settings"
+}

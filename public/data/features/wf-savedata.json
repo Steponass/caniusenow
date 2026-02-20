@@ -1,0 +1,85 @@
+{
+  "id": "wf-savedata",
+  "source": "webfeatures",
+  "name": "Save-Data",
+  "description": "Browsers send the Save-Data HTTP request header when the user turns on a data-saving mode. It is a hint to reduce data sent to the browser. Servers should respond with alternative content, such as smaller images and videos, or different markup and styling.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Save-Data",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "65"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "65"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "65"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "65"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.48,
+      "partial": 0,
+      "total": 76.48
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.2,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "savedata"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.NetworkInformation.saveData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Save-Data",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Save-Data"
+}

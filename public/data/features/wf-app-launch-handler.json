@@ -1,0 +1,100 @@
+{
+  "id": "wf-app-launch-handler",
+  "source": "webfeatures",
+  "name": "Launch handler",
+  "description": "The launch_handler web app manifest member, with the client_mode property, configure how web app launches behave when an instance of the app is already open. For example, you can choose to focus the existing app instance instead of launching a new one.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/launchQueue",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "110"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "110"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "110"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "110"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "110"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "110"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 74.42,
+      "partial": 0,
+      "total": 74.42
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 25.29,
+        "edg": 4.21,
+        "opr": 0.79
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "app-launch-handler"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.LaunchParams",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.LaunchParams.targetURL",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.LaunchQueue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.LaunchQueue.setConsumer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.launchQueue",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Launch%20handler"
+}

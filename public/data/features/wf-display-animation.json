@@ -1,0 +1,108 @@
+{
+  "id": "wf-display-animation",
+  "source": "webfeatures",
+  "name": "display animation",
+  "description": "You can animate elements between display: none and any other display value or animate between content-visibility: hidden and any other content-visibility value. This also applies to transitions.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "117"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "18"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "117"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "117"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "117"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "18"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "117"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "117"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 83.39,
+      "partial": 0,
+      "total": 83.39
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 23.11,
+        "saf": 0.74,
+        "edg": 4.21,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.41,
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "display-animation"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.content-visibility.is_transitionable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.content-visibility.keyframe_animatable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.display.is_transitionable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.display.keyframe_animatable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transition-behavior.transitionable_content-visibility",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transition-behavior.transitionable_display",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=display%20animation"
+}

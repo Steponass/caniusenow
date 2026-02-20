@@ -1,0 +1,210 @@
+{
+  "id": "es6-module",
+  "source": "caniuse",
+  "name": "JavaScript modules via script tag",
+  "description": "Loading JavaScript module scripts (aka ES6 modules) using `<script type=\"module\">` Includes support for the `nomodule` attribute.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/import/with",
+  "links": [
+    {
+      "url": "https://strongloop.com/strongblog/an-introduction-to-javascript-es6-modules/",
+      "title": "Intro to ES6 modules"
+    },
+    {
+      "url": "https://blogs.windows.com/msedgedev/2016/05/17/es6-modules-and-beyond/",
+      "title": "MS Edge blog post"
+    },
+    {
+      "url": "https://hacks.mozilla.org/2015/08/es6-in-depth-modules/",
+      "title": "Mozilla hacks article"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=568953",
+      "title": "Firefox support bug"
+    },
+    {
+      "url": "https://blog.hospodarets.com/native-ecmascript-modules-the-first-overview",
+      "title": "Blog post: Native ECMAScript modules - the first overview"
+    },
+    {
+      "url": "https://tc39.es/ecma262/#sec-modules",
+      "title": "Counterpart ECMAScript specification for import/export syntax"
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-nomodule",
+      "title": "Specification for nomodule attribute"
+    },
+    {
+      "url": "https://hospodarets.com/native-ecmascript-modules-nomodule",
+      "title": "Blog post on using nomodule"
+    },
+    {
+      "url": "https://gist.github.com/jakub-g/5fc11af85a061ca29cc84892f1059fec",
+      "title": "Will it double-fetch? Browser behavior with `module` / `nomodule` scripts"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "61"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "60"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "11"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "48"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11.0-11.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "8.2"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.07,
+      "partial": 0.02,
+      "total": 96.09
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.2,
+        "ffx": 1.75,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.19,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Support can be enabled via `about:flags`",
+      "2": "Support can be enabled via `about:config`",
+      "3": "Does not support the `nomodule` attribute",
+      "4": "A [polyfill is available](https://gist.github.com/samthor/64b114e4a4f539915a95b91ffd340acc) for Safari 10.1/iOS Safari 10.3",
+      "5": "`nomodule` scripts are not executed, but they're still fetched"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "es6-module"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "js-modules",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Worklet.ecmascript_modules",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.script.nomodule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.script.type.module",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.import",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.import_meta",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.import_meta.resolve",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.export",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.export.arbitrary_module_namespace_identifier_names",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.export.default",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.export.namespace",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.import",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.import.arbitrary_module_namespace_identifier_names",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.import.import_attributes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.import.worklet_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.elements.script.type.module",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=JavaScript%20modules%20via%20script%20tag"
+}

@@ -1,0 +1,118 @@
+{
+  "id": "css-text-justify",
+  "source": "caniuse",
+  "name": "CSS text-justify",
+  "description": "CSS property to define how text should be justified when `text-align: justify` is set.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/text-justify",
+  "links": [
+    {
+      "url": "https://bugs.chromium.org/p/chromium/issues/detail?id=248894",
+      "title": "Chrome support bug"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=99945",
+      "title": "WebKit support bug"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=276079",
+      "title": "Firefox support bug"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "145"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "u"
+    },
+    "opr": {
+      "current": "u"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "u"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 1.97,
+      "partial": 0.4,
+      "total": 2.37
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 0.01
+      },
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Supports `inter-word`, but not `inter-character` or `none`. Also supports the following unofficial values: `distribute`, `distribute-all-lines`, `distribute-center-last`, `inter-cluster`, `inter-ideograph`, `newspaper`. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-justify) for details.",
+      "2": "`inter-word` and `distribute` values supported behind the \"Experimental platform features\" flag but `distribute` support [is buggy](https://bugs.chromium.org/p/chromium/issues/detail?id=467406)",
+      "3": "Behind the \"layout.css.text-justify.enabled\" flag",
+      "4": "Supports `auto`, `none`, `inter-word`, `inter-character`, and `distribute` with the exact same meaning and behavior as `inter-character` for legacy reasons."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-text-justify"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "text-justify",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-justify",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-justify.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-justify.inter-character",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-justify.inter-word",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-justify.none",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS%20text-justify"
+}

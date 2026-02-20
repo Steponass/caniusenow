@@ -1,0 +1,79 @@
+{
+  "id": "wf-sizes-auto",
+  "source": "webfeatures",
+  "name": "<img sizes=\"auto\" loading=\"lazy\">",
+  "description": "The sizes=\"auto\" attribute for the <img> HTML element sets the layout size for the image based on the computed layout size when choosing a source from the srcset. This attribute only applies to images with the loading=\"lazy\" attribute.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLImageElement/sizes",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "126"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "126"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "126"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "126"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "126"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "126"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 69.88,
+      "partial": 0,
+      "total": 69.88
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 21.58,
+        "edg": 4.18
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "sizes-auto"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.img.sizes.auto",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=%3Cimg%20sizes%3D%22auto%22%20loading%3D%22lazy%22%3E"
+}

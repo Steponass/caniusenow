@@ -1,0 +1,145 @@
+{
+  "id": "wf-compute-pressure",
+  "source": "webfeatures",
+  "name": "CPU compute pressure",
+  "description": "The PressureObserver API monitors CPU load, allowing you to adjust workloads in response to available computing resources. Also known as the Compute Pressure API.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/compute-pressure",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "125"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "125"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "125"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "125"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "125"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "125"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 70.68,
+      "partial": 0,
+      "total": 70.68
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 22.16,
+        "edg": 4.18,
+        "opr": 0.22
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "compute-pressure"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.PressureObserver",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PressureObserver.PressureObserver",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PressureObserver.disconnect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PressureObserver.knownSources_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PressureObserver.observe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PressureObserver.takeRecords",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PressureObserver.unobserve",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PressureRecord",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PressureRecord.source",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PressureRecord.state",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PressureRecord.time",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PressureRecord.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.compute-pressure",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.compute-pressure",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CPU%20compute%20pressure"
+}

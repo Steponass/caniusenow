@@ -1,0 +1,183 @@
+{
+  "id": "wf-audio-worklet",
+  "source": "webfeatures",
+  "name": "AudioWorklet",
+  "description": "The AudioWorklet API runs module code in a separate thread, specifically for non-blocking, low latency audio processing.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WorkletGlobalScope",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "66"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "76"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "14.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "66"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "66"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "66"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "76"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.82,
+      "partial": 0,
+      "total": 91.82
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.2,
+        "ffx": 1.75,
+        "saf": 1.39,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.89,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "audio-worklet"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorklet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorklet.port",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletGlobalScope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletGlobalScope.currentFrame",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletGlobalScope.currentTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletGlobalScope.port",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletGlobalScope.registerProcessor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletGlobalScope.sampleRate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletNode.AudioWorkletNode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletNode.parameters",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletNode.port",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletNode.processorerror_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletProcessor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletProcessor.AudioWorkletProcessor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioWorkletProcessor.port",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BaseAudioContext.audioWorklet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Worklet",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Worklet.addModule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkletGlobalScope",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=AudioWorklet"
+}

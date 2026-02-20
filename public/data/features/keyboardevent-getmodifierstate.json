@@ -1,0 +1,96 @@
+{
+  "id": "keyboardevent-getmodifierstate",
+  "source": "caniuse",
+  "name": "KeyboardEvent.getModifierState()",
+  "description": "`KeyboardEvent` method that returns the state (whether the key is pressed/locked or not) of the given modifier key.",
+  "category": "Other",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/getModifierState",
+      "title": "MDN Web Docs - getModifierState"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=40999",
+      "title": "WebKit feature request bug"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "30"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "10.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "12.1"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "9"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10.3"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.72,
+      "partial": 0,
+      "total": 96.72
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.41
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "keyboardevent-getmodifierstate"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=KeyboardEvent.getModifierState()"
+}

@@ -1,0 +1,189 @@
+{
+  "id": "wf-reporting",
+  "source": "webfeatures",
+  "name": "Reporting API",
+  "description": "The Reporting-Endpoints HTTP header and ReportingObserver() API send reports of Content Security Policy (CSP) violations, Permissions-Policy violations, deprecated feature usage, browser interventions, and crashes to a nominated URL or callback function.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Reporting-Endpoints",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "96"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "16.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "96"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "96"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "96"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "96"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "96"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 88.67,
+      "partial": 0,
+      "total": 88.67
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.93,
+        "saf": 1.23,
+        "edg": 4.25,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.35,
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "reporting"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.DeprecationReportBody",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeprecationReportBody.anticipatedRemoval",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeprecationReportBody.columnNumber",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeprecationReportBody.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeprecationReportBody.lineNumber",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeprecationReportBody.message",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeprecationReportBody.sourceFile",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeprecationReportBody.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InterventionReportBody",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InterventionReportBody.columnNumber",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InterventionReportBody.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InterventionReportBody.lineNumber",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InterventionReportBody.message",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InterventionReportBody.sourceFile",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InterventionReportBody.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReportingObserver",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReportingObserver.ReportingObserver",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReportingObserver.disconnect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReportingObserver.observe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReportingObserver.takeRecords",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReportingObserver.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Reporting-Endpoints",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Reporting%20API"
+}

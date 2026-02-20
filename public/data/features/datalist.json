@@ -1,0 +1,239 @@
+{
+  "id": "datalist",
+  "source": "caniuse",
+  "name": "Datalist element",
+  "description": "Method of setting a list of options for a user to select in a text field, while leaving the ability to enter a custom value.",
+  "category": "HTML5",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input#list",
+  "links": [
+    {
+      "url": "https://hacks.mozilla.org/2010/11/firefox-4-html5-forms/",
+      "title": "Mozilla Hacks article"
+    },
+    {
+      "url": "https://afarkas.github.io/webshim/demos/",
+      "title": "HTML5 Library including datalist support"
+    },
+    {
+      "url": "https://developer.mozilla.org/en/HTML/Element/datalist",
+      "title": "MDN Web Docs - datalist"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/html/elements/datalist",
+      "title": "WebPlatform Docs"
+    },
+    {
+      "url": "https://demo.agektmr.com/datalist/",
+      "title": "Eiji Kitamura's options demos & tests"
+    },
+    {
+      "url": "https://github.com/thgreasi/datalist-polyfill",
+      "title": "Minimal Datalist polyfill w/tutorial"
+    },
+    {
+      "url": "https://github.com/mfranzke/datalist-polyfill",
+      "title": "Minimal and library dependency-free vanilla JavaScript polyfill"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "69"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "12.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "9"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 81.96,
+      "partial": 14.18,
+      "total": 96.14
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.18,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_chr": 44.12,
+        "smsg": 1.93
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "While most commonly used on text fields, datalists can also be used on other input types. IE11 supports the element on `range` fields. Chrome and Opera also support datalists to suggest given values on `range`, `color` and date/time fields. ",
+    "byNum": {
+      "1": "Partial support refers to [a bug](https://bugs.chromium.org/p/chromium/issues/detail?id=773041) where long lists of items are unscrollable resulting in unselectable options.",
+      "2": "Partial support in IE refers to [significantly buggy behavior](https://web.archive.org/web/20170121011936/http://playground.onereason.eu/2013/04/ie10s-lousy-support-for-datalists/) (IE11+ does send the input and change events upon selection). ",
+      "3": "Partial support refers to no support for datalists on non-text fields (e.g. number, [range](https://bugzilla.mozilla.org/show_bug.cgi?id=841942), [color](https://bugzilla.mozilla.org/show_bug.cgi?id=960984), [date and time](https://bugzilla.mozilla.org/show_bug.cgi?id=1905313)).",
+      "4": "Partial support in Edge refers [to disappearing option elements on focusing the input element via tab](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/20066595/).",
+      "5": "Supported through WKWebView and Safari but not through UIWebView",
+      "6": "In Firefox, autocomplete must be set to off to make dynamic datalist work due to [a bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1474137)",
+      "7": "Partial support refers to no support for datalists on [date and time](https://bugzilla.mozilla.org/show_bug.cgi?id=1905313) fields.",
+      "8": "If both a value and label are provided for an option iOS will only display the value as suggested selection. (see [bug](https://bugs.webkit.org/show_bug.cgi?id=289668))"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "datalist"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "datalist",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLDataListElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLDataListElement.options",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.datalist",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.datalist.input_type_color",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.datalist.input_type_date",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.datalist.input_type_email",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.datalist.input_type_number",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.datalist.input_type_range",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.datalist.input_type_search",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.datalist.input_type_tel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.datalist.input_type_text",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.datalist.input_type_time",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.datalist.input_type_url",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.type_color.list",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.type_date.list",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.type_email.list",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.type_number.list",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.type_range.list",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.type_search.list",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.type_tel.list",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.type_text.list",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.type_time.list",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.type_url.list",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Datalist%20element"
+}

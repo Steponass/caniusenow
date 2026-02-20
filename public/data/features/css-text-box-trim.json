@@ -1,0 +1,173 @@
+{
+  "id": "css-text-box-trim",
+  "source": "caniuse",
+  "name": "CSS Text Box",
+  "description": "CSS `text-box` (and its longhands `text-box-trim` & `text-box-edge`) provide the ability to trim extra space over/under text glyphs at the start/end of a block to match specific font-provided metrics. This allows for more precise alignment and positioning of text. ",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/text-edge",
+  "links": [
+    {
+      "url": "https://github.com/jantimon/text-box-trim-examples",
+      "title": "Document with examples of text-box-trim uses"
+    },
+    {
+      "url": "https://css-tricks.com/leading-trim-the-future-of-digital-typesetting/",
+      "title": "CSS Tricks article"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "133"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "18.2"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "132"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "125"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "18.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 78.84,
+      "partial": 0,
+      "total": 78.84
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 19.95,
+        "saf": 0.71,
+        "edg": 4.15,
+        "opr": 0.22
+      },
+      "mobile": {
+        "ios_saf": 10.22,
+        "an_chr": 44.12
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Available behind a [Safari feature flag](https://developer.apple.com/documentation/safari-developer-tools/feature-flag-settings).",
+      "2": "Can be enabled via the `#text-box-trim` flag in `chrome://flags`"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-text-box-trim"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "text-box",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box.ex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box.normal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box-edge",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box-edge.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box-trim",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box-trim.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box-trim.trim-both",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box-trim.trim-end",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-box-trim.trim-start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.text-edge",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.text-edge.alphabetic",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.text-edge.cap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.text-edge.ex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.text-edge.text",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS%20Text%20Box"
+}

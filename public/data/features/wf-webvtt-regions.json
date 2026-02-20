@@ -1,0 +1,128 @@
+{
+  "id": "wf-webvtt-regions",
+  "source": "webfeatures",
+  "name": "WebVTT regions",
+  "description": "WebVTT regions set the areas of the video where captions or subtitles should be rendered, such as placing roll-up captions used for live captions.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/VTTRegion",
+  "links": [],
+  "support": {
+    "ffx": {
+      "current": "y",
+      "firstFull": "59"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "14.1"
+    },
+    "chr": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14.1"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "59"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 15.34,
+      "partial": 0,
+      "total": 15.34
+    },
+    "byBrowser": {
+      "desktop": {
+        "ffx": 1.75,
+        "saf": 1.39
+      },
+      "mobile": {
+        "ios_saf": 11.89,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webvtt-regions"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTCue.region",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion.VTTRegion",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion.lines",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion.regionAnchorX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion.regionAnchorY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion.scroll",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion.viewportAnchorX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion.viewportAnchorY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VTTRegion.width",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=WebVTT%20regions"
+}

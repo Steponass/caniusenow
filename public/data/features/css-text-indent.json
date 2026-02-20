@@ -1,0 +1,108 @@
+{
+  "id": "css-text-indent",
+  "source": "caniuse",
+  "name": "CSS text-indent",
+  "description": "The `text-indent` property applies indentation to lines of inline content in a block.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/text-indent",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent",
+      "title": "MDN Web Docs - CSS text-indent"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=784648",
+      "title": "Firefox support bug"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=112755",
+      "title": "WebKit support bug"
+    },
+    {
+      "url": "https://www.sitepoint.com/css-image-replacement-text-indent-negative-margins-and-more/",
+      "title": "Article on using text-indent for image replacement"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "146"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "121"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "16.0"
+    },
+    "edg": {
+      "current": "u"
+    },
+    "opr": {
+      "current": "u"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.0"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 14.74,
+      "partial": 82.15,
+      "total": 96.89
+    },
+    "byBrowser": {
+      "desktop": {
+        "ffx": 1.48,
+        "saf": 1.27
+      },
+      "mobile": {
+        "ios_saf": 11.52,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Partial support refers to supporting a `<length>` value, but not the `each-line` or `hanging` keywords.",
+      "2": "Support for `each-line` & `hanging` is available behind the Experimental Web Platform features flag"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-text-indent"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "text-indent",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-indent",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS%20text-indent"
+}

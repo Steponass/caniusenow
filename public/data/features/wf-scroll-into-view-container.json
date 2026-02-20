@@ -1,0 +1,78 @@
+{
+  "id": "wf-scroll-into-view-container",
+  "source": "webfeatures",
+  "name": "scrollIntoView() container",
+  "description": "The container option of the scrollIntoView() method sets which ancestor scroll container to scroll. The \"nearest\" value scrolls only the nearest ancestor, instead of the default \"all\".",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "140"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "140"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "140"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "140"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "140"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "140"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 63.69,
+      "partial": 0,
+      "total": 63.69
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 15.52,
+        "edg": 4.05
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "scroll-into-view-container"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.scrollIntoView.options_parameter.container_option",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=scrollIntoView()%20container"
+}

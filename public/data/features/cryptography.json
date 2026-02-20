@@ -1,0 +1,334 @@
+{
+  "id": "cryptography",
+  "source": "caniuse",
+  "name": "Web Cryptography",
+  "description": "JavaScript API for performing basic cryptographic operations in web applications",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/crypto",
+  "links": [
+    {
+      "url": "https://www.slideshare.net/Channy/the-history-and-status-of-web-crypto-api",
+      "title": "The History and Status of Web Crypto API"
+    },
+    {
+      "url": "https://github.com/microsoft/MSR-JavaScript-Crypto",
+      "title": "Microsoft Research JavaScript Cryptography Library"
+    },
+    {
+      "url": "https://bitwiseshiftleft.github.io/sjcl/",
+      "title": "Cross-browser cryptography library"
+    },
+    {
+      "url": "https://github.com/Netflix/NfWebCrypto",
+      "title": "Polyfill by Netflix with partial support"
+    },
+    {
+      "url": "https://github.com/GlobalSign/PKI.js",
+      "title": "PKI.js - another crypto library for Public Key Infrastructure applications"
+    },
+    {
+      "url": "https://diafygi.github.io/webcrypto-examples/",
+      "title": "Test suite for various algorithms/methods"
+    },
+    {
+      "url": "https://github.com/vibornoff/webcrypto-shim",
+      "title": "Web Cryptography API shim for IE11 and Safari - set of bugfixes and workarounds of prefixed api implementations"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API",
+      "title": "MDN Web Docs - Web Crypto API"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "37"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "34"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "11"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "24"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11.0-11.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.35,
+      "partial": 0.3,
+      "total": 96.65
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.19,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Many browsers support the `[crypto.getRandomValues()](#feat=getrandomvalues)` method, but not actual cryptography functionality under `crypto.subtle`.",
+    "byNum": {
+      "1": "Support in IE11 is based on an older version of the specification.",
+      "2": "Support in Safari before version 11 was using the `crypto.webkitSubtle` prefix.",
+      "3": "In Edge 12-18, Web Crypto was not supported in Web Workers and Service Workers."
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "cryptography"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "web-cryptography",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Crypto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Crypto.getRandomValues",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Crypto.randomUUID",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Crypto.subtle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Crypto.subtle.secure_context_required",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CryptoKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CryptoKey.algorithm",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CryptoKey.extractable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CryptoKey.type",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CryptoKey.usages",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.decrypt",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.deriveBits",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.deriveBits.x25519",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.deriveKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.deriveKey.derivedKeyAlgorithm_option_aes",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.deriveKey.derivedKeyAlgorithm_option_hkdf",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.deriveKey.derivedKeyAlgorithm_option_hmac",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.deriveKey.derivedKeyAlgorithm_option_pbkdf2",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.deriveKey.x25519",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.digest",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.encrypt",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.exportKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.exportKey.ed25519",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.exportKey.x25519",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.generateKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.generateKey.ed25519",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.generateKey.x25519",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.importKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.importKey.ed25519",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.importKey.x25519",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.secure_context_required",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.sign",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.sign.ed25519",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.unwrapKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.verify",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.verify.ed25519",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SubtleCrypto.wrapKey",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.crypto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.crypto.worker_support",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Web%20Cryptography"
+}

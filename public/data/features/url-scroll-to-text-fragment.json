@@ -1,0 +1,112 @@
+{
+  "id": "url-scroll-to-text-fragment",
+  "source": "caniuse",
+  "name": "URL Scroll-To-Text Fragment",
+  "description": "URL fragment that defines a piece of text to be scrolled into view and highlighted.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/FragmentDirective",
+  "links": [
+    {
+      "url": "https://blog.jim-nielsen.com/2022/scroll-to-text-fragments/",
+      "title": "Article about why the `:~:` syntax"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "81"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "131"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "16.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "83"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "68"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "13.0"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.07,
+      "partial": 0,
+      "total": 94.07
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.06,
+        "ffx": 1.48,
+        "saf": 1.27,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.49,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Firefox has basic support but still [has a number of open issues](https://bugzilla.mozilla.org/show_bug.cgi?id=1753933) related to the feature.",
+    "byNum": {}
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "url-scroll-to-text-fragment"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "scroll-to-text-fragment",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.fragmentDirective",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FragmentDirective",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.a.text_fragments",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=URL%20Scroll-To-Text%20Fragment"
+}

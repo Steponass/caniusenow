@@ -1,0 +1,146 @@
+{
+  "id": "object-fit",
+  "source": "caniuse",
+  "name": "CSS3 object-fit/object-position",
+  "description": "Method of specifying how an object (image or video) should fit inside its box. object-fit options include \"contain\" (fit according to aspect ratio), \"fill\" (stretches object to fill) and \"cover\" (overflows box but maintains ratio), where object-position allows the object to be repositioned like background-image does.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/object-fit",
+  "links": [
+    {
+      "url": "https://dev.opera.com/articles/view/css3-object-fit-object-position/",
+      "title": "Dev.Opera article"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/css/properties/object-fit",
+      "title": "WebPlatform Docs"
+    },
+    {
+      "url": "https://github.com/bfred-it/object-fit-images/",
+      "title": "object-fit-images Polyfill for IE & Edge"
+    },
+    {
+      "url": "https://developer.mozilla.org/docs/Web/CSS/object-fit",
+      "title": "MDN (object-fit)"
+    },
+    {
+      "url": "https://developer.mozilla.org/docs/Web/CSS/object-position",
+      "title": "MDN (object-position)"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "32"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "36"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "10"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "10.6"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10.0-10.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.37,
+      "partial": 0.01,
+      "total": 96.38
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Partial support in Safari refers to support for `object-fit` but not `object-position`.",
+      "2": "Partial support in Edge refers to `object-fit` only supporting `<img>` ([see this comment](https://web.archive.org/web/20171208010253/https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/13603873/#comment-0))"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "object-fit"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "object-fit",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.object-fit",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.object-fit.contain",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.object-fit.cover",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.object-fit.fill",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.object-fit.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.object-fit.scale-down",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS3%20object-fit%2Fobject-position"
+}

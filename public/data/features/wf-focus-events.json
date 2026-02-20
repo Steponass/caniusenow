@@ -1,0 +1,139 @@
+{
+  "id": "wf-focus-events",
+  "source": "webfeatures",
+  "name": "Focus events",
+  "description": "Focus events, such as focus and blur, fire when an element gets or loses focus.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLElement/focus",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "1"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "24"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "3.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "1"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "3.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "1"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "1"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "24"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.36,
+      "partial": 0,
+      "total": 94.36
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "focus-events"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.blur_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.focus_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.focusin_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.focusout_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FocusEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FocusEvent.FocusEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FocusEvent.relatedTarget",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.blur",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.focus",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.focus.options_focusVisible_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.focus.options_preventScroll_parameter",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Focus%20events"
+}

@@ -1,0 +1,273 @@
+{
+  "id": "transforms2d",
+  "source": "caniuse",
+  "name": "CSS3 2D Transforms",
+  "description": "Method of transforming an element including rotating, scaling, etc. Includes support for `transform` as well as `transform-origin` properties.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/transform-function/translateY",
+  "links": [
+    {
+      "url": "https://www.westciv.com/tools/transforms/",
+      "title": "Live editor"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/transform",
+      "title": "MDN Web Docs - CSS transform"
+    },
+    {
+      "url": "http://www.webresourcesdepot.com/cross-browser-css-transforms-csssandpaper/",
+      "title": "Workaround script for IE"
+    },
+    {
+      "url": "https://www.useragentman.com/IETransformsTranslator/",
+      "title": "Converter for IE"
+    },
+    {
+      "url": "https://raw.github.com/phiggins42/has.js/master/detect/css.js#css-transform",
+      "title": "has.js test"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/css/properties/transform/",
+      "title": "WebPlatform Docs"
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/microsoft-edge/status/supportcsstransformsonsvg/",
+      "title": "Microsoft Edge Platform Status (SVG)"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "3.5"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "3.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "17"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "10.5"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "3.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.83,
+      "partial": 0,
+      "total": 96.83
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.85,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "The scale transform can be emulated in IE < 9 using Microsoft's \"zoom\" extension, others are (not easily) possible using the MS Matrix filter",
+    "byNum": {
+      "1": "Does not support CSS transforms on SVG elements (transform attribute can be used instead)"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "transforms2d"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "transforms2d",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform-origin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform-origin.bottom",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform-origin.center",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform-origin.left",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform-origin.right",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform-origin.three_value_syntax",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transform-origin.top",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.angle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.angle.deg",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.angle.grad",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.angle.rad",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.angle.turn",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.angle-percentage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.position",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.position.four_value_syntax",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.position.keyword_value_syntax",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.matrix",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.rotate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.scale",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.scaleX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.scaleY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.skew",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.skewX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.skewY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.translate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.translateX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.transform-function.translateY",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS3%202D%20Transforms"
+}

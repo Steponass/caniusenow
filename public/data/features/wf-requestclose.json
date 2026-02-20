@@ -1,0 +1,87 @@
+{
+  "id": "wf-requestclose",
+  "source": "webfeatures",
+  "name": "dialog.requestClose()",
+  "description": "The requestClose() method of a <dialog> HTML element closes the dialog, firing a cancel event first, which listeners can use to prevent the dialog from closing. This differs from the close() method, which only fires the non-cancelable close event.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/requestClose",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "134"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "139"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "18.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "134"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "134"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "134"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "18.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "134"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "134"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "139"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 80.34,
+      "partial": 0,
+      "total": 80.34
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 19.74,
+        "ffx": 1.45,
+        "saf": 0.65,
+        "edg": 4.13
+      },
+      "mobile": {
+        "ios_saf": 9.93,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "requestclose"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLDialogElement.requestClose",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=dialog.requestClose()"
+}

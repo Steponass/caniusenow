@@ -1,0 +1,198 @@
+{
+  "id": "border-radius",
+  "source": "caniuse",
+  "name": "CSS3 Border-radius (rounded corners)",
+  "description": "Method of making the border corners round. Covers support for the shorthand `border-radius` as well as the long-hand properties (e.g. `border-top-left-radius`)",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/border-top-right-radius",
+  "links": [
+    {
+      "url": "https://border-radius.com",
+      "title": "Border-radius CSS Generator"
+    },
+    {
+      "url": "https://muddledramblings.com/table-of-css3-border-radius-compliance",
+      "title": "Detailed compliance table"
+    },
+    {
+      "url": "http://css3pie.com/",
+      "title": "Polyfill which includes border-radius"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/css/properties/border-radius",
+      "title": "WebPlatform Docs"
+    },
+    {
+      "url": "https://developer.mozilla.org/en/docs/Web/CSS/border-radius",
+      "title": "MDN Web Docs - CSS border-radius"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "50"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "3.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "10.5"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "9"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "3.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.83,
+      "partial": 0,
+      "total": 96.83
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.76,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.41
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Safari 6.1 and earlier did not apply `border-radius` correctly to image borders: https://stackoverflow.com/q/17202128",
+      "2": "Dotted and dashed rounded border corners are rendered as solid in Firefox. [see bug](https://bugzilla.mozilla.org/show_bug.cgi?id=382721)"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "border-radius"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "border-radius",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-bottom-left-radius",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-bottom-left-radius.elliptical_corners",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-bottom-left-radius.percentages",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-bottom-right-radius",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-bottom-right-radius.elliptical_corners",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-bottom-right-radius.percentages",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-radius",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-radius.4_values_for_4_corners",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-radius.elliptical_borders",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-radius.percentages",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-top-left-radius",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-top-left-radius.elliptical_corners",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-top-left-radius.percentages",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-top-right-radius",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-top-right-radius.elliptical_corners",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.border-top-right-radius.percentages",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS3%20Border-radius%20(rounded%20corners)"
+}

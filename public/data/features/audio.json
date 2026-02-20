@@ -1,0 +1,170 @@
+{
+  "id": "audio",
+  "source": "caniuse",
+  "name": "Audio element",
+  "description": "Method of playing sound on webpages (without requiring a plug-in). Includes support for the following media properties: `currentSrc`, `currentTime`, `paused`, `playbackRate`, `buffered`, `duration`, `played`, `seekable`, `ended`, `autoplay`, `loop`, `controls`, `volume` & `muted`",
+  "category": "HTML5",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Attributes/crossorigin",
+  "links": [
+    {
+      "url": "https://html5doctor.com/native-audio-in-the-browser/",
+      "title": "HTML5 Doctor article"
+    },
+    {
+      "url": "https://dev.opera.com/articles/everything-you-need-to-know-html5-video-audio/",
+      "title": "Detailed article on video/audio elements"
+    },
+    {
+      "url": "https://www.jplayer.org/latest/demos/",
+      "title": "Demos of audio player that uses the audio element"
+    },
+    {
+      "url": "https://24ways.org/2010/the-state-of-html5-audio",
+      "title": "Detailed article on support"
+    },
+    {
+      "url": "https://raw.github.com/phiggins42/has.js/master/detect/audio.js#audio",
+      "title": "has.js test"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/html/elements/audio",
+      "title": "WebPlatform Docs"
+    },
+    {
+      "url": "https://www.phoboslab.org/log/2011/03/the-state-of-html5-audio",
+      "title": "The State of HTML5 Audio"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "20"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "3.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "10.5",
+      "firstPartial": "9.5-9.6"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "9"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 84.68,
+      "partial": 12.15,
+      "total": 96.83
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.41
+      },
+      "mobile": {
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Old Firefox versions were missing support for some properties: `loop` was added in v11, `played` in v15, `playbackRate` in v20.",
+      "2": "iOS volume is read-only."
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "audio"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "audio",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAudioElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLAudioElement.Audio",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.audio",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.audio.controls",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.audio.crossorigin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.audio.loop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.audio.muted",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.audio.preload",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.audio.src",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Audio%20element"
+}

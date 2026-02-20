@@ -1,0 +1,139 @@
+{
+  "id": "wf-remote-playback",
+  "source": "webfeatures",
+  "name": "Remote playback",
+  "description": "The Remote Playback API initiates and controls playback of media on connected remote devices, such as smart TVs with AirPlay or Chromecast capabilities.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/RemotePlayback/watchAvailability",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "121"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "13.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "121"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "121"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "121"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "13.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "121"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "121"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 85.04,
+      "partial": 0,
+      "total": 85.04
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 22.61,
+        "saf": 1.42,
+        "edg": 4.19,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.91,
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "remote-playback"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.disableRemotePlayback",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLMediaElement.remote",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RemotePlayback",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RemotePlayback.cancelWatchAvailability",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RemotePlayback.connect_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RemotePlayback.connecting_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RemotePlayback.disconnect_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RemotePlayback.prompt",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RemotePlayback.state",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RemotePlayback.watchAvailability",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.audio.disableremoteplayback",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.video.disableremoteplayback",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Remote%20playback"
+}

@@ -1,0 +1,110 @@
+{
+  "id": "x-frame-options",
+  "source": "caniuse",
+  "name": "X-Frame-Options HTTP header",
+  "description": "An HTTP header which indicates whether the browser should allow the webpage to be displayed in a frame within another webpage. Used as a defense against clickjacking attacks.",
+  "category": "Other",
+  "links": [
+    {
+      "url": "https://erlend.oftedal.no/blog/tools/xframeoptions/",
+      "title": "X-Frame-Options Compatibility Test"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options",
+      "title": "MDN Web Docs - X-Frame-Options"
+    },
+    {
+      "url": "https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet",
+      "title": "OWASP Clickjacking Defense Cheat Sheet"
+    },
+    {
+      "url": "https://blogs.msdn.microsoft.com/ieinternals/2010/03/30/combating-clickjacking-with-x-frame-options/",
+      "title": "Combating ClickJacking With X-Frame-Options - IEInternals"
+    },
+    {
+      "url": "https://blogs.msdn.microsoft.com/ie/2009/01/27/ie8-security-part-vii-clickjacking-defenses/",
+      "title": "IE8 Security Part VII: ClickJacking Defenses - IEBlog"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "a",
+      "firstPartial": "26"
+    },
+    "ffx": {
+      "current": "a",
+      "firstFull": "18",
+      "firstPartial": "4"
+    },
+    "saf": {
+      "current": "a",
+      "firstPartial": "5.1"
+    },
+    "edg": {
+      "current": "a",
+      "firstFull": "12",
+      "firstPartial": "79"
+    },
+    "opr": {
+      "current": "a",
+      "firstPartial": "11.6"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "8"
+    },
+    "ios_saf": {
+      "current": "a",
+      "firstPartial": "7.0-7.1"
+    },
+    "an_chr": {
+      "current": "a",
+      "firstPartial": "144"
+    },
+    "smsg": {
+      "current": "a",
+      "firstPartial": "4"
+    },
+    "an_ff": {
+      "current": "a",
+      "firstPartial": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0.46,
+      "partial": 96.4,
+      "total": 96.86
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.85,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.43
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Partial support refers to not supporting the `ALLOW-FROM` option.\r\nThe `X-Frame-Options` header has been obsoleted by [the `frame-ancestors` directive](https://www.w3.org/TR/CSP2/#directive-frame-ancestors) from Content Security Policy Level 2.",
+    "byNum": {}
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "x-frame-options"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=X-Frame-Options%20HTTP%20header"
+}

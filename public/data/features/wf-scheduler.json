@@ -1,0 +1,148 @@
+{
+  "id": "wf-scheduler",
+  "source": "webfeatures",
+  "name": "Scheduler API",
+  "description": "The scheduler API provides a way to prioritize all tasks belonging to an application.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/scheduler",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "129"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "142"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "129"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "129"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "129"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "129"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "129"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "142"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 70.58,
+      "partial": 0,
+      "total": 70.58
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 20.64,
+        "ffx": 1.35,
+        "edg": 4.17
+      },
+      "mobile": {
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "scheduler"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Scheduler",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Scheduler.postTask",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Scheduler.yield",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskController",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskController.TaskController",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskController.setPriority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskPriorityChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskPriorityChangeEvent.TaskPriorityChangeEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskPriorityChangeEvent.previousPriority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskSignal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskSignal.any_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskSignal.priority",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TaskSignal.prioritychange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.scheduler",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Scheduler%20API"
+}

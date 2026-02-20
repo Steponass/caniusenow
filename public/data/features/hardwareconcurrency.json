@@ -1,0 +1,118 @@
+{
+  "id": "hardwareconcurrency",
+  "source": "caniuse",
+  "name": "navigator.hardwareConcurrency",
+  "description": "Returns the number of logical cores of the user's CPU. The value may be reduced to prevent device fingerprinting or because it exceeds the allowed number of simultaneous web workers.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WorkerNavigator/hardwareConcurrency",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/NavigatorConcurrentHardware/hardwareConcurrency",
+      "title": "MDN Web Docs - navigator.hardwareConcurrency"
+    },
+    {
+      "url": "https://wiki.whatwg.org/wiki/Navigator_HW_Concurrency",
+      "title": "Original Proposal"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=132588",
+      "title": "WebKit implementation bug"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=233381",
+      "title": "WebKit reinstatement bug"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "37"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "48"
+    },
+    "saf": {
+      "current": "u"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "24"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 95.88,
+      "partial": 0,
+      "total": 95.88
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.76,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "WebKit browsers clamp the maximum value returned to 2 on iOS devices and 8 on all others. Disabled in Safari behind the ENABLE_NAVIGATOR_HWCONCURRENCY build option.",
+      "2": "Safari clamps this property to 4 or 8 cores, to prevent device fingerprinting."
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "hardwareconcurrency"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "hardware-concurrency",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.hardwareConcurrency",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.hardwareConcurrency",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=navigator.hardwareConcurrency"
+}

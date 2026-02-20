@@ -1,0 +1,136 @@
+{
+  "id": "css-cascade-scope",
+  "source": "caniuse",
+  "name": "Scoped Styles: the @scope rule",
+  "description": "Allows CSS rules to be scoped to part of the document, with upper and lower limits described by selectors.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@scope",
+  "links": [
+    {
+      "url": "https://css.oddbird.net/scope/explainer/",
+      "title": "Explainer"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1830512",
+      "title": "Firefox support bug"
+    },
+    {
+      "url": "https://github.com/WebKit/standards-positions/issues/13",
+      "title": "WebKit position: support"
+    },
+    {
+      "url": "https://fullystacked.net/posts/scope-in-css/",
+      "title": "An introduction to @scope in CSS"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "118"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "146"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "17.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "118"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "106"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "25"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 86.22,
+      "partial": 0,
+      "total": 86.22
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 22.97,
+        "ffx": 0.77,
+        "saf": 0.96,
+        "edg": 4.21,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.86,
+        "an_chr": 44.12,
+        "smsg": 1.87,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "This implementation replaces an older concept of [scoping CSS rules](https://caniuse.com/style-scoped).",
+    "byNum": {
+      "1": "Enabled in Chrome through the \"experimental Web Platform features\" flag in chrome://flags"
+    }
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-cascade-scope"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "scope",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSScopeRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSScopeRule.end",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSScopeRule.start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.scope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.nesting.at-scope",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Scoped%20Styles%3A%20the%20%40scope%20rule"
+}

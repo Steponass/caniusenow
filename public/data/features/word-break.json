@@ -1,0 +1,127 @@
+{
+  "id": "word-break",
+  "source": "caniuse",
+  "name": "CSS3 word-break",
+  "description": "Property to prevent or allow words to be broken over multiple lines between letters.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/word-break",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en/CSS/word-break",
+      "title": "MDN Web Docs - CSS word-break"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/css/properties/word-break",
+      "title": "WebPlatform Docs"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "44",
+      "firstPartial": "4"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "9",
+      "firstPartial": "3.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "31",
+      "firstPartial": "15"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "5.5"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "9.0-9.2",
+      "firstPartial": "3.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.72,
+      "partial": 0.04,
+      "total": 96.76
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.43
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Partial support refers to supporting the `break-all` value, but not the `keep-all` value.\r\n\r\nChrome, Safari and other WebKit/Blink browsers also support the unofficial `break-word` value which is treated like `word-wrap: break-word`.",
+    "byNum": {}
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "word-break"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "word-break",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.word-break",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.word-break.break-all",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.word-break.keep-all",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.word-break.normal",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS3%20word-break"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "wf-insertable-streams",
+  "source": "webfeatures",
+  "name": "Insertable streams for MediaStreamTrack",
+  "description": "The MediaStreamTrackProcessor and MediaStreamTrackGenerator APIs modify the contents of a media track for merging streams, applying real-time effects like funny hats, and content overlays.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/VideoTrackGenerator/writable",
+  "links": [],
+  "support": {
+    "saf": {
+      "current": "y",
+      "firstFull": "18"
+    },
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "18"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 11.15,
+      "partial": 0,
+      "total": 11.15
+    },
+    "byBrowser": {
+      "desktop": {
+        "saf": 0.74
+      },
+      "mobile": {
+        "ios_saf": 10.41
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "insertable-streams"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrackProcessor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrackProcessor.MediaStreamTrackProcessor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaStreamTrackProcessor.readable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VideoTrackGenerator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VideoTrackGenerator.VideoTrackGenerator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VideoTrackGenerator.muted",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VideoTrackGenerator.track",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.VideoTrackGenerator.writable",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Insertable%20streams%20for%20MediaStreamTrack"
+}

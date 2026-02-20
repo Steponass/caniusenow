@@ -1,0 +1,126 @@
+{
+  "id": "cross-document-view-transitions",
+  "source": "caniuse",
+  "name": "View Transitions (cross-document)",
+  "description": "Provides a mechanism for easily creating animated transitions between different DOM states, while also updating the DOM contents in a single step. This API is specific to cross-document transitions.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@view-transition",
+  "links": [
+    {
+      "url": "https://github.com/WICG/view-transitions/blob/main/cross-doc-explainer.md",
+      "title": "Explainer document"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API",
+      "title": "View Transition API on MDN"
+    },
+    {
+      "url": "https://developer.chrome.com/docs/web-platform/view-transitions/",
+      "title": "Chrome Developers documentation"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1860854",
+      "title": "Firefox support bug"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "126"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "18.2"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "126"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "112"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "18.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "u"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 80.86,
+      "partial": 1.63,
+      "total": 82.49
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 21.58,
+        "saf": 0.71,
+        "edg": 4.18,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.22,
+        "an_chr": 44.12
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "See also support for the [Navigation API](/mdn-api_navigation) which can be used for some view transition behavior.",
+    "byNum": {
+      "1": "Partial support can be enabled using the `dom.viewTransitions.enabled` flag. Enabled by default in Firefox Nightly only",
+      "2": "Partial support refers to only supporting [View Transitions Level 1](/view-transitions)"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "cross-document-view-transitions"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "cross-document-view-transitions",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSViewTransitionRule",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSViewTransitionRule.navigation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CSSViewTransitionRule.types",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.view-transition",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=View%20Transitions%20(cross-document)"
+}

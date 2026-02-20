@@ -1,0 +1,88 @@
+{
+  "id": "wf-globalthis",
+  "source": "webfeatures",
+  "name": "globalThis",
+  "description": "The globalThis property accesses the global this value (and hence the global object itself) across environments.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/globalThis",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "71"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "65"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "12.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "71"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "12.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "71"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "71"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "65"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.87,
+      "partial": 0,
+      "total": 91.87
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.14,
+        "ffx": 1.75,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.97,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "globalthis"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.globalThis",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=globalThis"
+}

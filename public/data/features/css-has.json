@@ -1,0 +1,121 @@
+{
+  "id": "css-has",
+  "source": "caniuse",
+  "name": ":has() CSS relational pseudo-class",
+  "description": "Select elements containing specific content. For example, `a:has(img)` selects all `<a>` elements that contain an `<img>` child.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Selectors/:has",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/:has",
+      "title": "MDN Web Docs - :has"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=418039",
+      "title": "Firefox support bug"
+    },
+    {
+      "url": "https://bugs.chromium.org/p/chromium/issues/detail?id=669058",
+      "title": "Chrome bug to track implementation"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=227702",
+      "title": "WebKit support bug"
+    },
+    {
+      "url": "https://webkit.org/blog/13096/css-has-pseudo-class/",
+      "title": "Using :has() as a CSS Parent Selector and much more"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "105"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "121"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "15.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "105"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "91"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "20"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 93.71,
+      "partial": 0,
+      "total": 93.71
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.67,
+        "ffx": 1.48,
+        "saf": 1.37,
+        "edg": 4.25,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.82,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Can be enabled via the [Experimental Web Platform features](chrome://flags/#enable-experimental-web-platform-features) flag",
+      "2": "Supported in Firefox behind the `layout.css.has-selector.enabled` flag, which is enabled by default since 119 (only Nightly)"
+    }
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-has"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "has",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.has",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=%3Ahas()%20CSS%20relational%20pseudo-class"
+}

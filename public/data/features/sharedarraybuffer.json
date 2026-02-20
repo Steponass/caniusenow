@@ -1,0 +1,197 @@
+{
+  "id": "sharedarraybuffer",
+  "source": "caniuse",
+  "name": "Shared Array Buffer",
+  "description": "Type of ArrayBuffer that can be shared across Workers.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/slice",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer",
+      "title": "MDN article"
+    },
+    {
+      "url": "https://hacks.mozilla.org/2020/07/safely-reviving-shared-memory/",
+      "title": "Mozilla Hacks article on safely reviving shared memory"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u",
+      "firstFull": "68"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "u"
+    },
+    "edg": {
+      "current": "u",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "u",
+      "firstFull": "64"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "u"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.89,
+      "partial": 0,
+      "total": 94.89
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.18,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Has support, but was disabled across browsers in January 2018 due to Spectre & Meltdown vulnerabilities.",
+      "2": "Enabled by default in Nightly, but not in Beta/Developer/Release.",
+      "3": "Requires cross-origin isolation by having [Cross-Origin-Embedder-Policy (COEP)](/mdn-http_headers_cross-origin-embedder-policy) and [Cross-Origin-Opener-Policy (COOP)](/mdn-http_headers_cross-origin-opener-policy) headers set. [Mozilla Hacks article](https://hacks.mozilla.org/2020/07/safely-reviving-shared-memory/) for context."
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "sharedarraybuffer"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "shared-memory",
+        "matched": "exact"
+      },
+      {
+        "source": "webfeatures",
+        "id": "webgl-sab",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Atomics",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Atomics.Atomic_operations_on_non_shared_buffers",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Atomics.add",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Atomics.and",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Atomics.compareExchange",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Atomics.exchange",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Atomics.isLockFree",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Atomics.load",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Atomics.notify",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Atomics.or",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Atomics.store",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Atomics.sub",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Atomics.wait",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Atomics.xor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.DataView.sharedarraybuffer_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.SharedArrayBuffer.@@species",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.SharedArrayBuffer.SharedArrayBuffer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.SharedArrayBuffer.byteLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.SharedArrayBuffer.slice",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Shared%20Array%20Buffer"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "media-fragments",
+  "source": "caniuse",
+  "name": "Media Fragments",
+  "description": "Allows only part of a resource to be shown, based on the fragment identifier in the URL. Currently support is primarily limited to video track ranges.",
+  "category": "Other",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/de/docs/Web/HTML/Using_HTML5_audio_and_video#Specifying_playback_range",
+      "title": "Media fragments on MDN"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "u"
+    },
+    "edg": {
+      "current": "u"
+    },
+    "opr": {
+      "current": "u"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "u"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 96.35,
+      "total": 96.35
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Only appears to support the `#t=n,n` control for selecting a range of video, and possibly `track=(name)` & `id=(name)` (not yet tested)"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "media-fragments"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Media%20Fragments"
+}

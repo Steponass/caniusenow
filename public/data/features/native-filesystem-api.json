@@ -1,0 +1,154 @@
+{
+  "id": "native-filesystem-api",
+  "source": "caniuse",
+  "name": "File System Access API",
+  "description": "API for manipulating files in the device's local file system (not in a sandbox).",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/showSaveFilePicker",
+  "links": [
+    {
+      "url": "https://github.com/WICG/file-system-access/blob/master/EXPLAINER.md",
+      "title": "Explainer"
+    },
+    {
+      "url": "https://web.dev/file-system-access/",
+      "title": "Web.dev blog post"
+    },
+    {
+      "url": "https://mozilla.github.io/standards-positions/#file-system-access",
+      "title": "Firefox position: harmful"
+    },
+    {
+      "url": "https://developers.google.com/web/updates/2019/08/native-file-system",
+      "title": "Chrome blog post"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "105"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "105"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "91"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 33.58,
+      "partial": 0.71,
+      "total": 34.29
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.67,
+        "edg": 4.25,
+        "opr": 0.91
+      },
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Can be enabled in desktop Chromium browsers with the `#native-file-system-api` flag.",
+      "2": "Parts of the API are still missing."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "native-filesystem-api"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "file-system-access",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemDirectoryHandle.@@asyncIterator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemFileHandle.createWritable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemHandle.queryPermission",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemHandle.requestPermission",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemWritableFileStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemWritableFileStream.seek",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemWritableFileStream.truncate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FileSystemWritableFileStream.write",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.showDirectoryPicker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.showOpenFilePicker",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.showSaveFilePicker",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=File%20System%20Access%20API"
+}

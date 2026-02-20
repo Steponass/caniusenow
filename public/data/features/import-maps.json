@@ -1,0 +1,117 @@
+{
+  "id": "import-maps",
+  "source": "caniuse",
+  "name": "Import maps",
+  "description": "Import maps allow control over what URLs get fetched by JavaScript `import` statements and `import()` expressions.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/script/type/importmap",
+  "links": [
+    {
+      "url": "https://github.com/WICG/import-maps#readme",
+      "title": "Proposal information"
+    },
+    {
+      "url": "https://blog.logrocket.com/es-modules-in-browsers-with-import-maps/",
+      "title": "Using ES modules in browsers with import-maps"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1688879",
+      "title": "Firefox feature request bug"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=220823",
+      "title": "WebKit feature request bug"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "89"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "108"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "16.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "89"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "76"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "15.0"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.52,
+      "partial": 0,
+      "total": 94.52
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.96,
+        "ffx": 1.75,
+        "saf": 1.23,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.35,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Can be enabled via the \"Experimental Web Platform features\" flag at `about:flags`.",
+      "2": "Can be enabled via the `dom.importMaps.enabled` pref in `about:config`."
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "import-maps"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "import-maps",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.script.type.importmap",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Import%20maps"
+}

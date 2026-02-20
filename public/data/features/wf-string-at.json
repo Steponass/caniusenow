@@ -1,0 +1,88 @@
+{
+  "id": "wf-string-at",
+  "source": "webfeatures",
+  "name": "String at()",
+  "description": "The at() method of strings returns the character (one UTF-16 code unit) at an index, including negative indices for getting the character relative to the end of the string. Also known as the relative indexing method.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/at",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "92"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "90"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "15.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "92"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "92"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "92"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "92"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "92"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "90"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.48,
+      "partial": 0,
+      "total": 91.48
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.95,
+        "ffx": 1.75,
+        "saf": 1.37,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.82,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "string-at"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.at",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=String%20at()"
+}

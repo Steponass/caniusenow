@@ -1,0 +1,88 @@
+{
+  "id": "wf-abortsignal-any",
+  "source": "webfeatures",
+  "name": "AbortSignal.any()",
+  "description": "The AbortSignal.any() static method combines an iterable of abort signals into a single signal, with the abort reason taken from the first signal to abort.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/AbortSignal/any_static",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "116"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "124"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "17.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "116"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "116"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "116"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "116"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "116"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "124"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 85.99,
+      "partial": 0,
+      "total": 85.99
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 23.26,
+        "ffx": 1.48,
+        "saf": 0.96,
+        "edg": 4.21,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.86,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "abortsignal-any"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.AbortSignal.any_static",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=AbortSignal.any()"
+}

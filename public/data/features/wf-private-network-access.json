@@ -1,0 +1,67 @@
+{
+  "id": "wf-private-network-access",
+  "source": "webfeatures",
+  "name": "Private network access",
+  "description": "The Access-Control-Request-Private-Network: true and Access-Control-Allow-Private-Network: true HTTP request and response headers establish permission for websites to make requests to internal networks, such as to routers.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 0,
+      "total": 0
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "private-network-access"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "http.mixed-content.private_network_access",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Private%20network%20access"
+}

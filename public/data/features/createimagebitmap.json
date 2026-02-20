@@ -1,0 +1,166 @@
+{
+  "id": "createimagebitmap",
+  "source": "caniuse",
+  "name": "createImageBitmap",
+  "description": "Create image bitmap with support for resizing and adjusting quality",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/createImageBitmap",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap",
+      "title": "self.createImageBitmap() - Web APIs | MDN"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "59"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "17.0"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "46"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.0"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "6.2-6.4"
+    },
+    "an_ff": {
+      "current": "u"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.55,
+      "partial": 1.26,
+      "total": 95.81
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.22,
+        "saf": 1.07,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 10.97,
+        "an_chr": 44.12,
+        "smsg": 1.93
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "No support for options parameter, resizeWidth, resizeHeight, resizeQuality or SVGImageElement as Source Image",
+      "2": "No support for resizeWidth, resizeHeight, resizeQuality or SVGImageElement as Source Image",
+      "3": "No support for SVGImageElement as Source Image",
+      "4": "No support for resizeWidth, resizeHeight and resizeQuality. See [this bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1363861)",
+      "5": "No support for `createImageBitmap(source, options)` interface. See [this bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1335594)",
+      "6": "No support for premultiplyAlpha with `ImageData` as Source Image. See [this bug](https://bugs.webkit.org/show_bug.cgi?id=237082)",
+      "7": "No support for resizeQuality. See [this bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1363861)"
+    }
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "createimagebitmap"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "createimagebitmap",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ImageBitmap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ImageBitmap.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ImageBitmap.height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ImageBitmap.width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.createImageBitmap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.createImageBitmap.options_colorSpaceConversion_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.createImageBitmap.options_imageOrientation_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.createImageBitmap.options_imageOrientation_parameter.from-image",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.createImageBitmap.options_premultiplyAlpha_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.createImageBitmap.options_resizeHeight_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.createImageBitmap.options_resizeQuality_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.createImageBitmap.options_resizeWidth_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.createImageBitmap.svgimageelement_as_source_image",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=createImageBitmap"
+}

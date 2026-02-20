@@ -1,0 +1,108 @@
+{
+  "id": "permissions-policy",
+  "source": "caniuse",
+  "name": "Permissions Policy",
+  "description": "A security mechanism that allows developers to explicitly enable or disable various powerful browser features for a given site. Similar to [Document Policy](/document-policy).",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy",
+  "links": [
+    {
+      "url": "https://github.com/w3c/webappsec-feature-policy/blob/main/permissions-policy-explainer.md",
+      "title": "W3C - Permissions Policy Explainer"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1531012",
+      "title": "Firefox implementation tracker"
+    },
+    {
+      "url": "https://github.com/w3c/webappsec-permissions-policy/blob/main/features.md",
+      "title": "List of known features"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "u"
+    },
+    "edg": {
+      "current": "u"
+    },
+    "opr": {
+      "current": "u"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "u"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 76.84,
+      "total": 76.84
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Standard support includes the HTTP `Permissions-Policy` header, `allow` attribute on iframes and the `document.permissionsPolicy` JS API.",
+    "byNum": {
+      "1": "Chromium browsers only support the HTTP header.",
+      "2": "At least partially supports [Feature Policy](/feature-policy), the predecessor to this spec."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "permissions-policy"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "permissions-policy",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLIFrameElement.allow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.wildcards",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Permissions%20Policy"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "wf-scrollend",
+  "source": "webfeatures",
+  "name": "scrollend",
+  "description": "The scrollend event fires when an element or document has finished scrolling.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Element/scrollend_event",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "109"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "26.2"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "26.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "109"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 74.94,
+      "partial": 0,
+      "total": 74.94
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 23.41,
+        "ffx": 1.75,
+        "saf": 0.09,
+        "edg": 4.21,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 0.26,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "scrollend"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.scrollend_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.scrollend_event",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=scrollend"
+}

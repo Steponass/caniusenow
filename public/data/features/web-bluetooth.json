@@ -1,0 +1,406 @@
+{
+  "id": "web-bluetooth",
+  "source": "caniuse",
+  "name": "Web Bluetooth",
+  "description": "Allows web sites to communicate over GATT with nearby user-selected Bluetooth devices in a secure and privacy-preserving way.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/bluetooth",
+  "links": [
+    {
+      "url": "https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web",
+      "title": "Intro"
+    },
+    {
+      "url": "https://googlechrome.github.io/samples/web-bluetooth/",
+      "title": "Samples"
+    },
+    {
+      "url": "https://github.com/WebBluetoothCG/demos",
+      "title": "Demos"
+    },
+    {
+      "url": "https://github.com/WebBluetoothCG/web-bluetooth/blob/main/implementation-status.md",
+      "title": "Implementation Status"
+    },
+    {
+      "url": "https://mozilla.github.io/standards-positions/#web-bluetooth",
+      "title": "Mozilla Specification Positions: Harmful"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "u"
+    },
+    "opr": {
+      "current": "u"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "6.2-6.4"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 80.27,
+      "partial": 0,
+      "total": 80.27
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {
+        "smsg": 1.93
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Available by enabling the \"Web Bluetooth\" experimental flag in `about:flags`. Currently support [varies by OS](https://github.com/WebBluetoothCG/web-bluetooth/blob/main/implementation-status.md)",
+      "2": "Only in Opera Mobile",
+      "3": "Available in [Origin Trials](https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web#available-for-origin-trials) for Chrome OS, Android M, and Mac",
+      "4": "Currently support [varies by OS](https://github.com/WebBluetoothCG/web-bluetooth/blob/main/implementation-status.md#chrome)"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "web-bluetooth"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "web-bluetooth",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Bluetooth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Bluetooth.getAvailability",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Bluetooth.getDevices",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Bluetooth.requestDevice",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Bluetooth.requestDevice.options_exclusionFilters_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Bluetooth.requestDevice.options_filter_manufacturerData_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothCharacteristicProperties",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothCharacteristicProperties.authenticatedSignedWrites",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothCharacteristicProperties.broadcast",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothCharacteristicProperties.indicate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothCharacteristicProperties.notify",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothCharacteristicProperties.read",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothCharacteristicProperties.reliableWrite",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothCharacteristicProperties.writableAuxiliaries",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothCharacteristicProperties.write",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothCharacteristicProperties.writeWithoutResponse",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothDevice",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothDevice.gatt",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothDevice.gattserverdisconnected_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothDevice.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothDevice.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTCharacteristic",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTCharacteristic.characteristicvaluechanged_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTCharacteristic.getDescriptor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTCharacteristic.getDescriptors",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTCharacteristic.properties",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTCharacteristic.readValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTCharacteristic.service",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTCharacteristic.startNotifications",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTCharacteristic.stopNotifications",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTCharacteristic.uuid",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTCharacteristic.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTCharacteristic.writeValueWithResponse",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTCharacteristic.writeValueWithoutResponse",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTDescriptor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTDescriptor.characteristic",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTDescriptor.readValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTDescriptor.uuid",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTDescriptor.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTDescriptor.writeValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTServer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTServer.connect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTServer.connected",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTServer.device",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTServer.disconnect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTServer.getPrimaryService",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTServer.getPrimaryServices",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTService",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTService.device",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTService.getCharacteristic",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTService.getCharacteristics",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTService.isPrimary",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothRemoteGATTService.uuid",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothUUID",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothUUID.canonicalUUID_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothUUID.getCharacteristic_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothUUID.getDescriptor_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BluetoothUUID.getService_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.bluetooth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.bluetooth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.bluetooth",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Web%20Bluetooth"
+}

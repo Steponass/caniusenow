@@ -1,0 +1,109 @@
+{
+  "id": "wf-font-metric-overrides",
+  "source": "webfeatures",
+  "name": "Font metric overrides",
+  "description": "The ascent-override, descent-override, and line-gap-override descriptors adjust the display of a font declared in an @font-face statement. This can help make fallback fonts look the same size.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@font-face/line-gap-override",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "87"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "89"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "87"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "87"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "87"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "87"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "87"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "89"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 78.34,
+      "partial": 0,
+      "total": 78.34
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.99,
+        "ffx": 1.75,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "font-metric-overrides"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.FontFace.ascentOverride",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FontFace.descentOverride",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FontFace.lineGapOverride",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.font-face.ascent-override",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.font-face.descent-override",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.font-face.line-gap-override",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Font%20metric%20overrides"
+}

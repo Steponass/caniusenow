@@ -1,0 +1,79 @@
+{
+  "id": "wf-clipboard-custom-format",
+  "source": "webfeatures",
+  "name": "Custom formats for clipboard items",
+  "description": "The web  prefix for ClipboardItem data types (also known as MIME types) allows reading and writing ununsanitized custom data from the device clipboard.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "104"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "104"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "104"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "104"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "104"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "104"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 75.89,
+      "partial": 0,
+      "total": 75.89
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.73,
+        "edg": 4.25,
+        "opr": 0.79
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "clipboard-custom-format"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ClipboardItem.type_web",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Custom%20formats%20for%20clipboard%20items"
+}

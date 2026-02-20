@@ -1,0 +1,79 @@
+{
+  "id": "wf-webgl2-desynchronized",
+  "source": "webfeatures",
+  "name": "Desynchronized WebGL2 canvas",
+  "description": "The optional desynchronized parameter of a canvas's getContext() method permits the browser to draw a WebGL2 canvas independently of the event loop. This can reduce drawing latency.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "81"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "81"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "81"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "81"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 76.35,
+      "partial": 0,
+      "total": 76.35
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.06,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "webgl2-desynchronized"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLCanvasElement.getContext.webgl2_context.options_desynchronized_parameter",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Desynchronized%20WebGL2%20canvas"
+}

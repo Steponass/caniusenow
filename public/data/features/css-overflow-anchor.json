@@ -1,0 +1,116 @@
+{
+  "id": "css-overflow-anchor",
+  "source": "caniuse",
+  "name": "CSS overflow-anchor (Scroll Anchoring)",
+  "description": "Changes in DOM elements above the visible region of a scrolling box can result in the page moving while the user is in the middle of consuming the content.\r\nBy default, the value of  `overflow-anchor` is `auto`, it can mitigate this jarring user experience by keeping track of the position of an anchor node and adjusting the scroll offset accordingly",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/overflow-anchor",
+  "links": [
+    {
+      "url": "https://github.com/WICG/ScrollAnchoring/blob/master/explainer.md",
+      "title": "Explainer"
+    },
+    {
+      "url": "https://developers.google.com/web/updates/2016/04/scroll-anchoring",
+      "title": "Google developers article"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=171099",
+      "title": "WebKit support bug"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "56"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "66"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "43"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "5.0-5.4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 82.36,
+      "partial": 0,
+      "total": 82.36
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.24,
+        "ffx": 1.75,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-overflow-anchor"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "overflow-anchor",
+        "matched": "exact"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow-anchor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow-anchor.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.overflow-anchor.none",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS%20overflow-anchor%20(Scroll%20Anchoring)"
+}
