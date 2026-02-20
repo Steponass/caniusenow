@@ -45,7 +45,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -53,14 +53,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 95,
+      "full": 94.95,
       "partial": 0,
-      "total": 95
+      "total": 94.95
     },
     "byBrowser": {
       "desktop": {
@@ -90,11 +90,6 @@
       "id": "permissions-api"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "permissions",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Navigator.permissions",
@@ -139,6 +134,11 @@
         "source": "mdnbcd",
         "id": "api.WorkerNavigator.permissions",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "permissions",
+        "matched": "exact"
       }
     ]
   },

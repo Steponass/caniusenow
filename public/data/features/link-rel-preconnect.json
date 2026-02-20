@@ -40,7 +40,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -48,14 +48,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.01,
+      "full": 96.09,
       "partial": 0,
-      "total": 96.01
+      "total": 96.09
     },
     "byBrowser": {
       "desktop": {
@@ -82,19 +82,13 @@
       "3": "Firefox support regressed from versions 71 - 114. See [bug 1543990](https://bugzilla.mozilla.org/show_bug.cgi?id=1543990) for details."
     }
   },
-  "baseline": "high",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "link-rel-preconnect"
     },
-    "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "link-rel-preconnect",
-        "matched": "exact"
-      }
-    ]
+    "supplementary": []
   },
   "caniuseUrl": "https://caniuse.com/?search=Resource%20Hints%3A%20preconnect"
 }

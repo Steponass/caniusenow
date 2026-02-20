@@ -4,6 +4,7 @@
   "name": "Element.getBoundingClientRect()",
   "description": "Method to get the size and position of an element's bounding box, relative to the viewport.",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Element/getBoundingClientRect",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect",
@@ -44,7 +45,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -52,14 +53,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.77,
-      "partial": 0.12,
-      "total": 96.89
+      "full": 96.87,
+      "partial": 0.1,
+      "total": 96.97
     },
     "byBrowser": {
       "desktop": {
@@ -94,7 +95,13 @@
       "source": "caniuse",
       "id": "getboundingclientrect"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.getBoundingClientRect",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=Element.getBoundingClientRect()"
 }

@@ -68,13 +68,19 @@
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
       "id": "css.types.length.ric"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "ric",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=%60ric%60%20unit"
 }

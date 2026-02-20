@@ -1,0 +1,96 @@
+{
+  "id": "mdn-api.ServiceWorker.ecmascript_modules",
+  "source": "mdnbcd",
+  "name": "Support for ECMAScript modules",
+  "description": "Support for ECMAScript modules",
+  "category": "JS API",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "91"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "147"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "91"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "77"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "91"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "91"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "91"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 89.78,
+      "partial": 0,
+      "total": 89.78
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.96,
+        "saf": 1.37,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.86,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "api.ServiceWorker.ecmascript_modules"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedWorker.SharedWorker.ecmascript_modules",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Worker.Worker.ecmascript_modules",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "js-modules-service-workers",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Support%20for%20ECMAScript%20modules"
+}

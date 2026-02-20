@@ -70,13 +70,19 @@
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
       "id": "css.at-rules.media.overflow-block"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "overflow",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=%60overflow-block%60%20media%20feature"
 }

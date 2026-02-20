@@ -40,7 +40,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -52,9 +52,9 @@
   },
   "usage": {
     "global": {
-      "full": 94.55,
-      "partial": 1.26,
-      "total": 95.81
+      "full": 94.56,
+      "partial": 1.31,
+      "total": 95.87
     },
     "byBrowser": {
       "desktop": {
@@ -90,11 +90,6 @@
       "id": "createimagebitmap"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "createimagebitmap",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.ImageBitmap",
@@ -159,6 +154,11 @@
         "source": "mdnbcd",
         "id": "api.createImageBitmap.svgimageelement_as_source_image",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "createimagebitmap",
+        "matched": "exact"
       }
     ]
   },

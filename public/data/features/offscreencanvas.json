@@ -57,7 +57,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -65,14 +65,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 94.37,
-      "partial": 0.62,
-      "total": 94.99
+      "full": 94.53,
+      "partial": 0.65,
+      "total": 95.18
     },
     "byBrowser": {
       "desktop": {
@@ -106,11 +106,6 @@
       "id": "offscreencanvas"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "offscreen-canvas",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.HTMLCanvasElement.transferControlToOffscreen",
@@ -510,6 +505,11 @@
         "source": "mdnbcd",
         "id": "api.OffscreenCanvasRenderingContext2D.wordSpacing",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "offscreen-canvas",
+        "matched": "exact"
       }
     ]
   },

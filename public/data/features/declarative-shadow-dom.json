@@ -53,7 +53,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -61,14 +61,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 91.59,
-      "partial": 2.79,
-      "total": 94.38
+      "full": 92.49,
+      "partial": 1.94,
+      "total": 94.43
     },
     "byBrowser": {
       "desktop": {
@@ -100,11 +100,6 @@
       "id": "declarative-shadow-dom"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "declarative-shadow-dom",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.HTMLTemplateElement.shadowRootClonable",
@@ -144,6 +139,11 @@
         "source": "mdnbcd",
         "id": "html.elements.template.shadowrootserializable",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "declarative-shadow-dom",
+        "matched": "exact"
       }
     ]
   },

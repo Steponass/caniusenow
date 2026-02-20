@@ -4,6 +4,7 @@
   "name": "Element.closest()",
   "description": "DOM method that returns the current element if it matches the given selector, or else the closest ancestor element that matches the given selector, or else null.",
   "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Element/closest",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/closest",
@@ -44,7 +45,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -52,14 +53,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.34,
+      "full": 96.38,
       "partial": 0,
-      "total": 96.34
+      "total": 96.38
     },
     "byBrowser": {
       "desktop": {
@@ -88,7 +89,13 @@
       "source": "caniuse",
       "id": "element-closest"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.closest",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=Element.closest()"
 }

@@ -65,13 +65,28 @@
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
       "id": "css.properties.align-content.multicol_context"
     },
     "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.break-after.multicol_context",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.break-before.multicol_context",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.break-inside.multicol_context",
+        "matched": "via-webfeatures"
+      },
       {
         "source": "mdnbcd",
         "id": "css.properties.column-gap.multicol_context",
@@ -81,6 +96,11 @@
         "source": "mdnbcd",
         "id": "css.properties.gap.multicol_context",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "multi-column",
+        "matched": "exact"
       }
     ]
   },

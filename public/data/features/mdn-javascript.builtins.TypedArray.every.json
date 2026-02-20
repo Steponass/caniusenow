@@ -70,13 +70,19 @@
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
       "id": "javascript.builtins.TypedArray.every"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "typed-array-iteration-methods",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=%60TypedArray.every()%60"
 }

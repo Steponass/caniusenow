@@ -70,13 +70,19 @@
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
       "id": "api.Navigator.pdfViewerEnabled"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "pdf-viewer",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=Navigator.pdfViewerEnabled"
 }

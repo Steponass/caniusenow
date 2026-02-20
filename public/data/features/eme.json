@@ -49,7 +49,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -57,14 +57,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.04,
-      "partial": 0.32,
-      "total": 96.36
+      "full": 96.13,
+      "partial": 0.39,
+      "total": 96.52
     },
     "byBrowser": {
       "desktop": {
@@ -96,11 +96,6 @@
       "id": "eme"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "encrypted-media-extensions",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.HTMLMediaElement.encrypted_event",
@@ -325,6 +320,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Permissions-Policy.encrypted-media",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "encrypted-media-extensions",
+        "matched": "exact"
       }
     ]
   },

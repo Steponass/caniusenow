@@ -47,7 +47,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -55,14 +55,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 81.77,
-      "partial": 14.41,
-      "total": 96.18
+      "full": 82.13,
+      "partial": 14.1,
+      "total": 96.23
     },
     "byBrowser": {
       "desktop": {
@@ -90,23 +90,13 @@
       "6": "No support for the `pipeTo` or `pipeThrough` methods"
     }
   },
-  "baseline": "high",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "streams"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "readable-byte-streams",
-        "matched": "exact"
-      },
-      {
-        "source": "webfeatures",
-        "id": "streams",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.ReadableByteStreamController",
@@ -196,6 +186,11 @@
         "source": "mdnbcd",
         "id": "api.ReadableStreamBYOBRequest.view",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "readable-byte-streams",
+        "matched": "exact"
       }
     ]
   },

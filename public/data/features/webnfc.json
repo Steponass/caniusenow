@@ -53,9 +53,9 @@
   },
   "usage": {
     "global": {
-      "full": 41.88,
+      "full": 44.12,
       "partial": 0,
-      "total": 41.88
+      "total": 44.12
     },
     "byBrowser": {
       "desktop": {},
@@ -77,11 +77,6 @@
       "id": "webnfc"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "web-nfc",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.NDEFMessage",
@@ -216,6 +211,11 @@
         "source": "mdnbcd",
         "id": "api.NDEFRecord.toRecords",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "web-nfc",
+        "matched": "exact"
       }
     ]
   },

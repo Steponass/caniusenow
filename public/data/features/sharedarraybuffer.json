@@ -52,9 +52,9 @@
   },
   "usage": {
     "global": {
-      "full": 94.89,
+      "full": 94.98,
       "partial": 0,
-      "total": 94.89
+      "total": 94.98
     },
     "byBrowser": {
       "desktop": {
@@ -81,16 +81,6 @@
       "id": "sharedarraybuffer"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "shared-memory",
-        "matched": "exact"
-      },
-      {
-        "source": "webfeatures",
-        "id": "webgl-sab",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "javascript.builtins.Atomics",
@@ -188,8 +178,18 @@
       },
       {
         "source": "mdnbcd",
+        "id": "javascript.builtins.SharedArrayBuffer.grow",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
         "id": "javascript.builtins.SharedArrayBuffer.slice",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "shared-memory",
+        "matched": "exact"
       }
     ]
   },

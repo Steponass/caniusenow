@@ -70,13 +70,19 @@
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
       "id": "html.elements.link.rel.preconnect"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "link-rel-preconnect",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=rel%3Dpreconnect"
 }

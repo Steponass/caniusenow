@@ -53,7 +53,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -61,14 +61,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 95.87,
+      "full": 95.82,
       "partial": 0,
-      "total": 95.87
+      "total": 95.82
     },
     "byBrowser": {
       "desktop": {
@@ -98,11 +98,6 @@
       "id": "gamepad"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "gamepad",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Gamepad",
@@ -212,6 +207,11 @@
         "source": "mdnbcd",
         "id": "html.elements.iframe.allow.gamepad",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "gamepad",
+        "matched": "exact"
       }
     ]
   },

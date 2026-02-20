@@ -55,26 +55,25 @@
       "current": "n"
     },
     "ios_saf": {
-      "current": "y",
-      "firstFull": "26.3"
+      "current": "u"
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "n"
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 71.28,
-      "partial": 4.72,
-      "total": 76
+      "full": 73.84,
+      "partial": 2.25,
+      "total": 76.09
     },
     "byBrowser": {
       "desktop": {
@@ -84,7 +83,6 @@
         "opr": 0.79
       },
       "mobile": {
-        "ios_saf": 0.01,
         "an_chr": 44.12,
         "an_ff": 0.31
       }
@@ -95,22 +93,16 @@
     "general": "",
     "byNum": {
       "1": "Enabled through the `enable-zstd-content-encoding` feature flag in `chrome://flags`",
-      "2": "Partial support refers to supporting Zstandard, but not requesting it",
-      "3": "Requires macOS 26.3 Tahoe or later."
+      "2": "Partial support refers to supporting Zstandard, but not requesting it"
     }
   },
-  "baseline": "low",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "zstd"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "zstd",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "http.headers.Accept-Encoding.zstd",
@@ -120,6 +112,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Content-Encoding.zstd",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "zstd",
+        "matched": "exact"
       }
     ]
   },

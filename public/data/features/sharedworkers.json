@@ -52,14 +52,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 49.77,
+      "full": 47.48,
       "partial": 0,
-      "total": 49.77
+      "total": 47.48
     },
     "byBrowser": {
       "desktop": {
@@ -88,11 +88,6 @@
       "id": "sharedworkers"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "shared-workers",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.SharedWorker",
@@ -142,6 +137,11 @@
         "source": "mdnbcd",
         "id": "api.SharedWorkerGlobalScope.name",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "shared-workers",
+        "matched": "exact"
       }
     ]
   },

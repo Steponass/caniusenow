@@ -72,13 +72,19 @@
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
       "id": "api.SVGClipPathElement"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "clip-path",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=SVGClipPathElement"
 }

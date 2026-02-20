@@ -53,7 +53,7 @@
     },
     "an_chr": {
       "current": "a",
-      "firstPartial": "144"
+      "firstPartial": "143"
     },
     "smsg": {
       "current": "a",
@@ -61,14 +61,14 @@
     },
     "an_ff": {
       "current": "a",
-      "firstPartial": "147"
+      "firstPartial": "146"
     }
   },
   "usage": {
     "global": {
       "full": 0,
-      "partial": 94.98,
-      "total": 94.98
+      "partial": 95.39,
+      "total": 95.39
     },
     "byBrowser": {
       "desktop": {
@@ -99,11 +99,6 @@
       "id": "deviceorientation"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "device-orientation-events",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.DeviceMotionEvent",
@@ -228,6 +223,11 @@
         "source": "mdnbcd",
         "id": "api.Window.deviceorientationabsolute_event",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "device-orientation-events",
+        "matched": "exact"
       }
     ]
   },

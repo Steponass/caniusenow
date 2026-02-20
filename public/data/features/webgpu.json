@@ -45,7 +45,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -57,9 +57,9 @@
   },
   "usage": {
     "global": {
-      "full": 76.92,
-      "partial": 2.22,
-      "total": 79.14
+      "full": 77,
+      "partial": 1.87,
+      "total": 78.87
     },
     "byBrowser": {
       "desktop": {
@@ -93,11 +93,6 @@
       "id": "webgpu"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "webgpu",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.GPU",
@@ -1597,6 +1592,11 @@
         "source": "mdnbcd",
         "id": "api.WorkerNavigator.gpu",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "webgpu",
+        "matched": "exact"
       }
     ]
   },

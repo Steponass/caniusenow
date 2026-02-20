@@ -48,7 +48,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -60,9 +60,9 @@
   },
   "usage": {
     "global": {
-      "full": 93.69,
-      "partial": 1.96,
-      "total": 95.65
+      "full": 93.72,
+      "partial": 2.09,
+      "total": 95.81
     },
     "byBrowser": {
       "desktop": {
@@ -98,11 +98,6 @@
       "id": "webauthn"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "webauthn",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.AuthenticatorAssertionResponse",
@@ -312,6 +307,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Permissions-Policy.publickey-credentials-get",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "webauthn",
+        "matched": "exact"
       }
     ]
   },

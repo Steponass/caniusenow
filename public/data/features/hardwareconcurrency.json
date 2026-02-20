@@ -51,7 +51,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -59,14 +59,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 95.88,
+      "full": 95.95,
       "partial": 0,
-      "total": 95.88
+      "total": 95.95
     },
     "byBrowser": {
       "desktop": {
@@ -98,11 +98,6 @@
     },
     "supplementary": [
       {
-        "source": "webfeatures",
-        "id": "hardware-concurrency",
-        "matched": "exact"
-      },
-      {
         "source": "mdnbcd",
         "id": "api.Navigator.hardwareConcurrency",
         "matched": "via-webfeatures"
@@ -111,6 +106,11 @@
         "source": "mdnbcd",
         "id": "api.WorkerNavigator.hardwareConcurrency",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "hardware-concurrency",
+        "matched": "exact"
       }
     ]
   },

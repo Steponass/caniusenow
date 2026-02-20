@@ -41,7 +41,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -49,14 +49,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.25,
+      "full": 96.27,
       "partial": 0,
-      "total": 96.25
+      "total": 96.27
     },
     "byBrowser": {
       "desktop": {
@@ -86,11 +86,6 @@
       "id": "font-variant-numeric"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "font-variant-numeric",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "css.properties.font-variant-numeric",
@@ -140,6 +135,11 @@
         "source": "mdnbcd",
         "id": "css.properties.font-variant-numeric.tabular-nums",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "font-variant-numeric",
+        "matched": "exact"
       }
     ]
   },

@@ -4,7 +4,7 @@
   "name": "HTMLTableCaptionElement",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLTableCaptionElement",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLTableCaptionElement/align",
   "links": [],
   "support": {
     "chr": {
@@ -72,13 +72,24 @@
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
       "id": "api.HTMLTableCaptionElement"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTableCaptionElement.align",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "table",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=HTMLTableCaptionElement"
 }

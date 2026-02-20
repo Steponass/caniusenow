@@ -51,7 +51,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -59,14 +59,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 95.55,
-      "partial": 0.49,
-      "total": 96.04
+      "full": 95.52,
+      "partial": 0.6,
+      "total": 96.12
     },
     "byBrowser": {
       "desktop": {
@@ -101,11 +101,6 @@
       "id": "serviceworkers"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "service-workers",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Cache",
@@ -620,6 +615,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Service-Worker-Navigation-Preload",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "service-workers",
+        "matched": "exact"
       }
     ]
   },

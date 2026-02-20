@@ -49,7 +49,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -57,14 +57,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.46,
-      "partial": 0.3,
-      "total": 96.76
+      "full": 96.49,
+      "partial": 0.36,
+      "total": 96.85
     },
     "byBrowser": {
       "desktop": {
@@ -97,11 +97,6 @@
       "id": "contentsecuritypolicy"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "csp",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Document.securitypolicyviolation_event",
@@ -371,6 +366,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Content-Security-Policy-Report-Only",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "csp",
+        "matched": "exact"
       }
     ]
   },

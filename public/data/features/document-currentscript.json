@@ -4,6 +4,7 @@
   "name": "document.currentScript",
   "description": "`document.currentScript` returns the `<script>` element whose script is currently being processed.",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Document/currentScript",
   "links": [
     {
       "url": "https://github.com/JamesMGreene/document.currentScript",
@@ -40,7 +41,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -48,14 +49,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.45,
+      "full": 96.48,
       "partial": 0,
-      "total": 96.45
+      "total": 96.48
     },
     "byBrowser": {
       "desktop": {
@@ -84,7 +85,13 @@
       "source": "caniuse",
       "id": "document-currentscript"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.currentScript",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=document.currentScript"
 }

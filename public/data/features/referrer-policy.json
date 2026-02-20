@@ -43,7 +43,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -55,9 +55,9 @@
   },
   "usage": {
     "global": {
-      "full": 95.86,
-      "partial": 0.79,
-      "total": 96.65
+      "full": 95.94,
+      "partial": 0.81,
+      "total": 96.75
     },
     "byBrowser": {
       "desktop": {
@@ -90,11 +90,6 @@
       "id": "referrer-policy"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "referrer-policy",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.HTMLAnchorElement.referrerPolicy",
@@ -374,6 +369,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Referrer-Policy.unsafe-url",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "referrer-policy",
+        "matched": "exact"
       }
     ]
   },

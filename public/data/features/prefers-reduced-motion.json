@@ -45,7 +45,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -53,14 +53,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 95.9,
+      "full": 96.08,
       "partial": 0,
-      "total": 95.9
+      "total": 96.08
     },
     "byBrowser": {
       "desktop": {
@@ -91,11 +91,6 @@
     },
     "supplementary": [
       {
-        "source": "webfeatures",
-        "id": "prefers-reduced-motion",
-        "matched": "exact"
-      },
-      {
         "source": "mdnbcd",
         "id": "css.at-rules.media.prefers-reduced-motion",
         "matched": "via-webfeatures"
@@ -104,6 +99,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Sec-CH-Prefers-Reduced-Motion",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "prefers-reduced-motion",
+        "matched": "exact"
       }
     ]
   },

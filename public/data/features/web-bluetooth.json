@@ -62,9 +62,9 @@
   },
   "usage": {
     "global": {
-      "full": 80.27,
+      "full": 80.35,
       "partial": 0,
-      "total": 80.27
+      "total": 80.35
     },
     "byBrowser": {
       "desktop": {},
@@ -90,11 +90,6 @@
       "id": "web-bluetooth"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "web-bluetooth",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Bluetooth",
@@ -399,6 +394,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Permissions-Policy.bluetooth",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "web-bluetooth",
+        "matched": "exact"
       }
     ]
   },

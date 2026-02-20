@@ -51,7 +51,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -63,9 +63,9 @@
   },
   "usage": {
     "global": {
-      "full": 82.17,
+      "full": 82.39,
       "partial": 0,
-      "total": 82.17
+      "total": 82.39
     },
     "byBrowser": {
       "desktop": {
@@ -92,11 +92,6 @@
       "id": "midi"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "web-midi",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.MIDIAccess",
@@ -346,6 +341,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Permissions-Policy.midi",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "web-midi",
+        "matched": "exact"
       }
     ]
   },

@@ -61,7 +61,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -69,14 +69,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 94.58,
-      "partial": 0.1,
-      "total": 94.68
+      "full": 94.96,
+      "partial": 0.08,
+      "total": 95.04
     },
     "byBrowser": {
       "desktop": {
@@ -109,11 +109,6 @@
       "id": "touch"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "touch-events",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Element.touchcancel_event",
@@ -278,6 +273,11 @@
         "source": "mdnbcd",
         "id": "api.TouchList.length",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "touch-events",
+        "matched": "exact"
       }
     ]
   },

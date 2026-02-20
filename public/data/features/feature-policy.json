@@ -69,9 +69,9 @@
   },
   "usage": {
     "global": {
-      "full": 80.03,
-      "partial": 15.8,
-      "total": 95.83
+      "full": 80.25,
+      "partial": 15.67,
+      "total": 95.92
     },
     "byBrowser": {
       "desktop": {
@@ -101,11 +101,6 @@
       "id": "feature-policy"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "feature-policy",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Document.featurePolicy",
@@ -330,6 +325,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Feature-Policy.xr-spatial-tracking",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "feature-policy",
+        "matched": "exact"
       }
     ]
   },

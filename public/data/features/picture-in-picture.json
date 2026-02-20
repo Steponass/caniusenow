@@ -66,9 +66,9 @@
   },
   "usage": {
     "global": {
-      "full": 48.66,
-      "partial": 44.26,
-      "total": 92.92
+      "full": 46.44,
+      "partial": 46.51,
+      "total": 92.95
     },
     "byBrowser": {
       "desktop": {
@@ -103,11 +103,6 @@
       "id": "picture-in-picture"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "picture-in-picture",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Document.exitPictureInPicture",
@@ -207,6 +202,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Permissions-Policy.picture-in-picture",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "picture-in-picture",
+        "matched": "exact"
       }
     ]
   },

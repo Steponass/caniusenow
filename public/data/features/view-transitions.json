@@ -53,7 +53,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -61,14 +61,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 89.49,
+      "full": 90.4,
       "partial": 0,
-      "total": 89.49
+      "total": 90.4
     },
     "byBrowser": {
       "desktop": {
@@ -100,11 +100,6 @@
       "id": "view-transitions"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "view-transitions",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Document.startViewTransition",
@@ -239,6 +234,11 @@
         "source": "mdnbcd",
         "id": "css.selectors.view-transition-old",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "view-transitions",
+        "matched": "exact"
       }
     ]
   },

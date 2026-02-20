@@ -44,7 +44,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -52,14 +52,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 82.95,
+      "full": 83.2,
       "partial": 0,
-      "total": 82.95
+      "total": 83.2
     },
     "byBrowser": {
       "desktop": {
@@ -91,11 +91,6 @@
     },
     "supplementary": [
       {
-        "source": "webfeatures",
-        "id": "link-rel-prefetch",
-        "matched": "exact"
-      },
-      {
         "source": "mdnbcd",
         "id": "api.PerformanceResourceTiming.deliveryType.navigational-prefetch",
         "matched": "via-webfeatures"
@@ -114,6 +109,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Sec-Purpose.prefetch",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "link-rel-prefetch",
+        "matched": "exact"
       }
     ]
   },

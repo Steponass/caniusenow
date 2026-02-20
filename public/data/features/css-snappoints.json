@@ -61,7 +61,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -69,14 +69,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 95.92,
-      "partial": 0.39,
-      "total": 96.31
+      "full": 96.1,
+      "partial": 0.42,
+      "total": 96.52
     },
     "byBrowser": {
       "desktop": {
@@ -113,11 +113,6 @@
       "id": "css-snappoints"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "scroll-snap",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "css.properties.scroll-margin",
@@ -337,6 +332,11 @@
         "source": "mdnbcd",
         "id": "css.properties.scroll-snap-type.y",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "scroll-snap",
+        "matched": "exact"
       }
     ]
   },

@@ -74,18 +74,18 @@ async function main(): Promise<void> {
       `  ✅ Processed ${stats.caniuse.processed} features (${stats.caniuse.errors} errors)`,
     );
 
-    // Step 4: Merge Web Features (Secondary source)
-    console.log("\n🟢 Step 4: Merging Web Features...");
-    processWebFeatures(features, sources, stats);
-    console.log(
-      `  ✅ Merged ${stats.webFeatures.merged} features, added ${stats.webFeatures.new} new (${stats.webFeatures.errors} errors)`,
-    );
-
-    // Step 5: Merge MDN BCD (Tertiary source)
-    console.log("\n🟡 Step 5: Merging MDN Browser Compat Data...");
+    // Step 4: Merge MDN BCD (Secondary source - reliable browser support)
+    console.log("\n🟡 Step 4: Merging MDN Browser Compat Data...");
     processMdnBcd(features, sources, stats);
     console.log(
       `  ✅ Merged ${stats.mdnBcd.merged} features, added ${stats.mdnBcd.new} new (${stats.mdnBcd.errors} errors)`,
+    );
+
+    // Step 5: Merge Web Features (Tertiary source - baseline status)
+    console.log("\n🟢 Step 5: Merging Web Features...");
+    processWebFeatures(features, sources, stats);
+    console.log(
+      `  ✅ Merged ${stats.webFeatures.merged} features, added ${stats.webFeatures.new} new (${stats.webFeatures.errors} errors)`,
     );
 
     // Step 6: Generate search index
@@ -214,7 +214,7 @@ function processCaniuse(
 }
 
 // ============================================================================
-// STEP 4: PROCESS WEB FEATURES (SECONDARY SOURCE)
+// STEP 5: PROCESS WEB FEATURES (TERTIARY SOURCE - BASELINE STATUS)
 // ============================================================================
 
 function processWebFeatures(
@@ -247,6 +247,19 @@ function processWebFeatures(
           stats.webFeatures.merged++;
           merged = true;
           break;
+        }
+      }
+
+      // Strategy 1.5: Try to merge via MDN compat_features mapping
+      if (!merged && wfFeature.compat_features) {
+        for (const mdnPath of wfFeature.compat_features) {
+          const existingMdnFeature = features.get(`mdn-${mdnPath}`);
+          if (existingMdnFeature) {
+            supplementWithWebFeatures(existingMdnFeature, wfFeature, wfId);
+            stats.webFeatures.merged++;
+            merged = true;
+            break;
+          }
         }
       }
 
@@ -403,7 +416,7 @@ function inferBrowserSupport(
 }
 
 // ============================================================================
-// STEP 5: PROCESS MDN BCD (TERTIARY SOURCE)
+// STEP 4: PROCESS MDN BCD (SECONDARY SOURCE - BROWSER SUPPORT)
 // ============================================================================
 
 function processMdnBcd(
@@ -477,15 +490,6 @@ function processMdnBcd(
           }
         }
 
-        // Also check if WF feature exists as standalone
-        if (!merged) {
-          const wfFeature = features.get(`wf-${linkedWfId}`);
-          if (wfFeature) {
-            supplementWithMdn(wfFeature, path, compat);
-            stats.mdnBcd.merged++;
-            merged = true;
-          }
-        }
       }
 
       // Strategy 2: Check for duplicates by ID/name similarity

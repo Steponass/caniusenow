@@ -65,9 +65,9 @@
   },
   "usage": {
     "global": {
-      "full": 14.12,
-      "partial": 82.67,
-      "total": 96.79
+      "full": 14.01,
+      "partial": 82.87,
+      "total": 96.88
     },
     "byBrowser": {
       "desktop": {
@@ -91,19 +91,13 @@
       "4": "Does not support the values `avoid` (in the column context) for the properties `break-after`, `break-before`, and `break-inside`; does not support the values `avoid-column`, `avoid-page`, and `column` for the properties `break-before` and `break-after`."
     }
   },
-  "baseline": "high",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "multicolumn"
     },
-    "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "multi-column",
-        "matched": "exact"
-      }
-    ]
+    "supplementary": []
   },
   "caniuseUrl": "https://caniuse.com/?search=CSS3%20Multiple%20column%20layout"
 }

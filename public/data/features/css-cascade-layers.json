@@ -57,7 +57,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -65,14 +65,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 94.98,
+      "full": 95.21,
       "partial": 0,
-      "total": 94.98
+      "total": 95.21
     },
     "byBrowser": {
       "desktop": {
@@ -105,11 +105,6 @@
       "id": "css-cascade-layers"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "cascade-layers",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.CSSImportRule.layerName",
@@ -149,6 +144,11 @@
         "source": "mdnbcd",
         "id": "css.types.global_keywords.revert-layer",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "cascade-layers",
+        "matched": "exact"
       }
     ]
   },

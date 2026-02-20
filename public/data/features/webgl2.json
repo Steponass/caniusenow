@@ -45,7 +45,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -53,14 +53,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 95.73,
+      "full": 95.79,
       "partial": 0,
-      "total": 95.73
+      "total": 95.79
     },
     "byBrowser": {
       "desktop": {
@@ -96,11 +96,6 @@
       "id": "webgl2"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "webgl2",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.HTMLCanvasElement.getContext.webgl2_context",
@@ -1295,6 +1290,11 @@
         "source": "mdnbcd",
         "id": "api.WebGLVertexArrayObject",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "webgl2",
+        "matched": "exact"
       }
     ]
   },

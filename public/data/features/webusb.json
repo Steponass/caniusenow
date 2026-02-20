@@ -42,7 +42,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -54,9 +54,9 @@
   },
   "usage": {
     "global": {
-      "full": 79.76,
+      "full": 79.75,
       "partial": 0,
-      "total": 79.76
+      "total": 79.75
     },
     "byBrowser": {
       "desktop": {
@@ -82,11 +82,6 @@
       "id": "webusb"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "webusb",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Navigator.usb",
@@ -616,6 +611,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Permissions-Policy.usb",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "webusb",
+        "matched": "exact"
       }
     ]
   },

@@ -4,6 +4,7 @@
   "name": "Document.execCommand()",
   "description": "Allows running commands to manipulate the contents of an editable region in a document switched to designMode",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Document/execCommand",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand",
@@ -45,7 +46,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -53,14 +54,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.83,
+      "full": 96.89,
       "partial": 0,
-      "total": 96.83
+      "total": 96.89
     },
     "byBrowser": {
       "desktop": {
@@ -90,7 +91,13 @@
       "source": "caniuse",
       "id": "document-execcommand"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.execCommand",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=Document.execCommand()"
 }

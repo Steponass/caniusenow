@@ -46,7 +46,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -54,14 +54,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.79,
+      "full": 96.88,
       "partial": 0,
-      "total": 96.79
+      "total": 96.88
     },
     "byBrowser": {
       "desktop": {
@@ -95,11 +95,6 @@
       "id": "typedarrays"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "typed-arrays",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "javascript.builtins.ArrayBuffer",
@@ -514,6 +509,11 @@
         "source": "mdnbcd",
         "id": "javascript.builtins.Uint8ClampedArray.Uint8ClampedArray.iterable_allowed",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "typed-arrays",
+        "matched": "exact"
       }
     ]
   },

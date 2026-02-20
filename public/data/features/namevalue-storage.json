@@ -59,7 +59,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -67,14 +67,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.86,
+      "full": 96.92,
       "partial": 0,
-      "total": 96.86
+      "total": 96.92
     },
     "byBrowser": {
       "desktop": {
@@ -105,11 +105,6 @@
       "id": "namevalue-storage"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "localstorage",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Storage",
@@ -194,6 +189,11 @@
         "source": "mdnbcd",
         "id": "api.Window.storage_event",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "localstorage",
+        "matched": "exact"
       }
     ]
   },

@@ -57,7 +57,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -65,14 +65,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.45,
+      "full": 96.48,
       "partial": 0.01,
-      "total": 96.46
+      "total": 96.49
     },
     "byBrowser": {
       "desktop": {
@@ -105,11 +105,6 @@
     },
     "supplementary": [
       {
-        "source": "webfeatures",
-        "id": "read-write-pseudos",
-        "matched": "exact"
-      },
-      {
         "source": "mdnbcd",
         "id": "css.selectors.read-only",
         "matched": "via-webfeatures"
@@ -118,6 +113,11 @@
         "source": "mdnbcd",
         "id": "css.selectors.read-write",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "read-write-pseudos",
+        "matched": "exact"
       }
     ]
   },

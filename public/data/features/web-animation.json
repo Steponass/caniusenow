@@ -52,7 +52,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -60,14 +60,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 95.26,
-      "partial": 0.73,
-      "total": 95.99
+      "full": 95.49,
+      "partial": 0.59,
+      "total": 96.08
     },
     "byBrowser": {
       "desktop": {
@@ -102,11 +102,6 @@
       "id": "web-animation"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "web-animations",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Animation",
@@ -421,6 +416,11 @@
         "source": "mdnbcd",
         "id": "api.ShadowRoot.getAnimations",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "web-animations",
+        "matched": "exact"
       }
     ]
   },

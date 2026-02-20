@@ -49,9 +49,9 @@
   },
   "usage": {
     "global": {
-      "full": 14.1,
+      "full": 13.99,
       "partial": 0,
-      "total": 14.1
+      "total": 13.99
     },
     "byBrowser": {
       "desktop": {
@@ -79,11 +79,6 @@
       "id": "audiotracks"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "audio-video-tracks",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.AudioTrack",
@@ -218,6 +213,11 @@
         "source": "mdnbcd",
         "id": "api.VideoTrackList.selectedIndex",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "audio-video-tracks",
+        "matched": "exact"
       }
     ]
   },

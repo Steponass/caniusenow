@@ -72,7 +72,7 @@
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
@@ -93,6 +93,11 @@
         "source": "mdnbcd",
         "id": "api.HTMLCanvasElement.width",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "canvas",
+        "matched": "exact"
       }
     ]
   },

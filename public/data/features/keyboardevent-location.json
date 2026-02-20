@@ -4,6 +4,7 @@
   "name": "KeyboardEvent.location",
   "description": "A `KeyboardEvent` property that indicates the location of the key on the input device. Useful when there are more than one physical key for the same logical key (e.g. left or right \"Control\" key; main or numpad \"1\" key).",
   "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/KeyboardEvent/location",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/location",
@@ -41,7 +42,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -49,14 +50,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.73,
+      "full": 96.81,
       "partial": 0.01,
-      "total": 96.74
+      "total": 96.82
     },
     "byBrowser": {
       "desktop": {
@@ -88,7 +89,13 @@
       "source": "caniuse",
       "id": "keyboardevent-location"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.location",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=KeyboardEvent.location"
 }

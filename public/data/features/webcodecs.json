@@ -25,10 +25,6 @@
     {
       "url": "https://w3c.github.io/webcodecs/samples/",
       "title": "WebCodecs samples"
-    },
-    {
-      "url": "https://webcodecsfundamentals.org/datasets/codec-support-table/",
-      "title": "Support table for individual codec strings"
     }
   ],
   "support": {
@@ -61,7 +57,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -73,9 +69,9 @@
   },
   "usage": {
     "global": {
-      "full": 86.06,
-      "partial": 7.97,
-      "total": 94.03
+      "full": 83.75,
+      "partial": 10.32,
+      "total": 94.07
     },
     "byBrowser": {
       "desktop": {
@@ -106,11 +102,6 @@
       "id": "webcodecs"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "webcodecs",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.AudioData",
@@ -735,6 +726,11 @@
         "source": "mdnbcd",
         "id": "api.VideoFrame.visibleRect",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "webcodecs",
+        "matched": "exact"
       }
     ]
   },

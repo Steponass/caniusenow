@@ -4,6 +4,7 @@
   "name": "HTMLElement.innerText",
   "description": "A property representing the text within a DOM element and its descendants. As a getter, it approximates the text the user would get if they highlighted the contents of the element with the cursor and then copied to the clipboard.",
   "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLElement/innerText",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText",
@@ -53,7 +54,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -61,14 +62,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.78,
+      "full": 96.87,
       "partial": 0,
-      "total": 96.78
+      "total": 96.87
     },
     "byBrowser": {
       "desktop": {
@@ -98,7 +99,13 @@
       "source": "caniuse",
       "id": "innertext"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.innerText",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=HTMLElement.innerText"
 }

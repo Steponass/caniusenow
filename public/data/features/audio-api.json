@@ -53,7 +53,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -61,14 +61,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.36,
+      "full": 96.41,
       "partial": 0,
-      "total": 96.36
+      "total": 96.41
     },
     "byBrowser": {
       "desktop": {
@@ -98,11 +98,6 @@
       "id": "audio-api"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "web-audio",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.AnalyserNode",
@@ -351,6 +346,56 @@
       {
         "source": "mdnbcd",
         "id": "api.AudioDestinationNode.maxChannelCount",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener.forwardX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener.forwardY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener.forwardZ",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener.positionX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener.positionY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener.positionZ",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener.upX",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener.upY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AudioListener.upZ",
         "matched": "via-webfeatures"
       },
       {
@@ -1072,6 +1117,11 @@
         "source": "mdnbcd",
         "id": "api.WaveShaperNode.oversample",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "web-audio",
+        "matched": "exact"
       }
     ]
   },

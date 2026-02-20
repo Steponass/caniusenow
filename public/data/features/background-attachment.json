@@ -37,25 +37,26 @@
       "firstFull": "9"
     },
     "ios_saf": {
-      "current": "u"
+      "current": "y",
+      "firstFull": "15.4"
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "u"
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 82.29,
-      "partial": 14.08,
-      "total": 96.37
+      "full": 93.89,
+      "partial": 2.36,
+      "total": 96.25
     },
     "byBrowser": {
       "desktop": {
@@ -67,6 +68,7 @@
         "ie": 0.41
       },
       "mobile": {
+        "ios_saf": 11.82,
         "an_chr": 44.12,
         "an_ff": 0.31
       }
@@ -80,22 +82,16 @@
       "2": "Partial support refers to supporting `local` but not `fixed`",
       "3": "Only supports `local` when `-webkit-overflow-scrolling: touch` is _not_ used",
       "4": "Does not support `fixed`, and due [to a bug](https://bugs.chromium.org/p/chromium/issues/detail?id=627037) only supports `local` if a `border-radius` is set on the element.",
-      "5": "Broken support of `fixed` and `local` when scrolling an outer scroll container. Related [to a bug](https://bugs.webkit.org/show_bug.cgi?id=219324).",
-      "6": "`fixed` is recognized, but has no effect. See [bug 275247](https://bugs.webkit.org/show_bug.cgi?id=275247)."
+      "5": "Broken support of `fixed` and `local` when scrolling an outer scroll container. Related [to a bug](https://bugs.webkit.org/show_bug.cgi?id=219324)."
     }
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "background-attachment"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "background-attachment",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "css.properties.background-attachment",
@@ -120,6 +116,11 @@
         "source": "mdnbcd",
         "id": "css.properties.background-attachment.scroll",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "background-attachment",
+        "matched": "exact"
       }
     ]
   },

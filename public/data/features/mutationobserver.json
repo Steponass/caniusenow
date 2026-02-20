@@ -46,7 +46,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -54,14 +54,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.66,
+      "full": 96.76,
       "partial": 0,
-      "total": 96.66
+      "total": 96.76
     },
     "byBrowser": {
       "desktop": {
@@ -85,18 +85,13 @@
     "general": "When changing the `innerHTML` content of a node containing a single `CharacterData` node, resulting in a single-but-different `CharacterData` child node, WebKit browsers consider this a `characterData` mutation of the child `CharacterData` node, while other browsers consider it a `childList` mutation of the parent node.",
     "byNum": {}
   },
-  "baseline": "high",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "mutationobserver"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "mutationobserver",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.MutationObserver",

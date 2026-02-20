@@ -50,7 +50,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -58,14 +58,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.44,
+      "full": 96.46,
       "partial": 0,
-      "total": 96.44
+      "total": 96.46
     },
     "byBrowser": {
       "desktop": {
@@ -95,11 +95,6 @@
       "id": "eventsource"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "server-sent-events",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.EventSource",
@@ -154,6 +149,11 @@
         "source": "mdnbcd",
         "id": "api.EventSource.worker_support",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "server-sent-events",
+        "matched": "exact"
       }
     ]
   },

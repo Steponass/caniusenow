@@ -48,7 +48,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -56,14 +56,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 84.31,
-      "partial": 11.99,
-      "total": 96.3
+      "full": 84.19,
+      "partial": 12.26,
+      "total": 96.45
     },
     "byBrowser": {
       "desktop": {
@@ -95,11 +95,6 @@
       "id": "mediasource"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "media-source",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.AudioTrack.sourceBuffer",
@@ -449,6 +444,11 @@
         "source": "mdnbcd",
         "id": "api.VideoTrack.sourceBuffer",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "media-source",
+        "matched": "exact"
       }
     ]
   },

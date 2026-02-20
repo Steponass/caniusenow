@@ -41,7 +41,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -49,14 +49,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 84.66,
-      "partial": 12.2,
-      "total": 96.86
+      "full": 84.58,
+      "partial": 12.34,
+      "total": 96.92
     },
     "byBrowser": {
       "desktop": {
@@ -92,11 +92,6 @@
       "id": "selection-api"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "selection-api",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.AbstractRange",
@@ -215,6 +210,11 @@
       {
         "source": "mdnbcd",
         "id": "api.Range.deleteContents",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Range.detach",
         "matched": "via-webfeatures"
       },
       {
@@ -481,6 +481,11 @@
         "source": "mdnbcd",
         "id": "api.Window.getSelection",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "selection-api",
+        "matched": "exact"
       }
     ]
   },

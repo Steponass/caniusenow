@@ -61,7 +61,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -69,14 +69,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.74,
-      "partial": 0.1,
-      "total": 96.84
+      "full": 96.83,
+      "partial": 0.08,
+      "total": 96.91
     },
     "byBrowser": {
       "desktop": {
@@ -111,11 +111,6 @@
       "id": "video"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "video",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.HTMLMediaElement",
@@ -505,6 +500,11 @@
         "source": "mdnbcd",
         "id": "html.elements.video.width",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "video",
+        "matched": "exact"
       }
     ]
   },

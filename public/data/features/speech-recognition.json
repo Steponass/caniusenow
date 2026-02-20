@@ -62,8 +62,8 @@
   "usage": {
     "global": {
       "full": 0,
-      "partial": 88.36,
-      "total": 88.36
+      "partial": 88.2,
+      "total": 88.2
     },
     "byBrowser": {
       "desktop": {},
@@ -87,11 +87,6 @@
       "id": "speech-recognition"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "speech-recognition",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.SpeechRecognition",
@@ -281,6 +276,11 @@
         "source": "mdnbcd",
         "id": "api.SpeechRecognitionResultList.length",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "speech-recognition",
+        "matched": "exact"
       }
     ]
   },

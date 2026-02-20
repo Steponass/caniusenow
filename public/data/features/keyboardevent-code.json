@@ -4,6 +4,7 @@
   "name": "KeyboardEvent.code",
   "description": "A `KeyboardEvent` property representing the physical key that was pressed, ignoring the keyboard layout and ignoring whether any modifier keys were active.",
   "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/KeyboardEvent/code",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code",
@@ -54,14 +55,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 50.55,
+      "full": 48.22,
       "partial": 0,
-      "total": 50.55
+      "total": 48.22
     },
     "byBrowser": {
       "desktop": {
@@ -90,7 +91,18 @@
       "source": "caniuse",
       "id": "keyboardevent-code"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.code",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=KeyboardEvent.code"
 }

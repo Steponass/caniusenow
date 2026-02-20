@@ -52,7 +52,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -60,14 +60,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 95.55,
+      "full": 95.78,
       "partial": 0,
-      "total": 95.55
+      "total": 95.78
     },
     "byBrowser": {
       "desktop": {
@@ -90,19 +90,13 @@
     "general": "Support will also depend on whether or not the OS has support for a light/dark theme preference.",
     "byNum": {}
   },
-  "baseline": "high",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "prefers-color-scheme"
     },
-    "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "prefers-color-scheme",
-        "matched": "exact"
-      }
-    ]
+    "supplementary": []
   },
   "caniuseUrl": "https://caniuse.com/?search=prefers-color-scheme%20media%20query"
 }

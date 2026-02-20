@@ -55,9 +55,9 @@
   },
   "usage": {
     "global": {
-      "full": 0.57,
-      "partial": 93.5,
-      "total": 94.07
+      "full": 0.5,
+      "partial": 93.7,
+      "total": 94.2
     },
     "byBrowser": {
       "desktop": {
@@ -82,11 +82,6 @@
       "id": "css-at-counter-style"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "counter-style",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.CSSCounterStyleRule",
@@ -201,6 +196,11 @@
         "source": "mdnbcd",
         "id": "css.at-rules.counter-style.system",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "counter-style",
+        "matched": "exact"
       }
     ]
   },

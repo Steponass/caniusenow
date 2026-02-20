@@ -48,9 +48,9 @@
   },
   "usage": {
     "global": {
-      "full": 34.25,
+      "full": 32.14,
       "partial": 0,
-      "total": 34.25
+      "total": 32.14
     },
     "byBrowser": {
       "desktop": {
@@ -73,11 +73,6 @@
       "id": "webhid"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "webhid",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.HID",
@@ -242,6 +237,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Permissions-Policy.hid",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "webhid",
+        "matched": "exact"
       }
     ]
   },

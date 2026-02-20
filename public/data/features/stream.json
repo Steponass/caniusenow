@@ -56,7 +56,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -64,14 +64,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.19,
-      "partial": 0.12,
-      "total": 96.31
+      "full": 96.21,
+      "partial": 0.14,
+      "total": 96.35
     },
     "byBrowser": {
       "desktop": {
@@ -105,11 +105,6 @@
       "id": "stream"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "media-capture",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.InputDeviceInfo",
@@ -469,6 +464,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Permissions-Policy.microphone",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "media-capture",
+        "matched": "exact"
       }
     ]
   },

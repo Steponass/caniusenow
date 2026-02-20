@@ -4,6 +4,7 @@
   "name": "Web Share API",
   "description": "A way to allow websites to invoke the native sharing capabilities of the host platform",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/web-share",
   "links": [
     {
       "url": "https://developers.google.com/web/updates/2016/10/navigator-share",
@@ -75,7 +76,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -83,14 +84,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 84.84,
-      "partial": 7.64,
-      "total": 92.48
+      "full": 86.32,
+      "partial": 6.26,
+      "total": 92.58
     },
     "byBrowser": {
       "desktop": {
@@ -124,7 +125,13 @@
       "source": "caniuse",
       "id": "web-share"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.web-share",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=Web%20Share%20API"
 }

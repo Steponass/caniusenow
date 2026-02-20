@@ -70,7 +70,7 @@
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
@@ -81,6 +81,11 @@
         "source": "mdnbcd",
         "id": "api.ByteLengthQueuingStrategy.size",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "streams",
+        "matched": "exact"
       }
     ]
   },

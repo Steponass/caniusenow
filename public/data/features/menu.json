@@ -61,8 +61,8 @@
   "usage": {
     "global": {
       "full": 0,
-      "partial": 0.12,
-      "total": 0.12
+      "partial": 0.08,
+      "total": 0.08
     },
     "byBrowser": {
       "desktop": {},
@@ -77,19 +77,13 @@
       "2": "Can be enabled with the `dom.menuitem.enabled` preference in `about:config`."
     }
   },
-  "baseline": "high",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "menu"
     },
-    "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "menu",
-        "matched": "exact"
-      }
-    ]
+    "supplementary": []
   },
   "caniuseUrl": "https://caniuse.com/?search=Context%20menu%20item%20(menuitem%20element)"
 }

@@ -49,14 +49,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 0.29,
-      "partial": 0.05,
-      "total": 0.34
+      "full": 0.31,
+      "partial": 0.04,
+      "total": 0.35
     },
     "byBrowser": {
       "desktop": {},
@@ -80,11 +80,6 @@
       "id": "ambient-light"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "ambient-light",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.AmbientLightSensor",
@@ -114,6 +109,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Permissions-Policy.ambient-light-sensor",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "ambient-light",
+        "matched": "exact"
       }
     ]
   },

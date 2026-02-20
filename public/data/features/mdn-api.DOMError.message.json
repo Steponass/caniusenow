@@ -4,6 +4,7 @@
   "name": "DOMError.message",
   "description": "",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error/message",
   "links": [],
   "support": {
     "chr": {
@@ -72,7 +73,13 @@
       "source": "mdnbcd",
       "id": "api.DOMError.message"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Error.message",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=DOMError.message"
 }

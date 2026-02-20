@@ -57,22 +57,21 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
       "firstFull": "27"
     },
     "an_ff": {
-      "current": "y",
-      "firstFull": "147"
+      "current": "n"
     }
   },
   "usage": {
     "global": {
-      "full": 76.65,
+      "full": 75.86,
       "partial": 0,
-      "total": 76.65
+      "total": 75.86
     },
     "byBrowser": {
       "desktop": {
@@ -84,8 +83,7 @@
       "mobile": {
         "ios_saf": 1.73,
         "an_chr": 44.12,
-        "smsg": 1.8,
-        "an_ff": 0.31
+        "smsg": 1.8
       }
     },
     "type": "actual"
@@ -104,11 +102,6 @@
       "id": "css-anchor-positioning"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "anchor-positioning",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.CSSPositionTryDescriptors",
@@ -1248,6 +1241,11 @@
         "source": "mdnbcd",
         "id": "html.elements.input.popovertarget.implicit_anchor_reference",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "anchor-positioning",
+        "matched": "exact"
       }
     ]
   },

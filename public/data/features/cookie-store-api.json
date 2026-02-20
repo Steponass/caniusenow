@@ -57,7 +57,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -65,14 +65,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 92.52,
+      "full": 92.43,
       "partial": 0,
-      "total": 92.52
+      "total": 92.43
     },
     "byBrowser": {
       "desktop": {
@@ -105,11 +105,6 @@
       "id": "cookie-store-api"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "cookie-store",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.CookieChangeEvent",
@@ -254,6 +249,11 @@
         "source": "mdnbcd",
         "id": "api.Window.cookieStore",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "cookie-store",
+        "matched": "exact"
       }
     ]
   },

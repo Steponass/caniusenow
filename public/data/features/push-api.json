@@ -40,7 +40,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -48,14 +48,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 83.05,
-      "partial": 11.79,
-      "total": 94.84
+      "full": 82.84,
+      "partial": 11.93,
+      "total": 94.77
     },
     "byBrowser": {
       "desktop": {
@@ -88,11 +88,6 @@
       "id": "push-api"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "push",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Permissions.permission_push",
@@ -257,6 +252,11 @@
         "source": "mdnbcd",
         "id": "api.ServiceWorkerRegistration.pushManager",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "push",
+        "matched": "exact"
       }
     ]
   },

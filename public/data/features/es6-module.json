@@ -73,7 +73,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -81,14 +81,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.07,
+      "full": 96.12,
       "partial": 0.02,
-      "total": 96.09
+      "total": 96.14
     },
     "byBrowser": {
       "desktop": {
@@ -124,11 +124,6 @@
       "id": "es6-module"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "js-modules",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Worklet.ecmascript_modules",
@@ -203,6 +198,11 @@
         "source": "mdnbcd",
         "id": "svg.elements.script.type.module",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "js-modules",
+        "matched": "exact"
       }
     ]
   },

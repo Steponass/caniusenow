@@ -58,7 +58,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -66,14 +66,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.73,
+      "full": 96.81,
       "partial": 0.03,
-      "total": 96.76
+      "total": 96.84
     },
     "byBrowser": {
       "desktop": {
@@ -107,11 +107,6 @@
       "id": "websockets"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "websockets",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.CloseEvent",
@@ -266,6 +261,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Sec-WebSocket-Version",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "websockets",
+        "matched": "exact"
       }
     ]
   },

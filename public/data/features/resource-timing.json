@@ -50,7 +50,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -58,14 +58,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.62,
+      "full": 96.73,
       "partial": 0,
-      "total": 96.62
+      "total": 96.73
     },
     "byBrowser": {
       "desktop": {
@@ -99,11 +99,6 @@
       "id": "resource-timing"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "resource-timing",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Performance.clearResourceTimings",
@@ -228,6 +223,11 @@
         "source": "mdnbcd",
         "id": "api.PerformanceResourceTiming.worker_support",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "resource-timing",
+        "matched": "exact"
       }
     ]
   },

@@ -43,7 +43,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -55,9 +55,9 @@
   },
   "usage": {
     "global": {
-      "full": 80.58,
-      "partial": 0.07,
-      "total": 80.65
+      "full": 80.7,
+      "partial": 0.05,
+      "total": 80.75
     },
     "byBrowser": {
       "desktop": {
@@ -86,11 +86,6 @@
       "id": "battery-status"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "battery",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.BatteryManager",
@@ -150,6 +145,11 @@
         "source": "mdnbcd",
         "id": "api.Navigator.getBattery.secure_context_required",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "battery",
+        "matched": "exact"
       }
     ]
   },

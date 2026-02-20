@@ -60,9 +60,9 @@
   },
   "usage": {
     "global": {
-      "full": 96.22,
-      "partial": 0.1,
-      "total": 96.32
+      "full": 96.39,
+      "partial": 0.08,
+      "total": 96.47
     },
     "byBrowser": {
       "desktop": {
@@ -97,11 +97,6 @@
       "id": "console-basic"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "console",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.console",
@@ -211,6 +206,11 @@
         "source": "mdnbcd",
         "id": "api.console.worker_support",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "console",
+        "matched": "exact"
       }
     ]
   },

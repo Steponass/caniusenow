@@ -49,7 +49,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -57,14 +57,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 95.85,
+      "full": 95.92,
       "partial": 0.07,
-      "total": 95.92
+      "total": 95.99
     },
     "byBrowser": {
       "desktop": {
@@ -98,11 +98,6 @@
       "id": "intersectionobserver"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "intersection-observer",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.IntersectionObserver",
@@ -217,6 +212,11 @@
         "source": "mdnbcd",
         "id": "api.IntersectionObserverEntry.time",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "intersection-observer",
+        "matched": "exact"
       }
     ]
   },

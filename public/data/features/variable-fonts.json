@@ -56,7 +56,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "u"
@@ -67,9 +67,9 @@
   },
   "usage": {
     "global": {
-      "full": 96.02,
-      "partial": 0.04,
-      "total": 96.06
+      "full": 96.12,
+      "partial": 0,
+      "total": 96.12
     },
     "byBrowser": {
       "desktop": {
@@ -105,11 +105,6 @@
     },
     "supplementary": [
       {
-        "source": "webfeatures",
-        "id": "font-variation-settings",
-        "matched": "exact"
-      },
-      {
         "source": "mdnbcd",
         "id": "css.at-rules.font-face.font-variation-settings",
         "matched": "via-webfeatures"
@@ -118,6 +113,11 @@
         "source": "mdnbcd",
         "id": "css.properties.font-variation-settings",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "font-variation-settings",
+        "matched": "exact"
       }
     ]
   },

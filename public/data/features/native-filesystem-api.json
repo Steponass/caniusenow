@@ -60,9 +60,9 @@
   },
   "usage": {
     "global": {
-      "full": 33.58,
-      "partial": 0.71,
-      "total": 34.29
+      "full": 31.84,
+      "partial": 0.34,
+      "total": 32.18
     },
     "byBrowser": {
       "desktop": {
@@ -88,11 +88,6 @@
       "id": "native-filesystem-api"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "file-system-access",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.FileSystemDirectoryHandle.@@asyncIterator",
@@ -147,6 +142,11 @@
         "source": "mdnbcd",
         "id": "api.Window.showSaveFilePicker",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "file-system-access",
+        "matched": "exact"
       }
     ]
   },

@@ -68,8 +68,8 @@
   "usage": {
     "global": {
       "full": 93.86,
-      "partial": 0.4,
-      "total": 94.26
+      "partial": 0.43,
+      "total": 94.29
     },
     "byBrowser": {
       "desktop": {
@@ -101,11 +101,6 @@
       "id": "dragndrop"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "draganddrop",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.DataTransfer",
@@ -270,6 +265,11 @@
         "source": "mdnbcd",
         "id": "api.HTMLElement.drop_event",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "draganddrop",
+        "matched": "exact"
       }
     ]
   },

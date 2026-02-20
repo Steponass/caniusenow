@@ -53,7 +53,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -61,14 +61,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 95.04,
-      "partial": 0.64,
-      "total": 95.68
+      "full": 94.93,
+      "partial": 0.88,
+      "total": 95.81
     },
     "byBrowser": {
       "desktop": {
@@ -101,11 +101,6 @@
       "id": "async-clipboard"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "async-clipboard",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Clipboard",
@@ -180,6 +175,11 @@
         "source": "mdnbcd",
         "id": "api.Permissions.permission_clipboard-write",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "async-clipboard",
+        "matched": "exact"
       }
     ]
   },

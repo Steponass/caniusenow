@@ -50,9 +50,9 @@
   },
   "usage": {
     "global": {
-      "full": 50.47,
-      "partial": 0.3,
-      "total": 50.77
+      "full": 48.15,
+      "partial": 0.36,
+      "total": 48.51
     },
     "byBrowser": {
       "desktop": {
@@ -74,19 +74,13 @@
       "1": "Not supported in IE11 before Windows 10"
     }
   },
-  "baseline": "high",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "pdf-viewer"
     },
-    "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "pdf-viewer",
-        "matched": "exact"
-      }
-    ]
+    "supplementary": []
   },
   "caniuseUrl": "https://caniuse.com/?search=Built-in%20PDF%20viewer"
 }

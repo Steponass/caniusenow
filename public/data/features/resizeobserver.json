@@ -61,7 +61,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -69,14 +69,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 95.7,
+      "full": 95.83,
       "partial": 0,
-      "total": 95.7
+      "total": 95.83
     },
     "byBrowser": {
       "desktop": {
@@ -108,11 +108,6 @@
       "id": "resizeobserver"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "resize-observer",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.ResizeObserver",
@@ -187,6 +182,11 @@
         "source": "mdnbcd",
         "id": "api.ResizeObserverSize.inlineSize",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "resize-observer",
+        "matched": "exact"
       }
     ]
   },

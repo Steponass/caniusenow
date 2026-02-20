@@ -52,14 +52,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 95.84,
-      "partial": 0.51,
-      "total": 96.35
+      "full": 95.92,
+      "partial": 0.48,
+      "total": 96.4
     },
     "byBrowser": {
       "desktop": {
@@ -80,23 +80,13 @@
       "2": "Doesn't work with flex/grid container, see [WebKit bug](https://bugs.webkit.org/show_bug.cgi?id=169125)"
     }
   },
-  "baseline": "high",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "background-clip-text"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "background-clip",
-        "matched": "exact"
-      },
-      {
-        "source": "webfeatures",
-        "id": "background-clip-text",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "css.properties.background-clip",
@@ -106,6 +96,11 @@
         "source": "mdnbcd",
         "id": "css.properties.background-clip.text",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "background-clip-text",
+        "matched": "exact"
       }
     ]
   },

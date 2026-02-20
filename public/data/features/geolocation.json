@@ -62,9 +62,9 @@
   },
   "usage": {
     "global": {
-      "full": 96.83,
+      "full": 96.9,
       "partial": 0,
-      "total": 96.83
+      "total": 96.9
     },
     "byBrowser": {
       "desktop": {
@@ -95,21 +95,6 @@
       "id": "geolocation"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "geolocation",
-        "matched": "exact"
-      },
-      {
-        "source": "webfeatures",
-        "id": "geolocation-element",
-        "matched": "exact"
-      },
-      {
-        "source": "webfeatures",
-        "id": "location",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Geolocation",
@@ -252,28 +237,23 @@
       },
       {
         "source": "mdnbcd",
-        "id": "html.elements.geolocation",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "html.elements.geolocation.autolocate",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "html.elements.geolocation.watch",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
         "id": "html.elements.iframe.allow.geolocation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Location",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
         "id": "http.headers.Permissions-Policy.geolocation",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "geolocation",
+        "matched": "exact"
       }
     ]
   },

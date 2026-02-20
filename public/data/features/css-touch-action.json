@@ -49,7 +49,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -57,14 +57,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 94.52,
-      "partial": 0.35,
-      "total": 94.87
+      "full": 95,
+      "partial": 0.3,
+      "total": 95.3
     },
     "byBrowser": {
       "desktop": {
@@ -100,11 +100,6 @@
       "id": "css-touch-action"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "touch-action",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "css.properties.touch-action",
@@ -154,6 +149,11 @@
         "source": "mdnbcd",
         "id": "css.properties.touch-action.pinch-zoom",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "touch-action",
+        "matched": "exact"
       }
     ]
   },

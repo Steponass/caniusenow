@@ -54,8 +54,8 @@
   "usage": {
     "global": {
       "full": 0,
-      "partial": 76.84,
-      "total": 76.84
+      "partial": 77,
+      "total": 77
     },
     "byBrowser": {
       "desktop": {},
@@ -78,11 +78,6 @@
     },
     "supplementary": [
       {
-        "source": "webfeatures",
-        "id": "permissions-policy",
-        "matched": "exact"
-      },
-      {
         "source": "mdnbcd",
         "id": "api.HTMLIFrameElement.allow",
         "matched": "via-webfeatures"
@@ -101,6 +96,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Permissions-Policy.wildcards",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "permissions-policy",
+        "matched": "exact"
       }
     ]
   },

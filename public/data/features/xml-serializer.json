@@ -45,7 +45,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -53,14 +53,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.65,
-      "partial": 0.24,
-      "total": 96.89
+      "full": 96.76,
+      "partial": 0.21,
+      "total": 96.97
     },
     "byBrowser": {
       "desktop": {
@@ -88,19 +88,13 @@
       "3": "Partial support refers to supporting only `innerHTML` and `insertAdjacentHTML`."
     }
   },
-  "baseline": "high",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "xml-serializer"
     },
-    "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "xml-serializer",
-        "matched": "exact"
-      }
-    ]
+    "supplementary": []
   },
   "caniuseUrl": "https://caniuse.com/?search=DOM%20Parsing%20and%20Serialization"
 }

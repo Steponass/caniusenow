@@ -49,7 +49,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -57,14 +57,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.34,
-      "partial": 0.41,
-      "total": 96.75
+      "full": 96.39,
+      "partial": 0.45,
+      "total": 96.84
     },
     "byBrowser": {
       "desktop": {
@@ -97,11 +97,6 @@
       "id": "fileapi"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "file",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Blob",
@@ -301,6 +296,11 @@
         "source": "mdnbcd",
         "id": "api.URL.revokeObjectURL_static",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "file",
+        "matched": "exact"
       }
     ]
   },

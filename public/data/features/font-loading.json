@@ -41,7 +41,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -49,14 +49,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.34,
+      "full": 96.39,
       "partial": 0,
-      "total": 96.34
+      "total": 96.39
     },
     "byBrowser": {
       "desktop": {
@@ -88,11 +88,6 @@
       "id": "font-loading"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "font-loading",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Document.fonts",
@@ -292,6 +287,11 @@
         "source": "mdnbcd",
         "id": "api.WorkerGlobalScope.fonts",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "font-loading",
+        "matched": "exact"
       }
     ]
   },

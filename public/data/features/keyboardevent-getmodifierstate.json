@@ -4,6 +4,7 @@
   "name": "KeyboardEvent.getModifierState()",
   "description": "`KeyboardEvent` method that returns the state (whether the key is pressed/locked or not) of the given modifier key.",
   "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/KeyboardEvent/getModifierState",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/getModifierState",
@@ -45,7 +46,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -53,14 +54,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.72,
+      "full": 96.8,
       "partial": 0,
-      "total": 96.72
+      "total": 96.8
     },
     "byBrowser": {
       "desktop": {
@@ -90,7 +91,13 @@
       "source": "caniuse",
       "id": "keyboardevent-getmodifierstate"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.getModifierState",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=KeyboardEvent.getModifierState()"
 }

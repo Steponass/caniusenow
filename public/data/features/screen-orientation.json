@@ -51,7 +51,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -59,14 +59,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 94.83,
-      "partial": 0.31,
-      "total": 95.14
+      "full": 94.78,
+      "partial": 0.37,
+      "total": 95.15
     },
     "byBrowser": {
       "desktop": {
@@ -98,16 +98,6 @@
       "id": "screen-orientation"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "screen-orientation",
-        "matched": "exact"
-      },
-      {
-        "source": "webfeatures",
-        "id": "screen-orientation-lock",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Screen.orientation",
@@ -142,6 +132,16 @@
         "source": "mdnbcd",
         "id": "api.ScreenOrientation.unlock",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "screen-orientation",
+        "matched": "exact"
+      },
+      {
+        "source": "webfeatures",
+        "id": "screen-orientation-lock",
+        "matched": "exact"
       }
     ]
   },

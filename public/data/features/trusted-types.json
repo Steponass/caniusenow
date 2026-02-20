@@ -48,7 +48,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -60,9 +60,9 @@
   },
   "usage": {
     "global": {
-      "full": 84.71,
+      "full": 82.41,
       "partial": 0,
-      "total": 84.71
+      "total": 82.41
     },
     "byBrowser": {
       "desktop": {
@@ -92,11 +92,6 @@
       "id": "trusted-types"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "trusted-types",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Element.innerHTML.enforces_trusted_types",
@@ -271,6 +266,11 @@
         "source": "mdnbcd",
         "id": "http.headers.Content-Security-Policy.trusted-types",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "trusted-types",
+        "matched": "exact"
       }
     ]
   },

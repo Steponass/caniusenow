@@ -69,7 +69,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "144"
+      "firstFull": "143"
     },
     "smsg": {
       "current": "y",
@@ -77,14 +77,14 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "146"
     }
   },
   "usage": {
     "global": {
-      "full": 96.35,
-      "partial": 0.3,
-      "total": 96.65
+      "full": 96.4,
+      "partial": 0.36,
+      "total": 96.76
     },
     "byBrowser": {
       "desktop": {
@@ -118,11 +118,6 @@
       "id": "cryptography"
     },
     "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "web-cryptography",
-        "matched": "exact"
-      },
       {
         "source": "mdnbcd",
         "id": "api.Crypto",
@@ -327,6 +322,11 @@
         "source": "mdnbcd",
         "id": "api.crypto.worker_support",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "web-cryptography",
+        "matched": "exact"
       }
     ]
   },
