@@ -229,6 +229,9 @@ function processWebFeatures(
 
   for (const [wfId, wfFeature] of wfFeatures) {
     try {
+      // Skip redirect entries (moved/split features with no actual data)
+      if (!wfFeature.name || !wfFeature.status) continue;
+
       // Check if this WF feature maps to existing Caniuse feature via explicit mapping
       const caniuseIds = wfFeature.caniuse
         ? Array.isArray(wfFeature.caniuse)
@@ -463,6 +466,12 @@ function processMdnBcd(
     }
   }
 
+  // Track which WF ID has already been represented by an mdn-* feature.
+  // When multiple MDN sub-features map to the same WF ID (e.g. 13 WebGL
+  // SharedArrayBuffer parameters), only the first creates a standalone
+  // feature — the rest merge into it.
+  const wfIdToMdnFeatureId = new Map<string, string>();
+
   for (const { path, compat } of mdnFeatures) {
     try {
       if (!compat.__compat) continue;
@@ -473,7 +482,7 @@ function processMdnBcd(
       const linkedWfId = mdnToWfMap.get(path);
 
       if (linkedWfId) {
-        // Try to find existing feature via WF mapping
+        // Try to find existing feature via WF mapping to caniuse
         const caniuseIds = webFeatures.features[linkedWfId]?.caniuse || [];
         const caniuseIdArray = Array.isArray(caniuseIds)
           ? caniuseIds
@@ -490,13 +499,29 @@ function processMdnBcd(
           }
         }
 
+        // Strategy 1.5: Consolidate MDN sub-features that share the same WF ID.
+        // If another MDN feature already created a standalone mdn-* entry for
+        // this WF ID, merge into that instead of creating a duplicate.
+        if (!merged) {
+          const existingMdnId = wfIdToMdnFeatureId.get(linkedWfId);
+          if (existingMdnId) {
+            const existingFeature = features.get(existingMdnId);
+            if (existingFeature) {
+              supplementWithMdn(existingFeature, path, compat);
+              stats.mdnBcd.merged++;
+              merged = true;
+            }
+          }
+        }
       }
 
       // Strategy 2: Check for duplicates by ID/name similarity
       if (!merged) {
-        // Infer a name for comparison
-        const mdnName =
-          compat.__compat.description || inferNameFromMdnPath(path);
+        // Normalize description through normalizeCodeTags so HTML <code> tags
+        // become backticks, matching the format stored in existing features.
+        const mdnName = normalizeCodeTags(
+          compat.__compat.description || "",
+        ) || inferNameFromMdnPath(path);
         const mdnNormalized = { id: path, name: mdnName };
 
         for (const [existingId, existingFeature] of features) {
@@ -517,8 +542,14 @@ function processMdnBcd(
       // If no link found, create new feature from MDN
       if (!merged) {
         const newFeature = createFeatureFromMdn(path, compat, usage);
-        features.set(`mdn-${path}`, newFeature);
+        const mdnFeatureId = `mdn-${path}`;
+        features.set(mdnFeatureId, newFeature);
         stats.mdnBcd.new++;
+
+        // Record this as the representative mdn-* feature for its WF ID
+        if (linkedWfId && !wfIdToMdnFeatureId.has(linkedWfId)) {
+          wfIdToMdnFeatureId.set(linkedWfId, mdnFeatureId);
+        }
       }
     } catch (error) {
       console.warn(
