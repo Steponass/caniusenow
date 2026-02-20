@@ -64,8 +64,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Check if there are any changes in public/data/
-          if git diff --quiet public/data/; then
+          # Stage all files in public/data/ first so new (untracked) files are included
+          git add public/data/
+
+          # Check for staged changes (covers both modified and new files)
+          if git diff --cached --quiet public/data/; then
             echo "changes=false" >> $GITHUB_OUTPUT
             echo "No changes detected in public/data/"
           else
@@ -87,9 +90,7 @@ jobs:
               exit 1
             fi
             
-            # Clean state confirmed - stage and commit
-            git add public/data/
-
+            # Clean state confirmed - commit (files already staged in check step)
             # Use --allow-empty when force-pushing so the job doesn't fail on no changes
             if [ "${{ inputs.force_push }}" = "true" ]; then
               git commit --allow-empty -m "chore: force update browser compat data - $(date +'%Y-%m-%d')"
