@@ -1,0 +1,337 @@
+{
+  "id": "feature-policy",
+  "source": "caniuse",
+  "name": "Feature Policy",
+  "description": "This specification defines a mechanism that allows developers to selectively enable and disable use of various browser features and APIs. Feature Policy is deprecated and has been replaced with [Permissions Policy](/permissions-policy) and [Document Policy](/document-policy).",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/xr-spatial-tracking",
+  "links": [
+    {
+      "url": "https://feature-policy-demos.appspot.com/",
+      "title": "Feature Policy Kitchen Sink Demos"
+    },
+    {
+      "url": "https://developers.google.com/web/updates/2018/06/feature-policy",
+      "title": "Introduction to Feature Policy"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1390801",
+      "title": "Firefox implementation ticket"
+    },
+    {
+      "url": "https://chrome.google.com/webstore/detail/feature-policy-tester-dev/pchamnkhkeokbpahnocjaeednpbpacop",
+      "title": "Feature Policy Tester (Chrome DevTools Extension)"
+    },
+    {
+      "url": "https://featurepolicy.info/",
+      "title": "featurepolicy.info (Feature-Policy Playground)"
+    },
+    {
+      "url": "https://github.com/w3c/webappsec-permissions-policy/blob/main/features.md",
+      "title": "List of known features"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u",
+      "firstFull": "74"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "u"
+    },
+    "edg": {
+      "current": "u",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "u",
+      "firstFull": "62"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "11.1-11.2"
+    },
+    "an_ff": {
+      "current": "u"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 80.03,
+      "partial": 15.8,
+      "total": 95.83
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.14,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "smsg": 1.93
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Standard support includes the HTTP `Feature-Policy` header, `allow` attribute on iframes and the `document.featurePolicy` JS API.",
+    "byNum": {
+      "1": "Older Chromium browsers did not support the JS API.",
+      "2": "Safari and Firefox only supports the `allow` attribute on iframes.",
+      "3": "Safari doesn't support a [list of origins](https://bugs.webkit.org/show_bug.cgi?id=189901) or a [wildcard](https://bugs.webkit.org/show_bug.cgi?id=187816).",
+      "4": "At least partially supports [Permissions Policy](/permissions-policy), the main replacement for this spec."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "feature-policy"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.featurePolicy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FeaturePolicy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FeaturePolicy.allowedFeatures",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FeaturePolicy.allowsFeature",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FeaturePolicy.features",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.FeaturePolicy.getAllowlistForFeature",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLIFrameElement.featurePolicy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.accelerometer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.ambient-light-sensor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.attribution-reporting",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.autoplay",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.bluetooth",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.browsing-topics",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.camera",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.compute-pressure",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.cross-origin-isolated",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.deferred-fetch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.deferred-fetch-minimal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.display-capture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.document-domain",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.encrypted-media",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.fullscreen",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.geolocation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.gyroscope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.hid",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.identity-credentials-get",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.idle-detection",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.local-fonts",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.magnetometer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.microphone",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.midi",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.otp-credentials",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.payment",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.picture-in-picture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.publickey-credentials-create",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.publickey-credentials-get",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.screen-wake-lock",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.serial",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.storage-access",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.usb",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.web-share",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.wildcards",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.window-management",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Feature-Policy.xr-spatial-tracking",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "feature-policy",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Feature%20Policy"
+}

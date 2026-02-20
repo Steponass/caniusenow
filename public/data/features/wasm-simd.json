@@ -1,0 +1,96 @@
+{
+  "id": "wasm-simd",
+  "source": "caniuse",
+  "name": "WebAssembly SIMD",
+  "description": "An extension to WebAssembly adding 128-bit SIMD operations",
+  "category": "Other",
+  "links": [
+    {
+      "url": "https://github.com/WebAssembly/simd/blob/main/proposals/simd/SIMD.md",
+      "title": "Feature extension overview"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "91"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "89"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "16.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "91"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "77"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "16.0"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.52,
+      "partial": 0,
+      "total": 94.52
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.96,
+        "ffx": 1.75,
+        "saf": 1.23,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.35,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "wasm-simd"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "wasm-simd",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=WebAssembly%20SIMD"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "lazyload",
+  "source": "caniuse",
+  "name": "Resource Hints: Lazyload",
+  "description": "Gives a hint to the browser to lower the loading priority of a resource. Please note that this is a legacy attribute, see the [`loading`](/loading-lazy-attr) attribute for the new standardized API.",
+  "category": "Other",
+  "links": [
+    {
+      "url": "https://msdn.microsoft.com/en-us/ie/dn369270(v=vs.94)",
+      "title": "lazyload attribute | lazyload property"
+    },
+    {
+      "url": "https://github.com/whatwg/html/issues/2806",
+      "title": "Discussion on standardization"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "11"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0.3,
+      "partial": 0,
+      "total": 0.3
+    },
+    "byBrowser": {
+      "desktop": {
+        "edg": 4.26,
+        "ie": 0.36
+      },
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "lazyload"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Resource%20Hints%3A%20Lazyload"
+}

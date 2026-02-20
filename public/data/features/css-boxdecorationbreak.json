@@ -1,0 +1,120 @@
+{
+  "id": "css-boxdecorationbreak",
+  "source": "caniuse",
+  "name": "CSS box-decoration-break",
+  "description": "Controls whether the box's margins, borders, padding, and other decorations wrap the broken edges of the box fragments (when the box is split by a break (page/column/region/line).",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/box-decoration-break",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/box-decoration-break",
+      "title": "MDN Web Docs - CSS box-decoration-break"
+    },
+    {
+      "url": "https://jsbin.com/xojoro/edit?css,output",
+      "title": "Demo of effect on box border"
+    },
+    {
+      "url": "https://bugs.chromium.org/p/chromium/issues/detail?id=682224",
+      "title": "Chromium bug to unprefix `-webkit-box-decoration-break`"
+    },
+    {
+      "url": "https://github.com/WebKit/standards-positions/issues/366",
+      "title": "WebKit position request to support box-decoration-break everywhere without prefix"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "130"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "32"
+    },
+    "saf": {
+      "current": "u"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "130"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "116"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 70.62,
+      "partial": 25.77,
+      "total": 96.39
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 20.57,
+        "ffx": 1.77,
+        "edg": 4.17,
+        "opr": 0.79
+      },
+      "mobile": {
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Partial support refers to working for inline elements but not across column or page breaks."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-boxdecorationbreak"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.box-decoration-break",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.box-decoration-break.clone",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.box-decoration-break.slice",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "box-decoration-break",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS%20box-decoration-break"
+}

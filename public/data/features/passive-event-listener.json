@@ -1,0 +1,102 @@
+{
+  "id": "passive-event-listener",
+  "source": "caniuse",
+  "name": "Passive event listeners",
+  "description": "Event listeners created with the `passive: true` option cannot cancel (`preventDefault()`) the events they receive. Primarily intended to be used with touch events and `wheel` events. Since they cannot prevent scrolls, passive event listeners allow the browser to perform optimizations that result in smoother scrolling.",
+  "category": "Other",
+  "links": [
+    {
+      "url": "https://developers.google.com/web/updates/2016/06/passive-event-listeners?hl=en",
+      "title": "Improving scroll performance with passive event listeners - Google Developers Updates"
+    },
+    {
+      "url": "https://github.com/WICG/EventListenerOptions/blob/gh-pages/EventListenerOptions.polyfill.js",
+      "title": "Polyfill from the WICG"
+    },
+    {
+      "url": "https://github.com/WICG/EventListenerOptions",
+      "title": "Original WICG EventListenerOptions repository"
+    },
+    {
+      "url": "https://jsbin.com/jaqaku/edit?html,js,output",
+      "title": "JS Bin testcase"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "51"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "49"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "10"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "16"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "38"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10.0-10.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "5.0-5.4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.22,
+      "partial": 0,
+      "total": 96.22
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.29,
+        "ffx": 1.76,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "passive-event-listener"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Passive%20event%20listeners"
+}

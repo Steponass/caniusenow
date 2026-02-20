@@ -1,0 +1,151 @@
+{
+  "id": "input-datetime",
+  "source": "caniuse",
+  "name": "Date and time input types",
+  "description": "Form field widgets to easily allow users to enter a date, time or both, generally by using a calendar/time input widget. Refers to supporting the following input types: `date`, `time`, `datetime-local`, `month` & `week`.",
+  "category": "HTML5",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/week",
+  "links": [
+    {
+      "url": "https://code.tutsplus.com/tutorials/quick-tip-create-cross-browser-datepickers-in-minutes--net-20236",
+      "title": "Datepicker tutorial w/polyfill"
+    },
+    {
+      "url": "https://github.com/zoltan-dulac/html5Forms.js",
+      "title": "Polyfill for HTML5 forms"
+    },
+    {
+      "url": "https://raw.github.com/phiggins42/has.js/master/detect/form.js#input-type-datetime-local",
+      "title": "has.js test"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/html/elements/input/type/date",
+      "title": "WebPlatform Docs"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=888320",
+      "title": "Bug on Firefox support"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=119175",
+      "title": "Bug for WebKit/Safari"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=214946",
+      "title": "Bug for WebKit/Safari"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "25"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "u"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "13"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "9"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "u"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 90.72,
+      "partial": 5.58,
+      "total": 96.3
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_chr": 44.12,
+        "smsg": 1.93
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "There used to also be a `datetime` type, but it was [dropped from the HTML spec](https://github.com/whatwg/html/issues/336).",
+    "byNum": {
+      "1": "Partial support in Microsoft Edge refers to supporting `date`, `week`, and `month` input types, and not `time` and `datetime-local`.",
+      "2": "Partial support in iOS Safari refers to not supporting the `week` input type, nor the `min`, `max` or `step` attributes.",
+      "3": "Some modified versions of the Android 4.x browser do have support for date/time fields.",
+      "4": "Can be enabled in Firefox using the `dom.forms.datetime` flag.",
+      "5": "Partial support refers to supporting `date` and `time` input types, but not `datetime-local`, `month` or `week`.",
+      "6": "Partial support refers to not supporting the `week` and `month` input type.",
+      "7": "Does not support the `min`, `max` or `step` attributes on date inputs."
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "input-datetime"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.valueAsDate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.type_date",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.type_datetime-local",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.type_month",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.type_time",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.type_week",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "input-date-time",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Date%20and%20time%20input%20types"
+}

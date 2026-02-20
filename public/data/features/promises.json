@@ -1,0 +1,162 @@
+{
+  "id": "promises",
+  "source": "caniuse",
+  "name": "Promises",
+  "description": "A promise represents the eventual result of an asynchronous operation.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise/then",
+  "links": [
+    {
+      "url": "https://promisesaplus.com/",
+      "title": "Promises/A+ spec"
+    },
+    {
+      "url": "https://www.html5rocks.com/en/tutorials/es6/promises/",
+      "title": "JavaScript Promises: There and back again - HTML5 Rocks"
+    },
+    {
+      "url": "https://github.com/jakearchibald/ES6-Promises",
+      "title": "A polyfill for ES6-style Promises"
+    },
+    {
+      "url": "https://github.com/zloirock/core-js#ecmascript-promise",
+      "title": "Polyfill for this feature is available in the core-js library"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "33",
+      "firstPartial": "32"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "29",
+      "firstPartial": "27"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "7.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "20",
+      "firstPartial": "19"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "8"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.35,
+      "partial": 0,
+      "total": 96.35
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "promises"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Promise",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Promise.@@species",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Promise.Promise",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Promise.all",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Promise.catch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Promise.incumbent_settings_object_tracking",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Promise.race",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Promise.reject",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Promise.resolve",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Promise.then",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "promise",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Promises"
+}

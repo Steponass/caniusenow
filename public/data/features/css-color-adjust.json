@@ -1,0 +1,111 @@
+{
+  "id": "css-color-adjust",
+  "source": "caniuse",
+  "name": "CSS print-color-adjust",
+  "description": "The `print-color-adjust` (or `-webkit-print-color-adjust` as prefixed in WebKit/Blink browsers) property is a CSS extension that can be used to force printing of background colors and images.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/print-color-adjust",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/print-color-adjust",
+      "title": "MDN web docs - print-color-adjust"
+    },
+    {
+      "url": "https://web.archive.org/web/20190624214232/https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/12399195/",
+      "title": "Edge issue with print-color-adjust"
+    },
+    {
+      "url": "https://bugs.chromium.org/p/chromium/issues/detail?id=131054",
+      "title": "Chromium bug with print-color-adjust property"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "19"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "48"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "6"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15.4"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 51.57,
+      "partial": 0,
+      "total": 51.57
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.76,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.82,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-color-adjust"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.print-color-adjust",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.print-color-adjust.exact",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "print-color-adjust",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS%20print-color-adjust"
+}

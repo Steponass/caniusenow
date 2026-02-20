@@ -1,0 +1,112 @@
+{
+  "id": "css-hanging-punctuation",
+  "source": "caniuse",
+  "name": "CSS hanging-punctuation",
+  "description": "Allows some punctuation characters from start (or the end) of text elements to be placed \"outside\" of the box in order to preserve the reading flow.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/hanging-punctuation",
+  "links": [
+    {
+      "url": "https://css-tricks.com/almanac/properties/h/hanging-punctuation/",
+      "title": "CSS tricks article"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1253615",
+      "title": "Firefox bug #1253615"
+    },
+    {
+      "url": "https://issues.chromium.org/issues/41491716",
+      "title": "Chrome bug #41491716"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "u"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 13.79,
+      "total": 13.79
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Safari does not support the `force-end` keyword, though it does recognize it. ([see bug](https://bugs.webkit.org/show_bug.cgi?id=233761))."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-hanging-punctuation"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.hanging-punctuation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.hanging-punctuation.allow-end",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.hanging-punctuation.first",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.hanging-punctuation.last",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.hanging-punctuation.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "hanging-punctuation",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS%20hanging-punctuation"
+}

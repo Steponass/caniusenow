@@ -1,0 +1,96 @@
+{
+  "id": "wasm-bigint",
+  "source": "caniuse",
+  "name": "WebAssembly BigInt to i64 conversion in JS API",
+  "description": "An extension to the WebAssembly JS API for bidrectionally converting BigInts and 64-bit WebAssembly integer values",
+  "category": "Other",
+  "links": [
+    {
+      "url": "https://github.com/WebAssembly/JS-BigInt-integration",
+      "title": "Feature extension overview"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "85"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "78"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "14.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "85"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "71"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14.5-14.8"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "14.0"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 95.21,
+      "partial": 0,
+      "total": 95.21
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.01,
+        "ffx": 1.75,
+        "saf": 1.39,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.88,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Safari supported BigInt in version 14.1, but did not support BigInt64Array (which is also required for Emscripten's BigInt support) until version 15",
+    "byNum": {}
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "wasm-bigint"
+    },
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "wasm-bigint",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=WebAssembly%20BigInt%20to%20i64%20conversion%20in%20JS%20API"
+}

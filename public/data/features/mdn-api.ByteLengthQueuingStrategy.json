@@ -1,0 +1,358 @@
+{
+  "id": "mdn-api.ByteLengthQueuingStrategy",
+  "source": "mdnbcd",
+  "name": "ByteLengthQueuingStrategy",
+  "description": "",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/write",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "52"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "65"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "10.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "16"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "39"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "16"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "52"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "52"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "65"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.26,
+      "partial": 0,
+      "total": 92.26
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.28,
+        "ffx": 1.75,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "api.ByteLengthQueuingStrategy"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.ByteLengthQueuingStrategy.ByteLengthQueuingStrategy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ByteLengthQueuingStrategy.highWaterMark",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ByteLengthQueuingStrategy.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CountQueuingStrategy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CountQueuingStrategy.CountQueuingStrategy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CountQueuingStrategy.highWaterMark",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CountQueuingStrategy.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream.ReadableStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream.cancel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream.getReader",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream.locked",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream.pipeThrough",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream.pipeTo",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStream.tee",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultController",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultController.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultController.desiredSize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultController.enqueue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultController.error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultReader",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultReader.ReadableStreamDefaultReader",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultReader.cancel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultReader.closed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultReader.read",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultReader.releaseLock",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReadableStreamDefaultReader.releaseLock.reject_pending_read_request",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TransformStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TransformStream.TransformStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TransformStream.readable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TransformStream.writable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TransformStreamDefaultController",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TransformStreamDefaultController.desiredSize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TransformStreamDefaultController.enqueue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TransformStreamDefaultController.error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.TransformStreamDefaultController.terminate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStream.WritableStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStream.abort",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStream.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStream.getWriter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStream.locked",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultController",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultController.error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultController.signal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultWriter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultWriter.WritableStreamDefaultWriter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultWriter.abort",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultWriter.close",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultWriter.closed",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultWriter.desiredSize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultWriter.ready",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultWriter.releaseLock",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WritableStreamDefaultWriter.write",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "streams",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=ByteLengthQueuingStrategy"
+}

@@ -1,0 +1,115 @@
+{
+  "id": "upgradeinsecurerequests",
+  "source": "caniuse",
+  "name": "Upgrade Insecure Requests",
+  "description": "Declare that browsers should transparently upgrade HTTP resources on a website to HTTPS.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Upgrade-Insecure-Requests",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Security/CSP/CSP_policy_directives#upgrade-insecure-requests",
+      "title": "MDN Web Docs - Upgrade Insecure Requests"
+    },
+    {
+      "url": "https://googlechrome.github.io/samples/csp-upgrade-insecure-requests/index.html",
+      "title": "Demo Website"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=143653",
+      "title": "WebKit feature request bug"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "43"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "42"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "10.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "17"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "30"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10.3"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.32,
+      "partial": 0,
+      "total": 96.32
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.37,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "The HTTP header is `Content-Security-Policy: upgrade-insecure-requests`. Alternatively, the HTML tag is `<meta http-equiv=\"Content-Security-Policy\" content=\"upgrade-insecure-requests\">`.",
+    "byNum": {}
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "upgradeinsecurerequests"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.upgrade-insecure-requests",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Upgrade-Insecure-Requests",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "upgrade-insecure-requests",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Upgrade%20Insecure%20Requests"
+}

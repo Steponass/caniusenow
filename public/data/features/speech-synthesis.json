@@ -1,0 +1,326 @@
+{
+  "id": "speech-synthesis",
+  "source": "caniuse",
+  "name": "Speech Synthesis API",
+  "description": "A web API for controlling a text-to-speech output.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/speechSynthesis",
+  "links": [
+    {
+      "url": "https://www.sitepoint.com/talking-web-pages-and-the-speech-synthesis-api/",
+      "title": "SitePoint article"
+    },
+    {
+      "url": "https://www.audero.it/demo/speech-synthesis-api-demo.html",
+      "title": "Demo"
+    },
+    {
+      "url": "https://zenorocha.github.io/voice-elements/",
+      "title": "Advanced demo and resource"
+    },
+    {
+      "url": "https://developer.mozilla.org//docs/Web/API/SpeechSynthesis",
+      "title": "MDN article"
+    },
+    {
+      "url": "https://developers.google.com/web/updates/2014/01/Web-apps-that-talk-Introduction-to-the-Speech-Synthesis-API",
+      "title": "Google Developers article"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u",
+      "firstFull": "33"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "49"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "7"
+    },
+    "edg": {
+      "current": "u",
+      "firstFull": "14"
+    },
+    "opr": {
+      "current": "u",
+      "firstFull": "27"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "7.0-7.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "5.0-5.4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.52,
+      "partial": 0,
+      "total": 94.52
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.76,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Samsung Internet for GearVR: In Development, release based on Chromium m53 due Q1/2017",
+    "byNum": {
+      "1": "Can be enabled in Firefox using the `media.webspeech.synth.enabled` about:config flag.",
+      "2": "Speech Synthesis in Chrome since version 55 stops playback after about 15 seconds on Windows 7 & 10, and Ubuntu 14.04, possibly other platforms"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "speech-synthesis"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis.cancel",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis.getVoices",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis.pause",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis.paused",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis.pending",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis.resume",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis.speak",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis.speaking",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesis.voiceschanged_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisErrorEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisErrorEvent.SpeechSynthesisErrorEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisErrorEvent.error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisEvent.SpeechSynthesisEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisEvent.charIndex",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisEvent.charLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisEvent.elapsedTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisEvent.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisEvent.utterance",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.SpeechSynthesisUtterance",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.boundary_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.end_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.error_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.lang",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.mark_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.pause_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.pitch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.rate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.resume_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.start_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.text",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.voice",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisUtterance.volume",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisVoice",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisVoice.default",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisVoice.lang",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisVoice.localService",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisVoice.name",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SpeechSynthesisVoice.voiceURI",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.speechSynthesis",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "speech-synthesis",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Speech%20Synthesis%20API"
+}

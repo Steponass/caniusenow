@@ -1,0 +1,137 @@
+{
+  "id": "font-size-adjust",
+  "source": "caniuse",
+  "name": "CSS font-size-adjust",
+  "description": "Method of adjusting the font size in a matter that relates to the height of lowercase vs. uppercase letters. This makes it easier to set the size of fallback fonts.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/font-size-adjust",
+  "links": [
+    {
+      "url": "https://webdesignernotebook.com/css/the-little-known-font-size-adjust-css3-property/",
+      "title": "Article on font-size-adjust"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust",
+      "title": "MDN Web Docs - CSS font-size-adjust"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=15257",
+      "title": "WebKit support bug #15257"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "127"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "118"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "17.0"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "127"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "113"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.0"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 82.85,
+      "partial": 0.81,
+      "total": 83.66
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 20.84,
+        "ffx": 1.6,
+        "saf": 1.07,
+        "edg": 4.17,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.97,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Enabled through the \"experimental Web Platform features\" flag in chrome://flags",
+      "2": "Missing support for two-value syntax. Issue for [Chromium](https://bugs.chromium.org/p/chromium/issues/detail?id=1219875).",
+      "3": "Missing support for `from-font` value. Issue for [Chromium](https://bugs.chromium.org/p/chromium/issues/detail?id=1219875)."
+    }
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "font-size-adjust"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.font-face.size-adjust",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-size-adjust",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-size-adjust.from-font",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-size-adjust.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.font-size-adjust.two-values",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.font-size-adjust",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "font-size-adjust",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS%20font-size-adjust"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "wf-wasm-string-builtins",
+  "source": "webfeatures",
+  "name": "String builtins (WebAssembly)",
+  "description": "The WebAssembly builtin string functions mirror a subset of the JavaScript String API and adapt it to be efficiently callable without JavaScript glue code.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "130"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "134"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "130"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "130"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "130"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "130"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "130"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "134"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 70.64,
+      "partial": 0,
+      "total": 70.64
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 20.57,
+        "ffx": 1.48,
+        "edg": 4.17
+      },
+      "mobile": {
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "wasm-string-builtins"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=String%20builtins%20(WebAssembly)"
+}

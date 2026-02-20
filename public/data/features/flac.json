@@ -1,0 +1,98 @@
+{
+  "id": "flac",
+  "source": "caniuse",
+  "name": "FLAC audio format",
+  "description": "Popular lossless audio compression format",
+  "category": "Other",
+  "links": [
+    {
+      "url": "https://en.wikipedia.org/wiki/FLAC",
+      "title": "Wikipedia"
+    },
+    {
+      "url": "https://bugs.chromium.org/p/chromium/issues/detail?id=93887",
+      "title": "Chrome support bug"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "56"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "51"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "13"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "16"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "42"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11.0-11.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "5.0-5.4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.15,
+      "partial": 0.1,
+      "total": 96.25
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.24,
+        "ffx": 1.76,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.19,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Support refers to this format's use in the `audio` element, not other conditions.",
+    "byNum": {
+      "1": "HTMLMediaElement.canPlayType('audio/flac') returns an empty string",
+      "2": "Only works on ChromeOS",
+      "3": "Supported only on macOS High Sierra or later"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "flac"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=FLAC%20audio%20format"
+}

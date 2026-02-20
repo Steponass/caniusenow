@@ -1,0 +1,182 @@
+{
+  "id": "css3-attr",
+  "source": "caniuse",
+  "name": "CSS3 attr() function for all properties",
+  "description": "While `attr()` is supported for effectively all browsers for the `content` property, CSS Values and Units Level 5 adds the ability to use `attr()` on **any** CSS property, and to use it for non-string values (e.g. numbers, colors).",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/url_value",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/attr",
+      "title": "MDN Web Docs - CSS attr"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=435426",
+      "title": "Mozilla Bug #435426: implement css3-values extensions to `attr()`"
+    },
+    {
+      "url": "https://bugs.chromium.org/p/chromium/issues/detail?id=246571",
+      "title": "Chromium issue #246571: Implement CSS3 attribute / attr references"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=26609",
+      "title": "WebKit Bug #26609: Support CSS3 attr() function"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "133"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "133"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 67.05,
+      "partial": 0,
+      "total": 67.05
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 19.95,
+        "edg": 4.14
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "See the [generated content](/css-gencontent) table for support for `attr()` for the `content` property.",
+    "byNum": {}
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css3-attr"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.types.attr.declaration-value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.attr.type_function",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.attr.type_function.angle",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.attr.type_function.color",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.attr.type_function.custom-ident",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.attr.type_function.ident",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.attr.type_function.image",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.attr.type_function.integer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.attr.type_function.length",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.attr.type_function.length-percentage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.attr.type_function.number",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.attr.type_function.percentage",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.attr.type_function.resolution",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.attr.type_function.string",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.attr.type_function.time",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.attr.type_function.transform-function",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.attr.type_function.url",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "attr",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS3%20attr()%20function%20for%20all%20properties"
+}

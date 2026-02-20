@@ -1,0 +1,115 @@
+{
+  "id": "link-rel-dns-prefetch",
+  "source": "caniuse",
+  "name": "Resource Hints: dns-prefetch",
+  "description": "Gives a hint to the browser to perform a DNS lookup in the background to improve performance. This is indicated using `<link rel=\"dns-prefetch\" href=\"https://example.com/\">`",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Attributes/rel/dns-prefetch",
+  "links": [
+    {
+      "url": "https://msdn.microsoft.com/en-us/library/dn265039(v=vs.85).aspx",
+      "title": "Prerender and prefetch support"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching",
+      "title": "Controlling DNS prefetching"
+    },
+    {
+      "url": "https://www.ctrl.blog/entry/dns-prefetch-preconnect.html",
+      "title": "What to <link rel=dns-prefetch> and when to use `preconnect` instead"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "127"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "5"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "10"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "26.0"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "5.0-5.4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 87.88,
+      "partial": 0.36,
+      "total": 88.24
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.48,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.36
+      },
+      "mobile": {
+        "ios_saf": 1.73,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "IE9 [supported `dns-prefetch` as `prefetch`](https://blogs.msdn.com/b/ieinternals/archive/2012/03/01/ie10-beta-consumer-preview-minor-changes-changelist.aspx) as the former wasn’t defined yet.",
+      "2": "Firefox < 127 only supports `dns-prefetch` on HTTP origins. HTTPS is unsupported."
+    }
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "link-rel-dns-prefetch"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.link.rel.dns-prefetch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "link-rel-dns-prefetch",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Resource%20Hints%3A%20dns-prefetch"
+}

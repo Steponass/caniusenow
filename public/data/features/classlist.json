@@ -1,0 +1,115 @@
+{
+  "id": "classlist",
+  "source": "caniuse",
+  "name": "classList (DOMTokenList)",
+  "description": "Method of easily manipulating classes on elements, using the `DOMTokenList` object.",
+  "category": "Other",
+  "links": [
+    {
+      "url": "https://hacks.mozilla.org/2010/01/classlist-in-firefox-3-6/",
+      "title": "Mozilla Hacks article"
+    },
+    {
+      "url": "https://github.com/eligrey/classList.js",
+      "title": "Polyfill script"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/dom/Element/classList",
+      "title": "WebPlatform Docs"
+    },
+    {
+      "url": "https://www.sitepoint.com/exploring-classlist-api/",
+      "title": "SitePoint article"
+    },
+    {
+      "url": "https://www.audero.it/demo/classlist-api-demo.html",
+      "title": "Demo using classList"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element.classList",
+      "title": "MDN Web Docs - Element.classList"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "28"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "26"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "7"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "7.0-7.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.36,
+      "partial": 0.43,
+      "total": 96.79
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.22,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Does not have support for `classList` on SVG or MathML elements.",
+      "2": "Does not support the second parameter for the `toggle` method",
+      "3": "Does not support multiple parameters for the `add()` & `remove()` methods",
+      "4": "Does not support assign to `classList` or the `replace()` method"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "classlist"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=classList%20(DOMTokenList)"
+}

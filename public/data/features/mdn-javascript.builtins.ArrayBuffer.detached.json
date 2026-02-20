@@ -1,0 +1,98 @@
+{
+  "id": "mdn-javascript.builtins.ArrayBuffer.detached",
+  "source": "mdnbcd",
+  "name": "`ArrayBuffer.detached()`",
+  "description": "",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer/transferToFixedLength",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "122"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "17.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "100"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "122"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 86.14,
+      "partial": 0,
+      "total": 86.14
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 23.41,
+        "ffx": 1.48,
+        "saf": 0.96,
+        "edg": 4.21,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.86,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "javascript.builtins.ArrayBuffer.detached"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.ArrayBuffer.transfer",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.ArrayBuffer.transferToFixedLength",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "transferable-arraybuffer",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=%60ArrayBuffer.detached()%60"
+}

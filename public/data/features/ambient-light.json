@@ -1,0 +1,121 @@
+{
+  "id": "ambient-light",
+  "source": "caniuse",
+  "name": "Ambient Light Sensor",
+  "description": "Defines a concrete sensor interface to monitor the ambient light level or illuminance of the device’s environment.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/ambient-light-sensor",
+  "links": [
+    {
+      "url": "https://intel.github.io/generic-sensor-demos/ambient-map/build/bundled/",
+      "title": "Demo"
+    },
+    {
+      "url": "https://developers.google.com/web/updates/2017/09/sensors-for-the-web",
+      "title": "Article"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Ambient_Light_Sensor_API",
+      "title": "MDN Web Docs - Ambient Light Sensor"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "u"
+    },
+    "opr": {
+      "current": "u"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0.29,
+      "partial": 0.05,
+      "total": 0.34
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Implements an [outdated version of the spec](https://www.w3.org/TR/2015/WD-ambient-light-20150903/).",
+      "2": "Available by enabling the \"Generic Sensor Extra Classes\" experimental flag in `about:flags`"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "ambient-light"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.AmbientLightSensor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AmbientLightSensor.AmbientLightSensor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AmbientLightSensor.illuminance",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Permissions.permission_ambient-light-sensor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.ambient-light-sensor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.ambient-light-sensor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "ambient-light",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Ambient%20Light%20Sensor"
+}

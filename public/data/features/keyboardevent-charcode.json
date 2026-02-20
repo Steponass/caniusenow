@@ -1,0 +1,99 @@
+{
+  "id": "keyboardevent-charcode",
+  "source": "caniuse",
+  "name": "KeyboardEvent.charCode",
+  "description": "A legacy `KeyboardEvent` property that gives the Unicode codepoint number of a character key pressed during a `keypress` event.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/KeyboardEvent/charCode",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/charCode",
+      "title": "MDN Web Docs - charCode"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "3"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "12.1"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "9"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "5.0-5.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "u"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.54,
+      "partial": 0,
+      "total": 96.54
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.85,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.41
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "This property is legacy and deprecated.\n[\"Some key events, or their values, might be suppressed by the IME in use\"](https://www.w3.org/TR/2019/WD-uievents-20190530/#keys-IME). On mobile (virtual keyboard), all keys are reported as 0.",
+    "byNum": {
+      "1": "Does not appear to support the `keypress` event at all"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "keyboardevent-charcode"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.KeyboardEvent.charCode",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=KeyboardEvent.charCode"
+}

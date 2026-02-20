@@ -1,0 +1,101 @@
+{
+  "id": "asmjs",
+  "source": "caniuse",
+  "name": "asm.js",
+  "description": "An extraordinarily optimizable, low-level subset of JavaScript, intended to be a compile target from languages like C++.",
+  "category": "JS API",
+  "links": [
+    {
+      "url": "http://asmjs.org/",
+      "title": "Homepage"
+    },
+    {
+      "url": "https://github.com/dherman/asm.js/",
+      "title": "Source for spec and tools"
+    },
+    {
+      "url": "https://blogs.windows.com/msedgedev/2015/05/07/bringing-asm-js-to-chakra-microsoft-edge/",
+      "title": "Bringing Asm.js to Chakra and Microsoft Edge"
+    },
+    {
+      "url": "https://dev.modern.ie/platform/changelog/10532-pc/",
+      "title": "Microsoft Edge support announcement"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Games/Tools/asm.js",
+      "title": "MDN article about asm.js"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Asm.js",
+      "title": "Wikipedia article about asm.js"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "22"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "u",
+      "firstFull": "13"
+    },
+    "opr": {
+      "current": "u"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 1.99,
+      "partial": 80.56,
+      "total": 82.55
+    },
+    "byBrowser": {
+      "desktop": {
+        "ffx": 1.77,
+        "edg": 4.26
+      },
+      "mobile": {
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "asm.js is [mostly rendered obsolete](https://en.wikipedia.org/wiki/Asm.js#Deprecation) with the introduction of [WebAssembly](/wasm) and is therefore [no longer recommended](https://developer.mozilla.org/en-US/docs/Games/Tools/asm.js)",
+    "byNum": {
+      "1": "Chromium does not support ahead-of-time compilation but performance doubled in Chrome 28: [https://en.wikipedia.org/wiki/Asm.js#Implementations](https://en.wikipedia.org/wiki/Asm.js#Implementations)",
+      "2": "Supported in MS Edge under the \"Enable experimental JavaScript features\" flag."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "asmjs"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=asm.js"
+}
