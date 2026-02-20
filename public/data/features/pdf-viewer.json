@@ -1,0 +1,86 @@
+{
+  "id": "pdf-viewer",
+  "source": "caniuse",
+  "name": "Built-in PDF viewer",
+  "description": "Support for a PDF viewer that is part of the browser, rather than requiring a PDF file to be opened in an external application.",
+  "category": "Other",
+  "links": [
+    {
+      "url": "https://pdfobject.com",
+      "title": "PDFObject - JavaScript utility to embed PDF documents in HTML"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "19"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "3.2"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 50.47,
+      "partial": 0.3,
+      "total": 50.77
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "When displaying PDFs inline rather than separately, iOS Safari will only display the first page of the document.",
+    "byNum": {
+      "1": "Not supported in IE11 before Windows 10"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "pdf-viewer"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Built-in%20PDF%20viewer"
+}

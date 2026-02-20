@@ -1,0 +1,108 @@
+{
+  "id": "mdn-javascript.builtins.DataView.getFloat16",
+  "source": "mdnbcd",
+  "name": "`DataView.getFloat16()`",
+  "description": "",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/f16round",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "135"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "129"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "18.2"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "135"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "120"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "135"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "18.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "135"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "135"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "129"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 81.35,
+      "partial": 0,
+      "total": 81.35
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 19.6,
+        "ffx": 1.48,
+        "saf": 0.71,
+        "edg": 4.12,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.22,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "javascript.builtins.DataView.getFloat16"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.DataView.setFloat16",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Float16Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Float16Array.Float16Array",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Math.f16round",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "float16array",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=%60DataView.getFloat16()%60"
+}

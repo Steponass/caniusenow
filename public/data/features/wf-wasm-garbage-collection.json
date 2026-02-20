@@ -1,0 +1,81 @@
+{
+  "id": "wf-wasm-garbage-collection",
+  "source": "webfeatures",
+  "name": "Garbage collection (WebAssembly)",
+  "description": "Garbage collection tracks references for better memory management with garbage-collected languages running in WebAssmbly.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "119"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "120"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "18.2"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "119"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "119"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "119"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "18.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "119"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "119"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "120"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 84.75,
+      "partial": 0,
+      "total": 84.75
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 22.9,
+        "ffx": 1.48,
+        "saf": 0.71,
+        "edg": 4.21,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.22,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "wasm-garbage-collection"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Garbage%20collection%20(WebAssembly)"
+}

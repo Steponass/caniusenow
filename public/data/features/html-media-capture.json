@@ -1,0 +1,106 @@
+{
+  "id": "html-media-capture",
+  "source": "caniuse",
+  "name": "HTML Media Capture",
+  "description": "Facilitates user access to a device's media capture mechanism, such as a camera, or microphone, from within a file upload control.",
+  "category": "HTML5",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Attributes/capture",
+  "links": [
+    {
+      "url": "https://addpipe.com/blog/correct-syntax-html-media-capture/",
+      "title": "Correct Syntax for HTML Media Capture"
+    },
+    {
+      "url": "https://books.google.com.au/books?id=gswdarRZVUoC&pg=PA263&dq=%22file+upload+compatibility+table%22",
+      "title": "Programming the Mobile Web: File upload compatibility table"
+    },
+    {
+      "url": "https://addpipe.com/html-media-capture-demo/",
+      "title": "HTML Media Capture Test Bench"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 57.36,
+      "partial": 0.57,
+      "total": 57.93
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Does not support the capture attribute used to force capture straight from the device's camera or microphone. Also note that default video dimensions are 480x320 (4:3).",
+      "2": "Android 2.2-2.3 do not support the capture attribute",
+      "3": "Supports a \"capture\" button for any `<input type=\"file\"> field, regardless of whether the capture attribute is used."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "html-media-capture"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLInputElement.capture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.input.capture",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "html-media-capture",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=HTML%20Media%20Capture"
+}

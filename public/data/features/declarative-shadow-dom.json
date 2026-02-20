@@ -1,0 +1,151 @@
+{
+  "id": "declarative-shadow-dom",
+  "source": "caniuse",
+  "name": "Declarative Shadow DOM",
+  "description": "Proposal to allow rendering elements with shadow dom (aka web components) using server-side rendering.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/template#shadowrootserializable",
+  "links": [
+    {
+      "url": "https://web.dev/declarative-shadow-dom/",
+      "title": "Declarative Shadow DOM - web.dev article"
+    },
+    {
+      "url": "https://www.npmjs.com/package/@webcomponents/template-shadowroot",
+      "title": "A ponyfill of the Declarative Shadow DOM API"
+    },
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=249513",
+      "title": "WebKit support bug"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1712140",
+      "title": "Firefox implementation bug"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "111"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "123"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "16.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "111"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "97"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "22"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 91.59,
+      "partial": 2.79,
+      "total": 94.38
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 25.19,
+        "ffx": 1.48,
+        "saf": 1.23,
+        "edg": 4.21,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.35,
+        "an_chr": 44.12,
+        "smsg": 1.92,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Uses an older non-standard attribute called `shadowroot` instead of the standardized `shadowrootmode` attribute"
+    }
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "declarative-shadow-dom"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTemplateElement.shadowRootClonable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTemplateElement.shadowRootDelegatesFocus",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTemplateElement.shadowRootMode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTemplateElement.shadowRootSerializable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.template.shadowrootclonable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.template.shadowrootdelegatesfocus",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.template.shadowrootmode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.template.shadowrootserializable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "declarative-shadow-dom",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Declarative%20Shadow%20DOM"
+}

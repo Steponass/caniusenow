@@ -1,0 +1,137 @@
+{
+  "id": "loading-lazy-attr",
+  "source": "caniuse",
+  "name": "Lazy loading via attribute for images & iframes",
+  "description": "The `loading` attribute on images & iframes gives authors control over when the browser should start loading the resource. ",
+  "category": "HTML5",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLImageElement/loading",
+  "links": [
+    {
+      "url": "https://addyosmani.com/blog/lazy-loading/",
+      "title": "Blog post"
+    },
+    {
+      "url": "https://github.com/scott-little/lazyload",
+      "title": "Explainer"
+    },
+    {
+      "url": "https://webkit.org/b/196698",
+      "title": "WebKit support bug"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1622090",
+      "title": "Firefox support bug for lazy loading iframes"
+    },
+    {
+      "url": "https://github.com/mfranzke/loading-attribute-polyfill",
+      "title": "Polyfill"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "77"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "121"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "16.4"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "64"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "12.0"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 94.71,
+      "partial": 0.71,
+      "total": 95.42
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.14,
+        "ffx": 1.48,
+        "saf": 1.23,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.35,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Firefox only supports lazy loading for images",
+      "2": "Can be enabled in Settings under the Safari > Advanced > Experimental Features menu.",
+      "3": "Safari supports lazy image loading. Lazy iframes loading can be enabled under the Experimental Features menu."
+    }
+  },
+  "baseline": "low",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "loading-lazy-attr"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLIFrameElement.loading",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLImageElement.loading",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.loading",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.img.loading",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "loading-lazy",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Lazy%20loading%20via%20attribute%20for%20images%20%26%20iframes"
+}

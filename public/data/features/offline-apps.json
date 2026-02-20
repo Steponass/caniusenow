@@ -1,0 +1,101 @@
+{
+  "id": "offline-apps",
+  "source": "caniuse",
+  "name": "Offline web applications",
+  "description": "Now deprecated method of defining web page files to be cached using a cache manifest file, allowing them to work offline on subsequent visits to the page. ",
+  "category": "HTML5",
+  "links": [
+    {
+      "url": "https://www.sitepoint.com/offline-web-application-tutorial/",
+      "title": "Sitepoint tutorial"
+    },
+    {
+      "url": "http://diveintohtml5.info/offline.html",
+      "title": "Dive Into HTML5 article"
+    },
+    {
+      "url": "https://hacks.mozilla.org/2010/01/offline-web-applications/",
+      "title": "Mozilla Hacks article/demo"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/apis/appcache/ApplicationCache",
+      "title": "WebPlatform Docs"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "n",
+      "firstFull": "4"
+    },
+    "ffx": {
+      "current": "n",
+      "firstFull": "3.5",
+      "firstPartial": "3"
+    },
+    "saf": {
+      "current": "n",
+      "firstFull": "4"
+    },
+    "edg": {
+      "current": "n",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "n",
+      "firstFull": "10.6"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "10"
+    },
+    "ios_saf": {
+      "current": "n",
+      "firstFull": "3.2"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 4.05,
+      "partial": 0,
+      "total": 4.05
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.85,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.36
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "smsg": 1.93
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "This technology is being deprecated in favor of [Service Workers](https://caniuse.com/#feat=serviceworkers)",
+    "byNum": {}
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "offline-apps"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Offline%20web%20applications"
+}

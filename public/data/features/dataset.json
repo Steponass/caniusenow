@@ -1,0 +1,139 @@
+{
+  "id": "dataset",
+  "source": "caniuse",
+  "name": "dataset & data-* attributes",
+  "description": "Method of applying and accessing custom data to elements.",
+  "category": "HTML5",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/SVGElement/dataset",
+  "links": [
+    {
+      "url": "https://html5doctor.com/html5-custom-data-attributes/",
+      "title": "HTML5 Doctor article"
+    },
+    {
+      "url": "https://html5demos.com/dataset",
+      "title": "Demo using dataset"
+    },
+    {
+      "url": "https://raw.github.com/phiggins42/has.js/master/detect/dom.js#dom-dataset",
+      "title": "has.js test"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/html/attributes/data-*",
+      "title": "WebPlatform Docs"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement.dataset",
+      "title": "MDN Web Docs - dataset"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes",
+      "title": "MDN Guide - Using data-* attributes"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u",
+      "firstFull": "45",
+      "firstPartial": "4"
+    },
+    "ffx": {
+      "current": "u",
+      "firstFull": "6",
+      "firstPartial": "2"
+    },
+    "saf": {
+      "current": "u",
+      "firstPartial": "3.1"
+    },
+    "edg": {
+      "current": "u",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "u",
+      "firstFull": "11.1",
+      "firstPartial": "9"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "11",
+      "firstPartial": "5.5"
+    },
+    "ios_saf": {
+      "current": "u",
+      "firstPartial": "3.2"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "u"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.73,
+      "partial": 0.15,
+      "total": 96.88
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.85,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.43
+      },
+      "mobile": {
+        "ios_saf": 12.23
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Partial support refers to being able to use `data-*` attributes and access them using `getAttribute`. \r\n\r\n\"Supported\" refers to accessing the values using the `dataset` property. Current spec only refers to support on HTML elements, only some browsers also have support for SVG/MathML elements.",
+    "byNum": {
+      "1": "While the HTML spec doesn't require it, these browsers also support `dataset` and `data-*` attributes on SVG elements, in compliance with [current plans for SVG2](https://www.w3.org/2015/01/15-svg-minutes.html#item03)"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "dataset"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMStringMap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.dataset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MathMLElement.dataset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SVGElement.dataset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "dataset",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=dataset%20%26%20data-*%20attributes"
+}

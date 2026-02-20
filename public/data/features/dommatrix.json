@@ -1,0 +1,95 @@
+{
+  "id": "dommatrix",
+  "source": "caniuse",
+  "name": "DOMMatrix",
+  "description": "The `DOMMatrix` interface represents 4x4 matrices, suitable for 2D and 3D operations. Supersedes the `WebKitCSSMatrix` and `SVGMatrix` interfaces.",
+  "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/DOMMatrix",
+  "links": [
+    {
+      "url": "https://developer.apple.com/reference/webkitjs/webkitcssmatrix",
+      "title": "WebKitCSSMatrix API Reference"
+    },
+    {
+      "url": "https://compat.spec.whatwg.org/#webkitcssmatrix-interface",
+      "title": "WebKitCSSMatrix in Compatibility Standard"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrix",
+      "title": "MDN Web Docs - DOMMatrix"
+    },
+    {
+      "url": "https://bugs.chromium.org/p/chromium/issues/detail?id=581955",
+      "title": "Chrome implementation bug"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "u"
+    },
+    "edg": {
+      "current": "u"
+    },
+    "opr": {
+      "current": "u"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "u"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 96.66,
+      "total": 96.66
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Only supports the `WebKitCSSMatrix` version of the interface, not `DOMMatrix`",
+      "2": "`WebKitCSSMatrix#skewX`, `WebKitCSSMatrix#skewY` are not supported",
+      "3": "Only supports the `DOMMatrix` version of the interface, not `WebKitCSSMatrix` (support required by spec for legacy reasons)",
+      "4": "Only replaces `WebkitCSSMatrix` and not `SVGMatrix`",
+      "5": "Does not support `fromMatrix()`, `fromFloat32Array()`, `fromFloat64Array()`, and `toJSON()` methods"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "dommatrix"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.DOMMatrix",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=DOMMatrix"
+}

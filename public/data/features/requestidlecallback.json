@@ -1,0 +1,130 @@
+{
+  "id": "requestidlecallback",
+  "source": "caniuse",
+  "name": "requestIdleCallback",
+  "description": "API allowing the execution of JavaScript to be queued to run in idle browser time, either at the end of a frame or when the user is inactive. Also covers support for `cancelIdleCallback`. The API has similarities with `requestAnimationFrame`.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback",
+      "title": "MDN Web Docs - requestIdleCallback"
+    },
+    {
+      "url": "https://developers.google.com/web/updates/2015/08/using-requestidlecallback",
+      "title": "Google Developers article"
+    },
+    {
+      "url": "https://gist.github.com/paullewis/55efe5d6f05434a96c36",
+      "title": "Shim"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "47"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "55"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "TP"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "34"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "5.0-5.4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 82.47,
+      "partial": 0,
+      "total": 82.47
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.34,
+        "ffx": 1.75,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Can be enabled via the `dom.requestIdleCallback.enabled` flag",
+      "2": "Can be enabled in Experimental (WebKit) Features"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "requestidlecallback"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.IdleDeadline",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IdleDeadline.didTimeout",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.IdleDeadline.timeRemaining",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.cancelIdleCallback",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.requestIdleCallback",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "requestidlecallback",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=requestIdleCallback"
+}

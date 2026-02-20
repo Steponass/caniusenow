@@ -1,0 +1,172 @@
+{
+  "id": "abortcontroller",
+  "source": "caniuse",
+  "name": "AbortController & AbortSignal",
+  "description": "Controller object that allows you to abort one or more DOM requests made with the Fetch API.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/AbortSignal/timeout_static",
+  "links": [
+    {
+      "url": "https://developers.google.com/web/updates/2017/09/abortable-fetch",
+      "title": "Abortable Fetch - Google Developers article"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController",
+      "title": "AbortController - MDN Web Docs"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal",
+      "title": "AbortSignal - MDN Web Docs"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "66"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "57"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "12.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "16"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "53"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11.3-11.4"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "9.2"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 95.78,
+      "partial": 0,
+      "total": 95.78
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.2,
+        "ffx": 1.75,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 11.98,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Safari has window.AbortController defined in the DOM but it's just a stub, it does not abort requests at all. The same issue also affects Chrome on IOS and Firefox on IOS because they use the same WebKit rendering engine as Safari."
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "abortcontroller"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.AbortController",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AbortController.AbortController",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AbortController.abort",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AbortController.abort.reason_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AbortController.signal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AbortSignal",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AbortSignal.abort_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AbortSignal.abort_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AbortSignal.abort_static.reason_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AbortSignal.aborted",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AbortSignal.reason",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AbortSignal.throwIfAborted",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AbortSignal.timeout_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "aborting",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=AbortController%20%26%20AbortSignal"
+}

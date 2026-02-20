@@ -1,0 +1,102 @@
+{
+  "id": "passkeys",
+  "source": "caniuse",
+  "name": "Passkeys",
+  "description": "Passkeys, also known as Multi-device FIDO Credentials, provide users with an alternative to passwords that is much easier to use and far more secure.",
+  "category": "JS API",
+  "links": [
+    {
+      "url": "https://developer.apple.com/passkeys/",
+      "title": "Passkeys at apple.com"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1792433",
+      "title": "Firefox support bug"
+    },
+    {
+      "url": "https://developers.google.com/identity/passkeys",
+      "title": "Google article on Passkeys for developers"
+    },
+    {
+      "url": "https://fidoalliance.org/passkeys/",
+      "title": "FIDO alliance article on Passkeys"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "108"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "122"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "16.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "108"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "97"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "16.0"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "21"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.05,
+      "partial": 0,
+      "total": 92.05
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.11,
+        "ffx": 1.48,
+        "saf": 1.27,
+        "edg": 4.25,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 11.52,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Support for various passkey features also depends on the device and OS used. See the [passkeys.dev site](https://passkeys.dev/device-support/) for details.\r\n\r\nBrowsers without Passkey support may still allow authentication at passkey logins via other types of security keys as long as they support [WebAuthn](/webauthn).",
+    "byNum": {}
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "passkeys"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Passkeys"
+}

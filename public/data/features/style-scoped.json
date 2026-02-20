@@ -1,0 +1,88 @@
+{
+  "id": "style-scoped",
+  "source": "caniuse",
+  "name": "Scoped attribute",
+  "description": "Deprecated method of allowing scoped CSS styles using a \"scoped\" attribute. Now [removed from the specification](https://github.com/whatwg/html/issues/552) and replaced by the [@scope CSS rule](/css-cascade-scope).",
+  "category": "CSS",
+  "links": [
+    {
+      "url": "https://github.com/PM5544/scoped-polyfill",
+      "title": "Polyfill"
+    },
+    {
+      "url": "https://html5doctor.com/the-scoped-attribute/",
+      "title": "HTML5 Doctor article"
+    },
+    {
+      "url": "https://developer.chrome.com/blog/a-new-experimental-feature-style-scoped/",
+      "title": "HTML5Rocks article"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1291515",
+      "title": "Firefox bug #1291515: disable `<style scoped>` in content documents"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n",
+      "firstFull": "21"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0.04,
+      "partial": 0,
+      "total": 0.04
+    },
+    "byBrowser": {
+      "desktop": {
+        "ffx": 1.77
+      },
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Enabled in Chrome through the \"experimental Web Platform features\" flag in chrome://flags",
+      "2": "Enabled in Firefox through the about:config setting \"layout.css.scoped-style.enabled\""
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "style-scoped"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Scoped%20attribute"
+}

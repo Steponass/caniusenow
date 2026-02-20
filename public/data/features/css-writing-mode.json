@@ -1,0 +1,139 @@
+{
+  "id": "css-writing-mode",
+  "source": "caniuse",
+  "name": "CSS writing-mode property",
+  "description": "Property to define whether lines of text are laid out horizontally or vertically and the direction in which blocks progress.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/SVG/Reference/Attribute/writing-mode",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode",
+      "title": "MDN Web Docs - CSS writing-mode"
+    },
+    {
+      "url": "https://www.chromestatus.com/feature/5707470202732544",
+      "title": "Chrome Platform Status"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "8"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "41"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "5.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "5.0-5.1"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.36,
+      "partial": 0.4,
+      "total": 96.76
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Internet Explorer supports different values from an [earlier version of the spec](https://www.w3.org/TR/2003/CR-css3-text-20030514/#Progression), which originated from SVG.",
+      "2": "Supported in Firefox under the `layout.css.vertical-text.enabled` flag"
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-writing-mode"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.writing-mode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.writing-mode.horizontal-tb",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.writing-mode.sideways-lr",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.writing-mode.sideways-rl",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.writing-mode.vertical-lr",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.writing-mode.vertical-rl",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "svg.global_attributes.writing-mode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "writing-mode",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS%20writing-mode%20property"
+}

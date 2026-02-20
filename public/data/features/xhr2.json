@@ -1,0 +1,103 @@
+{
+  "id": "xhr2",
+  "source": "caniuse",
+  "name": "XMLHttpRequest advanced features",
+  "description": "Updated functionality to the original XHR specification including things like file uploads, transfer progress information and the ability to send FormData. Previously known as [XMLHttpRequest Level 2](https://www.w3.org/TR/2012/WD-XMLHttpRequest-20120117/), these features now appear simply in the XMLHttpRequest spec.",
+  "category": "Other",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en/XMLHttpRequest/FormData",
+      "title": "MDN Web Docs - FormData"
+    },
+    {
+      "url": "https://github.com/jimmywarting/FormData",
+      "title": "Polyfill for FormData object"
+    },
+    {
+      "url": "https://webplatform.github.io/docs/apis/xhr/XMLHttpRequest",
+      "title": "WebPlatform Docs"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "50"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "47"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "11.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "37"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "11.0-11.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "5.0-5.4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.22,
+      "partial": 0.54,
+      "total": 96.76
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.3,
+        "ffx": 1.76,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.19,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "See also support for the [FormData API](/mdn-api_formdata) and its sub-features, which received more updates since the original XHR Level 2 specification was released.",
+    "byNum": {
+      "1": "Partial support refers to not supporting `json` as `responseType`",
+      "2": "Partial support refers to not supporting `.timeout` and `.ontimeout`",
+      "3": "Partial support refers to not supporting `blob` as `responseType`",
+      "4": "Partial support refers to missing some newer `FormData` functionality (search for specific APIs for details)."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "xhr2"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=XMLHttpRequest%20advanced%20features"
+}

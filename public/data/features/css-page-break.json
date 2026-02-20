@@ -1,0 +1,78 @@
+{
+  "id": "css-page-break",
+  "source": "caniuse",
+  "name": "CSS page-break properties",
+  "description": "Properties to control the way elements are broken across (printed) pages.",
+  "category": "CSS",
+  "links": [
+    {
+      "url": "https://css-tricks.com/almanac/properties/p/page-break/",
+      "title": "CSS Tricks article"
+    },
+    {
+      "url": "https://drafts.csswg.org/css-break-3/#break-between",
+      "title": "Latest fragmentation specification (includes column & region breaks)"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "u"
+    },
+    "edg": {
+      "current": "u"
+    },
+    "opr": {
+      "current": "u"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "u"
+    },
+    "an_chr": {
+      "current": "u"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "u"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 35.98,
+      "partial": 60.9,
+      "total": 96.88
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Not all mobile browsers offer print support; support listed for these is based on browser engine capability.",
+    "byNum": {
+      "1": "Supports the `page-break-*` alias from the CSS 2.1 specification, but not the `break-*` properties from the latest spec.",
+      "2": "Partial support is due to not supporting `avoid` for `page-break-before` & `page-break-after` (only `page-break-inside`).",
+      "3": "Treats the `left` and `right` values like `always` (as allowed by specification)."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-page-break"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS%20page-break%20properties"
+}

@@ -1,0 +1,97 @@
+{
+  "id": "indexeddb2",
+  "source": "caniuse",
+  "name": "IndexedDB 2.0",
+  "description": "Improvements to Indexed DB, including getAll(), renaming stores and indexes, and binary keys.",
+  "category": "JS API",
+  "links": [
+    {
+      "url": "https://hacks.mozilla.org/2016/10/whats-new-in-indexeddb-2-0/",
+      "title": "Mozilla Hacks: What's new in IndexedDB 2.0?"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API",
+      "title": "MDN Web Docs - IndexedDB API"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "58"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "51"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "10.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "45"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "10.3"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "7.2-7.4"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.15,
+      "partial": 0.12,
+      "total": 96.27
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.23,
+        "ffx": 1.76,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.21,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Missing: IDBKeyRange includes(), renaming stores/indexes, binary keys, IDBObjectStore getKey(), IDBCursor continuePrimaryKey()",
+      "2": "Missing: Renaming stores/indexes, binary keys, IDBObjectStore getKey(), IDBCursor continuePrimaryKey()"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "indexeddb2"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=IndexedDB%202.0"
+}

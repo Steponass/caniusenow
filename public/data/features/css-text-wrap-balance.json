@@ -1,0 +1,109 @@
+{
+  "id": "css-text-wrap-balance",
+  "source": "caniuse",
+  "name": "CSS text-wrap: balance",
+  "description": "Allows multiple lines of text to have their lines broken in such a way that each line is roughly the same width, often used to make headlines more readable and visually appealing.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/text-wrap",
+  "links": [
+    {
+      "url": "https://bugs.webkit.org/show_bug.cgi?id=249840",
+      "title": "WebKit support bug"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1731541",
+      "title": "Firefox support bug"
+    },
+    {
+      "url": "https://dev.to/hunzaboy/text-balance-in-css-is-coming-17e3",
+      "title": "Blog post"
+    },
+    {
+      "url": "https://github.com/adobe/balance-text",
+      "title": "Polyfill"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "130"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "121"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "17.5"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "130"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "116"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "17.5"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "u"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "147"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 82.34,
+      "partial": 4.84,
+      "total": 87.18
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 20.57,
+        "ffx": 1.48,
+        "saf": 0.93,
+        "edg": 4.17,
+        "opr": 0.79
+      },
+      "mobile": {
+        "ios_saf": 10.8,
+        "an_chr": 44.12,
+        "an_ff": 0.31
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Only supports text-wrap: balance, not text-wrap-style: balance."
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-text-wrap-balance"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-wrap.balance",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS%20text-wrap%3A%20balance"
+}

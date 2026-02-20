@@ -1,0 +1,103 @@
+{
+  "id": "css-if",
+  "source": "caniuse",
+  "name": "CSS if() function",
+  "description": "The `if()` CSS function allows different values to be set for a property depending on the result of a conditional test. The test can be based on a style query, a media query, or a feature query.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function",
+  "links": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/if",
+      "title": "MDN Web Docs - if()"
+    },
+    {
+      "url": "https://github.com/mozilla/standards-positions/issues/1167",
+      "title": "Firefox request for position"
+    },
+    {
+      "url": "https://github.com/WebKit/standards-positions/issues/453",
+      "title": "WebKit request for position"
+    },
+    {
+      "url": "https://github.com/mfranzke/css-if-polyfill",
+      "title": "Minimal vanilla JavaScript polyfill and PostCSS plugin"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1981485",
+      "title": "Firefox support bug 1981485"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "137"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "137"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "121"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 66.86,
+      "partial": 0,
+      "total": 66.86
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 19.47,
+        "edg": 4.1,
+        "opr": 0.79
+      },
+      "mobile": {
+        "an_chr": 44.12
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "css-if"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.Function",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS%20if()%20function"
+}

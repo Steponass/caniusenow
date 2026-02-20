@@ -1,0 +1,95 @@
+{
+  "id": "setimmediate",
+  "source": "caniuse",
+  "name": "Efficient Script Yielding: setImmediate()",
+  "description": "Yields control flow without the minimum delays enforced by setTimeout",
+  "category": "JS API",
+  "links": [
+    {
+      "url": "https://humanwhocodes.com/blog/2013/07/09/the-case-for-setimmediate/",
+      "title": "The case for setImmediate()"
+    },
+    {
+      "url": "https://humanwhocodes.com/blog/2011/09/19/script-yielding-with-setimmediate/",
+      "title": "Script yielding with setImmediate"
+    },
+    {
+      "url": "https://github.com/YuzuJS/setImmediate",
+      "title": "setImmediate polyfill"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=686201",
+      "title": "Firefox tracking bug"
+    },
+    {
+      "url": "https://code.google.com/p/chromium/issues/detail?id=146172",
+      "title": "Chrome bug closed as WONTFIX"
+    },
+    {
+      "url": "https://github.com/zloirock/core-js#setimmediate",
+      "title": "Polyfill for this feature is available in the core-js library"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n",
+      "firstFull": "12"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "10"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0.3,
+      "partial": 0,
+      "total": 0.3
+    },
+    "byBrowser": {
+      "desktop": {
+        "edg": 4.26,
+        "ie": 0.36
+      },
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {}
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "setimmediate"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Efficient%20Script%20Yielding%3A%20setImmediate()"
+}

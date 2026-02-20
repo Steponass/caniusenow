@@ -1,0 +1,125 @@
+{
+  "id": "text-stroke",
+  "source": "caniuse",
+  "name": "CSS text-stroke and text-fill",
+  "description": "Method of declaring the outline (stroke) width and color for text.",
+  "category": "CSS",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/-webkit-text-stroke-width",
+  "links": [
+    {
+      "url": "https://css-tricks.com/adding-stroke-to-web-text/",
+      "title": "Information & workarounds"
+    },
+    {
+      "url": "https://www.westciv.com/tools/textStroke/",
+      "title": "Live editor"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke",
+      "title": "MDN Web Docs - text-stroke"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "ffx": {
+      "current": "u"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "3.1"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "79"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "4.0-4.1",
+      "firstPartial": "3.2"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "144"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "4"
+    },
+    "an_ff": {
+      "current": "u"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 96.35,
+      "partial": 0,
+      "total": 96.35
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 27.41,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
+      },
+      "mobile": {
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93
+      }
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "Does not yet appear in any W3C specification. Was briefly included in a spec as the \"text-outline\" property, but this was removed.",
+    "byNum": {
+      "1": "Firefox & Edge specifically only support the `-webkit-text-stroke` property (not using `-moz-` or `-ms-` prefix)",
+      "2": "Requires the `layout.css.prefixes.webkit` flag to be enabled."
+    }
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "text-stroke"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.-webkit-text-fill-color",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.-webkit-text-stroke",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.-webkit-text-stroke-color",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.-webkit-text-stroke-width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "text-stroke-fill",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=CSS%20text-stroke%20and%20text-fill"
+}

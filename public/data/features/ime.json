@@ -1,0 +1,72 @@
+{
+  "id": "ime",
+  "source": "caniuse",
+  "name": "Input Method Editor API",
+  "description": "Provides scripted access to the Input Method Editor (IME). An IME is often used to input characters from East Asian languages by typing roman characters and selecting from the resulting suggestions.",
+  "category": "JS API",
+  "links": [
+    {
+      "url": "https://web.archive.org/web/20140403042251/http://blogs.msdn.com/b/ie/archive/2014/03/31/building-better-input-experience-for-east-asian-users-with-the-ime-api-in-ie11.aspx",
+      "title": "Building Better Input Experience for East Asian Users with the IME API in IE11"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "u"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0.3,
+      "partial": 0,
+      "total": 0.3
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Prefixed implementation uses `msGetInputContext()` method from an earlier version of the spec to get the `InputMethodContext`, rather than the `inputMethodContext` attribute. Also includes support for `getCompositionAlternatives()` from the latest Editor'"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "ime"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Input%20Method%20Editor%20API"
+}
