@@ -8845,7 +8845,7 @@
       "an_chr": "y"
     },
     "usage": 76,
-    "baseline": false
+    "baseline": "low"
   },
   {
     "id": "wf-a",
@@ -10384,6 +10384,22 @@
     "baseline": "low"
   },
   {
+    "id": "wf-capture-handle",
+    "name": "Capture Handle",
+    "description": "The capture handle API allows you to share a custom handle (a string) from a web application being captured by getDispla",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 76,
+    "baseline": false
+  },
+  {
     "id": "wf-capture-stream-audio-video",
     "name": "captureStream() for <audio> and <video>",
     "description": "The captureStream() method for <audio> and <video> elements returns a MediaStream for the media element's content. You c",
@@ -11597,6 +11613,22 @@
       "an_chr": "y"
     },
     "usage": 69.66,
+    "baseline": false
+  },
+  {
+    "id": "wf-digital-credentials",
+    "name": "Digital credentials",
+    "description": "The digital credentials API issues and requests digital credentials, such as driver's licenses or ID cards, with the bro",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 65.63,
     "baseline": false
   },
   {
@@ -13109,14 +13141,14 @@
     "description": "The getOrInsert() and getOrInsertComputed() methods of Map objects get a value, setting and getting a default value if n",
     "category": "Other",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 1.98,
+    "usage": 46.11,
     "baseline": false
   },
   {
@@ -14512,6 +14544,22 @@
     "baseline": "high"
   },
   {
+    "id": "wf-languagedetector",
+    "name": "Language detector",
+    "description": "The LanguageDetector API identifies the likely natural language that some text is written in. You can use this API to su",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 63.51,
+    "baseline": false
+  },
+  {
     "id": "wf-largest-contentful-paint",
     "name": "Largest contentful paint (LCP)",
     "description": "The largest-contentful-paint performance entry and the LargestContentfulPaint API measures  the time it takes for the la",
@@ -14816,6 +14864,22 @@
     "baseline": false
   },
   {
+    "id": "wf-manifest-localization",
+    "name": "Web app manifest localization",
+    "description": "The _localized suffixed members of the web app manifest set translated names, descriptions, icons, and shortcuts. The br",
+    "category": "Other",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
     "id": "wf-map",
     "name": "Map (initial support)",
     "description": "Map objects hold key-value pairs and remember the original insertion order of the keys.",
@@ -15085,6 +15149,22 @@
       "an_chr": "y"
     },
     "usage": 68,
+    "baseline": false
+  },
+  {
+    "id": "wf-meta-text-scale",
+    "name": "<meta name=\"text-scale\">",
+    "description": "The <meta name=\"text-scale\" content=\"scale\" /> HTML element allows the browser's initial font size to be affected by the",
+    "category": "Other",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
     "baseline": false
   },
   {
@@ -15637,14 +15717,14 @@
     "description": "An Origin object represents an origin, as in a scheme, hostname, and port. You can use it to make same-site and same-ori",
     "category": "Other",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
       "edg": "n",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 0,
+    "usage": 44.13,
     "baseline": false
   },
   {
@@ -16414,6 +16494,22 @@
     },
     "usage": 91.62,
     "baseline": "high"
+  },
+  {
+    "id": "wf-random-function",
+    "name": "random()",
+    "description": "The random() CSS function chooses a random numeric value within a specified range. This allows for dynamic, randomized s",
+    "category": "Other",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 0.35,
+    "baseline": false
   },
   {
     "id": "wf-rch",
@@ -18524,39 +18620,7 @@
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 86.14,
-    "baseline": "low"
-  },
-  {
-    "id": "wf-text-wrap-mode",
-    "name": "text-wrap-mode",
-    "description": "The text-wrap-mode CSS property sets whether lines may wrap with the values wrap and nowrap. It is a longhand property f",
-    "category": "Other",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 82.47,
-    "baseline": "low"
-  },
-  {
-    "id": "wf-text-wrap-nowrap",
-    "name": "text-wrap: nowrap",
-    "description": "The text-wrap: nowrap CSS declaration prevents text breaking into multiple lines. Text that doesn't fit overflows instea",
-    "category": "Other",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 86.14,
+    "usage": 82.38,
     "baseline": "low"
   },
   {
@@ -18573,38 +18637,6 @@
       "an_chr": "y"
     },
     "usage": 74.49,
-    "baseline": false
-  },
-  {
-    "id": "wf-text-wrap-stable",
-    "name": "text-wrap: stable",
-    "description": "The text-wrap: stable CSS declaration wraps text using the default algorithm, but does not change wrapping on earlier li",
-    "category": "Other",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 82.38,
-    "baseline": "low"
-  },
-  {
-    "id": "wf-text-wrap-style",
-    "name": "text-wrap-style",
-    "description": "The text-wrap-style CSS property sets how lines break in text that overflows the container. It can also be set with the ",
-    "category": "Other",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 71.11,
     "baseline": false
   },
   {
@@ -18830,6 +18862,22 @@
     },
     "usage": 94.33,
     "baseline": "high"
+  },
+  {
+    "id": "wf-translator",
+    "name": "Translator",
+    "description": "The Translator API translates some text from one natural language to another, using machine translation.",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 63.51,
+    "baseline": false
   },
   {
     "id": "wf-trig-functions",
@@ -22093,54 +22141,6 @@
       "an_chr": "y"
     },
     "usage": 76.21,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.DigitalCredential",
-    "name": "DigitalCredential",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 65.84,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.DigitalCredential.protocol",
-    "name": "DigitalCredential.protocol",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 65.84,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.DigitalCredential.userAgentAllowsProtocol_static",
-    "name": "`userAgentAllowsProtocol()` static method",
-    "description": "`userAgentAllowsProtocol()` static method",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 65.84,
     "baseline": false
   },
   {
@@ -28480,134 +28480,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.LanguageDetector",
-    "name": "LanguageDetector",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.LanguageDetector.availability_static",
-    "name": "`availability()` static method",
-    "description": "`availability()` static method",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.LanguageDetector.create_static",
-    "name": "`create()` static method",
-    "description": "`create()` static method",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.LanguageDetector.destroy",
-    "name": "`destroy()` instance method",
-    "description": "`destroy()` instance method",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.LanguageDetector.detect",
-    "name": "`detect()` instance method",
-    "description": "`detect()` instance method",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.LanguageDetector.expectedInputLanguages",
-    "name": "`expectedInputLanguages` property",
-    "description": "`expectedInputLanguages` property",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.LanguageDetector.inputQuota",
-    "name": "`inputQuota` property",
-    "description": "`inputQuota` property",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.LanguageDetector.measureInputUsage",
-    "name": "`measureInputUsage()` instance method",
-    "description": "`measureInputUsage()` instance method",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.3,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.LargestContentfulPaint.paintTime",
     "name": "LargestContentfulPaint.paintTime",
     "description": "",
@@ -29584,22 +29456,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.MediaDevices.setCaptureHandleConfig",
-    "name": "MediaDevices.setCaptureHandleConfig",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 76.12,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.MediaQueryList.addListener",
     "name": "`addListener()`",
     "description": "`addListener()`",
@@ -29792,22 +29648,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.MediaStreamTrack.capturehandlechange_event",
-    "name": "`capturehandlechange` event",
-    "description": "`capturehandlechange` event",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 76.12,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.MediaStreamTrack.contentHint",
     "name": "MediaStreamTrack.contentHint",
     "description": "",
@@ -29821,22 +29661,6 @@
       "an_chr": "y"
     },
     "usage": 89.82,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MediaStreamTrack.getCaptureHandle",
-    "name": "MediaStreamTrack.getCaptureHandle",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 76.12,
     "baseline": false
   },
   {
@@ -35200,6 +35024,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.RTCPeerConnectionIceEvent.url",
+    "name": "RTCPeerConnectionIceEvent.url",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 13.39,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.RTCRtpReceiver.rtcpTransport",
     "name": "RTCRtpReceiver.rtcpTransport",
     "description": "",
@@ -37965,166 +37805,6 @@
       "an_chr": "y"
     },
     "usage": 91.8,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Translator",
-    "name": "Translator",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Translator.availability_static",
-    "name": "`availability()` static method",
-    "description": "`availability()` static method",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Translator.create_static",
-    "name": "`create()` static method",
-    "description": "`create()` static method",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Translator.destroy",
-    "name": "`destroy()` instance method",
-    "description": "`destroy()` instance method",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Translator.inputQuota",
-    "name": "`inputQuota` property",
-    "description": "`inputQuota` property",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Translator.measureInputUsage",
-    "name": "`measureInputUsage()` instance method",
-    "description": "`measureInputUsage()` instance method",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Translator.sourceLanguage",
-    "name": "`sourceLanguage` property",
-    "description": "`sourceLanguage` property",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Translator.targetLanguage",
-    "name": "`targetLanguage` property",
-    "description": "`targetLanguage` property",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Translator.translate",
-    "name": "`translate()` instance method",
-    "description": "`translate()` instance method",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Translator.translateStreaming",
-    "name": "`translateStreaming()` instance method",
-    "description": "`translateStreaming()` instance method",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.3,
     "baseline": false
   },
   {
@@ -54784,6 +54464,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.text-wrap-style.balance",
+    "name": "text-wrap-style: Balance",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 83.17,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.timeline-trigger",
     "name": "`timeline-trigger`",
     "description": "",
@@ -56400,22 +56096,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.types.random",
-    "name": "`random()`",
-    "description": "`random()`",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "n"
-    },
-    "usage": 0.35,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.types.type",
     "name": "`type()`",
     "description": "`type()`",
@@ -56557,166 +56237,6 @@
       "an_chr": "y"
     },
     "usage": 94.87,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.datalist.input_type_color",
-    "name": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/color\">`&lt;input type=\"color\"&gt;`</a>",
-    "description": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/color\">`&lt;input type=\"color",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 92.02,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.datalist.input_type_date",
-    "name": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/date\">`&lt;input type=\"date\"&gt;`</a>",
-    "description": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/date\">`&lt;input type=\"date\"&",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 91.91,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.datalist.input_type_email",
-    "name": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/email\">`&lt;input type=\"email\"&gt;`</a>",
-    "description": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/email\">`&lt;input type=\"email",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.52,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.datalist.input_type_number",
-    "name": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/number\">`&lt;input type=\"number\"&gt;`</a>",
-    "description": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/number\">`&lt;input type=\"numb",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.52,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.datalist.input_type_range",
-    "name": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/range\">`&lt;input type=\"range\"&gt;`</a>",
-    "description": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/range\">`&lt;input type=\"range",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.42,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.datalist.input_type_search",
-    "name": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/search\">`&lt;input type=\"search\"&gt;`</a>",
-    "description": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/search\">`&lt;input type=\"sear",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.52,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.datalist.input_type_tel",
-    "name": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/tel\">`&lt;input type=\"tel\"&gt;`</a>",
-    "description": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/tel\">`&lt;input type=\"tel\"&gt",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.52,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.datalist.input_type_text",
-    "name": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/text\">`&lt;input type=\"text\"&gt;`</a>",
-    "description": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/text\">`&lt;input type=\"text\"&",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.datalist.input_type_time",
-    "name": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/time\">`&lt;input type=\"time\"&gt;`</a>",
-    "description": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/time\">`&lt;input type=\"time\"&",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 91.91,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.datalist.input_type_url",
-    "name": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/url\">`&lt;input type=\"url\"&gt;`</a>",
-    "description": "Support with <a href=\"https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/url\">`&lt;input type=\"url\"&gt",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.52,
     "baseline": false
   },
   {
@@ -56976,22 +56496,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-html.elements.input.type_color.list",
-    "name": "`list` attribute",
-    "description": "`list` attribute",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 92.02,
-    "baseline": false
-  },
-  {
     "id": "mdn-html.elements.input.type_date.disables_invalid_values_in_picker_ui",
     "name": "Disables invalid values in picker UI",
     "description": "Disables invalid values in picker UI",
@@ -57008,54 +56512,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-html.elements.input.type_date.list",
-    "name": "`list` attribute",
-    "description": "`list` attribute",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 91.91,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.input.type_email.list",
-    "name": "`list` attribute",
-    "description": "`list` attribute",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.52,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.input.type_number.list",
-    "name": "`list` attribute",
-    "description": "`list` attribute",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.44,
-    "baseline": false
-  },
-  {
     "id": "mdn-html.elements.input.type_range.labeled_values",
     "name": "Labeled values support",
     "description": "Labeled values support",
@@ -57069,102 +56525,6 @@
       "an_chr": "y"
     },
     "usage": 78.76,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.input.type_range.list",
-    "name": "`list` attribute",
-    "description": "`list` attribute",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.42,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.input.type_search.list",
-    "name": "`list` attribute",
-    "description": "`list` attribute",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.52,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.input.type_tel.list",
-    "name": "`list` attribute",
-    "description": "`list` attribute",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.52,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.input.type_text.list",
-    "name": "`list` attribute",
-    "description": "`list` attribute",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.input.type_time.list",
-    "name": "`list` attribute",
-    "description": "`list` attribute",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 91.91,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.input.type_url.list",
-    "name": "`list` attribute",
-    "description": "`list` attribute",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.52,
     "baseline": false
   },
   {

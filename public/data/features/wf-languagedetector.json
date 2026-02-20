@@ -1,15 +1,15 @@
 {
-  "id": "wf-origin",
+  "id": "wf-languagedetector",
   "source": "webfeatures",
-  "name": "Origin",
-  "description": "An Origin object represents an origin, as in a scheme, hostname, and port. You can use it to make same-site and same-origin comparisons.",
+  "name": "Language detector",
+  "description": "The LanguageDetector API identifies the likely natural language that some text is written in. You can use this API to supplement machine translation when the source source language is not known.",
   "category": "Other",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/origin",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/LanguageDetector/measureInputUsage",
   "links": [],
   "support": {
     "chr": {
       "current": "y",
-      "firstFull": "145"
+      "firstFull": "138"
     },
     "ffx": {
       "current": "n"
@@ -22,7 +22,7 @@
     },
     "opr": {
       "current": "y",
-      "firstFull": "145"
+      "firstFull": "138"
     },
     "ie": {
       "current": "n"
@@ -32,11 +32,11 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "145"
+      "firstFull": "138"
     },
     "smsg": {
       "current": "y",
-      "firstFull": "145"
+      "firstFull": "138"
     },
     "an_ff": {
       "current": "n"
@@ -44,13 +44,13 @@
   },
   "usage": {
     "global": {
-      "full": 44.13,
+      "full": 63.51,
       "partial": 0,
-      "total": 44.13
+      "total": 63.51
     },
     "byBrowser": {
       "desktop": {
-        "chr": 0.01
+        "chr": 19.39
       },
       "mobile": {
         "an_chr": 44.12
@@ -62,45 +62,50 @@
   "sourceData": {
     "primary": {
       "source": "webfeatures",
-      "id": "origin"
+      "id": "languagedetector"
     },
     "supplementary": [
       {
         "source": "mdnbcd",
-        "id": "api.Origin",
+        "id": "api.LanguageDetector",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.Origin.Origin",
+        "id": "api.LanguageDetector.availability_static",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.Origin.from_static",
+        "id": "api.LanguageDetector.create_static",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.Origin.isSameOrigin",
+        "id": "api.LanguageDetector.destroy",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.Origin.isSameSite",
+        "id": "api.LanguageDetector.detect",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.Origin.opaque",
+        "id": "api.LanguageDetector.expectedInputLanguages",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.origin",
+        "id": "api.LanguageDetector.inputQuota",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.LanguageDetector.measureInputUsage",
         "matched": "via-webfeatures"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=wf-origin"
+  "caniuseUrl": "https://caniuse.com/?search=wf-languagedetector"
 }
