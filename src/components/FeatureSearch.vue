@@ -74,6 +74,18 @@ function clearSearch() {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+  transition: var(--transition-hover-quick);
+  @media (hover: hover) {
+    &:hover {
+      scale: 1.25;
+      transform: translateY(-42%);
+    }
+  }
+  &:active {
+    transform: translateY(-37%);
+    box-shadow: none;
+    font-weight: bold;
+  }
 }
 
 </style>

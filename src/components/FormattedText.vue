@@ -77,13 +77,13 @@ const hasCodeElements = computed(() => props.text?.includes("`") ?? false);
 
 <style scoped>
 .formatted-text :deep(code) {
-  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
-    "Liberation Mono", monospace;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
   font-size: 0.9em;
   background-color: var(--clr-bg-overlay);
   padding: var(--space-4px);
   border-radius: var(--radius-2px);
   color: var(--clr-text-strong);
+  overflow-wrap: anywhere;
 }
 
 

@@ -44,13 +44,10 @@ const displayedTrackings = computed(() => {
 
     <div v-else-if="displayedTrackings.length === 0">
       <p v-if="activeTab === 'active'">
-        Nothing being tracked yet!
+        Nothing tracked yet!
       </p>
-      <p v-else-if="activeTab === 'notified'">
+      <p v-else="activeTab === 'notified'">
         Features when your notification criteria are met.
-      </p>
-      <p v-else>
-        Features you're done with following appear here.
       </p>
     </div>
 
@@ -69,11 +66,12 @@ const displayedTrackings = computed(() => {
 .tabs {
   display: flex;
   gap: var(--space-8-12px);
+  padding-block-end: var(--space-24-32px);
 }
 
 .tracking-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: var(--space-16-24px);
 }
 </style>

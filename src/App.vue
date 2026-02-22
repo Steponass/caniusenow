@@ -188,4 +188,8 @@ main {
   display: flex;
   justify-content: center;
 }
+
+section h2 {
+  padding-block-end: var(--space-16px);
+}
 </style>

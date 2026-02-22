@@ -30,6 +30,11 @@ interface ChangeReport {
   changes: FeatureChange[];
 }
 
+interface ChangeHistory {
+  lastUpdated: string;
+  entries: ChangeReport[];
+}
+
 // =================================================================
 // MAIN
 // =================================================================
@@ -194,11 +199,25 @@ function detectChanges(
 // ============================================================================
 
 function writeChangeReport(report: ChangeReport): void {
-  const reportPath = "./data/change-report.json";
+  const historyPath = "./public/data/change-history.json";
 
-  fs.writeFileSync(reportPath, JSON.stringify(report, null, 2), "utf8");
+  // Load existing history or start fresh
+  let history: ChangeHistory;
 
-  console.log(`\n💾 Change report written to: ${reportPath}`);
+  if (fs.existsSync(historyPath)) {
+    const existingData = fs.readFileSync(historyPath, "utf8");
+    history = JSON.parse(existingData);
+  } else {
+    history = { lastUpdated: "", entries: [] };
+  }
+
+  // Prepend the new report (newest first)
+  history.entries.unshift(report);
+  history.lastUpdated = report.timestamp;
+
+  fs.writeFileSync(historyPath, JSON.stringify(history, null, 2), "utf8");
+
+  console.log(`\n💾 Change history updated: ${historyPath} (${history.entries.length} total entries)`);
 }
 
 // ============================================================================

@@ -75,7 +75,8 @@ function getTriggerDescription(trigger: any): string {
 
 <style scoped>
 .tracking-card {
-  padding: var(--space-16px);
+  max-width: 512px;
+  padding: var(--space-16px) var(--space-24px);
   background: var(--clr-bg-raised);
   border-radius: var(--radius-8px);
   box-shadow: var(--shadow-elevation-3);

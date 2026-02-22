@@ -71,31 +71,34 @@ function handleStartTracking() {
   <div v-if="isOpen && feature" class="modal-overlay" @click="handleClose">
     <div class="modal-content" @click.stop>
       <div class="modal-header">
-        <div>
-          <FormattedText :text="feature.name" tag="h3" />
+        <div class="modal-h-and-close-btn">
+          <FormattedText :text="feature.name" tag="h4" />
+          <button class="modal-close-btn" @click="handleClose">✕</button>
+        </div>
           <FormattedText :text="feature.description" tag="p" />
-          <div class="meta-badges">
-            <span class="category-badge">{{ feature.category }}</span>
-            <img v-if="feature.baseline" class="baseline-badge" :src="`/images/Baseline-${feature.baseline}.svg`"
+          <div class="badges-and-links">
+            <div class="badges">
+              <span class="category-badge">{{ feature.category }}</span>
+              <img v-if="feature.baseline" class="baseline-badge" :src="`/images/Baseline-${feature.baseline}.svg`"
               :alt="`Baseline ${feature.baseline}`" />
-          </div>
-          <div v-if="feature.caniuseUrl" class="links">
-            <a v-if="feature.caniuseUrl" :href="feature.caniuseUrl" target="_blank" rel="noopener noreferrer">
+            </div>
+
+            <div v-if="feature.caniuseUrl" class="links">
+              <a v-if="feature.caniuseUrl" :href="feature.caniuseUrl" target="_blank" rel="noopener noreferrer">
               <strong>Caniuse.com ↗</strong>
-            </a>
-            <!-- Are other links even necessary when this tool is for reminders only? -->
-            <!-- <a v-for="link in feature.links.slice(0, 3)" :key="link.url" :href="link.url" target="_blank"
+              </a>
+              <!-- Are other links even necessary when this tool is for reminders only? -->
+              <!-- <a v-for="link in feature.links.slice(0, 3)" :key="link.url" :href="link.url" target="_blank"
               rel="noopener noreferrer" class="external-link">
               {{ link.title }} ↗
-            </a> -->
+              </a> -->
+            </div>
           </div>
-        </div>
-        <button @click="handleClose">✕</button>
       </div>
 
       <div class="modal-body">
         <section>
-          <h4>Support stats
+          <h5>Support stats
             <span class="value">({{ feature.usage.type }})
 
               <button class="popover-button" v-if="feature.usage.type === 'estimated'" popovertarget="feature-details-popover">
@@ -106,7 +109,7 @@ function handleStartTracking() {
                   </path>
                 </svg></button>
             </span>
-          </h4>
+          </h5>
           <div class="usage-stats">
             <div class="stat">
               <span class="label">Full Support:</span>
@@ -124,7 +127,7 @@ function handleStartTracking() {
         </section>
 
         <section>
-          <h4>Browsers</h4>
+          <h5>Browsers</h5>
           <div class="browser-list">
             <div v-for="browser in browserList" :key="browser.id" class="browser-row">
               <span class="browser-name">{{ browser.name }}</span>
@@ -136,10 +139,7 @@ function handleStartTracking() {
         </section>
 
         <section>
-          <h4>Notification Triggers</h4>
-          <p class="section-description">
-            Get an email once selected criteria are true
-          </p>
+          <h5>Notification Triggers</h5>
           <TriggerBuilder :feature="feature" />
         </section>
       </div>
@@ -147,7 +147,7 @@ function handleStartTracking() {
       <div class="modal-footer">
         <button @click="handleClose">Cancel</button>
         <button @click="handleStartTracking" :disabled="triggers.length === 0">
-          Start Tracking
+          Track
         </button>
       </div>
     </div>
@@ -182,7 +182,7 @@ function handleStartTracking() {
   overscroll-behavior: contain;
   background-color: var(--clr-bg-overlay);
   border-radius: var(--radius-16px);
-  width: min(600px, 98%);
+  width: min(960px, 98%);
   max-height: 95vh;
   display: flex;
   flex-direction: column;
@@ -194,13 +194,30 @@ function handleStartTracking() {
 
 .modal-header {
   padding: var(--space-16-24px);
+  max-width: 100%;
+  box-shadow: var(--shadow-elevation-3);
   display: flex;
-  justify-content: space-between;
-  align-items: start;
-  box-shadow: var(--shadow-elevation-2);
+  flex-direction: column;
+  gap: var(--space-8px)
 }
 
-.meta-badges {
+.modal-h-and-close-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-close-btn {
+  padding: var(--space-4px) var(--space-8px);
+}
+
+.badges-and-links {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-16-24px);
+}
+
+.badges {
   display: flex;
   align-items: center;
   gap: var(--space-16px);
@@ -233,30 +250,38 @@ function handleStartTracking() {
 .modal-body {
   padding: var(--space-16-24px);
   overflow-y: auto;
+  /* scrollbar-color: var(--clr-stroke-strong); */
 }
 
-section {
-  padding-block-end: var(--space-16px);
+.modal-body h5 {
+  margin-block-end: var(--space-8px);
+}
+
+section{
+  margin-block-end: var(--space-16-24px);
 }
 
 .usage-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: var(--space-16px);
+  display: flex;  gap: var(--space-16px);
 }
 
 .stat {
-  padding: var(--space-12px);
+  padding: var(--space-8px) var(--space-8px);
   border-radius: var(--radius-4px);
+  border: 1px solid var(--clr-stroke-weak);
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: var(--space-8px);
   background-color: var(--clr-bg-raised);
 }
 
+.stat .value {
+  font-weight: bold;
+}
+
 .browser-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+  display: flex;
   gap: var(--space-8px);
 }
 
@@ -265,11 +290,12 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--space-8px);
+  gap: var(--space-4px);
   background-color: var(--clr-bg-raised);
   border: 1px solid var(--clr-stroke-weak);
   border-radius: var(--radius-4px);
   padding-block: var(--space-4px);
+  padding-inline: var(--space-8px);
 }
 
 .browser-name {

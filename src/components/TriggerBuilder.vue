@@ -73,7 +73,6 @@ function getTriggerDescription(trigger: Trigger): string {
         <option value="baseline_status">Baseline status</option>
         <option value="browser_support">Specific browser support</option>
         <option value="browser_version">Specific browser version</option>
-
       </select>
     </div>
 
@@ -167,6 +166,10 @@ function getTriggerDescription(trigger: Trigger): string {
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-group label {
+  margin-block-end: var(--space-4px);
 }
 
 .form-group input[type="range"] {
