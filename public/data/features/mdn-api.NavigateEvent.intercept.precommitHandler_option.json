@@ -4,6 +4,7 @@
   "name": "`precommitHandler` option",
   "description": "`precommitHandler` option",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/NavigationPrecommitController/redirect",
   "links": [],
   "support": {
     "chr": {
@@ -70,7 +71,28 @@
       "source": "mdnbcd",
       "id": "api.NavigateEvent.intercept.precommitHandler_option"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationPrecommitController",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationPrecommitController.addHandler",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigationPrecommitController.redirect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "navigation-precommit-handlers",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=%60precommitHandler%60%20option"
 }

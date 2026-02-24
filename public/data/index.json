@@ -3216,6 +3216,22 @@
     "baseline": false
   },
   {
+    "id": "customizable-select",
+    "name": "Customizable Select element",
+    "description": "Customization of the `<select>` element's appearance. Previously envisioned as a separate element (`<selectlist>` or `<s",
+    "category": "HTML5",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 66.59,
+    "baseline": false
+  },
+  {
     "id": "datalist",
     "name": "Datalist element",
     "description": "Method of setting a list of options for a user to select in a text field, while leaving the ability to enter a custom va",
@@ -7022,22 +7038,6 @@
     },
     "usage": 96.86,
     "baseline": "high"
-  },
-  {
-    "id": "selectlist",
-    "name": "Customizable Select element",
-    "description": "Proposal for a customizable `<select>` element. Previously envisioned as a separate element (`<selectlist>` or `<selectm",
-    "category": "HTML5",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
   },
   {
     "id": "server-timing",
@@ -20080,22 +20080,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.NavigationPrecommitController",
-    "name": "NavigationPrecommitController",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 63.9,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.NavigationTransition.committed",
     "name": "NavigationTransition.committed",
     "description": "",
@@ -29085,22 +29069,6 @@
       "an_chr": "y"
     },
     "usage": 74.67,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.appearance.base-select",
-    "name": "appearance: base-select",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.64,
     "baseline": false
   },
   {
@@ -49421,7 +49389,7 @@
       "an_chr": "y"
     },
     "usage": 46.11,
-    "baseline": false
+    "baseline": "low"
   },
   {
     "id": "mdn-javascript.builtins.Map.groupBy",
@@ -50448,6 +50416,22 @@
     "baseline": false
   },
   {
+    "id": "wf-install",
+    "name": "<install>",
+    "description": "The <install> HTML element represents a button that, upon activation, prompts the user to choose whether to install a pr",
+    "category": "Other",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
     "id": "wf-justify-self-block",
     "name": "justify-self in block layouts",
     "description": "The justify-self CSS property aligns an item along a container's inline axis in block layouts, like it does in grid layo",
@@ -50782,6 +50766,22 @@
     },
     "usage": 84.75,
     "baseline": "low"
+  },
+  {
+    "id": "wf-wasm-jspi",
+    "name": "JavaScript promise integration (WebAssembly)",
+    "description": "The JavaScript promise integration (JSPI) suspends a WebAssembly module when it calls a JavaScript method that returns a",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 67.69,
+    "baseline": false
   },
   {
     "id": "wf-wasm-memory64",
