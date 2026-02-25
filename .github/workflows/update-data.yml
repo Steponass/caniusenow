@@ -55,15 +55,15 @@ jobs:
         run: npm run normalize-data
       
       # ========================================================================
-      # GIT COMMIT (ONLY IF CHANGES DETECTED)
+      # CHANGE DETECTION
       # ========================================================================
-      
+
       - name: Check for changes
         id: git-check
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
+
           # Stage all files in public/data/ first so new (untracked) files are included
           git add public/data/
 
@@ -75,13 +75,24 @@ jobs:
             echo "changes=true" >> $GITHUB_OUTPUT
             echo "Changes detected in public/data/"
           fi
-      
+
+      - name: Detect changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: npm run detect-changes
+
+      # ========================================================================
+      # GIT COMMIT (ONLY IF CHANGES DETECTED)
+      # ========================================================================
+
       - name: Commit and push changes
         if: steps.git-check.outputs.changes == 'true' || inputs.force_push == true
         run: |
+          # Re-stage to include change-history.json written by detect-changes
+          git add public/data/
+
           # Fetch latest remote state
           git fetch origin main
-            
+
             # Check if remote has changes we don't have
             if ! git diff --quiet origin/main HEAD; then
               echo "ERROR: Remote branch has changes not in local branch."
@@ -89,26 +100,22 @@ jobs:
               echo "This usually means manual edits were made to public/data/"
               exit 1
             fi
-            
-            # Clean state confirmed - commit (files already staged in check step)
+
+            # Clean state confirmed - commit
             # Use --allow-empty when force-pushing so the job doesn't fail on no changes
             if [ "${{ inputs.force_push }}" = "true" ]; then
               git commit --allow-empty -m "chore: force update browser compat data - $(date +'%Y-%m-%d')"
             else
               git commit -m "chore: update browser compat data - $(date +'%Y-%m-%d')"
             fi
-          
+
           # Push changes
           git push origin main
-      
+
       # ========================================================================
-      # CHANGE DETECTION & NOTIFICATIONS
+      # NOTIFICATIONS
       # ========================================================================
-      
-      - name: Detect changes
-        if: steps.git-check.outputs.changes == 'true'
-        run: npm run detect-changes
-      
+
       - name: Send notifications
         if: steps.git-check.outputs.changes == 'true'
         env:
