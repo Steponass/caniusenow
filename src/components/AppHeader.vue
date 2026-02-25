@@ -16,6 +16,12 @@ function handleSearch(query: string) {
 }
 
 async function handleSignOut() {
+  const isConfirmed = window.confirm(`Sure you want to sign out as ${authStore.user?.email}?`);
+
+  if (!isConfirmed) {
+    return;
+  }
+
   try {
     await authStore.signOut();
   } catch (error) {
@@ -38,7 +44,7 @@ function handleSignIn() {
     <div class="theme_and_sign_in">
       <ThemeToggle />
       <div v-if="authStore.isAuthenticated">
-        <button @click="handleSignOut">
+        <button @click="handleSignOut" :title="`Sign out ${authStore.user?.email}`">
           Sign Out
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256">
             <path
