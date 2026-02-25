@@ -1,6 +1,68 @@
 {
-  "lastUpdated": "2026-02-25T04:12:58.882Z",
+  "lastUpdated": "2026-02-25T16:37:49.481Z",
   "entries": [
+    {
+      "timestamp": "2026-02-25T16:37:49.481Z",
+      "previousCommit": "033c28c21f1889c6c279f60a0393e191ea7b3d26",
+      "currentCommit": "pending",
+      "totalChanges": 4,
+      "changes": [
+        {
+          "featureId": "aac",
+          "changes": {
+            "usage": {
+              "old": 66.73,
+              "new": 96.73,
+              "delta": 30
+            }
+          }
+        },
+        {
+          "featureId": "mdn-api.Document.parseHTML_static",
+          "changes": {
+            "usage": {
+              "old": 2.16,
+              "new": 0.31,
+              "delta": -1.85
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.background-repeat-x",
+          "changes": {
+            "support": [
+              {
+                "browser": "saf",
+                "old": "y",
+                "new": "a"
+              },
+              {
+                "browser": "ios_saf",
+                "old": "y",
+                "new": "a"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.background-repeat-y",
+          "changes": {
+            "support": [
+              {
+                "browser": "saf",
+                "old": "y",
+                "new": "a"
+              },
+              {
+                "browser": "ios_saf",
+                "old": "y",
+                "new": "a"
+              }
+            ]
+          }
+        }
+      ]
+    },
     {
       "timestamp": "2026-02-25T04:12:58.882Z",
       "previousCommit": "efe75134d29fd301b93876a97a0d8842057d9e66",
