@@ -72,7 +72,6 @@ export const useTrackingStore = defineStore('tracking', () => {
         // @ts-ignore
         .insert({
           user_id: authStore.user.id,
-          user_email: authStore.user.email,
           feature_id: featureId,
           feature_title: featureTitle,
           triggers: triggers,

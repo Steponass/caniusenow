@@ -39,7 +39,6 @@ export type Trigger =
 export interface FeatureTracking {
   id: string;
   user_id: string;
-  user_email: string;
   feature_id: string;
   feature_title: string;
   triggers: Trigger[];
