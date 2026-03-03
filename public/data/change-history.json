@@ -1,6 +1,177 @@
 {
-  "lastUpdated": "2026-02-25T16:37:49.481Z",
+  "lastUpdated": "2026-03-03T03:17:27.418Z",
   "entries": [
+    {
+      "timestamp": "2026-03-03T03:17:27.418Z",
+      "previousCommit": "de95edd2c1c9fb4d8813673314ce765b13febf53",
+      "currentCommit": "pending",
+      "totalChanges": 2,
+      "changes": [
+        {
+          "featureId": "trusted-types",
+          "changes": {
+            "baseline": {
+              "old": false,
+              "new": "low"
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.types.basic-shape.shape",
+          "changes": {
+            "baseline": {
+              "old": false,
+              "new": "low"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-03-01T03:23:16.141Z",
+      "previousCommit": "98629048034600bd16dbfe76e69369339151ad55",
+      "currentCommit": "pending",
+      "totalChanges": 3,
+      "changes": [
+        {
+          "featureId": "css-overflow-anchor",
+          "changes": {
+            "support": [
+              {
+                "browser": "saf",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "customizable-select",
+          "changes": {
+            "support": [
+              {
+                "browser": "saf",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "webtransport",
+          "changes": {
+            "support": [
+              {
+                "browser": "saf",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-28T03:02:49.916Z",
+      "previousCommit": "1cf4f999b9fc3fc7ecbe76449a8a458fd874ce89",
+      "currentCommit": "pending",
+      "totalChanges": 7,
+      "changes": [
+        {
+          "featureId": "mdn-api.CloseWatcher",
+          "changes": {
+            "usage": {
+              "old": 72.83,
+              "new": 70.97,
+              "delta": -1.8599999999999994
+            }
+          }
+        },
+        {
+          "featureId": "mdn-api.DOMParser.parseFromString.enforces_trusted_types",
+          "changes": {
+            "usage": {
+              "old": 80.75,
+              "new": 78.89,
+              "delta": -1.8599999999999994
+            }
+          }
+        },
+        {
+          "featureId": "mdn-api.HTMLInputElement.colorSpace",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.HTMLMediaElement.captureStream",
+          "changes": {
+            "usage": {
+              "old": 78.57,
+              "new": 76.79,
+              "delta": -1.779999999999987
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.alignment-baseline",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.baseline-shift",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-http.headers.Content-Security-Policy.script-src.trusted-types-eval",
+          "changes": {
+            "usage": {
+              "old": 4.41,
+              "new": 46.69,
+              "delta": 42.28
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        }
+      ]
+    },
     {
       "timestamp": "2026-02-25T16:37:49.481Z",
       "previousCommit": "033c28c21f1889c6c279f60a0393e191ea7b3d26",
