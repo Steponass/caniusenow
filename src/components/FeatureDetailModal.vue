@@ -15,7 +15,7 @@ const props = defineProps<Props>();
 
 const emit = defineEmits<{
   close: [];
-  startTracking: [];
+  "startTracking": [];
 }>();
 
 const { triggers } = useFeatureUrl();
