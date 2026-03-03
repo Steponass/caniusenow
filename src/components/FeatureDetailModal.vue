@@ -68,93 +68,92 @@ function handleStartTracking() {
 </script>
 
 <template>
-    <dialog v-if="isOpen && feature" 
-    class="feature-modal" @click.stop>
-      <div class="modal-header">
-        <div class="modal-h-and-close-btn">
-          <FormattedText :text="feature.name" tag="h4" />
-          <button class="modal-close-btn" @click="handleClose">✕</button>
+  <dialog v-if="isOpen && feature" class="feature-modal" @click.stop>
+    <div class="modal-header">
+      <div class="modal-h-and-close-btn">
+        <FormattedText :text="feature.name" tag="h4" />
+        <button class="modal-close-btn" @click="handleClose">✕</button>
+      </div>
+      <FormattedText :text="feature.description" tag="p" />
+      <div class="badges-and-links">
+        <div class="badges">
+          <span class="category-badge">{{ feature.category }}</span>
+          <img v-if="feature.baseline" class="baseline-badge" :src="`/images/Baseline-${feature.baseline}.svg`"
+            :alt="`Baseline ${feature.baseline}`" />
         </div>
-          <FormattedText :text="feature.description" tag="p" />
-          <div class="badges-and-links">
-            <div class="badges">
-              <span class="category-badge">{{ feature.category }}</span>
-              <img v-if="feature.baseline" class="baseline-badge" :src="`/images/Baseline-${feature.baseline}.svg`"
-              :alt="`Baseline ${feature.baseline}`" />
-            </div>
 
-            <div v-if="feature.caniuseUrl" class="links">
-              <a v-if="feature.caniuseUrl" :href="feature.caniuseUrl" target="_blank" rel="noopener noreferrer">
-              <strong>Caniuse.com ↗</strong>
-              </a>
-              <!-- Are other links even necessary when this tool is for reminders only? -->
-              <!-- <a v-for="link in feature.links.slice(0, 3)" :key="link.url" :href="link.url" target="_blank"
+        <div v-if="feature.caniuseUrl" class="links">
+          <a v-if="feature.caniuseUrl" :href="feature.caniuseUrl" target="_blank" rel="noopener noreferrer">
+            <strong>Caniuse.com ↗</strong>
+          </a>
+          <!-- Are other links even necessary when this tool is for reminders only? -->
+          <!-- <a v-for="link in feature.links.slice(0, 3)" :key="link.url" :href="link.url" target="_blank"
               rel="noopener noreferrer" class="external-link">
               {{ link.title }} ↗
               </a> -->
-            </div>
-          </div>
+        </div>
       </div>
-
-      <div class="modal-body">
-        <section>
-          <h5>Support stats
-            <span class="value">({{ feature.usage.type }})
-
-              <button class="popover-button" v-if="feature.usage.type === 'estimated'" popovertarget="feature-details-popover">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                  viewBox="0 0 256 256">
-                  <path
-                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm16-40a8,8,0,0,1-8,8,16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40A8,8,0,0,1,144,176ZM112,84a12,12,0,1,1,12,12A12,12,0,0,1,112,84Z">
-                  </path>
-                </svg></button>
-            </span>
-          </h5>
-          <div class="usage-stats">
-            <div class="stat">
-              <span class="label">Full Support:</span>
-              <span class="value">{{ Math.round(feature.usage.global.full) }}%</span>
-            </div>
-            <div class="stat">
-              <span class="label">Partial Support:</span>
-              <span class="value">{{ Math.round(feature.usage.global.partial) }}%</span>
-            </div>
-            <div class="stat">
-              <span class="label">Total:</span>
-              <span class="value">{{ Math.round(feature.usage.global.total) }}%</span>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <h5>Browsers</h5>
-          <div class="browser-list">
-            <div v-for="browser in browserList" :key="browser.id" class="browser-row">
-              <span class="browser-name">{{ browser.name }}</span>
-              <span class="status-badge" :class="`status-${browser.currentStatus}`">
-                {{ getSupportStatusLabel(browser.currentStatus) }}
-              </span>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <h5>Notification Triggers</h5>
-          <TriggerBuilder :feature="feature" />
-        </section>
-      </div>
-
-      <div class="modal-footer">
-        <button @click="handleClose">Cancel</button>
-        <button @click="handleStartTracking" :disabled="triggers.length === 0">
-          Track
-        </button>
-      </div>
-    </dialog>
-    <div id="feature-details-popover" popover>
-      <p>Double-check at <strong>caniuse.com</strong>!
-      </p>
     </div>
+
+    <div class="modal-body">
+      <section>
+        <h5>Support stats
+          <span class="value">({{ feature.usage.type }})
+
+            <button class="popover-button" v-if="feature.usage.type === 'estimated'"
+              popovertarget="feature-details-popover">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm16-40a8,8,0,0,1-8,8,16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40A8,8,0,0,1,144,176ZM112,84a12,12,0,1,1,12,12A12,12,0,0,1,112,84Z">
+                </path>
+              </svg></button>
+          </span>
+        </h5>
+        <div class="usage-stats">
+          <div class="stat">
+            <span class="label">Full Support:</span>
+            <span class="value">{{ Math.round(feature.usage.global.full) }}%</span>
+          </div>
+          <div class="stat">
+            <span class="label">Partial Support:</span>
+            <span class="value">{{ Math.round(feature.usage.global.partial) }}%</span>
+          </div>
+          <div class="stat">
+            <span class="label">Total:</span>
+            <span class="value">{{ Math.round(feature.usage.global.total) }}%</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h5>Browsers</h5>
+        <div class="browser-list">
+          <div v-for="browser in browserList" :key="browser.id" class="browser-row">
+            <span class="browser-name">{{ browser.name }}</span>
+            <span class="status-badge" :class="`status-${browser.currentStatus}`">
+              {{ getSupportStatusLabel(browser.currentStatus) }}
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h5>Notification Triggers</h5>
+        <TriggerBuilder :feature="feature" />
+      </section>
+    </div>
+
+    <div class="modal-footer">
+      <button @click="handleClose">Cancel</button>
+      <button @click="handleStartTracking" :disabled="triggers.length === 0">
+        Track
+      </button>
+    </div>
+  </dialog>
+  <div id="feature-details-popover" popover>
+    <p>Double-check at <strong>caniuse.com</strong>!
+    </p>
+  </div>
 </template>
 
 <style scoped>
@@ -167,8 +166,9 @@ function handleStartTracking() {
   display: flex;
   flex-direction: column;
   transition: var(--transition-hover);
+
   @starting-style {
-      width: 0;
+    width: 0;
   }
 }
 
@@ -176,8 +176,9 @@ function handleStartTracking() {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
   transition: var(--transition-hover-quick);
+
   @starting-style {
-      backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
   }
 }
 
@@ -229,6 +230,7 @@ function handleStartTracking() {
   flex-wrap: wrap;
   text-decoration: underline;
   color: var(--clr-text-strong);
+
   @media (hover: hover) {
     &:hover {
       text-decoration: none;
@@ -246,12 +248,13 @@ function handleStartTracking() {
   margin-block-end: var(--space-8px);
 }
 
-section{
+section {
   margin-block-end: var(--space-16-24px);
 }
 
 .usage-stats {
-  display: flex;  gap: var(--space-16px);
+  display: flex;
+  gap: var(--space-16px);
 }
 
 .stat {
@@ -334,6 +337,7 @@ section{
   margin-inline-start: -8px;
   cursor: pointer;
   transition: var(--transition-hover);
+
   &:hover {
     scale: 1.3
   }
@@ -356,6 +360,7 @@ section{
 #feature-details-popover a {
   text-decoration: underline;
   transform: var(--transition-hover);
+
   @media (hover: hover) {
     &:hover {
       text-decoration: none;
