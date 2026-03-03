@@ -7789,7 +7789,7 @@
       "an_chr": "y"
     },
     "usage": 84.71,
-    "baseline": false
+    "baseline": "low"
   },
   {
     "id": "ttf",
@@ -8925,6 +8925,22 @@
       "an_chr": "y"
     },
     "usage": 85.99,
+    "baseline": "low"
+  },
+  {
+    "id": "mdn-api.AbortSignal.timeout_static",
+    "name": "`timeout()` static method",
+    "description": "`timeout()` static method",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.96,
     "baseline": "low"
   },
   {
@@ -14045,22 +14061,6 @@
       "an_chr": "y"
     },
     "usage": 74.21,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.GPUAdapter.requestDevice.undefined_limits",
-    "name": "Request unknown limits with `undefined` value",
-    "description": "Request unknown limits with `undefined` value",
-    "category": "JS API",
-    "support": {
-      "chr": "a",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "a",
-      "ios_saf": "n",
-      "an_chr": "a"
-    },
-    "usage": 69,
     "baseline": false
   },
   {
@@ -36752,22 +36752,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.initial-letter.normal",
-    "name": "initial-letter: Normal",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 88.06,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.inline-size.auto",
     "name": "inline-size: Auto",
     "description": "",
@@ -44048,38 +44032,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.selectors.interest-source",
-    "name": "`interest-source`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 62.71,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.selectors.interest-target",
-    "name": "`interest-target`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 62.71,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.selectors.lang",
     "name": "`:lang()`",
     "description": "`:lang()`",
@@ -44397,7 +44349,7 @@
       "an_chr": "y"
     },
     "usage": 79.52,
-    "baseline": false
+    "baseline": "low"
   },
   {
     "id": "mdn-css.types.calc.typed_division_produces_unitless_number",
