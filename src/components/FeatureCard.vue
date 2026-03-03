@@ -23,9 +23,9 @@ async function handleFeatureCardClick(): Promise<void> {
 }
 
 function getStatusColor(usage: number): string {
-  if (usage >= 95) return "#0C8D62";
-  if (usage >= 80) return "#BA7908";
-  return "#CA4E4E";
+  if (usage >= 95) return "var(--clr-high-support)";
+  if (usage >= 80) return "var(--clr-medium-support)";
+  return "var(--clr-low-support)";
 }
 
 const usagePercentage = Math.round(props.feature.usage);
