@@ -3,8 +3,11 @@ import { ref, computed } from 'vue';
 import { supabase } from '../utils/supabase';
 import { useAuthStore } from './authStore';
 import type { FeatureTracking, Trigger } from '@/types/featureTracking';
+import { validateTriggers } from '@/utils/validateTrigger';
+import type { Json } from '@/types/database'
 
 export const useTrackingStore = defineStore('tracking', () => {
+
   // State
   const trackings = ref<FeatureTracking[]>([]);
   const loading = ref(false);
@@ -59,9 +62,7 @@ export const useTrackingStore = defineStore('tracking', () => {
       throw new Error('Must be authenticated to track features');
     }
 
-    if (triggers.length === 0) {
-      throw new Error('At least one trigger is required');
-    }
+    validateTriggers(triggers);
 
     loading.value = true;
     error.value = null;
@@ -74,7 +75,7 @@ export const useTrackingStore = defineStore('tracking', () => {
           user_id: authStore.user.id,
           feature_id: featureId,
           feature_title: featureTitle,
-          triggers: triggers,
+          triggers: triggers as unknown as Json,
           status: 'active'
         })
         .select()

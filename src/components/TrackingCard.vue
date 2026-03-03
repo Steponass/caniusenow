@@ -2,7 +2,7 @@
 import { useTrackingStore } from '@stores/featureTrackingStore';
 import { getBrowserDisplayName } from '@/types/feature';
 import FormattedText from "./FormattedText.vue";
-import type { FeatureTracking } from '@/types/featureTracking';
+import type { FeatureTracking, Trigger } from '@/types/featureTracking';
 
 interface Props {
   tracking: FeatureTracking;
@@ -18,7 +18,7 @@ async function handleDelete() {
   }
 }
 
-function getTriggerDescription(trigger: any): string {
+function getTriggerDescription(trigger: Trigger): string {
   if (trigger.type === 'browser_support') {
     return `${getBrowserDisplayName(trigger.browser)} has ${trigger.targetStatus} support`;
   } else if (trigger.type === 'browser_version') {

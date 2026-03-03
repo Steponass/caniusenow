@@ -68,8 +68,8 @@ function handleStartTracking() {
 </script>
 
 <template>
-  <div v-if="isOpen && feature" class="modal-overlay" @click="handleClose">
-    <div class="modal-content" @click.stop>
+    <dialog v-if="isOpen && feature" 
+    class="feature-modal" @click.stop>
       <div class="modal-header">
         <div class="modal-h-and-close-btn">
           <FormattedText :text="feature.name" tag="h4" />
@@ -150,35 +150,15 @@ function handleStartTracking() {
           Track
         </button>
       </div>
-    </div>
+    </dialog>
     <div id="feature-details-popover" popover>
-      <p>
-        Double-check at
-        <a v-if="feature.caniuseUrl" :href="feature.caniuseUrl" target="_blank" rel="noopener noreferrer">
-        <strong>caniuse.com</strong>!
-        </a>
+      <p>Double-check at <strong>caniuse.com</strong>!
       </p>
     </div>
-  </div>
 </template>
 
 <style scoped>
-.modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-  transition: var(--transition-hover-quick);
-  @starting-style {
-      backdrop-filter: blur(0px);
-  }
-}
-
-.modal-content {
+.feature-modal {
   overscroll-behavior: contain;
   background-color: var(--clr-bg-overlay);
   border-radius: var(--radius-16px);
@@ -189,6 +169,15 @@ function handleStartTracking() {
   transition: var(--transition-hover);
   @starting-style {
       width: 0;
+  }
+}
+
+.feature-modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  transition: var(--transition-hover-quick);
+  @starting-style {
+      backdrop-filter: blur(0px);
   }
 }
 
