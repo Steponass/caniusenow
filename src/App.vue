@@ -155,7 +155,9 @@ function handleSearch(query: string) {
           v-else="authStore.isAuthenticated"
         >
           <h2>My Tracked Features</h2>
-          <TrackingDashboard />
+          <TrackingDashboard 
+          @feature-click="handleFeatureClick"
+          />
         </section>
     </main>
 

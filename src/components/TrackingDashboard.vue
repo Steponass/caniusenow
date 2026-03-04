@@ -1,11 +1,16 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useTrackingStore } from '@stores/featureTrackingStore';
+import type { NormalizedFeature } from '@/types/feature';
 import TrackingCard from './TrackingCard.vue';
 
 type Tab = 'active' | 'notified';
 
 const trackingStore = useTrackingStore();
+
+const emit = defineEmits<{
+  featureClick: [feature: NormalizedFeature];
+}>();
 
 const activeTab = defineModel<Tab>('activeTab', { default: 'active' });
 
@@ -56,6 +61,8 @@ const displayedTrackings = computed(() => {
         v-for="tracking in displayedTrackings"
         :key="tracking.id"
         :tracking="tracking"
+        @feature-click="(feature) => emit('featureClick', feature)"
+
       />
     </div>
   </div>

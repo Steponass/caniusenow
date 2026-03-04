@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useTrackingStore } from '@stores/featureTrackingStore';
-import { getBrowserDisplayName } from '@/types/feature';
+import { getBrowserDisplayName, type NormalizedFeature } from '@/types/feature';
+import { useFeatureStore } from "@stores/featureStore";
 import FormattedText from "./FormattedText.vue";
 import type { FeatureTracking, Trigger } from '@/types/featureTracking';
 
@@ -11,6 +12,19 @@ interface Props {
 const props = defineProps<Props>();
 
 const trackingStore = useTrackingStore();
+
+const featureStore = useFeatureStore();
+
+const emit = defineEmits<{
+  featureClick: [feature: NormalizedFeature];
+}>();
+
+async function handleFeatureCardClick(): Promise<void> {
+  const fullFeature = await featureStore.loadFeature(props.tracking.id);
+  if (fullFeature) {
+    emit("featureClick", fullFeature);
+  }
+}
 
 async function handleDelete() {
   if (confirm('Sure you\'re done tracking this?')) {
@@ -39,7 +53,12 @@ function getTriggerDescription(trigger: Trigger): string {
 </script>
 
 <template>
-  <div class="tracking-card">
+  <div 
+  class="tracking-card"
+  tabindex="1"
+  @click="handleFeatureCardClick"
+  @keydown.enter="handleFeatureCardClick"
+  @keydown.space="handleFeatureCardClick">
     <div class="card-header">
       <FormattedText :text="tracking.feature_title" tag="h4" />
       <span 
