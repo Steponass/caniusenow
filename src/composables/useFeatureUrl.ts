@@ -230,6 +230,14 @@ function resetTriggerState(): void {
 }
 
 /**
+ * Seed the triggers array with an existing set of triggers.
+ * Used when opening the modal in edit mode from a TrackingCard.
+ */
+function setTriggers(existingTriggers: Trigger[]): void {
+  triggers.value = [...existingTriggers];
+}
+
+/**
  * Add a trigger to the array based on current form state
  */
 function addTrigger(): Trigger | null {
@@ -293,6 +301,7 @@ export function useFeatureUrl() {
     clearUrl,
     resetFormState,
     resetTriggerState,
+    setTriggers,
     addTrigger,
     removeTrigger,
   };

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import type { NormalizedFeature } from "@/types/feature";
+import type { FeatureTracking } from "@/types/featureTracking";
 import FormattedText from "./FormattedText.vue";
 import { getBrowserDisplayName } from "@/types/feature";
 import TriggerBuilder from "./TriggerBuilder.vue";
@@ -9,6 +10,7 @@ import { useFeatureUrl } from "@/composables/useFeatureUrl";
 interface Props {
   feature: NormalizedFeature | null;
   isOpen: boolean;
+  existingTracking?: FeatureTracking | null;
 }
 
 const props = defineProps<Props>();
@@ -16,9 +18,12 @@ const props = defineProps<Props>();
 const emit = defineEmits<{
   close: [];
   startTracking: [];
+  saveChanges: [];
 }>();
 
 const { triggers } = useFeatureUrl();
+
+const isEditMode = computed(() => props.existingTracking != null);
 
 const browserList = computed(() => {
   if (!props.feature) return [];
@@ -57,13 +62,17 @@ function handleClose() {
   emit("close");
 }
 
-function handleStartTracking() {
+function handlePrimaryAction(): void {
   if (triggers.value.length === 0) {
     alert("Gotta add at least one notification trigger");
     return;
   }
 
-  emit("startTracking");
+  if (isEditMode.value) {
+    emit("saveChanges");
+  } else {
+    emit("startTracking");
+  }
 }
 </script>
 
@@ -146,8 +155,8 @@ function handleStartTracking() {
 
       <div class="modal-footer">
         <button @click="handleClose">Cancel</button>
-        <button @click="handleStartTracking" :disabled="triggers.length === 0">
-          Track
+        <button @click="handlePrimaryAction" :disabled="triggers.length === 0">
+          {{ isEditMode ? 'Save Changes' : 'Track' }}
         </button>
       </div>
     </div>

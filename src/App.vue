@@ -12,6 +12,7 @@ import FeatureDetailModal from "@components/FeatureDetailModal.vue";
 import TrackingDashboard from "@components/TrackingDashboard.vue";
 
 import type { NormalizedFeature } from "@/types/feature";
+import type { FeatureTracking } from "@/types/featureTracking";
 
 const featureStore = useFeatureStore();
 const authStore = useAuthStore();
@@ -22,11 +23,13 @@ const {
   setFeature,
   clearUrl,
   resetTriggerState,
+  setTriggers,
 } = useFeatureUrl();
 
 const isAuthModalOpen = ref(false);
 const isFeatureModalOpen = ref(false);
 const selectedFeature = ref<NormalizedFeature | null>(null);
+const selectedTracking = ref<FeatureTracking | null>(null);
 const showTrackingDashboard = ref(false);
 const searchQuery = ref("");
 
@@ -92,8 +95,35 @@ function handleFeatureClick(feature: NormalizedFeature) {
 function handleCloseFeatureModal() {
   isFeatureModalOpen.value = false;
   selectedFeature.value = null;
+  selectedTracking.value = null;
   resetTriggerState();
   clearUrl();
+}
+
+function handleTrackingFeatureClick(
+  feature: NormalizedFeature,
+  tracking: FeatureTracking,
+): void {
+  selectedFeature.value = feature;
+  selectedTracking.value = tracking;
+  setTriggers(tracking.triggers);
+  setFeature(feature.id);
+  isFeatureModalOpen.value = true;
+}
+
+async function handleSaveTracking(): Promise<void> {
+  if (!selectedTracking.value) return;
+
+  try {
+    await trackingStore.updateTracking(
+      selectedTracking.value.id,
+      { triggers: triggers.value },
+    );
+    handleCloseFeatureModal();
+  } catch (error) {
+    console.error("Failed to save tracking changes:", error);
+    alert("Failed to save changes. Contact Step!");
+  }
 }
 
 async function handleStartTracking() {
@@ -155,8 +185,8 @@ function handleSearch(query: string) {
           v-else="authStore.isAuthenticated"
         >
           <h2>My Tracked Features</h2>
-          <TrackingDashboard 
-          @feature-click="handleFeatureClick"
+          <TrackingDashboard
+          @feature-click="handleTrackingFeatureClick"
           />
         </section>
     </main>
@@ -166,8 +196,10 @@ function handleSearch(query: string) {
     <FeatureDetailModal
       :feature="selectedFeature"
       :is-open="isFeatureModalOpen"
+      :existing-tracking="selectedTracking"
       @close="handleCloseFeatureModal"
       @start-tracking="handleStartTracking"
+      @save-changes="handleSaveTracking"
     />
   </div>
 </template>

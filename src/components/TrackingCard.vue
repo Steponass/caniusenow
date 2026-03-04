@@ -16,13 +16,13 @@ const trackingStore = useTrackingStore();
 const featureStore = useFeatureStore();
 
 const emit = defineEmits<{
-  featureClick: [feature: NormalizedFeature];
+  featureClick: [feature: NormalizedFeature, tracking: FeatureTracking];
 }>();
 
 async function handleFeatureCardClick(): Promise<void> {
   const fullFeature = await featureStore.loadFeature(props.tracking.feature_id);
   if (fullFeature) {
-    emit("featureClick", fullFeature);
+    emit("featureClick", fullFeature, props.tracking);
   }
 }
 
@@ -39,9 +39,9 @@ function getTriggerDescription(trigger: Trigger): string {
     return `${getBrowserDisplayName(trigger.browser)} ${trigger.version}+ has ${trigger.targetStatus} support`;
   } else if (trigger.type === 'usage_threshold') {
     const usageLabel = trigger.usageType === 'full' ? 'full support' :
-                      trigger.usageType === 'partial' ? 'partial support' :
-                      (trigger.usageType === 'combined') ? 'total (full + partial)' :
-                      'total (full + partial)';
+      trigger.usageType === 'partial' ? 'partial support' :
+        (trigger.usageType === 'combined') ? 'total (full + partial)' :
+          'total (full + partial)';
     return `${usageLabel} usage ≥ ${trigger.threshold}%`;
   } else {
     const baselineLabel = trigger.targetStatus === 'low'
@@ -53,18 +53,11 @@ function getTriggerDescription(trigger: Trigger): string {
 </script>
 
 <template>
-  <div 
-  class="tracking-card"
-  tabindex="1"
-  @click="handleFeatureCardClick"
-  @keydown.enter="handleFeatureCardClick"
-  @keydown.space="handleFeatureCardClick">
+  <div class="tracking-card" tabindex="1" @click="handleFeatureCardClick" @keydown.enter="handleFeatureCardClick"
+    @keydown.space="handleFeatureCardClick">
     <div class="card-header">
       <FormattedText :text="tracking.feature_title" tag="h4" />
-      <span 
-        class="status-badge"
-        :class="tracking.status"
-      >
+      <span class="status-badge" :class="tracking.status">
         {{ tracking.status }}
       </span>
     </div>
@@ -85,7 +78,7 @@ function getTriggerDescription(trigger: Trigger): string {
     </div>
 
     <div class="card-actions">
-      <button @click="handleDelete">
+      <button @click.stop="handleDelete">
         Delete
       </button>
     </div>
@@ -126,9 +119,7 @@ function getTriggerDescription(trigger: Trigger): string {
 
 .card-actions {
   display: flex;
-  gap: 0.5rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid #e5e7eb;
+  gap: var(--space-8px);
+  padding-top: var(--space-12-16px);
 }
-
 </style>
