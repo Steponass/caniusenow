@@ -77,8 +77,9 @@ const displayedTrackings = computed(() => {
 }
 
 .tracking-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: auto;
   gap: var(--space-16-24px);
 }
 </style>

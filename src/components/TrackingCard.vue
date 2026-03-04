@@ -94,7 +94,10 @@ function getTriggerDescription(trigger: Trigger): string {
 
 <style scoped>
 .tracking-card {
-  max-width: 512px;
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+  row-gap: 0;
   padding: var(--space-16px) var(--space-24px);
   background: var(--clr-bg-raised);
   border-radius: var(--radius-8px);
