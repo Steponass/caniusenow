@@ -20,7 +20,7 @@ const emit = defineEmits<{
 }>();
 
 async function handleFeatureCardClick(): Promise<void> {
-  const fullFeature = await featureStore.loadFeature(props.tracking.id);
+  const fullFeature = await featureStore.loadFeature(props.tracking.feature_id);
   if (fullFeature) {
     emit("featureClick", fullFeature);
   }
