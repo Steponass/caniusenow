@@ -1,0 +1,84 @@
+{
+  "id": "loading-lazy-media",
+  "source": "caniuse",
+  "name": "Lazy loading via attribute for video & audio",
+  "description": "The `loading` attribute on video & audio elements gives authors control over when the browser should start loading the media resource, allowing deferred loading until the element is near the viewport.",
+  "category": "HTML5",
+  "links": [
+    {
+      "url": "https://github.com/whatwg/html/pull/11980",
+      "title": "WHATWG HTML spec PR"
+    },
+    {
+      "url": "https://groups.google.com/a/chromium.org/g/blink-dev/c/DNVOVe4VNak/m/rCcnWz8QAQAJ",
+      "title": "Chromium Intent to Ship"
+    },
+    {
+      "url": "https://github.com/mozilla/standards-positions/issues/1325",
+      "title": "Mozilla Standards Position (positive)"
+    },
+    {
+      "url": "https://scottjehl.com/posts/lazy-media/",
+      "title": "Blog post by Scott Jehl"
+    }
+  ],
+  "support": {
+    "chr": {
+      "current": "u"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 0,
+      "total": 0
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "actual"
+  },
+  "notes": {
+    "general": "",
+    "byNum": {
+      "1": "Available behind the LazyLoadVideoAndAudio flag (can be enabled via chrome://flags or --enable-features=LazyLoadVideoAndAudio)"
+    }
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "caniuse",
+      "id": "loading-lazy-media"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Lazy%20loading%20via%20attribute%20for%20video%20%26%20audio"
+}
