@@ -87,8 +87,7 @@ const nextThemeLabel = computed(() => {
 }
 
 .theme-icon {
-  width: var(--space-24px);
-  height: var(--space-24px);
+  min-width: var(--space-24px);
 }
 
 /* For 300% zoom */

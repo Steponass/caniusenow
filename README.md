@@ -33,3 +33,8 @@ Since I don't have StatCounter API access (it ain't free!) for browser usage dat
 - browser.latestVersion
 
 Keeping for now, just in case.
+
+
+### Known bugs:
+
+Selecting "Beacon" doesn't open card details when AdBlocker is on (Beacon API is commonly used for tracking/analytics)

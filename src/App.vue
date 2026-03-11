@@ -224,6 +224,7 @@ main {
 }
 
 section h2 {
+  margin-block: var(--space-16-24px);
   padding-block-end: var(--space-16px);
 }
 </style>

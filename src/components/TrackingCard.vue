@@ -56,7 +56,7 @@ function getTriggerDescription(trigger: Trigger): string {
   <div class="tracking-card" tabindex="1" @click="handleFeatureCardClick" @keydown.enter="handleFeatureCardClick"
     @keydown.space="handleFeatureCardClick">
     <div class="card-header">
-      <FormattedText :text="tracking.feature_title" tag="h4" />
+      <FormattedText :text="tracking.feature_title" tag="h5" />
       <span class="status-badge" :class="tracking.status">
         {{ tracking.status }}
       </span>
@@ -122,4 +122,9 @@ function getTriggerDescription(trigger: Trigger): string {
   gap: var(--space-8px);
   padding-top: var(--space-12-16px);
 }
+
+ul {
+  list-style-position: inside;
+}
+
 </style>

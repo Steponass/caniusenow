@@ -225,6 +225,7 @@ function handlePrimaryAction(): void {
   display: flex;
   align-items: baseline;
   gap: var(--space-16-24px);
+  margin-block: var(--space-8-12px);
 }
 
 .badges {
@@ -291,15 +292,17 @@ section{
 }
 
 .browser-list {
-  display: flex;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
   gap: var(--space-8px);
 }
 
 .browser-row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-row: span 2;
+  grid-template-rows: subgrid;
+  justify-items: center;
   gap: var(--space-4px);
   background-color: var(--clr-bg-raised);
   border: 1px solid var(--clr-stroke-weak);
@@ -313,15 +316,15 @@ section{
 }
 
 .status-badge.status-y {
-  color: #065f46;
+  color: var(--clr-browser-full-support);
 }
 
 .status-badge.status-a {
-  color: #92400e;
+  color: var(--clr-medium-support);
 }
 
 .status-badge.status-n {
-  color: #991b1b;
+  color: var(--clr-low-support);
 }
 
 .status-badge.status-p,
@@ -361,15 +364,21 @@ section{
 }
 
 #feature-details-popover {
-  width: min(320px, 80%);
-  padding: var(--space-8px);
+  width: min(360px, 95%);
+  padding: var(--space-16px);
+  color: var(--clr-text-strong);
+  font-size: var(--fontsize-h6);
+  background: var(--clr-bg-overlay);
   margin-inline: auto;
   align-self: center;
+  border: 2px solid var(--clr-stroke-weak);
+  border-radius: var(--radius-4px);
   opacity: 1;
+  transform: translateY(0);
   transition: var(--transition-hover);
-
   @starting-style {
     opacity: 0;
+    transform: translateY(50px);
   }
 }
 

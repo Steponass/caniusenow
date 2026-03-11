@@ -66,83 +66,85 @@ function getTriggerDescription(trigger: Trigger): string {
 
 <template>
   <div class="trigger-builder">
-    <div class="form-group">
-      <label>Trigger type</label>
-      <select v-model="triggerType">
-        <option value="usage_threshold">Overall Support</option>
-        <option value="baseline_status">Baseline status</option>
-        <option value="browser_support">Specific browser support</option>
-        <option value="browser_version">Specific browser version</option>
-      </select>
+    <div class="form-groups">
+      <div class="form-group">
+        <label>Trigger type</label>
+        <select v-model="triggerType">
+          <option value="usage_threshold">Overall Support</option>
+          <option value="baseline_status">Baseline status</option>
+          <option value="browser_support">Specific browser support</option>
+          <option value="browser_version">Specific browser version</option>
+        </select>
+      </div>
+
+      <template v-if="triggerType === 'browser_support'">
+        <div class="form-group">
+          <label>Browser</label>
+          <select v-model="browser">
+            <option v-for="browserOption in availableBrowsers" :key="browserOption" :value="browserOption">
+              {{ getBrowserDisplayName(browserOption) }}
+            </option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Target status</label>
+          <select v-model="status">
+            <option value="full">Full support</option>
+            <option value="partial">Partial support</option>
+          </select>
+        </div>
+      </template>
+
+      <template v-else-if="triggerType === 'browser_version'">
+        <div class="form-group">
+          <label>Browser</label>
+          <select v-model="browser">
+            <option v-for="browserOption in availableBrowsers" :key="browserOption" :value="browserOption">
+              {{ getBrowserDisplayName(browserOption) }}
+            </option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Version</label>
+          <input v-model="version" type="text" placeholder="e.g., 130" />
+        </div>
+
+        <div class="form-group">
+          <label>Target Status</label>
+          <select v-model="status">
+            <option value="full">Full support</option>
+            <option value="partial">Partial support</option>
+          </select>
+        </div>
+      </template>
+
+      <template v-else-if="triggerType === 'usage_threshold'">
+        <div class="form-group">
+          <label>Usage type</label>
+          <select v-model="usageType">
+            <option value="full">Full support only</option>
+            <option value="total">Full + Partial</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Threshold: {{ threshold }}%</label>
+          <input v-model.number="threshold" type="range" min="1" max="100" step="1" />
+        </div>
+      </template>
+
+      <template v-else-if="triggerType === 'baseline_status'">
+        <div class="form-group">
+          <label>Target baseline</label>
+          <select v-model="baselineStatus">
+            <option value="low">Newly available (low)</option>
+            <option value="high">Widely available (high)</option>
+          </select>
+        </div>
+      </template>
     </div>
-
-    <template v-if="triggerType === 'browser_support'">
-      <div class="form-group">
-        <label>Browser</label>
-        <select v-model="browser">
-          <option v-for="browserOption in availableBrowsers" :key="browserOption" :value="browserOption">
-            {{ getBrowserDisplayName(browserOption) }}
-          </option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label>Target status</label>
-        <select v-model="status">
-          <option value="full">Full support</option>
-          <option value="partial">Partial support</option>
-        </select>
-      </div>
-    </template>
-
-    <template v-else-if="triggerType === 'browser_version'">
-      <div class="form-group">
-        <label>Browser</label>
-        <select v-model="browser">
-          <option v-for="browserOption in availableBrowsers" :key="browserOption" :value="browserOption">
-            {{ getBrowserDisplayName(browserOption) }}
-          </option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label>Version</label>
-        <input v-model="version" type="text" placeholder="e.g., 130" />
-      </div>
-
-      <div class="form-group">
-        <label>Target Status</label>
-        <select v-model="status">
-          <option value="full">Full support</option>
-          <option value="partial">Partial support</option>
-        </select>
-      </div>
-    </template>
-
-    <template v-else-if="triggerType === 'usage_threshold'">
-      <div class="form-group">
-        <label>Usage type</label>
-        <select v-model="usageType">
-          <option value="full">Full support only</option>
-          <option value="total">Full + Partial</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label>Threshold: {{ threshold }}%</label>
-        <input v-model.number="threshold" type="range" min="1" max="100" step="1" />
-      </div>
-    </template>
-
-    <template v-else-if="triggerType === 'baseline_status'">
-      <div class="form-group">
-        <label>Target baseline</label>
-        <select v-model="baselineStatus">
-          <option value="low">Newly available (low)</option>
-          <option value="high">Widely available (high)</option>
-        </select>
-      </div>
-    </template>
 
     <button @click="handleAddTrigger">+ Add Trigger</button>
 
@@ -160,6 +162,12 @@ function getTriggerDescription(trigger: Trigger): string {
 .trigger-builder {
   display: flex;
   flex-direction: column;
+  gap: var(--space-16px);
+}
+
+.form-groups {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: var(--space-16px);
 }
 
@@ -191,7 +199,7 @@ function getTriggerDescription(trigger: Trigger): string {
 
 select, input {
   border: 1px solid var(--clr-stroke-weak);
-    background-color: var(--clr-bg-overlay);
+  background-color: var(--clr-bg-overlay);
   border-radius: var(--radius-2px);
   padding: var(--space-4px) var(--space-8px);
 }

@@ -57,6 +57,8 @@ function clearSearch() {
 .search-bar {
   position: relative;
   width: min(100%, 600px);
+    margin-inline: var(--space-12px);
+
 }
 
 .search-input {

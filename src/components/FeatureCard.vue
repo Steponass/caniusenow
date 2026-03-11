@@ -77,7 +77,7 @@ const statusColor = getStatusColor(props.feature.usage);
   display: grid;
   grid-row: span 3;
   grid-template-rows: subgrid;
-  row-gap: 0;
+  row-gap: var(--space-12-16px);
   padding: var(--space-16px);
   background: var(--clr-bg-raised);
   border-radius: var(--radius-8px);
@@ -114,6 +114,8 @@ const statusColor = getStatusColor(props.feature.usage);
 }
 
 .feature-usage-badge {
+  min-width: 6ch;
+  text-align: center;
   padding: var(--space-4px) var(--space-8px);
   border-radius: var(--radius-16px);
 }
