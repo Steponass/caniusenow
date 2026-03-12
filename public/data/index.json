@@ -36544,22 +36544,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.font-width",
-    "name": "`font-width`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "n"
-    },
-    "usage": 12.9,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.font-width.percentage",
     "name": "`&lt;percentage&gt;`",
     "description": "`&lt;percentage&gt;`",
@@ -42462,6 +42446,38 @@
     },
     "usage": 92.24,
     "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.text-decoration-line.grammar-error",
+    "name": "text-decoration-line: grammar-error",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 79,
+    "baseline": "low"
+  },
+  {
+    "id": "mdn-css.properties.text-decoration-skip-ink",
+    "name": "`text-decoration-skip-ink`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 91.89,
+    "baseline": "high"
   },
   {
     "id": "mdn-css.properties.text-decoration-style.dashed",
@@ -48544,38 +48560,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-http.headers.Signature",
-    "name": "Signature",
-    "description": "",
-    "category": "Other",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.08,
-    "baseline": false
-  },
-  {
-    "id": "mdn-http.headers.Signature-Input",
-    "name": "Signature-Input",
-    "description": "",
-    "category": "Other",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.08,
-    "baseline": false
-  },
-  {
     "id": "mdn-http.headers.Snapshot-Content-Location",
     "name": "Snapshot-Content-Location",
     "description": "",
@@ -48606,22 +48590,6 @@
     },
     "usage": 94.32,
     "baseline": "high"
-  },
-  {
-    "id": "mdn-http.headers.Unencoded-Digest",
-    "name": "Unencoded-Digest",
-    "description": "",
-    "category": "Other",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.08,
-    "baseline": false
   },
   {
     "id": "mdn-http.headers.Upgrade",
@@ -49885,7 +49853,7 @@
       "an_chr": "y"
     },
     "usage": 84.29,
-    "baseline": false
+    "baseline": "low"
   },
   {
     "id": "mdn-javascript.builtins.Map",
@@ -50800,6 +50768,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-svg.global_attributes.font-width",
+    "name": "`font-width`",
+    "description": "",
+    "category": "SVG",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 12.9,
+    "baseline": false
+  },
+  {
     "id": "mdn-svg.global_attributes.transform.svg_root",
     "name": "On `&lt;svg&gt;` root",
     "description": "On `&lt;svg&gt;` root",
@@ -50979,6 +50963,22 @@
     "id": "wf-manifest-localization",
     "name": "Web app manifest localization",
     "description": "The _localized suffixed members of the web app manifest set translated names, descriptions, icons, and shortcuts. The br",
+    "category": "Other",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
+    "id": "wf-mathml-full",
+    "name": "MathML Full",
+    "description": "MathML specifies several elements and attributes that are not included in MathML Core. Math applications outside of brow",
     "category": "Other",
     "support": {
       "chr": "n",

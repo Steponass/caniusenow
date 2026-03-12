@@ -67,7 +67,28 @@
       "source": "mdnbcd",
       "id": "html.elements.script.integrity.ed25519_public_key"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Signature",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Signature-Input",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Unencoded-Digest",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "signature-based-resource-integrity",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=Signature-based%20integrity%20(Ed25519%20public%20key%20values)"
 }
