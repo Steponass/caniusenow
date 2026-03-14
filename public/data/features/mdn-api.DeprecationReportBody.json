@@ -12,7 +12,8 @@
       "firstFull": "69"
     },
     "ffx": {
-      "current": "n"
+      "current": "a",
+      "firstPartial": "149"
     },
     "edg": {
       "current": "y",
@@ -41,14 +42,15 @@
       "firstFull": "69"
     },
     "an_ff": {
-      "current": "n"
+      "current": "a",
+      "firstPartial": "149"
     }
   },
   "usage": {
     "global": {
       "full": 75.07,
-      "partial": 0,
-      "total": 75.07
+      "partial": 0.34,
+      "total": 75.4
     },
     "byBrowser": {
       "desktop": {
@@ -57,7 +59,8 @@
         "opr": 1
       },
       "mobile": {
-        "an_chr": 42.14
+        "an_chr": 42.14,
+        "an_ff": 0.34
       }
     },
     "type": "estimated"
@@ -147,6 +150,11 @@
       {
         "source": "mdnbcd",
         "id": "api.ReportingObserver.ReportingObserver",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReportingObserver.ReportingObserver.options_parameter.types_property.deprecation",
         "matched": "via-webfeatures"
       },
       {

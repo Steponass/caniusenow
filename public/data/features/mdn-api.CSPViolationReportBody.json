@@ -4,7 +4,7 @@
   "name": "CSPViolationReportBody",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/CSPViolationReportBody/toJSON",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/CSPViolationReportBody",
   "links": [],
   "support": {
     "chr": {
@@ -12,7 +12,8 @@
       "firstFull": "74"
     },
     "ffx": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "149"
     },
     "saf": {
       "current": "y",
@@ -43,14 +44,15 @@
       "firstFull": "74"
     },
     "an_ff": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "149"
     }
   },
   "usage": {
     "global": {
-      "full": 87.95,
+      "full": 88.29,
       "partial": 0,
-      "total": 87.95
+      "total": 88.29
     },
     "byBrowser": {
       "desktop": {
@@ -61,7 +63,8 @@
       },
       "mobile": {
         "ios_saf": 11.37,
-        "an_chr": 42.14
+        "an_chr": 42.14,
+        "an_ff": 0.34
       }
     },
     "type": "estimated"
@@ -86,6 +89,11 @@
       {
         "source": "mdnbcd",
         "id": "api.CSPViolationReportBody.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReportingObserver.ReportingObserver.options_parameter.types_property.csp-violation",
         "matched": "via-webfeatures"
       }
     ]
