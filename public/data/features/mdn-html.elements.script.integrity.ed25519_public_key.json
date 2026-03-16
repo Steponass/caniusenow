@@ -45,15 +45,15 @@
   },
   "usage": {
     "global": {
-      "full": 64.08,
+      "full": 64.94,
       "partial": 0,
-      "total": 64.08
+      "total": 64.94
     },
     "byBrowser": {
       "desktop": {
         "chr": 17.03,
         "edg": 4.89,
-        "opr": 0.01
+        "opr": 0.88
       },
       "mobile": {
         "an_chr": 42.14
@@ -67,7 +67,28 @@
       "source": "mdnbcd",
       "id": "html.elements.script.integrity.ed25519_public_key"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Signature",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Signature-Input",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Unencoded-Digest",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "signature-based-resource-integrity",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=Signature-based%20integrity%20(Ed25519%20public%20key%20values)"
 }

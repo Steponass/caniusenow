@@ -8,7 +8,12 @@
   "links": [],
   "support": {
     "chr": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "147"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "147"
     },
     "ffx": {
       "current": "n"
@@ -16,23 +21,24 @@
     "saf": {
       "current": "n"
     },
-    "edg": {
-      "current": "n"
-    },
     "opr": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "147"
     },
     "ie": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "147"
     },
     "ios_saf": {
       "current": "n"
     },
     "an_chr": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "147"
     },
     "smsg": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "147"
     },
     "an_ff": {
       "current": "n"
@@ -40,13 +46,15 @@
   },
   "usage": {
     "global": {
-      "full": 0,
+      "full": 42.14,
       "partial": 0,
-      "total": 0
+      "total": 42.14
     },
     "byBrowser": {
       "desktop": {},
-      "mobile": {}
+      "mobile": {
+        "an_chr": 42.14
+      }
     },
     "type": "estimated"
   },
@@ -80,6 +88,16 @@
       {
         "source": "mdnbcd",
         "id": "api.XRCompositionLayer.needsRedraw",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRCompositionLayer.opacity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.XRCompositionLayer.quality",
         "matched": "via-webfeatures"
       },
       {

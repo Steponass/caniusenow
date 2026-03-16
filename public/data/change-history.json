@@ -1,6 +1,4854 @@
 {
-  "lastUpdated": "2026-03-07T03:06:45.452Z",
+  "lastUpdated": "2026-03-15T03:27:13.250Z",
   "entries": [
+    {
+      "timestamp": "2026-03-15T03:27:13.250Z",
+      "previousCommit": "fe3224ce7eefb01483d5da98f9927a843b1c39da",
+      "currentCommit": "pending",
+      "totalChanges": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-03-14T03:13:29.257Z",
+      "previousCommit": "f77f406ad90010581f7280bb7f89e73231d61dfb",
+      "currentCommit": "pending",
+      "totalChanges": 20,
+      "changes": [
+        {
+          "featureId": "mdn-api.CSPViolationReportBody",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.CSPViolationReportBody.blockedURL",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.CSPViolationReportBody.columnNumber",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.CSPViolationReportBody.disposition",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.CSPViolationReportBody.documentURL",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.CSPViolationReportBody.effectiveDirective",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.CSPViolationReportBody.lineNumber",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.CSPViolationReportBody.originalPolicy",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.CSPViolationReportBody.sourceFile",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.CSPViolationReportBody.statusCode",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.DeprecationReportBody",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "a"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.HTMLMediaElement.captureStream",
+          "changes": {
+            "usage": {
+              "old": 75.41,
+              "new": 77.26,
+              "delta": 1.8500000000000085
+            }
+          }
+        },
+        {
+          "featureId": "mdn-api.Report",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.Report.body",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.Report.toJSON",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.Report.type",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.Report.url",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.ReportBody.toJSON",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.XRCompositionLayer",
+          "changes": {
+            "usage": {
+              "old": 0,
+              "new": 42.14,
+              "delta": 42.14
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-javascript.builtins.Math.sumPrecise",
+          "changes": {
+            "usage": {
+              "old": 10.92,
+              "new": 53.05,
+              "delta": 42.129999999999995
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-03-13T03:14:29.778Z",
+      "previousCommit": "de038e1c344d948b1a38029dd2b595d3fae5cfe2",
+      "currentCommit": "pending",
+      "totalChanges": 454,
+      "changes": [
+        {
+          "featureId": "aac",
+          "changes": {
+            "usage": {
+              "old": 96.22,
+              "new": 97.51,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "abortcontroller",
+          "changes": {
+            "usage": {
+              "old": 95.77,
+              "new": 97.06,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "addeventlistener",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "apng",
+          "changes": {
+            "usage": {
+              "old": 95.94,
+              "new": 97.24,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "array-find",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "array-find-index",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "array-flat",
+          "changes": {
+            "usage": {
+              "old": 95.76,
+              "new": 97.05,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "array-includes",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "arrow-functions",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "async-clipboard",
+          "changes": {
+            "usage": {
+              "old": 95.68,
+              "new": 96.97,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "async-functions",
+          "changes": {
+            "usage": {
+              "old": 95.89,
+              "new": 97.19,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "atob-btoa",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "audio",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "audio-api",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.22,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "autofocus",
+          "changes": {
+            "usage": {
+              "old": 82.79,
+              "new": 84.08,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "auxclick",
+          "changes": {
+            "usage": {
+              "old": 93.26,
+              "new": 94.56,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "av1",
+          "changes": {
+            "usage": {
+              "old": 94.28,
+              "new": 95.58,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "avif",
+          "changes": {
+            "usage": {
+              "old": 94.9,
+              "new": 96.19,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "background-attachment",
+          "changes": {
+            "usage": {
+              "old": 96.06,
+              "new": 97.36,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "background-clip-text",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.22,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "background-img-opts",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "background-position-x-y",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "background-repeat-round-space",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "beacon",
+          "changes": {
+            "usage": {
+              "old": 95.79,
+              "new": 97.08,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "beforeafterprint",
+          "changes": {
+            "usage": {
+              "old": 93.79,
+              "new": 95.08,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "bigint",
+          "changes": {
+            "usage": {
+              "old": 95.65,
+              "new": 96.94,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "blobbuilder",
+          "changes": {
+            "usage": {
+              "old": 96.22,
+              "new": 97.52,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "bloburls",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "border-image",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "border-radius",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "broadcastchannel",
+          "changes": {
+            "usage": {
+              "old": 95.57,
+              "new": 96.87,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "brotli",
+          "changes": {
+            "usage": {
+              "old": 95.89,
+              "new": 97.19,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "calc",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "canvas",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "canvas-blending",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "canvas-text",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "ch-unit",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "chacha20-poly1305",
+          "changes": {
+            "usage": {
+              "old": 95.9,
+              "new": 97.2,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "channel-messaging",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "childnode-remove",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "classlist",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "clipboard",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "colr",
+          "changes": {
+            "usage": {
+              "old": 96,
+              "new": 97.3,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "comparedocumentposition",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "console-basic",
+          "changes": {
+            "usage": {
+              "old": 95.69,
+              "new": 96.99,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "console-time",
+          "changes": {
+            "usage": {
+              "old": 96.23,
+              "new": 97.52,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "const",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "constraint-validation",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "contenteditable",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "contentsecuritypolicy",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "contentsecuritypolicy2",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "cookie-store-api",
+          "changes": {
+            "usage": {
+              "old": 92.58,
+              "new": 93.88,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "cors",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "createimagebitmap",
+          "changes": {
+            "usage": {
+              "old": 95.6,
+              "new": 96.9,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "cross-document-view-transitions",
+          "changes": {
+            "usage": {
+              "old": 83.66,
+              "new": 84.95,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "cryptography",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.5,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-all",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-animation",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-any-link",
+          "changes": {
+            "usage": {
+              "old": 95.95,
+              "new": 97.25,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-appearance",
+          "changes": {
+            "usage": {
+              "old": 95.96,
+              "new": 97.25,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-at-counter-style",
+          "changes": {
+            "usage": {
+              "old": 94.18,
+              "new": 95.48,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-backdrop-filter",
+          "changes": {
+            "usage": {
+              "old": 95.75,
+              "new": 97.04,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-background-offsets",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "css-backgroundblendmode",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-boxdecorationbreak",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-boxshadow",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-caret-color",
+          "changes": {
+            "usage": {
+              "old": 95.77,
+              "new": 97.06,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-cascade-layers",
+          "changes": {
+            "usage": {
+              "old": 95.3,
+              "new": 96.6,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-cascade-scope",
+          "changes": {
+            "usage": {
+              "old": 87.32,
+              "new": 88.62,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "css-case-insensitive",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.21,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-clip-path",
+          "changes": {
+            "usage": {
+              "old": 95.95,
+              "new": 97.25,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-color-adjust",
+          "changes": {
+            "usage": {
+              "old": 50.86,
+              "new": 52.15,
+              "delta": 1.2899999999999991
+            }
+          }
+        },
+        {
+          "featureId": "css-color-function",
+          "changes": {
+            "usage": {
+              "old": 91.97,
+              "new": 93.27,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-conic-gradients",
+          "changes": {
+            "usage": {
+              "old": 95.75,
+              "new": 97.05,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-container-queries",
+          "changes": {
+            "usage": {
+              "old": 93.68,
+              "new": 94.97,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-container-queries-style",
+          "changes": {
+            "usage": {
+              "old": 87.37,
+              "new": 88.66,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-container-query-units",
+          "changes": {
+            "usage": {
+              "old": 93.68,
+              "new": 94.97,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-containment",
+          "changes": {
+            "usage": {
+              "old": 95.56,
+              "new": 96.86,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-content-visibility",
+          "changes": {
+            "usage": {
+              "old": 93.14,
+              "new": 94.43,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-counters",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-crisp-edges",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-cross-fade",
+          "changes": {
+            "usage": {
+              "old": 93.73,
+              "new": 95.03,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-default-pseudo",
+          "changes": {
+            "usage": {
+              "old": 95.95,
+              "new": 97.24,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-dir-pseudo",
+          "changes": {
+            "usage": {
+              "old": 88.42,
+              "new": 89.72,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-display-contents",
+          "changes": {
+            "usage": {
+              "old": 95.77,
+              "new": 97.07,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-env-function",
+          "changes": {
+            "usage": {
+              "old": 95.88,
+              "new": 97.18,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "css-featurequeries",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-filters",
+          "changes": {
+            "usage": {
+              "old": 95.95,
+              "new": 97.25,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-first-letter",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-first-line",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-fixed",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "css-focus-visible",
+          "changes": {
+            "usage": {
+              "old": 94.87,
+              "new": 96.16,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-focus-within",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.2,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-font-palette",
+          "changes": {
+            "usage": {
+              "old": 94.74,
+              "new": 96.03,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-font-rendering-controls",
+          "changes": {
+            "usage": {
+              "old": 95.77,
+              "new": 97.06,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-font-stretch",
+          "changes": {
+            "usage": {
+              "old": 96.22,
+              "new": 97.52,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-gencontent",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-gradients",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "css-grid",
+          "changes": {
+            "usage": {
+              "old": 96.2,
+              "new": 97.49,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-has",
+          "changes": {
+            "usage": {
+              "old": 93.94,
+              "new": 95.23,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-hyphens",
+          "changes": {
+            "usage": {
+              "old": 96.22,
+              "new": 97.51,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-image-orientation",
+          "changes": {
+            "usage": {
+              "old": 95.74,
+              "new": 97.03,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-image-set",
+          "changes": {
+            "usage": {
+              "old": 95.9,
+              "new": 97.2,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-in-out-of-range",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-indeterminate-pseudo",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-initial-letter",
+          "changes": {
+            "usage": {
+              "old": 90.08,
+              "new": 91.38,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-initial-value",
+          "changes": {
+            "usage": {
+              "old": 95.95,
+              "new": 97.25,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-lch-lab",
+          "changes": {
+            "usage": {
+              "old": 91.66,
+              "new": 92.96,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-letter-spacing",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-line-clamp",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.21,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-logical-props",
+          "changes": {
+            "usage": {
+              "old": 95.95,
+              "new": 97.25,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-marker-pseudo",
+          "changes": {
+            "usage": {
+              "old": 95.59,
+              "new": 96.88,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-masks",
+          "changes": {
+            "usage": {
+              "old": 95.95,
+              "new": 97.25,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-matches-pseudo",
+          "changes": {
+            "usage": {
+              "old": 95.96,
+              "new": 97.25,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-math-functions",
+          "changes": {
+            "usage": {
+              "old": 95.62,
+              "new": 96.92,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-media-interaction",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.2,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-media-range-syntax",
+          "changes": {
+            "usage": {
+              "old": 93.75,
+              "new": 95.05,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-media-resolution",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-mediaqueries",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-mixblendmode",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-motion-paths",
+          "changes": {
+            "usage": {
+              "old": 95.16,
+              "new": 96.46,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-namespaces",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-nesting",
+          "changes": {
+            "usage": {
+              "old": 90.53,
+              "new": 91.83,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-not-sel-list",
+          "changes": {
+            "usage": {
+              "old": 95.7,
+              "new": 96.99,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-nth-child-of",
+          "changes": {
+            "usage": {
+              "old": 91.97,
+              "new": 93.27,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-opacity",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-optional-pseudo",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-overflow",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-overscroll-behavior",
+          "changes": {
+            "usage": {
+              "old": 95.44,
+              "new": 96.74,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-page-break",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.55,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-paged-media",
+          "changes": {
+            "usage": {
+              "old": 93.43,
+              "new": 94.73,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-placeholder",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-placeholder-shown",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-read-only-write",
+          "changes": {
+            "usage": {
+              "old": 95.95,
+              "new": 97.25,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-rebeccapurple",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.5,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-reflections",
+          "changes": {
+            "usage": {
+              "old": 93.73,
+              "new": 95.03,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-relative-colors",
+          "changes": {
+            "usage": {
+              "old": 88.28,
+              "new": 89.57,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-repeating-gradients",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-resize",
+          "changes": {
+            "usage": {
+              "old": 82.49,
+              "new": 83.79,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "css-revert-value",
+          "changes": {
+            "usage": {
+              "old": 95.72,
+              "new": 97.02,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-rrggbbaa",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.2,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-scroll-behavior",
+          "changes": {
+            "usage": {
+              "old": 95.57,
+              "new": 96.87,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "css-scrollbar",
+          "changes": {
+            "usage": {
+              "old": 90.53,
+              "new": 91.83,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-sel2",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-sel3",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-selection",
+          "changes": {
+            "usage": {
+              "old": 82.79,
+              "new": 84.08,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-shapes",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.2,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-snappoints",
+          "changes": {
+            "usage": {
+              "old": 96.2,
+              "new": 97.5,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-sticky",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.21,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-subgrid",
+          "changes": {
+            "usage": {
+              "old": 88.96,
+              "new": 90.25,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-supports-api",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-table",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-text-align-last",
+          "changes": {
+            "usage": {
+              "old": 95.46,
+              "new": 96.76,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "css-text-box-trim",
+          "changes": {
+            "usage": {
+              "old": 79.88,
+              "new": 81.18,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "css-text-indent",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "css-text-orientation",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-text-wrap-balance",
+          "changes": {
+            "usage": {
+              "old": 88.37,
+              "new": 89.66,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-textshadow",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-transitions",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css-unset-value",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-variables",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.21,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css-widows-orphans",
+          "changes": {
+            "usage": {
+              "old": 94.03,
+              "new": 95.32,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "css-writing-mode",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "css-zoom",
+          "changes": {
+            "usage": {
+              "old": 96.05,
+              "new": 97.35,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css3-boxsizing",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css3-colors",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css3-cursors",
+          "changes": {
+            "usage": {
+              "old": 80.37,
+              "new": 81.67,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "css3-cursors-grab",
+          "changes": {
+            "usage": {
+              "old": 80.08,
+              "new": 81.37,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css3-cursors-newer",
+          "changes": {
+            "usage": {
+              "old": 80.08,
+              "new": 81.37,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "css3-tabsize",
+          "changes": {
+            "usage": {
+              "old": 95.95,
+              "new": 97.24,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "currentcolor",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "custom-elementsv1",
+          "changes": {
+            "usage": {
+              "old": 95.9,
+              "new": 97.19,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "customevent",
+          "changes": {
+            "usage": {
+              "old": 96.22,
+              "new": 97.52,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "datalist",
+          "changes": {
+            "usage": {
+              "old": 95.78,
+              "new": 97.07,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "dataset",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "datauri",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "date-tolocaledatestring",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "declarative-shadow-dom",
+          "changes": {
+            "usage": {
+              "old": 94.59,
+              "new": 95.88,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "details",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.22,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "devicepixelratio",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "dialog",
+          "changes": {
+            "usage": {
+              "old": 95.57,
+              "new": 96.86,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "dispatchevent",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "dnssec",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "document-currentscript",
+          "changes": {
+            "usage": {
+              "old": 95.95,
+              "new": 97.25,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "document-evaluate-xpath",
+          "changes": {
+            "usage": {
+              "old": 95.95,
+              "new": 97.25,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "document-execcommand",
+          "changes": {
+            "usage": {
+              "old": 96.23,
+              "new": 97.52,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "document-scrollingelement",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "documenthead",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "dom-manip-convenience",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.2,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "dom-range",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "domcontentloaded",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "dommatrix",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "download",
+          "changes": {
+            "usage": {
+              "old": 95.72,
+              "new": 97.01,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "dragndrop",
+          "changes": {
+            "usage": {
+              "old": 93.57,
+              "new": 94.86,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "element-closest",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "element-from-point",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "element-scroll-methods",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.2,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "eme",
+          "changes": {
+            "usage": {
+              "old": 96.08,
+              "new": 97.37,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "es5",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "es6",
+          "changes": {
+            "usage": {
+              "old": 96.23,
+              "new": 97.52,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "es6-class",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.21,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "es6-generators",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "es6-module",
+          "changes": {
+            "usage": {
+              "old": 95.9,
+              "new": 97.19,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "es6-module-dynamic-import",
+          "changes": {
+            "usage": {
+              "old": 95.89,
+              "new": 97.18,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "es6-number",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "es6-string-includes",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "eventsource",
+          "changes": {
+            "usage": {
+              "old": 95.93,
+              "new": 97.23,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "feature-policy",
+          "changes": {
+            "usage": {
+              "old": 95.77,
+              "new": 97.06,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "fetch",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "fieldset-disabled",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "fileapi",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "filereader",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "filereadersync",
+          "changes": {
+            "usage": {
+              "old": 96.23,
+              "new": 97.52,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "flac",
+          "changes": {
+            "usage": {
+              "old": 95.9,
+              "new": 97.2,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "flexbox",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "flexbox-gap",
+          "changes": {
+            "usage": {
+              "old": 95.57,
+              "new": 96.87,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "flow-root",
+          "changes": {
+            "usage": {
+              "old": 95.7,
+              "new": 97,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "focusin-focusout-events",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "font-family-system-ui",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.21,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "font-feature",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "font-kerning",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "font-loading",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "font-size-adjust",
+          "changes": {
+            "usage": {
+              "old": 84.85,
+              "new": 86.15,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "font-smooth",
+          "changes": {
+            "usage": {
+              "old": 36.32,
+              "new": 37.61,
+              "delta": 1.2899999999999991
+            }
+          }
+        },
+        {
+          "featureId": "font-unicode-range",
+          "changes": {
+            "usage": {
+              "old": 96.22,
+              "new": 97.51,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "font-variant-alternates",
+          "changes": {
+            "usage": {
+              "old": 91.99,
+              "new": 93.28,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "font-variant-numeric",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.2,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "fontface",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "form-attribute",
+          "changes": {
+            "usage": {
+              "old": 95.95,
+              "new": 97.25,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "form-submit-attributes",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "form-validation",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "fullscreen",
+          "changes": {
+            "usage": {
+              "old": 95.94,
+              "new": 97.23,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "gamepad",
+          "changes": {
+            "usage": {
+              "old": 95.77,
+              "new": 97.06,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "geolocation",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "getboundingclientrect",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "getcomputedstyle",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "getelementsbyclassname",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "getrandomvalues",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "hardwareconcurrency",
+          "changes": {
+            "usage": {
+              "old": 95.59,
+              "new": 96.89,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "hashchange",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "hevc",
+          "changes": {
+            "usage": {
+              "old": 93.23,
+              "new": 94.52,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "hidden",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "high-resolution-time",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "history",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "html5semantic",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "http2",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.5,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "http3",
+          "changes": {
+            "usage": {
+              "old": 93.38,
+              "new": 94.67,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "iframe-sandbox",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "iframe-srcdoc",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.22,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "img-naturalwidth-naturalheight",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "import-maps",
+          "changes": {
+            "usage": {
+              "old": 94.74,
+              "new": 96.03,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "indeterminate-checkbox",
+          "changes": {
+            "usage": {
+              "old": 96.11,
+              "new": 97.41,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "indexeddb",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "indexeddb2",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "inline-block",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "innertext",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "input-autocomplete-onoff",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "input-color",
+          "changes": {
+            "usage": {
+              "old": 95.78,
+              "new": 97.08,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "input-datetime",
+          "changes": {
+            "usage": {
+              "old": 95.89,
+              "new": 97.18,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "input-email-tel-url",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "input-event",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "input-file-accept",
+          "changes": {
+            "usage": {
+              "old": 94.44,
+              "new": 95.74,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "input-file-directory",
+          "changes": {
+            "usage": {
+              "old": 90.43,
+              "new": 91.72,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "input-file-multiple",
+          "changes": {
+            "usage": {
+              "old": 95.54,
+              "new": 96.84,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "input-inputmode",
+          "changes": {
+            "usage": {
+              "old": 95.76,
+              "new": 97.05,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "input-minlength",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "input-number",
+          "changes": {
+            "usage": {
+              "old": 96.22,
+              "new": 97.51,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "input-pattern",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "input-placeholder",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "input-range",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "input-search",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "input-selection",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "insert-adjacent",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "insertadjacenthtml",
+          "changes": {
+            "usage": {
+              "old": 96.23,
+              "new": 97.52,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "internationalization",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "intersectionobserver",
+          "changes": {
+            "usage": {
+              "old": 95.76,
+              "new": 97.06,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "intl-pluralrules",
+          "changes": {
+            "usage": {
+              "old": 95.7,
+              "new": 97,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "intrinsic-width",
+          "changes": {
+            "usage": {
+              "old": 95.95,
+              "new": 97.25,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "js-regexp-lookbehind",
+          "changes": {
+            "usage": {
+              "old": 94.94,
+              "new": 96.24,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "json",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "justify-content-space-evenly",
+          "changes": {
+            "usage": {
+              "old": 95.9,
+              "new": 97.2,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "kerning-pairs-ligatures",
+          "changes": {
+            "usage": {
+              "old": 95.95,
+              "new": 97.25,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "keyboardevent-charcode",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.21,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "keyboardevent-code",
+          "changes": {
+            "usage": {
+              "old": 50.11,
+              "new": 51.41,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "keyboardevent-getmodifierstate",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "keyboardevent-key",
+          "changes": {
+            "usage": {
+              "old": 96.2,
+              "new": 97.49,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "keyboardevent-location",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "keyboardevent-which",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.55,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "let",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.5,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "link-icon-png",
+          "changes": {
+            "usage": {
+              "old": 96.11,
+              "new": 97.41,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "link-rel-dns-prefetch",
+          "changes": {
+            "usage": {
+              "old": 90.85,
+              "new": 92.14,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "link-rel-modulepreload",
+          "changes": {
+            "usage": {
+              "old": 94.37,
+              "new": 95.67,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "link-rel-preconnect",
+          "changes": {
+            "usage": {
+              "old": 95.78,
+              "new": 97.08,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "link-rel-preload",
+          "changes": {
+            "usage": {
+              "old": 95.76,
+              "new": 97.06,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "loading-lazy-attr",
+          "changes": {
+            "usage": {
+              "old": 95.54,
+              "new": 96.84,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "localecompare",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.55,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "matchesselector",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "matchmedia",
+          "changes": {
+            "usage": {
+              "old": 96.23,
+              "new": 97.52,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "mathml",
+          "changes": {
+            "usage": {
+              "old": 93.31,
+              "new": 94.61,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "maxlength",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "media-fragments",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "mediacapture-fromelement",
+          "changes": {
+            "usage": {
+              "old": 82.45,
+              "new": 83.75,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "mediarecorder",
+          "changes": {
+            "usage": {
+              "old": 95.16,
+              "new": 96.46,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "mediasource",
+          "changes": {
+            "usage": {
+              "old": 96.01,
+              "new": 97.31,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "meter",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "minmaxwh",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "mp3",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "mpeg4",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "multibackgrounds",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "multicolumn",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "mutationobserver",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "namevalue-storage",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "nav-timing",
+          "changes": {
+            "usage": {
+              "old": 96.23,
+              "new": 97.52,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "notifications",
+          "changes": {
+            "usage": {
+              "old": 92.96,
+              "new": 94.25,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "object-entries",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.2,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "object-fit",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "object-values",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.2,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "offscreencanvas",
+          "changes": {
+            "usage": {
+              "old": 95.05,
+              "new": 96.34,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "ogg-vorbis",
+          "changes": {
+            "usage": {
+              "old": 94.67,
+              "new": 95.96,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "ol-reversed",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.22,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "once-event-listener",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.2,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "online-status",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "opus",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.2,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "outline",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "pad-start-end",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.2,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "page-transition-events",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "pagevisibility",
+          "changes": {
+            "usage": {
+              "old": 96.23,
+              "new": 97.52,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "passive-event-listener",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.2,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "passkeys",
+          "changes": {
+            "usage": {
+              "old": 92.43,
+              "new": 93.72,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "path2d",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.21,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "payment-request",
+          "changes": {
+            "usage": {
+              "old": 94.73,
+              "new": 96.02,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "pdf-viewer",
+          "changes": {
+            "usage": {
+              "old": 50.19,
+              "new": 51.49,
+              "delta": 1.3000000000000043
+            }
+          }
+        },
+        {
+          "featureId": "permissions-api",
+          "changes": {
+            "usage": {
+              "old": 95.02,
+              "new": 96.32,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "picture",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "picture-in-picture",
+          "changes": {
+            "usage": {
+              "old": 92.97,
+              "new": 94.26,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "ping",
+          "changes": {
+            "usage": {
+              "old": 93.73,
+              "new": 95.03,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "png-alpha",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "pointer",
+          "changes": {
+            "usage": {
+              "old": 96,
+              "new": 97.29,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "pointer-events",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "pointerlock",
+          "changes": {
+            "usage": {
+              "old": 36.65,
+              "new": 37.95,
+              "delta": 1.3000000000000043
+            }
+          }
+        },
+        {
+          "featureId": "prefers-color-scheme",
+          "changes": {
+            "usage": {
+              "old": 95.68,
+              "new": 96.97,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "prefers-reduced-motion",
+          "changes": {
+            "usage": {
+              "old": 95.87,
+              "new": 97.17,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "progress",
+          "changes": {
+            "usage": {
+              "old": 96.23,
+              "new": 97.52,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "promise-finally",
+          "changes": {
+            "usage": {
+              "old": 95.77,
+              "new": 97.06,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "promises",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "proxy",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.21,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "push-api",
+          "changes": {
+            "usage": {
+              "old": 94.85,
+              "new": 96.15,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "queryselector",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "readonly-attr",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "referrer-policy",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "rel-noopener",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.21,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "rel-noreferrer",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "rellist",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.2,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "rem",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "requestanimationframe",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "resizeobserver",
+          "changes": {
+            "usage": {
+              "old": 95.68,
+              "new": 96.97,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "resource-timing",
+          "changes": {
+            "usage": {
+              "old": 96.2,
+              "new": 97.49,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "rest-parameters",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "rtcpeerconnection",
+          "changes": {
+            "usage": {
+              "old": 95.9,
+              "new": 97.2,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "ruby",
+          "changes": {
+            "usage": {
+              "old": 96.22,
+              "new": 97.51,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "same-site-cookie-attribute",
+          "changes": {
+            "usage": {
+              "old": 95.38,
+              "new": 96.68,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "screen-orientation",
+          "changes": {
+            "usage": {
+              "old": 95.1,
+              "new": 96.4,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "script-async",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "script-defer",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "scrollintoview",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.55,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "scrollintoviewifneeded",
+          "changes": {
+            "usage": {
+              "old": 93.73,
+              "new": 95.03,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "selection-api",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "server-timing",
+          "changes": {
+            "usage": {
+              "old": 93.06,
+              "new": 94.35,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "serviceworkers",
+          "changes": {
+            "usage": {
+              "old": 95.79,
+              "new": 97.08,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "shadowdomv1",
+          "changes": {
+            "usage": {
+              "old": 95.9,
+              "new": 97.19,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "sharedarraybuffer",
+          "changes": {
+            "usage": {
+              "old": 95.29,
+              "new": 96.59,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "sharedworkers",
+          "changes": {
+            "usage": {
+              "old": 49.37,
+              "new": 50.66,
+              "delta": 1.2899999999999991
+            }
+          }
+        },
+        {
+          "featureId": "sni",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "speech-synthesis",
+          "changes": {
+            "usage": {
+              "old": 94.45,
+              "new": 95.75,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "spellcheck-attribute",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "srcset",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "stream",
+          "changes": {
+            "usage": {
+              "old": 95.9,
+              "new": 97.2,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "streams",
+          "changes": {
+            "usage": {
+              "old": 95.9,
+              "new": 97.19,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "stricttransportsecurity",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "subresource-integrity",
+          "changes": {
+            "usage": {
+              "old": 95.79,
+              "new": 97.08,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "svg",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "svg-css",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "svg-filters",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "svg-fragment",
+          "changes": {
+            "usage": {
+              "old": 96.08,
+              "new": 97.37,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "svg-html",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "svg-html5",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "svg-img",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "svg-smil",
+          "changes": {
+            "usage": {
+              "old": 95.95,
+              "new": 97.25,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "tabindex-attr",
+          "changes": {
+            "usage": {
+              "old": 94.02,
+              "new": 95.31,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "template",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "template-literals",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "text-decoration",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.22,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "text-emphasis",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "text-overflow",
+          "changes": {
+            "usage": {
+              "old": 96.23,
+              "new": 97.52,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "text-stroke",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.22,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "textcontent",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "textencoder",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "tls1-2",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "tls1-3",
+          "changes": {
+            "usage": {
+              "old": 95.74,
+              "new": 97.04,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "transforms2d",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "transforms3d",
+          "changes": {
+            "usage": {
+              "old": 96.22,
+              "new": 97.52,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "ttf",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "typedarrays",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "u2f",
+          "changes": {
+            "usage": {
+              "old": 16.22,
+              "new": 17.51,
+              "delta": 1.2900000000000027
+            }
+          }
+        },
+        {
+          "featureId": "unhandledrejection",
+          "changes": {
+            "usage": {
+              "old": 95.77,
+              "new": 97.07,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "upgradeinsecurerequests",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "url",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "url-scroll-to-text-fragment",
+          "changes": {
+            "usage": {
+              "old": 94.23,
+              "new": 95.53,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "urlsearchparams",
+          "changes": {
+            "usage": {
+              "old": 95.91,
+              "new": 97.21,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "use-strict",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "user-select-none",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "user-timing",
+          "changes": {
+            "usage": {
+              "old": 96.2,
+              "new": 97.49,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "variable-fonts",
+          "changes": {
+            "usage": {
+              "old": 95.89,
+              "new": 97.18,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "vector-effect",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.22,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "video",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "view-transitions",
+          "changes": {
+            "usage": {
+              "old": 89.25,
+              "new": 90.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "viewport-unit-variants",
+          "changes": {
+            "usage": {
+              "old": 93.25,
+              "new": 94.55,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "viewport-units",
+          "changes": {
+            "usage": {
+              "old": 96.22,
+              "new": 97.51,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "wai-aria",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "wake-lock",
+          "changes": {
+            "usage": {
+              "old": 94.61,
+              "new": 95.9,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "wasm",
+          "changes": {
+            "usage": {
+              "old": 95.89,
+              "new": 97.19,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "wasm-bigint",
+          "changes": {
+            "usage": {
+              "old": 95.45,
+              "new": 96.75,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "wasm-bulk-memory",
+          "changes": {
+            "usage": {
+              "old": 95.44,
+              "new": 96.73,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "wasm-multi-value",
+          "changes": {
+            "usage": {
+              "old": 95.52,
+              "new": 96.82,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "wasm-mutable-globals",
+          "changes": {
+            "usage": {
+              "old": 95.62,
+              "new": 96.91,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "wasm-nontrapping-fptoint",
+          "changes": {
+            "usage": {
+              "old": 95.44,
+              "new": 96.74,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "wasm-reference-types",
+          "changes": {
+            "usage": {
+              "old": 95.36,
+              "new": 96.65,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "wasm-signext",
+          "changes": {
+            "usage": {
+              "old": 95.48,
+              "new": 96.78,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "wasm-simd",
+          "changes": {
+            "usage": {
+              "old": 94.74,
+              "new": 96.03,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "wasm-threads",
+          "changes": {
+            "usage": {
+              "old": 95.48,
+              "new": 96.78,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "wav",
+          "changes": {
+            "usage": {
+              "old": 95.95,
+              "new": 97.25,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "wbr-element",
+          "changes": {
+            "usage": {
+              "old": 95.95,
+              "new": 97.25,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "web-animation",
+          "changes": {
+            "usage": {
+              "old": 95.7,
+              "new": 97,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "web-share",
+          "changes": {
+            "usage": {
+              "old": 92.9,
+              "new": 94.2,
+              "delta": 1.2999999999999972
+            }
+          }
+        },
+        {
+          "featureId": "webauthn",
+          "changes": {
+            "usage": {
+              "old": 95.68,
+              "new": 96.97,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "webcodecs",
+          "changes": {
+            "usage": {
+              "old": 94.21,
+              "new": 95.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "webgl",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "webgl2",
+          "changes": {
+            "usage": {
+              "old": 95.6,
+              "new": 96.89,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "webkit-user-drag",
+          "changes": {
+            "usage": {
+              "old": 35.23,
+              "new": 36.52,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "webm",
+          "changes": {
+            "usage": {
+              "old": 95.82,
+              "new": 97.11,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "webp",
+          "changes": {
+            "usage": {
+              "old": 95.67,
+              "new": 96.96,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "websockets",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "webvtt",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "webworkers",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "will-change",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "woff",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "woff2",
+          "changes": {
+            "usage": {
+              "old": 95.92,
+              "new": 97.21,
+              "delta": 1.289999999999992
+            }
+          }
+        },
+        {
+          "featureId": "word-break",
+          "changes": {
+            "usage": {
+              "old": 96.21,
+              "new": 97.51,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "wordwrap",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "x-doc-messaging",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "x-frame-options",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "xhr2",
+          "changes": {
+            "usage": {
+              "old": 96.24,
+              "new": 97.54,
+              "delta": 1.3000000000000114
+            }
+          }
+        },
+        {
+          "featureId": "xhtml",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.54,
+              "delta": 1.2900000000000063
+            }
+          }
+        },
+        {
+          "featureId": "xml-serializer",
+          "changes": {
+            "usage": {
+              "old": 96.25,
+              "new": 97.55,
+              "delta": 1.2999999999999972
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-03-12T03:16:05.654Z",
+      "previousCommit": "35f24313f6da7228a0540e5e6b07ed6ca6ad56d1",
+      "currentCommit": "pending",
+      "totalChanges": 1,
+      "changes": [
+        {
+          "featureId": "mdn-javascript.builtins.JSON.isRawJSON",
+          "changes": {
+            "baseline": {
+              "old": false,
+              "new": "low"
+            }
+          }
+        }
+      ]
+    },
     {
       "timestamp": "2026-03-07T03:06:45.452Z",
       "previousCommit": "8696fd0c803f41402e43615769bb6b5d75d34726",
