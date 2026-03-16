@@ -1,6 +1,6 @@
 
 [data-theme="light"] {
-  --clr-primary: hsl(21, 98%, 80%);
+  --clr-primary: hsl(21, 98%, 77%);
   --clr-bg-base: hsl(21, 30%, 95%);
   --clr-bg-raised: hsl(21, 25%, 97%);
   --clr-bg-overlay: hsl(21, 20%, 98%);
@@ -12,6 +12,7 @@
   --clr-shadow-ambient: hsla(21, 40%, 30%, 50%);
   --clr-disabled: hsl(21, 10%, 85%);
   --clr-hover: hsl(21, 96%, 70%);
+    --clr-browser-full-support: hsl(160, 94%, 25%);
   --clr-high-support: hsl(160, 84%, 30%);
   --clr-medium-support: hsl(38, 92%, 38%);
   --clr-low-support: hsl(0, 54%, 55%);
@@ -33,7 +34,7 @@
 }
 
 :root[data-theme="dark"] {
-  --clr-primary: hsl(21, 80%, 70%);
+  --clr-primary: hsl(21, 80%, 60%);
   --clr-text-strong: hsl(21, 21%, 98%);
   --clr-text-weak: hsl(21, 11%, 72%);
   --clr-bg-base: hsl(21, 16%, 10%);
@@ -82,7 +83,7 @@
 :root {
   --transition-hover-quick: all 0.1s ease-in-out; 
   --transition-hover:       all 0.2s ease-in-out;
-
+  --transition-modal:       all 0.4s ease-in-out;
 }
 
 

@@ -196,9 +196,13 @@ function handlePrimaryAction(): void {
   max-height: 95vh;
   display: flex;
   flex-direction: column;
-  transition: var(--transition-hover);
+  transition: var(--transition-modal);
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
   @starting-style {
-      width: 0;
+      filter: blur(3px);
+      transform: translateY(-100px);
   }
 }
 
@@ -358,9 +362,6 @@ section{
   margin-inline-start: -8px;
   cursor: pointer;
   transition: var(--transition-hover);
-  &:hover {
-    scale: 1.3
-  }
 }
 
 #feature-details-popover {

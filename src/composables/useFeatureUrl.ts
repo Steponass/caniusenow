@@ -21,7 +21,7 @@ import type {
 const featureId = ref<string | null>(null);
 
 // Form state
-const triggerType = ref<TriggerType>("browser_support");
+const triggerType = ref<TriggerType>("usage_threshold");
 const browser = ref("chrome");
 const status = ref<"full" | "partial">("full");
 const version = ref("");

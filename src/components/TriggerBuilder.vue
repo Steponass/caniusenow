@@ -145,7 +145,6 @@ function getTriggerDescription(trigger: Trigger): string {
         </div>
       </template>
     </div>
-
     <button @click="handleAddTrigger">+ Add Trigger</button>
 
     <div v-if="triggers.length > 0" class="triggers-list">
@@ -206,6 +205,10 @@ select, input {
 
 option {
   background-color: var(--clr-bg-overlay);
+}
+
+button {
+  max-width: fit-content;
 }
 
 </style>
