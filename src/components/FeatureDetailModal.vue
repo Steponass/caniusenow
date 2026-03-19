@@ -196,14 +196,6 @@ function handlePrimaryAction(): void {
   max-height: 95vh;
   display: flex;
   flex-direction: column;
-  transition: var(--transition-modal);
-  opacity: 1;
-  transform: translateY(0);
-  filter: blur(0);
-  @starting-style {
-      filter: blur(3px);
-      transform: translateY(-100px);
-  }
 }
 
 .modal-header {

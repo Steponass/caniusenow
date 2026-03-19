@@ -3,6 +3,31 @@ import { ref, computed } from 'vue';
 import { supabase } from '@utils/supabase';
 import type { User, Session } from '@/types/auth';
 
+/**
+ * Builds a redirect URL stripped of any hash fragments.
+ * Prevents stale auth tokens from being included in the OAuth redirect,
+ * which causes Supabase to append a second hash fragment (##access_token=...#access_token=...).
+ */
+function getCleanRedirectUrl(): string {
+  const url = new URL(window.location.href);
+  url.hash = '';
+  return url.toString();
+}
+
+/**
+ * Removes auth-related hash fragments from the URL bar
+ * after Supabase has consumed them to establish a session.
+ */
+function clearAuthHashFragment(): void {
+  if (window.location.hash.includes('access_token')) {
+    window.history.replaceState(
+      {},
+      '',
+      window.location.pathname + window.location.search
+    );
+  }
+}
+
 export const useAuthStore = defineStore('auth', () => {
   const user = ref<User | null>(null);
   const session = ref<Session | null>(null);
@@ -24,6 +49,9 @@ export const useAuthStore = defineStore('auth', () => {
       supabase.auth.onAuthStateChange((_event, newSession) => {
         session.value = newSession;
         user.value = newSession?.user ?? null;
+
+        // Clean up hash fragment after Supabase has consumed the tokens
+        clearAuthHashFragment();
       });
     } catch (err) {
       console.error('Error initializing auth:', err);
@@ -36,7 +64,7 @@ export const useAuthStore = defineStore('auth', () => {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'github',
       options: {
-        redirectTo: window.location.href
+        redirectTo: getCleanRedirectUrl()
       }
     });
 
@@ -46,11 +74,11 @@ export const useAuthStore = defineStore('auth', () => {
     }
   }
 
-    async function signInWithGoogle() {
+  async function signInWithGoogle() {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
-        redirectTo: window.location.href
+        redirectTo: getCleanRedirectUrl()
       }
     });
 
@@ -64,7 +92,7 @@ export const useAuthStore = defineStore('auth', () => {
     const { error } = await supabase.auth.signInWithOtp({
       email,
       options: {
-        emailRedirectTo: window.location.href
+        emailRedirectTo: getCleanRedirectUrl()
       }
     });
 
@@ -84,6 +112,15 @@ export const useAuthStore = defineStore('auth', () => {
 
     user.value = null;
     session.value = null;
+
+    // Clean any leftover auth fragments from the URL
+    if (window.location.hash) {
+      window.history.replaceState(
+        {},
+        '',
+        window.location.pathname + window.location.search
+      );
+    }
   }
 
   return {
