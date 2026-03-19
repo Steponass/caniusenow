@@ -1,19 +1,15 @@
 {
-  "id": "mdn-api.DeprecationReportBody",
+  "id": "mdn-api.InterventionReportBody.lineNumber",
   "source": "mdnbcd",
-  "name": "DeprecationReportBody",
+  "name": "InterventionReportBody.lineNumber",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/DeprecationReportBody/toJSON",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/InterventionReportBody/lineNumber",
   "links": [],
   "support": {
     "chr": {
       "current": "y",
       "firstFull": "69"
-    },
-    "ffx": {
-      "current": "a",
-      "firstPartial": "149"
     },
     "edg": {
       "current": "y",
@@ -22,6 +18,9 @@
     "opr": {
       "current": "y",
       "firstFull": "56"
+    },
+    "ffx": {
+      "current": "n"
     },
     "saf": {
       "current": "n"
@@ -42,15 +41,14 @@
       "firstFull": "69"
     },
     "an_ff": {
-      "current": "a",
-      "firstPartial": "149"
+      "current": "n"
     }
   },
   "usage": {
     "global": {
       "full": 75.07,
-      "partial": 0.34,
-      "total": 75.4
+      "partial": 0,
+      "total": 75.07
     },
     "byBrowser": {
       "desktop": {
@@ -59,8 +57,7 @@
         "opr": 1
       },
       "mobile": {
-        "an_chr": 42.14,
-        "an_ff": 0.34
+        "an_chr": 42.14
       }
     },
     "type": "estimated"
@@ -69,25 +66,9 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "api.DeprecationReportBody"
+      "id": "api.InterventionReportBody.lineNumber"
     },
-    "supplementary": [
-      {
-        "source": "mdnbcd",
-        "id": "api.DeprecationReportBody.id",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.DeprecationReportBody.message",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.DeprecationReportBody.toJSON",
-        "matched": "via-webfeatures"
-      }
-    ]
+    "supplementary": []
   },
-  "caniuseUrl": "https://caniuse.com/?search=DeprecationReportBody"
+  "caniuseUrl": "https://caniuse.com/?search=InterventionReportBody.lineNumber"
 }

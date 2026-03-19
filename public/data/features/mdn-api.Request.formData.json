@@ -1,0 +1,95 @@
+{
+  "id": "mdn-api.Request.formData",
+  "source": "mdnbcd",
+  "name": "Request.formData",
+  "description": "",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Response/formData",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "a",
+      "firstPartial": "60"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "39"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "14.1",
+      "firstPartial": "11.1"
+    },
+    "edg": {
+      "current": "a",
+      "firstPartial": "79"
+    },
+    "opr": {
+      "current": "a",
+      "firstPartial": "47"
+    },
+    "ie": {
+      "current": "a",
+      "firstPartial": "79"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "14.1",
+      "firstPartial": "11.1"
+    },
+    "an_chr": {
+      "current": "a",
+      "firstPartial": "60"
+    },
+    "smsg": {
+      "current": "a",
+      "firstPartial": "60"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "39"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 17.78,
+      "partial": 75.12,
+      "total": 92.9
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 26.84,
+        "ffx": 1.85,
+        "saf": 2.38,
+        "edg": 5.1,
+        "opr": 1
+      },
+      "mobile": {
+        "ios_saf": 13.26,
+        "an_chr": 42.14,
+        "an_ff": 0.34
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "api.Request.formData"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Response.formData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "fetch-formdata",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Request.formData"
+}
