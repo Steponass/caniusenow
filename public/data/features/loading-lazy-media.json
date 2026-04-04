@@ -4,6 +4,7 @@
   "name": "Lazy loading via attribute for video & audio",
   "description": "The `loading` attribute on video & audio elements gives authors control over when the browser should start loading the media resource, allowing deferred loading until the element is near the viewport.",
   "category": "HTML5",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loading",
   "links": [
     {
       "url": "https://github.com/whatwg/html/pull/11980",
@@ -96,11 +97,6 @@
       {
         "source": "mdnbcd",
         "id": "html.elements.audio.loading",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "html.elements.video.autoplay.loading",
         "matched": "via-webfeatures"
       },
       {

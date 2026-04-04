@@ -1,8 +1,8 @@
 {
-  "id": "mdn-api.Request.targetAddressSpace",
+  "id": "mdn-api.Request.Request.init_targetAddressSpace_parameter",
   "source": "mdnbcd",
-  "name": "Request.targetAddressSpace",
-  "description": "",
+  "name": "`init.targetAddressSpace` parameter",
+  "description": "`init.targetAddressSpace` parameter",
   "category": "JS API",
   "links": [],
   "support": {
@@ -64,15 +64,15 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "api.Request.targetAddressSpace"
+      "id": "api.Request.Request.init_targetAddressSpace_parameter"
     },
     "supplementary": [
       {
-        "source": "webfeatures",
-        "id": "local-network-access",
-        "matched": "exact"
+        "source": "mdnbcd",
+        "id": "api.fetch.init_targetAddressSpace_parameter",
+        "matched": "via-webfeatures"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=Request.targetAddressSpace"
+  "caniuseUrl": "https://caniuse.com/?search=%60init.targetAddressSpace%60%20parameter"
 }

@@ -10038,13 +10038,13 @@
     "category": "JS API",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 9.64,
+    "usage": 9.98,
     "baseline": false
   },
   {
@@ -13070,6 +13070,22 @@
     },
     "usage": 93.1,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.Element.attachShadow.options_referenceTarget_parameter",
+    "name": "`options.referenceTarget` parameter",
+    "description": "`options.referenceTarget` parameter",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
   },
   {
     "id": "mdn-api.Element.auxclick_event",
@@ -16886,13 +16902,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 68.51,
+    "usage": 68.85,
     "baseline": false
   },
   {
@@ -18077,6 +18093,22 @@
       "an_chr": "y"
     },
     "usage": 95.52,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLTemplateElement.shadowRootReferenceTarget",
+    "name": "HTMLTemplateElement.shadowRootReferenceTarget",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
     "baseline": false
   },
   {
@@ -22007,9 +22039,9 @@
     "support": {
       "chr": "y",
       "ffx": "n",
-      "saf": "n",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "y"
     },
     "usage": 49.3,
@@ -22749,6 +22781,54 @@
       "an_chr": "y"
     },
     "usage": 75.07,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Permissions.permission_local-network",
+    "name": "`local-network` permission",
+    "description": "`local-network` permission",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 49.3,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Permissions.permission_local-network-access",
+    "name": "`local-network-access` permission",
+    "description": "`local-network-access` permission",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 63.88,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Permissions.permission_loopback-network",
+    "name": "`loopback-network` permission",
+    "description": "`loopback-network` permission",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 49.3,
     "baseline": false
   },
   {
@@ -24672,6 +24752,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.Request.Request.init_targetAddressSpace_parameter",
+    "name": "`init.targetAddressSpace` parameter",
+    "description": "`init.targetAddressSpace` parameter",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 63.88,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.Request.body",
     "name": "Request.body",
     "description": "",
@@ -24732,7 +24828,7 @@
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 68.86,
+    "usage": 63.88,
     "baseline": false
   },
   {
@@ -25863,9 +25959,9 @@
     "support": {
       "chr": "y",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "y"
     },
     "usage": 66.92,
@@ -30327,12 +30423,12 @@
     "support": {
       "chr": "n",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "n",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 0.34,
+    "usage": 16.18,
     "baseline": false
   },
   {
@@ -45644,7 +45740,7 @@
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 88.09,
+    "usage": 72.24,
     "baseline": false
   },
   {
@@ -48448,6 +48544,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-html.elements.video.loading",
+    "name": "`<video>`",
+    "description": "",
+    "category": "HTML5",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
     "id": "mdn-html.elements.xmp",
     "name": "`<xmp>`",
     "description": "",
@@ -49389,6 +49501,54 @@
       "an_chr": "y"
     },
     "usage": 72.11,
+    "baseline": false
+  },
+  {
+    "id": "mdn-http.headers.Permissions-Policy.local-network",
+    "name": "`local-network`",
+    "description": "",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 49.3,
+    "baseline": false
+  },
+  {
+    "id": "mdn-http.headers.Permissions-Policy.local-network-access",
+    "name": "`local-network-access`",
+    "description": "",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 63.88,
+    "baseline": false
+  },
+  {
+    "id": "mdn-http.headers.Permissions-Policy.loopback-network",
+    "name": "`loopback-network`",
+    "description": "",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 49.3,
     "baseline": false
   },
   {

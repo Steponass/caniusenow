@@ -1,9 +1,9 @@
 {
-  "id": "mdn-api.Request.targetAddressSpace",
+  "id": "mdn-http.headers.Permissions-Policy.local-network-access",
   "source": "mdnbcd",
-  "name": "Request.targetAddressSpace",
+  "name": "`local-network-access`",
   "description": "",
-  "category": "JS API",
+  "category": "Other",
   "links": [],
   "support": {
     "chr": {
@@ -64,15 +64,9 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "api.Request.targetAddressSpace"
+      "id": "http.headers.Permissions-Policy.local-network-access"
     },
-    "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "local-network-access",
-        "matched": "exact"
-      }
-    ]
+    "supplementary": []
   },
-  "caniuseUrl": "https://caniuse.com/?search=Request.targetAddressSpace"
+  "caniuseUrl": "https://caniuse.com/?search=%60local-network-access%60"
 }

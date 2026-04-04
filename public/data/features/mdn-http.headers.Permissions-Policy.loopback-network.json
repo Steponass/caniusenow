@@ -1,18 +1,18 @@
 {
-  "id": "mdn-api.Request.targetAddressSpace",
+  "id": "mdn-http.headers.Permissions-Policy.loopback-network",
   "source": "mdnbcd",
-  "name": "Request.targetAddressSpace",
+  "name": "`loopback-network`",
   "description": "",
-  "category": "JS API",
+  "category": "Other",
   "links": [],
   "support": {
     "chr": {
       "current": "y",
-      "firstFull": "142"
+      "firstFull": "145"
     },
     "edg": {
       "current": "y",
-      "firstFull": "142"
+      "firstFull": "145"
     },
     "ffx": {
       "current": "n"
@@ -22,22 +22,22 @@
     },
     "opr": {
       "current": "y",
-      "firstFull": "142"
+      "firstFull": "145"
     },
     "ie": {
       "current": "y",
-      "firstFull": "142"
+      "firstFull": "145"
     },
     "ios_saf": {
       "current": "n"
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "142"
+      "firstFull": "145"
     },
     "smsg": {
       "current": "y",
-      "firstFull": "142"
+      "firstFull": "145"
     },
     "an_ff": {
       "current": "n"
@@ -45,14 +45,14 @@
   },
   "usage": {
     "global": {
-      "full": 63.88,
+      "full": 49.3,
       "partial": 0,
-      "total": 63.88
+      "total": 49.3
     },
     "byBrowser": {
       "desktop": {
-        "chr": 16.89,
-        "edg": 4.86
+        "chr": 5.27,
+        "edg": 1.89
       },
       "mobile": {
         "an_chr": 42.14
@@ -64,15 +64,9 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "api.Request.targetAddressSpace"
+      "id": "http.headers.Permissions-Policy.loopback-network"
     },
-    "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "local-network-access",
-        "matched": "exact"
-      }
-    ]
+    "supplementary": []
   },
-  "caniuseUrl": "https://caniuse.com/?search=Request.targetAddressSpace"
+  "caniuseUrl": "https://caniuse.com/?search=%60loopback-network%60"
 }
