@@ -1,6 +1,85 @@
 {
-  "lastUpdated": "2026-04-05T03:28:39.146Z",
+  "lastUpdated": "2026-04-07T03:26:38.052Z",
   "entries": [
+    {
+      "timestamp": "2026-04-07T03:26:38.052Z",
+      "previousCommit": "e8c4b62e0dc9817fdf8d7cb82f9a17e24f554b7f",
+      "currentCommit": "pending",
+      "totalChanges": 3,
+      "changes": [
+        {
+          "featureId": "deviceorientation",
+          "changes": {
+            "usage": {
+              "old": 94.71,
+              "new": 97.16,
+              "delta": 2.450000000000003
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "ffx",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "saf",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "ios_saf",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "devicepixelratio",
+          "changes": {
+            "support": [
+              {
+                "browser": "saf",
+                "old": "y",
+                "new": "n"
+              },
+              {
+                "browser": "ios_saf",
+                "old": "y",
+                "new": "n"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "trusted-types",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        }
+      ]
+    },
     {
       "timestamp": "2026-04-05T03:28:39.146Z",
       "previousCommit": "b7e228de2cc0b7c115b1868a0a9fb40029867a94",
