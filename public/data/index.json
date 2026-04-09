@@ -13040,6 +13040,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.Element.animate.options_iterationComposite_parameter",
+    "name": "`options.iterationComposite` parameter",
+    "description": "`options.iterationComposite` parameter",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 18.58,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.Element.ariaActiveDescendantElement",
     "name": "Element.ariaActiveDescendantElement",
     "description": "",
@@ -15731,22 +15747,6 @@
     "id": "mdn-api.HTMLCanvasElement.toBlob.quality_parameter",
     "name": "`quality` parameter",
     "description": "`quality` parameter",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 92.09,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.HTMLCanvasElement.toBlob.type_parameter_jpeg",
-    "name": "`type` parameter supports `\"image/jpeg\"`",
-    "description": "`type` parameter supports `\"image/jpeg\"`",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -22669,38 +22669,6 @@
       "an_chr": "y"
     },
     "usage": 68.42,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.PerformanceTimingConfidence",
-    "name": "PerformanceTimingConfidence",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.07,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.PerformanceTimingConfidence.randomizedTriggerRate",
-    "name": "PerformanceTimingConfidence.randomizedTriggerRate",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.07,
     "baseline": false
   },
   {
@@ -37152,54 +37120,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.dynamic-range-limit.constrained",
-    "name": "dynamic-range-limit: Constrained",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 69.12,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.dynamic-range-limit.dynamic-range-limit-mix_values",
-    "name": "`&lt;dynamic-range-limit-mix()&gt;` values",
-    "description": "`&lt;dynamic-range-limit-mix()&gt;` values",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 69.12,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.dynamic-range-limit.standard",
-    "name": "dynamic-range-limit: Standard",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 80.33,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.field-sizing",
     "name": "`field-sizing`",
     "description": "",
@@ -48544,22 +48464,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-html.elements.video.loading",
-    "name": "`<video>`",
-    "description": "",
-    "category": "HTML5",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
     "id": "mdn-html.elements.xmp",
     "name": "`<xmp>`",
     "description": "",
@@ -48925,7 +48829,7 @@
       "an_chr": "y"
     },
     "usage": 90.14,
-    "baseline": "low"
+    "baseline": false
   },
   {
     "id": "mdn-http.headers.Clear-Site-Data.prefetchCache",
@@ -52288,6 +52192,22 @@
     "baseline": "high"
   },
   {
+    "id": "wf-bmp",
+    "name": "BMP",
+    "description": "The BMP image format is an uncompressed raster graphics file format. Also known as a bitmap.",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 94.63,
+    "baseline": "high"
+  },
+  {
     "id": "wf-color-contrast",
     "name": "color-contrast()",
     "description": "The color-contrast() CSS function picks a color from a list that has the most contrast with another color.",
@@ -52352,6 +52272,22 @@
     "baseline": false
   },
   {
+    "id": "wf-gif",
+    "name": "GIF",
+    "description": "The GIF (Graphics Interchange Format) image format is a raster graphics file format with animation and lossless compress",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 94.63,
+    "baseline": "high"
+  },
+  {
     "id": "wf-image-function",
     "name": "image()",
     "description": "The image() CSS function creates an image similar to url() but with additional functionality. It can create a solid colo",
@@ -52384,6 +52320,22 @@
     "baseline": false
   },
   {
+    "id": "wf-jpeg",
+    "name": "JPEG",
+    "description": "The JPEG image format is a raster graphics file format with lossy compression.",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 94.63,
+    "baseline": "high"
+  },
+  {
     "id": "wf-justify-self-block",
     "name": "justify-self in block layouts",
     "description": "The justify-self CSS property aligns an item along a container's inline axis in block layouts, like it does in grid layo",
@@ -52397,6 +52349,22 @@
       "an_chr": "y"
     },
     "usage": 69.28,
+    "baseline": false
+  },
+  {
+    "id": "wf-languagemodel",
+    "name": "LanguageModel",
+    "description": "The LanguageModel API prompts an on-device language model. Also known as the Prompt API.",
+    "category": "Other",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
     "baseline": false
   },
   {
