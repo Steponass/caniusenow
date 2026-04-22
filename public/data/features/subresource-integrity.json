@@ -4,6 +4,7 @@
   "name": "Subresource Integrity",
   "description": "Subresource Integrity enables browsers to verify that file is delivered without unexpected manipulation.",
   "category": "HTML5",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Attributes/integrity",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity",
@@ -88,13 +89,39 @@
       "1": "Can be enabled via the \"Experimental Features\" developer menu"
     }
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "subresource-integrity"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLScriptElement.integrity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Request.integrity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.link.integrity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.script.integrity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "subresource-integrity",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=Subresource%20Integrity"
 }

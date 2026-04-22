@@ -1,10 +1,10 @@
 {
-  "id": "mdn-api.Navigator.mimeTypes",
+  "id": "mdn-api.Navigator.vendorSub",
   "source": "mdnbcd",
-  "name": "Navigator.mimeTypes",
+  "name": "Navigator.vendorSub",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/pdfViewerEnabled",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/vendorSub",
   "links": [],
   "support": {
     "chr": {
@@ -17,7 +17,7 @@
     },
     "saf": {
       "current": "y",
-      "firstFull": "1"
+      "firstFull": "3"
     },
     "edg": {
       "current": "y",
@@ -25,15 +25,15 @@
     },
     "opr": {
       "current": "y",
-      "firstFull": "≤12.1"
+      "firstFull": "15"
     },
     "ie": {
       "current": "y",
-      "firstFull": "4"
+      "firstFull": "12"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "1"
+      "firstFull": "3"
     },
     "an_chr": {
       "current": "y",
@@ -50,9 +50,9 @@
   },
   "usage": {
     "global": {
-      "full": 94.92,
+      "full": 94.63,
       "partial": 0,
-      "total": 94.92
+      "total": 94.63
     },
     "byBrowser": {
       "desktop": {
@@ -60,8 +60,7 @@
         "ffx": 1.92,
         "saf": 2.62,
         "edg": 5.46,
-        "opr": 0.6,
-        "ie": 0.29
+        "opr": 0.6
       },
       "mobile": {
         "ios_saf": 14.71,
@@ -72,24 +71,13 @@
     },
     "type": "estimated"
   },
-  "baseline": "high",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "api.Navigator.mimeTypes"
+      "id": "api.Navigator.vendorSub"
     },
-    "supplementary": [
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.pdfViewerEnabled",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "webfeatures",
-        "id": "pdf-viewer",
-        "matched": "exact"
-      }
-    ]
+    "supplementary": []
   },
-  "caniuseUrl": "https://caniuse.com/?search=Navigator.mimeTypes"
+  "caniuseUrl": "https://caniuse.com/?search=Navigator.vendorSub"
 }

@@ -4,7 +4,7 @@
   "name": "`options.referenceTarget` parameter",
   "description": "`options.referenceTarget` parameter",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/Element/attachShadow#referencetarget",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/template#shadowrootreferencetarget",
   "links": [],
   "support": {
     "chr": {
@@ -56,7 +56,28 @@
       "source": "mdnbcd",
       "id": "api.Element.attachShadow.options_referenceTarget_parameter"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLTemplateElement.shadowRootReferenceTarget",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.referenceTarget",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.template.shadowrootreferencetarget",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "referencetarget",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=%60options.referenceTarget%60%20parameter"
 }
