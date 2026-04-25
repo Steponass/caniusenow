@@ -1,23 +1,18 @@
 {
-  "id": "mdn-api.CrashReportContext.initialize",
+  "id": "mdn-api.LanguageModel",
   "source": "mdnbcd",
-  "name": "CrashReportContext.initialize",
+  "name": "LanguageModel",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/CrashReportContext/initialize",
   "links": [],
   "support": {
     "chr": {
       "current": "y",
-      "firstFull": "145"
+      "firstFull": "148"
     },
     "edg": {
       "current": "y",
-      "firstFull": "145"
-    },
-    "opr": {
-      "current": "y",
-      "firstFull": "129"
+      "firstFull": "148"
     },
     "ffx": {
       "current": "n"
@@ -25,20 +20,24 @@
     "saf": {
       "current": "n"
     },
+    "opr": {
+      "current": "y",
+      "firstFull": "148"
+    },
     "ie": {
       "current": "y",
-      "firstFull": "145"
+      "firstFull": "148"
     },
     "ios_saf": {
       "current": "n"
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "145"
+      "firstFull": "148"
     },
     "smsg": {
       "current": "y",
-      "firstFull": "145"
+      "firstFull": "148"
     },
     "an_ff": {
       "current": "n"
@@ -46,14 +45,13 @@
   },
   "usage": {
     "global": {
-      "full": 66.07,
+      "full": 44.76,
       "partial": 0,
-      "total": 66.07
+      "total": 44.76
     },
     "byBrowser": {
       "desktop": {
-        "chr": 16.3,
-        "edg": 5.02
+        "chr": 0
       },
       "mobile": {
         "an_chr": 44.76
@@ -65,9 +63,20 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "api.CrashReportContext.initialize"
+      "id": "api.LanguageModel"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.LanguageModel.clone",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "languagemodel",
+        "matched": "exact"
+      }
+    ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=CrashReportContext.initialize"
+  "caniuseUrl": "https://caniuse.com/?search=LanguageModel"
 }
