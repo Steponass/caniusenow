@@ -1,10 +1,9 @@
 {
-  "id": "mdn-api.Request.signal",
+  "id": "mdn-api.fetch.options_parameter.signal",
   "source": "mdnbcd",
-  "name": "Request.signal",
-  "description": "",
+  "name": "`signal` property",
+  "description": "`signal` property",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/Request/signal",
   "links": [],
   "support": {
     "chr": {
@@ -17,7 +16,7 @@
     },
     "saf": {
       "current": "y",
-      "firstFull": "12.1"
+      "firstFull": "11.1"
     },
     "edg": {
       "current": "y",
@@ -33,7 +32,7 @@
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "12.1"
+      "firstFull": "11.1"
     },
     "an_chr": {
       "current": "y",
@@ -50,9 +49,9 @@
   },
   "usage": {
     "global": {
-      "full": 91.51,
+      "full": 91.61,
       "partial": 0,
-      "total": 91.51
+      "total": 91.61
     },
     "byBrowser": {
       "desktop": {
@@ -63,26 +62,20 @@
         "opr": 0.6
       },
       "mobile": {
-        "ios_saf": 14.51,
+        "ios_saf": 14.61,
         "an_chr": 44.76,
         "an_ff": 0.35
       }
     },
     "type": "estimated"
   },
-  "baseline": "high",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "api.Request.signal"
+      "id": "api.fetch.options_parameter.signal"
     },
-    "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "abortable-fetch",
-        "matched": "exact"
-      }
-    ]
+    "supplementary": []
   },
-  "caniuseUrl": "https://caniuse.com/?search=Request.signal"
+  "caniuseUrl": "https://caniuse.com/?search=%60signal%60%20property"
 }

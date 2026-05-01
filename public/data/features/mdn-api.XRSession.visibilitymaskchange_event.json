@@ -1,23 +1,22 @@
 {
-  "id": "mdn-api.Document.browsingTopics",
+  "id": "mdn-api.XRSession.visibilitymaskchange_event",
   "source": "mdnbcd",
-  "name": "Document.browsingTopics",
-  "description": "",
+  "name": "`visibilitymaskchange` event",
+  "description": "`visibilitymaskchange` event",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Sec-Browsing-Topics",
   "links": [],
   "support": {
     "chr": {
       "current": "y",
-      "firstFull": "126"
+      "firstFull": "144"
     },
     "edg": {
       "current": "y",
-      "firstFull": "126"
+      "firstFull": "144"
     },
     "opr": {
       "current": "y",
-      "firstFull": "112"
+      "firstFull": "128"
     },
     "ffx": {
       "current": "n"
@@ -27,18 +26,18 @@
     },
     "ie": {
       "current": "y",
-      "firstFull": "126"
+      "firstFull": "144"
     },
     "ios_saf": {
       "current": "n"
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "126"
+      "firstFull": "144"
     },
     "smsg": {
       "current": "y",
-      "firstFull": "126"
+      "firstFull": "144"
     },
     "an_ff": {
       "current": "n"
@@ -46,15 +45,14 @@
   },
   "usage": {
     "global": {
-      "full": 69.87,
+      "full": 67.15,
       "partial": 0,
-      "total": 69.87
+      "total": 67.15
     },
     "byBrowser": {
       "desktop": {
-        "chr": 19.27,
-        "edg": 5.39,
-        "opr": 0.45
+        "chr": 17.24,
+        "edg": 5.16
       },
       "mobile": {
         "an_chr": 44.76
@@ -66,45 +64,40 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "api.Document.browsingTopics"
+      "id": "api.XRSession.visibilitymaskchange_event"
     },
     "supplementary": [
       {
         "source": "mdnbcd",
-        "id": "api.HTMLIFrameElement.browsingTopics",
+        "id": "api.XRVisibilityMaskChangeEvent",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "html.elements.iframe.allow.browsing-topics",
+        "id": "api.XRVisibilityMaskChangeEvent.eye",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "html.elements.iframe.browsingtopics",
+        "id": "api.XRVisibilityMaskChangeEvent.index",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "http.headers.Observe-Browsing-Topics",
+        "id": "api.XRVisibilityMaskChangeEvent.indices",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "http.headers.Permissions-Policy.browsing-topics",
+        "id": "api.XRVisibilityMaskChangeEvent.session",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "http.headers.Sec-Browsing-Topics",
+        "id": "api.XRVisibilityMaskChangeEvent.vertices",
         "matched": "via-webfeatures"
-      },
-      {
-        "source": "webfeatures",
-        "id": "topics",
-        "matched": "exact"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=Document.browsingTopics"
+  "caniuseUrl": "https://caniuse.com/?search=%60visibilitymaskchange%60%20event"
 }

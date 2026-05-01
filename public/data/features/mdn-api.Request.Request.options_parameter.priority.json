@@ -1,67 +1,68 @@
 {
-  "id": "mdn-css.types.color.contrast-color",
+  "id": "mdn-api.Request.Request.options_parameter.priority",
   "source": "mdnbcd",
-  "name": "`contrast-color()`",
-  "description": "`contrast-color()`",
-  "category": "CSS",
-  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/color_value/contrast-color",
+  "name": "`priority` property",
+  "description": "`priority` property",
+  "category": "JS API",
   "links": [],
   "support": {
     "chr": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "101"
     },
     "ffx": {
       "current": "y",
-      "firstFull": "146"
+      "firstFull": "132"
     },
     "saf": {
       "current": "y",
-      "firstFull": "26"
+      "firstFull": "17.2"
     },
     "edg": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "101"
     },
     "opr": {
       "current": "y",
-      "firstFull": "131"
+      "firstFull": "87"
     },
     "ie": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "101"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "26"
+      "firstFull": "17.2"
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "101"
     },
     "smsg": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "101"
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "146"
+      "firstFull": "132"
     }
   },
   "usage": {
     "global": {
-      "full": 57.95,
+      "full": 89.7,
       "partial": 0,
-      "total": 57.95
+      "total": 89.7
     },
     "byBrowser": {
       "desktop": {
-        "chr": 0.03,
-        "ffx": 1.59,
-        "saf": 1.68
+        "chr": 21.21,
+        "ffx": 1.74,
+        "saf": 2.13,
+        "edg": 5.45,
+        "opr": 0.6
       },
       "mobile": {
-        "ios_saf": 9.53,
+        "ios_saf": 13.47,
         "an_chr": 44.76,
         "an_ff": 0.35
       }
@@ -72,15 +73,15 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "css.types.color.contrast-color"
+      "id": "api.Request.Request.options_parameter.priority"
     },
     "supplementary": [
       {
-        "source": "webfeatures",
-        "id": "contrast-color",
-        "matched": "exact"
+        "source": "mdnbcd",
+        "id": "api.fetch.options_parameter.priority",
+        "matched": "via-webfeatures"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60contrast-color()%60"
+  "caniuseUrl": "https://caniuse.com/?search=%60priority%60%20property"
 }

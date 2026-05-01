@@ -13392,9 +13392,57 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.Element.requestFullscreen.options_screen_parameter",
-    "name": "`options.screen` parameter",
-    "description": "`options.screen` parameter",
+    "id": "mdn-api.Element.requestFullscreen.options_parameter",
+    "name": "`options` parameter",
+    "description": "`options` parameter",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 88.81,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Element.requestFullscreen.options_parameter.keyboardLock_option",
+    "name": "`keyboardLock` option",
+    "description": "`keyboardLock` option",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 0.67,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Element.requestFullscreen.options_parameter.navigationUI_option",
+    "name": "`navigationUI` option",
+    "description": "`navigationUI` option",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 88.46,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Element.requestFullscreen.options_parameter.screen_option",
+    "name": "`screen` option",
+    "description": "`screen` option",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -14542,6 +14590,22 @@
     },
     "usage": 91.34,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.GPU.requestAdapter.options_featureLevel",
+    "name": "`featureLevel` option",
+    "description": "`featureLevel` option",
+    "category": "JS API",
+    "support": {
+      "chr": "a",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "a",
+      "ios_saf": "n",
+      "an_chr": "a"
+    },
+    "usage": 54.2,
+    "baseline": false
   },
   {
     "id": "mdn-api.GPUAdapter.isFallbackAdapter",
@@ -22592,6 +22656,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.Permissions.permission_window-management",
+    "name": "`window-management` permission",
+    "description": "`window-management` permission",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 70.67,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.Permissions.requestAll",
     "name": "Permissions.requestAll",
     "description": "",
@@ -24496,9 +24576,41 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.Request.Request.init_duplex_parameter",
-    "name": "`init.duplex` parameter",
-    "description": "`init.duplex` parameter",
+    "id": "mdn-api.Request.Request.options_parameter.attributionReporting",
+    "name": "`attributionReporting` property",
+    "description": "`attributionReporting` property",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 69.89,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Request.Request.options_parameter.body",
+    "name": "`body` parameter",
+    "description": "`body` parameter",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 92.39,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Request.Request.options_parameter.body.accepts_readablestream",
+    "name": "`ReadableStream` body",
+    "description": "`ReadableStream` body",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -24512,9 +24624,73 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.Request.Request.init_privateToken_parameter",
-    "name": "`init.privateToken` parameter",
-    "description": "`init.privateToken` parameter",
+    "id": "mdn-api.Request.Request.options_parameter.browsingTopics",
+    "name": "`browsingTopics` property",
+    "description": "`browsingTopics` property",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 69.87,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Request.Request.options_parameter.duplex",
+    "name": "`duplex` property",
+    "description": "`duplex` property",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.82,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Request.Request.options_parameter.keepalive",
+    "name": "`keepalive` property",
+    "description": "`keepalive` property",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 91.29,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Request.Request.options_parameter.priority",
+    "name": "`priority` property",
+    "description": "`priority` property",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 89.7,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Request.Request.options_parameter.privateToken",
+    "name": "`privateToken` property",
+    "description": "`privateToken` property",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -24528,9 +24704,25 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.Request.Request.init_targetAddressSpace_parameter",
-    "name": "`init.targetAddressSpace` parameter",
-    "description": "`init.targetAddressSpace` parameter",
+    "id": "mdn-api.Request.Request.options_parameter.referrer",
+    "name": "`referrer` property",
+    "description": "`referrer` property",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 92.22,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Request.Request.options_parameter.targetAddressSpace",
+    "name": "`targetAddressSpace` property",
+    "description": "`targetAddressSpace` property",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -25309,6 +25501,22 @@
       "an_chr": "y"
     },
     "usage": 69.24,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.SharedWorker.SharedWorker.options_extendedLifetime_parameter",
+    "name": "`options.extendedLifetime` parameter",
+    "description": "`options.extendedLifetime` parameter",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.76,
     "baseline": false
   },
   {
@@ -28224,6 +28432,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.XRSession.visibilitymaskchange_event",
+    "name": "`visibilitymaskchange` event",
+    "description": "`visibilitymaskchange` event",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 67.15,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.XRView.index",
     "name": "XRView.index",
     "description": "",
@@ -28240,9 +28464,9 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.XRVisibilityMaskChangeEvent",
-    "name": "XRVisibilityMaskChangeEvent",
-    "description": "",
+    "id": "mdn-api.XRVisibilityMaskChangeEvent.XRVisibilityMaskChangeEvent",
+    "name": "`XRVisibilityMaskChangeEvent()` constructor",
+    "description": "`XRVisibilityMaskChangeEvent()` constructor",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -28672,19 +28896,51 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.fetch.body_readablestream",
-    "name": "Send `ReadableStream` in body",
-    "description": "Send `ReadableStream` in body",
+    "id": "mdn-api.fetch.options_parameter.body",
+    "name": "`body` property",
+    "description": "`body` property",
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
-      "saf": "n",
+      "ffx": "y",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 71.82,
+    "usage": 92.39,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.fetch.options_parameter.referrerPolicy",
+    "name": "`referrerPolicy` property",
+    "description": "`referrerPolicy` property",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 91.93,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.fetch.options_parameter.signal",
+    "name": "`signal` property",
+    "description": "`signal` property",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 91.61,
     "baseline": false
   },
   {
@@ -30160,6 +30416,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.accent-color.transparent",
+    "name": "accent-color: Transparent",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 91.21,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.align-content.block_context",
     "name": "Supported in Block Layout",
     "description": "Supported in Block Layout",
@@ -30348,7 +30620,7 @@
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 81.99,
+    "usage": 83.91,
     "baseline": false
   },
   {
@@ -42576,6 +42848,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.shape-outside.rect",
+    "name": "`rect()`",
+    "description": "`rect()`",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 16.19,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.shape-outside.xywh",
     "name": "`xywh()`",
     "description": "`xywh()`",
@@ -42674,6 +42962,22 @@
   {
     "id": "mdn-css.properties.stop-color.currentColor",
     "name": "stop-color: CurrentColor",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 94.92,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.stop-color.transparent",
+    "name": "stop-color: Transparent",
     "description": "",
     "category": "CSS",
     "support": {
@@ -45600,6 +45904,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.types.attr.fallback",
+    "name": "fallback values",
+    "description": "fallback values",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 85.84,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.types.basic-shape.path",
     "name": "`path()`",
     "description": "`path()`",
@@ -45614,22 +45934,6 @@
     },
     "usage": 91.76,
     "baseline": false
-  },
-  {
-    "id": "mdn-css.types.basic-shape.rect",
-    "name": "`rect()`",
-    "description": "`rect()`",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 88.11,
-    "baseline": "low"
   },
   {
     "id": "mdn-css.types.basic-shape.shape",
@@ -45749,14 +46053,14 @@
     "description": "`contrast-color()`",
     "category": "CSS",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 13.16,
+    "usage": 57.95,
     "baseline": false
   },
   {
@@ -46526,6 +46830,22 @@
     },
     "usage": 94.92,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-html.elements.audio.autoplay",
+    "name": "`autoplay` attribute",
+    "description": "`autoplay` attribute",
+    "category": "HTML5",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 94.92,
+    "baseline": false
   },
   {
     "id": "mdn-html.elements.b",
@@ -51744,22 +52064,6 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-javascript.operators.import.options_parameter",
-    "name": "The `options` parameter",
-    "description": "The `options` parameter",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 91.1,
-    "baseline": false
-  },
-  {
     "id": "mdn-javascript.operators.import.worker_support",
     "name": "Available in workers",
     "description": "Available in workers",
@@ -52302,6 +52606,22 @@
     },
     "usage": 94.44,
     "baseline": false
+  },
+  {
+    "id": "wf-rect-xywh",
+    "name": "rect() and xywh()",
+    "description": "The rect() CSS function creates a rectangle shape with insets from the edges of an element. The xywh() CSS function crea",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 87.86,
+    "baseline": "low"
   },
   {
     "id": "wf-rhythmic-sizing",
