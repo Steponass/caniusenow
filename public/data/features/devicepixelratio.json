@@ -21,8 +21,7 @@
       "firstFull": "18"
     },
     "saf": {
-      "current": "y",
-      "firstFull": "3.1"
+      "current": "u"
     },
     "edg": {
       "current": "y",
@@ -37,12 +36,11 @@
       "firstFull": "11"
     },
     "ios_saf": {
-      "current": "y",
-      "firstFull": "3.2"
+      "current": "u"
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "145"
+      "firstFull": "147"
     },
     "smsg": {
       "current": "y",
@@ -50,36 +48,36 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "150"
     }
   },
   "usage": {
     "global": {
-      "full": 97.51,
-      "partial": 0,
-      "total": 97.51
+      "full": 79.29,
+      "partial": 17.72,
+      "total": 97.01
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.85,
-        "ffx": 1.85,
-        "saf": 2.38,
-        "edg": 5.1,
-        "opr": 1,
+        "chr": 22.09,
+        "ffx": 1.91,
+        "edg": 5.46,
+        "opr": 0.6,
         "ie": 0.29
       },
       "mobile": {
-        "ios_saf": 13.47,
-        "an_chr": 42.14,
-        "smsg": 2.08,
-        "an_ff": 0.34
+        "an_chr": 44.76,
+        "smsg": 2.13,
+        "an_ff": 0.35
       }
     },
     "type": "actual"
   },
   "notes": {
     "general": "As the page is zoomed in the number of device pixels that one CSS pixel covers increases, and therefore the value of devicePixelRatio will also increase.",
-    "byNum": {}
+    "byNum": {
+      "1": "Safari does not update the `devicePixelRatio` value when the page is zoomed. See [bug 124862](https://bugs.webkit.org/show_bug.cgi?id=124862)"
+    }
   },
   "baseline": false,
   "sourceData": {

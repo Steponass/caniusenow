@@ -4,6 +4,7 @@
   "name": "Subresource Integrity",
   "description": "Subresource Integrity enables browsers to verify that file is delivered without unexpected manipulation.",
   "category": "HTML5",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Attributes/integrity",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity",
@@ -48,7 +49,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "145"
+      "firstFull": "147"
     },
     "smsg": {
       "current": "y",
@@ -56,28 +57,28 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "150"
     }
   },
   "usage": {
     "global": {
-      "full": 97.08,
+      "full": 96.31,
       "partial": 0,
-      "total": 97.08
+      "total": 96.31
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.85,
-        "ffx": 1.85,
-        "saf": 2.38,
-        "edg": 5.1,
-        "opr": 1
+        "chr": 21.89,
+        "ffx": 1.91,
+        "saf": 2.62,
+        "edg": 5.46,
+        "opr": 0.6
       },
       "mobile": {
-        "ios_saf": 13.34,
-        "an_chr": 42.14,
-        "smsg": 2.08,
-        "an_ff": 0.34
+        "ios_saf": 14.51,
+        "an_chr": 44.76,
+        "smsg": 2.13,
+        "an_ff": 0.35
       }
     },
     "type": "actual"
@@ -88,13 +89,44 @@
       "1": "Can be enabled via the \"Experimental Features\" developer menu"
     }
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "subresource-integrity"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLLinkElement.integrity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLScriptElement.integrity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Request.integrity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.link.integrity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.script.integrity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "subresource-integrity",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=Subresource%20Integrity"
 }

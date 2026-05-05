@@ -50,22 +50,22 @@
   },
   "usage": {
     "global": {
-      "full": 93.1,
+      "full": 91.95,
       "partial": 0,
-      "total": 93.1
+      "total": 91.95
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.84,
-        "ffx": 1.84,
-        "saf": 2.38,
-        "edg": 5.1,
-        "opr": 1
+        "chr": 21.56,
+        "ffx": 1.9,
+        "saf": 2.62,
+        "edg": 5.46,
+        "opr": 0.6
       },
       "mobile": {
-        "ios_saf": 13.47,
-        "an_chr": 42.14,
-        "an_ff": 0.34
+        "ios_saf": 14.71,
+        "an_chr": 44.76,
+        "an_ff": 0.35
       }
     },
     "type": "estimated"
@@ -105,6 +105,16 @@
       {
         "source": "mdnbcd",
         "id": "api.CustomElementRegistry.whenDefined",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.createElement.options_parameter.customElementRegistry_option",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.createElementNS.options_parameter.customElementRegistry_option",
         "matched": "via-webfeatures"
       },
       {

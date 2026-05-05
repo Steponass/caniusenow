@@ -14,15 +14,15 @@
       "current": "a",
       "firstPartial": "147"
     },
+    "opr": {
+      "current": "a",
+      "firstPartial": "131"
+    },
     "ffx": {
       "current": "n"
     },
     "saf": {
       "current": "n"
-    },
-    "opr": {
-      "current": "a",
-      "firstPartial": "147"
     },
     "ie": {
       "current": "a",
@@ -46,13 +46,15 @@
   "usage": {
     "global": {
       "full": 0,
-      "partial": 42.14,
-      "total": 42.14
+      "partial": 44.79,
+      "total": 44.79
     },
     "byBrowser": {
-      "desktop": {},
+      "desktop": {
+        "chr": 0.03
+      },
       "mobile": {
-        "an_chr": 42.14
+        "an_chr": 44.76
       }
     },
     "type": "estimated"
@@ -63,7 +65,33 @@
       "source": "mdnbcd",
       "id": "http.headers.Sec-Secure-Session-Id"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Secure-Session-Challenge",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Secure-Session-Registration",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Secure-Session-Response",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Secure-Session-Skipped",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "device-bound-session-credentials",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=Sec-Secure-Session-Id"
 }

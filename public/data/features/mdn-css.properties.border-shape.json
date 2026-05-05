@@ -14,15 +14,15 @@
       "current": "y",
       "firstFull": "147"
     },
+    "opr": {
+      "current": "y",
+      "firstFull": "131"
+    },
     "ffx": {
       "current": "n"
     },
     "saf": {
       "current": "n"
-    },
-    "opr": {
-      "current": "y",
-      "firstFull": "147"
     },
     "ie": {
       "current": "y",
@@ -45,14 +45,16 @@
   },
   "usage": {
     "global": {
-      "full": 42.14,
+      "full": 44.79,
       "partial": 0,
-      "total": 42.14
+      "total": 44.79
     },
     "byBrowser": {
-      "desktop": {},
+      "desktop": {
+        "chr": 0.03
+      },
       "mobile": {
-        "an_chr": 42.14
+        "an_chr": 44.76
       }
     },
     "type": "estimated"
@@ -68,6 +70,11 @@
         "source": "mdnbcd",
         "id": "css.properties.border-shape.none",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "border-shape",
+        "matched": "exact"
       }
     ]
   },

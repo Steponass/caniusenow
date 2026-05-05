@@ -4,7 +4,7 @@
   "name": "Navigator.appCodeName",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/WorkerNavigator/appCodeName",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WorkerNavigator/userAgent",
   "links": [],
   "support": {
     "chr": {
@@ -50,29 +50,29 @@
   },
   "usage": {
     "global": {
-      "full": 95.52,
+      "full": 94.92,
       "partial": 0,
-      "total": 95.52
+      "total": 94.92
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.85,
-        "ffx": 1.88,
-        "saf": 2.38,
-        "edg": 5.1,
-        "opr": 1,
+        "chr": 22.09,
+        "ffx": 1.92,
+        "saf": 2.62,
+        "edg": 5.46,
+        "opr": 0.6,
         "ie": 0.29
       },
       "mobile": {
-        "ios_saf": 13.47,
-        "an_chr": 42.14,
-        "smsg": 2.08,
-        "an_ff": 0.34
+        "ios_saf": 14.71,
+        "an_chr": 44.76,
+        "smsg": 2.13,
+        "an_ff": 0.35
       }
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
@@ -81,8 +81,83 @@
     "supplementary": [
       {
         "source": "mdnbcd",
+        "id": "api.Navigator.appName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.appVersion",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.javaEnabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.platform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.plugins",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.product",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.productSub",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.userAgent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.vendor",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
         "id": "api.WorkerNavigator.appCodeName",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.appName",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.appVersion",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.platform",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.product",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WorkerNavigator.userAgent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "user-agent-sniffing",
+        "matched": "exact"
       }
     ]
   },

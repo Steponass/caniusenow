@@ -48,7 +48,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "145"
+      "firstFull": "147"
     },
     "smsg": {
       "current": "y",
@@ -56,27 +56,27 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "150"
     }
   },
   "usage": {
     "global": {
-      "full": 83.36,
-      "partial": 13.87,
-      "total": 97.23
+      "full": 80.98,
+      "partial": 15.78,
+      "total": 96.76
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.82,
-        "ffx": 1.84,
-        "saf": 2.18,
-        "edg": 5.1,
-        "opr": 1
+        "chr": 21.31,
+        "ffx": 1.9,
+        "saf": 2.43,
+        "edg": 5.46,
+        "opr": 0.6
       },
       "mobile": {
-        "an_chr": 42.14,
-        "smsg": 2.08,
-        "an_ff": 0.34
+        "an_chr": 44.76,
+        "smsg": 2.13,
+        "an_ff": 0.35
       }
     },
     "type": "actual"
@@ -145,7 +145,12 @@
       },
       {
         "source": "mdnbcd",
-        "id": "api.Element.requestFullscreen.options_navigationUI_parameter",
+        "id": "api.Element.requestFullscreen.options_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.requestFullscreen.options_parameter.navigationUI_option",
         "matched": "via-webfeatures"
       },
       {

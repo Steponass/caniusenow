@@ -32,14 +32,16 @@
       "current": "n"
     },
     "saf": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "TP"
     },
     "edg": {
       "current": "y",
       "firstFull": "133"
     },
     "opr": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "117"
     },
     "ie": {
       "current": "n"
@@ -49,10 +51,11 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "145"
+      "firstFull": "147"
     },
     "smsg": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "29"
     },
     "an_ff": {
       "current": "n"
@@ -60,17 +63,19 @@
   },
   "usage": {
     "global": {
-      "full": 66.66,
+      "full": 71.39,
       "partial": 0,
-      "total": 66.66
+      "total": 71.39
     },
     "byBrowser": {
       "desktop": {
-        "chr": 19.37,
-        "edg": 4.99
+        "chr": 18.82,
+        "edg": 5.36,
+        "opr": 0.45
       },
       "mobile": {
-        "an_chr": 42.14
+        "an_chr": 44.76,
+        "smsg": 1.94
       }
     },
     "type": "actual"
@@ -89,6 +94,11 @@
       {
         "source": "mdnbcd",
         "id": "css.types.attr.declaration-value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.types.attr.fallback",
         "matched": "via-webfeatures"
       },
       {

@@ -49,7 +49,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "145"
+      "firstFull": "147"
     },
     "smsg": {
       "current": "y",
@@ -57,28 +57,28 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "147"
+      "firstFull": "150"
     }
   },
   "usage": {
     "global": {
-      "full": 97.21,
-      "partial": 0,
-      "total": 97.21
+      "full": 96.61,
+      "partial": 0.07,
+      "total": 96.68
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.85,
-        "ffx": 1.85,
-        "saf": 2.38,
-        "edg": 5.1,
-        "opr": 1
+        "chr": 21.99,
+        "ffx": 1.91,
+        "saf": 2.62,
+        "edg": 5.46,
+        "opr": 0.6
       },
       "mobile": {
-        "ios_saf": 13.47,
-        "an_chr": 42.14,
-        "smsg": 2.08,
-        "an_ff": 0.34
+        "ios_saf": 14.71,
+        "an_chr": 44.76,
+        "smsg": 2.13,
+        "an_ff": 0.35
       }
     },
     "type": "actual"
@@ -191,17 +191,27 @@
       },
       {
         "source": "mdnbcd",
-        "id": "api.Request.Request.init_keepalive_parameter",
+        "id": "api.Request.Request.options_parameter",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.Request.Request.init_referrer_parameter",
+        "id": "api.Request.Request.options_parameter.body",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.Request.Request.request_body_readablestream",
+        "id": "api.Request.Request.options_parameter.body.accepts_readablestream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Request.Request.options_parameter.keepalive",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Request.Request.options_parameter.referrer",
         "matched": "via-webfeatures"
       },
       {
@@ -267,11 +277,6 @@
       {
         "source": "mdnbcd",
         "id": "api.Request.headers",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Request.integrity",
         "matched": "via-webfeatures"
       },
       {
@@ -461,12 +466,22 @@
       },
       {
         "source": "mdnbcd",
-        "id": "api.fetch.init_keepalive_parameter",
+        "id": "api.fetch.options_parameter",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.fetch.init_referrerPolicy_parameter",
+        "id": "api.fetch.options_parameter.body",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.fetch.options_parameter.keepalive",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.fetch.options_parameter.referrerPolicy",
         "matched": "via-webfeatures"
       },
       {
