@@ -10,9 +10,11 @@ import AuthModal from "@components/AuthModal.vue";
 import FeatureGrid from "@components/FeatureGrid.vue";
 import FeatureDetailModal from "@components/FeatureDetailModal.vue";
 import TrackingDashboard from "@components/TrackingDashboard.vue";
+import ScrollToTop from "@components/ScrollToTop.vue";
 
 import type { NormalizedFeature } from "@/types/feature";
 import type { FeatureTracking } from "@/types/featureTracking";
+import IntroModal from "./components/IntroModal.vue";
 
 const featureStore = useFeatureStore();
 const authStore = useAuthStore();
@@ -76,7 +78,6 @@ watch(featureId, async (newFeatureId, oldFeatureId) => {
     }
   }
 });
-
 
 function handleOpenAuthModal() {
   isAuthModalOpen.value = true;
@@ -163,6 +164,8 @@ function handleSearch(query: string) {
     <AppHeader @open-auth-modal="handleOpenAuthModal" @search="handleSearch" />
 
     <main>
+
+      <IntroModal/>
         <section v-if="authStore.isAuthenticated">
           <button @click="toggleTrackingDashboard">
             {{ showTrackingDashboard ? "Browse Features" : "My Trackings" }}
@@ -189,6 +192,7 @@ function handleSearch(query: string) {
           @feature-click="handleTrackingFeatureClick"
           />
         </section>
+          <ScrollToTop/>
     </main>
 
     <AuthModal :is-open="isAuthModalOpen" @close="handleCloseAuthModal" />
@@ -202,6 +206,7 @@ function handleSearch(query: string) {
       @save-changes="handleSaveTracking"
     />
   </div>
+
 </template>
 
 <style scoped>

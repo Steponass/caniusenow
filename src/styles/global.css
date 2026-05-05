@@ -11,13 +11,12 @@ button {
   box-shadow: var(--shadow-elevation-1);
   @media (hover: hover) {
     &:hover {
-      box-shadow: var(--shadow-elevation-5);
-      transform: translateY(-2px);
-
+      box-shadow: var(--shadow-elevation-4);
+      transform: translateY(-1px);
     }
   }
   &:active {
-    transform: translateY(0px);
+    transform: translateY(-1px);
     box-shadow: none;
   }
 }

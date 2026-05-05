@@ -74,16 +74,6 @@ const nextThemeLabel = computed(() => {
   cursor: pointer;
   transition: var(--transition-hover-quick);
   box-shadow: none;
-  &:hover {
-    transform: translateY(-2px);
-    border: 1px solid var(--clr-stroke-weak);
-    box-shadow: var(--shadow-elevation-5);
-  }
-    &:active {
-    transform: translateY(0px);
-    box-shadow: none;
-    border: transparent;
-  }
 }
 
 .theme-icon {

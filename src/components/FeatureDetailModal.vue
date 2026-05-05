@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed, ref, watch, nextTick, onUnmounted } from "vue";
 import type { NormalizedFeature } from "@/types/feature";
 import type { FeatureTracking } from "@/types/featureTracking";
 import FormattedText from "./FormattedText.vue";
@@ -24,6 +24,68 @@ const emit = defineEmits<{
 const { triggers } = useFeatureUrl();
 
 const isEditMode = computed(() => props.existingTracking != null);
+
+// --- Focus trap & Esc key ---
+
+const modalContentRef = ref<HTMLElement | null>(null);
+
+const FOCUSABLE_SELECTORS = [
+  "a[href]",
+  "button:not([disabled])",
+  "input:not([disabled])",
+  "select:not([disabled])",
+  "textarea:not([disabled])",
+  "[tabindex]:not([tabindex='-1'])",
+].join(", ");
+
+function getFocusableElements(): HTMLElement[] {
+  if (!modalContentRef.value) return [];
+  return Array.from(
+    modalContentRef.value.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTORS)
+  );
+}
+
+function handleKeyDown(event: KeyboardEvent) {
+  if (event.key === "Escape") {
+    handleClose();
+    return;
+  }
+
+  if (event.key === "Tab") {
+    const focusable = getFocusableElements();
+    if (focusable.length === 0) return;
+
+    const firstElement: HTMLElement | undefined = focusable[0];
+    const lastElement: HTMLElement | undefined = focusable[focusable.length - 1];
+
+    if (!firstElement || !lastElement) return;
+
+    if (event.shiftKey && document.activeElement === firstElement) {
+      event.preventDefault();
+      lastElement.focus();
+    } else if (!event.shiftKey && document.activeElement === lastElement) {
+      event.preventDefault();
+      firstElement.focus();
+    }
+  }
+}
+
+watch(
+  () => props.isOpen,
+  async (isOpen) => {
+    if (isOpen) {
+      document.addEventListener("keydown", handleKeyDown);
+      await nextTick();
+      getFocusableElements()[0]?.focus();
+    } else {
+      document.removeEventListener("keydown", handleKeyDown);
+    }
+  }
+);
+
+onUnmounted(() => {
+  document.removeEventListener("keydown", handleKeyDown);
+});
 
 const browserList = computed(() => {
   if (!props.feature) return [];
@@ -78,7 +140,7 @@ function handlePrimaryAction(): void {
 
 <template>
   <div v-if="isOpen && feature" class="modal-overlay" @click="handleClose">
-    <div class="modal-content" @click.stop>
+    <div ref="modalContentRef" class="modal-content" role="dialog" aria-modal="true" @click.stop>
       <div class="modal-header">
         <div class="modal-h-and-close-btn">
           <FormattedText :text="feature.name" tag="h4" />
@@ -188,7 +250,6 @@ function handlePrimaryAction(): void {
 }
 
 .modal-content {
-  overscroll-behavior: contain;
   background-color: var(--clr-bg-overlay);
   border-radius: var(--radius-16px);
   box-shadow: var(--shadow-elevation-4);
