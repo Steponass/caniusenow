@@ -4,7 +4,7 @@
   "name": "`integrity-violation` report type",
   "description": "`integrity-violation` report type",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/IntegrityViolationReportBody",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Integrity-Policy-Report-Only",
   "links": [],
   "support": {
     "chr": {
@@ -48,19 +48,20 @@
   },
   "usage": {
     "global": {
-      "full": 66.77,
+      "full": 68.67,
       "partial": 0,
-      "total": 66.77
+      "total": 68.67
     },
     "byBrowser": {
       "desktop": {
-        "chr": 18.47,
-        "edg": 4.95,
-        "opr": 0.88
+        "chr": 18.49,
+        "ffx": 1.41,
+        "edg": 5.06,
+        "opr": 0.01
       },
       "mobile": {
-        "an_chr": 42.14,
-        "an_ff": 0.34
+        "an_chr": 43.35,
+        "an_ff": 0.35
       }
     },
     "type": "estimated"
@@ -71,7 +72,43 @@
       "source": "mdnbcd",
       "id": "api.ReportingObserver.ReportingObserver.options_parameter.types_property.integrity-violation"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Integrity-Policy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Integrity-Policy.blocked-destinations_script",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Integrity-Policy.blocked-destinations_style",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Integrity-Policy-Report-Only",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Integrity-Policy-Report-Only.blocked-destinations_script",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Integrity-Policy-Report-Only.blocked-destinations_style",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "reporting-integrity-violations",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=%60integrity-violation%60%20report%20type"
 }
