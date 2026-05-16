@@ -1,8 +1,8 @@
 {
-  "id": "mdn-css.types.url.cross-origin",
+  "id": "mdn-css.types.url.integrity",
   "source": "mdnbcd",
-  "name": "`cross-origin()` modifier",
-  "description": "`cross-origin()` modifier",
+  "name": "`integrity()` modifier",
+  "description": "`integrity()` modifier",
   "category": "CSS",
   "links": [],
   "support": {
@@ -10,11 +10,10 @@
       "current": "y",
       "firstFull": "preview"
     },
-    "saf": {
-      "current": "y",
-      "firstFull": "26.2"
-    },
     "ffx": {
+      "current": "n"
+    },
+    "saf": {
       "current": "n"
     },
     "edg": {
@@ -28,8 +27,7 @@
       "current": "n"
     },
     "ios_saf": {
-      "current": "y",
-      "firstFull": "26.2"
+      "current": "n"
     },
     "an_chr": {
       "current": "y",
@@ -45,18 +43,16 @@
   },
   "usage": {
     "global": {
-      "full": 80.43,
+      "full": 69.91,
       "partial": 0,
-      "total": 80.43
+      "total": 69.91
     },
     "byBrowser": {
       "desktop": {
         "chr": 24.89,
-        "saf": 1.55,
         "opr": 0.15
       },
       "mobile": {
-        "ios_saf": 8.97,
         "an_chr": 43.35,
         "smsg": 1.53
       }
@@ -67,15 +63,9 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "css.types.url.cross-origin"
+      "id": "css.types.url.integrity"
     },
-    "supplementary": [
-      {
-        "source": "webfeatures",
-        "id": "url-cross-origin",
-        "matched": "exact"
-      }
-    ]
+    "supplementary": []
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60cross-origin()%60%20modifier"
+  "caniuseUrl": "https://caniuse.com/?search=%60integrity()%60%20modifier"
 }

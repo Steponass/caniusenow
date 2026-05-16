@@ -9376,6 +9376,54 @@
     "baseline": "low"
   },
   {
+    "id": "mdn-api.AuthenticatorAttestationResponse.getPublicKey.algorithm_eddsa",
+    "name": "`-8` (EdDSA) algorithm keys",
+    "description": "`-8` (EdDSA) algorithm keys",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 74.97,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.AuthenticatorAttestationResponse.getPublicKey.algorithm_es256",
+    "name": "`-7` (ECDSA w/ SHA-256) algorithm keys",
+    "description": "`-7` (ECDSA w/ SHA-256) algorithm keys",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.66,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.AuthenticatorAttestationResponse.getPublicKey.algorithm_rs256",
+    "name": "`-257` (RSASSA-PKCS1-v1_5 using SHA-256) algorithm keys",
+    "description": "`-257` (RSASSA-PKCS1-v1_5 using SHA-256) algorithm keys",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 74.97,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.BackgroundFetchEvent",
     "name": "BackgroundFetchEvent",
     "description": "",
@@ -12966,7 +13014,7 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "a",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
@@ -13133,6 +13181,22 @@
       "an_chr": "n"
     },
     "usage": 0,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Element.attachShadow.options_slotAssignment_parameter",
+    "name": "`options.slotAssignment` parameter",
+    "description": "`options.slotAssignment` parameter",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.62,
     "baseline": false
   },
   {
@@ -44293,14 +44357,30 @@
     "description": "`cross-origin()` modifier",
     "category": "CSS",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 10.52,
+    "usage": 80.43,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.types.url.integrity",
+    "name": "`integrity()` modifier",
+    "description": "`integrity()` modifier",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 69.91,
     "baseline": false
   },
   {
@@ -44309,14 +44389,14 @@
     "description": "`referrer-policy()` modifier",
     "category": "CSS",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 10.52,
+    "usage": 80.43,
     "baseline": false
   },
   {
@@ -47312,6 +47392,54 @@
     "baseline": false
   },
   {
+    "id": "mdn-http.headers.Reporting-Endpoints.default",
+    "name": "`default` endpoint name",
+    "description": "`default` endpoint name",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-http.headers.Reporting-Endpoints.default.receives_crash_type",
+    "name": "Receives `crash` reports",
+    "description": "Receives `crash` reports",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-http.headers.Reporting-Endpoints.default.receives_deprecation_type",
+    "name": "Receives `deprecation` reports",
+    "description": "Receives `deprecation` reports",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-http.headers.Retry-After",
     "name": "Retry-After",
     "description": "",
@@ -47708,7 +47836,7 @@
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 93.81,
+    "usage": 92.11,
     "baseline": "high"
   },
   {
