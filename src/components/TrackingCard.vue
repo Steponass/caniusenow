@@ -7,6 +7,7 @@ import type { FeatureTracking, Trigger } from '@/types/featureTracking';
 
 interface Props {
   tracking: FeatureTracking;
+  feature: NormalizedFeature
 }
 
 const props = defineProps<Props>();
@@ -50,6 +51,15 @@ function getTriggerDescription(trigger: Trigger): string {
     return `Baseline status reaches ${baselineLabel}`;
   }
 }
+
+function getStatusColor(usage: number): string {
+  if (usage >= 95) return "var(--clr-high-support)";
+  if (usage >= 80) return "var(--clr-medium-support)";
+  return "var(--clr-low-support)";
+}
+
+const usagePercentage = Math.round(props.feature.usage.global.total);
+const statusColor = getStatusColor(props.feature.usage.global.total);
 </script>
 
 <template>
@@ -57,9 +67,9 @@ function getTriggerDescription(trigger: Trigger): string {
     @keydown.space="handleFeatureCardClick">
     <div class="card-header">
       <FormattedText :text="tracking.feature_title" tag="h5" />
-      <span class="status-badge" :class="tracking.status">
-        {{ tracking.status }}
-      </span>
+      <div class="feature-usage-badge" :style="{ backgroundColor: statusColor }">
+        <p>{{ usagePercentage }}%</p>
+      </div>
     </div>
 
     <div>
@@ -72,6 +82,9 @@ function getTriggerDescription(trigger: Trigger): string {
         </ul>
       </div>
 
+      <span class="status-badge" :class="tracking.status">
+        {{ tracking.status }}
+      </span>
       <div v-if="tracking.notified_at">
         Notified: {{ new Date(tracking.notified_at).toLocaleDateString() }}
       </div>
@@ -126,5 +139,4 @@ function getTriggerDescription(trigger: Trigger): string {
 ul {
   list-style-position: inside;
 }
-
 </style>

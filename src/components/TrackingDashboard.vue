@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, watch } from 'vue';
 import { useTrackingStore } from '@stores/featureTrackingStore';
+import { useFeatureStore } from '@stores/featureStore';
 import type { NormalizedFeature } from '@/types/feature';
 import type { FeatureTracking } from '@/types/featureTracking';
 import TrackingCard from './TrackingCard.vue';
@@ -8,6 +9,7 @@ import TrackingCard from './TrackingCard.vue';
 type Tab = 'active' | 'notified';
 
 const trackingStore = useTrackingStore();
+const featureStore = useFeatureStore();
 
 const emit = defineEmits<{
   featureClick: [feature: NormalizedFeature, tracking: FeatureTracking];
@@ -25,6 +27,12 @@ const displayedTrackings = computed(() => {
       return [];
   }
 });
+
+watch(displayedTrackings, (trackings) => {
+  trackings.forEach((tracking) => {
+    featureStore.loadFeature(tracking.feature_id);
+  });
+}, { immediate: true });
 </script>
 
 <template>
@@ -58,13 +66,14 @@ const displayedTrackings = computed(() => {
     </div>
 
     <div v-else class="tracking-list">
-      <TrackingCard
-        v-for="tracking in displayedTrackings"
-        :key="tracking.id"
-        :tracking="tracking"
-        @feature-click="(feature, tracking) => emit('featureClick', feature, tracking)"
-
-      />
+      <template v-for="tracking in displayedTrackings" :key="tracking.id">
+        <TrackingCard
+          v-if="featureStore.getFeatureFromCache(tracking.feature_id)"
+          :tracking="tracking"
+          :feature="featureStore.getFeatureFromCache(tracking.feature_id)!"
+          @feature-click="(feature, tracking) => emit('featureClick', feature, tracking)"
+        />
+      </template>
     </div>
   </div>
 </template>
