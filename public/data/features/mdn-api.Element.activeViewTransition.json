@@ -45,16 +45,17 @@
   },
   "usage": {
     "global": {
-      "full": 44.79,
+      "full": 54.4,
       "partial": 0,
-      "total": 44.79
+      "total": 54.4
     },
     "byBrowser": {
       "desktop": {
-        "chr": 0.03
+        "chr": 8.58,
+        "edg": 2.48
       },
       "mobile": {
-        "an_chr": 44.76
+        "an_chr": 43.35
       }
     },
     "type": "estimated"
@@ -65,7 +66,38 @@
       "source": "mdnbcd",
       "id": "api.Element.activeViewTransition"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.startViewTransition",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ViewTransition.transitionRoot",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.view-transition-scope",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.view-transition-scope.all",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.view-transition-scope.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "view-transitions-element-scoped",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=Element.activeViewTransition"
 }

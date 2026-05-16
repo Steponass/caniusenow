@@ -45,18 +45,18 @@
   },
   "usage": {
     "global": {
-      "full": 70.15,
+      "full": 68.77,
       "partial": 0,
-      "total": 70.15
+      "total": 68.77
     },
     "byBrowser": {
       "desktop": {
-        "chr": 19.53,
-        "edg": 5.41,
-        "opr": 0.45
+        "chr": 20.26,
+        "edg": 5.16,
+        "opr": 0.01
       },
       "mobile": {
-        "an_chr": 44.76
+        "an_chr": 43.35
       }
     },
     "type": "estimated"
@@ -67,7 +67,13 @@
       "source": "mdnbcd",
       "id": "api.ReportingObserver.ReportingObserver.options_parameter.types_property.permissions-policy-violation"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "reporting-permissions-policy-violations",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=%60permissions-policy-violation%60%20report%20type"
 }
