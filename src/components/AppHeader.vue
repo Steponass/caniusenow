@@ -40,7 +40,9 @@ function handleSignIn() {
       <h1>Can I Use It Now?</h1>
     </div>
 
-    <FeatureSearch @search="handleSearch" />
+    <div class="feature-search">
+      <FeatureSearch @search="handleSearch" />
+    </div>
     <div class="theme_and_sign_in">
       <ThemeToggle />
       <div v-if="authStore.isAuthenticated">
@@ -70,21 +72,52 @@ function handleSignIn() {
 
 <style scoped>
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "logo search controls";
   align-items: center;
+  gap: var(--space-12-16px);
   padding-block: var(--space-12px);
-  padding-inline: var(--space-12-16px);
+  padding-inline: var(--space-16px);
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.feature-search {
+  grid-area: search;
+  display: flex;
+  justify-content: center;
+}
+
+.theme_and_sign_in {
+  grid-area: controls;
+}
+
+@media (max-width: 526px) {
+  header {
+      /* padding-inline: var(--space-16-24px); */
+    grid-template-columns: 1fr auto;
+    row-gap: var(--space-12-16px);
+    grid-template-areas:
+      "logo controls"
+      "search search";
+  }
 }
 
 h1 {
   font-size: var(--fontsize-h5);
   font-weight: 700;
+  @media (max-width: 600px) {
+    font-size: var(--fontsize-h6);
+  }
 }
 
 .theme_and_sign_in {
   display: flex;
-  gap: var(--space-16-24px)
+  gap: var(--space-8-12px);
+  /* padding-inline-start: var(--space-16-24px); */
 }
 
 @media (max-width: 1050px) {

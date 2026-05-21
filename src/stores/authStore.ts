@@ -78,7 +78,10 @@ export const useAuthStore = defineStore('auth', () => {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
-        redirectTo: getCleanRedirectUrl()
+        redirectTo: getCleanRedirectUrl(),
+        queryParams: {
+          prompt: 'select_account'
+        }
       }
     });
 

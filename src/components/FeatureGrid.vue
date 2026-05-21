@@ -43,4 +43,9 @@ function handleFeatureCardClick(feature: NormalizedFeature): void {
   gap: var(--space-16-24px);
 }
 
+.empty-state {
+  padding: var(--space-24-32px);
+  text-align: center;
+}
+
 </style>
