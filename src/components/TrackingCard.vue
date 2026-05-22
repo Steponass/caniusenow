@@ -107,7 +107,7 @@ const statusColor = getStatusColor(props.feature.usage.global.total);
   padding: var(--space-16px) var(--space-24px);
   background: var(--clr-bg-raised);
   border-radius: var(--radius-8px);
-  box-shadow: var(--shadow-elevation-3);
+  box-shadow: var(--shadow-elevation-3), var(--shadow-elevation-1);
   cursor: pointer;
   transition: var(--transition-hover);
 }
