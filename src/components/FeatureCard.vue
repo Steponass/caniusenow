@@ -81,7 +81,7 @@ const statusColor = getStatusColor(props.feature.usage);
   padding: var(--space-16px);
   background: var(--clr-bg-raised);
   border-radius: var(--radius-8px);
-  box-shadow: var(--shadow-elevation-3);
+  box-shadow: var(--shadow-elevation-3), var(--shadow-elevation-1);
   cursor: pointer;
   transition: var(--transition-hover);
   @media (hover: hover) {

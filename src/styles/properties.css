@@ -17,9 +17,10 @@
   --clr-high-support: hsl(160, 84%, 30%);
   --clr-medium-support: hsl(38, 92%, 38%);
   --clr-low-support: hsl(0, 54%, 55%);
+
   /* SHADOWS */
-  /* 1st - "direct"
-   2nd - "ambient" */
+
+--shadow-elevation-1: 0 0 2px var(--clr-shadow-ambient);
 
 --shadow-elevation-2: 
 0 1px 0px 0px var(--clr-shadow-ambient);

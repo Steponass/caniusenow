@@ -88,7 +88,7 @@ watch(displayedTrackings, (trackings) => {
 
 .tracking-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-auto-rows: auto;
   gap: var(--space-16-24px);
 }
