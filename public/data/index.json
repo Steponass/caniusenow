@@ -1389,7 +1389,7 @@
       "an_chr": "n"
     },
     "usage": 87.94,
-    "baseline": false
+    "baseline": "low"
   },
   {
     "id": "css-container-query-units",
@@ -9024,6 +9024,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.AnimationEvent.animation",
+    "name": "AnimationEvent.animation",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0.35,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.AnimationTrigger",
     "name": "AnimationTrigger",
     "description": "",
@@ -9373,7 +9389,7 @@
       "an_chr": "y"
     },
     "usage": 90.66,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-api.BackgroundFetchEvent",
@@ -10976,8 +10992,8 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.CrashReportContext.initialize",
-    "name": "CrashReportContext.initialize",
+    "id": "mdn-api.CreateMonitor",
+    "name": "CreateMonitor",
     "description": "",
     "category": "JS API",
     "support": {
@@ -10988,23 +11004,7 @@
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 64.87,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.CreateMonitor",
-    "name": "CreateMonitor",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 61.84,
+    "usage": 66.9,
     "baseline": false
   },
   {
@@ -11016,11 +11016,11 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 61.84,
+    "usage": 66.9,
     "baseline": false
   },
   {
@@ -13296,6 +13296,38 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.Element.getAnimations.options_parameter",
+    "name": "`options` parameter",
+    "description": "`options` parameter",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 91.29,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Element.getAnimations.options_parameter.pseudoElement_option",
+    "name": "`options.pseudoElement` parameter",
+    "description": "`options.pseudoElement` parameter",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0.35,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.Element.getHTML",
     "name": "Element.getHTML",
     "description": "",
@@ -13446,13 +13478,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 86.74,
+    "usage": 87.09,
     "baseline": false
   },
   {
@@ -16648,11 +16680,11 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "y",
+      "edg": "n",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 68.53,
+    "usage": 63.39,
     "baseline": false
   },
   {
@@ -20720,22 +20752,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.Navigator.canLoadAdAuctionFencedFrame",
-    "name": "Navigator.canLoadAdAuctionFencedFrame",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.12,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.Navigator.canShare",
     "name": "Navigator.canShare",
     "description": "",
@@ -20765,22 +20781,6 @@
       "an_chr": "y"
     },
     "usage": 87.98,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Navigator.clearOriginJoinedAdInterestGroups",
-    "name": "Navigator.clearOriginJoinedAdInterestGroups",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.12,
     "baseline": false
   },
   {
@@ -20814,38 +20814,6 @@
     },
     "usage": 92.87,
     "baseline": "low"
-  },
-  {
-    "id": "mdn-api.Navigator.createAuctionNonce",
-    "name": "Navigator.createAuctionNonce",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.12,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Navigator.deprecatedRunAdAuctionEnforcesKAnonymity",
-    "name": "Navigator.deprecatedRunAdAuctionEnforcesKAnonymity",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.12,
-    "baseline": false
   },
   {
     "id": "mdn-api.Navigator.deviceMemory",
@@ -20912,22 +20880,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.Navigator.getInterestGroupAdAuctionData",
-    "name": "Navigator.getInterestGroupAdAuctionData",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 67.59,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.Navigator.getUserMedia",
     "name": "Navigator.getUserMedia",
     "description": "",
@@ -20960,22 +20912,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.Navigator.joinAdInterestGroup",
-    "name": "Navigator.joinAdInterestGroup",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.12,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.Navigator.language",
     "name": "Navigator.language",
     "description": "",
@@ -20990,22 +20926,6 @@
     },
     "usage": 93.95,
     "baseline": "high"
-  },
-  {
-    "id": "mdn-api.Navigator.leaveAdInterestGroup",
-    "name": "Navigator.leaveAdInterestGroup",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.12,
-    "baseline": false
   },
   {
     "id": "mdn-api.Navigator.login",
@@ -21133,22 +21053,6 @@
       "an_chr": "y"
     },
     "usage": 73.4,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Navigator.protectedAudience",
-    "name": "Navigator.protectedAudience",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.12,
     "baseline": false
   },
   {
@@ -21312,22 +21216,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.Navigator.runAdAuction",
-    "name": "Navigator.runAdAuction",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.12,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.Navigator.scheduling",
     "name": "Navigator.scheduling",
     "description": "",
@@ -21408,22 +21296,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.Navigator.updateAdInterestGroups",
-    "name": "Navigator.updateAdInterestGroups",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.12,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.Navigator.userActivation",
     "name": "Navigator.userActivation",
     "description": "",
@@ -21437,7 +21309,7 @@
       "an_chr": "y"
     },
     "usage": 90.5,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-api.Navigator.userAgentData",
@@ -22470,13 +22342,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 69.56,
+    "usage": 69.91,
     "baseline": false
   },
   {
@@ -23088,38 +22960,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.ProtectedAudience",
-    "name": "ProtectedAudience",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.14,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.ProtectedAudience.queryFeatureSupport",
-    "name": "ProtectedAudience.queryFeatureSupport",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.14,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.PublicKeyCredential.signalAllAcceptedCredentials_static",
     "name": "`signalAllAcceptedCredentials()` static method",
     "description": "`signalAllAcceptedCredentials()` static method",
@@ -23446,13 +23286,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 68.14,
+    "usage": 68.49,
     "baseline": false
   },
   {
@@ -23590,13 +23430,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 68.14,
+    "usage": 68.49,
     "baseline": false
   },
   {
@@ -24592,6 +24432,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.Request.Request.options_parameter.body.accepts_readablestream",
+    "name": "`ReadableStream` body",
+    "description": "`ReadableStream` body",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 72.52,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.Request.Request.options_parameter.duplex",
     "name": "`duplex` property",
     "description": "`duplex` property",
@@ -24637,22 +24493,6 @@
       "an_chr": "y"
     },
     "usage": 66.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Request.body",
-    "name": "Request.body",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 88.89,
     "baseline": false
   },
   {
@@ -25424,22 +25264,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.SharedStorageWorkletGlobalScope.interestGroups",
-    "name": "SharedStorageWorkletGlobalScope.interestGroups",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 67.15,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.SharedWorker.SharedWorker.options_extendedLifetime_parameter",
     "name": "`options.extendedLifetime` parameter",
     "description": "`options.extendedLifetime` parameter",
@@ -25800,11 +25624,11 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 61.84,
+    "usage": 66.9,
     "baseline": false
   },
   {
@@ -25933,6 +25757,22 @@
       "an_chr": "n"
     },
     "usage": 0,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.TransitionEvent.animation",
+    "name": "TransitionEvent.animation",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0.35,
     "baseline": false
   },
   {
@@ -27005,22 +26845,6 @@
       "an_chr": "n"
     },
     "usage": 5.34,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Window.crashReport",
-    "name": "Window.crashReport",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.87,
     "baseline": false
   },
   {
@@ -28816,22 +28640,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.fetch.options_parameter.body.accepts_readablestream",
-    "name": "`ReadableStream` body",
-    "description": "`ReadableStream` body",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 72.52,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.isSecureContext",
     "name": "isSecureContext",
     "description": "",
@@ -28877,22 +28685,6 @@
       "an_chr": "y"
     },
     "usage": 91.12,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.setInterval.supports_parameters_for_callback",
-    "name": "Supports parameters for callback",
-    "description": "Supports parameters for callback",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.95,
     "baseline": false
   },
   {
@@ -34086,13 +33878,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 78.99,
+    "usage": 79.34,
     "baseline": false
   },
   {
@@ -41270,13 +41062,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "a",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 91.63,
+    "usage": 91.98,
     "baseline": false
   },
   {
@@ -42637,7 +42429,7 @@
       "an_chr": "y"
     },
     "usage": 89.33,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-css.types.length.rch",
@@ -42765,6 +42557,38 @@
       "an_chr": "y"
     },
     "usage": 77.42,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.types.timeline-range-name",
+    "name": "`&lt;timeline-range-name&gt;`",
+    "description": "`&lt;timeline-range-name&gt;`",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 81.93,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.types.timeline-range-name.scroll",
+    "name": "`scroll` value",
+    "description": "`scroll` value",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 54.48,
     "baseline": false
   },
   {
@@ -45815,12 +45639,12 @@
     "support": {
       "chr": "y",
       "ffx": "y",
-      "saf": "y",
+      "saf": "n",
       "edg": "y",
-      "ios_saf": "y",
+      "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 90.44,
+    "usage": 74.93,
     "baseline": false
   },
   {
@@ -45831,12 +45655,12 @@
     "support": {
       "chr": "y",
       "ffx": "y",
-      "saf": "y",
+      "saf": "n",
       "edg": "y",
-      "ios_saf": "y",
+      "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 90.44,
+    "usage": 74.93,
     "baseline": false
   },
   {
@@ -45847,12 +45671,12 @@
     "support": {
       "chr": "y",
       "ffx": "y",
-      "saf": "y",
+      "saf": "n",
       "edg": "y",
-      "ios_saf": "y",
+      "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 90.44,
+    "usage": 74.93,
     "baseline": false
   },
   {
@@ -48160,22 +47984,6 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-javascript.operators.import.options_parameter",
-    "name": "The `options` parameter",
-    "description": "The `options` parameter",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 91.03,
-    "baseline": false
-  },
-  {
     "id": "mdn-javascript.operators.import.worker_support",
     "name": "Available in workers",
     "description": "Available in workers",
@@ -48349,6 +48157,22 @@
       "an_chr": "y"
     },
     "usage": 66.96,
+    "baseline": false
+  },
+  {
+    "id": "wf-ad-selection",
+    "name": "Ad selection",
+    "description": "The Ad Selection API facilitates advertisement sales by allowing sites to register users as part of an interest group or",
+    "category": "Other",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
     "baseline": false
   },
   {
