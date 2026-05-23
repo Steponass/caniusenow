@@ -4,7 +4,7 @@
   "name": "CrashReportContext",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/CrashReportContext/set",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/crashReport",
   "links": [],
   "support": {
     "chr": {
@@ -75,8 +75,23 @@
       },
       {
         "source": "mdnbcd",
+        "id": "api.CrashReportContext.initialize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
         "id": "api.CrashReportContext.set",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.crashReport",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "reporting-crashes-storage",
+        "matched": "exact"
       }
     ]
   },
