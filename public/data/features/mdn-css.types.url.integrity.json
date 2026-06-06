@@ -8,7 +8,15 @@
   "support": {
     "chr": {
       "current": "y",
-      "firstFull": "preview"
+      "firstFull": "150"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "150"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "134"
     },
     "ffx": {
       "current": "n"
@@ -16,26 +24,20 @@
     "saf": {
       "current": "n"
     },
-    "edg": {
-      "current": "n"
-    },
-    "opr": {
-      "current": "y",
-      "firstFull": "preview"
-    },
     "ie": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "150"
     },
     "ios_saf": {
       "current": "n"
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "preview"
+      "firstFull": "150"
     },
     "smsg": {
       "current": "y",
-      "firstFull": "preview"
+      "firstFull": "150"
     },
     "an_ff": {
       "current": "n"
@@ -43,18 +45,14 @@
   },
   "usage": {
     "global": {
-      "full": 69.91,
+      "full": 43.35,
       "partial": 0,
-      "total": 69.91
+      "total": 43.35
     },
     "byBrowser": {
-      "desktop": {
-        "chr": 24.89,
-        "opr": 0.15
-      },
+      "desktop": {},
       "mobile": {
-        "an_chr": 43.35,
-        "smsg": 1.53
+        "an_chr": 43.35
       }
     },
     "type": "estimated"
@@ -65,7 +63,13 @@
       "source": "mdnbcd",
       "id": "css.types.url.integrity"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "url-integrity",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=%60integrity()%60%20modifier"
 }

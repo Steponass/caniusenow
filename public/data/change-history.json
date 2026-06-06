@@ -1,6 +1,301 @@
 {
-  "lastUpdated": "2026-05-31T03:30:22.679Z",
+  "lastUpdated": "2026-06-06T03:30:01.258Z",
   "entries": [
+    {
+      "timestamp": "2026-06-06T03:30:01.258Z",
+      "previousCommit": "eb11864bb314a78ead909b531a037646b9c17954",
+      "currentCommit": "pending",
+      "totalChanges": 17,
+      "changes": [
+        {
+          "featureId": "mdn-api.CSSContainerRule.conditions",
+          "changes": {
+            "usage": {
+              "old": 0.35,
+              "new": 43.69,
+              "delta": 43.339999999999996
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.Document.hasStorageAccess",
+          "changes": {
+            "baseline": {
+              "old": "low",
+              "new": "high"
+            }
+          }
+        },
+        {
+          "featureId": "mdn-api.LanguageDetector",
+          "changes": {
+            "support": [
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.LanguageModel",
+          "changes": {
+            "support": [
+              {
+                "browser": "edg",
+                "old": "y",
+                "new": "n"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.LanguageModel.contextoverflow_event",
+          "changes": {
+            "support": [
+              {
+                "browser": "edg",
+                "old": "y",
+                "new": "n"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.LanguageModel.destroy",
+          "changes": {
+            "support": [
+              {
+                "browser": "edg",
+                "old": "y",
+                "new": "n"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.ReadableStream.@@asyncIterator",
+          "changes": {
+            "usage": {
+              "old": 72.61,
+              "new": 87.09,
+              "delta": 14.480000000000004
+            }
+          }
+        },
+        {
+          "featureId": "mdn-api.Translator",
+          "changes": {
+            "support": [
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.WEBGL_compressed_texture_etc",
+          "changes": {
+            "usage": {
+              "old": 89.18,
+              "new": 91.31,
+              "delta": 2.1299999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ],
+            "baseline": {
+              "old": false,
+              "new": "high"
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.at-rules.container.style_queries_for_custom_properties.range_syntax",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.accent-color",
+          "changes": {
+            "usage": {
+              "old": 91.13,
+              "new": 87.59,
+              "delta": -3.539999999999992
+            },
+            "support": [
+              {
+                "browser": "saf",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "ios_saf",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.background-clip.border-area",
+          "changes": {
+            "usage": {
+              "old": 14.03,
+              "new": 57.38,
+              "delta": 43.35
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.types.url.cross-origin",
+          "changes": {
+            "usage": {
+              "old": 80.43,
+              "new": 53.86,
+              "delta": -26.570000000000007
+            },
+            "support": [
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.types.url.integrity",
+          "changes": {
+            "usage": {
+              "old": 69.91,
+              "new": 43.35,
+              "delta": -26.559999999999995
+            },
+            "support": [
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.types.url.referrer-policy",
+          "changes": {
+            "usage": {
+              "old": 80.43,
+              "new": 53.86,
+              "delta": -26.570000000000007
+            },
+            "support": [
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "wf-app-migration",
+          "changes": {
+            "usage": {
+              "old": 0,
+              "new": 43.35,
+              "delta": 43.35
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "wf-webgl-compressed-texture-etc1",
+          "changes": {
+            "usage": {
+              "old": 89.52,
+              "new": 91.64,
+              "delta": 2.1200000000000045
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ],
+            "baseline": {
+              "old": false,
+              "new": "high"
+            }
+          }
+        }
+      ]
+    },
     {
       "timestamp": "2026-05-31T03:30:22.679Z",
       "previousCommit": "aa4fb5e31cec55fce8cd307eb48494638f4c14fc",

@@ -9829,14 +9829,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 0.35,
+    "usage": 43.69,
     "baseline": false
   },
   {
@@ -12445,7 +12445,7 @@
       "an_chr": "y"
     },
     "usage": 87.34,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-api.Document.hasUnpartitionedCookieAccess",
@@ -17920,22 +17920,6 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-api.HTMLScriptElement.innerText",
-    "name": "HTMLScriptElement.innerText",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.04,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.HTMLScriptElement.noModule",
     "name": "HTMLScriptElement.noModule",
     "description": "",
@@ -17949,22 +17933,6 @@
       "an_chr": "y"
     },
     "usage": 91.63,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.HTMLScriptElement.textContent",
-    "name": "HTMLScriptElement.textContent",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.08,
     "baseline": false
   },
   {
@@ -19032,7 +19000,7 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
@@ -19048,7 +19016,7 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "y",
+      "edg": "n",
       "ios_saf": "n",
       "an_chr": "y"
     },
@@ -19064,7 +19032,7 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "y",
+      "edg": "n",
       "ios_saf": "n",
       "an_chr": "y"
     },
@@ -19080,7 +19048,7 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "y",
+      "edg": "n",
       "ios_saf": "n",
       "an_chr": "y"
     },
@@ -21325,22 +21293,6 @@
       "an_chr": "y"
     },
     "usage": 72.97,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Navigator.vendorSub",
-    "name": "Navigator.vendorSub",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.81,
     "baseline": false
   },
   {
@@ -24220,7 +24172,7 @@
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 72.61,
+    "usage": 87.09,
     "baseline": false
   },
   {
@@ -24496,6 +24448,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.Request.destination.text",
+    "name": "`text` value",
+    "description": "`text` value",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.Request.formData",
     "name": "Request.formData",
     "description": "",
@@ -24509,6 +24477,22 @@
       "an_chr": "a"
     },
     "usage": 91.34,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Request.isReloadNavigation",
+    "name": "Request.isReloadNavigation",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
     "baseline": false
   },
   {
@@ -24733,6 +24717,22 @@
       "an_chr": "n"
     },
     "usage": 1.97,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.SVGTextPathElement.side",
+    "name": "SVGTextPathElement.side",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0.35,
     "baseline": false
   },
   {
@@ -25376,6 +25376,54 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.SpeechRecognition.available_static.options_parameter.options_langs_parameter",
+    "name": "`options.langs` parameter",
+    "description": "`options.langs` parameter",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 66.69,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.SpeechRecognition.available_static.options_parameter.options_processLocally_parameter",
+    "name": "`options.processLocally` parameter",
+    "description": "`options.processLocally` parameter",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 66.69,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.SpeechRecognition.available_static.options_parameter.options_quality_parameter",
+    "name": "`options.quality` parameter",
+    "description": "`options.quality` parameter",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.SpeechRecognition.install_static",
     "name": "`install()` static method",
     "description": "`install()` static method",
@@ -25784,7 +25832,7 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
@@ -26182,14 +26230,14 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 89.18,
-    "baseline": false
+    "usage": 91.31,
+    "baseline": "high"
   },
   {
     "id": "mdn-api.WEBGL_compressed_texture_pvrtc",
@@ -28790,13 +28838,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 66.31,
+    "usage": 66.65,
     "baseline": false
   },
   {
@@ -29213,6 +29261,22 @@
       "an_chr": "y"
     },
     "usage": 74.97,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.at-rules.supports.at-rule",
+    "name": "`at-rule()`",
+    "description": "`at-rule()`",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.37,
     "baseline": false
   },
   {
@@ -30071,12 +30135,12 @@
     "support": {
       "chr": "y",
       "ffx": "y",
-      "saf": "a",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "a",
+      "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 91.13,
+    "usage": 87.59,
     "baseline": false
   },
   {
@@ -30448,6 +30512,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-css.properties.background.border-area",
+    "name": "background: border-area",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 57.38,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.background.border-box",
     "name": "background: border-box",
     "description": "",
@@ -30661,14 +30741,14 @@
     "description": "",
     "category": "CSS",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 14.03,
+    "usage": 57.38,
     "baseline": false
   },
   {
@@ -31712,6 +31792,54 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.column-rule-inset.overlap-join",
+    "name": "column-rule-inset: overlap-join",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.column-rule-inset-cap.overlap-join",
+    "name": "column-rule-inset-cap: overlap-join",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.column-rule-inset-cap-end.overlap-join",
+    "name": "column-rule-inset-cap-end: overlap-join",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.column-rule-inset-cap-start",
     "name": "`column-rule-inset-cap-start`",
     "description": "",
@@ -31728,8 +31856,104 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.column-rule-inset-cap-start.overlap-join",
+    "name": "column-rule-inset-cap-start: overlap-join",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.column-rule-inset-end.overlap-join",
+    "name": "column-rule-inset-end: overlap-join",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.column-rule-inset-junction",
     "name": "`column-rule-inset-junction`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.column-rule-inset-junction.overlap-join",
+    "name": "column-rule-inset-junction: overlap-join",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.column-rule-inset-junction-end.overlap-join",
+    "name": "column-rule-inset-junction-end: overlap-join",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.column-rule-inset-junction-start.overlap-join",
+    "name": "column-rule-inset-junction-start: overlap-join",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.column-rule-inset-start.overlap-join",
+    "name": "column-rule-inset-start: overlap-join",
     "description": "",
     "category": "CSS",
     "support": {
@@ -31949,6 +32173,22 @@
       "an_chr": "y"
     },
     "usage": 90.33,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.container.name-only_queries",
+    "name": "Name-only container queries",
+    "description": "Name-only container queries",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 47.16,
     "baseline": false
   },
   {
@@ -34016,6 +34256,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.flex-flow.balance",
+    "name": "flex-flow: Balance",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.flex-flow.column",
     "name": "flex-flow: Column",
     "description": "",
@@ -34125,6 +34381,38 @@
       "an_chr": "y"
     },
     "usage": 93.76,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.flex-line-count",
+    "name": "`flex-line-count`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.flex-wrap.balance",
+    "name": "flex-wrap: Balance",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
     "baseline": false
   },
   {
@@ -37360,6 +37648,38 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.overscroll-behavior-block.chain",
+    "name": "overscroll-behavior-block: Chain",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.overscroll-behavior-inline.chain",
+    "name": "overscroll-behavior-inline: Chain",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.padding",
     "name": "`padding`",
     "description": "",
@@ -38112,8 +38432,56 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.row-rule-inset.overlap-join",
+    "name": "row-rule-inset: overlap-join",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.row-rule-inset-cap.overlap-join",
+    "name": "row-rule-inset-cap: overlap-join",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.row-rule-inset-cap-end",
     "name": "`row-rule-inset-cap-end`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.row-rule-inset-cap-end.overlap-join",
+    "name": "row-rule-inset-cap-end: overlap-join",
     "description": "",
     "category": "CSS",
     "support": {
@@ -38144,8 +38512,104 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.row-rule-inset-cap-start.overlap-join",
+    "name": "row-rule-inset-cap-start: overlap-join",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.row-rule-inset-end.overlap-join",
+    "name": "row-rule-inset-end: overlap-join",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.row-rule-inset-junction",
     "name": "`row-rule-inset-junction`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.row-rule-inset-junction.overlap-join",
+    "name": "row-rule-inset-junction: overlap-join",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.row-rule-inset-junction-end.overlap-join",
+    "name": "row-rule-inset-junction-end: overlap-join",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.row-rule-inset-junction-start.overlap-join",
+    "name": "row-rule-inset-junction-start: overlap-join",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.row-rule-inset-start.overlap-join",
+    "name": "row-rule-inset-start: overlap-join",
     "description": "",
     "category": "CSS",
     "support": {
@@ -39520,54 +39984,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.text-decoration.line-through",
-    "name": "text-decoration: line-through",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.81,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.text-decoration.none",
-    "name": "text-decoration: None",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.81,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.text-decoration.overline",
-    "name": "text-decoration: Overline",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.81,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.text-decoration.solid",
     "name": "text-decoration: Solid",
     "description": "",
@@ -39597,22 +40013,6 @@
       "an_chr": "y"
     },
     "usage": 81.03,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.text-decoration.underline",
-    "name": "text-decoration: Underline",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.81,
     "baseline": false
   },
   {
@@ -39901,6 +40301,70 @@
       "an_chr": "y"
     },
     "usage": 91.57,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.text-fit",
+    "name": "`text-fit`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.text-fit.grow",
+    "name": "text-fit: Grow",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.text-fit.none",
+    "name": "text-fit: None",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.text-fit.shrink",
+    "name": "text-fit: Shrink",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 43.35,
     "baseline": false
   },
   {
@@ -42600,11 +43064,11 @@
       "chr": "y",
       "ffx": "n",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 80.43,
+    "usage": 53.86,
     "baseline": false
   },
   {
@@ -42616,11 +43080,11 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 69.91,
+    "usage": 43.35,
     "baseline": false
   },
   {
@@ -42632,11 +43096,11 @@
       "chr": "y",
       "ffx": "n",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 80.43,
+    "usage": 53.86,
     "baseline": false
   },
   {
@@ -47184,6 +47648,22 @@
     "baseline": "low"
   },
   {
+    "id": "mdn-javascript.builtins.Iterator.includes",
+    "name": "`Iterator.includes()`",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
     "id": "mdn-javascript.builtins.Iterator.zipKeyed",
     "name": "`Iterator.zipKeyed()`",
     "description": "",
@@ -48080,6 +48560,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-javascript.statements.import.import_attributes.type_text",
+    "name": "`with {type: 'text'}`",
+    "description": "`with {type: 'text'}`",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
     "id": "mdn-javascript.statements.try_catch.optional_catch_binding",
     "name": "Optional catch binding",
     "description": "Optional catch binding",
@@ -48197,14 +48693,14 @@
     "description": "The migrate_to and migrate_from web app manifest members move an installed app from one origin to another, within the sa",
     "category": "Other",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 0,
+    "usage": 43.35,
     "baseline": false
   },
   {
@@ -48323,6 +48819,22 @@
     "id": "wf-declarative-webmcp",
     "name": "Form-associated WebMCP attributes",
     "description": "The toolname, tooldescription, and toolautosubmit HTML form element attributes register actions that can be called by in",
+    "category": "Other",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
+    "id": "wf-document-modelcontext",
+    "name": "document.modelContext",
+    "description": "The document.modelContext API registers page actions that can be called by in-browser AI agents or browser extensions. A",
     "category": "Other",
     "support": {
       "chr": "n",
@@ -48496,22 +49008,6 @@
     "baseline": false
   },
   {
-    "id": "wf-navigator-modelcontext",
-    "name": "navigator.modelContext",
-    "description": "The navigator.modelContext API registers page actions that can be called by in-browser AI agents or browser extensions. ",
-    "category": "Other",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
     "id": "wf-oes-texture-float-linear",
     "name": "OES_texture_float_linear WebGL extension",
     "description": "The OES_texture_float_linear extension for WebGL 1.0 and 2.0 contexts adds linear filtering with floating-point pixel ty",
@@ -48624,57 +49120,9 @@
     "baseline": "high"
   },
   {
-    "id": "wf-supports-at-rule",
-    "name": "at-rule()",
-    "description": "The at-rule() function, when used with @supports, checks if a CSS at-rule is supported. For example @supports at-rule(@s",
-    "category": "Other",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
     "id": "wf-target-within",
     "name": ":target-within",
     "description": "The :target-within CSS pseudo-class matches the element with an ID matching the URL fragment and its ancestors.",
-    "category": "Other",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "wf-text-fit",
-    "name": "text-fit",
-    "description": "The text-fit CSS property scales text to fill the inline size of its container. You can use this to grow or shrink headl",
-    "category": "Other",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "wf-url-integrity",
-    "name": "integrity() for url()",
-    "description": "The url() CSS function accepts an integrity() modifier to use subresource integrity to verify the response from the requ",
     "category": "Other",
     "support": {
       "chr": "n",
@@ -48966,14 +49414,14 @@
     "category": "Other",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 89.52,
-    "baseline": false
+    "usage": 91.64,
+    "baseline": "high"
   },
   {
     "id": "wf-webgl-compressed-texture-s3tc-srgb",
