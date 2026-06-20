@@ -1,93 +1,88 @@
 {
-  "id": "mdn-api.CanvasRenderingContext2D.reset",
+  "id": "mdn-api.MediaCapabilities.decodingInfo.configuration_parameter.type",
   "source": "mdnbcd",
-  "name": "CanvasRenderingContext2D.reset",
-  "description": "",
+  "name": "`type` property",
+  "description": "`type` property",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/reset",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/MediaCapabilities/encodingInfo#type",
   "links": [],
   "support": {
     "chr": {
       "current": "y",
-      "firstFull": "99"
+      "firstFull": "66"
     },
     "ffx": {
       "current": "y",
-      "firstFull": "113"
+      "firstFull": "63"
     },
     "saf": {
       "current": "y",
-      "firstFull": "17.2"
+      "firstFull": "13"
     },
     "edg": {
       "current": "y",
-      "firstFull": "99"
+      "firstFull": "79"
     },
     "opr": {
       "current": "y",
-      "firstFull": "85"
+      "firstFull": "53"
     },
     "ie": {
       "current": "y",
-      "firstFull": "99"
+      "firstFull": "79"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "17.2"
+      "firstFull": "13"
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "99"
+      "firstFull": "66"
     },
     "smsg": {
       "current": "y",
-      "firstFull": "99"
+      "firstFull": "66"
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "113"
+      "firstFull": "63"
     }
   },
   "usage": {
     "global": {
-      "full": 89.38,
+      "full": 90.68,
       "partial": 0,
-      "total": 89.38
+      "total": 90.68
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.2,
-        "ffx": 1.67,
-        "saf": 1.8,
-        "edg": 4.7,
+        "chr": 26.35,
+        "ffx": 1.68,
+        "saf": 2.15,
+        "edg": 4.71,
         "opr": 0.55
       },
       "mobile": {
-        "ios_saf": 11.88,
+        "ios_saf": 12.67,
         "an_chr": 42.2,
         "an_ff": 0.37
       }
     },
     "type": "estimated"
   },
-  "baseline": "high",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "api.CanvasRenderingContext2D.reset"
+      "id": "api.MediaCapabilities.decodingInfo.configuration_parameter.type"
     },
     "supplementary": [
       {
         "source": "mdnbcd",
-        "id": "api.OffscreenCanvasRenderingContext2D.reset",
+        "id": "api.MediaCapabilities.encodingInfo.configuration_parameter.type",
         "matched": "via-webfeatures"
-      },
-      {
-        "source": "webfeatures",
-        "id": "canvas-reset",
-        "matched": "exact"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=CanvasRenderingContext2D.reset"
+  "caniuseUrl": "https://caniuse.com/?search=%60type%60%20property"
 }

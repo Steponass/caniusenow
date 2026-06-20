@@ -10,6 +10,10 @@
       "current": "y",
       "firstFull": "144"
     },
+    "saf": {
+      "current": "y",
+      "firstFull": "preview"
+    },
     "edg": {
       "current": "y",
       "firstFull": "144"
@@ -21,15 +25,13 @@
     "ffx": {
       "current": "n"
     },
-    "saf": {
-      "current": "n"
-    },
     "ie": {
       "current": "y",
       "firstFull": "144"
     },
     "ios_saf": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "preview"
     },
     "an_chr": {
       "current": "y",
@@ -45,17 +47,20 @@
   },
   "usage": {
     "global": {
-      "full": 65.31,
+      "full": 78.61,
       "partial": 0,
-      "total": 65.31
+      "total": 78.61
     },
     "byBrowser": {
       "desktop": {
-        "chr": 17.03,
-        "edg": 4.94
+        "chr": 16.31,
+        "saf": 2.15,
+        "edg": 4.49,
+        "opr": 0.42
       },
       "mobile": {
-        "an_chr": 43.35
+        "ios_saf": 13.04,
+        "an_chr": 42.2
       }
     },
     "type": "estimated"
@@ -66,7 +71,13 @@
       "source": "mdnbcd",
       "id": "css.properties.anchor-name.position_after_layout"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "anchor-positioning-transforms",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=Positioning%20applies%20after%20layout%2C%20such%20as%20zoom%2C%20position%2C%20and%20transform"
 }

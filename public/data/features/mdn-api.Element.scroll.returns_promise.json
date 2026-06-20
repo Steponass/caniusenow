@@ -1,66 +1,60 @@
 {
-  "id": "mdn-api.CookieStore.delete.partitioned_option",
+  "id": "mdn-api.Element.scroll.returns_promise",
   "source": "mdnbcd",
-  "name": "`partitioned` option",
-  "description": "`partitioned` option",
+  "name": "Returns a `Promise`",
+  "description": "Returns a `Promise`",
   "category": "JS API",
   "links": [],
   "support": {
     "chr": {
       "current": "y",
-      "firstFull": "114"
-    },
-    "ffx": {
-      "current": "y",
-      "firstFull": "140"
+      "firstFull": "150"
     },
     "edg": {
       "current": "y",
-      "firstFull": "114"
+      "firstFull": "150"
     },
     "opr": {
       "current": "y",
-      "firstFull": "100"
+      "firstFull": "134"
+    },
+    "ffx": {
+      "current": "n"
     },
     "saf": {
       "current": "n"
     },
     "ie": {
       "current": "y",
-      "firstFull": "114"
+      "firstFull": "150"
     },
     "ios_saf": {
       "current": "n"
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "114"
+      "firstFull": "150"
     },
     "smsg": {
       "current": "y",
-      "firstFull": "114"
+      "firstFull": "150"
     },
     "an_ff": {
-      "current": "y",
-      "firstFull": "140"
+      "current": "n"
     }
   },
   "usage": {
     "global": {
-      "full": 71.63,
+      "full": 42.21,
       "partial": 0,
-      "total": 71.63
+      "total": 42.21
     },
     "byBrowser": {
       "desktop": {
-        "chr": 22.48,
-        "ffx": 1.49,
-        "edg": 4.67,
-        "opr": 0.42
+        "chr": 0.01
       },
       "mobile": {
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "an_chr": 42.2
       }
     },
     "type": "estimated"
@@ -69,40 +63,40 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "api.CookieStore.delete.partitioned_option"
+      "id": "api.Element.scroll.returns_promise"
     },
     "supplementary": [
       {
         "source": "mdnbcd",
-        "id": "api.CookieStore.get.partitioned_return_property",
+        "id": "api.Element.scrollBy.returns_promise",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.CookieStore.set.partitioned_option",
+        "id": "api.Element.scrollIntoView.returns_promise",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.ExtendableCookieChangeEvent.changed.partitioned_property",
+        "id": "api.Element.scrollTo.returns_promise",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.ExtendableCookieChangeEvent.deleted.partitioned_property",
+        "id": "api.Window.scroll.returns_promise",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "http.headers.Set-Cookie.Partitioned",
+        "id": "api.Window.scrollBy.returns_promise",
         "matched": "via-webfeatures"
       },
       {
-        "source": "webfeatures",
-        "id": "partitioned-cookies",
-        "matched": "exact"
+        "source": "mdnbcd",
+        "id": "api.Window.scrollTo.returns_promise",
+        "matched": "via-webfeatures"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60partitioned%60%20option"
+  "caniuseUrl": "https://caniuse.com/?search=Returns%20a%20%60Promise%60"
 }

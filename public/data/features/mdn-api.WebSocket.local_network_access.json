@@ -1,0 +1,84 @@
+{
+  "id": "mdn-api.WebSocket.local_network_access",
+  "source": "mdnbcd",
+  "name": "Subject to <a href=\"https://developer.mozilla.org/docs/Web/Security/Defenses/Local_network_access\">Local Network Access</a> restrictions",
+  "description": "Subject to <a href=\"https://developer.mozilla.org/docs/Web/Security/Defenses/Local_network_access\">Local Network Access</a> restrictions",
+  "category": "JS API",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "147"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "147"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "131"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "147"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "147"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "147"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 61.52,
+      "partial": 0,
+      "total": 61.52
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 14.57,
+        "edg": 4.34,
+        "opr": 0.42
+      },
+      "mobile": {
+        "an_chr": 42.2
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "api.WebSocket.local_network_access"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.WebTransport.local_network_access",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.WindowClient.navigate.local_network_access",
+        "matched": "via-webfeatures"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Subject%20to%20%3Ca%20href%3D%22https%3A%2F%2Fdeveloper.mozilla.org%2Fdocs%2FWeb%2FSecurity%2FDefenses%2FLocal_network_access%22%3ELocal%20Network%20Access%3C%2Fa%3E%20restrictions"
+}

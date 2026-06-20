@@ -1,88 +1,87 @@
 {
-  "id": "mdn-api.HTMLMediaElement.preservesPitch",
+  "id": "mdn-api.MediaCapabilities.decodingInfo.configuration_parameter",
   "source": "mdnbcd",
-  "name": "HTMLMediaElement.preservesPitch",
-  "description": "",
+  "name": "`configuration` parameter",
+  "description": "`configuration` parameter",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/preservesPitch",
   "links": [],
   "support": {
     "chr": {
       "current": "y",
-      "firstFull": "86"
+      "firstFull": "66"
     },
     "ffx": {
       "current": "y",
-      "firstFull": "101"
+      "firstFull": "63"
     },
     "saf": {
       "current": "y",
-      "firstFull": "17.2"
+      "firstFull": "13"
     },
     "edg": {
       "current": "y",
-      "firstFull": "86"
+      "firstFull": "79"
     },
     "opr": {
       "current": "y",
-      "firstFull": "72"
+      "firstFull": "53"
     },
     "ie": {
       "current": "y",
-      "firstFull": "86"
+      "firstFull": "79"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "17.2"
+      "firstFull": "13"
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "86"
+      "firstFull": "66"
     },
     "smsg": {
       "current": "y",
-      "firstFull": "86"
+      "firstFull": "66"
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "101"
+      "firstFull": "63"
     }
   },
   "usage": {
     "global": {
-      "full": 89.48,
+      "full": 90.68,
       "partial": 0,
-      "total": 89.48
+      "total": 90.68
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.29,
-        "ffx": 1.67,
-        "saf": 1.8,
+        "chr": 26.35,
+        "ffx": 1.68,
+        "saf": 2.15,
         "edg": 4.71,
         "opr": 0.55
       },
       "mobile": {
-        "ios_saf": 11.88,
+        "ios_saf": 12.67,
         "an_chr": 42.2,
         "an_ff": 0.37
       }
     },
     "type": "estimated"
   },
-  "baseline": "high",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "api.HTMLMediaElement.preservesPitch"
+      "id": "api.MediaCapabilities.decodingInfo.configuration_parameter"
     },
     "supplementary": [
       {
-        "source": "webfeatures",
-        "id": "preserves-pitch",
-        "matched": "exact"
+        "source": "mdnbcd",
+        "id": "api.MediaCapabilities.encodingInfo.configuration_parameter",
+        "matched": "via-webfeatures"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=HTMLMediaElement.preservesPitch"
+  "caniuseUrl": "https://caniuse.com/?search=%60configuration%60%20parameter"
 }

@@ -989,7 +989,7 @@
       "an_chr": "y"
     },
     "usage": 94.97,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "credential-management",
@@ -1549,7 +1549,7 @@
       "an_chr": "y"
     },
     "usage": 86.76,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "css-display-contents",
@@ -2109,7 +2109,7 @@
       "an_chr": "y"
     },
     "usage": 96.44,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "css-matches-pseudo",
@@ -2269,7 +2269,7 @@
       "an_chr": "y"
     },
     "usage": 89.62,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "css-not-sel-list",
@@ -10509,7 +10509,7 @@
       "an_chr": "y"
     },
     "usage": 89.38,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-api.CanvasRenderingContext2D.roundRect",
@@ -13485,6 +13485,22 @@
       "an_chr": "y"
     },
     "usage": 86.81,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Element.scroll.returns_promise",
+    "name": "Returns a `Promise`",
+    "description": "Returns a `Promise`",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 42.21,
     "baseline": false
   },
   {
@@ -17197,7 +17213,7 @@
       "an_chr": "y"
     },
     "usage": 89.51,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-api.HTMLMarqueeElement",
@@ -17517,7 +17533,7 @@
       "an_chr": "y"
     },
     "usage": 89.48,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-api.HTMLMediaElement.seekToNextFrame",
@@ -18800,6 +18816,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.InstallEvent",
+    "name": "InstallEvent",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 75.65,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.InterventionReportBody",
     "name": "InterventionReportBody",
     "description": "",
@@ -19504,6 +19536,86 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.MediaCapabilities.decodingInfo.configuration_parameter",
+    "name": "`configuration` parameter",
+    "description": "`configuration` parameter",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.68,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.MediaCapabilities.decodingInfo.configuration_parameter.keySystemConfiguration",
+    "name": "`keySystemConfiguration` property",
+    "description": "`keySystemConfiguration` property",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 75.63,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.MediaCapabilities.decodingInfo.configuration_parameter.type",
+    "name": "`type` property",
+    "description": "`type` property",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.68,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.MediaCapabilities.decodingInfo.configuration_parameter.type.webrtc_option",
+    "name": "`configuration.type.webrtc` option",
+    "description": "`configuration.type.webrtc` option",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 88.63,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.MediaCapabilities.encodingInfo.configuration_parameter.type.transmission_option",
+    "name": "`configuration.type.transmission` option",
+    "description": "`configuration.type.transmission` option",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "a",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.4,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.MediaDevices.getDisplayMedia.preferCurrentTab_option",
     "name": "`preferCurrentTab` option",
     "description": "`preferCurrentTab` option",
@@ -19885,6 +19997,54 @@
       "an_chr": "n"
     },
     "usage": 16.84,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.MediaSession.setActionHandler.callback",
+    "name": "Action handler callback",
+    "description": "Action handler callback",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.56,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.MediaSession.setActionHandler.callback.enterPictureInPictureReason",
+    "name": "`enterPictureInPictureReason` callback option",
+    "description": "`enterPictureInPictureReason` callback option",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 64.47,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.MediaSession.setActionHandler.enterpictureinpicture_type",
+    "name": "`\"enterpictureinpicture\"` type",
+    "description": "`\"enterpictureinpicture\"` type",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 67.73,
     "baseline": false
   },
   {
@@ -25901,7 +26061,7 @@
       "an_chr": "y"
     },
     "usage": 83.58,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-api.URL.pathname.encodes_trailing_space_in_opaque_path",
@@ -26477,6 +26637,22 @@
       "an_chr": "y"
     },
     "usage": 92.2,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.WebSocket.local_network_access",
+    "name": "Subject to <a href=\"https://developer.mozilla.org/docs/Web/Security/Defenses/Local_network_access\">Local Network Access</a> restrictions",
+    "description": "Subject to <a href=\"https://developer.mozilla.org/docs/Web/Security/Defenses/Local_network_access\">Local Network Access<",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 61.52,
     "baseline": false
   },
   {
@@ -29165,7 +29341,7 @@
       "an_chr": "y"
     },
     "usage": 83.58,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-css.at-rules.media.update",
@@ -30173,6 +30349,22 @@
       "an_chr": "n"
     },
     "usage": 15.19,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.anchor-name.position_after_layout",
+    "name": "Positioning applies after layout, such as zoom, position, and transform",
+    "description": "Positioning applies after layout, such as zoom, position, and transform",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 78.61,
     "baseline": false
   },
   {
@@ -31682,230 +31874,6 @@
   {
     "id": "mdn-css.properties.column-rule-break",
     "name": "`column-rule-break`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.column-rule-break.intersection",
-    "name": "column-rule-break: Intersection",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.column-rule-inset",
-    "name": "`column-rule-inset`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.column-rule-inset.overlap-join",
-    "name": "column-rule-inset: overlap-join",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.column-rule-inset-cap.overlap-join",
-    "name": "column-rule-inset-cap: overlap-join",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.column-rule-inset-cap-end.overlap-join",
-    "name": "column-rule-inset-cap-end: overlap-join",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.column-rule-inset-cap-start",
-    "name": "`column-rule-inset-cap-start`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.column-rule-inset-cap-start.overlap-join",
-    "name": "column-rule-inset-cap-start: overlap-join",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.column-rule-inset-end.overlap-join",
-    "name": "column-rule-inset-end: overlap-join",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.column-rule-inset-junction",
-    "name": "`column-rule-inset-junction`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.column-rule-inset-junction.overlap-join",
-    "name": "column-rule-inset-junction: overlap-join",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.column-rule-inset-junction-end.overlap-join",
-    "name": "column-rule-inset-junction-end: overlap-join",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.column-rule-inset-junction-start.overlap-join",
-    "name": "column-rule-inset-junction-start: overlap-join",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.column-rule-inset-start.overlap-join",
-    "name": "column-rule-inset-start: overlap-join",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.column-rule-visibility-items",
-    "name": "`column-rule-visibility-items`",
     "description": "",
     "category": "CSS",
     "support": {
@@ -33853,7 +33821,7 @@
       "an_chr": "y"
     },
     "usage": 89.48,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-css.properties.d.none",
@@ -34631,12 +34599,12 @@
     "support": {
       "chr": "y",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 68.1,
+    "usage": 83.29,
     "baseline": false
   },
   {
@@ -38016,710 +37984,6 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-css.properties.row-rule",
-    "name": "`row-rule`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule.currentColor",
-    "name": "row-rule: CurrentColor",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule.dashed",
-    "name": "row-rule: Dashed",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule.dotted",
-    "name": "row-rule: Dotted",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule.double",
-    "name": "row-rule: Double",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule.groove",
-    "name": "row-rule: Groove",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule.hidden",
-    "name": "row-rule: Hidden",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule.inset",
-    "name": "row-rule: Inset",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule.medium",
-    "name": "row-rule: Medium",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule.none",
-    "name": "row-rule: None",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule.outset",
-    "name": "row-rule: Outset",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule.ridge",
-    "name": "row-rule: Ridge",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule.solid",
-    "name": "row-rule: Solid",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule.thick",
-    "name": "row-rule: Thick",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule.thin",
-    "name": "row-rule: Thin",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule.transparent",
-    "name": "row-rule: Transparent",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-break",
-    "name": "`row-rule-break`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-break.intersection",
-    "name": "row-rule-break: Intersection",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-break.normal",
-    "name": "row-rule-break: Normal",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-color",
-    "name": "`row-rule-color`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-color.currentColor",
-    "name": "row-rule-color: CurrentColor",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-color.transparent",
-    "name": "row-rule-color: Transparent",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-inset.overlap-join",
-    "name": "row-rule-inset: overlap-join",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-inset-cap.overlap-join",
-    "name": "row-rule-inset-cap: overlap-join",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-inset-cap-end",
-    "name": "`row-rule-inset-cap-end`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-inset-cap-end.overlap-join",
-    "name": "row-rule-inset-cap-end: overlap-join",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-inset-cap-start",
-    "name": "`row-rule-inset-cap-start`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-inset-cap-start.overlap-join",
-    "name": "row-rule-inset-cap-start: overlap-join",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-inset-end.overlap-join",
-    "name": "row-rule-inset-end: overlap-join",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-inset-junction",
-    "name": "`row-rule-inset-junction`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-inset-junction.overlap-join",
-    "name": "row-rule-inset-junction: overlap-join",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-inset-junction-end.overlap-join",
-    "name": "row-rule-inset-junction-end: overlap-join",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-inset-junction-start.overlap-join",
-    "name": "row-rule-inset-junction-start: overlap-join",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-inset-start.overlap-join",
-    "name": "row-rule-inset-start: overlap-join",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-style",
-    "name": "`row-rule-style`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-style.dashed",
-    "name": "row-rule-style: Dashed",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-style.dotted",
-    "name": "row-rule-style: Dotted",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-style.double",
-    "name": "row-rule-style: Double",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-style.groove",
-    "name": "row-rule-style: Groove",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-style.hidden",
-    "name": "row-rule-style: Hidden",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-style.outset",
-    "name": "row-rule-style: Outset",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-visibility-items",
-    "name": "`row-rule-visibility-items`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-width",
-    "name": "`row-rule-width`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.row-rule-width.medium",
-    "name": "row-rule-width: Medium",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.ruby-align",
     "name": "`ruby-align`",
     "description": "",
@@ -38766,294 +38030,6 @@
     },
     "usage": 88.75,
     "baseline": "low"
-  },
-  {
-    "id": "mdn-css.properties.rule",
-    "name": "`rule`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.rule-break.none",
-    "name": "rule-break: None",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.rule-inset-cap",
-    "name": "`rule-inset-cap`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.rule-inset-end",
-    "name": "`rule-inset-end`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.rule-inset-start",
-    "name": "`rule-inset-start`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.rule-overlap",
-    "name": "`rule-overlap`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.rule-overlap.column-over-row",
-    "name": "rule-overlap: column-over-row",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.rule-overlap.row-over-column",
-    "name": "rule-overlap: row-over-column",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.rule-style.inset",
-    "name": "rule-style: Inset",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.rule-style.none",
-    "name": "rule-style: None",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.rule-style.ridge",
-    "name": "rule-style: Ridge",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.rule-style.solid",
-    "name": "rule-style: Solid",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.rule-visibility-items.all",
-    "name": "rule-visibility-items: All",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.rule-visibility-items.around",
-    "name": "rule-visibility-items: Around",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.rule-visibility-items.between",
-    "name": "rule-visibility-items: Between",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.rule-visibility-items.normal",
-    "name": "rule-visibility-items: Normal",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.rule-width.thick",
-    "name": "rule-width: Thick",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.rule-width.thin",
-    "name": "rule-width: Thin",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.24,
-    "baseline": false
   },
   {
     "id": "mdn-css.properties.rx.auto",
@@ -40999,12 +39975,12 @@
     "support": {
       "chr": "y",
       "ffx": "n",
-      "saf": "n",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 67.76,
+    "usage": 82.95,
     "baseline": false
   },
   {
@@ -42311,12 +41287,12 @@
     "support": {
       "chr": "n",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "n",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 1.68,
+    "usage": 16.87,
     "baseline": false
   },
   {
@@ -42391,12 +41367,12 @@
     "support": {
       "chr": "n",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "n",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 1.68,
+    "usage": 16.87,
     "baseline": false
   },
   {
@@ -42477,7 +41453,7 @@
       "an_chr": "y"
     },
     "usage": 85.5,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-css.types.easing-function.steps",
@@ -42621,7 +41597,7 @@
       "an_chr": "y"
     },
     "usage": 84.36,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-css.types.global_keywords",
@@ -48787,22 +47763,6 @@
     "id": "wf-focusgroup",
     "name": "focusgroup",
     "description": "The focusgroup global HTML attribute combines descendant elements into a single tab stop, with arrow-key navigation betw",
-    "category": "Other",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "wf-gap-decorations",
-    "name": "Gap decorations",
-    "description": "The column-rule and row-rule CSS properties display decorative lines between columns and rows of a flex, grid, or multi-",
     "category": "Other",
     "support": {
       "chr": "n",
