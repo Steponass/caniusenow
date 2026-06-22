@@ -11,6 +11,7 @@ button {
   box-shadow: var(--shadow-elevation-1);
   @media (hover: hover) {
     &:hover {
+      background-color: var(--clr-hover);
       box-shadow: var(--shadow-elevation-4);
       transform: translateY(-1px);
     }
@@ -39,10 +40,11 @@ input[type="text"] {
   color: var(--clr-text-strong);
   caret-color: var(--clr-stroke-weak);
   position: relative;
-  box-shadow: 0 3px 0px 0px var(--clr-stroke-strong);
+    box-shadow: var(--shadow-elevation-2);
 }
 
-*:focus-visible {
+/* *:focus-visible {
   outline: 2px solid var(--clr-text-strong);
   outline-offset: 3px;
-}
+} */
+

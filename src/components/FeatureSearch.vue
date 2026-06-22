@@ -30,7 +30,7 @@ function clearSearch() {
 </script>
 
 <template>
-    <div class="search-bar">
+    <search class="search-bar">
       <input
         v-model="searchQuery"
         type="text"
@@ -41,7 +41,7 @@ function clearSearch() {
       <span v-if="searchQuery" class="clear-button" @click="clearSearch">
         ✕
       </span>
-    </div>
+    </search>
 
     <div v-if="shouldShowHint" class="search-hint">
       Type at least 2 characters to search
@@ -66,7 +66,6 @@ function clearSearch() {
   padding: var(--space-8px);
   border: 1px solid var(--clr-stroke-strong);
   border-radius: var(--radius-2px);
-  box-shadow: var(--shadow-elevation-3);
 }
 
 .clear-button {

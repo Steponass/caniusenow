@@ -253,10 +253,11 @@ function handlePrimaryAction(): void {
   background-color: var(--clr-bg-overlay);
   border-radius: var(--radius-16px);
   box-shadow: var(--shadow-elevation-4);
-  width: min(960px, 98%);
+  width: min(640px, 98%);
   max-height: 95vh;
   display: flex;
   flex-direction: column;
+  scrollbar-color: var(--clr-primary) var(--clr-bg-base) ;
 }
 
 .modal-header {
@@ -316,9 +317,9 @@ function handlePrimaryAction(): void {
 }
 
 .modal-body {
-  padding: var(--space-16-24px);
+  padding-block: var(--space-8px);
+  padding-inline: var(--space-16-24px);
   overflow-y: auto;
-  /* scrollbar-color: var(--clr-stroke-strong); */
 }
 
 .modal-body h5 {
@@ -349,10 +350,11 @@ section{
 }
 
 .browser-list {
-  display: grid;
-  grid-auto-rows: auto;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  display: flex;
   gap: var(--space-8px);
+  max-width: calc(640px - var(--space-16-24px));
+  overflow-x: scroll;
+  padding-block: var(--space-8px);
 }
 
 .browser-row {

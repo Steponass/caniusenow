@@ -6,7 +6,7 @@ const dialogRef = ref<HTMLDialogElement | null>(null)
 
 onMounted(() => {
   const visitCount = parseInt(localStorage.getItem("visitCount") || "0", 10);
-    if (visitCount < 20) {
+    if (visitCount < 2) {
       isIntroOpen.value = true;
       localStorage.setItem("visitCount", (visitCount + 1).toString());
     }
@@ -27,7 +27,7 @@ function handleClose() {
 <dialog ref="dialogRef">
   <div class="intro-modal-container">
   <h1>Can I use it <span>now</span>?</h1>
-  <p>Track web feature support and get notified.</p>
+  <p>Track web feature support and get notified via email</p>
   <button @click="handleClose">Okay</button>
 </div>
 </dialog>
@@ -36,11 +36,17 @@ function handleClose() {
 <style scoped>
 
 dialog {
-  width: min(540px, 95dvw);
-  min-height: 300px;
+  width: min(480px, 95dvw);
+  min-height: 240px;
   margin: auto;
   inset: 0;
-  border: 2px solid var(--clr-stroke-weak)
+  background-color: var(--clr-bg-overlay);
+  box-shadow: var(--shadow-elevation-5);
+}
+
+dialog[open] {
+  display: grid;
+  place-content: center;
 }
 
 .intro-modal-container {
@@ -57,6 +63,7 @@ dialog {
     font-weight: 700;
   }
 }
+
 button {
   width: min(196px, 80%);
 }

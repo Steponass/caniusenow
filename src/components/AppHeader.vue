@@ -72,6 +72,8 @@ function handleSignIn() {
 
 <style scoped>
 header {
+  width: min(1920px, 100%);
+  margin-inline: auto;
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-template-areas: "logo search controls";

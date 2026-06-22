@@ -124,6 +124,13 @@ const statusColor = getStatusColor(props.feature.usage.global.total);
   margin-bottom: var(--space-12-16px);
 }
 
+.feature-usage-badge {
+  min-width: 6ch;
+  text-align: center;
+  padding: var(--space-4px) var(--space-8px);
+  border-radius: var(--radius-16px);
+}
+
 .status-badge {
   padding: var(--space-4px) var(--space-12px);
   border-radius: 9999px;

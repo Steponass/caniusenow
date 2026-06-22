@@ -14,7 +14,7 @@ import ScrollToTop from "@components/ScrollToTop.vue";
 
 import type { NormalizedFeature } from "@/types/feature";
 import type { FeatureTracking } from "@/types/featureTracking";
-import IntroModal from "./components/IntroModal.vue";
+import IntroModal from "@components/IntroModal.vue";
 
 const featureStore = useFeatureStore();
 const authStore = useAuthStore();
@@ -47,6 +47,7 @@ onMounted(async () => {
   await featureStore.loadIndex();
 
   if (authStore.isAuthenticated) {
+    showTrackingDashboard.value = true;
     await trackingStore.loadUserTrackings();
   }
 
@@ -166,7 +167,7 @@ function handleSearch(query: string) {
     <main>
 
       <IntroModal/>
-        <section v-if="authStore.isAuthenticated">
+        <section class="top-panel" v-if="authStore.isAuthenticated">
           <button @click="toggleTrackingDashboard">
             {{ showTrackingDashboard ? "Browse Features" : "My Trackings" }}
             <span
@@ -180,12 +181,12 @@ function handleSearch(query: string) {
           </button>
         </section>
 
-        <section v-if="!showTrackingDashboard" class="feature-section">
+        <section v-if="!showTrackingDashboard || filteredFeatures.length > 0" class="feature-section">
           <FeatureGrid :features="filteredFeatures" @feature-click="handleFeatureClick" />
         </section>
 
         <section
-          v-else="authStore.isAuthenticated"
+          v-if="authStore.isAuthenticated && showTrackingDashboard && filteredFeatures.length === 0"
         >
           <h2>My Tracked Features</h2>
           <TrackingDashboard
@@ -218,15 +219,16 @@ function handleSearch(query: string) {
 }
 
 main {
-  width: min(1920px, 98%);
+  width: min(1920px, 100%);
   margin-inline: auto;
+  padding-inline: var(--space-16px);
   margin-top: var(--space-24-32px);
 }
 
-.feature-section {
+/* .feature-section {
   display: flex;
   justify-content: center;
-}
+} */
 
 section h2 {
   margin-block: var(--space-16-24px);
