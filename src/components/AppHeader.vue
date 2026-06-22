@@ -3,8 +3,12 @@
 import FeatureSearch from "./FeatureSearch.vue";
 import ThemeToggle from "./ThemeToggle.vue";
 import { useAuthStore } from "@/stores/authStore";
+import { ref } from "vue";
 
 const authStore = useAuthStore();
+const featureSearch = ref<InstanceType<typeof FeatureSearch>>();
+
+defineExpose({ clearSearch: () => featureSearch.value?.clearSearch() });
 
 const emit = defineEmits<{
   openAuthModal: [];
@@ -41,7 +45,7 @@ function handleSignIn() {
     </div>
 
     <div class="feature-search">
-      <FeatureSearch @search="handleSearch" />
+      <FeatureSearch ref="featureSearch" @search="handleSearch" />
     </div>
     <div class="theme_and_sign_in">
       <ThemeToggle />

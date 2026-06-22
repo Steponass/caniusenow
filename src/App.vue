@@ -28,6 +28,7 @@ const {
   setTriggers,
 } = useFeatureUrl();
 
+const appHeader = ref<InstanceType<typeof AppHeader>>();
 const isAuthModalOpen = ref(false);
 const isFeatureModalOpen = ref(false);
 const selectedFeature = ref<NormalizedFeature | null>(null);
@@ -153,6 +154,10 @@ async function handleStartTracking() {
 
 function toggleTrackingDashboard() {
   showTrackingDashboard.value = !showTrackingDashboard.value;
+  if (showTrackingDashboard.value) {
+    appHeader.value?.clearSearch();
+    searchQuery.value = "";
+  }
 }
 
 function handleSearch(query: string) {
@@ -162,7 +167,7 @@ function handleSearch(query: string) {
 
 <template>
   <div id="app">
-    <AppHeader @open-auth-modal="handleOpenAuthModal" @search="handleSearch" />
+    <AppHeader ref="appHeader" @open-auth-modal="handleOpenAuthModal" @search="handleSearch" />
 
     <main>
 

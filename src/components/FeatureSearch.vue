@@ -27,6 +27,8 @@ function clearSearch() {
   searchQuery.value = '';
   emit('search', '');
 }
+
+defineExpose({ clearSearch });
 </script>
 
 <template>
