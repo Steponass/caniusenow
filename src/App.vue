@@ -15,6 +15,8 @@ import ScrollToTop from "@components/ScrollToTop.vue";
 import type { NormalizedFeature } from "@/types/feature";
 import type { FeatureTracking } from "@/types/featureTracking";
 import IntroModal from "@components/IntroModal.vue";
+import AppFooter from "./components/AppFooter.vue";
+import PrivacyPolicyModal from "./components/PrivacyPolicyModal.vue";
 
 const featureStore = useFeatureStore();
 const authStore = useAuthStore();
@@ -213,6 +215,7 @@ function handleSearch(query: string) {
     />
   </div>
 
+  <AppFooter/>
 </template>
 
 <style scoped>

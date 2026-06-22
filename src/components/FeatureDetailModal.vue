@@ -2,9 +2,9 @@
 import { computed, ref, watch, nextTick, onUnmounted } from "vue";
 import type { NormalizedFeature } from "@/types/feature";
 import type { FeatureTracking } from "@/types/featureTracking";
-import FormattedText from "./FormattedText.vue";
+import FormattedText from "@components/IntroModal.vue";
 import { getBrowserDisplayName } from "@/types/feature";
-import TriggerBuilder from "./TriggerBuilder.vue";
+import TriggerBuilder from "@components/TriggerBuilder.vue";
 import { useFeatureUrl } from "@/composables/useFeatureUrl";
 
 interface Props {
@@ -257,7 +257,7 @@ function handlePrimaryAction(): void {
   max-height: 95vh;
   display: flex;
   flex-direction: column;
-  scrollbar-color: var(--clr-primary) var(--clr-bg-base) ;
+  scrollbar-color: var(--clr-primary) var(--clr-bg-base);
 }
 
 .modal-header {
