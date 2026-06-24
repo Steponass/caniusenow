@@ -6,6 +6,7 @@ import { useTrackingStore } from "@stores/featureTrackingStore";
 import { useFeatureUrl } from "@/composables/useFeatureUrl";
 
 import AppHeader from "@components/AppHeader.vue";
+import AppFooter from "@components/AppFooter.vue";
 import AuthModal from "@components/AuthModal.vue";
 import FeatureGrid from "@components/FeatureGrid.vue";
 import FeatureDetailModal from "@components/FeatureDetailModal.vue";
@@ -15,8 +16,6 @@ import ScrollToTop from "@components/ScrollToTop.vue";
 import type { NormalizedFeature } from "@/types/feature";
 import type { FeatureTracking } from "@/types/featureTracking";
 import IntroModal from "@components/IntroModal.vue";
-import AppFooter from "./components/AppFooter.vue";
-import PrivacyPolicyModal from "./components/PrivacyPolicyModal.vue";
 
 const featureStore = useFeatureStore();
 const authStore = useAuthStore();
@@ -215,12 +214,12 @@ function handleSearch(query: string) {
     />
   </div>
 
-  <AppFooter/>
+  <AppFooter />
 </template>
 
 <style scoped>
 #app {
-  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   background: var(--clr-bg-base);

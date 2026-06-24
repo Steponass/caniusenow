@@ -167,10 +167,10 @@ async function handleMagicLink() {
 
 .modal-content {
   background-color: var(--clr-bg-overlay);
-  width: min(98%, 480px);
+  width: min(96%, 480px);
   min-height: 240px;
   border-radius: var(--radius-4px);
-  padding: var(--space-8-12px);
+  padding: var(--space-12-16px);
 }
 
 .modal-header {
@@ -184,10 +184,16 @@ async function handleMagicLink() {
   display: flex;
   gap: var(--space-12-16px);
   margin-block-end: var(--space-16-24px);
+  @media (max-width: 400px) {
+    flex-direction: column;
+  }
 }
 
 .tabs button {
   flex: 1;
+  svg {
+    min-width: 20px;
+  }
 }
 
 .tab-content {

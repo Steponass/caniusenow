@@ -42,7 +42,8 @@
     bottom: 32px;
     right: 36px;
     color: var(--clr-primary);
-    background-color: var(--clr-stroke-weak);
+    background-color: var(--clr-bg-overlay);
+    border: 1px solid var(--clr-stroke-weak);
     border-radius: var(--radius-8px);
     padding: 14px 10px;
     display: flex;
@@ -67,7 +68,7 @@
 
   @media (max-width: 760px) {
     .scroll-to-top {
-      right: 12px;
+      right: var(--space-16px);
       bottom: var(--space-64px);
     }
   }

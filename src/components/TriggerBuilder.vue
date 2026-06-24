@@ -168,6 +168,9 @@ function getTriggerDescription(trigger: Trigger): string {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-16px);
+  @media (max-width: 450px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .form-group {

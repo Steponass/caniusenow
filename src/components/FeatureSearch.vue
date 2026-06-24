@@ -32,18 +32,18 @@ defineExpose({ clearSearch });
 </script>
 
 <template>
-    <search class="search-bar">
+    <div class="search-bar">
       <input
         v-model="searchQuery"
         type="text"
-        placeholder="Search features (min 2 characters)..."
+        placeholder="Search features (min 2 characters)…"
         class="search-input"
         @input="handleInput"
       />
       <span v-if="searchQuery" class="clear-button" @click="clearSearch">
         ✕
       </span>
-    </search>
+    </div>
 
     <div v-if="shouldShowHint" class="search-hint">
       Type at least 2 characters to search

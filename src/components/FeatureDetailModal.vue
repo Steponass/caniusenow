@@ -253,7 +253,7 @@ function handlePrimaryAction(): void {
   background-color: var(--clr-bg-overlay);
   border-radius: var(--radius-16px);
   box-shadow: var(--shadow-elevation-4);
-  width: min(640px, 98%);
+  width: min(640px, 96%);
   max-height: 95vh;
   display: flex;
   flex-direction: column;
@@ -331,7 +331,11 @@ section{
 }
 
 .usage-stats {
-  display: flex;  gap: var(--space-16px);
+  display: flex;  
+  gap: var(--space-16px);
+  @media (max-width: 420px) {
+    flex-direction: column;
+  }
 }
 
 .stat {
