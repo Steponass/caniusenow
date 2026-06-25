@@ -4,6 +4,7 @@
   "name": "PerformancePaintTiming.presentationTime",
   "description": "",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/PerformancePaintTiming/presentationTime",
   "links": [],
   "support": {
     "chr": {
@@ -18,12 +19,12 @@
       "current": "y",
       "firstFull": "145"
     },
-    "saf": {
-      "current": "n"
-    },
     "opr": {
       "current": "y",
-      "firstFull": "145"
+      "firstFull": "129"
+    },
+    "saf": {
+      "current": "n"
     },
     "ie": {
       "current": "y",
@@ -47,18 +48,20 @@
   },
   "usage": {
     "global": {
-      "full": 45.89,
+      "full": 64.96,
       "partial": 0,
-      "total": 45.89
+      "total": 64.96
     },
     "byBrowser": {
       "desktop": {
-        "chr": 0.01,
-        "ffx": 1.45
+        "chr": 16.01,
+        "ffx": 1.49,
+        "edg": 4.46,
+        "opr": 0.42
       },
       "mobile": {
-        "an_chr": 44.12,
-        "an_ff": 0.31
+        "an_chr": 42.2,
+        "an_ff": 0.37
       }
     },
     "type": "estimated"

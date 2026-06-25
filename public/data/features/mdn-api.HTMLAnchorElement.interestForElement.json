@@ -4,7 +4,7 @@
   "name": "Interest invokers",
   "description": "Interest invokers, registered by the interestfor HTML attribute, trigger events and actions on a target element when a user shows interest in the element, through behaviors such as hover, focus, or long-press. Pseudo-elements apply styles to sources and targets of interest.",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/SVGAElement/interestForElement",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Selectors/:interest-target",
   "links": [],
   "support": {
     "chr": {
@@ -15,15 +15,15 @@
       "current": "y",
       "firstFull": "142"
     },
+    "opr": {
+      "current": "y",
+      "firstFull": "126"
+    },
     "ffx": {
       "current": "n"
     },
     "saf": {
       "current": "n"
-    },
-    "opr": {
-      "current": "y",
-      "firstFull": "142"
     },
     "ie": {
       "current": "y",
@@ -46,17 +46,18 @@
   },
   "usage": {
     "global": {
-      "full": 62.71,
+      "full": 64.47,
       "partial": 0,
-      "total": 62.71
+      "total": 64.47
     },
     "byBrowser": {
       "desktop": {
-        "chr": 14.64,
-        "edg": 3.94
+        "chr": 17.33,
+        "edg": 4.52,
+        "opr": 0.42
       },
       "mobile": {
-        "an_chr": 44.12
+        "an_chr": 42.2
       }
     },
     "type": "estimated"
@@ -106,6 +107,16 @@
       {
         "source": "mdnbcd",
         "id": "api.SVGAElement.interestForElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.interest-source",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.selectors.interest-target",
         "matched": "via-webfeatures"
       },
       {

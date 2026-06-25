@@ -15,6 +15,10 @@
       "current": "y",
       "firstFull": "145"
     },
+    "saf": {
+      "current": "y",
+      "firstFull": "26.5"
+    },
     "edg": {
       "current": "y",
       "firstFull": "140"
@@ -23,15 +27,13 @@
       "current": "y",
       "firstFull": "124"
     },
-    "saf": {
-      "current": "n"
-    },
     "ie": {
       "current": "y",
       "firstFull": "140"
     },
     "ios_saf": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "26.5"
     },
     "an_chr": {
       "current": "y",
@@ -48,25 +50,27 @@
   },
   "usage": {
     "global": {
-      "full": 66.07,
+      "full": 68.22,
       "partial": 0,
-      "total": 66.07
+      "total": 68.22
     },
     "byBrowser": {
       "desktop": {
-        "chr": 15.52,
-        "ffx": 1.3,
-        "edg": 4.05,
-        "opr": 0.78
+        "chr": 17.46,
+        "ffx": 1.39,
+        "saf": 0.28,
+        "edg": 4.55,
+        "opr": 0.42
       },
       "mobile": {
-        "an_chr": 44.12,
-        "an_ff": 0.31
+        "ios_saf": 1.54,
+        "an_chr": 42.2,
+        "an_ff": 0.37
       }
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",

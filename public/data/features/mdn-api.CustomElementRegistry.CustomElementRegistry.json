@@ -4,6 +4,7 @@
   "name": "`CustomElementRegistry()` constructor",
   "description": "`CustomElementRegistry()` constructor",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/ShadowRoot/customElementRegistry",
   "links": [],
   "support": {
     "chr": {
@@ -18,12 +19,12 @@
       "current": "y",
       "firstFull": "146"
     },
-    "ffx": {
-      "current": "n"
-    },
     "opr": {
       "current": "y",
-      "firstFull": "146"
+      "firstFull": "130"
+    },
+    "ffx": {
+      "current": "n"
     },
     "ie": {
       "current": "y",
@@ -47,17 +48,20 @@
   },
   "usage": {
     "global": {
-      "full": 46.37,
+      "full": 72.61,
       "partial": 0,
-      "total": 46.37
+      "total": 72.61
     },
     "byBrowser": {
       "desktop": {
-        "saf": 0.52
+        "chr": 15.15,
+        "saf": 1.49,
+        "edg": 4.41,
+        "opr": 0.42
       },
       "mobile": {
-        "ios_saf": 1.73,
-        "an_chr": 44.12
+        "ios_saf": 8.93,
+        "an_chr": 42.2
       }
     },
     "type": "estimated"

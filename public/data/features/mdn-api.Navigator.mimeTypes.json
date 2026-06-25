@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.Navigator.mimeTypes",
   "source": "mdnbcd",
-  "name": "Navigator.mimeTypes",
-  "description": "",
+  "name": "pdfViewerEnabled",
+  "description": "The navigator.pdfViewerEnabled property is a boolean for whether the browser navigates to and shows a PDF in the browser window or downloads the PDF.",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/mimeTypes",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Navigator/pdfViewerEnabled",
   "links": [],
   "support": {
     "chr": {
@@ -50,35 +50,46 @@
   },
   "usage": {
     "global": {
-      "full": 94.87,
+      "full": 94.57,
       "partial": 0,
-      "total": 94.87
+      "total": 94.57
     },
     "byBrowser": {
       "desktop": {
-        "chr": 27.41,
-        "ffx": 1.85,
-        "saf": 1.42,
-        "edg": 4.26,
-        "opr": 0.91,
-        "ie": 0.43
+        "chr": 28.28,
+        "ffx": 1.74,
+        "saf": 2.15,
+        "edg": 4.71,
+        "opr": 0.55,
+        "ie": 0.26
       },
       "mobile": {
-        "ios_saf": 12.23,
-        "an_chr": 44.12,
-        "smsg": 1.93,
-        "an_ff": 0.31
+        "ios_saf": 13.04,
+        "an_chr": 42.2,
+        "smsg": 1.26,
+        "an_ff": 0.37
       }
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
       "id": "api.Navigator.mimeTypes"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.pdfViewerEnabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "pdf-viewer",
+        "matched": "exact"
+      }
+    ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=Navigator.mimeTypes"
+  "caniuseUrl": "https://caniuse.com/?search=pdfViewerEnabled"
 }

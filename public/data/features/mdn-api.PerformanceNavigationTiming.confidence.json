@@ -1,9 +1,10 @@
 {
   "id": "mdn-api.PerformanceNavigationTiming.confidence",
   "source": "mdnbcd",
-  "name": "PerformanceNavigationTiming.confidence",
-  "description": "",
+  "name": "Navigation timing confidence",
+  "description": "The confidence property of a navigation timing entry describes whether the navigation metric is likely to be representative the page's performance (high confidence) or affected by transient conditions, such as browser startup (low confidence).",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/PerformanceTimingConfidence/value",
   "links": [],
   "support": {
     "chr": {
@@ -14,15 +15,15 @@
       "current": "y",
       "firstFull": "145"
     },
+    "opr": {
+      "current": "y",
+      "firstFull": "129"
+    },
     "ffx": {
       "current": "n"
     },
     "saf": {
       "current": "n"
-    },
-    "opr": {
-      "current": "y",
-      "firstFull": "145"
     },
     "ie": {
       "current": "y",
@@ -45,16 +46,18 @@
   },
   "usage": {
     "global": {
-      "full": 44.13,
+      "full": 63.1,
       "partial": 0,
-      "total": 44.13
+      "total": 63.1
     },
     "byBrowser": {
       "desktop": {
-        "chr": 0.01
+        "chr": 16.01,
+        "edg": 4.46,
+        "opr": 0.42
       },
       "mobile": {
-        "an_chr": 44.12
+        "an_chr": 42.2
       }
     },
     "type": "estimated"
@@ -65,7 +68,33 @@
       "source": "mdnbcd",
       "id": "api.PerformanceNavigationTiming.confidence"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTimingConfidence",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTimingConfidence.randomizedTriggerRate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTimingConfidence.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceTimingConfidence.value",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "navigation-timing-confidence",
+        "matched": "exact"
+      }
+    ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=PerformanceNavigationTiming.confidence"
+  "caniuseUrl": "https://caniuse.com/?search=Navigation%20timing%20confidence"
 }
