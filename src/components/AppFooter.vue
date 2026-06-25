@@ -1,11 +1,11 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
 import PrivacyPolicyModal from '@components/PrivacyPolicyModal.vue'
-const PrivacyDialog = ref(null)
+const PrivacyDialog = ref<InstanceType<typeof PrivacyPolicyModal> | null>(null)
 </script>
 <template>
   <footer>
-      <button @click="PrivacyDialog.open()">Privacy Policy</button>
+      <button @click="PrivacyDialog?.open()">Privacy Policy</button>
       <PrivacyPolicyModal ref="PrivacyDialog" />
       <p>made by <a href="https://steponas.com" target="_blank" rel="noopener noreferrer">S.D.</a></p>
   </footer>

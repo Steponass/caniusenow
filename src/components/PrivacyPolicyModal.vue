@@ -1,11 +1,11 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
-const PrivacyDialog = ref(null);
-const open = () => PrivacyDialog.value.showModal()
+const PrivacyDialog = ref<HTMLDialogElement | null>(null);
+const open = () => PrivacyDialog.value?.showModal()
 defineExpose({ open })
 
 function handleClose() {
-  PrivacyDialog.value.close();
+  PrivacyDialog.value?.close();
 }
 </script>
 
