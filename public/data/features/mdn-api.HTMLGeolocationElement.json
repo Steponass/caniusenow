@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.HTMLGeolocationElement",
   "source": "mdnbcd",
-  "name": "HTMLGeolocationElement",
-  "description": "",
+  "name": "<geolocation>",
+  "description": "The <geolocation> HTML element represents a button that, upon activation, prompts the user to choose whether to grant the page access to geolocation data.",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLGeolocationElement/watch",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/geolocation",
   "links": [],
   "support": {
     "chr": {
@@ -15,15 +15,15 @@
       "current": "y",
       "firstFull": "144"
     },
+    "opr": {
+      "current": "y",
+      "firstFull": "128"
+    },
     "ffx": {
       "current": "n"
     },
     "saf": {
       "current": "n"
-    },
-    "opr": {
-      "current": "y",
-      "firstFull": "144"
     },
     "ie": {
       "current": "y",
@@ -46,16 +46,18 @@
   },
   "usage": {
     "global": {
-      "full": 44.17,
+      "full": 63.42,
       "partial": 0,
-      "total": 44.17
+      "total": 63.42
     },
     "byBrowser": {
       "desktop": {
-        "chr": 0.05
+        "chr": 16.31,
+        "edg": 4.49,
+        "opr": 0.42
       },
       "mobile": {
-        "an_chr": 44.12
+        "an_chr": 42.2
       }
     },
     "type": "estimated"
@@ -69,7 +71,27 @@
     "supplementary": [
       {
         "source": "mdnbcd",
+        "id": "api.HTMLGeolocationElement.HTMLGeolocationElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLGeolocationElement.autolocate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
         "id": "api.HTMLGeolocationElement.error",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLGeolocationElement.initialPermissionStatus",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLGeolocationElement.invalidReason",
         "matched": "via-webfeatures"
       },
       {
@@ -79,15 +101,60 @@
       },
       {
         "source": "mdnbcd",
+        "id": "api.HTMLGeolocationElement.location_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLGeolocationElement.permissionStatus",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
         "id": "api.HTMLGeolocationElement.position",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLGeolocationElement.promptaction_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLGeolocationElement.promptdismiss_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLGeolocationElement.validationstatuschange_event",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
         "id": "api.HTMLGeolocationElement.watch",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.geolocation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.geolocation.autolocate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.geolocation.watch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "geolocation-element",
+        "matched": "exact"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=HTMLGeolocationElement"
+  "caniuseUrl": "https://caniuse.com/?search=%3Cgeolocation%3E"
 }

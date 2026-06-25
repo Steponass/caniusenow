@@ -1,9 +1,10 @@
 {
   "id": "mdn-api.CrashReportContext",
   "source": "mdnbcd",
-  "name": "CrashReportContext",
-  "description": "",
+  "name": "Crash report storage",
+  "description": "The window.crashReport object is a key-value store to record information about your application's state. If there's a crash, then the data in the key-value store is sent to your crash reporting endpoint, to help you pinpoint the cause of the crash.",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/crashReport",
   "links": [],
   "support": {
     "chr": {
@@ -14,15 +15,15 @@
       "current": "y",
       "firstFull": "145"
     },
+    "opr": {
+      "current": "y",
+      "firstFull": "129"
+    },
     "ffx": {
       "current": "n"
     },
     "saf": {
       "current": "n"
-    },
-    "opr": {
-      "current": "y",
-      "firstFull": "145"
     },
     "ie": {
       "current": "y",
@@ -45,16 +46,18 @@
   },
   "usage": {
     "global": {
-      "full": 44.13,
+      "full": 63.1,
       "partial": 0,
-      "total": 44.13
+      "total": 63.1
     },
     "byBrowser": {
       "desktop": {
-        "chr": 0.01
+        "chr": 16.01,
+        "edg": 4.46,
+        "opr": 0.42
       },
       "mobile": {
-        "an_chr": 44.12
+        "an_chr": 42.2
       }
     },
     "type": "estimated"
@@ -73,10 +76,25 @@
       },
       {
         "source": "mdnbcd",
+        "id": "api.CrashReportContext.initialize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
         "id": "api.CrashReportContext.set",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.crashReport",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "reporting-crashes-storage",
+        "matched": "exact"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=CrashReportContext"
+  "caniuseUrl": "https://caniuse.com/?search=Crash%20report%20storage"
 }

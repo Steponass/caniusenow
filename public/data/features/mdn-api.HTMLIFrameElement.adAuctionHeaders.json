@@ -1,16 +1,12 @@
 {
   "id": "mdn-api.HTMLIFrameElement.adAuctionHeaders",
   "source": "mdnbcd",
-  "name": "HTMLIFrameElement.adAuctionHeaders",
-  "description": "",
+  "name": "Protected audience",
+  "description": "The protected audience API facilitates advertisement sales by allowing sites to register users as part of an interest group or to choose which ads appear based on those interest groups, while minimizing the ability of advertisers to track specific members of the interest group. Also known as FLEDGE.",
   "category": "JS API",
   "links": [],
   "support": {
     "chr": {
-      "current": "y",
-      "firstFull": "122"
-    },
-    "edg": {
       "current": "y",
       "firstFull": "122"
     },
@@ -24,9 +20,11 @@
     "saf": {
       "current": "n"
     },
+    "edg": {
+      "current": "n"
+    },
     "ie": {
-      "current": "y",
-      "firstFull": "122"
+      "current": "n"
     },
     "ios_saf": {
       "current": "n"
@@ -45,18 +43,17 @@
   },
   "usage": {
     "global": {
-      "full": 71.65,
+      "full": 62.75,
       "partial": 0,
-      "total": 71.65
+      "total": 62.75
     },
     "byBrowser": {
       "desktop": {
-        "chr": 22.55,
-        "edg": 4.19,
-        "opr": 0.79
+        "chr": 20.13,
+        "opr": 0.42
       },
       "mobile": {
-        "an_chr": 44.12
+        "an_chr": 42.2
       }
     },
     "type": "estimated"
@@ -67,7 +64,78 @@
       "source": "mdnbcd",
       "id": "api.HTMLIFrameElement.adAuctionHeaders"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.canLoadAdAuctionFencedFrame",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.clearOriginJoinedAdInterestGroups",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.createAuctionNonce",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.deprecatedRunAdAuctionEnforcesKAnonymity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.getInterestGroupAdAuctionData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.joinAdInterestGroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.leaveAdInterestGroup",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.protectedAudience",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.runAdAuction",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.updateAdInterestGroups",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ProtectedAudience",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ProtectedAudience.queryFeatureSupport",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.SharedStorageWorkletGlobalScope.interestGroups",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "protected-audience",
+        "matched": "exact"
+      }
+    ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=HTMLIFrameElement.adAuctionHeaders"
+  "caniuseUrl": "https://caniuse.com/?search=Protected%20audience"
 }

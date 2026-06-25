@@ -4,16 +4,18 @@
   "name": "CSSFontFaceDescriptors",
   "description": "",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/CSSFontFaceDescriptors",
   "links": [],
   "support": {
+    "ffx": {
+      "current": "y",
+      "firstFull": "150"
+    },
     "saf": {
       "current": "y",
       "firstFull": "26"
     },
     "chr": {
-      "current": "n"
-    },
-    "ffx": {
       "current": "n"
     },
     "edg": {
@@ -36,21 +38,24 @@
       "current": "n"
     },
     "an_ff": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "150"
     }
   },
   "usage": {
     "global": {
-      "full": 2.25,
+      "full": 12.1,
       "partial": 0,
-      "total": 2.25
+      "total": 12.1
     },
     "byBrowser": {
       "desktop": {
-        "saf": 0.52
+        "ffx": 1.3,
+        "saf": 1.49
       },
       "mobile": {
-        "ios_saf": 1.73
+        "ios_saf": 8.93,
+        "an_ff": 0.37
       }
     },
     "type": "estimated"

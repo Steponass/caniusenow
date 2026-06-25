@@ -1,20 +1,21 @@
 {
   "id": "mdn-api.HTMLInputElement.colorSpace",
   "source": "mdnbcd",
-  "name": "`alpha` and `colorspace` attributes for `<input type=color>`",
+  "name": "alpha and colorspace attributes for <input type=color>",
   "description": "The ability to control the opacity of a color picked using <input type=\"color\"> and determine the colorspace of the selected color.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/input/color",
   "links": [],
   "support": {
+    "ffx": {
+      "current": "y",
+      "firstFull": "149"
+    },
     "saf": {
       "current": "y",
       "firstFull": "18.4"
     },
     "chr": {
-      "current": "n"
-    },
-    "ffx": {
       "current": "n"
     },
     "edg": {
@@ -37,21 +38,24 @@
       "current": "n"
     },
     "an_ff": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "149"
     }
   },
   "usage": {
     "global": {
-      "full": 10.58,
+      "full": 14.43,
       "partial": 0,
-      "total": 10.58
+      "total": 14.43
     },
     "byBrowser": {
       "desktop": {
-        "saf": 0.65
+        "ffx": 1.35,
+        "saf": 1.55
       },
       "mobile": {
-        "ios_saf": 9.93
+        "ios_saf": 11.16,
+        "an_ff": 0.37
       }
     },
     "type": "estimated"
@@ -80,5 +84,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60alpha%60%20and%20%60colorspace%60%20attributes%20for%20%60%3Cinput%20type%3Dcolor%3E%60"
+  "caniuseUrl": "https://caniuse.com/?search=alpha%20and%20colorspace%20attributes%20for%20%3Cinput%20type%3Dcolor%3E"
 }

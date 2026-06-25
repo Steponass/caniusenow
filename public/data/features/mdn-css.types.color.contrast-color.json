@@ -7,6 +7,10 @@
   "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/color_value/contrast-color",
   "links": [],
   "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "147"
+    },
     "ffx": {
       "current": "y",
       "firstFull": "146"
@@ -15,27 +19,29 @@
       "current": "y",
       "firstFull": "26"
     },
-    "chr": {
-      "current": "n"
-    },
     "edg": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "147"
     },
     "opr": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "131"
     },
     "ie": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "147"
     },
     "ios_saf": {
       "current": "y",
       "firstFull": "26"
     },
     "an_chr": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "147"
     },
     "smsg": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "147"
     },
     "an_ff": {
       "current": "y",
@@ -44,23 +50,27 @@
   },
   "usage": {
     "global": {
-      "full": 3.32,
+      "full": 73.71,
       "partial": 0,
-      "total": 3.32
+      "total": 73.71
     },
     "byBrowser": {
       "desktop": {
-        "ffx": 0.77,
-        "saf": 0.52
+        "chr": 14.57,
+        "ffx": 1.39,
+        "saf": 1.49,
+        "edg": 4.34,
+        "opr": 0.42
       },
       "mobile": {
-        "ios_saf": 1.73,
-        "an_ff": 0.31
+        "ios_saf": 8.93,
+        "an_chr": 42.2,
+        "an_ff": 0.37
       }
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
