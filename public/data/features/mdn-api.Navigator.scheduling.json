@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.Navigator.scheduling",
   "source": "mdnbcd",
-  "name": "Navigator.scheduling",
-  "description": "",
+  "name": "isInputPending()",
+  "description": "The navigator.scheduling.isInputPending() method checks if there are pending input events, such as touch or mouse events. This allows you to yield from long-running scripts that might be blocking user interaction.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/Scheduling/isInputPending",
   "links": [],
@@ -46,18 +46,18 @@
   },
   "usage": {
     "global": {
-      "full": 73.74,
+      "full": 76.28,
       "partial": 0,
-      "total": 73.74
+      "total": 76.28
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.28,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 26.99,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "an_chr": 42.2
+        "an_chr": 44.12
       }
     },
     "type": "estimated"
@@ -86,5 +86,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=Navigator.scheduling"
+  "caniuseUrl": "https://caniuse.com/?search=isInputPending()"
 }

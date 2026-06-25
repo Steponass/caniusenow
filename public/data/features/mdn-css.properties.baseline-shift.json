@@ -1,8 +1,8 @@
 {
   "id": "mdn-css.properties.baseline-shift",
   "source": "mdnbcd",
-  "name": "`baseline-shift`",
-  "description": "",
+  "name": "baseline-shift",
+  "description": "The baseline-shift CSS property sets the position of an element relative to its dominant baseline.",
   "category": "CSS",
   "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/baseline-shift",
   "links": [],
@@ -10,10 +10,6 @@
     "chr": {
       "current": "y",
       "firstFull": "1"
-    },
-    "ffx": {
-      "current": "y",
-      "firstFull": "149"
     },
     "saf": {
       "current": "y",
@@ -26,6 +22,9 @@
     "opr": {
       "current": "y",
       "firstFull": "15"
+    },
+    "ffx": {
+      "current": "n"
     },
     "ie": {
       "current": "y",
@@ -44,40 +43,42 @@
       "firstFull": "1"
     },
     "an_ff": {
-      "current": "y",
-      "firstFull": "149"
+      "current": "n"
     }
   },
   "usage": {
     "global": {
-      "full": 93.91,
+      "full": 92.28,
       "partial": 0,
-      "total": 93.91
+      "total": 92.28
     },
     "byBrowser": {
       "desktop": {
-        "chr": 28.28,
-        "ffx": 1.35,
-        "saf": 2.15,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.41,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "ios_saf": 13.04,
-        "an_chr": 42.2,
-        "smsg": 1.26,
-        "an_ff": 0.37
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93
       }
     },
     "type": "estimated"
   },
-  "baseline": "low",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
       "id": "css.properties.baseline-shift"
     },
     "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.baseline-shift.baseline",
+        "matched": "via-webfeatures"
+      },
       {
         "source": "mdnbcd",
         "id": "css.properties.baseline-shift.sub",
@@ -89,16 +90,11 @@
         "matched": "via-webfeatures"
       },
       {
-        "source": "mdnbcd",
-        "id": "css.properties.baseline-shift.top",
-        "matched": "via-webfeatures"
-      },
-      {
         "source": "webfeatures",
         "id": "baseline-shift",
         "matched": "exact"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60baseline-shift%60"
+  "caniuseUrl": "https://caniuse.com/?search=baseline-shift"
 }

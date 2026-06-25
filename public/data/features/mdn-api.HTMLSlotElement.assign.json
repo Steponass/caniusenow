@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.HTMLSlotElement.assign",
   "source": "mdnbcd",
-  "name": "HTMLSlotElement.assign",
-  "description": "",
+  "name": "Imperative slot assignment",
+  "description": "The assign() method for <slot> elements assigns nodes to the slot, as an alternative to using the slot and name HTML attributes. The nodes must be children of a shadow host and the shadow root must be created with the slotAssignment set to \"manual\". Also known as manual slot assignment.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/ShadowRoot/slotAssignment",
   "links": [],
@@ -56,22 +56,22 @@
   },
   "usage": {
     "global": {
-      "full": 90.03,
-      "partial": 0.03,
-      "total": 90.06
+      "full": 90.87,
+      "partial": 0.05,
+      "total": 90.92
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.29,
-        "ffx": 1.67,
-        "saf": 2.03,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27,
+        "ffx": 1.75,
+        "saf": 1.23,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "ios_saf": 12.23,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 11.35,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -95,5 +95,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=HTMLSlotElement.assign"
+  "caniuseUrl": "https://caniuse.com/?search=Imperative%20slot%20assignment"
 }

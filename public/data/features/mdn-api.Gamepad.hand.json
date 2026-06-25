@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.Gamepad.hand",
   "source": "mdnbcd",
-  "name": "Gamepad.hand",
-  "description": "",
+  "name": "Gamepad VR hands and poses",
+  "description": "The hand and pose properties of a Gamepad object represent the position in space and the hand that WebVR controllers are held in.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/GamepadPose/position",
   "links": [],
@@ -44,17 +44,17 @@
   },
   "usage": {
     "global": {
-      "full": 6.77,
+      "full": 6.31,
       "partial": 0,
-      "total": 6.77
+      "total": 6.31
     },
     "byBrowser": {
       "desktop": {
-        "ffx": 1.68,
-        "edg": 4.71
+        "ffx": 1.75,
+        "edg": 4.26
       },
       "mobile": {
-        "an_ff": 0.37
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -117,11 +117,16 @@
         "matched": "via-webfeatures"
       },
       {
+        "source": "mdnbcd",
+        "id": "api.GamepadPose.secure_context_required",
+        "matched": "via-webfeatures"
+      },
+      {
         "source": "webfeatures",
         "id": "gamepad-vr",
         "matched": "exact"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=Gamepad.hand"
+  "caniuseUrl": "https://caniuse.com/?search=Gamepad%20VR%20hands%20and%20poses"
 }

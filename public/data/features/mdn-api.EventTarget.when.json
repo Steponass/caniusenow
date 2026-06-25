@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.EventTarget.when",
   "source": "mdnbcd",
-  "name": "EventTarget.when",
-  "description": "",
+  "name": "Observable",
+  "description": "The when() method on a event target returns an Observable object, which provides a declarative API for subscribing to and operating on events. It's an alternative to addEventListener() callbacks.",
   "category": "JS API",
   "links": [],
   "support": {
@@ -45,18 +45,18 @@
   },
   "usage": {
     "global": {
-      "full": 65.11,
+      "full": 68.64,
       "partial": 0,
-      "total": 65.11
+      "total": 68.64
     },
     "byBrowser": {
       "desktop": {
-        "chr": 17.89,
-        "edg": 4.6,
-        "opr": 0.42
+        "chr": 19.6,
+        "edg": 4.12,
+        "opr": 0.79
       },
       "mobile": {
-        "an_chr": 42.2
+        "an_chr": 44.12
       }
     },
     "type": "estimated"
@@ -220,5 +220,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=EventTarget.when"
+  "caniuseUrl": "https://caniuse.com/?search=Observable"
 }

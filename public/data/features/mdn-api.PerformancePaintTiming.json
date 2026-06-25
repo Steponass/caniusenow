@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.PerformancePaintTiming",
   "source": "mdnbcd",
-  "name": "PerformancePaintTiming",
-  "description": "",
+  "name": "Paint timing",
+  "description": "The paint performance entry and the PerformancePaintTiming API measures the duration of \"paint\" (also called \"render\") operations as a page loads. The API measures the time to First Paint (FP) and First Contentful Paint (FCP), common metrics for perceived loading times.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/PerformancePaintTiming/toJSON",
   "links": [],
@@ -50,22 +50,22 @@
   },
   "usage": {
     "global": {
-      "full": 90.72,
+      "full": 91.83,
       "partial": 0,
-      "total": 90.72
+      "total": 91.83
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.44,
-        "ffx": 1.67,
-        "saf": 2.13,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.21,
+        "ffx": 1.75,
+        "saf": 1.39,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "ios_saf": 12.65,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 11.89,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -104,5 +104,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=PerformancePaintTiming"
+  "caniuseUrl": "https://caniuse.com/?search=Paint%20timing"
 }

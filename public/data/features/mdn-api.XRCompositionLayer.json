@@ -1,23 +1,14 @@
 {
   "id": "mdn-api.XRCompositionLayer",
   "source": "mdnbcd",
-  "name": "XRCompositionLayer",
-  "description": "",
+  "name": "Layers (WebXR)",
+  "description": "WebXR layer types, such as XRCylinderLayer, XRCylinderLayer, XREquirectLayer, XRProjectionLayer or XRQuadLayer, are managed by the system compositor, to reduce latency or resampling.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/XRWebGLSubImage/imageIndex",
   "links": [],
   "support": {
     "chr": {
-      "current": "y",
-      "firstFull": "147"
-    },
-    "edg": {
-      "current": "y",
-      "firstFull": "147"
-    },
-    "opr": {
-      "current": "y",
-      "firstFull": "131"
+      "current": "n"
     },
     "ffx": {
       "current": "n"
@@ -25,20 +16,23 @@
     "saf": {
       "current": "n"
     },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
     "ie": {
-      "current": "y",
-      "firstFull": "147"
+      "current": "n"
     },
     "ios_saf": {
       "current": "n"
     },
     "an_chr": {
-      "current": "y",
-      "firstFull": "147"
+      "current": "n"
     },
     "smsg": {
-      "current": "y",
-      "firstFull": "147"
+      "current": "n"
     },
     "an_ff": {
       "current": "n"
@@ -46,19 +40,13 @@
   },
   "usage": {
     "global": {
-      "full": 61.52,
+      "full": 0,
       "partial": 0,
-      "total": 61.52
+      "total": 0
     },
     "byBrowser": {
-      "desktop": {
-        "chr": 14.57,
-        "edg": 4.34,
-        "opr": 0.42
-      },
-      "mobile": {
-        "an_chr": 42.2
-      }
+      "desktop": {},
+      "mobile": {}
     },
     "type": "estimated"
   },
@@ -92,16 +80,6 @@
       {
         "source": "mdnbcd",
         "id": "api.XRCompositionLayer.needsRedraw",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.XRCompositionLayer.opacity",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.XRCompositionLayer.quality",
         "matched": "via-webfeatures"
       },
       {
@@ -401,5 +379,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=XRCompositionLayer"
+  "caniuseUrl": "https://caniuse.com/?search=Layers%20(WebXR)"
 }

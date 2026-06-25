@@ -2,7 +2,7 @@
 import { computed, ref, watch, nextTick, onUnmounted } from "vue";
 import type { NormalizedFeature } from "@/types/feature";
 import type { FeatureTracking } from "@/types/featureTracking";
-import FormattedText from "@components/IntroModal.vue";
+import FormattedText from "@components/FormattedText.vue";
 import { getBrowserDisplayName } from "@/types/feature";
 import TriggerBuilder from "@components/TriggerBuilder.vue";
 import { useFeatureUrl } from "@/composables/useFeatureUrl";

@@ -1,8 +1,8 @@
 {
   "id": "mdn-javascript.builtins.RegExp.escape",
   "source": "mdnbcd",
-  "name": "`RegExp.escape()`",
-  "description": "",
+  "name": "RegExp.escape()",
+  "description": "The RegExp.escape() static method takes a string and replaces any characters that are potentially special characters of a regular expression with equivalent escape sequences. For example, RegExp.escape(\"[abc]\") returns \"\\\\[abc\\\\]\".",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp/escape",
   "links": [],
@@ -50,22 +50,22 @@
   },
   "usage": {
     "global": {
-      "full": 79.87,
+      "full": 81.27,
       "partial": 0,
-      "total": 79.87
+      "total": 81.27
     },
     "byBrowser": {
       "desktop": {
-        "chr": 17.85,
-        "ffx": 1.51,
-        "saf": 1.59,
-        "edg": 4.59,
-        "opr": 0.42
+        "chr": 19.53,
+        "ffx": 1.48,
+        "saf": 0.71,
+        "edg": 4.11,
+        "opr": 0.79
       },
       "mobile": {
-        "ios_saf": 11.34,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 10.22,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -84,5 +84,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60RegExp.escape()%60"
+  "caniuseUrl": "https://caniuse.com/?search=RegExp.escape()"
 }

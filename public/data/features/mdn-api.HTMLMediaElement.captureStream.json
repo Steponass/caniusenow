@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.HTMLMediaElement.captureStream",
   "source": "mdnbcd",
-  "name": "HTMLMediaElement.captureStream",
-  "description": "",
+  "name": "captureStream() for <audio> and <video>",
+  "description": "The captureStream() method for <audio> and <video> elements returns a MediaStream for the media element's content. You can use this to record media or send it elsewhere, such as a canvas or WebRTC connection.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/captureStream",
   "links": [],
@@ -13,8 +13,7 @@
     },
     "ffx": {
       "current": "y",
-      "firstFull": "149",
-      "firstPartial": "15"
+      "firstFull": "15"
     },
     "edg": {
       "current": "y",
@@ -44,26 +43,25 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "149",
-      "firstPartial": "15"
+      "firstFull": "15"
     }
   },
   "usage": {
     "global": {
-      "full": 75.53,
-      "partial": 0.35,
-      "total": 75.88
+      "full": 78.57,
+      "partial": 0,
+      "total": 78.57
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.35,
-        "ffx": 1.69,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.2,
+        "ffx": 1.77,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -82,5 +80,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=HTMLMediaElement.captureStream"
+  "caniuseUrl": "https://caniuse.com/?search=captureStream()%20for%20%3Caudio%3E%20and%20%3Cvideo%3E"
 }

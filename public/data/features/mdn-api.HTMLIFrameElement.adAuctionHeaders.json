@@ -10,6 +10,10 @@
       "current": "y",
       "firstFull": "122"
     },
+    "edg": {
+      "current": "y",
+      "firstFull": "122"
+    },
     "opr": {
       "current": "y",
       "firstFull": "108"
@@ -20,11 +24,9 @@
     "saf": {
       "current": "n"
     },
-    "edg": {
-      "current": "n"
-    },
     "ie": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "122"
     },
     "ios_saf": {
       "current": "n"
@@ -43,17 +45,18 @@
   },
   "usage": {
     "global": {
-      "full": 62.75,
+      "full": 71.65,
       "partial": 0,
-      "total": 62.75
+      "total": 71.65
     },
     "byBrowser": {
       "desktop": {
-        "chr": 20.13,
-        "opr": 0.42
+        "chr": 22.55,
+        "edg": 4.19,
+        "opr": 0.79
       },
       "mobile": {
-        "an_chr": 42.2
+        "an_chr": 44.12
       }
     },
     "type": "estimated"
@@ -64,78 +67,7 @@
       "source": "mdnbcd",
       "id": "api.HTMLIFrameElement.adAuctionHeaders"
     },
-    "supplementary": [
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.canLoadAdAuctionFencedFrame",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.clearOriginJoinedAdInterestGroups",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.createAuctionNonce",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.deprecatedRunAdAuctionEnforcesKAnonymity",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.getInterestGroupAdAuctionData",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.joinAdInterestGroup",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.leaveAdInterestGroup",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.protectedAudience",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.runAdAuction",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.updateAdInterestGroups",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.ProtectedAudience",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.ProtectedAudience.queryFeatureSupport",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.SharedStorageWorkletGlobalScope.interestGroups",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "webfeatures",
-        "id": "protected-audience",
-        "matched": "exact"
-      }
-    ]
+    "supplementary": []
   },
   "caniuseUrl": "https://caniuse.com/?search=HTMLIFrameElement.adAuctionHeaders"
 }

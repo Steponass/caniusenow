@@ -7,88 +7,92 @@
   "mdn": "https://developer.mozilla.org/docs/Web/API/Window/deviceorientationabsolute_event",
   "links": [
     {
-      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Device_orientation_events/Detecting_device_orientation",
-      "title": "MDN article"
+      "url": "https://www.html5rocks.com/en/tutorials/device/orientation/",
+      "title": "HTML5 Rocks tutorial"
     },
     {
-      "url": "https://web.dev/articles/device-orientation",
-      "title": "web.dev article"
+      "url": "https://raw.github.com/phiggins42/has.js/master/detect/features.js#native-orientation",
+      "title": "has.js test"
+    },
+    {
+      "url": "http://html5labs.interoperabilitybridges.com/prototypes/device-orientation-events/device-orientation-events/info",
+      "title": "DeviceOrientation implementation prototype for IE10"
+    },
+    {
+      "url": "https://audero.it/demo/device-orientation-api-demo.html",
+      "title": "Demo"
     }
   ],
   "support": {
     "chr": {
-      "current": "y",
-      "firstFull": "9",
+      "current": "a",
       "firstPartial": "7"
     },
     "ffx": {
-      "current": "y",
-      "firstFull": "6"
+      "current": "a",
+      "firstPartial": "6"
     },
     "saf": {
-      "current": "y",
-      "firstFull": "17.0"
+      "current": "n"
     },
     "edg": {
-      "current": "y",
-      "firstFull": "12"
+      "current": "a",
+      "firstFull": "12",
+      "firstPartial": "79"
     },
     "opr": {
-      "current": "y",
-      "firstFull": "18",
+      "current": "a",
       "firstPartial": "15"
     },
     "ie": {
-      "current": "y",
-      "firstFull": "11"
+      "current": "u"
     },
     "ios_saf": {
-      "current": "y",
-      "firstFull": "17.0",
+      "current": "a",
       "firstPartial": "4.2-4.3"
     },
     "an_chr": {
-      "current": "y",
-      "firstFull": "149"
+      "current": "a",
+      "firstPartial": "144"
     },
     "smsg": {
-      "current": "y",
-      "firstFull": "4"
+      "current": "a",
+      "firstPartial": "4"
     },
     "an_ff": {
-      "current": "y",
-      "firstFull": "151"
+      "current": "a",
+      "firstPartial": "147"
     }
   },
   "usage": {
     "global": {
-      "full": 95.19,
-      "partial": 1.12,
-      "total": 96.31
+      "full": 0,
+      "partial": 94.98,
+      "total": 94.98
     },
     "byBrowser": {
       "desktop": {
-        "chr": 28.28,
-        "ffx": 1.74,
-        "saf": 1.9,
-        "edg": 4.71,
-        "opr": 0.55,
-        "ie": 0.13
+        "chr": 27.41,
+        "ffx": 1.82,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "ios_saf": 12.11,
-        "an_chr": 42.2,
-        "smsg": 1.26,
-        "an_ff": 0.37
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
       }
     },
     "type": "actual"
   },
   "notes": {
-    "general": "",
-    "byNum": {}
+    "general": "Partial support refers to the lack of compassneedscalibration event. Partial support also refers to the lack of devicemotion event support for Chrome 30- and Opera. Opera Mobile 14 lost the ondevicemotion event support. Firefox 3.6, 4 and 5 support the non-standard [MozOrientation](https://developer.mozilla.org/en/DOM/MozOrientation) event.",
+    "byNum": {
+      "1": "`compassneedscalibration` supported in IE11 only for compatible devices with Windows 8.1+."
+    }
   },
-  "baseline": "high",
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "caniuse",

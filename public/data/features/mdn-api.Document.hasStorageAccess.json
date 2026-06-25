@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.Document.hasStorageAccess",
   "source": "mdnbcd",
-  "name": "Document.hasStorageAccess",
-  "description": "",
+  "name": "Storage access",
+  "description": "The document.requestStorageAccess() method allows content in iframes to request storing and reading cookies and other site data, while the document.hasStorageAccess() method checks if such access is granted.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/storage-access",
   "links": [],
@@ -50,27 +50,27 @@
   },
   "usage": {
     "global": {
-      "full": 84.88,
+      "full": 87.64,
       "partial": 0,
-      "total": 84.88
+      "total": 87.64
     },
     "byBrowser": {
       "desktop": {
-        "chr": 20.47,
-        "ffx": 1.68,
-        "saf": 2.15,
-        "edg": 4.71,
-        "opr": 0.42
+        "chr": 22.9,
+        "ffx": 1.75,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.79
       },
       "mobile": {
-        "ios_saf": 12.87,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 12.09,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
   },
-  "baseline": "high",
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
@@ -104,5 +104,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=Document.hasStorageAccess"
+  "caniuseUrl": "https://caniuse.com/?search=Storage%20access"
 }

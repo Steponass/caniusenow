@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.NotRestoredReasonDetails",
   "source": "mdnbcd",
-  "name": "NotRestoredReasonDetails",
-  "description": "",
+  "name": "Back/forward cache blocking reasons",
+  "description": "The notRestoredReasons property of a PerformanceNavigationTiming object explains why the current document was blocked from using the back/forward cache (also known as the bfcache) on navigation.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/notRestoredReasons",
   "links": [],
@@ -46,18 +46,18 @@
   },
   "usage": {
     "global": {
-      "full": 67.04,
+      "full": 71.26,
       "partial": 0,
-      "total": 67.04
+      "total": 71.26
     },
     "byBrowser": {
       "desktop": {
-        "chr": 19.78,
-        "edg": 4.64,
-        "opr": 0.42
+        "chr": 22.16,
+        "edg": 4.18,
+        "opr": 0.79
       },
       "mobile": {
-        "an_chr": 42.2
+        "an_chr": 44.12
       }
     },
     "type": "estimated"
@@ -131,5 +131,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=NotRestoredReasonDetails"
+  "caniuseUrl": "https://caniuse.com/?search=Back%2Fforward%20cache%20blocking%20reasons"
 }

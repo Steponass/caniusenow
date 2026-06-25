@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.queueMicrotask",
   "source": "mdnbcd",
-  "name": "queueMicrotask",
-  "description": "",
+  "name": "queueMicrotask()",
+  "description": "The queueMicrotask() method schedules a function to run after the currently running synchronous JavaScript finishes but before returning to the event loop.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/Window/queueMicrotask",
   "links": [],
@@ -50,22 +50,22 @@
   },
   "usage": {
     "global": {
-      "full": 90.69,
+      "full": 91.87,
       "partial": 0,
-      "total": 90.69
+      "total": 91.87
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.32,
-        "ffx": 1.68,
-        "saf": 2.15,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.14,
+        "ffx": 1.75,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "ios_saf": 12.71,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 11.97,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -84,5 +84,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=queueMicrotask"
+  "caniuseUrl": "https://caniuse.com/?search=queueMicrotask()"
 }

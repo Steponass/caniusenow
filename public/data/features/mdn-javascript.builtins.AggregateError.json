@@ -1,8 +1,8 @@
 {
   "id": "mdn-javascript.builtins.AggregateError",
   "source": "mdnbcd",
-  "name": "AggregateError",
-  "description": "",
+  "name": "Promise.any()",
+  "description": "The Promise.any() static method returns a promise that fulfills as soon as the first of an iterable of promises fulfills, with that promise's value. Otherwise, it rejects with an AggregateError when all of the promises have rejected.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise/any",
   "links": [],
@@ -50,22 +50,22 @@
   },
   "usage": {
     "global": {
-      "full": 90.58,
+      "full": 91.64,
       "partial": 0,
-      "total": 90.58
+      "total": 91.64
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.29,
-        "ffx": 1.67,
-        "saf": 2.14,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.01,
+        "ffx": 1.75,
+        "saf": 1.4,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "ios_saf": 12.65,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 11.89,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -104,5 +104,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=AggregateError"
+  "caniuseUrl": "https://caniuse.com/?search=Promise.any()"
 }

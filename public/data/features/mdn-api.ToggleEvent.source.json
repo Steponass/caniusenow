@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.ToggleEvent.source",
   "source": "mdnbcd",
-  "name": "ToggleEvent.source",
-  "description": "",
+  "name": "ToggleEvent source",
+  "description": "The source property of a ToggleEvent object is the element which triggered the toggle event to fire for a popover, <dialog>, or <details> element, if applicable.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/ToggleEvent/source",
   "links": [],
@@ -15,10 +15,6 @@
       "current": "y",
       "firstFull": "145"
     },
-    "saf": {
-      "current": "y",
-      "firstFull": "26.5"
-    },
     "edg": {
       "current": "y",
       "firstFull": "140"
@@ -27,13 +23,15 @@
       "current": "y",
       "firstFull": "124"
     },
+    "saf": {
+      "current": "n"
+    },
     "ie": {
       "current": "y",
       "firstFull": "140"
     },
     "ios_saf": {
-      "current": "y",
-      "firstFull": "26.5"
+      "current": "n"
     },
     "an_chr": {
       "current": "y",
@@ -50,27 +48,25 @@
   },
   "usage": {
     "global": {
-      "full": 68.22,
+      "full": 66.07,
       "partial": 0,
-      "total": 68.22
+      "total": 66.07
     },
     "byBrowser": {
       "desktop": {
-        "chr": 17.46,
-        "ffx": 1.39,
-        "saf": 0.28,
-        "edg": 4.55,
-        "opr": 0.42
+        "chr": 15.52,
+        "ffx": 1.3,
+        "edg": 4.05,
+        "opr": 0.78
       },
       "mobile": {
-        "ios_saf": 1.54,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
   },
-  "baseline": "low",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
@@ -84,5 +80,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=ToggleEvent.source"
+  "caniuseUrl": "https://caniuse.com/?search=ToggleEvent%20source"
 }

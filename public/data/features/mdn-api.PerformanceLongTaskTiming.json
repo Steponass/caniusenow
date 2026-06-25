@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.PerformanceLongTaskTiming",
   "source": "mdnbcd",
-  "name": "PerformanceLongTaskTiming",
-  "description": "",
+  "name": "Long tasks",
+  "description": "The longtask performance event type and the PerformanceLongTaskTiming API provides information about tasks that occupy the UI thread for 50 milliseconds or more, a metric for input latency, delayed animations, and other sources of \"jank.\"",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/TaskAttributionTiming/toJSON",
   "links": [],
@@ -46,18 +46,18 @@
   },
   "usage": {
     "global": {
-      "full": 74.07,
+      "full": 76.51,
       "partial": 0,
-      "total": 74.07
+      "total": 76.51
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.61,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.23,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "an_chr": 42.2
+        "an_chr": 44.12
       }
     },
     "type": "estimated"
@@ -116,5 +116,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=PerformanceLongTaskTiming"
+  "caniuseUrl": "https://caniuse.com/?search=Long%20tasks"
 }

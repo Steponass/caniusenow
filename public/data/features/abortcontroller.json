@@ -4,7 +4,7 @@
   "name": "AbortController & AbortSignal",
   "description": "Controller object that allows you to abort one or more DOM requests made with the Fetch API.",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/AbortSignal/throwIfAborted",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/AbortSignal/timeout_static",
   "links": [
     {
       "url": "https://developers.google.com/web/updates/2017/09/abortable-fetch",
@@ -49,7 +49,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "149"
+      "firstFull": "144"
     },
     "smsg": {
       "current": "y",
@@ -57,28 +57,28 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "151"
+      "firstFull": "147"
     }
   },
   "usage": {
     "global": {
-      "full": 94.12,
+      "full": 95.78,
       "partial": 0,
-      "total": 94.12
+      "total": 95.78
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.35,
-        "ffx": 1.68,
-        "saf": 2.15,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.2,
+        "ffx": 1.75,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "ios_saf": 12.71,
-        "an_chr": 42.2,
-        "smsg": 1.26,
-        "an_ff": 0.37
+        "ios_saf": 11.98,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
       }
     },
     "type": "actual"
@@ -154,6 +154,11 @@
       {
         "source": "mdnbcd",
         "id": "api.AbortSignal.throwIfAborted",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.AbortSignal.timeout_static",
         "matched": "via-webfeatures"
       },
       {

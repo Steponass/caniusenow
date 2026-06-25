@@ -1,7 +1,7 @@
 {
   "id": "devicepixelratio",
   "source": "caniuse",
-  "name": "Window.devicePixelRatio",
+  "name": "devicePixelRatio",
   "description": "Read-only property that returns the ratio of the (vertical) size of one physical pixel on the current display device to the size of one CSS pixel.",
   "category": "CSS",
   "mdn": "https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio",
@@ -21,7 +21,8 @@
       "firstFull": "18"
     },
     "saf": {
-      "current": "u"
+      "current": "y",
+      "firstFull": "3.1"
     },
     "edg": {
       "current": "y",
@@ -36,11 +37,12 @@
       "firstFull": "11"
     },
     "ios_saf": {
-      "current": "u"
+      "current": "y",
+      "firstFull": "3.2"
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "149"
+      "firstFull": "144"
     },
     "smsg": {
       "current": "y",
@@ -48,36 +50,36 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "151"
+      "firstFull": "147"
     }
   },
   "usage": {
     "global": {
-      "full": 81.02,
-      "partial": 15.5,
-      "total": 96.52
+      "full": 96.69,
+      "partial": 0,
+      "total": 96.69
     },
     "byBrowser": {
       "desktop": {
-        "chr": 28.28,
-        "ffx": 1.69,
-        "edg": 4.71,
-        "opr": 0.55,
-        "ie": 0.13
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.36
       },
       "mobile": {
-        "an_chr": 42.2,
-        "smsg": 1.26,
-        "an_ff": 0.37
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
       }
     },
     "type": "actual"
   },
   "notes": {
     "general": "As the page is zoomed in the number of device pixels that one CSS pixel covers increases, and therefore the value of devicePixelRatio will also increase.",
-    "byNum": {
-      "1": "Safari does not update the `devicePixelRatio` value when the page is zoomed. See [bug 124862](https://bugs.webkit.org/show_bug.cgi?id=124862)"
-    }
+    "byNum": {}
   },
   "baseline": false,
   "sourceData": {
@@ -98,5 +100,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=Window.devicePixelRatio"
+  "caniuseUrl": "https://caniuse.com/?search=devicePixelRatio"
 }

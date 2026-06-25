@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.EventCounts",
   "source": "mdnbcd",
-  "name": "EventCounts",
-  "description": "",
+  "name": "Event timing",
+  "description": "The event and first-input performance entries and the PerformanceEventTiming API measures the latency of user input events, such as mouse clicks or keypresses. They're used to calculate Interaction to Next Paint (INP), a common metric for perceived responsiveness.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/toJSON",
   "links": [],
@@ -50,22 +50,22 @@
   },
   "usage": {
     "global": {
-      "full": 85.86,
+      "full": 78.7,
       "partial": 0,
-      "total": 85.86
+      "total": 78.7
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.29,
-        "ffx": 1.67,
-        "saf": 1.45,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.01,
+        "ffx": 1.75,
+        "saf": 0.09,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "ios_saf": 8.62,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 0.26,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -164,5 +164,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=EventCounts"
+  "caniuseUrl": "https://caniuse.com/?search=Event%20timing"
 }

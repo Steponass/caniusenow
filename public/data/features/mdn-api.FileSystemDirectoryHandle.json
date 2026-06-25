@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.FileSystemDirectoryHandle",
   "source": "mdnbcd",
-  "name": "FileSystemDirectoryHandle",
-  "description": "",
+  "name": "Origin private file system",
+  "description": "The navigator.storage.getDirectory() method returns a FileSystemDirectoryHandle that is restricted to a specific origin and invisible to the user's actual file system for faster file-based applications, such as SQLite databases.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/StorageManager/getDirectory",
   "links": [],
@@ -50,22 +50,22 @@
   },
   "usage": {
     "global": {
-      "full": 90.52,
+      "full": 91.55,
       "partial": 0,
-      "total": 90.52
+      "total": 91.55
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.29,
-        "ffx": 1.67,
-        "saf": 2.12,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27,
+        "ffx": 1.75,
+        "saf": 1.37,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "ios_saf": 12.61,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 11.84,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -214,5 +214,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=FileSystemDirectoryHandle"
+  "caniuseUrl": "https://caniuse.com/?search=Origin%20private%20file%20system"
 }

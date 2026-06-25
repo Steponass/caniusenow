@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.Navigator.serial",
   "source": "mdnbcd",
-  "name": "Navigator.serial",
-  "description": "",
+  "name": "Web serial",
+  "description": "The navigator.serial API communicates with devices over serial ports, such as microcontrollers.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/serial",
   "links": [],
@@ -11,10 +11,6 @@
       "current": "y",
       "firstFull": "89"
     },
-    "ffx": {
-      "current": "y",
-      "firstFull": "151"
-    },
     "edg": {
       "current": "y",
       "firstFull": "89"
@@ -22,6 +18,9 @@
     "opr": {
       "current": "y",
       "firstFull": "75"
+    },
+    "ffx": {
+      "current": "n"
     },
     "saf": {
       "current": "n"
@@ -42,26 +41,23 @@
       "firstFull": "89"
     },
     "an_ff": {
-      "current": "y",
-      "firstFull": "151"
+      "current": "n"
     }
   },
   "usage": {
     "global": {
-      "full": 74.49,
+      "full": 76.25,
       "partial": 0,
-      "total": 74.49
+      "total": 76.25
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.27,
-        "ffx": 0.39,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 26.96,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "an_chr": 44.12
       }
     },
     "type": "estimated"
@@ -195,5 +191,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=Navigator.serial"
+  "caniuseUrl": "https://caniuse.com/?search=Web%20serial"
 }

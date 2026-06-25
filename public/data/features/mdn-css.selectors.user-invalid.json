@@ -1,7 +1,7 @@
 {
   "id": "mdn-css.selectors.user-invalid",
   "source": "mdnbcd",
-  "name": "`:user-invalid`",
+  "name": ":user-valid and :user-invalid",
   "description": "`:user-invalid`",
   "category": "CSS",
   "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Selectors/:user-valid",
@@ -50,27 +50,27 @@
   },
   "usage": {
     "global": {
-      "full": 84.05,
+      "full": 86.64,
       "partial": 0,
-      "total": 84.05
+      "total": 86.64
     },
     "byBrowser": {
       "desktop": {
-        "chr": 20.47,
-        "ffx": 1.67,
-        "saf": 2.02,
-        "edg": 4.67,
-        "opr": 0.42
+        "chr": 22.9,
+        "ffx": 1.75,
+        "saf": 1.22,
+        "edg": 4.21,
+        "opr": 0.79
       },
       "mobile": {
-        "ios_saf": 12.23,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 11.34,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
   },
-  "baseline": "high",
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
@@ -89,5 +89,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60%3Auser-invalid%60"
+  "caniuseUrl": "https://caniuse.com/?search=%3Auser-valid%20and%20%3Auser-invalid"
 }

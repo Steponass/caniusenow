@@ -53,7 +53,7 @@ watch(displayedTrackings, (trackings) => {
     </div>
 
     <div v-if="trackingStore.loading">
-      Loading trackings...
+      <p>Loading trackings…</p>
     </div>
 
     <div v-else-if="displayedTrackings.length === 0">

@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.HTMLLinkElement",
   "source": "mdnbcd",
-  "name": "HTMLLinkElement",
-  "description": "",
+  "name": "<link>",
+  "description": "The <link> element creates a relationship between the current document and an external resource, such as a stylesheet or favicon.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Attributes/rel",
   "links": [],
@@ -50,24 +50,24 @@
   },
   "usage": {
     "global": {
-      "full": 94.57,
+      "full": 94.87,
       "partial": 0,
-      "total": 94.57
+      "total": 94.87
     },
     "byBrowser": {
       "desktop": {
-        "chr": 28.28,
-        "ffx": 1.74,
-        "saf": 2.15,
-        "edg": 4.71,
-        "opr": 0.55,
-        "ie": 0.26
+        "chr": 27.41,
+        "ffx": 1.85,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.43
       },
       "mobile": {
-        "ios_saf": 13.04,
-        "an_chr": 42.2,
-        "smsg": 1.26,
-        "an_ff": 0.37
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -102,6 +102,11 @@
       {
         "source": "mdnbcd",
         "id": "api.HTMLLinkElement.hreflang",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLLinkElement.integrity",
         "matched": "via-webfeatures"
       },
       {
@@ -171,6 +176,11 @@
       },
       {
         "source": "mdnbcd",
+        "id": "html.elements.link.integrity",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
         "id": "html.elements.link.media",
         "matched": "via-webfeatures"
       },
@@ -196,5 +206,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=HTMLLinkElement"
+  "caniuseUrl": "https://caniuse.com/?search=%3Clink%3E"
 }

@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.Navigator.userActivation",
   "source": "mdnbcd",
-  "name": "Navigator.userActivation",
-  "description": "",
+  "name": "User activation",
+  "description": "The navigator.userActivation API reveals whether the user has interacted with the page through an \"activation\" gesture such as a click, tap, or key press. User activation gated APIs (such as the fullscreen API) fail without user interaction, and this API allows you to predict such a failure.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/UserActivation/isActive",
   "links": [],
@@ -50,27 +50,27 @@
   },
   "usage": {
     "global": {
-      "full": 89.95,
+      "full": 90.8,
       "partial": 0,
-      "total": 89.95
+      "total": 90.8
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.32,
-        "ffx": 1.54,
-        "saf": 2.03,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.14,
+        "ffx": 1.48,
+        "saf": 1.23,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "ios_saf": 12.23,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 11.35,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
   },
-  "baseline": "high",
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
@@ -99,5 +99,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=Navigator.userActivation"
+  "caniuseUrl": "https://caniuse.com/?search=User%20activation"
 }

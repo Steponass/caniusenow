@@ -1,8 +1,8 @@
 {
   "id": "mdn-javascript.builtins.String.normalize",
   "source": "mdnbcd",
-  "name": "`String.normalize()`",
-  "description": "",
+  "name": "String normalize()",
+  "description": "The normalize() method of strings returns a Unicode normal form of a string as a new string. More than one code point sequence can represent the same characters. You can use the normalize() method to find canonically or compatibly equivalent strings.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/normalize",
   "links": [],
@@ -50,22 +50,22 @@
   },
   "usage": {
     "global": {
-      "full": 92.99,
+      "full": 92.41,
       "partial": 0,
-      "total": 92.99
+      "total": 92.41
     },
     "byBrowser": {
       "desktop": {
-        "chr": 28.28,
-        "ffx": 1.69,
-        "saf": 2.15,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.41,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "ios_saf": 13.04,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 12.21,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -84,5 +84,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60String.normalize()%60"
+  "caniuseUrl": "https://caniuse.com/?search=String%20normalize()"
 }

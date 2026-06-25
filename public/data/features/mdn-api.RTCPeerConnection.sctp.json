@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.RTCPeerConnection.sctp",
   "source": "mdnbcd",
-  "name": "RTCPeerConnection.sctp",
-  "description": "",
+  "name": "WebRTC SCTP information",
+  "description": "The sctp object on RTCPeerConnection represents the negotiated SCTP transport. SCTP (Stream Control Transmission Protocol) is the protocol that RTCDataChannel uses.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/RTCSctpTransport/transport",
   "links": [],
@@ -50,22 +50,22 @@
   },
   "usage": {
     "global": {
-      "full": 90.54,
+      "full": 91.67,
       "partial": 0,
-      "total": 90.54
+      "total": 91.67
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.32,
-        "ffx": 1.67,
-        "saf": 2.12,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.14,
+        "ffx": 1.75,
+        "saf": 1.37,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "ios_saf": 12.6,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 11.82,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -114,5 +114,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=RTCPeerConnection.sctp"
+  "caniuseUrl": "https://caniuse.com/?search=WebRTC%20SCTP%20information"
 }

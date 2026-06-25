@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.HTMLDialogElement.requestClose",
   "source": "mdnbcd",
-  "name": "HTMLDialogElement.requestClose",
-  "description": "",
+  "name": "dialog.requestClose()",
+  "description": "The requestClose() method of a <dialog> HTML element closes the dialog, firing a cancel event first, which listeners can use to prevent the dialog from closing. This differs from the close() method, which only fires the non-cancelable close event.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/requestClose",
   "links": [],
@@ -50,22 +50,22 @@
   },
   "usage": {
     "global": {
-      "full": 79.73,
+      "full": 81.13,
       "partial": 0,
-      "total": 79.73
+      "total": 81.13
     },
     "byBrowser": {
       "desktop": {
-        "chr": 17.93,
-        "ffx": 1.49,
-        "saf": 1.55,
-        "edg": 4.61,
-        "opr": 0.42
+        "chr": 19.74,
+        "ffx": 1.45,
+        "saf": 0.65,
+        "edg": 4.13,
+        "opr": 0.79
       },
       "mobile": {
-        "ios_saf": 11.16,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 9.93,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -84,5 +84,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=HTMLDialogElement.requestClose"
+  "caniuseUrl": "https://caniuse.com/?search=dialog.requestClose()"
 }

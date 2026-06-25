@@ -4,7 +4,7 @@
   "name": "HTMLGeolocationElement",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/geolocation",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLGeolocationElement/watch",
   "links": [],
   "support": {
     "chr": {
@@ -15,15 +15,15 @@
       "current": "y",
       "firstFull": "144"
     },
-    "opr": {
-      "current": "y",
-      "firstFull": "128"
-    },
     "ffx": {
       "current": "n"
     },
     "saf": {
       "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "144"
     },
     "ie": {
       "current": "y",
@@ -46,18 +46,16 @@
   },
   "usage": {
     "global": {
-      "full": 63.42,
+      "full": 44.17,
       "partial": 0,
-      "total": 63.42
+      "total": 44.17
     },
     "byBrowser": {
       "desktop": {
-        "chr": 16.31,
-        "edg": 4.49,
-        "opr": 0.42
+        "chr": 0.05
       },
       "mobile": {
-        "an_chr": 42.2
+        "an_chr": 44.12
       }
     },
     "type": "estimated"
@@ -71,27 +69,7 @@
     "supplementary": [
       {
         "source": "mdnbcd",
-        "id": "api.HTMLGeolocationElement.HTMLGeolocationElement",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.HTMLGeolocationElement.autolocate",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
         "id": "api.HTMLGeolocationElement.error",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.HTMLGeolocationElement.initialPermissionStatus",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.HTMLGeolocationElement.invalidReason",
         "matched": "via-webfeatures"
       },
       {
@@ -101,58 +79,13 @@
       },
       {
         "source": "mdnbcd",
-        "id": "api.HTMLGeolocationElement.location_event",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.HTMLGeolocationElement.permissionStatus",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
         "id": "api.HTMLGeolocationElement.position",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.HTMLGeolocationElement.promptaction_event",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.HTMLGeolocationElement.promptdismiss_event",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.HTMLGeolocationElement.validationstatuschange_event",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
         "id": "api.HTMLGeolocationElement.watch",
         "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "html.elements.geolocation",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "html.elements.geolocation.autolocate",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "html.elements.geolocation.watch",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "webfeatures",
-        "id": "geolocation-element",
-        "matched": "exact"
       }
     ]
   },

@@ -1,16 +1,12 @@
 {
   "id": "mdn-javascript.builtins.Math.sumPrecise",
   "source": "mdnbcd",
-  "name": "`Math.sumPrecise()`",
-  "description": "",
+  "name": "Math.sumPrecise()",
+  "description": "The Math.sumPrecise() static method returns the sum of an iterable of numbers. It avoids the precision loss of intermediate partial sums, as found using reduce() or a loop to add together an array of values.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/sumPrecise",
   "links": [],
   "support": {
-    "chr": {
-      "current": "y",
-      "firstFull": "147"
-    },
     "ffx": {
       "current": "y",
       "firstFull": "137"
@@ -19,29 +15,27 @@
       "current": "y",
       "firstFull": "26.2"
     },
+    "chr": {
+      "current": "n"
+    },
     "edg": {
-      "current": "y",
-      "firstFull": "147"
+      "current": "n"
     },
     "opr": {
-      "current": "y",
-      "firstFull": "131"
+      "current": "n"
     },
     "ie": {
-      "current": "y",
-      "firstFull": "147"
+      "current": "n"
     },
     "ios_saf": {
       "current": "y",
       "firstFull": "26.2"
     },
     "an_chr": {
-      "current": "y",
-      "firstFull": "147"
+      "current": "n"
     },
     "smsg": {
-      "current": "y",
-      "firstFull": "147"
+      "current": "n"
     },
     "an_ff": {
       "current": "y",
@@ -50,27 +44,23 @@
   },
   "usage": {
     "global": {
-      "full": 73.45,
+      "full": 2.12,
       "partial": 0,
-      "total": 73.45
+      "total": 2.12
     },
     "byBrowser": {
       "desktop": {
-        "chr": 14.57,
-        "ffx": 1.49,
-        "saf": 1.45,
-        "edg": 4.34,
-        "opr": 0.42
+        "ffx": 1.46,
+        "saf": 0.09
       },
       "mobile": {
-        "ios_saf": 8.62,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 0.26,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
   },
-  "baseline": "low",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
@@ -84,5 +74,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60Math.sumPrecise()%60"
+  "caniuseUrl": "https://caniuse.com/?search=Math.sumPrecise()"
 }

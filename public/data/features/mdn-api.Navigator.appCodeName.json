@@ -4,7 +4,7 @@
   "name": "Navigator.appCodeName",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/WorkerNavigator/userAgent",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/WorkerNavigator/appCodeName",
   "links": [],
   "support": {
     "chr": {
@@ -50,29 +50,29 @@
   },
   "usage": {
     "global": {
-      "full": 94.57,
+      "full": 94.87,
       "partial": 0,
-      "total": 94.57
+      "total": 94.87
     },
     "byBrowser": {
       "desktop": {
-        "chr": 28.28,
-        "ffx": 1.74,
-        "saf": 2.15,
-        "edg": 4.71,
-        "opr": 0.55,
-        "ie": 0.26
+        "chr": 27.41,
+        "ffx": 1.85,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.43
       },
       "mobile": {
-        "ios_saf": 13.04,
-        "an_chr": 42.2,
-        "smsg": 1.26,
-        "an_ff": 0.37
+        "ios_saf": 12.23,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
   },
-  "baseline": "high",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
@@ -81,88 +81,8 @@
     "supplementary": [
       {
         "source": "mdnbcd",
-        "id": "api.Navigator.appName",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.appVersion",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.javaEnabled",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.platform",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.plugins",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.product",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.productSub",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.userAgent",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.vendor",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Navigator.vendorSub",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
         "id": "api.WorkerNavigator.appCodeName",
         "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.WorkerNavigator.appName",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.WorkerNavigator.appVersion",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.WorkerNavigator.platform",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.WorkerNavigator.product",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.WorkerNavigator.userAgent",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "webfeatures",
-        "id": "user-agent-sniffing",
-        "matched": "exact"
       }
     ]
   },

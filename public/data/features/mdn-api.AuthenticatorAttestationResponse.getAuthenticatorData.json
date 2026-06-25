@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.AuthenticatorAttestationResponse.getAuthenticatorData",
   "source": "mdnbcd",
-  "name": "AuthenticatorAttestationResponse.getAuthenticatorData",
-  "description": "",
+  "name": "Web authentication easy public key access",
+  "description": "The getAuthenticatorData(), getPublicKey(), and getPublicKeyAlgorithm() methods of AuthenticatorAttestationResponse access credential data inside attestationObject without the need to parse it.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse/getPublicKeyAlgorithm",
   "links": [],
@@ -50,27 +50,27 @@
   },
   "usage": {
     "global": {
-      "full": 90.07,
+      "full": 90.89,
       "partial": 0,
-      "total": 90.07
+      "total": 90.89
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.29,
-        "ffx": 1.54,
-        "saf": 2.05,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.01,
+        "ffx": 1.48,
+        "saf": 1.27,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "ios_saf": 12.36,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 11.52,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
   },
-  "baseline": "high",
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
@@ -80,21 +80,6 @@
       {
         "source": "mdnbcd",
         "id": "api.AuthenticatorAttestationResponse.getPublicKey",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.AuthenticatorAttestationResponse.getPublicKey.algorithm_eddsa",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.AuthenticatorAttestationResponse.getPublicKey.algorithm_es256",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.AuthenticatorAttestationResponse.getPublicKey.algorithm_rs256",
         "matched": "via-webfeatures"
       },
       {
@@ -109,5 +94,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=AuthenticatorAttestationResponse.getAuthenticatorData"
+  "caniuseUrl": "https://caniuse.com/?search=Web%20authentication%20easy%20public%20key%20access"
 }

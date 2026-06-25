@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.Gamepad.hapticActuators",
   "source": "mdnbcd",
-  "name": "Gamepad.hapticActuators",
-  "description": "",
+  "name": "Gamepad haptic feedback",
+  "description": "The gamepad.vibrationActuator property represents a gamepad's haptics hardware, which allows you to control the vibration motors in a gamepad.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/GamepadHapticActuator/reset",
   "links": [],
@@ -44,17 +44,17 @@
   },
   "usage": {
     "global": {
-      "full": 6.77,
+      "full": 6.31,
       "partial": 0,
-      "total": 6.77
+      "total": 6.31
     },
     "byBrowser": {
       "desktop": {
-        "ffx": 1.68,
-        "edg": 4.71
+        "ffx": 1.75,
+        "edg": 4.26
       },
       "mobile": {
-        "an_ff": 0.37
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -117,11 +117,16 @@
         "matched": "via-webfeatures"
       },
       {
+        "source": "mdnbcd",
+        "id": "api.GamepadHapticActuator.secure_context_required",
+        "matched": "via-webfeatures"
+      },
+      {
         "source": "webfeatures",
         "id": "gamepad-haptics",
         "matched": "exact"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=Gamepad.hapticActuators"
+  "caniuseUrl": "https://caniuse.com/?search=Gamepad%20haptic%20feedback"
 }

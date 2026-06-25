@@ -1,7 +1,7 @@
 {
   "id": "geolocation",
   "source": "caniuse",
-  "name": "Geolocation",
+  "name": "Geolocation API",
   "description": "Method of informing a website of the user's geographical location",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/geolocation",
@@ -62,22 +62,22 @@
   },
   "usage": {
     "global": {
-      "full": 96.7,
+      "full": 96.83,
       "partial": 0,
-      "total": 96.7
+      "total": 96.83
     },
     "byBrowser": {
       "desktop": {
-        "chr": 28.28,
-        "ffx": 1.74,
-        "saf": 2.15,
-        "edg": 4.71,
-        "opr": 0.55,
-        "ie": 0.26
+        "chr": 27.41,
+        "ffx": 1.85,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.41
       },
       "mobile": {
-        "ios_saf": 13.04,
-        "smsg": 1.26
+        "ios_saf": 12.23,
+        "smsg": 1.93
       }
     },
     "type": "actual"
@@ -232,6 +232,21 @@
       },
       {
         "source": "mdnbcd",
+        "id": "html.elements.geolocation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.geolocation.autolocate",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.geolocation.watch",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
         "id": "html.elements.iframe.allow.geolocation",
         "matched": "via-webfeatures"
       },
@@ -244,8 +259,13 @@
         "source": "webfeatures",
         "id": "geolocation",
         "matched": "exact"
+      },
+      {
+        "source": "webfeatures",
+        "id": "geolocation-element",
+        "matched": "exact"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=Geolocation"
+  "caniuseUrl": "https://caniuse.com/?search=Geolocation%20API"
 }

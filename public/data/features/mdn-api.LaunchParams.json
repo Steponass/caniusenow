@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.LaunchParams",
   "source": "mdnbcd",
-  "name": "LaunchParams",
-  "description": "",
+  "name": "Launch handler",
+  "description": "The launch_handler web app manifest member, with the client_mode property, configure how web app launches behave when an instance of the app is already open. For example, you can choose to focus the existing app instance instead of launching a new one.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/Window/launchQueue",
   "links": [],
@@ -46,18 +46,18 @@
   },
   "usage": {
     "global": {
-      "full": 73.62,
+      "full": 76.12,
       "partial": 0,
-      "total": 73.62
+      "total": 76.12
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.17,
-        "edg": 4.7,
-        "opr": 0.55
+        "chr": 26.85,
+        "edg": 4.25,
+        "opr": 0.91
       },
       "mobile": {
-        "an_chr": 42.2
+        "an_chr": 44.12
       }
     },
     "type": "estimated"
@@ -101,5 +101,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=LaunchParams"
+  "caniuseUrl": "https://caniuse.com/?search=Launch%20handler"
 }

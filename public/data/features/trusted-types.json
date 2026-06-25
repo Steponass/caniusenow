@@ -9,6 +9,14 @@
     {
       "url": "https://web.dev/trusted-types/",
       "title": "Web.dev article on using trusted types"
+    },
+    {
+      "url": "https://mozilla.github.io/standards-positions/#trusted-types",
+      "title": "Firefox position: positive"
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1508286",
+      "title": "Firefox meta bug"
     }
   ],
   "support": {
@@ -17,8 +25,7 @@
       "firstFull": "83"
     },
     "ffx": {
-      "current": "y",
-      "firstFull": "148"
+      "current": "u"
     },
     "saf": {
       "current": "y",
@@ -41,45 +48,44 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "149"
+      "firstFull": "144"
     },
     "smsg": {
       "current": "y",
       "firstFull": "13.0"
     },
     "an_ff": {
-      "current": "y",
-      "firstFull": "151"
+      "current": "n"
     }
   },
   "usage": {
     "global": {
-      "full": 88.88,
+      "full": 84.71,
       "partial": 0,
-      "total": 88.88
+      "total": 84.71
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.29,
-        "ffx": 1.37,
-        "saf": 1.49,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.05,
+        "saf": 0.52,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "ios_saf": 8.93,
-        "an_chr": 42.2,
-        "smsg": 1.26,
-        "an_ff": 0.37
+        "ios_saf": 1.73,
+        "an_chr": 44.12,
+        "smsg": 1.93
       }
     },
     "type": "actual"
   },
   "notes": {
     "general": "",
-    "byNum": {}
+    "byNum": {
+      "1": "Enabled by default in Firefox Nightly only"
+    }
   },
-  "baseline": "low",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "caniuse",

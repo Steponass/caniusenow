@@ -311,6 +311,17 @@ function supplementWithWebFeatures(
     feature.baseline = wfFeature.status.baseline;
   }
 
+  // Promote name/description from Web Features when the existing entry has an
+  // inferred/generic name (MDN path-derived) and WF has a proper human name.
+  // WF names are always proper English names, so prefer them when the current
+  // name looks auto-generated (no spaces = single camelCase word from MDN path).
+  if (wfFeature.name && !feature.name.includes(" ")) {
+    feature.name = normalizeCodeTags(wfFeature.name);
+  }
+  if (wfFeature.description && !feature.description) {
+    feature.description = normalizeCodeTags(wfFeature.description);
+  }
+
   // Record supplementary source
   feature.sourceData.supplementary.push({
     source: "webfeatures",

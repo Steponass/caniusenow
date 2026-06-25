@@ -49,7 +49,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "149"
+      "firstFull": "144"
     },
     "smsg": {
       "current": "y",
@@ -57,28 +57,28 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "151"
+      "firstFull": "147"
     }
   },
   "usage": {
     "global": {
-      "full": 96.13,
-      "partial": 0.17,
-      "total": 96.3
+      "full": 96.32,
+      "partial": 0.01,
+      "total": 96.33
     },
     "byBrowser": {
       "desktop": {
-        "chr": 28.02,
-        "ffx": 1.69,
-        "saf": 2.15,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.38,
+        "ffx": 1.77,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "ios_saf": 13.04,
-        "an_chr": 42.2,
-        "smsg": 1.26,
-        "an_ff": 0.37
+        "ios_saf": 12.21,
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
       }
     },
     "type": "actual"
@@ -191,22 +191,17 @@
       },
       {
         "source": "mdnbcd",
-        "id": "api.Request.Request.options_parameter",
+        "id": "api.Request.Request.init_keepalive_parameter",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.Request.Request.options_parameter.body",
+        "id": "api.Request.Request.init_referrer_parameter",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.Request.Request.options_parameter.keepalive",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.Request.Request.options_parameter.referrer",
+        "id": "api.Request.Request.request_body_readablestream",
         "matched": "via-webfeatures"
       },
       {
@@ -271,7 +266,17 @@
       },
       {
         "source": "mdnbcd",
+        "id": "api.Request.formData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
         "id": "api.Request.headers",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Request.integrity",
         "matched": "via-webfeatures"
       },
       {
@@ -391,6 +396,11 @@
       },
       {
         "source": "mdnbcd",
+        "id": "api.Response.formData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
         "id": "api.Response.headers",
         "matched": "via-webfeatures"
       },
@@ -461,22 +471,12 @@
       },
       {
         "source": "mdnbcd",
-        "id": "api.fetch.options_parameter",
+        "id": "api.fetch.init_keepalive_parameter",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.fetch.options_parameter.body",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.fetch.options_parameter.keepalive",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.fetch.options_parameter.referrerPolicy",
+        "id": "api.fetch.init_referrerPolicy_parameter",
         "matched": "via-webfeatures"
       },
       {

@@ -1,8 +1,8 @@
 {
   "id": "mdn-javascript.builtins.JSON.isRawJSON",
   "source": "mdnbcd",
-  "name": "`JSON.isRawJSON()`",
-  "description": "",
+  "name": "JSON source text access",
+  "description": "To serialize and parse JSON in a lossless way, JSON.stringify() handles rawJSON values and JSON.parse()'s reviver callback takes a source context parameter.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/rawJSON",
   "links": [],
@@ -15,10 +15,6 @@
       "current": "y",
       "firstFull": "135"
     },
-    "saf": {
-      "current": "y",
-      "firstFull": "18.4"
-    },
     "edg": {
       "current": "y",
       "firstFull": "114"
@@ -27,13 +23,15 @@
       "current": "y",
       "firstFull": "100"
     },
+    "saf": {
+      "current": "n"
+    },
     "ie": {
       "current": "y",
       "firstFull": "114"
     },
     "ios_saf": {
-      "current": "y",
-      "firstFull": "18.4"
+      "current": "n"
     },
     "an_chr": {
       "current": "y",
@@ -50,27 +48,25 @@
   },
   "usage": {
     "global": {
-      "full": 84.36,
+      "full": 74.32,
       "partial": 0,
-      "total": 84.36
+      "total": 74.32
     },
     "byBrowser": {
       "desktop": {
-        "chr": 22.48,
-        "ffx": 1.51,
-        "saf": 1.55,
-        "edg": 4.67,
-        "opr": 0.42
+        "chr": 23.41,
+        "ffx": 1.48,
+        "edg": 4.21,
+        "opr": 0.79
       },
       "mobile": {
-        "ios_saf": 11.16,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
   },
-  "baseline": "low",
+  "baseline": false,
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
@@ -94,5 +90,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60JSON.isRawJSON()%60"
+  "caniuseUrl": "https://caniuse.com/?search=JSON%20source%20text%20access"
 }

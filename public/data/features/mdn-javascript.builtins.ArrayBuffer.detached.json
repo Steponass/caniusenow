@@ -1,8 +1,8 @@
 {
   "id": "mdn-javascript.builtins.ArrayBuffer.detached",
   "source": "mdnbcd",
-  "name": "`ArrayBuffer.detached()`",
-  "description": "",
+  "name": "Transferable ArrayBuffer",
+  "description": "The transfer() and transferToFixedLength() methods of ArrayBuffer move a buffer from one context to another (for example, to a worker).",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer/transferToFixedLength",
   "links": [],
@@ -50,22 +50,22 @@
   },
   "usage": {
     "global": {
-      "full": 85.29,
+      "full": 86.14,
       "partial": 0,
-      "total": 85.29
+      "total": 86.14
     },
     "byBrowser": {
       "desktop": {
-        "chr": 22.48,
-        "ffx": 1.52,
-        "saf": 1.79,
-        "edg": 4.67,
-        "opr": 0.42
+        "chr": 23.41,
+        "ffx": 1.48,
+        "saf": 0.96,
+        "edg": 4.21,
+        "opr": 0.79
       },
       "mobile": {
-        "ios_saf": 11.82,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 10.86,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -94,5 +94,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60ArrayBuffer.detached()%60"
+  "caniuseUrl": "https://caniuse.com/?search=Transferable%20ArrayBuffer"
 }

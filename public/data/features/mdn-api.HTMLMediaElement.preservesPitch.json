@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.HTMLMediaElement.preservesPitch",
   "source": "mdnbcd",
-  "name": "HTMLMediaElement.preservesPitch",
-  "description": "",
+  "name": "preservesPitch",
+  "description": "The preservesPitch property for <audio> or <video> adjusts the pitch of audio to sound more natural when the playback rate is faster or slower than the default.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/preservesPitch",
   "links": [],
@@ -50,27 +50,27 @@
   },
   "usage": {
     "global": {
-      "full": 89.48,
+      "full": 90.24,
       "partial": 0,
-      "total": 89.48
+      "total": 90.24
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.29,
-        "ffx": 1.67,
-        "saf": 1.8,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27,
+        "ffx": 1.75,
+        "saf": 0.98,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "ios_saf": 11.88,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 10.92,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
   },
-  "baseline": "high",
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
@@ -84,5 +84,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=HTMLMediaElement.preservesPitch"
+  "caniuseUrl": "https://caniuse.com/?search=preservesPitch"
 }

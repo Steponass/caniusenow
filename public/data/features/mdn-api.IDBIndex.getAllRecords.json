@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.IDBIndex.getAllRecords",
   "source": "mdnbcd",
-  "name": "IDBIndex.getAllRecords",
-  "description": "",
+  "name": "IndexedDB getAllRecords()",
+  "description": "The getAllRecords() method of IDBObjectStore and IDBIndex return records and their primary keys from an IndexedDB store or index. The records can be read in batches and in reverse order. The getAllRecords() methods speed up read operations on large datasets.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/IDBObjectStore/getAllRecords",
   "links": [],
@@ -46,18 +46,18 @@
   },
   "usage": {
     "global": {
-      "full": 64.54,
+      "full": 63.6,
       "partial": 0,
-      "total": 64.54
+      "total": 63.6
     },
     "byBrowser": {
       "desktop": {
-        "chr": 17.38,
-        "edg": 4.53,
-        "opr": 0.42
+        "chr": 15.25,
+        "edg": 4.01,
+        "opr": 0.22
       },
       "mobile": {
-        "an_chr": 42.2
+        "an_chr": 44.12
       }
     },
     "type": "estimated"
@@ -81,5 +81,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=IDBIndex.getAllRecords"
+  "caniuseUrl": "https://caniuse.com/?search=IndexedDB%20getAllRecords()"
 }

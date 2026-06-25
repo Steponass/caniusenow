@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.CanMakePaymentEvent",
   "source": "mdnbcd",
-  "name": "CanMakePaymentEvent",
-  "description": "",
+  "name": "Payment handler",
+  "description": "The payment handler API registers a web application as a payment handler and responds to payment requests in the browser's user interface, rather than redirecting users to a separate site to complete a payment.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/paymentManager",
   "links": [],
@@ -46,18 +46,18 @@
   },
   "usage": {
     "global": {
-      "full": 73.8,
+      "full": 76.43,
       "partial": 0,
-      "total": 73.8
+      "total": 76.43
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.34,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.14,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "an_chr": 42.2
+        "an_chr": 44.12
       }
     },
     "type": "estimated"
@@ -201,5 +201,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=CanMakePaymentEvent"
+  "caniuseUrl": "https://caniuse.com/?search=Payment%20handler"
 }

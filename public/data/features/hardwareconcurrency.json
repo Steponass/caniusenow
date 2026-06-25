@@ -1,7 +1,7 @@
 {
   "id": "hardwareconcurrency",
   "source": "caniuse",
-  "name": "navigator.hardwareConcurrency",
+  "name": "hardwareConcurrency",
   "description": "Returns the number of logical cores of the user's CPU. The value may be reduced to prevent device fingerprinting or because it exceeds the allowed number of simultaneous web workers.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/WorkerNavigator/hardwareConcurrency",
@@ -51,7 +51,7 @@
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "149"
+      "firstFull": "144"
     },
     "smsg": {
       "current": "y",
@@ -59,26 +59,26 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "151"
+      "firstFull": "147"
     }
   },
   "usage": {
     "global": {
-      "full": 95.93,
+      "full": 95.88,
       "partial": 0,
-      "total": 95.93
+      "total": 95.88
     },
     "byBrowser": {
       "desktop": {
-        "chr": 28.28,
-        "ffx": 1.69,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.41,
+        "ffx": 1.76,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "an_chr": 42.2,
-        "smsg": 1.26,
-        "an_ff": 0.37
+        "an_chr": 44.12,
+        "smsg": 1.93,
+        "an_ff": 0.31
       }
     },
     "type": "actual"
@@ -114,5 +114,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=navigator.hardwareConcurrency"
+  "caniuseUrl": "https://caniuse.com/?search=hardwareConcurrency"
 }

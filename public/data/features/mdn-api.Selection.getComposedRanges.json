@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.Selection.getComposedRanges",
   "source": "mdnbcd",
-  "name": "Selection.getComposedRanges",
-  "description": "",
+  "name": "Selection composed ranges",
+  "description": "The window.getSelection().getComposedRanges() method returns ranges that represent the current user selection, even if the selection spans across shadow tree boundaries.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/Selection/getComposedRanges",
   "links": [],
@@ -50,22 +50,22 @@
   },
   "usage": {
     "global": {
-      "full": 80.6,
+      "full": 82.18,
       "partial": 0,
-      "total": 80.6
+      "total": 82.18
     },
     "byBrowser": {
       "desktop": {
-        "chr": 17.8,
-        "ffx": 1.4,
-        "saf": 1.9,
-        "edg": 4.58,
-        "opr": 0.42
+        "chr": 19.47,
+        "ffx": 1.35,
+        "saf": 1.07,
+        "edg": 4.1,
+        "opr": 0.79
       },
       "mobile": {
-        "ios_saf": 11.92,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 10.97,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -84,5 +84,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=Selection.getComposedRanges"
+  "caniuseUrl": "https://caniuse.com/?search=Selection%20composed%20ranges"
 }

@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.DeprecationReportBody",
   "source": "mdnbcd",
-  "name": "DeprecationReportBody",
-  "description": "",
+  "name": "Reporting API",
+  "description": "The Reporting-Endpoints HTTP header and ReportingObserver() API send reports of Content Security Policy (CSP) violations, Permissions-Policy violations, deprecated feature usage, browser interventions, and crashes to a nominated URL or callback function.",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/DeprecationReport",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Reporting-Endpoints",
   "links": [],
   "support": {
     "chr": {
@@ -12,8 +12,7 @@
       "firstFull": "69"
     },
     "ffx": {
-      "current": "a",
-      "firstPartial": "149"
+      "current": "n"
     },
     "edg": {
       "current": "y",
@@ -42,26 +41,23 @@
       "firstFull": "69"
     },
     "an_ff": {
-      "current": "a",
-      "firstPartial": "149"
+      "current": "n"
     }
   },
   "usage": {
     "global": {
-      "full": 73.8,
-      "partial": 1.72,
-      "total": 75.52
+      "full": 76.47,
+      "partial": 0,
+      "total": 76.47
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.34,
-        "ffx": 1.35,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.18,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "an_chr": 44.12
       }
     },
     "type": "estimated"
@@ -75,7 +71,22 @@
     "supplementary": [
       {
         "source": "mdnbcd",
+        "id": "api.DeprecationReportBody.anticipatedRemoval",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeprecationReportBody.columnNumber",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
         "id": "api.DeprecationReportBody.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DeprecationReportBody.lineNumber",
         "matched": "via-webfeatures"
       },
       {
@@ -85,10 +96,90 @@
       },
       {
         "source": "mdnbcd",
+        "id": "api.DeprecationReportBody.sourceFile",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
         "id": "api.DeprecationReportBody.toJSON",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InterventionReportBody",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InterventionReportBody.columnNumber",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InterventionReportBody.id",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InterventionReportBody.lineNumber",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InterventionReportBody.message",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InterventionReportBody.sourceFile",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InterventionReportBody.toJSON",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReportingObserver",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReportingObserver.ReportingObserver",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReportingObserver.disconnect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReportingObserver.observe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReportingObserver.takeRecords",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ReportingObserver.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Reporting-Endpoints",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "reporting",
+        "matched": "exact"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=DeprecationReportBody"
+  "caniuseUrl": "https://caniuse.com/?search=Reporting%20API"
 }

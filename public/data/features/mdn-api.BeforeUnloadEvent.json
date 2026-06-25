@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.BeforeUnloadEvent",
   "source": "mdnbcd",
-  "name": "BeforeUnloadEvent",
-  "description": "",
+  "name": "beforeunload",
+  "description": "The beforeunload event is fired when the current window is about to be unloaded. Typically this is used to display a dialog to confirm if users really want to leave the page when there is unsaved data that would be lost.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/Window/beforeunload_event",
   "links": [],
@@ -50,24 +50,23 @@
   },
   "usage": {
     "global": {
-      "full": 93.49,
+      "full": 92.93,
       "partial": 0,
-      "total": 93.49
+      "total": 92.93
     },
     "byBrowser": {
       "desktop": {
-        "chr": 28.28,
-        "ffx": 1.74,
-        "saf": 2.15,
-        "edg": 4.71,
-        "opr": 0.55,
-        "ie": 0.26
+        "chr": 27.41,
+        "ffx": 1.85,
+        "saf": 1.42,
+        "edg": 4.26,
+        "opr": 0.91,
+        "ie": 0.43
       },
       "mobile": {
-        "ios_saf": 13.04,
-        "an_chr": 42.2,
-        "smsg": 0.19,
-        "an_ff": 0.37
+        "ios_saf": 12.22,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -101,5 +100,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=BeforeUnloadEvent"
+  "caniuseUrl": "https://caniuse.com/?search=beforeunload"
 }

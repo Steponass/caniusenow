@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.Document.browsingTopics",
   "source": "mdnbcd",
-  "name": "Document.browsingTopics",
-  "description": "",
+  "name": "Topics",
+  "description": "The topics API reports a user's likely subject-matter interests (as determined by the browser, known as topics) to iframes. This allows for interest-based advertising that does not rely on user's exact browsing history, third-party cookies, or fingerprinting.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Sec-Browsing-Topics",
   "links": [],
@@ -46,18 +46,18 @@
   },
   "usage": {
     "global": {
-      "full": 66.52,
+      "full": 70.67,
       "partial": 0,
-      "total": 66.52
+      "total": 70.67
     },
     "byBrowser": {
       "desktop": {
-        "chr": 19.26,
-        "edg": 4.64,
-        "opr": 0.42
+        "chr": 21.58,
+        "edg": 4.18,
+        "opr": 0.79
       },
       "mobile": {
-        "an_chr": 42.2
+        "an_chr": 44.12
       }
     },
     "type": "estimated"
@@ -76,12 +76,12 @@
       },
       {
         "source": "mdnbcd",
-        "id": "api.Request.Request.options_parameter.browsingTopics",
+        "id": "api.Request.Request.init_browsingTopics_parameter",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.fetch.options_parameter.browsingTopics",
+        "id": "api.fetch.init_browsingTopics_parameter",
         "matched": "via-webfeatures"
       },
       {
@@ -116,5 +116,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=Document.browsingTopics"
+  "caniuseUrl": "https://caniuse.com/?search=Topics"
 }

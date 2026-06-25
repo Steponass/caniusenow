@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.FetchLaterResult",
   "source": "mdnbcd",
-  "name": "FetchLaterResult",
-  "description": "",
+  "name": "fetchLater",
+  "description": "The fetchLater() method requests a deferred fetch sent at an unknown time. The browser chooses a reliable time to send the request, ideally when the document is unloaded, and ignores the response. This API is useful for sending beacons to a server without expecting a particular response.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/deferred-fetch-minimal",
   "links": [],
@@ -46,18 +46,18 @@
   },
   "usage": {
     "global": {
-      "full": 65.11,
+      "full": 68.64,
       "partial": 0,
-      "total": 65.11
+      "total": 68.64
     },
     "byBrowser": {
       "desktop": {
-        "chr": 17.89,
-        "edg": 4.6,
-        "opr": 0.42
+        "chr": 19.6,
+        "edg": 4.12,
+        "opr": 0.79
       },
       "mobile": {
-        "an_chr": 42.2
+        "an_chr": 44.12
       }
     },
     "type": "estimated"
@@ -96,5 +96,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=FetchLaterResult"
+  "caniuseUrl": "https://caniuse.com/?search=fetchLater"
 }

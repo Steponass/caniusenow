@@ -1,8 +1,8 @@
 {
   "id": "mdn-javascript.builtins.Array.toReversed",
   "source": "mdnbcd",
-  "name": "`Array.toReversed()`",
-  "description": "",
+  "name": "Array by copy",
+  "description": "The toReversed(), toSorted(), toSpliced(), and with() methods of arrays and typed arrays return changed copies of arrays. They stand in contrast to methods such as sort() or reverse() that change arrays in place.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/with",
   "links": [],
@@ -50,22 +50,22 @@
   },
   "usage": {
     "global": {
-      "full": 87.77,
+      "full": 89.27,
       "partial": 0,
-      "total": 87.77
+      "total": 89.27
     },
     "byBrowser": {
       "desktop": {
-        "chr": 23.92,
-        "ffx": 1.67,
-        "saf": 2.05,
-        "edg": 4.67,
-        "opr": 0.53
+        "chr": 25.29,
+        "ffx": 1.75,
+        "saf": 1.27,
+        "edg": 4.21,
+        "opr": 0.79
       },
       "mobile": {
-        "ios_saf": 12.36,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 11.52,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -114,5 +114,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60Array.toReversed()%60"
+  "caniuseUrl": "https://caniuse.com/?search=Array%20by%20copy"
 }

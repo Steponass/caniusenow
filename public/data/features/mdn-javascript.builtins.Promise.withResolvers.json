@@ -1,8 +1,8 @@
 {
   "id": "mdn-javascript.builtins.Promise.withResolvers",
   "source": "mdnbcd",
-  "name": "`Promise.withResolvers()`",
-  "description": "",
+  "name": "Promise.withResolvers()",
+  "description": "The Promise.withResolvers() static method is an alternative to the Promise() constructor that returns both the promise and resolution functions. You can use this to access resolve and reject outside the scope of the executor function.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise/withResolvers",
   "links": [],
@@ -50,22 +50,22 @@
   },
   "usage": {
     "global": {
-      "full": 83.28,
+      "full": 85.63,
       "partial": 0,
-      "total": 83.28
+      "total": 85.63
     },
     "byBrowser": {
       "desktop": {
-        "chr": 20.47,
-        "ffx": 1.54,
-        "saf": 1.79,
-        "edg": 4.67,
-        "opr": 0.42
+        "chr": 22.9,
+        "ffx": 1.48,
+        "saf": 0.96,
+        "edg": 4.21,
+        "opr": 0.79
       },
       "mobile": {
-        "ios_saf": 11.82,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 10.86,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -84,5 +84,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60Promise.withResolvers()%60"
+  "caniuseUrl": "https://caniuse.com/?search=Promise.withResolvers()"
 }

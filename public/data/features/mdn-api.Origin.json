@@ -2,7 +2,7 @@
   "id": "mdn-api.Origin",
   "source": "mdnbcd",
   "name": "Origin",
-  "description": "",
+  "description": "An Origin object represents an origin, as in a scheme, hostname, and port. You can use it to make same-site and same-origin comparisons.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/Window/origin",
   "links": [],
@@ -11,28 +11,26 @@
       "current": "y",
       "firstFull": "145"
     },
-    "saf": {
-      "current": "y",
-      "firstFull": "26.5"
-    },
     "edg": {
       "current": "y",
       "firstFull": "145"
     },
-    "opr": {
-      "current": "y",
-      "firstFull": "129"
-    },
     "ffx": {
       "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "145"
     },
     "ie": {
       "current": "y",
       "firstFull": "145"
     },
     "ios_saf": {
-      "current": "y",
-      "firstFull": "26.5"
+      "current": "n"
     },
     "an_chr": {
       "current": "y",
@@ -48,20 +46,16 @@
   },
   "usage": {
     "global": {
-      "full": 64.92,
+      "full": 44.13,
       "partial": 0,
-      "total": 64.92
+      "total": 44.13
     },
     "byBrowser": {
       "desktop": {
-        "chr": 16.01,
-        "saf": 0.28,
-        "edg": 4.46,
-        "opr": 0.42
+        "chr": 0.01
       },
       "mobile": {
-        "ios_saf": 1.54,
-        "an_chr": 42.2
+        "an_chr": 44.12
       }
     },
     "type": "estimated"

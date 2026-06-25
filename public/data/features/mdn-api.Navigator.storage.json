@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.Navigator.storage",
   "source": "mdnbcd",
-  "name": "Navigator.storage",
-  "description": "",
+  "name": "Storage manager",
+  "description": "The navigator.storage API provides information about the availability and persistence of the data that a site stores on the device, by using APIs such as the Cache API or the IndexedDB API.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/WorkerNavigator/storage",
   "links": [],
@@ -50,27 +50,27 @@
   },
   "usage": {
     "global": {
-      "full": 91.11,
+      "full": 91.8,
       "partial": 0,
-      "total": 91.11
+      "total": 91.8
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.87,
-        "ffx": 1.68,
-        "saf": 2.12,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.25,
+        "ffx": 1.75,
+        "saf": 1.37,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "ios_saf": 12.61,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 11.84,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
   },
-  "baseline": "high",
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
@@ -114,5 +114,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=Navigator.storage"
+  "caniuseUrl": "https://caniuse.com/?search=Storage%20manager"
 }

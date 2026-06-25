@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.BrowserCaptureMediaStreamTrack",
   "source": "mdnbcd",
-  "name": "BrowserCaptureMediaStreamTrack",
-  "description": "",
+  "name": "Region capture",
+  "description": "When using navigator.mediaDevices.getDisplayMedia() to capture a browser tab as a video stream, the region capture API allows you to crop the video to the bounding box of a given element. In contrast to the element capture API, any content that overlays that element is also captured.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/CropTarget/fromElement_static",
   "links": [],
@@ -46,18 +46,18 @@
   },
   "usage": {
     "global": {
-      "full": 73.31,
+      "full": 76,
       "partial": 0,
-      "total": 73.31
+      "total": 76
     },
     "byBrowser": {
       "desktop": {
-        "chr": 25.86,
-        "edg": 4.7,
-        "opr": 0.55
+        "chr": 26.73,
+        "edg": 4.25,
+        "opr": 0.91
       },
       "mobile": {
-        "an_chr": 42.2
+        "an_chr": 44.12
       }
     },
     "type": "estimated"
@@ -101,5 +101,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=BrowserCaptureMediaStreamTrack"
+  "caniuseUrl": "https://caniuse.com/?search=Region%20capture"
 }

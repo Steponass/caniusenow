@@ -1,8 +1,8 @@
 {
   "id": "mdn-javascript.builtins.FinalizationRegistry",
   "source": "mdnbcd",
-  "name": "FinalizationRegistry",
-  "description": "",
+  "name": "Weak references",
+  "description": "The WeakRef and FinalizationRegistry objects hold references to garbage-collectable objects without creating strong references that prevent their garbage collection.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakRef/deref",
   "links": [],
@@ -50,22 +50,22 @@
   },
   "usage": {
     "global": {
-      "full": 90.57,
+      "full": 91.63,
       "partial": 0,
-      "total": 90.57
+      "total": 91.63
     },
     "byBrowser": {
       "desktop": {
-        "chr": 26.29,
-        "ffx": 1.67,
-        "saf": 2.13,
-        "edg": 4.71,
-        "opr": 0.55
+        "chr": 27.01,
+        "ffx": 1.75,
+        "saf": 1.39,
+        "edg": 4.26,
+        "opr": 0.91
       },
       "mobile": {
-        "ios_saf": 12.65,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 11.89,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -129,5 +129,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=FinalizationRegistry"
+  "caniuseUrl": "https://caniuse.com/?search=Weak%20references"
 }

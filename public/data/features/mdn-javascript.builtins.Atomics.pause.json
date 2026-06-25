@@ -1,8 +1,8 @@
 {
   "id": "mdn-javascript.builtins.Atomics.pause",
   "source": "mdnbcd",
-  "name": "`Atomics.pause()`",
-  "description": "",
+  "name": "Atomics.pause()",
+  "description": "The Atomics.pause() static method gives a hint to the CPU that the code calling the method is in a short-duration wait for shared memory, known as spinning or a spinlock.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Atomics/pause",
   "links": [],
@@ -50,22 +50,22 @@
   },
   "usage": {
     "global": {
-      "full": 80.26,
+      "full": 81.35,
       "partial": 0,
-      "total": 80.26
+      "total": 81.35
     },
     "byBrowser": {
       "desktop": {
-        "chr": 18.45,
-        "ffx": 1.49,
-        "saf": 1.55,
-        "edg": 4.62,
-        "opr": 0.42
+        "chr": 19.95,
+        "ffx": 1.46,
+        "saf": 0.65,
+        "edg": 4.14,
+        "opr": 0.79
       },
       "mobile": {
-        "ios_saf": 11.16,
-        "an_chr": 42.2,
-        "an_ff": 0.37
+        "ios_saf": 9.93,
+        "an_chr": 44.12,
+        "an_ff": 0.31
       }
     },
     "type": "estimated"
@@ -84,5 +84,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60Atomics.pause()%60"
+  "caniuseUrl": "https://caniuse.com/?search=Atomics.pause()"
 }
