@@ -3,7 +3,6 @@ import { ref } from 'vue'
 import PrivacyPolicyModal from '@components/PrivacyPolicyModal.vue'
 const PrivacyDialog = ref(null)
 </script>
-w
 <template>
   <footer>
       <button @click="PrivacyDialog.open()">Privacy Policy</button>
@@ -21,7 +20,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--clr-raised);
+  background-color: var(--clr-bg-raised);
   box-shadow: var(--shadow-elevation-4);
   a {
     text-decoration: underline;

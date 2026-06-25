@@ -201,7 +201,7 @@ function handleSearch(query: string) {
         </section>
           <ScrollToTop/>
     </main>
-
+  <AppFooter />
     <AuthModal :is-open="isAuthModalOpen" @close="handleCloseAuthModal" />
 
     <FeatureDetailModal
@@ -214,7 +214,7 @@ function handleSearch(query: string) {
     />
   </div>
 
-  <AppFooter />
+
 </template>
 
 <style scoped>
@@ -227,6 +227,7 @@ function handleSearch(query: string) {
 
 main {
   width: min(1920px, 100%);
+  flex: 1;
   margin-inline: auto;
   padding-inline: var(--space-16px);
   margin-top: var(--space-24-32px);

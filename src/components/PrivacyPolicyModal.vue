@@ -53,6 +53,7 @@ function handleClose() {
     box-shadow: var(--shadow-elevation-1);
     padding: var(--space-16-24px);
     border-radius: var(--radius-8px);
+    background-color: var(--clr-bg-overlay);
     scrollbar-color: var(--clr-primary) var(--clr-bg-base);
     h1 {
       font-size: var(--fontsize-h2);
