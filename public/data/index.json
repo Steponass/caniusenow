@@ -9029,14 +9029,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 0.84,
+    "usage": 45.59,
     "baseline": false
   },
   {
@@ -9528,11 +9528,11 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 71.64,
+    "usage": 44.75,
     "baseline": false
   },
   {
@@ -9782,13 +9782,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 87.17,
+    "usage": 90.5,
     "baseline": false
   },
   {
@@ -10118,13 +10118,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 87.17,
+    "usage": 90.5,
     "baseline": false
   },
   {
@@ -14693,12 +14693,12 @@
     "description": "Accepts `GPUTexture` resources instead of `GPUTextureView` (provided default view is desired).",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 66.24,
     "baseline": false
@@ -14709,12 +14709,12 @@
     "description": "Offset and `size` parameters are optional",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 66.67,
     "baseline": false
@@ -14736,17 +14736,33 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.GPUComputePassEncoder.setImmediates",
+    "name": "GPUComputePassEncoder.setImmediates",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.8,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.GPUComputePassEncoder.writeTimestamp",
     "name": "GPUComputePassEncoder.writeTimestamp",
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 71.13,
     "baseline": false
@@ -14757,12 +14773,12 @@
     "description": "`descriptor.entries.resource` parameter accepts `GPUBuffer` in place of `GPUBufferBinding`.",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 66.59,
     "baseline": false
@@ -14773,12 +14789,12 @@
     "description": "`descriptor.entries.resource` parameter accepts `GPUTextureView` (2D, single subresource) in place of `GPUExternalTextur",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 66.67,
     "baseline": false
@@ -14789,12 +14805,12 @@
     "description": "`descriptor.entries.resource` parameter accepts `GPUTexture` in place of `GPUTextureView` (provided default view is desi",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 66.24,
     "baseline": false
@@ -14805,12 +14821,12 @@
     "description": "`bindGroupLayouts` array accepts `null` values.",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 66.77,
     "baseline": false
@@ -14821,12 +14837,12 @@
     "description": "`usage` descriptor",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "a",
       "saf": "y",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 83.18,
     "baseline": false
@@ -14837,14 +14853,46 @@
     "description": "`usage` descriptor accepts transient attachment",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 64.79,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.GPURenderBundleEncoder.setImmediates",
+    "name": "GPURenderBundleEncoder.setImmediates",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.8,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.GPURenderPassEncoder.setImmediates",
+    "name": "GPURenderPassEncoder.setImmediates",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.8,
     "baseline": false
   },
   {
@@ -14853,12 +14901,12 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 71.13,
     "baseline": false
@@ -14869,12 +14917,12 @@
     "description": "`core-features-and-limits` feature",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "a",
       "saf": "y",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 78.48,
     "baseline": false
@@ -14885,12 +14933,12 @@
     "description": "`primitive-index` feature",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 66.12,
     "baseline": false
@@ -14901,12 +14949,12 @@
     "description": "`subgroups` feature",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 66.84,
     "baseline": false
@@ -14917,12 +14965,12 @@
     "description": "`subgroup_id` and `num_subgroups` WGSL builtins available if `subgroups` feature enabled",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 65.54,
     "baseline": false
@@ -14933,12 +14981,12 @@
     "description": "`texture-component-swizzle` feature",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 65.65,
     "baseline": false
@@ -14949,12 +14997,12 @@
     "description": "`texture-compression-astc-sliced-3d` feature",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "a",
       "saf": "y",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 78.48,
     "baseline": false
@@ -14965,12 +15013,12 @@
     "description": "`texture-compression-bc-sliced-3d` feature",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "a",
       "saf": "y",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 78.48,
     "baseline": false
@@ -14981,12 +15029,12 @@
     "description": "`texture-formats-tier1` feature",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "y",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 76.15,
     "baseline": false
@@ -14997,14 +15045,30 @@
     "description": "`texture-formats-tier2` feature",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 66.12,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.GPUSupportedLimits.maxImmediateSize",
+    "name": "GPUSupportedLimits.maxImmediateSize",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.8,
     "baseline": false
   },
   {
@@ -15093,12 +15157,12 @@
     "description": "`descriptor.swizzle` parameter",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 65.65,
     "baseline": false
@@ -15109,12 +15173,12 @@
     "description": "`TRANSIENT_ATTACHMENT` value",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 64.79,
     "baseline": false
@@ -20416,6 +20480,38 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.MediaStreamTrackProcessor.discardedFrames",
+    "name": "MediaStreamTrackProcessor.discardedFrames",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.8,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.MediaStreamTrackProcessor.totalFrames",
+    "name": "MediaStreamTrackProcessor.totalFrames",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.8,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.MerchantValidationEvent",
     "name": "MerchantValidationEvent",
     "description": "",
@@ -22416,6 +22512,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.PerformanceEntry.navigationId",
+    "name": "PerformanceEntry.navigationId",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.75,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.PerformanceLongAnimationFrameTiming",
     "name": "Long animation frames",
     "description": "The long-animation-frame performance event type and the PerformanceLongAnimationFrameTiming API provide information abou",
@@ -23165,6 +23277,86 @@
       "an_chr": "y"
     },
     "usage": 68.26,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.ProcessingInstruction.getAttribute",
+    "name": "ProcessingInstruction.getAttribute",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.8,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.ProcessingInstruction.hasAttribute",
+    "name": "ProcessingInstruction.hasAttribute",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.8,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.ProcessingInstruction.removeAttribute",
+    "name": "ProcessingInstruction.removeAttribute",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.8,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.ProcessingInstruction.setAttribute",
+    "name": "ProcessingInstruction.setAttribute",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.8,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.ProcessingInstruction.toggleAttribute",
+    "name": "ProcessingInstruction.toggleAttribute",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.8,
     "baseline": false
   },
   {
@@ -24840,11 +25032,11 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 71.64,
+    "usage": 44.75,
     "baseline": false
   },
   {
@@ -24856,11 +25048,11 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 71.64,
+    "usage": 44.75,
     "baseline": false
   },
   {
@@ -25832,11 +26024,11 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 71.64,
+    "usage": 44.75,
     "baseline": false
   },
   {
@@ -26165,14 +26357,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 0.84,
+    "usage": 45.59,
     "baseline": false
   },
   {
@@ -26725,12 +26917,12 @@
     "description": "`pointer_composite_access` extension",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 68.48,
     "baseline": false
@@ -26741,12 +26933,12 @@
     "description": "`subgroup_id` extension",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 65.54,
     "baseline": false
@@ -26757,12 +26949,12 @@
     "description": "`subgroup_uniformity` extension",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 65.25,
     "baseline": false
@@ -26773,12 +26965,12 @@
     "description": "`texture_and_sampler_let` extension",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 64.79,
     "baseline": false
@@ -26789,12 +26981,12 @@
     "description": "`uniform_buffer_standard_layout` extension",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 65.54,
     "baseline": false
@@ -27064,11 +27256,11 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 71.64,
+    "usage": 44.75,
     "baseline": false
   },
   {
@@ -27080,11 +27272,11 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 71.64,
+    "usage": 44.75,
     "baseline": false
   },
   {
@@ -27149,6 +27341,22 @@
       "an_chr": "n"
     },
     "usage": 8.9,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.WheelEvent.momentum",
+    "name": "WheelEvent.momentum",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.75,
     "baseline": false
   },
   {
@@ -38422,13 +38630,13 @@
     "category": "CSS",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 0,
+    "usage": 1.72,
     "baseline": false
   },
   {
@@ -38437,14 +38645,14 @@
     "description": "",
     "category": "CSS",
     "support": {
-      "chr": "n",
-      "ffx": "n",
+      "chr": "y",
+      "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 0,
+    "usage": 69.99,
     "baseline": false
   },
   {
@@ -38584,11 +38792,27 @@
       "chr": "y",
       "ffx": "n",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 84.18,
+    "usage": 57.29,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.ruby-overhang.spaces",
+    "name": "ruby-overhang: Spaces",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.75,
     "baseline": false
   },
   {
@@ -39152,19 +39376,35 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.text-box.alphabetic",
+    "name": "text-box: Alphabetic",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.33,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.text-box.auto",
     "name": "text-box: Auto",
     "description": "",
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 79.7,
+    "usage": 83.03,
     "baseline": false
   },
   {
@@ -39174,13 +39414,13 @@
     "category": "CSS",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 12.54,
+    "usage": 15.88,
     "baseline": false
   },
   {
@@ -39190,13 +39430,13 @@
     "category": "CSS",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 12.54,
+    "usage": 15.88,
     "baseline": false
   },
   {
@@ -39206,13 +39446,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 79.7,
+    "usage": 83.03,
     "baseline": false
   },
   {
@@ -39222,13 +39462,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 79.7,
+    "usage": 83.03,
     "baseline": false
   },
   {
@@ -39238,13 +39478,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 79.7,
+    "usage": 83.03,
     "baseline": false
   },
   {
@@ -39254,13 +39494,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 79.7,
+    "usage": 83.03,
     "baseline": false
   },
   {
@@ -39270,13 +39510,29 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 79.7,
+    "usage": 83.03,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.text-box-edge.alphabetic",
+    "name": "text-box-edge: Alphabetic",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.33,
     "baseline": false
   },
   {
@@ -39286,13 +39542,13 @@
     "category": "CSS",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 12.54,
+    "usage": 15.88,
     "baseline": false
   },
   {
@@ -39302,13 +39558,13 @@
     "category": "CSS",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 12.54,
+    "usage": 15.88,
     "baseline": false
   },
   {
@@ -39318,13 +39574,13 @@
     "category": "CSS",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 12.54,
+    "usage": 15.88,
     "baseline": false
   },
   {
@@ -39334,13 +39590,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 79.7,
+    "usage": 83.03,
     "baseline": false
   },
   {
@@ -41904,6 +42160,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.types.color.alpha",
+    "name": "`alpha()`",
+    "description": "`alpha()`",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 48.08,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.types.color.color.colorSpace_parameter_accepts_display-p3-linear_value",
     "name": "`colorSpace` parameter accepts `display-p3-linear` value",
     "description": "`colorSpace` parameter accepts `display-p3-linear` value",
@@ -42028,7 +42300,7 @@
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 61.28,
+    "usage": 46.49,
     "baseline": false
   },
   {
@@ -47264,6 +47536,22 @@
     "baseline": "low"
   },
   {
+    "id": "mdn-javascript.builtins.Iterator.chunks",
+    "name": "`Iterator.chunks()`",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.33,
+    "baseline": false
+  },
+  {
     "id": "mdn-javascript.builtins.Iterator.concat",
     "name": "Iterator.concat()",
     "description": "The Iterator.concat() JavaScript method returns an iterator that yields values from a sequence of iterators, exhausting ",
@@ -47286,13 +47574,45 @@
     "category": "JS API",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "n",
       "ios_saf": "n",
       "an_chr": "n"
     },
-    "usage": 0,
+    "usage": 3.33,
+    "baseline": false
+  },
+  {
+    "id": "mdn-javascript.builtins.Iterator.join",
+    "name": "`Iterator.join()`",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.33,
+    "baseline": false
+  },
+  {
+    "id": "mdn-javascript.builtins.Iterator.windows",
+    "name": "`Iterator.windows()`",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.33,
     "baseline": false
   },
   {

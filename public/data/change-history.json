@@ -1,6 +1,1073 @@
 {
-  "lastUpdated": "2026-07-07T06:26:09.366Z",
+  "lastUpdated": "2026-07-11T05:23:36.449Z",
   "entries": [
+    {
+      "timestamp": "2026-07-11T05:23:36.449Z",
+      "previousCommit": "b4f1db2d1a5aa5578ef6b522628ef15f84ce0a4b",
+      "currentCommit": "pending",
+      "totalChanges": 53,
+      "changes": [
+        {
+          "featureId": "mdn-api.AnimationEvent.animation",
+          "changes": {
+            "usage": {
+              "old": 0.84,
+              "new": 45.59,
+              "delta": 44.75
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.Blob.textStream",
+          "changes": {
+            "usage": {
+              "old": 71.64,
+              "new": 44.75,
+              "delta": -26.89
+            },
+            "support": [
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.CSS.Hz_static",
+          "changes": {
+            "usage": {
+              "old": 87.17,
+              "new": 90.5,
+              "delta": 3.3299999999999983
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.CSSImageValue",
+          "changes": {
+            "usage": {
+              "old": 87.17,
+              "new": 90.5,
+              "delta": 3.3299999999999983
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUCommandEncoder.beginRenderPass.accepts_GPUTexture_resources",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUCommandEncoder.copyBufferToBuffer.offset_and_size_parameter_optional",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUComputePassEncoder.writeTimestamp",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUDevice.createBindGroup.descriptor_entries_resource_parameter_accepts_GPUBuffer",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUDevice.createBindGroup.descriptor_entries_resource_parameter_accepts_GPUTextureView",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUDevice.createBindGroup.descriptor_entries_resource_parameter_accepts_GPUTexture_resource",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUDevice.createPipelineLayout.descriptor_bindGroupLayouts_parameter_accepts_null_values",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUDevice.createTexture.descriptor_usage_parameter",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUDevice.createTexture.descriptor_usage_parameter.accept_transient_attachment",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPURenderPassEncoder.writeTimestamp",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUSupportedFeatures.feature_core-features-and-limits",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUSupportedFeatures.feature_primitive-index",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUSupportedFeatures.feature_subgroups",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUSupportedFeatures.feature_subgroups.subgroup_id_num_subgroups",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUSupportedFeatures.feature_texture-component-swizzle",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUSupportedFeatures.feature_texture-compression-astc-sliced-3d",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUSupportedFeatures.feature_texture-compression-bc-sliced-3d",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUSupportedFeatures.feature_texture-formats-tier1",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUSupportedFeatures.feature_texture-formats-tier2",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUTexture.createView.descriptor_swizzle_parameter",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUTexture.createView.descriptor_usage_parameter.transient_attachment",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.Request.textStream",
+          "changes": {
+            "usage": {
+              "old": 71.64,
+              "new": 44.75,
+              "delta": -26.89
+            },
+            "support": [
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.Response.textStream",
+          "changes": {
+            "usage": {
+              "old": 71.64,
+              "new": 44.75,
+              "delta": -26.89
+            },
+            "support": [
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.SpeechRecognition.unspokenPunctuation",
+          "changes": {
+            "usage": {
+              "old": 71.64,
+              "new": 44.75,
+              "delta": -26.89
+            },
+            "support": [
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.TransitionEvent.animation",
+          "changes": {
+            "usage": {
+              "old": 0.84,
+              "new": 45.59,
+              "delta": 44.75
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.WGSLLanguageFeatures.extension_pointer_composite_access",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.WGSLLanguageFeatures.extension_subgroup_id",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.WGSLLanguageFeatures.extension_subgroup_uniformity",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.WGSLLanguageFeatures.extension_texture_and_sampler_let",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.WGSLLanguageFeatures.extension_uniform_buffer_standard_layout",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.WebTransportDatagramDuplexStream.incomingMaxBufferedDatagrams",
+          "changes": {
+            "usage": {
+              "old": 71.64,
+              "new": 44.75,
+              "delta": -26.89
+            },
+            "support": [
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.WebTransportDatagramDuplexStream.outgoingMaxBufferedDatagrams",
+          "changes": {
+            "usage": {
+              "old": 71.64,
+              "new": 44.75,
+              "delta": -26.89
+            },
+            "support": [
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.position-visibility.anchor-valid",
+          "changes": {
+            "usage": {
+              "old": 0,
+              "new": 1.72,
+              "delta": 1.72
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.position-visibility.anchor-visible",
+          "changes": {
+            "usage": {
+              "old": 0,
+              "new": 69.99,
+              "delta": 69.99
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.ruby-overhang",
+          "changes": {
+            "usage": {
+              "old": 84.18,
+              "new": 57.29,
+              "delta": -26.890000000000008
+            },
+            "support": [
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.text-box.auto",
+          "changes": {
+            "usage": {
+              "old": 79.7,
+              "new": 83.03,
+              "delta": 3.3299999999999983
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.text-box.cap",
+          "changes": {
+            "usage": {
+              "old": 12.54,
+              "new": 15.88,
+              "delta": 3.3400000000000016
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.text-box.ideographic",
+          "changes": {
+            "usage": {
+              "old": 12.54,
+              "new": 15.88,
+              "delta": 3.3400000000000016
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.text-box.none",
+          "changes": {
+            "usage": {
+              "old": 79.7,
+              "new": 83.03,
+              "delta": 3.3299999999999983
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.text-box.text",
+          "changes": {
+            "usage": {
+              "old": 79.7,
+              "new": 83.03,
+              "delta": 3.3299999999999983
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.text-box.trim-both",
+          "changes": {
+            "usage": {
+              "old": 79.7,
+              "new": 83.03,
+              "delta": 3.3299999999999983
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.text-box.trim-end",
+          "changes": {
+            "usage": {
+              "old": 79.7,
+              "new": 83.03,
+              "delta": 3.3299999999999983
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.text-box.trim-start",
+          "changes": {
+            "usage": {
+              "old": 79.7,
+              "new": 83.03,
+              "delta": 3.3299999999999983
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.text-box-edge.cap",
+          "changes": {
+            "usage": {
+              "old": 12.54,
+              "new": 15.88,
+              "delta": 3.3400000000000016
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.text-box-edge.ex",
+          "changes": {
+            "usage": {
+              "old": 12.54,
+              "new": 15.88,
+              "delta": 3.3400000000000016
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.text-box-edge.ideographic",
+          "changes": {
+            "usage": {
+              "old": 12.54,
+              "new": 15.88,
+              "delta": 3.3400000000000016
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.text-box-edge.text",
+          "changes": {
+            "usage": {
+              "old": 79.7,
+              "new": 83.03,
+              "delta": 3.3299999999999983
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.types.color.light-dark.image_value",
+          "changes": {
+            "usage": {
+              "old": 61.28,
+              "new": 46.49,
+              "delta": -14.79
+            }
+          }
+        },
+        {
+          "featureId": "mdn-javascript.builtins.Iterator.includes",
+          "changes": {
+            "usage": {
+              "old": 0,
+              "new": 3.33,
+              "delta": 3.33
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        }
+      ]
+    },
     {
       "timestamp": "2026-07-07T06:26:09.366Z",
       "previousCommit": "ab03adaff97a8a7c4efbc1ee961c086f1f0772fd",
