@@ -2822,7 +2822,7 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
@@ -16273,24 +16273,8 @@
   },
   {
     "id": "mdn-api.HTMLElement.headingOffset",
-    "name": "HTMLElement.headingOffset",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.HTMLElement.headingReset",
-    "name": "HTMLElement.headingReset",
-    "description": "",
+    "name": "Heading offset",
+    "description": "The headingoffset HTML attribute offsets the heading level of descendant <h1>–<h6> elements. The headingreset HTML attri",
     "category": "JS API",
     "support": {
       "chr": "n",
@@ -19203,38 +19187,6 @@
     "id": "mdn-api.LanguageModel",
     "name": "LanguageModel",
     "description": "The LanguageModel API prompts an on-device language model. Also known as the Prompt API.",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 59,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.LanguageModel.contextoverflow_event",
-    "name": "`contextoverflow` event",
-    "description": "`contextoverflow` event",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 59,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.LanguageModel.destroy",
-    "name": "LanguageModel.destroy",
-    "description": "",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -26384,54 +26336,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.UIEvent",
-    "name": "UIEvent",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.91,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.UIEvent.UIEvent",
-    "name": "`UIEvent()` constructor",
-    "description": "`UIEvent()` constructor",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.65,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.UIEvent.detail",
-    "name": "UIEvent.detail",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.91,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.UIEvent.initUIEvent",
     "name": "UIEvent.initUIEvent",
     "description": "",
@@ -26461,22 +26365,6 @@
       "an_chr": "y"
     },
     "usage": 74.58,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.UIEvent.view",
-    "name": "UIEvent.view",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 94.91,
     "baseline": false
   },
   {
@@ -27248,6 +27136,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.WebTransportDatagramDuplexStream.incomingHighWaterMark",
+    "name": "WebTransportDatagramDuplexStream.incomingHighWaterMark",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 85.42,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.WebTransportDatagramDuplexStream.incomingMaxBufferedDatagrams",
     "name": "WebTransportDatagramDuplexStream.incomingMaxBufferedDatagrams",
     "description": "",
@@ -27261,6 +27165,22 @@
       "an_chr": "y"
     },
     "usage": 44.75,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.WebTransportDatagramDuplexStream.outgoingHighWaterMark",
+    "name": "WebTransportDatagramDuplexStream.outgoingHighWaterMark",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 85.42,
     "baseline": false
   },
   {
@@ -38624,38 +38544,6 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-css.properties.position-visibility.anchor-valid",
-    "name": "position-visibility: anchor-valid",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "n"
-    },
-    "usage": 1.72,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.position-visibility.anchor-visible",
-    "name": "position-visibility: anchor-visible",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 69.99,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.quotes",
     "name": "Quotes",
     "description": "The quotes CSS property sets the quotation marks inserted via the content CSS property or <q> element.",
@@ -40051,54 +39939,6 @@
     "id": "mdn-css.properties.text-fit",
     "name": "text-fit",
     "description": "The text-fit CSS property scales text to fill the inline size of its container. You can use this to grow or shrink headl",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 44.8,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.text-fit.grow",
-    "name": "text-fit: Grow",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 44.8,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.text-fit.none",
-    "name": "text-fit: None",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 44.8,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.text-fit.shrink",
-    "name": "text-fit: Shrink",
-    "description": "",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -42592,22 +42432,6 @@
     "baseline": "low"
   },
   {
-    "id": "mdn-css.types.gradient.repeating-conic-gradient.single_color_stop",
-    "name": "Single color stop and 0-1 positions",
-    "description": "Single color stop and 0-1 positions",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 81.02,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.types.if",
     "name": "if()",
     "description": "`if()`",
@@ -44957,38 +44781,6 @@
       "an_chr": "y"
     },
     "usage": 94.91,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.global_attributes.headingoffset",
-    "name": "headingoffset",
-    "description": "",
-    "category": "HTML5",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.global_attributes.headingreset",
-    "name": "headingreset",
-    "description": "",
-    "category": "HTML5",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
     "baseline": false
   },
   {
@@ -48915,6 +48707,22 @@
     "id": "wf-mathml-full",
     "name": "MathML Full",
     "description": "MathML specifies several elements and attributes that are not included in MathML Core. Math applications outside of brow",
+    "category": "Other",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
+    "id": "wf-mixin",
+    "name": "@mixin",
+    "description": "The @mixin and @apply CSS at-rules define reusable style declaration fragments and apply them inside rules, optionally p",
     "category": "Other",
     "support": {
       "chr": "n",

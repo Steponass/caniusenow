@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.HTMLElement.headingOffset",
   "source": "mdnbcd",
-  "name": "HTMLElement.headingOffset",
-  "description": "",
+  "name": "Heading offset",
+  "description": "The headingoffset HTML attribute offsets the heading level of descendant <h1>–<h6> elements. The headingreset HTML attribute prevents heading offset computation from traversing beyond the element.",
   "category": "JS API",
   "links": [],
   "support": {
@@ -55,7 +55,28 @@
       "source": "mdnbcd",
       "id": "api.HTMLElement.headingOffset"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLElement.headingReset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.global_attributes.headingoffset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.global_attributes.headingreset",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "heading-offset",
+        "matched": "exact"
+      }
+    ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=HTMLElement.headingOffset"
+  "caniuseUrl": "https://caniuse.com/?search=Heading%20offset"
 }
