@@ -12199,12 +12199,12 @@
     "support": {
       "chr": "y",
       "ffx": "n",
-      "saf": "y",
+      "saf": "n",
       "edg": "y",
-      "ios_saf": "y",
+      "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 84.12,
+    "usage": 73.81,
     "baseline": false
   },
   {
@@ -12565,14 +12565,14 @@
     "description": "`parseHTML` static method",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 1.71,
+    "usage": 66.5,
     "baseline": false
   },
   {
@@ -22861,6 +22861,70 @@
       "an_chr": "n"
     },
     "usage": 3.3,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.PermissionsPolicy.allowedFeatures",
+    "name": "PermissionsPolicy.allowedFeatures",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.PermissionsPolicy.allowsFeature",
+    "name": "PermissionsPolicy.allowsFeature",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.PermissionsPolicy.features",
+    "name": "PermissionsPolicy.features",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.PermissionsPolicy.getAllowlistForFeature",
+    "name": "PermissionsPolicy.getAllowlistForFeature",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.64,
     "baseline": false
   },
   {
@@ -38544,6 +38608,38 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-css.properties.position-visibility.anchors-valid",
+    "name": "position-visibility: anchors-valid",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 11.75,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.position-visibility.anchors-visible",
+    "name": "position-visibility: anchors-visible",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 80.01,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.quotes",
     "name": "Quotes",
     "description": "The quotes CSS property sets the quotation marks inserted via the content CSS property or <q> element.",
@@ -40718,6 +40814,22 @@
     },
     "usage": 86.97,
     "baseline": "low"
+  },
+  {
+    "id": "mdn-css.properties.window-drag",
+    "name": "`window-drag`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.64,
+    "baseline": false
   },
   {
     "id": "mdn-css.properties.word-break.auto-phrase",
@@ -43766,13 +43878,13 @@
     "category": "HTML5",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 67.66,
+    "usage": 71,
     "baseline": false
   },
   {
@@ -48307,6 +48419,22 @@
     "id": "mdn-javascript.statements.import.import_attributes.type_text",
     "name": "`with {type: 'text'}`",
     "description": "`with {type: 'text'}`",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0.37,
+    "baseline": false
+  },
+  {
+    "id": "mdn-javascript.statements.import.import_source",
+    "name": "Source phase imports (`import source` syntax)",
+    "description": "Source phase imports (`import source` syntax)",
     "category": "JS API",
     "support": {
       "chr": "n",

@@ -1,22 +1,14 @@
 {
-  "id": "mdn-api.Document.createElement.options_parameter.options_is_parameter",
+  "id": "mdn-api.PermissionsPolicy.allowsFeature",
   "source": "mdnbcd",
-  "name": "`is` parameter",
-  "description": "`is` parameter",
+  "name": "PermissionsPolicy.allowsFeature",
+  "description": "",
   "category": "JS API",
   "links": [],
   "support": {
     "chr": {
       "current": "y",
-      "firstFull": "56"
-    },
-    "edg": {
-      "current": "y",
-      "firstFull": "79"
-    },
-    "opr": {
-      "current": "y",
-      "firstFull": "43"
+      "firstFull": "preview"
     },
     "ffx": {
       "current": "n"
@@ -24,20 +16,26 @@
     "saf": {
       "current": "n"
     },
-    "ie": {
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
       "current": "y",
-      "firstFull": "79"
+      "firstFull": "preview"
+    },
+    "ie": {
+      "current": "n"
     },
     "ios_saf": {
       "current": "n"
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "56"
+      "firstFull": "preview"
     },
     "smsg": {
       "current": "y",
-      "firstFull": "56"
+      "firstFull": "preview"
     },
     "an_ff": {
       "current": "n"
@@ -45,18 +43,18 @@
   },
   "usage": {
     "global": {
-      "full": 73.81,
+      "full": 71.64,
       "partial": 0,
-      "total": 73.81
+      "total": 71.64
     },
     "byBrowser": {
       "desktop": {
-        "chr": 23.61,
-        "edg": 4.92,
+        "chr": 25.06,
         "opr": 0.54
       },
       "mobile": {
-        "an_chr": 44.74
+        "an_chr": 44.74,
+        "smsg": 1.3
       }
     },
     "type": "estimated"
@@ -65,9 +63,9 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "api.Document.createElement.options_parameter.options_is_parameter"
+      "id": "api.PermissionsPolicy.allowsFeature"
     },
     "supplementary": []
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60is%60%20parameter"
+  "caniuseUrl": "https://caniuse.com/?search=PermissionsPolicy.allowsFeature"
 }
