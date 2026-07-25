@@ -1,12 +1,19 @@
 {
-  "id": "mdn-css.properties.frame-sizing",
+  "id": "mdn-css.types.basic-shape.circle.farthest-corner",
   "source": "mdnbcd",
-  "name": "`frame-sizing`",
+  "name": "`farthest-corner`",
   "description": "",
   "category": "CSS",
-  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/frame-sizing",
   "links": [],
   "support": {
+    "ffx": {
+      "current": "y",
+      "firstFull": "preview"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "18.4"
+    },
     "chr": {
       "current": "n"
     },
@@ -16,17 +23,12 @@
     "opr": {
       "current": "n"
     },
-    "ffx": {
-      "current": "n"
-    },
-    "saf": {
-      "current": "n"
-    },
     "ie": {
       "current": "n"
     },
     "ios_saf": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "18.4"
     },
     "an_chr": {
       "current": "n"
@@ -35,18 +37,25 @@
       "current": "n"
     },
     "an_ff": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "preview"
     }
   },
   "usage": {
     "global": {
-      "full": 0,
+      "full": 15.66,
       "partial": 0,
-      "total": 0
+      "total": 15.66
     },
     "byBrowser": {
-      "desktop": {},
-      "mobile": {}
+      "desktop": {
+        "ffx": 2.96,
+        "saf": 1.5
+      },
+      "mobile": {
+        "ios_saf": 10.83,
+        "an_ff": 0.37
+      }
     },
     "type": "estimated"
   },
@@ -54,15 +63,15 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "css.properties.frame-sizing"
+      "id": "css.types.basic-shape.circle.farthest-corner"
     },
     "supplementary": [
       {
         "source": "mdnbcd",
-        "id": "css.properties.frame-sizing.auto",
+        "id": "css.types.basic-shape.ellipse.farthest-corner",
         "matched": "via-webfeatures"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60frame-sizing%60"
+  "caniuseUrl": "https://caniuse.com/?search=%60farthest-corner%60"
 }

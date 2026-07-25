@@ -1,6 +1,44 @@
 {
-  "lastUpdated": "2026-07-21T05:31:08.985Z",
+  "lastUpdated": "2026-07-25T05:25:23.020Z",
   "entries": [
+    {
+      "timestamp": "2026-07-25T05:25:23.020Z",
+      "previousCommit": "313343d30d52bf5f8e45f293785e77e5226556f5",
+      "currentCommit": "pending",
+      "totalChanges": 3,
+      "changes": [
+        {
+          "featureId": "mdn-javascript.builtins.Intl.Locale.getWeekInfo",
+          "changes": {
+            "baseline": {
+              "old": false,
+              "new": "low"
+            }
+          }
+        },
+        {
+          "featureId": "wf-rect-xywh",
+          "changes": {
+            "baseline": {
+              "old": "low",
+              "new": "high"
+            }
+          }
+        },
+        {
+          "featureId": "wf-wasm-jspi",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        }
+      ]
+    },
     {
       "timestamp": "2026-07-21T05:31:08.985Z",
       "previousCommit": "8001e487d2cc72c43ae2624139a700d89c40df46",
