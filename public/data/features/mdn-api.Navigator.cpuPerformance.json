@@ -1,54 +1,58 @@
 {
-  "id": "mdn-javascript.builtins.Iterator.windows",
+  "id": "mdn-api.Navigator.cpuPerformance",
   "source": "mdnbcd",
-  "name": "`Iterator.windows()`",
+  "name": "Navigator.cpuPerformance",
   "description": "",
   "category": "JS API",
   "links": [],
   "support": {
-    "ffx": {
-      "current": "y",
-      "firstFull": "154"
-    },
     "chr": {
+      "current": "y",
+      "firstFull": "152"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "152"
+    },
+    "ffx": {
       "current": "n"
     },
     "saf": {
       "current": "n"
     },
-    "edg": {
-      "current": "n"
-    },
     "opr": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "152"
     },
     "ie": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "152"
     },
     "ios_saf": {
       "current": "n"
     },
     "an_chr": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "152"
     },
     "smsg": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "152"
     },
     "an_ff": {
-      "current": "y",
-      "firstFull": "154"
+      "current": "n"
     }
   },
   "usage": {
     "global": {
-      "full": 0.37,
+      "full": 44.74,
       "partial": 0,
-      "total": 0.37
+      "total": 44.74
     },
     "byBrowser": {
       "desktop": {},
       "mobile": {
-        "an_ff": 0.37
+        "an_chr": 44.74
       }
     },
     "type": "estimated"
@@ -57,9 +61,9 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "javascript.builtins.Iterator.windows"
+      "id": "api.Navigator.cpuPerformance"
     },
     "supplementary": []
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60Iterator.windows()%60"
+  "caniuseUrl": "https://caniuse.com/?search=Navigator.cpuPerformance"
 }

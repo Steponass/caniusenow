@@ -1,9 +1,10 @@
 {
-  "id": "mdn-javascript.builtins.Iterator.windows",
+  "id": "mdn-api.RTCIceCandidatePair",
   "source": "mdnbcd",
-  "name": "`Iterator.windows()`",
+  "name": "RTCIceCandidatePair",
   "description": "",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidatePair/remote",
   "links": [],
   "support": {
     "ffx": {
@@ -57,9 +58,20 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "javascript.builtins.Iterator.windows"
+      "id": "api.RTCIceCandidatePair"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidatePair.local",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCIceCandidatePair.remote",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60Iterator.windows()%60"
+  "caniuseUrl": "https://caniuse.com/?search=RTCIceCandidatePair"
 }
