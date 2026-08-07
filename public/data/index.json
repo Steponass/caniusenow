@@ -3046,7 +3046,7 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "n",
@@ -10103,12 +10103,12 @@
     "support": {
       "chr": "y",
       "ffx": "n",
-      "saf": "n",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 66.43,
+    "usage": 81.23,
     "baseline": false
   },
   {
@@ -22264,11 +22264,11 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 59,
+    "usage": 63.33,
     "baseline": false
   },
   {
@@ -24205,6 +24205,22 @@
       "an_chr": "n"
     },
     "usage": 3.3,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.RTCPeerConnection.RTCPeerConnection.configuration_alwaysNegotiateDataChannels_parameter",
+    "name": "`configuration.alwaysNegotiateDataChannels` parameter",
+    "description": "`configuration.alwaysNegotiateDataChannels` parameter",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 63.33,
     "baseline": false
   },
   {
@@ -26877,6 +26893,22 @@
       "an_chr": "y"
     },
     "usage": 87.54,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.WGSLLanguageFeatures.extension_linear_indexing",
+    "name": "`linear_indexing` extension",
+    "description": "`linear_indexing` extension",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 63.33,
     "baseline": false
   },
   {
@@ -29888,6 +29920,38 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.at-rules.page.size.landscape",
+    "name": "`landscape` page orientation",
+    "description": "`landscape` page orientation",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 79.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.at-rules.page.size.portrait",
+    "name": "`portrait` page orientation",
+    "description": "`portrait` page orientation",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 79.85,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.at-rules.supports.at-rule",
     "name": "at-rule()",
     "description": "`at-rule()`",
@@ -31682,6 +31746,22 @@
   {
     "id": "mdn-css.properties.block-ellipsis",
     "name": "`block-ellipsis`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 14.8,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.block-ellipsis.no-ellipsis",
+    "name": "block-ellipsis: no-ellipsis",
     "description": "",
     "category": "CSS",
     "support": {
@@ -36032,6 +36112,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.line-clamp.string",
+    "name": "`&lt;string&gt;`",
+    "description": "`&lt;string&gt;`",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 14.8,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.line-height",
     "name": "line-height",
     "description": "The line-height CSS property sets the spacing between text baselines, oriented to the horizontal or vertical writing mod",
@@ -39783,12 +39879,12 @@
     "support": {
       "chr": "n",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "n",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 1.73,
+    "usage": 16.53,
     "baseline": false
   },
   {
@@ -40094,22 +40190,6 @@
     },
     "usage": 82.07,
     "baseline": "low"
-  },
-  {
-    "id": "mdn-css.properties.text-overflow.string",
-    "name": "Custom ellipses",
-    "description": "&lt;string&gt;",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 3.33,
-    "baseline": false
   },
   {
     "id": "mdn-css.properties.text-rendering.optimizeLegibility",
@@ -40832,6 +40912,70 @@
     "baseline": "low"
   },
   {
+    "id": "mdn-css.properties.white-space-trim.discard-after",
+    "name": "white-space-trim: discard-after",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 14.8,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.white-space-trim.discard-before",
+    "name": "white-space-trim: discard-before",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 14.8,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.white-space-trim.discard-inner",
+    "name": "white-space-trim: discard-inner",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 14.8,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.white-space-trim.none",
+    "name": "white-space-trim: None",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 14.8,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.window-drag",
     "name": "`window-drag`",
     "description": "",
@@ -40894,6 +41038,38 @@
     },
     "usage": 94.91,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-css.properties.wrap-inside",
+    "name": "`wrap-inside`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 14.8,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.wrap-inside.avoid",
+    "name": "wrap-inside: Avoid",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 14.8,
+    "baseline": false
   },
   {
     "id": "mdn-css.properties.writing-mode.lr",
@@ -42093,6 +42269,22 @@
       "an_chr": "y"
     },
     "usage": 91.76,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.types.basic-shape.polygon.round",
+    "name": "Round",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.8,
     "baseline": false
   },
   {
@@ -48765,6 +48957,22 @@
       "an_chr": "n"
     },
     "usage": 0,
+    "baseline": false
+  },
+  {
+    "id": "wf-custom-ellipses",
+    "name": "Custom ellipses",
+    "description": "The text-overflow CSS property with a string value sets the string representing clipped text.",
+    "category": "Other",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.33,
     "baseline": false
   },
   {
