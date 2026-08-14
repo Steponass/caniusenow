@@ -1,8 +1,8 @@
 {
-  "id": "mdn-css.properties.text-box-edge.ideographic",
+  "id": "mdn-css.properties.text-box.inline_elements",
   "source": "mdnbcd",
-  "name": "text-box-edge: Ideographic",
-  "description": "",
+  "name": "Works on inline elements",
+  "description": "Works on inline elements",
   "category": "CSS",
   "links": [],
   "support": {
@@ -10,10 +10,11 @@
       "current": "y",
       "firstFull": "154"
     },
-    "chr": {
-      "current": "n"
-    },
     "saf": {
+      "current": "a",
+      "firstPartial": "26.5"
+    },
+    "chr": {
       "current": "n"
     },
     "edg": {
@@ -26,7 +27,8 @@
       "current": "n"
     },
     "ios_saf": {
-      "current": "n"
+      "current": "a",
+      "firstPartial": "26.5"
     },
     "an_chr": {
       "current": "n"
@@ -42,12 +44,15 @@
   "usage": {
     "global": {
       "full": 0.36,
-      "partial": 0,
-      "total": 0.36
+      "partial": 10.16,
+      "total": 10.53
     },
     "byBrowser": {
-      "desktop": {},
+      "desktop": {
+        "saf": 1.36
+      },
       "mobile": {
+        "ios_saf": 8.8,
         "an_ff": 0.36
       }
     },
@@ -57,15 +62,15 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "css.properties.text-box-edge.ideographic"
+      "id": "css.properties.text-box.inline_elements"
     },
     "supplementary": [
       {
         "source": "mdnbcd",
-        "id": "css.properties.text-box-edge.ideographic-ink",
+        "id": "css.properties.text-box-trim.inline_elements",
         "matched": "via-webfeatures"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=text-box-edge%3A%20Ideographic"
+  "caniuseUrl": "https://caniuse.com/?search=Works%20on%20inline%20elements"
 }
