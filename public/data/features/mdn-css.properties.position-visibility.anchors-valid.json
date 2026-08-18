@@ -2,7 +2,7 @@
   "id": "mdn-css.properties.position-visibility.anchors-valid",
   "source": "mdnbcd",
   "name": "position-visibility: anchors-valid",
-  "description": "",
+  "description": "The position-visibility: anchors-valid and position-visibility: anchors-visible CSS declarations are aliases for anchor-valid and anchor-visible.",
   "category": "CSS",
   "links": [],
   "support": {
@@ -65,7 +65,18 @@
       "source": "mdnbcd",
       "id": "css.properties.position-visibility.anchors-valid"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.position-visibility.anchors-visible",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "anchor-positioning-position-visibility-plurals",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=position-visibility%3A%20anchors-valid"
 }
