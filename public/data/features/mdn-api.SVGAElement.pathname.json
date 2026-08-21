@@ -1,15 +1,15 @@
 {
-  "id": "mdn-javascript.builtins.Iterator.chunks",
+  "id": "mdn-api.SVGAElement.pathname",
   "source": "mdnbcd",
-  "name": "`Iterator.chunks()`",
+  "name": "SVGAElement.pathname",
   "description": "",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Iterator/chunks",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/SVGAElement/pathname",
   "links": [],
   "support": {
     "ffx": {
       "current": "y",
-      "firstFull": "154"
+      "firstFull": "preview"
     },
     "chr": {
       "current": "n"
@@ -37,17 +37,19 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "154"
+      "firstFull": "preview"
     }
   },
   "usage": {
     "global": {
-      "full": 0.36,
+      "full": 3.26,
       "partial": 0,
-      "total": 0.36
+      "total": 3.26
     },
     "byBrowser": {
-      "desktop": {},
+      "desktop": {
+        "ffx": 2.89
+      },
       "mobile": {
         "an_ff": 0.36
       }
@@ -58,9 +60,9 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "javascript.builtins.Iterator.chunks"
+      "id": "api.SVGAElement.pathname"
     },
     "supplementary": []
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60Iterator.chunks()%60"
+  "caniuseUrl": "https://caniuse.com/?search=SVGAElement.pathname"
 }

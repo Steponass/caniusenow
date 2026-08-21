@@ -1,0 +1,81 @@
+{
+  "id": "wf-js-modules-workers",
+  "source": "webfeatures",
+  "name": "JavaScript modules in workers",
+  "description": "The Worker() constructor accepts { type: \"module\" } to load scripts that use import and export. Also known as ECMAScript modules or ESM in workers.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "80"
+    },
+    "ffx": {
+      "current": "y",
+      "firstFull": "114"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "80"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "80"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "80"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "15"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "80"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "80"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "114"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 92.12,
+      "partial": 0,
+      "total": 92.12
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 21.55,
+        "ffx": 2.87,
+        "saf": 2.17,
+        "edg": 5.09,
+        "opr": 0.24
+      },
+      "mobile": {
+        "ios_saf": 13.5,
+        "an_chr": 46.33,
+        "an_ff": 0.36
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": "high",
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "js-modules-workers"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=JavaScript%20modules%20in%20workers"
+}

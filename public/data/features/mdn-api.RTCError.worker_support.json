@@ -1,15 +1,14 @@
 {
-  "id": "mdn-javascript.builtins.Iterator.chunks",
+  "id": "mdn-api.RTCError.worker_support",
   "source": "mdnbcd",
-  "name": "`Iterator.chunks()`",
-  "description": "",
+  "name": "Available in workers",
+  "description": "Available in workers",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Iterator/chunks",
   "links": [],
   "support": {
     "ffx": {
       "current": "y",
-      "firstFull": "154"
+      "firstFull": "155"
     },
     "chr": {
       "current": "n"
@@ -37,7 +36,7 @@
     },
     "an_ff": {
       "current": "y",
-      "firstFull": "154"
+      "firstFull": "155"
     }
   },
   "usage": {
@@ -58,9 +57,25 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "javascript.builtins.Iterator.chunks"
+      "id": "api.RTCError.worker_support"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.RTCErrorEvent.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.operators.import.worker_support",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "javascript.statements.import.worker_support",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60Iterator.chunks()%60"
+  "caniuseUrl": "https://caniuse.com/?search=Available%20in%20workers"
 }

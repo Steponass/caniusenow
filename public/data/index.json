@@ -9350,13 +9350,29 @@
     "category": "JS API",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 15.21,
+    "usage": 18.47,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.AudioSession.statechange_event",
+    "name": "`statechange` event",
+    "description": "`statechange` event",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.26,
     "baseline": false
   },
   {
@@ -10807,12 +10823,12 @@
     "support": {
       "chr": "y",
       "ffx": "n",
-      "saf": "n",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 69.57,
+    "usage": 85.51,
     "baseline": false
   },
   {
@@ -24192,6 +24208,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.RTCError.errorDetail.sctp-failure",
+    "name": "RTCError.errorDetail: sctp-failure",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 89.25,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.RTCError.httpRequestStatusCode",
     "name": "RTCError.httpRequestStatusCode",
     "description": "",
@@ -24205,6 +24237,22 @@
       "an_chr": "y"
     },
     "usage": 73.23,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.RTCError.worker_support",
+    "name": "Available in workers",
+    "description": "Available in workers",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0.36,
     "baseline": false
   },
   {
@@ -25165,6 +25213,150 @@
       "an_chr": "y"
     },
     "usage": 68.86,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.SVGAElement.hash",
+    "name": "SVGAElement.hash",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.26,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.SVGAElement.host",
+    "name": "SVGAElement.host",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.26,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.SVGAElement.origin",
+    "name": "SVGAElement.origin",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.26,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.SVGAElement.password",
+    "name": "SVGAElement.password",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.26,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.SVGAElement.pathname",
+    "name": "SVGAElement.pathname",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.26,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.SVGAElement.port",
+    "name": "SVGAElement.port",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.26,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.SVGAElement.protocol",
+    "name": "SVGAElement.protocol",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.26,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.SVGAElement.search",
+    "name": "SVGAElement.search",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.26,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.SVGAElement.username",
+    "name": "SVGAElement.username",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.26,
     "baseline": false
   },
   {
@@ -27206,13 +27398,13 @@
     "category": "JS API",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 10.55,
+    "usage": 13.81,
     "baseline": false
   },
   {
@@ -27222,13 +27414,29 @@
     "category": "JS API",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 10.55,
+    "usage": 13.81,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.WebTransport.exportKeyingMaterial",
+    "name": "WebTransport.exportKeyingMaterial",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.26,
     "baseline": false
   },
   {
@@ -27238,13 +27446,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 78,
+    "usage": 81.26,
     "baseline": false
   },
   {
@@ -27270,13 +27478,13 @@
     "category": "JS API",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 10.55,
+    "usage": 13.81,
     "baseline": false
   },
   {
@@ -27303,12 +27511,12 @@
     "support": {
       "chr": "y",
       "ffx": "n",
-      "saf": "n",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 46.48,
+    "usage": 62.43,
     "baseline": false
   },
   {
@@ -27335,12 +27543,12 @@
     "support": {
       "chr": "y",
       "ffx": "n",
-      "saf": "n",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 46.48,
+    "usage": 62.43,
     "baseline": false
   },
   {
@@ -27366,13 +27574,13 @@
     "category": "JS API",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 10.55,
+    "usage": 13.81,
     "baseline": false
   },
   {
@@ -27382,13 +27590,13 @@
     "category": "JS API",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 10.55,
+    "usage": 13.81,
     "baseline": false
   },
   {
@@ -27398,13 +27606,13 @@
     "category": "JS API",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 10.55,
+    "usage": 13.81,
     "baseline": false
   },
   {
@@ -29997,6 +30205,22 @@
       "an_chr": "y"
     },
     "usage": 65.86,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.at-rules.supports.named-feature",
+    "name": "`named-feature()`",
+    "description": "`named-feature()`",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 59.23,
     "baseline": false
   },
   {
@@ -38919,12 +39143,12 @@
     "support": {
       "chr": "y",
       "ffx": "n",
-      "saf": "n",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 46.48,
+    "usage": 62.43,
     "baseline": false
   },
   {
@@ -40179,6 +40403,38 @@
     "id": "mdn-css.properties.text-fit",
     "name": "text-fit",
     "description": "The text-fit CSS property scales text to fill the inline size of its container. You can use this to grow or shrink headl",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 59.23,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.text-fit.consistent",
+    "name": "text-fit: Consistent",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 59.23,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.text-fit.per-line",
+    "name": "text-fit: per-line",
+    "description": "",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -42412,7 +42668,7 @@
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 49.75,
+    "usage": 46.85,
     "baseline": false
   },
   {
@@ -42493,6 +42749,22 @@
       "an_chr": "y"
     },
     "usage": 94.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.types.color.from_currentcolor",
+    "name": "`from currentColor` relative color syntax",
+    "description": "`from currentColor` relative color syntax",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 85.39,
     "baseline": false
   },
   {
@@ -43046,13 +43318,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 79.85,
+    "usage": 80.21,
     "baseline": false
   },
   {
@@ -46016,6 +46288,38 @@
     "baseline": false
   },
   {
+    "id": "mdn-http.headers.Permissions-Policy.clipboard-read",
+    "name": "`clipboard-read`",
+    "description": "",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 73.21,
+    "baseline": false
+  },
+  {
+    "id": "mdn-http.headers.Permissions-Policy.clipboard-write",
+    "name": "`clipboard-write`",
+    "description": "",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 73.21,
+    "baseline": false
+  },
+  {
     "id": "mdn-http.headers.Permissions-Policy.gamepad",
     "name": "Gamepad",
     "description": "",
@@ -47031,12 +47335,12 @@
     "support": {
       "chr": "y",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 70.31,
+    "usage": 86.26,
     "baseline": false
   },
   {
@@ -48656,22 +48960,6 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-javascript.operators.import.worker_support",
-    "name": "Available in workers",
-    "description": "Available in workers",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 92.12,
-    "baseline": "high"
-  },
-  {
     "id": "mdn-javascript.operators.logical_and_assignment",
     "name": "Logical AND assignment (`x &amp;&amp;= y`)",
     "description": "Logical AND assignment (`x &amp;&amp;= y`)",
@@ -48781,6 +49069,22 @@
       "an_chr": "n"
     },
     "usage": 0.66,
+    "baseline": false
+  },
+  {
+    "id": "mdn-javascript.statements.import.import_source.import_wasm_modules",
+    "name": "Source phase import of WASM modules",
+    "description": "Source phase import of WASM modules",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
     "baseline": false
   },
   {
@@ -49149,6 +49453,22 @@
       "an_chr": "y"
     },
     "usage": 94.37,
+    "baseline": "high"
+  },
+  {
+    "id": "wf-js-modules-workers",
+    "name": "JavaScript modules in workers",
+    "description": "The Worker() constructor accepts { type: \"module\" } to load scripts that use import and export. Also known as ECMAScript",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 92.12,
     "baseline": "high"
   },
   {

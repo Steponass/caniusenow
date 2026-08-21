@@ -7,14 +7,15 @@
   "mdn": "https://developer.mozilla.org/docs/Web/API/WebTransportSendGroup/getStats",
   "links": [],
   "support": {
+    "ffx": {
+      "current": "y",
+      "firstFull": "preview"
+    },
     "saf": {
       "current": "y",
       "firstFull": "26.4"
     },
     "chr": {
-      "current": "n"
-    },
-    "ffx": {
       "current": "n"
     },
     "edg": {
@@ -37,21 +38,24 @@
       "current": "n"
     },
     "an_ff": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "preview"
     }
   },
   "usage": {
     "global": {
-      "full": 10.55,
+      "full": 13.81,
       "partial": 0,
-      "total": 10.55
+      "total": 13.81
     },
     "byBrowser": {
       "desktop": {
+        "ffx": 2.89,
         "saf": 1.41
       },
       "mobile": {
-        "ios_saf": 9.14
+        "ios_saf": 9.14,
+        "an_ff": 0.36
       }
     },
     "type": "estimated"
