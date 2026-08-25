@@ -37,14 +37,16 @@
       "firstFull": "139"
     },
     "saf": {
-      "current": "u"
+      "current": "y",
+      "firstFull": "TP"
     },
     "edg": {
       "current": "y",
       "firstFull": "144"
     },
     "opr": {
-      "current": "n"
+      "current": "y",
+      "firstFull": "131"
     },
     "ie": {
       "current": "n"
@@ -66,15 +68,16 @@
   },
   "usage": {
     "global": {
-      "full": 69.14,
+      "full": 69.2,
       "partial": 0,
-      "total": 69.14
+      "total": 69.2
     },
     "byBrowser": {
       "desktop": {
         "chr": 16.4,
         "ffx": 1.45,
-        "edg": 4.57
+        "edg": 4.57,
+        "opr": 0.06
       },
       "mobile": {
         "an_chr": 46.33,
@@ -86,8 +89,7 @@
   "notes": {
     "general": "",
     "byNum": {
-      "1": "Supported in Firefox Nightly behind the `javascript.options.experimental.temporal` flag, enabled by default since 137",
-      "2": "Can be enabled via the `useTemporal` runtime flag"
+      "1": "Supported in Firefox Nightly behind the `javascript.options.experimental.temporal` flag, enabled by default since 137"
     }
   },
   "baseline": false,
