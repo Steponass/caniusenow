@@ -1,23 +1,23 @@
 {
-  "id": "mdn-api.ProcessingInstruction.doc_html",
+  "id": "mdn-api.PerformanceSoftNavigation",
   "source": "mdnbcd",
-  "name": "HTML document support",
-  "description": "HTML document support",
+  "name": "Soft navigation performance entries",
+  "description": "The soft-navigation performance entry, which returns a PerformanceSoftNavigation instance, is emitted when soft navigation occurs in a single page app. This is defined as when a trusted user interaction causes a URL update and a visible contentful paint to the screen.",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/ProcessingInstruction/toggleAttribute",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/PerformanceSoftNavigation/presentationTime",
   "links": [],
   "support": {
     "chr": {
       "current": "y",
-      "firstFull": "150"
+      "firstFull": "151"
     },
     "edg": {
       "current": "y",
-      "firstFull": "150"
+      "firstFull": "151"
     },
     "opr": {
       "current": "y",
-      "firstFull": "134"
+      "firstFull": "135"
     },
     "ffx": {
       "current": "n"
@@ -27,18 +27,18 @@
     },
     "ie": {
       "current": "y",
-      "firstFull": "150"
+      "firstFull": "151"
     },
     "ios_saf": {
       "current": "n"
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "150"
+      "firstFull": "151"
     },
     "smsg": {
       "current": "y",
-      "firstFull": "150"
+      "firstFull": "151"
     },
     "an_ff": {
       "current": "n"
@@ -46,14 +46,14 @@
   },
   "usage": {
     "global": {
-      "full": 59.23,
+      "full": 46.48,
       "partial": 0,
-      "total": 59.23
+      "total": 46.48
     },
     "byBrowser": {
       "desktop": {
-        "chr": 9.31,
-        "edg": 3.59
+        "chr": 0.15,
+        "edg": 0
       },
       "mobile": {
         "an_chr": 46.33
@@ -65,50 +65,40 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "api.ProcessingInstruction.doc_html"
+      "id": "api.PerformanceSoftNavigation"
     },
     "supplementary": [
       {
         "source": "mdnbcd",
-        "id": "api.ProcessingInstruction.getAttribute",
+        "id": "api.PerformanceSoftNavigation.getLargestInteractionContentfulPaint",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.ProcessingInstruction.getAttributeNames",
+        "id": "api.PerformanceSoftNavigation.interactionId",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.ProcessingInstruction.hasAttribute",
+        "id": "api.PerformanceSoftNavigation.navigationType",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.ProcessingInstruction.hasAttributes",
+        "id": "api.PerformanceSoftNavigation.paintTime",
         "matched": "via-webfeatures"
       },
       {
         "source": "mdnbcd",
-        "id": "api.ProcessingInstruction.removeAttribute",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.ProcessingInstruction.setAttribute",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "api.ProcessingInstruction.toggleAttribute",
+        "id": "api.PerformanceSoftNavigation.presentationTime",
         "matched": "via-webfeatures"
       },
       {
         "source": "webfeatures",
-        "id": "html-processing-instructions",
+        "id": "soft-navigations",
         "matched": "exact"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=HTML%20document%20support"
+  "caniuseUrl": "https://caniuse.com/?search=Soft%20navigation%20performance%20entries"
 }

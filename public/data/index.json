@@ -11270,13 +11270,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 78.03,
+    "usage": 81.29,
     "baseline": false
   },
   {
@@ -12087,12 +12087,12 @@
     "support": {
       "chr": "a",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "a",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "a"
     },
-    "usage": 69.48,
+    "usage": 69.49,
     "baseline": false
   },
   {
@@ -13157,14 +13157,14 @@
     "description": "`options.referenceTarget` parameter",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 0,
+    "usage": 46.34,
     "baseline": false
   },
   {
@@ -15808,6 +15808,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.HTMLBodyElement.orientationchange_event",
+    "name": "`orientationchange` event",
+    "description": "`orientationchange` event",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLButtonElement",
     "name": "<button>",
     "description": "The <button> HTML element represents a button that triggers some action, such as submitting a form or opening a dialog, ",
@@ -16237,6 +16253,22 @@
       "an_chr": "y"
     },
     "usage": 63.93,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLElement.containerTiming",
+    "name": "HTMLElement.containerTiming",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
     "baseline": false
   },
   {
@@ -18256,6 +18288,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.HTMLTemplateElement.htmlFor",
+    "name": "<template for>",
+    "description": "The <template for=\"…\"> HTML element replaces the content at a named range or insertion point, marked by the processing i",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 59.23,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLTextAreaElement",
     "name": "<textarea>",
     "description": "The <textarea> element represents an editing control that allows users to enter multi-line, free-form, plain text.",
@@ -19072,6 +19120,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.InteractionContentfulPaint",
+    "name": "Interaction contentful paint",
+    "description": "The interaction-contentful-paint performance entry, which returns an InteractionContentfulPaint instance, is emitted whe",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 46.48,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.InterventionReportBody",
     "name": "Intervention reports",
     "description": "Intervention reporting sends a report to a URL nominated by the Reporting-Endpoints header when the browser has not hono",
@@ -19728,6 +19792,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.MathMLAnchorElement",
+    "name": "MathMLAnchorElement",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.26,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.MediaCapabilities",
     "name": "Media capabilities",
     "description": "The navigator.mediaCapabilities API queries the encoding and decoding abilities of the device, such as supported codecs,",
@@ -20349,6 +20429,22 @@
       "an_chr": "y"
     },
     "usage": 89.28,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.MediaStreamTrack.configurationchange_event",
+    "name": "`configurationchange` event",
+    "description": "`configurationchange` event",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 15.21,
     "baseline": false
   },
   {
@@ -21744,22 +21840,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.NavigatorManagedData.managedconfigurationchange_event",
-    "name": "`managedconfigurationchange` event",
-    "description": "`managedconfigurationchange` event",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.18,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.NetworkInformation.saveData",
     "name": "Save-Data",
     "description": "Browsers send the Save-Data HTTP request header when the user turns on a data-saving mode. It is a hint to reduce data s",
@@ -22480,6 +22560,86 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.PerformanceContainerTiming",
+    "name": "PerformanceContainerTiming",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.PerformanceContainerTiming.firstRenderTime",
+    "name": "PerformanceContainerTiming.firstRenderTime",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.PerformanceContainerTiming.intersectionRect",
+    "name": "PerformanceContainerTiming.intersectionRect",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.PerformanceContainerTiming.lastPaintedElement",
+    "name": "PerformanceContainerTiming.lastPaintedElement",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.PerformanceContainerTiming.presentationTime",
+    "name": "PerformanceContainerTiming.presentationTime",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.PerformanceElementTiming.paintTime",
     "name": "PerformanceElementTiming.paintTime",
     "description": "",
@@ -22749,6 +22909,22 @@
       "an_chr": "y"
     },
     "usage": 67.83,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.PerformanceSoftNavigation",
+    "name": "Soft navigation performance entries",
+    "description": "The soft-navigation performance entry, which returns a PerformanceSoftNavigation instance, is emitted when soft navigati",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 46.48,
     "baseline": false
   },
   {
@@ -23347,86 +23523,6 @@
     "id": "mdn-api.ProcessingInstruction.doc_html",
     "name": "HTML document support",
     "description": "HTML document support",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 59.23,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.ProcessingInstruction.getAttribute",
-    "name": "ProcessingInstruction.getAttribute",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 59.23,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.ProcessingInstruction.hasAttribute",
-    "name": "ProcessingInstruction.hasAttribute",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 59.23,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.ProcessingInstruction.removeAttribute",
-    "name": "ProcessingInstruction.removeAttribute",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 59.23,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.ProcessingInstruction.setAttribute",
-    "name": "ProcessingInstruction.setAttribute",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 59.23,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.ProcessingInstruction.toggleAttribute",
-    "name": "ProcessingInstruction.toggleAttribute",
-    "description": "",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -24960,6 +25056,22 @@
     "baseline": "low"
   },
   {
+    "id": "mdn-api.ReportingObserver.ReportingObserver.options_parameter.types_property.connection-allowlist",
+    "name": "`connection-allowlist` report type",
+    "description": "`connection-allowlist` report type",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 46.34,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.ReportingObserver.ReportingObserver.options_parameter.types_property.csp-violation",
     "name": "`csp-violation` report type",
     "description": "`csp-violation` report type",
@@ -25228,7 +25340,7 @@
       "ios_saf": "n",
       "an_chr": "n"
     },
-    "usage": 3.26,
+    "usage": 0.36,
     "baseline": false
   },
   {
@@ -25244,7 +25356,7 @@
       "ios_saf": "n",
       "an_chr": "n"
     },
-    "usage": 3.26,
+    "usage": 0.36,
     "baseline": false
   },
   {
@@ -25260,7 +25372,7 @@
       "ios_saf": "n",
       "an_chr": "n"
     },
-    "usage": 3.26,
+    "usage": 0.36,
     "baseline": false
   },
   {
@@ -25276,7 +25388,7 @@
       "ios_saf": "n",
       "an_chr": "n"
     },
-    "usage": 3.26,
+    "usage": 0.36,
     "baseline": false
   },
   {
@@ -25292,7 +25404,7 @@
       "ios_saf": "n",
       "an_chr": "n"
     },
-    "usage": 3.26,
+    "usage": 0.36,
     "baseline": false
   },
   {
@@ -25308,7 +25420,7 @@
       "ios_saf": "n",
       "an_chr": "n"
     },
-    "usage": 3.26,
+    "usage": 0.36,
     "baseline": false
   },
   {
@@ -25324,7 +25436,7 @@
       "ios_saf": "n",
       "an_chr": "n"
     },
-    "usage": 3.26,
+    "usage": 0.36,
     "baseline": false
   },
   {
@@ -25340,7 +25452,7 @@
       "ios_saf": "n",
       "an_chr": "n"
     },
-    "usage": 3.26,
+    "usage": 0.36,
     "baseline": false
   },
   {
@@ -25356,7 +25468,7 @@
       "ios_saf": "n",
       "an_chr": "n"
     },
-    "usage": 3.26,
+    "usage": 0.36,
     "baseline": false
   },
   {
@@ -25709,22 +25821,6 @@
       "an_chr": "n"
     },
     "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Screen.orientationchange_event",
-    "name": "`orientationchange` event",
-    "description": "`orientationchange` event",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 5.35,
     "baseline": false
   },
   {
@@ -27404,7 +27500,7 @@
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 13.81,
+    "usage": 10.92,
     "baseline": false
   },
   {
@@ -27420,7 +27516,7 @@
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 13.81,
+    "usage": 10.92,
     "baseline": false
   },
   {
@@ -27436,7 +27532,7 @@
       "ios_saf": "n",
       "an_chr": "n"
     },
-    "usage": 3.26,
+    "usage": 0.36,
     "baseline": false
   },
   {
@@ -27452,7 +27548,7 @@
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 81.26,
+    "usage": 78.37,
     "baseline": false
   },
   {
@@ -27484,7 +27580,7 @@
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 13.81,
+    "usage": 10.92,
     "baseline": false
   },
   {
@@ -27580,7 +27676,7 @@
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 13.81,
+    "usage": 10.92,
     "baseline": false
   },
   {
@@ -27596,7 +27692,7 @@
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 13.81,
+    "usage": 10.92,
     "baseline": false
   },
   {
@@ -27612,7 +27708,7 @@
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 13.81,
+    "usage": 10.92,
     "baseline": false
   },
   {
@@ -28081,8 +28177,8 @@
   },
   {
     "id": "mdn-api.Window.requestResize",
-    "name": "Window.requestResize",
-    "description": "",
+    "name": "Responsive iframes",
+    "description": "The frame-sizing CSS property sets the size of an <iframe> element to that of it contents, to avoid scrolling in the ifr",
     "category": "JS API",
     "support": {
       "chr": "n",
@@ -29293,7 +29389,7 @@
       "an_chr": "y"
     },
     "usage": 94.37,
-    "baseline": "high"
+    "baseline": false
   },
   {
     "id": "mdn-api.clearInterval",
@@ -35218,7 +35314,7 @@
   {
     "id": "mdn-css.properties.flex-wrap.balance",
     "name": "flex-wrap: Balance",
-    "description": "",
+    "description": "The flex-wrap: balance CSS declaration distributes items in a multi-line flex container such that each line has about th",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -35574,93 +35670,13 @@
     "category": "CSS",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 13.76,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.frame-sizing",
-    "name": "`frame-sizing`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.frame-sizing.content-block-size",
-    "name": "frame-sizing: content-block-size",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.frame-sizing.content-height",
-    "name": "frame-sizing: content-height",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.frame-sizing.content-inline-size",
-    "name": "frame-sizing: content-inline-size",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.frame-sizing.content-width",
-    "name": "frame-sizing: content-width",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
+    "usage": 14.13,
     "baseline": false
   },
   {
@@ -41265,8 +41281,8 @@
   },
   {
     "id": "mdn-css.properties.window-drag",
-    "name": "`window-drag`",
-    "description": "",
+    "name": "window-drag",
+    "description": "The window-drag: move CSS declaration sets an element as a window drag handle, like a device's app title bar. You can us",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -42512,19 +42528,35 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-css.types.anchor.is_transitionable",
+    "name": "Transitionable and animatable when setting inset properties",
+    "description": "Transitionable and animatable when setting inset properties",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 81.09,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.types.attr.attr-name_accepts_namespaces",
     "name": "`&lt;attr-name&gt;` accepts namespaces",
     "description": "`&lt;attr-name&gt;` accepts namespaces",
     "category": "CSS",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "n",
       "ios_saf": "n",
       "an_chr": "n"
     },
-    "usage": 0,
+    "usage": 0.36,
     "baseline": false
   },
   {
@@ -42657,7 +42689,7 @@
   },
   {
     "id": "mdn-css.types.color.alpha",
-    "name": "`alpha()`",
+    "name": "alpha()",
     "description": "`alpha()`",
     "category": "CSS",
     "support": {
@@ -44736,22 +44768,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-html.elements.meta.name.responsive-embedded-sizing",
-    "name": "`&lt;meta name=\"responsive-embedded-sizing\"&gt;`",
-    "description": "`&lt;meta name=\"responsive-embedded-sizing\"&gt;`",
-    "category": "HTML5",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
     "id": "mdn-html.elements.meta.name.text-scale",
     "name": "`&lt;meta name=\"text-scale\"&gt;`",
     "description": "`&lt;meta name=\"text-scale\"&gt;`",
@@ -45334,13 +45350,13 @@
     "category": "HTML5",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 78.03,
+    "usage": 81.29,
     "baseline": false
   },
   {
@@ -45472,6 +45488,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-html.global_attributes.containertiming",
+    "name": "containertiming",
+    "description": "",
+    "category": "HTML5",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
     "id": "mdn-html.global_attributes.data_attributes",
     "name": "`data-*` attributes",
     "description": "`data-*` attributes",
@@ -45501,6 +45533,22 @@
       "an_chr": "y"
     },
     "usage": 94.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-html.global_attributes.elementtiming",
+    "name": "elementtiming",
+    "description": "",
+    "category": "HTML5",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 73.23,
     "baseline": false
   },
   {
@@ -48336,6 +48384,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-javascript.builtins.Promise.allKeyed",
+    "name": "`Promise.allKeyed()`",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0.36,
+    "baseline": false
+  },
+  {
     "id": "mdn-javascript.builtins.Promise.allSettled",
     "name": "Promise.allSettled()",
     "description": "`allSettled()`",
@@ -48350,6 +48414,22 @@
     },
     "usage": 92.21,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-javascript.builtins.Promise.allSettledKeyed",
+    "name": "`Promise.allSettledKeyed()`",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0.36,
+    "baseline": false
   },
   {
     "id": "mdn-javascript.builtins.Promise.try",
@@ -49006,6 +49086,22 @@
     },
     "usage": 92.86,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-javascript.regular_expressions.buffer_boundary_assertion",
+    "name": "Buffer boundary assertion: `\\A`, `\\z`, `\\Z`",
+    "description": "Buffer boundary assertion: `\\A`, `\\z`, `\\Z`",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
   },
   {
     "id": "mdn-javascript.statements.import.import_assertions",
@@ -49784,12 +49880,12 @@
       "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 79.55,
-    "baseline": false
+    "usage": 84.19,
+    "baseline": "low"
   },
   {
     "id": "wf-wasm-extended-constant-expressions",

@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.Window.requestResize",
   "source": "mdnbcd",
-  "name": "Window.requestResize",
-  "description": "",
+  "name": "Responsive iframes",
+  "description": "The frame-sizing CSS property sets the size of an <iframe> element to that of it contents, to avoid scrolling in the iframe. Embedded documents allow this with the <meta name=\"responsive-embedded-sizing\"> element and request resizing in the embedding page by calling window.requestResize().",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/requestResize",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/meta/name/responsive-embedded-sizing",
   "links": [],
   "support": {
     "chr": {
@@ -56,7 +56,48 @@
       "source": "mdnbcd",
       "id": "api.Window.requestResize"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.frame-sizing",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.frame-sizing.auto",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.frame-sizing.content-block-size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.frame-sizing.content-height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.frame-sizing.content-inline-size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.frame-sizing.content-width",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.meta.name.responsive-embedded-sizing",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "frame-sizing",
+        "matched": "exact"
+      }
+    ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=Window.requestResize"
+  "caniuseUrl": "https://caniuse.com/?search=Responsive%20iframes"
 }

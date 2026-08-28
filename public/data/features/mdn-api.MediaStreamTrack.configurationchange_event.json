@@ -1,21 +1,19 @@
 {
-  "id": "mdn-api.WebTransport.createSendGroup",
+  "id": "mdn-api.MediaStreamTrack.configurationchange_event",
   "source": "mdnbcd",
-  "name": "WebTransport.createSendGroup",
-  "description": "",
+  "name": "`configurationchange` event",
+  "description": "`configurationchange` event",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/WebTransport/createSendGroup",
   "links": [],
   "support": {
-    "ffx": {
-      "current": "y",
-      "firstFull": "155"
-    },
     "saf": {
       "current": "y",
-      "firstFull": "26.4"
+      "firstFull": "16.4"
     },
     "chr": {
+      "current": "n"
+    },
+    "ffx": {
       "current": "n"
     },
     "edg": {
@@ -29,7 +27,7 @@
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "26.4"
+      "firstFull": "16.4"
     },
     "an_chr": {
       "current": "n"
@@ -38,23 +36,21 @@
       "current": "n"
     },
     "an_ff": {
-      "current": "y",
-      "firstFull": "155"
+      "current": "n"
     }
   },
   "usage": {
     "global": {
-      "full": 10.92,
+      "full": 15.21,
       "partial": 0,
-      "total": 10.92
+      "total": 15.21
     },
     "byBrowser": {
       "desktop": {
-        "saf": 1.41
+        "saf": 2.09
       },
       "mobile": {
-        "ios_saf": 9.14,
-        "an_ff": 0.36
+        "ios_saf": 13.13
       }
     },
     "type": "estimated"
@@ -63,9 +59,15 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "api.WebTransport.createSendGroup"
+      "id": "api.MediaStreamTrack.configurationchange_event"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.NavigatorManagedData.managedconfigurationchange_event",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=WebTransport.createSendGroup"
+  "caniuseUrl": "https://caniuse.com/?search=%60configurationchange%60%20event"
 }

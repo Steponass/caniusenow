@@ -1,0 +1,99 @@
+{
+  "id": "mdn-api.InteractionContentfulPaint",
+  "source": "mdnbcd",
+  "name": "Interaction contentful paint",
+  "description": "The interaction-contentful-paint performance entry, which returns an InteractionContentfulPaint instance, is emitted when an interaction causes one or more contentful paints. Use it to measure LCP for soft navigations in single page apps or to measure contentful paints due to an interaction.",
+  "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/InteractionContentfulPaint/presentationTime",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "151"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "151"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "135"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "151"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "151"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "151"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 46.48,
+      "partial": 0,
+      "total": 46.48
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 0.15,
+        "edg": 0
+      },
+      "mobile": {
+        "an_chr": 46.33
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "api.InteractionContentfulPaint"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.InteractionContentfulPaint.interactionId",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InteractionContentfulPaint.largestContentfulPaint",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InteractionContentfulPaint.paintTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InteractionContentfulPaint.presentationTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "interaction-contentful-paint",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Interaction%20contentful%20paint"
+}

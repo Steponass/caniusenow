@@ -1,17 +1,16 @@
 {
-  "id": "mdn-api.SVGAElement.host",
+  "id": "mdn-api.HTMLBodyElement.orientationchange_event",
   "source": "mdnbcd",
-  "name": "SVGAElement.host",
-  "description": "",
+  "name": "`orientationchange` event",
+  "description": "`orientationchange` event",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/SVGAElement/hostname",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/orientationchange_event",
   "links": [],
   "support": {
-    "ffx": {
-      "current": "y",
-      "firstFull": "155"
-    },
     "chr": {
+      "current": "n"
+    },
+    "ffx": {
       "current": "n"
     },
     "saf": {
@@ -36,21 +35,18 @@
       "current": "n"
     },
     "an_ff": {
-      "current": "y",
-      "firstFull": "155"
+      "current": "n"
     }
   },
   "usage": {
     "global": {
-      "full": 0.36,
+      "full": 0,
       "partial": 0,
-      "total": 0.36
+      "total": 0
     },
     "byBrowser": {
       "desktop": {},
-      "mobile": {
-        "an_ff": 0.36
-      }
+      "mobile": {}
     },
     "type": "estimated"
   },
@@ -58,15 +54,20 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "api.SVGAElement.host"
+      "id": "api.HTMLBodyElement.orientationchange_event"
     },
     "supplementary": [
       {
         "source": "mdnbcd",
-        "id": "api.SVGAElement.hostname",
+        "id": "api.Screen.orientationchange_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.orientationchange_event",
         "matched": "via-webfeatures"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=SVGAElement.host"
+  "caniuseUrl": "https://caniuse.com/?search=%60orientationchange%60%20event"
 }

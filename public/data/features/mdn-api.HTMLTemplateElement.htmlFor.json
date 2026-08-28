@@ -1,22 +1,22 @@
 {
-  "id": "mdn-css.properties.window-drag",
+  "id": "mdn-api.HTMLTemplateElement.htmlFor",
   "source": "mdnbcd",
-  "name": "window-drag",
-  "description": "The window-drag: move CSS declaration sets an element as a window drag handle, like a device's app title bar. You can use this to add click-and-drag areas to an installed progressive web app, often alongside window controls overlay.",
-  "category": "CSS",
+  "name": "<template for>",
+  "description": "The <template for=\"…\"> HTML element replaces the content at a named range or insertion point, marked by the processing instructions <?start name=\"…\"> and <?end> or <?marker name=\"…\">. You can use this to stream or \"patch\" partial updates into the document out of order.",
+  "category": "JS API",
   "links": [],
   "support": {
     "chr": {
       "current": "y",
-      "firstFull": "152"
+      "firstFull": "150"
     },
     "edg": {
       "current": "y",
-      "firstFull": "152"
+      "firstFull": "150"
     },
     "opr": {
       "current": "y",
-      "firstFull": "136"
+      "firstFull": "134"
     },
     "ffx": {
       "current": "n"
@@ -26,18 +26,18 @@
     },
     "ie": {
       "current": "y",
-      "firstFull": "152"
+      "firstFull": "150"
     },
     "ios_saf": {
       "current": "n"
     },
     "an_chr": {
       "current": "y",
-      "firstFull": "152"
+      "firstFull": "150"
     },
     "smsg": {
       "current": "y",
-      "firstFull": "152"
+      "firstFull": "150"
     },
     "an_ff": {
       "current": "n"
@@ -45,13 +45,14 @@
   },
   "usage": {
     "global": {
-      "full": 46.34,
+      "full": 59.23,
       "partial": 0,
-      "total": 46.34
+      "total": 59.23
     },
     "byBrowser": {
       "desktop": {
-        "chr": 0.01
+        "chr": 9.31,
+        "edg": 3.59
       },
       "mobile": {
         "an_chr": 46.33
@@ -63,25 +64,20 @@
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
-      "id": "css.properties.window-drag"
+      "id": "api.HTMLTemplateElement.htmlFor"
     },
     "supplementary": [
       {
         "source": "mdnbcd",
-        "id": "css.properties.window-drag.move",
-        "matched": "via-webfeatures"
-      },
-      {
-        "source": "mdnbcd",
-        "id": "css.properties.window-drag.none",
+        "id": "html.elements.template.for",
         "matched": "via-webfeatures"
       },
       {
         "source": "webfeatures",
-        "id": "window-drag",
+        "id": "template-for",
         "matched": "exact"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=window-drag"
+  "caniuseUrl": "https://caniuse.com/?search=%3Ctemplate%20for%3E"
 }
