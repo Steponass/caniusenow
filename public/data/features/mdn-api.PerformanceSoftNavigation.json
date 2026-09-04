@@ -4,7 +4,7 @@
   "name": "Soft navigation performance entries",
   "description": "The soft-navigation performance entry, which returns a PerformanceSoftNavigation instance, is emitted when soft navigation occurs in a single page app. This is defined as when a trusted user interaction causes a URL update and a visible contentful paint to the screen.",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/PerformanceSoftNavigation/presentationTime",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/PerformanceSoftNavigation/toJSON",
   "links": [],
   "support": {
     "chr": {
@@ -91,6 +91,11 @@
       {
         "source": "mdnbcd",
         "id": "api.PerformanceSoftNavigation.presentationTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceSoftNavigation.toJSON",
         "matched": "via-webfeatures"
       },
       {

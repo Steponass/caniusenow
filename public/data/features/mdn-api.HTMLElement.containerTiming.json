@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.HTMLElement.containerTiming",
   "source": "mdnbcd",
-  "name": "HTMLElement.containerTiming",
-  "description": "",
+  "name": "Container timing performance entries",
+  "description": "A container performance entry measures time to render child elements, for container elements that have the containertiming attribute.",
   "category": "JS API",
   "links": [],
   "support": {
@@ -60,8 +60,58 @@
         "source": "mdnbcd",
         "id": "api.HTMLElement.containerTimingIgnore",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceContainerTiming",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceContainerTiming.firstRenderTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceContainerTiming.identifier",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceContainerTiming.intersectionRect",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceContainerTiming.lastPaintedElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceContainerTiming.rootElement",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.PerformanceContainerTiming.size",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.global_attributes.containertiming",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.global_attributes.containertimingignore",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "container-timing",
+        "matched": "exact"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=HTMLElement.containerTiming"
+  "caniuseUrl": "https://caniuse.com/?search=Container%20timing%20performance%20entries"
 }

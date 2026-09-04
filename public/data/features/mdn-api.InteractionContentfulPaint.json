@@ -4,7 +4,7 @@
   "name": "Interaction contentful paint",
   "description": "The interaction-contentful-paint performance entry, which returns an InteractionContentfulPaint instance, is emitted when an interaction causes one or more contentful paints. Use it to measure LCP for soft navigations in single page apps or to measure contentful paints due to an interaction.",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/InteractionContentfulPaint/presentationTime",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/InteractionContentfulPaint/toJSON",
   "links": [],
   "support": {
     "chr": {
@@ -86,6 +86,11 @@
       {
         "source": "mdnbcd",
         "id": "api.InteractionContentfulPaint.presentationTime",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.InteractionContentfulPaint.toJSON",
         "matched": "via-webfeatures"
       },
       {
