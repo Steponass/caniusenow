@@ -11104,6 +11104,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.CookieStore.get.domain_return_property",
+    "name": "`domain` in return value",
+    "description": "`domain` in return value",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 73.21,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.CookieStore.set.maxAge_option",
     "name": "`maxAge` option",
     "description": "`maxAge` option",
@@ -13517,7 +13533,7 @@
       "an_chr": "y"
     },
     "usage": 90.69,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-api.Element.elementTiming",
@@ -18318,22 +18334,6 @@
     },
     "usage": 91.09,
     "baseline": "high"
-  },
-  {
-    "id": "mdn-api.HTMLMediaElement.seekToNextFrame",
-    "name": "HTMLMediaElement.seekToNextFrame",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 3.24,
-    "baseline": false
   },
   {
     "id": "mdn-api.HTMLMediaElement.setSinkId",
@@ -23456,6 +23456,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.PerformanceContainerTiming.toJSON",
+    "name": "PerformanceContainerTiming.toJSON",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.PerformanceElementTiming.paintTime",
     "name": "PerformanceElementTiming.paintTime",
     "description": "",
@@ -25222,13 +25238,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 65.86,
+    "usage": 66.22,
     "baseline": false
   },
   {
@@ -26736,6 +26752,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.Selection.addRange.multiple_ranges",
+    "name": "Can add multiple ranges to the selection",
+    "description": "Can add multiple ranges to the selection",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 3.25,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.Selection.collapse.accepts_nodes_in_shadow_trees",
     "name": "Accepts `node` parameter in any tree/shadow tree",
     "description": "Accepts `node` parameter in any tree/shadow tree",
@@ -27728,51 +27760,19 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.TrustedParserOptions",
-    "name": "TrustedParserOptions",
+    "id": "mdn-api.TrustedHTMLParserOptions",
+    "name": "TrustedHTMLParserOptions",
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.TrustedParserOptions.runScripts",
-    "name": "TrustedParserOptions.runScripts",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.TrustedParserOptions.sanitizer",
-    "name": "TrustedParserOptions.sanitizer",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
+    "usage": 65.86,
     "baseline": false
   },
   {
@@ -31350,13 +31350,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 81.81,
+    "usage": 85.06,
     "baseline": false
   },
   {
@@ -37424,6 +37424,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.line-clamp.height-based_clamping",
+    "name": "Content clamped by the height of a container",
+    "description": "Content clamped by the height of a container",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.line-clamp.no-ellipsis",
     "name": "line-clamp: no-ellipsis",
     "description": "",
@@ -37473,8 +37489,8 @@
   },
   {
     "id": "mdn-css.properties.link-parameters",
-    "name": "`link-parameters`",
-    "description": "",
+    "name": "Link parameters",
+    "description": "The link-parameters CSS property, param() modifier for the url() CSS function, and the #:~:param(…) URL fragment set cus",
     "category": "CSS",
     "support": {
       "chr": "n",
@@ -38181,14 +38197,14 @@
     "description": "The margin-trim CSS property removes the margins of child elements when they meet the edges of the container.",
     "category": "CSS",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 15.21,
+    "usage": 85.3,
     "baseline": false
   },
   {
@@ -42480,6 +42496,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-css.properties.zoom.is_animatable",
+    "name": "`@keyframe` animatable and transitionable",
+    "description": "`@keyframe` animatable and transitionable",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 61.76,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.zoom.reset",
     "name": "The `reset` value",
     "description": "The `reset` value",
@@ -44368,54 +44400,6 @@
     "baseline": "low"
   },
   {
-    "id": "mdn-css.types.param",
-    "name": "`param()`",
-    "description": "`param()`",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 3.26,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.types.param.url",
-    "name": "Usage in the CSS `url()` function",
-    "description": "Usage in the CSS `url()` function",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.types.param.url_fragments",
-    "name": "Usage in URL fragments",
-    "description": "Usage in URL fragments",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.types.progress",
     "name": "progress()",
     "description": "`progress()`",
@@ -46194,6 +46178,22 @@
   {
     "id": "mdn-html.elements.ol.compact",
     "name": "`<ol>`",
+    "description": "",
+    "category": "HTML5",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 94.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-html.elements.param",
+    "name": "`<param>`",
     "description": "",
     "category": "HTML5",
     "support": {
@@ -48509,7 +48509,7 @@
       "an_chr": "y"
     },
     "usage": 88.72,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-javascript.builtins.AsyncDisposableStack",
@@ -49437,7 +49437,7 @@
       "an_chr": "y"
     },
     "usage": 88.88,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-javascript.builtins.Math.sumPrecise",
@@ -49597,7 +49597,7 @@
       "an_chr": "y"
     },
     "usage": 88.4,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-javascript.builtins.RegExp",
@@ -50240,6 +50240,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-javascript.statements.import.defer",
+    "name": "`import defer`",
+    "description": "`import defer`",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 15.94,
+    "baseline": false
+  },
+  {
     "id": "mdn-javascript.statements.import.import_assertions",
     "name": "Import attributes with `assert` syntax (formerly import assertions)",
     "description": "Import attributes with `assert` syntax (formerly import assertions)",
@@ -50656,22 +50672,6 @@
     "baseline": false
   },
   {
-    "id": "wf-import-defer",
-    "name": "import defer",
-    "description": "The import defer JavaScript statement imports a module while deferring its evaluation until its first use.",
-    "category": "Other",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
     "id": "wf-jpeg",
     "name": "JPEG",
     "description": "The JPEG image format is a raster graphics file format with lossy compression.",
@@ -51021,7 +51021,7 @@
       "an_chr": "y"
     },
     "usage": 89.24,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "wf-wasm-garbage-collection",

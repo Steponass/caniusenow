@@ -1,0 +1,99 @@
+{
+  "id": "mdn-api.CookieStore.get.domain_return_property",
+  "source": "mdnbcd",
+  "name": "`domain` in return value",
+  "description": "`domain` in return value",
+  "category": "JS API",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "87"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "87"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "73"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "87"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "87"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "87"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 73.21,
+      "partial": 0,
+      "total": 73.21
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 21.55,
+        "edg": 5.09,
+        "opr": 0.24
+      },
+      "mobile": {
+        "an_chr": 46.33
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "api.CookieStore.get.domain_return_property"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CookieStore.get.expires_return_property",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CookieStore.get.path_return_property",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CookieStore.get.sameSite_return_property",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CookieStore.get.secure_return_property",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "cookie-store-get-metadata",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=%60domain%60%20in%20return%20value"
+}
