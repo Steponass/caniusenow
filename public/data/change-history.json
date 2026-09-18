@@ -1,6 +1,304 @@
 {
-  "lastUpdated": "2026-09-11T07:20:10.802Z",
+  "lastUpdated": "2026-09-18T07:27:44.268Z",
   "entries": [
+    {
+      "timestamp": "2026-09-18T07:27:44.268Z",
+      "previousCommit": "57321706dd0f74effc340b8b1404d9733404ac70",
+      "currentCommit": "pending",
+      "totalChanges": 20,
+      "changes": [
+        {
+          "featureId": "css-appearance",
+          "changes": {
+            "baseline": {
+              "old": false,
+              "new": "high"
+            }
+          }
+        },
+        {
+          "featureId": "css-overflow-anchor",
+          "changes": {
+            "baseline": {
+              "old": false,
+              "new": "low"
+            }
+          }
+        },
+        {
+          "featureId": "mediarecorder",
+          "changes": {
+            "baseline": {
+              "old": false,
+              "new": "high"
+            }
+          }
+        },
+        {
+          "featureId": "mdn-api.ClipboardItem.type_web",
+          "changes": {
+            "usage": {
+              "old": 72.96,
+              "new": 76.22,
+              "delta": 3.260000000000005
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.GPUTexture.createView.descriptor_usage_parameter.transient_attachment",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "a"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.HTMLElement.autocorrect",
+          "changes": {
+            "baseline": {
+              "old": false,
+              "new": "low"
+            }
+          }
+        },
+        {
+          "featureId": "mdn-api.ReadableStream.@@asyncIterator",
+          "changes": {
+            "baseline": {
+              "old": false,
+              "new": "low"
+            }
+          }
+        },
+        {
+          "featureId": "mdn-api.Window.requestResize",
+          "changes": {
+            "usage": {
+              "old": 0,
+              "new": 46.33,
+              "delta": 46.33
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.at-rules.supports.at-rule",
+          "changes": {
+            "usage": {
+              "old": 85.06,
+              "new": 82.17,
+              "delta": -2.8900000000000006
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.overscroll-behavior-block.chain",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.overscroll-behavior-inline.chain",
+          "changes": {
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.selectors.attribute.case_sensitive_modifier",
+          "changes": {
+            "usage": {
+              "old": 3.24,
+              "new": 19.19,
+              "delta": 15.950000000000001
+            },
+            "support": [
+              {
+                "browser": "saf",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "ios_saf",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.selectors.buffering",
+          "changes": {
+            "usage": {
+              "old": 63.7,
+              "new": 17.36,
+              "delta": -46.34
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "y",
+                "new": "n"
+              },
+              {
+                "browser": "edg",
+                "old": "y",
+                "new": "n"
+              },
+              {
+                "browser": "an_chr",
+                "old": "y",
+                "new": "n"
+              }
+            ],
+            "baseline": {
+              "old": "low",
+              "new": false
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.types.color.alpha",
+          "changes": {
+            "baseline": {
+              "old": false,
+              "new": "low"
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.types.color.light-dark.image_value",
+          "changes": {
+            "baseline": {
+              "old": false,
+              "new": "low"
+            }
+          }
+        },
+        {
+          "featureId": "mdn-javascript.builtins.Iterator.includes",
+          "changes": {
+            "usage": {
+              "old": 16.31,
+              "new": 62.63,
+              "delta": 46.32000000000001
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-javascript.operators.await.top_level",
+          "changes": {
+            "baseline": {
+              "old": false,
+              "new": "low"
+            }
+          }
+        },
+        {
+          "featureId": "mdn-svg.global_attributes.transform.svg_root",
+          "changes": {
+            "usage": {
+              "old": 68.23,
+              "new": 71.47,
+              "delta": 3.239999999999995
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "wf-wasm-jspi",
+          "changes": {
+            "support": [
+              {
+                "browser": "saf",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "ios_saf",
+                "old": "n",
+                "new": "y"
+              }
+            ],
+            "baseline": {
+              "old": false,
+              "new": "low"
+            }
+          }
+        },
+        {
+          "featureId": "wf-webdriver-bidi",
+          "changes": {
+            "usage": {
+              "old": 75.84,
+              "new": 72.42,
+              "delta": -3.4200000000000017
+            }
+          }
+        }
+      ]
+    },
     {
       "timestamp": "2026-09-11T07:20:10.802Z",
       "previousCommit": "d4fe3af738bdaf2178dded7b82f43d7c2ee1f521",

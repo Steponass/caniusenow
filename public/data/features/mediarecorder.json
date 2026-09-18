@@ -4,6 +4,7 @@
   "name": "MediaRecorder API",
   "description": "The MediaRecorder API (MediaStream Recording) aims to provide a really simple mechanism by which developers can record media streams from the user's input devices and instantly use them in web apps, rather than having to perform manual encoding operations on raw PCM data, etc.",
   "category": "Other",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/MediaRecorder/videoBitsPerSecond",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder_API",
@@ -80,13 +81,144 @@
       "3": "Can be enabled using the Advanced > Experimental Features menu."
     }
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "caniuse",
       "id": "mediarecorder"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.BlobEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BlobEvent.BlobEvent",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BlobEvent.data",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.BlobEvent.timecode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.MediaRecorder",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.MediaRecorder.options_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.audioBitrateMode",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.audioBitsPerSecond",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.dataavailable_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.error_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.isTypeSupported_static",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.mimeType",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.pause",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.pause_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.requestData",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.resume",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.resume_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.start_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.state",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.stop",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.stop_event",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.stream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.MediaRecorder.videoBitsPerSecond",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "mediastream-recording",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=MediaRecorder%20API"
 }

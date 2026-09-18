@@ -4,6 +4,7 @@
   "name": "Web Share API",
   "description": "A way to allow websites to invoke the native sharing capabilities of the host platform",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/web-share",
   "links": [
     {
       "url": "https://developers.google.com/web/updates/2016/10/navigator-share",
@@ -124,7 +125,53 @@
       "source": "caniuse",
       "id": "web-share"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.canShare",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.canShare.data_files_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.canShare.data_text_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.share",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.share.data_files_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Navigator.share.data_text_parameter",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "html.elements.iframe.allow.web-share",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.web-share",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "share",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=Web%20Share%20API"
 }

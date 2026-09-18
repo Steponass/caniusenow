@@ -1,10 +1,10 @@
 {
   "id": "document-execcommand",
   "source": "caniuse",
-  "name": "Document.execCommand()",
+  "name": "execCommand()",
   "description": "Allows running commands to manipulate the contents of an editable region in a document switched to designMode",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/Document/execCommand",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Document/queryCommandSupported",
   "links": [
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand",
@@ -96,8 +96,58 @@
         "source": "mdnbcd",
         "id": "api.Document.execCommand",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.execCommand.copy",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.execCommand.cut",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.execCommand.defaultParagraphSeparator",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.execCommand.insertBrOnReturn",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.queryCommandEnabled",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.queryCommandIndeterm",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.queryCommandState",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.queryCommandSupported",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.queryCommandValue",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "execcommand",
+        "matched": "exact"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=Document.execCommand()"
+  "caniuseUrl": "https://caniuse.com/?search=execCommand()"
 }

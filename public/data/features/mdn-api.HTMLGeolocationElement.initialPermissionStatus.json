@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.HTMLGeolocationElement.initialPermissionStatus",
   "source": "mdnbcd",
-  "name": "HTMLGeolocationElement.initialPermissionStatus",
-  "description": "",
+  "name": "HTMLGeolocationElement initialPermissionStatus",
+  "description": "The initialPermissionStatus property of the HTMLGeolocationElement API represents whether geolocation was previously granted, denied, or neither, when the page first loads.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/API/HTMLGeolocationElement/initialPermissionStatus",
   "links": [],
@@ -15,15 +15,15 @@
       "current": "y",
       "firstFull": "144"
     },
+    "opr": {
+      "current": "y",
+      "firstFull": "128"
+    },
     "ffx": {
       "current": "n"
     },
     "saf": {
       "current": "n"
-    },
-    "opr": {
-      "current": "y",
-      "firstFull": "144"
     },
     "ie": {
       "current": "y",
@@ -46,16 +46,18 @@
   },
   "usage": {
     "global": {
-      "full": 44.17,
+      "full": 67.36,
       "partial": 0,
-      "total": 44.17
+      "total": 67.36
     },
     "byBrowser": {
       "desktop": {
-        "chr": 0.05
+        "chr": 16.4,
+        "edg": 4.57,
+        "opr": 0.06
       },
       "mobile": {
-        "an_chr": 44.12
+        "an_chr": 46.33
       }
     },
     "type": "estimated"
@@ -66,7 +68,13 @@
       "source": "mdnbcd",
       "id": "api.HTMLGeolocationElement.initialPermissionStatus"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "geolocation-element-initialpermissionstatus",
+        "matched": "exact"
+      }
+    ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=HTMLGeolocationElement.initialPermissionStatus"
+  "caniuseUrl": "https://caniuse.com/?search=HTMLGeolocationElement%20initialPermissionStatus"
 }
