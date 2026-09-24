@@ -29,65 +29,49 @@
   ],
   "support": {
     "chr": {
-      "current": "y",
-      "firstFull": "125"
+      "current": "u"
     },
     "ffx": {
-      "current": "y",
-      "firstFull": "147"
+      "current": "u"
     },
     "saf": {
       "current": "y",
-      "firstFull": "26.0"
+      "firstFull": "27"
     },
     "edg": {
-      "current": "y",
-      "firstFull": "125"
+      "current": "u"
     },
     "opr": {
-      "current": "y",
-      "firstFull": "111"
+      "current": "u"
     },
     "ie": {
       "current": "n"
     },
     "ios_saf": {
       "current": "y",
-      "firstFull": "26.0"
+      "firstFull": "27.0"
     },
     "an_chr": {
-      "current": "y",
-      "firstFull": "151"
+      "current": "u"
     },
     "smsg": {
-      "current": "y",
-      "firstFull": "27"
+      "current": "u"
     },
     "an_ff": {
-      "current": "y",
-      "firstFull": "153"
+      "current": "u"
     }
   },
   "usage": {
     "global": {
-      "full": 84.12,
-      "partial": 0,
-      "total": 84.12
+      "full": 0.01,
+      "partial": 85.91,
+      "total": 85.92
     },
     "byBrowser": {
       "desktop": {
-        "chr": 18.33,
-        "ffx": 1.37,
-        "saf": 1.57,
-        "edg": 4.67,
-        "opr": 0.06
+        "saf": 0.01
       },
-      "mobile": {
-        "ios_saf": 10.13,
-        "an_chr": 46.33,
-        "smsg": 1.27,
-        "an_ff": 0.36
-      }
+      "mobile": {}
     },
     "type": "actual"
   },
@@ -95,7 +79,10 @@
     "general": "",
     "byNum": {
       "1": "Can be enabled via the `#enable-experimental-web-platform-features` flag in `chrome://flags`",
-      "2": "Can be enabled using the `layout.css.anchor-positioning.enabled` flag. Enabled by default in Firefox Nightly only"
+      "2": "Can be enabled using the `layout.css.anchor-positioning.enabled` flag. Enabled by default in Firefox Nightly only",
+      "3": "Does not support `position-anchor: normal`",
+      "4": "Does not support animating the `anchor()` and `anchor-size()` CSS functions",
+      "5": "Does not support `position-visibility: anchor-valid` & `position-visibility: anchor-visible`"
     }
   },
   "baseline": false,

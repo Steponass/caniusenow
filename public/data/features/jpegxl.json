@@ -1,8 +1,8 @@
 {
   "id": "jpegxl",
   "source": "caniuse",
-  "name": "JPEG XL image format",
-  "description": "A modern image format optimized for web environments. JPEG XL generally has better compression than [WebP](/webp), JPEG, PNG and GIF and is designed to supersede them. JPEG XL competes with [AVIF](/avif) which has similar compression quality but fewer features overall.",
+  "name": "JPEG XL (JXL) image format",
+  "description": "A modern image format optimized for web environments. JPEG XL (also known as JXL) generally has better compression than [WebP](/webp), JPEG, PNG and GIF and is designed to supersede them. JPEG XL competes with [AVIF](/avif) which has similar compression quality but fewer features overall.",
   "category": "Other",
   "links": [
     {
@@ -36,14 +36,24 @@
     {
       "url": "https://www.phoronix.com/news/JPEG-XL-Returns-Chrome-Chromium",
       "title": "JPEG-XL Image Support Returns To Latest Chrome / Chromium Code"
+    },
+    {
+      "url": "https://jpegxl.info",
+      "title": "Official community website"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2506.05987",
+      "title": "In-depth overview of the format's rationale, features, and history"
     }
   ],
   "support": {
     "chr": {
-      "current": "u"
+      "current": "y",
+      "firstFull": "155"
     },
     "ffx": {
-      "current": "u"
+      "current": "y",
+      "firstFull": "158"
     },
     "saf": {
       "current": "u"
@@ -73,8 +83,8 @@
   "usage": {
     "global": {
       "full": 0,
-      "partial": 15.02,
-      "total": 15.02
+      "partial": 14.63,
+      "total": 14.63
     },
     "byBrowser": {
       "desktop": {},
@@ -109,5 +119,5 @@
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=JPEG%20XL%20image%20format"
+  "caniuseUrl": "https://caniuse.com/?search=JPEG%C2%A0XL%20(JXL)%20image%20format"
 }
