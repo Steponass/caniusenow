@@ -69,13 +69,19 @@
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
       "id": "css.at-rules.container.container-query_optional"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "container-name-queries",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=%60%26lt%3Bcontainer-query%26gt%3B%60%20is%20optional%20(allows%20name-only%20queries)"
 }

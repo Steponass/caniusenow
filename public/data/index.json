@@ -8941,7 +8941,7 @@
       "an_chr": "y"
     },
     "usage": 89.66,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-api.AbortSignal.timeout_static",
@@ -9408,6 +9408,54 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.AutofillEvent",
+    "name": "AutofillEvent",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.AutofillEvent.autofillValues",
+    "name": "AutofillEvent.autofillValues",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.AutofillEvent.refill",
+    "name": "AutofillEvent.refill",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.BackgroundFetchEvent",
     "name": "Background fetch",
     "description": "Background fetch downloads data in the background even when the web page is closed.",
@@ -9553,8 +9601,8 @@
   },
   {
     "id": "mdn-api.Blob.textStream",
-    "name": "Blob.textStream",
-    "description": "",
+    "name": "HTML streaming setters",
+    "description": "The streamHTML(), streamReplaceWithHTML(), streamBeforeHTML(), streamPrependHTML(), streamAppendHTML() and streamAfterHT",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -10771,22 +10819,6 @@
     "id": "mdn-api.CharacterData.afterHTML",
     "name": "HTML setter methods",
     "description": "The setHTML(), replaceWithHTML(), beforeHTML(), prependHTML(), appendHTML() and afterHTML() DOM methods, and unsafe equi",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.CharacterData.streamAfterHTML",
-    "name": "HTML streaming setters",
-    "description": "The streamHTML(), streamReplaceWithHTML(), streamBeforeHTML(), streamPrependHTML(), streamAppendHTML() and streamAfterHT",
     "category": "JS API",
     "support": {
       "chr": "n",
@@ -12165,15 +12197,15 @@
     "description": "`ariaNotify() method`",
     "category": "JS API",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 71.56,
-    "baseline": false
+    "baseline": "low"
   },
   {
     "id": "mdn-api.Document.beforescriptexecute_event",
@@ -17440,22 +17472,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.HTMLInstallElement.initialPermissionStatus",
-    "name": "HTMLInstallElement.initialPermissionStatus",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.HTMLInstallElement.installresult_event",
     "name": "`installresult` event",
     "description": "`installresult` event",
@@ -17490,22 +17506,6 @@
   {
     "id": "mdn-api.HTMLInstallElement.manifest",
     "name": "HTMLInstallElement.manifest",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.HTMLInstallElement.permissionStatus",
-    "name": "HTMLInstallElement.permissionStatus",
     "description": "",
     "category": "JS API",
     "support": {
@@ -22406,13 +22406,13 @@
     "category": "JS API",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 13.48,
+    "usage": 16.37,
     "baseline": false
   },
   {
@@ -25383,12 +25383,12 @@
     "support": {
       "chr": "y",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 77.74,
+    "usage": 77.75,
     "baseline": false
   },
   {
@@ -25725,38 +25725,6 @@
       "an_chr": "y"
     },
     "usage": 69.73,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Request.textStream",
-    "name": "Request.textStream",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 57.71,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Response.textStream",
-    "name": "Response.textStream",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 57.71,
     "baseline": false
   },
   {
@@ -26192,6 +26160,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.Sanitizer.setJavascriptURLs",
+    "name": "Sanitizer.setJavascriptURLs",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 2.89,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.Scheduler",
     "name": "Scheduler API",
     "description": "The scheduler API provides a way to prioritize all tasks belonging to an application.",
@@ -26301,38 +26285,6 @@
       "an_chr": "n"
     },
     "usage": 8.24,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Screen.mozBrightness",
-    "name": "Screen.mozBrightness",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Screen.mozEnabled",
-    "name": "Screen.mozEnabled",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
     "baseline": false
   },
   {
@@ -26790,13 +26742,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 69.9,
+    "usage": 72.79,
     "baseline": false
   },
   {
@@ -26854,13 +26806,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 69.9,
+    "usage": 72.79,
     "baseline": false
   },
   {
@@ -26870,13 +26822,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 69.73,
+    "usage": 72.61,
     "baseline": false
   },
   {
@@ -26886,13 +26838,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 69.9,
+    "usage": 72.79,
     "baseline": false
   },
   {
@@ -26918,13 +26870,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 57.71,
+    "usage": 60.59,
     "baseline": false
   },
   {
@@ -26934,13 +26886,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 69.73,
+    "usage": 72.61,
     "baseline": false
   },
   {
@@ -26950,13 +26902,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 69.73,
+    "usage": 72.61,
     "baseline": false
   },
   {
@@ -26966,13 +26918,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 69.73,
+    "usage": 72.61,
     "baseline": false
   },
   {
@@ -27061,14 +27013,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 2.89,
+    "usage": 46.9,
     "baseline": false
   },
   {
@@ -27077,14 +27029,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 2.89,
+    "usage": 46.9,
     "baseline": false
   },
   {
@@ -27093,14 +27045,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 2.89,
+    "usage": 46.9,
     "baseline": false
   },
   {
@@ -27109,14 +27061,30 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 2.89,
+    "usage": 46.9,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.SubtleCrypto.getPublicKey",
+    "name": "SubtleCrypto.getPublicKey",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.02,
     "baseline": false
   },
   {
@@ -27165,6 +27133,22 @@
       "an_chr": "y"
     },
     "usage": 93.77,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.SubtleCrypto.supports_static",
+    "name": "`SubtleCrypto.supports()` static method",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.02,
     "baseline": false
   },
   {
@@ -28166,13 +28150,13 @@
     "category": "JS API",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 10.68,
+    "usage": 13.57,
     "baseline": false
   },
   {
@@ -30397,7 +30381,7 @@
       "an_chr": "y"
     },
     "usage": 77.11,
-    "baseline": false
+    "baseline": "low"
   },
   {
     "id": "mdn-css.at-rules.container.scroll-state_queries",
@@ -30913,7 +30897,7 @@
   },
   {
     "id": "mdn-css.at-rules.supports.named-feature",
-    "name": "`named-feature()`",
+    "name": "named-feature()",
     "description": "`named-feature()`",
     "category": "CSS",
     "support": {
@@ -32288,6 +32272,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.background.text",
+    "name": "background: Text",
+    "description": "The background-clip: text CSS declaration draws the background underneath only the text in the element.",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "a",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.42,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.background.top",
     "name": "background: Top",
     "description": "",
@@ -32464,6 +32464,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.background-blend-mode.plus-lighter",
+    "name": "background-blend-mode: plus-lighter",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 2.89,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.background-blend-mode.saturation",
     "name": "background-blend-mode: Saturation",
     "description": "",
@@ -32608,6 +32624,54 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.background-position-x.center",
+    "name": "background-position-x: Center",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.3,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.background-position-x.left",
+    "name": "background-position-x: Left",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.3,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.background-position-x.right",
+    "name": "background-position-x: Right",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.3,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.background-position-x.x-end",
     "name": "background-position-x: x-end",
     "description": "",
@@ -32637,6 +32701,54 @@
       "an_chr": "n"
     },
     "usage": 11.59,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.background-position-y.bottom",
+    "name": "background-position-y: Bottom",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.3,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.background-position-y.center",
+    "name": "background-position-y: Center",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.3,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.background-position-y.top",
+    "name": "background-position-y: Top",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.3,
     "baseline": false
   },
   {
@@ -33265,8 +33377,8 @@
   },
   {
     "id": "mdn-css.properties.clip-path.is_animatable",
-    "name": "Is animatable",
-    "description": "Is animatable",
+    "name": "`@keyframe` animatable and transitionable",
+    "description": "`@keyframe` animatable and transitionable",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -33293,6 +33405,22 @@
       "an_chr": "y"
     },
     "usage": 91.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.clip-path.none",
+    "name": "clip-path: None",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.29,
     "baseline": false
   },
   {
@@ -33840,9 +33968,9 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.content-visibility.is_transitionable",
-    "name": "Transitionable when setting `transition-behavior: allow-discrete`",
-    "description": "Transitionable when setting `transition-behavior: allow-discrete`",
+    "id": "mdn-css.properties.content-visibility.is_animatable",
+    "name": "`@keyframe` animatable and transitionable (given `transition-behavior: allow-discrete`)",
+    "description": "`@keyframe` animatable and transitionable (given `transition-behavior: allow-discrete`)",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -33852,7 +33980,7 @@
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 86.97,
+    "usage": 87.11,
     "baseline": false
   },
   {
@@ -33910,13 +34038,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -33926,13 +34054,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -33942,13 +34070,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -33958,13 +34086,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -33974,13 +34102,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -33990,13 +34118,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34006,13 +34134,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34022,13 +34150,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34038,13 +34166,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34054,13 +34182,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34070,13 +34198,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34086,13 +34214,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34102,13 +34230,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34118,13 +34246,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34134,13 +34262,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34150,13 +34278,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34166,13 +34294,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34182,13 +34310,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34198,13 +34326,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34214,13 +34342,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34230,13 +34358,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34246,13 +34374,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34262,13 +34390,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34278,13 +34406,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34294,13 +34422,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34310,13 +34438,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34326,13 +34454,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34342,13 +34470,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34358,13 +34486,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34374,13 +34502,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34390,13 +34518,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34406,13 +34534,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34422,13 +34550,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34438,13 +34566,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34454,13 +34582,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34470,13 +34598,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34486,13 +34614,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34502,13 +34630,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34518,13 +34646,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34534,13 +34662,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34550,13 +34678,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34566,13 +34694,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34582,13 +34710,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34598,13 +34726,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34614,13 +34742,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34630,13 +34758,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34646,13 +34774,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34662,13 +34790,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34678,13 +34806,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34694,13 +34822,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34710,13 +34838,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34726,13 +34854,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34742,13 +34870,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34758,13 +34886,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34774,13 +34902,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34790,13 +34918,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34806,13 +34934,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34822,13 +34950,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34838,13 +34966,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34854,13 +34982,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34870,13 +34998,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34886,13 +35014,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34902,13 +35030,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34918,13 +35046,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34934,13 +35062,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34950,13 +35078,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34966,13 +35094,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34982,13 +35110,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -34998,13 +35126,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35014,13 +35142,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35030,13 +35158,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35046,13 +35174,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35062,13 +35190,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35078,13 +35206,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35094,13 +35222,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35110,13 +35238,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35126,13 +35254,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35142,13 +35270,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35158,13 +35286,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35174,13 +35302,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35190,13 +35318,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35206,13 +35334,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35222,13 +35350,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35238,13 +35366,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35254,13 +35382,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35270,13 +35398,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35286,13 +35414,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35302,13 +35430,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35318,13 +35446,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35334,13 +35462,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35350,13 +35478,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35366,13 +35494,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35382,13 +35510,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35398,13 +35526,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35414,13 +35542,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35430,13 +35558,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35446,13 +35574,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.36,
+    "usage": 88.24,
     "baseline": false
   },
   {
@@ -35534,6 +35662,22 @@
     },
     "usage": 88.98,
     "baseline": "low"
+  },
+  {
+    "id": "mdn-css.properties.display.contents.focusable_elements",
+    "name": "Elements with `display: contents` are focusable",
+    "description": "Elements with `display: contents` are focusable",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
   },
   {
     "id": "mdn-css.properties.display.list-item",
@@ -36048,6 +36192,118 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-css.properties.font-size.large",
+    "name": "font-size: Large",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.3,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-size.medium",
+    "name": "font-size: Medium",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.3,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-size.small",
+    "name": "font-size: Small",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.3,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-size.x-large",
+    "name": "font-size: x-large",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.3,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-size.x-small",
+    "name": "font-size: x-small",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.3,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-size.xx-large",
+    "name": "font-size: xx-large",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.3,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-size.xx-small",
+    "name": "font-size: xx-small",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.3,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.font-synthesis",
     "name": "font-synthesis",
     "description": "The font-synthesis CSS shorthand property disables all font synthesis except the given kinds. To disable a specific kind",
@@ -36144,6 +36400,550 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-css.properties.font-variant.all-petite-caps",
+    "name": "font-variant: all-petite-caps",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.5,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.all-small-caps",
+    "name": "font-variant: all-small-caps",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.5,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.common-ligatures",
+    "name": "font-variant: common-ligatures",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.77,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.contextual",
+    "name": "font-variant: Contextual",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.77,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.diagonal-fractions",
+    "name": "font-variant: diagonal-fractions",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.5,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.discretionary-ligatures",
+    "name": "font-variant: discretionary-ligatures",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.77,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.emoji",
+    "name": "font-variant: Emoji",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 88.18,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.full-width",
+    "name": "font-variant: full-width",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.32,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.historical-ligatures",
+    "name": "font-variant: historical-ligatures",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.77,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.jis04",
+    "name": "font-variant: Jis04",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.32,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.jis78",
+    "name": "font-variant: Jis78",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.32,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.jis83",
+    "name": "font-variant: Jis83",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.32,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.jis90",
+    "name": "font-variant: Jis90",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.32,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.lining-nums",
+    "name": "font-variant: lining-nums",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.5,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.no-common-ligatures",
+    "name": "font-variant: no-common-ligatures",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.77,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.no-contextual",
+    "name": "font-variant: no-contextual",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.77,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.no-discretionary-ligatures",
+    "name": "font-variant: no-discretionary-ligatures",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.77,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.no-historical-ligatures",
+    "name": "font-variant: no-historical-ligatures",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.77,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.oldstyle-nums",
+    "name": "font-variant: oldstyle-nums",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.5,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.ordinal",
+    "name": "font-variant: Ordinal",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.5,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.petite-caps",
+    "name": "font-variant: petite-caps",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.5,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.proportional-nums",
+    "name": "font-variant: proportional-nums",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.5,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.proportional-width",
+    "name": "font-variant: proportional-width",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.32,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.ruby",
+    "name": "font-variant: Ruby",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.32,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.simplified",
+    "name": "font-variant: Simplified",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.32,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.slashed-zero",
+    "name": "font-variant: slashed-zero",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.5,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.small-caps",
+    "name": "font-variant: small-caps",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.5,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.stacked-fractions",
+    "name": "font-variant: stacked-fractions",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.5,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.tabular-nums",
+    "name": "font-variant: tabular-nums",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.5,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.text",
+    "name": "font-variant: Text",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 88.18,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.titling-caps",
+    "name": "font-variant: titling-caps",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.5,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.traditional",
+    "name": "font-variant: Traditional",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.32,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.unicase",
+    "name": "font-variant: Unicase",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.5,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.font-variant.unicode",
+    "name": "font-variant: Unicode",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 88.18,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.font-variant-caps",
     "name": "font-variant-caps",
     "description": "The font-variant-caps CSS property sets whether text should be displayed in small caps, petite caps, or with capital let",
@@ -36176,8 +36976,8 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-css.properties.font-variant-emoji",
-    "name": "font-variant-emoji",
+    "id": "mdn-css.properties.font-variant-emoji.unicode",
+    "name": "font-variant-emoji: Unicode",
     "description": "The font-variant-emoji CSS property sets the default presentation for emoji characters.",
     "category": "CSS",
     "support": {
@@ -37040,6 +37840,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-css.properties.list-style.symbols",
+    "name": "symbols()",
+    "description": "`symbols()`",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 46.9,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.list-style-type.afar",
     "name": "list-style-type: Afar",
     "description": "",
@@ -37720,11 +38536,395 @@
       "chr": "y",
       "ffx": "n",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 86.42,
+    "usage": 58.83,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.add",
+    "name": "mask: Add",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.36,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.alpha",
+    "name": "mask: Alpha",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.36,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.border-box",
+    "name": "mask: border-box",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 75.15,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.bottom",
+    "name": "mask: Bottom",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.center",
+    "name": "mask: Center",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.content-box",
+    "name": "mask: content-box",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 75.15,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.exclude",
+    "name": "mask: Exclude",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.36,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.fill-box",
+    "name": "mask: fill-box",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 75.15,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.intersect",
+    "name": "mask: Intersect",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.36,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.left",
+    "name": "mask: Left",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.luminance",
+    "name": "mask: Luminance",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "a",
+      "edg": "y",
+      "ios_saf": "a",
+      "an_chr": "y"
+    },
+    "usage": 90.36,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.match-source",
+    "name": "mask: match-source",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.36,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.no-clip",
+    "name": "mask: no-clip",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 75.15,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.no-repeat",
+    "name": "mask: no-repeat",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.none",
+    "name": "mask: None",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.padding-box",
+    "name": "mask: padding-box",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 75.15,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.repeat",
+    "name": "mask: Repeat",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.right",
+    "name": "mask: Right",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.round",
+    "name": "mask: Round",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.space",
+    "name": "mask: Space",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.stroke-box",
+    "name": "mask: stroke-box",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 75.15,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.subtract",
+    "name": "mask: Subtract",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.36,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.top",
+    "name": "mask: Top",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask.view-box",
+    "name": "mask: view-box",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 75.15,
     "baseline": false
   },
   {
@@ -37792,7 +38992,87 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.mask-border",
+    "id": "mdn-css.properties.mask-border.none",
+    "name": "mask-border: None",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 92.18,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-border.repeat",
+    "name": "mask-border: Repeat",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 92.18,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-border.round",
+    "name": "mask-border: Round",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 92.18,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-border.space",
+    "name": "mask-border: Space",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 92.18,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-border.stretch",
+    "name": "mask-border: Stretch",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 92.18,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-border-outset",
     "name": "mask-border",
     "description": "The mask-border CSS property sets how the edges of an element are masked. It is a shorthand for mask-border-outset, mask",
     "category": "CSS",
@@ -37805,6 +39085,54 @@
       "an_chr": "y"
     },
     "usage": 91.01,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-border-repeat.stretch",
+    "name": "mask-border-repeat: Stretch",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 92.18,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-border-source.none",
+    "name": "mask-border-source: None",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 92.18,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-border-width.auto",
+    "name": "mask-border-width: Auto",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 92.18,
     "baseline": false
   },
   {
@@ -37920,6 +39248,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.mask-image.none",
+    "name": "mask-image: None",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.mask-origin.border-box",
     "name": "mask-origin: border-box",
     "description": "",
@@ -37965,6 +39309,86 @@
       "an_chr": "y"
     },
     "usage": 75.15,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-position.bottom",
+    "name": "mask-position: Bottom",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-position.center",
+    "name": "mask-position: Center",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-position.left",
+    "name": "mask-position: Left",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-position.right",
+    "name": "mask-position: Right",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-position.top",
+    "name": "mask-position: Top",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
     "baseline": false
   },
   {
@@ -38029,6 +39453,118 @@
       "an_chr": "n"
     },
     "usage": 11.59,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-repeat.no-repeat",
+    "name": "mask-repeat: no-repeat",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-repeat.repeat",
+    "name": "mask-repeat: Repeat",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-repeat.round",
+    "name": "mask-repeat: Round",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-repeat.space",
+    "name": "mask-repeat: Space",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-size.auto",
+    "name": "mask-size: Auto",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-size.contain",
+    "name": "mask-size: Contain",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.mask-size.cover",
+    "name": "mask-size: Cover",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.06,
     "baseline": false
   },
   {
@@ -38960,22 +40496,6 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-css.properties.outline.auto",
-    "name": "outline: Auto",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.07,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.outline-color",
     "name": "Outlines",
     "description": "The outline-color, outline-style, and outline-width and outline-offset CSS properties style a line around an element, ou",
@@ -39341,7 +40861,7 @@
       "an_chr": "y"
     },
     "usage": 93.76,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-css.properties.paint-order.markers",
@@ -40828,7 +42348,7 @@
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 71.61,
+    "usage": 44.02,
     "baseline": false
   },
   {
@@ -40844,7 +42364,7 @@
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 71.61,
+    "usage": 44.02,
     "baseline": false
   },
   {
@@ -40860,7 +42380,7 @@
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 71.61,
+    "usage": 44.02,
     "baseline": false
   },
   {
@@ -40876,7 +42396,7 @@
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 71.61,
+    "usage": 44.02,
     "baseline": false
   },
   {
@@ -41933,7 +43453,7 @@
       "an_chr": "y"
     },
     "usage": 89.84,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-css.properties.white-space-trim.discard-after",
@@ -42128,22 +43648,6 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-css.properties.zoom.is_animatable",
-    "name": "`@keyframe` animatable and transitionable",
-    "description": "`@keyframe` animatable and transitionable",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 64.43,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.zoom.reset",
     "name": "The `reset` value",
     "description": "The `reset` value",
@@ -42317,22 +43821,6 @@
       "an_chr": "n"
     },
     "usage": 2.88,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.selectors.-moz-submit-invalid",
-    "name": "`:-moz-submit-invalid`",
-    "description": "`:-moz-submit-invalid`",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 2.89,
     "baseline": false
   },
   {
@@ -42668,7 +44156,7 @@
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 18.33,
+    "usage": 2.89,
     "baseline": false
   },
   {
@@ -43024,6 +44512,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-css.selectors.navigation-source",
+    "name": "`:navigation-source`",
+    "description": "`:navigation-source`",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.61,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.selectors.open",
     "name": ":open",
     "description": "`:open`",
@@ -43248,9 +44752,9 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-css.types.anchor.is_transitionable",
-    "name": "Transitionable and animatable when setting inset properties",
-    "description": "Transitionable and animatable when setting inset properties",
+    "id": "mdn-css.types.anchor.is_animatable",
+    "name": "`@keyframe` animatable and transitionable (when setting inset properties)",
+    "description": "`@keyframe` animatable and transitionable (when setting inset properties)",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -43484,7 +44988,7 @@
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 17.22,
+    "usage": 1.78,
     "baseline": false
   },
   {
@@ -44016,6 +45520,22 @@
     "baseline": "low"
   },
   {
+    "id": "mdn-css.types.line-width",
+    "name": "`&lt;line-width&gt;`",
+    "description": "`&lt;line-width&gt;`",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.3,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.types.mod",
     "name": "round(), mod(), and rem()",
     "description": "`mod()`",
@@ -44085,14 +45605,14 @@
     "description": "`random()`",
     "category": "CSS",
     "support": {
-      "chr": "n",
-      "ffx": "n",
+      "chr": "y",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 11.36,
+    "usage": 85.86,
     "baseline": false
   },
   {
@@ -44101,14 +45621,14 @@
     "description": "",
     "category": "CSS",
     "support": {
-      "chr": "n",
-      "ffx": "n",
+      "chr": "y",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 11.36,
+    "usage": 85.86,
     "baseline": false
   },
   {
@@ -44133,14 +45653,14 @@
     "description": "",
     "category": "CSS",
     "support": {
-      "chr": "n",
-      "ffx": "n",
+      "chr": "y",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 11.36,
+    "usage": 85.86,
     "baseline": false
   },
   {
@@ -44182,13 +45702,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 75.27,
+    "usage": 78.15,
     "baseline": false
   },
   {
@@ -45319,12 +46839,12 @@
     "support": {
       "chr": "y",
       "ffx": "n",
-      "saf": "n",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 71.43,
+    "usage": 85.09,
     "baseline": false
   },
   {
@@ -47061,12 +48581,12 @@
     "description": "",
     "category": "Other",
     "support": {
-      "chr": "a",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "a",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "a"
+      "an_chr": "y"
     },
     "usage": 69.78,
     "baseline": false
@@ -48993,8 +50513,8 @@
   },
   {
     "id": "mdn-javascript.builtins.Iterator.join",
-    "name": "`Iterator.join()`",
-    "description": "",
+    "name": "Iterator join()",
+    "description": "The join() method of an Iterator object returns a string concatenation of all the iterator's items, separated by commas ",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -49569,24 +51089,8 @@
   },
   {
     "id": "mdn-javascript.builtins.String.trimLeft",
-    "name": "`String.trimLeft()`",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.06,
-    "baseline": false
-  },
-  {
-    "id": "mdn-javascript.builtins.String.trimRight",
-    "name": "`String.trimRight()`",
-    "description": "",
+    "name": "String trimLeft() and trimRight()",
+    "description": "The trimLeft() and trimRight() methods of strings return a new string with whitespace removed from the beginning or end ",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -49666,7 +51170,7 @@
   {
     "id": "mdn-javascript.builtins.Uint8Array.fromBase64",
     "name": "Uint8Array base64 and hex conversion",
-    "description": "The static Uint8Array.fromBase64() method and the Uint8Array instance methods toBase64() and setFromBase64() convert to ",
+    "description": "The Uint8Array.fromBase64() static method and the toBase64() and setFromBase64() instance methods convert to and from ba",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -50021,14 +51525,14 @@
     "description": "`with {type: 'text'}`",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 1.66,
+    "usage": 45.68,
     "baseline": false
   },
   {
@@ -50339,6 +51843,22 @@
     "id": "wf-focusgroup",
     "name": "focusgroup",
     "description": "The focusgroup global HTML attribute combines descendant elements into a single tab stop, with arrow-key navigation betw",
+    "category": "Other",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
+    "id": "wf-gamut-mapping",
+    "name": "Gamut mapping",
+    "description": "Colors in CSS and <canvas> elements can be defined out of range of an output device or the color space of the canvas. Ga",
     "category": "Other",
     "support": {
       "chr": "n",

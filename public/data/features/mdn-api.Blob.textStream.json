@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.Blob.textStream",
   "source": "mdnbcd",
-  "name": "Blob.textStream",
-  "description": "",
+  "name": "HTML streaming setters",
+  "description": "The streamHTML(), streamReplaceWithHTML(), streamBeforeHTML(), streamPrependHTML(), streamAppendHTML() and streamAfterHTML() DOM methods, and unsafe equivalents, return writeable streams that incrementally insert HTML into an existing tree.",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/Blob/textStream",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Response/textStream",
   "links": [],
   "support": {
     "chr": {
@@ -68,7 +68,203 @@
       "source": "mdnbcd",
       "id": "api.Blob.textStream"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.streamAfterHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.streamAfterHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.streamBeforeHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.streamBeforeHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.streamReplaceWithHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.CharacterData.streamReplaceWithHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentType.streamAfterHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentType.streamAfterHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentType.streamBeforeHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentType.streamBeforeHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentType.streamReplaceWithHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.DocumentType.streamReplaceWithHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.streamAfterHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.streamAfterHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.streamAppendHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.streamAppendHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.streamBeforeHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.streamBeforeHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.streamHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.streamHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.streamPrependHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.streamPrependHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.streamReplaceWithHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.streamReplaceWithHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Request.textStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Response.textStream",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.streamAfterHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.streamAfterHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.streamAppendHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.streamAppendHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.streamBeforeHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.streamBeforeHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.streamHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.streamHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.streamPrependHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.streamPrependHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.streamReplaceWithHTML",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.streamReplaceWithHTMLUnsafe",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "html-streaming-setters",
+        "matched": "exact"
+      }
+    ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=Blob.textStream"
+  "caniuseUrl": "https://caniuse.com/?search=HTML%20streaming%20setters"
 }

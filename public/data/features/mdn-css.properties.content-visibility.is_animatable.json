@@ -1,0 +1,104 @@
+{
+  "id": "mdn-css.properties.content-visibility.is_animatable",
+  "source": "mdnbcd",
+  "name": "`@keyframe` animatable and transitionable (given `transition-behavior: allow-discrete`)",
+  "description": "`@keyframe` animatable and transitionable (given `transition-behavior: allow-discrete`)",
+  "category": "CSS",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "y",
+      "firstFull": "117",
+      "firstPartial": "116"
+    },
+    "saf": {
+      "current": "y",
+      "firstFull": "18"
+    },
+    "edg": {
+      "current": "y",
+      "firstFull": "117",
+      "firstPartial": "116"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "103",
+      "firstPartial": "102"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "y",
+      "firstFull": "117",
+      "firstPartial": "116"
+    },
+    "ios_saf": {
+      "current": "y",
+      "firstFull": "18"
+    },
+    "an_chr": {
+      "current": "y",
+      "firstFull": "117",
+      "firstPartial": "116"
+    },
+    "smsg": {
+      "current": "y",
+      "firstFull": "117",
+      "firstPartial": "116"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 86.97,
+      "partial": 0.14,
+      "total": 87.11
+    },
+    "byBrowser": {
+      "desktop": {
+        "chr": 23.6,
+        "saf": 1.71,
+        "edg": 5.08,
+        "opr": 0.62
+      },
+      "mobile": {
+        "ios_saf": 12.07,
+        "an_chr": 44.02
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "mdnbcd",
+      "id": "css.properties.content-visibility.is_animatable"
+    },
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.display.is_animatable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transition-behavior.transitionable_content-visibility",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.transition-behavior.transitionable_display",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "display-animation",
+        "matched": "exact"
+      }
+    ]
+  },
+  "caniuseUrl": "https://caniuse.com/?search=%60%40keyframe%60%20animatable%20and%20transitionable%20(given%20%60transition-behavior%3A%20allow-discrete%60)"
+}

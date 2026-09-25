@@ -1,6 +1,2266 @@
 {
-  "lastUpdated": "2026-09-24T07:39:35.892Z",
+  "lastUpdated": "2026-09-25T07:56:46.876Z",
   "entries": [
+    {
+      "timestamp": "2026-09-25T07:56:46.876Z",
+      "previousCommit": "2686b23c2e8305b68f5b27deaf0b9382f66d4387",
+      "currentCommit": "pending",
+      "totalChanges": 131,
+      "changes": [
+        {
+          "featureId": "mdn-api.AbortSignal.any_static",
+          "changes": {
+            "baseline": {
+              "old": "low",
+              "new": "high"
+            }
+          }
+        },
+        {
+          "featureId": "mdn-api.Document.ariaNotify",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ],
+            "baseline": {
+              "old": false,
+              "new": "low"
+            }
+          }
+        },
+        {
+          "featureId": "mdn-api.Notification.navigate",
+          "changes": {
+            "usage": {
+              "old": 13.48,
+              "new": 16.37,
+              "delta": 2.8900000000000006
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.ReadableStream.transferable",
+          "changes": {
+            "support": [
+              {
+                "browser": "saf",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "ios_saf",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.SpeechRecognition.available_static",
+          "changes": {
+            "usage": {
+              "old": 69.9,
+              "new": 72.79,
+              "delta": 2.8900000000000006
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.SpeechRecognition.install_static",
+          "changes": {
+            "usage": {
+              "old": 69.9,
+              "new": 72.79,
+              "delta": 2.8900000000000006
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.SpeechRecognition.phrases",
+          "changes": {
+            "usage": {
+              "old": 69.73,
+              "new": 72.61,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.SpeechRecognition.processLocally",
+          "changes": {
+            "usage": {
+              "old": 69.9,
+              "new": 72.79,
+              "delta": 2.8900000000000006
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.SpeechRecognition.unspokenPunctuation",
+          "changes": {
+            "usage": {
+              "old": 57.71,
+              "new": 60.59,
+              "delta": 2.8800000000000026
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.SpeechRecognitionPhrase.SpeechRecognitionPhrase",
+          "changes": {
+            "usage": {
+              "old": 69.73,
+              "new": 72.61,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.SpeechRecognitionPhrase.boost",
+          "changes": {
+            "usage": {
+              "old": 69.73,
+              "new": 72.61,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.SpeechRecognitionPhrase.phrase",
+          "changes": {
+            "usage": {
+              "old": 69.73,
+              "new": 72.61,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.SubtleCrypto.decapsulateBits",
+          "changes": {
+            "usage": {
+              "old": 2.89,
+              "new": 46.9,
+              "delta": 44.01
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.SubtleCrypto.decapsulateKey",
+          "changes": {
+            "usage": {
+              "old": 2.89,
+              "new": 46.9,
+              "delta": 44.01
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.SubtleCrypto.encapsulateBits",
+          "changes": {
+            "usage": {
+              "old": 2.89,
+              "new": 46.9,
+              "delta": 44.01
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.SubtleCrypto.encapsulateKey",
+          "changes": {
+            "usage": {
+              "old": 2.89,
+              "new": 46.9,
+              "delta": 44.01
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.WebTransport.supportsReliableOnly_static",
+          "changes": {
+            "usage": {
+              "old": 10.68,
+              "new": 13.57,
+              "delta": 2.8900000000000006
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.at-rules.container.container-query_optional",
+          "changes": {
+            "baseline": {
+              "old": false,
+              "new": "low"
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-block-end-shape",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-block-start-shape.bevel",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-block-start-shape.notch",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-block-start-shape.round",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-block-start-shape.scoop",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-block-start-shape.square",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-block-start-shape.squircle",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-bottom-left-shape.bevel",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-bottom-left-shape.notch",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-bottom-left-shape.round",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-bottom-left-shape.scoop",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-bottom-left-shape.square",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-bottom-left-shape.squircle",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-bottom-right-shape.bevel",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-bottom-right-shape.notch",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-bottom-right-shape.round",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-bottom-right-shape.scoop",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-bottom-right-shape.square",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-bottom-right-shape.squircle",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-bottom-shape.bevel",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-bottom-shape.notch",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-bottom-shape.round",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-bottom-shape.scoop",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-bottom-shape.square",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-bottom-shape.squircle",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-end-end-shape.bevel",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-end-end-shape.notch",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-end-end-shape.round",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-end-end-shape.scoop",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-end-end-shape.square",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-end-end-shape.squircle",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-end-start-shape.bevel",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-end-start-shape.notch",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-end-start-shape.round",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-end-start-shape.scoop",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-end-start-shape.square",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-end-start-shape.squircle",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-inline-end-shape.bevel",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-inline-end-shape.notch",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-inline-end-shape.round",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-inline-end-shape.scoop",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-inline-end-shape.square",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-inline-end-shape.squircle",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-inline-start-shape.bevel",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-inline-start-shape.notch",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-inline-start-shape.round",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-inline-start-shape.scoop",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-inline-start-shape.square",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-inline-start-shape.squircle",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-left-shape.bevel",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-left-shape.notch",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-left-shape.round",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-left-shape.scoop",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-left-shape.square",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-left-shape.squircle",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-right-shape.bevel",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-right-shape.notch",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-right-shape.round",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-right-shape.scoop",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-right-shape.square",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-right-shape.squircle",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-shape.bevel",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-shape.notch",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-shape.round",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-shape.scoop",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-shape.square",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-shape.squircle",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-start-end-shape.bevel",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-start-end-shape.notch",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-start-end-shape.round",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-start-end-shape.scoop",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-start-end-shape.square",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-start-end-shape.squircle",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-start-start-shape.bevel",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-start-start-shape.notch",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-start-start-shape.round",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-start-start-shape.scoop",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-start-start-shape.square",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-start-start-shape.squircle",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-top-left-shape.bevel",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-top-left-shape.notch",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-top-left-shape.round",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-top-left-shape.scoop",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-top-left-shape.square",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-top-left-shape.squircle",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-top-right-shape.bevel",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-top-right-shape.notch",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-top-right-shape.round",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-top-right-shape.scoop",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-top-right-shape.square",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-top-right-shape.squircle",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-top-shape.bevel",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-top-shape.notch",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-top-shape.round",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-top-shape.scoop",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-top-shape.square",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.corner-top-shape.squircle",
+          "changes": {
+            "usage": {
+              "old": 85.36,
+              "new": 88.24,
+              "delta": 2.8799999999999955
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.margin-trim",
+          "changes": {
+            "usage": {
+              "old": 86.42,
+              "new": 58.83,
+              "delta": -27.590000000000003
+            },
+            "support": [
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.paint-order",
+          "changes": {
+            "baseline": {
+              "old": "low",
+              "new": "high"
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.text-decoration-skip-spaces.all",
+          "changes": {
+            "usage": {
+              "old": 71.61,
+              "new": 44.02,
+              "delta": -27.589999999999996
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.text-decoration-skip-spaces.end",
+          "changes": {
+            "usage": {
+              "old": 71.61,
+              "new": 44.02,
+              "delta": -27.589999999999996
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.text-decoration-skip-spaces.none",
+          "changes": {
+            "usage": {
+              "old": 71.61,
+              "new": 44.02,
+              "delta": -27.589999999999996
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.text-decoration-skip-spaces.start",
+          "changes": {
+            "usage": {
+              "old": 71.61,
+              "new": 44.02,
+              "delta": -27.589999999999996
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.white-space-collapse.break-spaces",
+          "changes": {
+            "baseline": {
+              "old": "low",
+              "new": "high"
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.selectors.attribute.case_sensitive_modifier",
+          "changes": {
+            "usage": {
+              "old": 18.33,
+              "new": 2.89,
+              "delta": -15.439999999999998
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.types.color.color-mix.variadic_color_arguments",
+          "changes": {
+            "usage": {
+              "old": 17.22,
+              "new": 1.78,
+              "delta": -15.44
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.types.random",
+          "changes": {
+            "usage": {
+              "old": 11.36,
+              "new": 85.86,
+              "delta": 74.5
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.types.random.dashed-ident",
+          "changes": {
+            "usage": {
+              "old": 11.36,
+              "new": 85.86,
+              "delta": 74.5
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.types.random.step",
+          "changes": {
+            "usage": {
+              "old": 11.36,
+              "new": 85.86,
+              "delta": 74.5
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.types.timeline-range-name.scroll",
+          "changes": {
+            "usage": {
+              "old": 75.27,
+              "new": 78.15,
+              "delta": 2.8800000000000097
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-html.elements.link.rel.expect",
+          "changes": {
+            "usage": {
+              "old": 71.43,
+              "new": 85.09,
+              "delta": 13.659999999999997
+            },
+            "support": [
+              {
+                "browser": "saf",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "ios_saf",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-http.headers.Permissions-Policy.aria-notify",
+          "changes": {
+            "support": [
+              {
+                "browser": "chr",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-javascript.statements.import.import_attributes.type_text",
+          "changes": {
+            "usage": {
+              "old": 1.66,
+              "new": 45.68,
+              "delta": 44.02
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "edg",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        }
+      ]
+    },
     {
       "timestamp": "2026-09-24T07:39:35.892Z",
       "previousCommit": "9332a70a78bcaf2208c19faa3bc697403b5531dc",

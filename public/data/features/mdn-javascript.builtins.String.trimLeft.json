@@ -1,10 +1,10 @@
 {
   "id": "mdn-javascript.builtins.String.trimLeft",
   "source": "mdnbcd",
-  "name": "`String.trimLeft()`",
-  "description": "",
+  "name": "String trimLeft() and trimRight()",
+  "description": "The trimLeft() and trimRight() methods of strings return a new string with whitespace removed from the beginning or end of the string. They're aliases for trimStart() and trimEnd().",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/trimStart",
+  "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/trimEnd",
   "links": [],
   "support": {
     "chr": {
@@ -77,7 +77,18 @@
       "source": "mdnbcd",
       "id": "javascript.builtins.String.trimLeft"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "javascript.builtins.String.trimRight",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "string-trim-leftright",
+        "matched": "exact"
+      }
+    ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60String.trimLeft()%60"
+  "caniuseUrl": "https://caniuse.com/?search=String%20trimLeft()%20and%20trimRight()"
 }
