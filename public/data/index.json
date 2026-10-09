@@ -9025,8 +9025,8 @@
   },
   {
     "id": "mdn-api.AnimationEvent.animation",
-    "name": "AnimationEvent.animation",
-    "description": "",
+    "name": "Animation accessors",
+    "description": "The animation property of an AnimationEvent or TransitionEvent object is the Animation object that represents the animat",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -9037,7 +9037,7 @@
       "an_chr": "y"
     },
     "usage": 68.69,
-    "baseline": false
+    "baseline": "low"
   },
   {
     "id": "mdn-api.AnimationTrigger",
@@ -10272,25 +10272,9 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.CSSPseudoElement.parent",
-    "name": "CSSPseudoElement.parent",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.93,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.CSSPseudoElement.pseudo",
-    "name": "`pseudo() method`",
-    "description": "`pseudo() method`",
+    "id": "mdn-api.CSSPseudoElement",
+    "name": "CSSPseudoElement",
+    "description": "A CSSPseudoElement object represents a pseudo-element and its context in the document tree. You get an instance through ",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -13552,9 +13536,9 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-api.Element.pseudo",
-    "name": "Element.pseudo",
-    "description": "",
+    "id": "mdn-api.Element.pseudo.type_parameter",
+    "name": "`type` parameter",
+    "description": "`type` parameter",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -13565,6 +13549,166 @@
       "an_chr": "y"
     },
     "usage": 66.93,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Element.pseudo.type_parameter.after_pseudo",
+    "name": "`\"::after\"` value",
+    "description": "`\"::after\"` value",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 66.93,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Element.pseudo.type_parameter.backdrop_pseudo",
+    "name": "`\"::backdrop\"` value",
+    "description": "`\"::backdrop\"` value",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 62.82,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Element.pseudo.type_parameter.before_pseudo",
+    "name": "`\"::before\"` value",
+    "description": "`\"::before\"` value",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 66.93,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Element.pseudo.type_parameter.marker_pseudo",
+    "name": "`\"::marker\"` value",
+    "description": "`\"::marker\"` value",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 66.93,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Element.pseudo.type_parameter.scroll-marker_pseudo",
+    "name": "`\"::scroll-marker\"` value",
+    "description": "`\"::scroll-marker\"` value",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 62.82,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Element.pseudo.type_parameter.view-transition-group_pseudo",
+    "name": "`\"::view-transition-group()\"` values",
+    "description": "`\"::view-transition-group()\"` values",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 62.82,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Element.pseudo.type_parameter.view-transition-image-pair_pseudo",
+    "name": "`\"::view-transition-image-pair()\"` values",
+    "description": "`\"::view-transition-image-pair()\"` values",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 62.82,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Element.pseudo.type_parameter.view-transition-transition-new_pseudo",
+    "name": "`\"::view-transition-new()\"` values",
+    "description": "`\"::view-transition-new()\"` values",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 62.82,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Element.pseudo.type_parameter.view-transition-transition-old_pseudo",
+    "name": "`\"::view-transition-old()\"` values",
+    "description": "`\"::view-transition-old()\"` values",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 62.82,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Element.pseudo.type_parameter.view-transition_pseudo",
+    "name": "`\"::view-transition\"` value",
+    "description": "`\"::view-transition\"` value",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 62.82,
     "baseline": false
   },
   {
@@ -14941,6 +15085,38 @@
       "an_chr": "y"
     },
     "usage": 69.2,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.GPUDevice.createRenderPipeline.vertex_1-component",
+    "name": "One-component vertex formats",
+    "description": "One-component vertex formats",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 69.47,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.GPUDevice.createRenderPipeline.vertex_unorm8x4-bgra",
+    "name": "`unorm8x4-bgra` vertex format",
+    "description": "`unorm8x4-bgra` vertex format",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 69.47,
     "baseline": false
   },
   {
@@ -22412,7 +22588,7 @@
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 18.24,
+    "usage": 15.93,
     "baseline": false
   },
   {
@@ -25296,6 +25472,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.RTCStatsReport.type_outbound-rtp.totalEncodedBytesTarget",
+    "name": "`totalEncodedBytesTarget` in 'outbound-rtp' stats",
+    "description": "`totalEncodedBytesTarget` in 'outbound-rtp' stats",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 75.71,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.RadioNodeList",
     "name": "RadioNodeList",
     "description": "",
@@ -26124,7 +26316,7 @@
       "ios_saf": "n",
       "an_chr": "n"
     },
-    "usage": 2.72,
+    "usage": 0.41,
     "baseline": false
   },
   {
@@ -26381,22 +26573,6 @@
       "an_chr": "y"
     },
     "usage": 93.4,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Selection.collapse.offset_parameter_optional",
-    "name": "`offset` parameter is optional",
-    "description": "`offset` parameter is optional",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
     "baseline": false
   },
   {
@@ -26710,13 +26886,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 68.64,
+    "usage": 71.36,
     "baseline": false
   },
   {
@@ -26726,13 +26902,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 68.64,
+    "usage": 71.36,
     "baseline": false
   },
   {
@@ -27229,22 +27405,6 @@
       "an_chr": "n"
     },
     "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.TransitionEvent.animation",
-    "name": "TransitionEvent.animation",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 68.69,
     "baseline": false
   },
   {
@@ -28124,7 +28284,7 @@
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 15.21,
+    "usage": 12.91,
     "baseline": false
   },
   {
@@ -28273,8 +28433,8 @@
   },
   {
     "id": "mdn-api.WheelEvent.momentum",
-    "name": "WheelEvent.momentum",
-    "description": "",
+    "name": "Wheel events momentum",
+    "description": "The momentum property of a wheel event object is true when the event represents simulated scroll inertia, also known as ",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -28637,22 +28797,6 @@
       "an_chr": "y"
     },
     "usage": 72.95,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Window.postMessage.transfer_parameter",
-    "name": "`transfer` parameter",
-    "description": "`transfer` parameter",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.74,
     "baseline": false
   },
   {
@@ -30800,6 +30944,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-css.at-rules.page.page-margin-safety",
+    "name": "`page-margin-safety` descriptor",
+    "description": "`page-margin-safety` descriptor",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 66.66,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.at-rules.page.page-orientation",
     "name": "`page-orientation` descriptor",
     "description": "`page-orientation` descriptor",
@@ -31728,9 +31888,25 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.align-content.block_context",
-    "name": "Supported in Block Layout",
-    "description": "Supported in Block Layout",
+    "id": "mdn-css.properties.align-content.center",
+    "name": "align-content: Center",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.73,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.align-content.context_block",
+    "name": "Supported in block layout",
+    "description": "Supported in block layout",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -31744,9 +31920,9 @@
     "baseline": "low"
   },
   {
-    "id": "mdn-css.properties.align-content.multicol_context",
-    "name": "Supported in Multi-column Layout",
-    "description": "Supported in Multi-column Layout",
+    "id": "mdn-css.properties.align-content.context_multicol",
+    "name": "Supported in multi-column layout",
+    "description": "Supported in multi-column layout",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -31760,9 +31936,185 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-css.properties.align-self.position_absolute_context",
-    "name": "Supported for absolutely-positioned boxes",
-    "description": "Supported for absolutely-positioned boxes",
+    "id": "mdn-css.properties.align-content.flex-end",
+    "name": "align-content: flex-end",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.73,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.align-content.flex-start",
+    "name": "align-content: flex-start",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.73,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.align-content.space-around",
+    "name": "align-content: space-around",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.37,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.align-content.space-between",
+    "name": "align-content: space-between",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.37,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.align-items.flex-end",
+    "name": "align-items: flex-end",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.73,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.align-items.flex-start",
+    "name": "align-items: flex-start",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.73,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.align-items.normal",
+    "name": "align-items: Normal",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.52,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.align-items.self-end",
+    "name": "align-items: self-end",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.18,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.align-items.self-start",
+    "name": "align-items: self-start",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.18,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.align-items.stretch",
+    "name": "align-items: Stretch",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.39,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.align-self.center",
+    "name": "align-self: Center",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.73,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.align-self.context_position_absolute",
+    "name": "Supported in absolutely-positioned boxes",
+    "description": "Supported in absolutely-positioned boxes",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -31774,6 +32126,70 @@
     },
     "usage": 85.6,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-css.properties.align-self.flex-end",
+    "name": "align-self: flex-end",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.73,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.align-self.flex-start",
+    "name": "align-self: flex-start",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.73,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.align-self.self-end",
+    "name": "align-self: self-end",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.18,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.align-self.self-start",
+    "name": "align-self: self-start",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 93.18,
+    "baseline": false
   },
   {
     "id": "mdn-css.properties.alignment-baseline",
@@ -32864,22 +33280,6 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-css.properties.border-image-source.none",
-    "name": "border-image-source: None",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.52,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.border-shape",
     "name": "border-shape",
     "description": "The border-shape CSS property sets the geometry of the border box, changing the shape of any applicable border, border i",
@@ -33360,22 +33760,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.color-interpolation.linearRGB",
-    "name": "`linearRGB` value",
-    "description": "`linearRGB` value",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.color-rendering",
     "name": "`color-rendering`",
     "description": "",
@@ -33533,22 +33917,6 @@
       "an_chr": "y"
     },
     "usage": 67.76,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.columns.auto",
-    "name": "columns: Auto",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.4,
     "baseline": false
   },
   {
@@ -41089,8 +41457,8 @@
   },
   {
     "id": "mdn-css.properties.scroll-axis-lock",
-    "name": "`scroll-axis-lock`",
-    "description": "",
+    "name": "scroll-axis-lock",
+    "description": "The scroll-axis-lock property controls whether scrolling is locked to one dimension at a time or freely follows movement",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -41197,6 +41565,22 @@
       "an_chr": "y"
     },
     "usage": 93.23,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.scroll-snap-type.pair",
+    "name": "scroll-snap-type: Pair",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 42.79,
     "baseline": false
   },
   {
@@ -42178,55 +42562,7 @@
   {
     "id": "mdn-css.properties.text-decoration-skip-spaces.all",
     "name": "text-decoration-skip-spaces: All",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.81,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.text-decoration-skip-spaces.end",
-    "name": "text-decoration-skip-spaces: End",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.81,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.text-decoration-skip-spaces.none",
-    "name": "text-decoration-skip-spaces: None",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.81,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.text-decoration-skip-spaces.start",
-    "name": "text-decoration-skip-spaces: Start",
-    "description": "",
+    "description": "The text-decoration-skip-spaces CSS property sets whether text decoration lines (such as underlines and overlines) skip ",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -43136,8 +43472,40 @@
     "baseline": "low"
   },
   {
-    "id": "mdn-css.properties.view-transition-group",
-    "name": "`view-transition-group`",
+    "id": "mdn-css.properties.view-transition-group.contain",
+    "name": "view-transition-group: Contain",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 68.57,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.view-transition-group.nearest",
+    "name": "view-transition-group: Nearest",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 68.57,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.view-transition-group.normal",
+    "name": "view-transition-group: Normal",
     "description": "",
     "category": "CSS",
     "support": {
@@ -44344,11 +44712,11 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 69.46,
+    "usage": 42.79,
     "baseline": false
   },
   {
@@ -44512,6 +44880,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-css.selectors.view-transition-group-children",
+    "name": "`::view-transition-group-children()`",
+    "description": "`::view-transition-group-children()`",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 68.57,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.selectors.where",
     "name": ":where()",
     "description": "`:where()`",
@@ -44605,6 +44989,22 @@
       "an_chr": "n"
     },
     "usage": 1.72,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.types.attr.raw-string",
+    "name": "`raw-string`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 88.48,
     "baseline": false
   },
   {
@@ -44710,13 +45110,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 81.94,
+    "usage": 82.35,
     "baseline": false
   },
   {
@@ -45432,11 +45832,11 @@
       "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.33,
+    "usage": 58.66,
     "baseline": false
   },
   {
@@ -45448,11 +45848,11 @@
       "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.33,
+    "usage": 58.66,
     "baseline": false
   },
   {
@@ -45480,11 +45880,11 @@
       "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 85.33,
+    "usage": 58.66,
     "baseline": false
   },
   {
@@ -47344,6 +47744,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-html.elements.script.type.module.http_errors_not_cached",
+    "name": "Loading is retriable (HTTP errors are not cached)",
+    "description": "Loading is retriable (HTTP errors are not cached)",
+    "category": "HTML5",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 62.15,
+    "baseline": false
+  },
+  {
     "id": "mdn-html.elements.search",
     "name": "<search>",
     "description": "The <search> HTML element is a container that represents the parts of the web page with search functionality.",
@@ -47485,6 +47901,38 @@
       "an_chr": "y"
     },
     "usage": 83.77,
+    "baseline": false
+  },
+  {
+    "id": "mdn-html.elements.textarea.wrap.off",
+    "name": "`off` value",
+    "description": "`off` value",
+    "category": "HTML5",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.73,
+    "baseline": false
+  },
+  {
+    "id": "mdn-html.elements.textarea.wrap.soft",
+    "name": "`soft` value",
+    "description": "`soft` value",
+    "category": "HTML5",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.73,
     "baseline": false
   },
   {
@@ -49056,22 +49504,6 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-http.headers.Upgrade",
-    "name": "Upgrade",
-    "description": "",
-    "category": "Other",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.74,
-    "baseline": false
-  },
-  {
     "id": "mdn-http.headers.Warning",
     "name": "Warning",
     "description": "",
@@ -49122,7 +49554,7 @@
   {
     "id": "mdn-http.headers.X-Frame-Options",
     "name": "X-Frame-Options",
-    "description": "",
+    "description": "The X-Frame-Options HTTP header limits where a document may be embedded in an iframe. The X-Frame-Options: SAMEORIGIN he",
     "category": "Other",
     "support": {
       "chr": "y",
@@ -49133,39 +49565,7 @@
       "an_chr": "y"
     },
     "usage": 95.75,
-    "baseline": false
-  },
-  {
-    "id": "mdn-http.headers.X-Frame-Options.DENY",
-    "name": "`DENY` value",
-    "description": "`DENY` value",
-    "category": "Other",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.75,
-    "baseline": false
-  },
-  {
-    "id": "mdn-http.headers.X-Frame-Options.SAMEORIGIN",
-    "name": "`SAMEORIGIN` value",
-    "description": "`SAMEORIGIN` value",
-    "category": "Other",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.75,
-    "baseline": false
+    "baseline": "high"
   },
   {
     "id": "mdn-http.headers.X-XSS-Protection",
@@ -50321,8 +50721,8 @@
   },
   {
     "id": "mdn-javascript.builtins.Iterator.includes",
-    "name": "`Iterator.includes()`",
-    "description": "",
+    "name": "Iterator includes()",
+    "description": "The includes() method of an Iterator object returns true when an item yielded by the iterator is the same as a given val",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -50369,8 +50769,8 @@
   },
   {
     "id": "mdn-javascript.builtins.Iterator.zipKeyed",
-    "name": "`Iterator.zipKeyed()`",
-    "description": "",
+    "name": "Iterator.zip() and Iterator.zipKeyed()",
+    "description": "The Iterator.zip() and Iterator.zipKeyed() static methods return new iterators that aggregate items from multiple iterab",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -50896,6 +51296,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-javascript.builtins.String.substr",
+    "name": "String substr()",
+    "description": "The substr() method of strings returns part of a string, starting from an index and ending a given number of characters ",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.75,
+    "baseline": false
+  },
+  {
     "id": "mdn-javascript.builtins.String.trimEnd",
     "name": "String trimStart() and trimEnd()",
     "description": "The trimStart() and trimEnd() methods of strings return a new string with whitespace removed from the beginning or end o",
@@ -51405,6 +51821,22 @@
       "an_chr": "y"
     },
     "usage": 72.72,
+    "baseline": false
+  },
+  {
+    "id": "mdn-svg.elements.textPath.method",
+    "name": "`<textPath> (SVG)`",
+    "description": "",
+    "category": "SVG",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.53,
     "baseline": false
   },
   {

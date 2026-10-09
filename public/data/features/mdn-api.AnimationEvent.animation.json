@@ -1,10 +1,10 @@
 {
   "id": "mdn-api.AnimationEvent.animation",
   "source": "mdnbcd",
-  "name": "AnimationEvent.animation",
-  "description": "",
+  "name": "Animation accessors",
+  "description": "The animation property of an AnimationEvent or TransitionEvent object is the Animation object that represents the animation (and thus the element) that fired an animation event.",
   "category": "JS API",
-  "mdn": "https://developer.mozilla.org/docs/Web/API/AnimationEvent/animation",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/TransitionEvent/animation",
   "links": [],
   "support": {
     "chr": {
@@ -70,13 +70,24 @@
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
       "id": "api.AnimationEvent.animation"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.TransitionEvent.animation",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "animations-css-animation-accessors",
+        "matched": "exact"
+      }
+    ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=AnimationEvent.animation"
+  "caniuseUrl": "https://caniuse.com/?search=Animation%20accessors"
 }

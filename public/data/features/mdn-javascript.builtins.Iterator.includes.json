@@ -1,8 +1,8 @@
 {
   "id": "mdn-javascript.builtins.Iterator.includes",
   "source": "mdnbcd",
-  "name": "`Iterator.includes()`",
-  "description": "",
+  "name": "Iterator includes()",
+  "description": "The includes() method of an Iterator object returns true when an item yielded by the iterator is the same as a given value. It's similar to the includes() method of arrays.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Iterator/includes",
   "links": [],
@@ -75,7 +75,13 @@
       "source": "mdnbcd",
       "id": "javascript.builtins.Iterator.includes"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "iterator-includes",
+        "matched": "exact"
+      }
+    ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60Iterator.includes()%60"
+  "caniuseUrl": "https://caniuse.com/?search=Iterator%20includes()"
 }

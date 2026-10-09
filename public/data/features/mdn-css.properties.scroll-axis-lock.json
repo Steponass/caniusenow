@@ -1,8 +1,8 @@
 {
   "id": "mdn-css.properties.scroll-axis-lock",
   "source": "mdnbcd",
-  "name": "`scroll-axis-lock`",
-  "description": "",
+  "name": "scroll-axis-lock",
+  "description": "The scroll-axis-lock property controls whether scrolling is locked to one dimension at a time or freely follows movement in two dimensions. By default, browsers may lock the scroll axis, ignoring minor perpendicular scrolling, when scrolling is nearly vertical or horizontal.",
   "category": "CSS",
   "links": [],
   "support": {
@@ -73,8 +73,13 @@
         "source": "mdnbcd",
         "id": "css.properties.scroll-axis-lock.none",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "scroll-axis-lock",
+        "matched": "exact"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60scroll-axis-lock%60"
+  "caniuseUrl": "https://caniuse.com/?search=scroll-axis-lock"
 }

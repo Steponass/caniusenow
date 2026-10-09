@@ -1,8 +1,8 @@
 {
   "id": "mdn-javascript.builtins.Iterator.zipKeyed",
   "source": "mdnbcd",
-  "name": "`Iterator.zipKeyed()`",
-  "description": "",
+  "name": "Iterator.zip() and Iterator.zipKeyed()",
+  "description": "The Iterator.zip() and Iterator.zipKeyed() static methods return new iterators that aggregate items from multiple iterables. You can use them to iterate jointly, to get all of the items at the same position in each iterable.",
   "category": "JS API",
   "mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Iterator/zipKeyed",
   "links": [],
@@ -75,7 +75,13 @@
       "source": "mdnbcd",
       "id": "javascript.builtins.Iterator.zipKeyed"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "iterator-zip-zipkeyed",
+        "matched": "exact"
+      }
+    ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60Iterator.zipKeyed()%60"
+  "caniuseUrl": "https://caniuse.com/?search=Iterator.zip()%20and%20Iterator.zipKeyed()"
 }

@@ -2,7 +2,7 @@
   "id": "mdn-http.headers.X-Frame-Options",
   "source": "mdnbcd",
   "name": "X-Frame-Options",
-  "description": "",
+  "description": "The X-Frame-Options HTTP header limits where a document may be embedded in an iframe. The X-Frame-Options: SAMEORIGIN header disallows embedding in another origin. The X-Frame-Options: DENY header disallows embedding in any context, regardless of origin.",
   "category": "Other",
   "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/X-Frame-Options",
   "links": [],
@@ -72,13 +72,29 @@
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "high",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
       "id": "http.headers.X-Frame-Options"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.X-Frame-Options.DENY",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.X-Frame-Options.SAMEORIGIN",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "x-frame-options",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=X-Frame-Options"
 }

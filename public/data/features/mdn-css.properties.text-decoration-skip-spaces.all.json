@@ -2,13 +2,17 @@
   "id": "mdn-css.properties.text-decoration-skip-spaces.all",
   "source": "mdnbcd",
   "name": "text-decoration-skip-spaces: All",
-  "description": "",
+  "description": "The text-decoration-skip-spaces CSS property sets whether text decoration lines (such as underlines and overlines) skip over whitespace characters. You can use this to prevent decorations from being drawn under spaces, which is sometimes more visually appealing.",
   "category": "CSS",
   "links": [],
   "support": {
     "chr": {
       "current": "y",
       "firstFull": "155"
+    },
+    "opr": {
+      "current": "y",
+      "firstFull": "139"
     },
     "ffx": {
       "current": "n"
@@ -18,10 +22,6 @@
     },
     "edg": {
       "current": "n"
-    },
-    "opr": {
-      "current": "y",
-      "firstFull": "155"
     },
     "ie": {
       "current": "n"
@@ -63,7 +63,28 @@
       "source": "mdnbcd",
       "id": "css.properties.text-decoration-skip-spaces.all"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-decoration-skip-spaces.end",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-decoration-skip-spaces.none",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.text-decoration-skip-spaces.start",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "text-decoration-skip-spaces",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=text-decoration-skip-spaces%3A%20All"
 }
