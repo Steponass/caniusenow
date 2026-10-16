@@ -1,8 +1,8 @@
 {
   "id": "mdn-css.types.global_keywords.revert-rule",
   "source": "mdnbcd",
-  "name": "`revert-rule`",
-  "description": "",
+  "name": "revert-rule",
+  "description": "The revert-rule CSS keyword resets a property to its previous value in the cascade, as if the current style rule had not been present. It's especially useful with conditionals, to cancel a declaration when the condition is not met.",
   "category": "CSS",
   "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/revert-rule",
   "links": [],
@@ -70,13 +70,19 @@
     },
     "type": "estimated"
   },
-  "baseline": false,
+  "baseline": "low",
   "sourceData": {
     "primary": {
       "source": "mdnbcd",
       "id": "css.types.global_keywords.revert-rule"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "revert-rule",
+        "matched": "exact"
+      }
+    ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60revert-rule%60"
+  "caniuseUrl": "https://caniuse.com/?search=revert-rule"
 }

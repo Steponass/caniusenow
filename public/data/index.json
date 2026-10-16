@@ -9041,8 +9041,8 @@
   },
   {
     "id": "mdn-api.AnimationTrigger",
-    "name": "AnimationTrigger",
-    "description": "",
+    "name": "Scroll-triggered animations",
+    "description": "Scroll-triggered animations start and stop CSS animations when an element is within or outside a scrolling range. It's a",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -11600,22 +11600,6 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-api.DOMParser.parseFromString.enforces_trusted_types",
-    "name": "Requires `TrustedHTML` instance when trusted types are enforced",
-    "description": "Requires `TrustedHTML` instance when trusted types are enforced",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 88.41,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.DataCue",
     "name": "DataCue",
     "description": "",
@@ -12448,6 +12432,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.Document.execCommand.insertHTML.enforces_trusted_types",
+    "name": "Requires `TrustedHTML` instance when trusted types are enforced",
+    "description": "Requires `TrustedHTML` instance when trusted types are enforced",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 89.06,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.Document.execCommand.paste",
     "name": "`paste` command",
     "description": "`paste` command",
@@ -13024,6 +13024,38 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.EXT_polygon_offset_clamp",
+    "name": "EXT_polygon_offset_clamp",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 86.96,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.EXT_polygon_offset_clamp.polygonOffsetClampEXT",
+    "name": "EXT_polygon_offset_clamp.polygonOffsetClampEXT",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 86.96,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.EXT_sRGB",
     "name": "EXT_sRGB WebGL extension",
     "description": "The EXT_sRGB extension for WebGL 1.0 contexts adds sRGB support to textures and framebuffer objects.",
@@ -13110,13 +13142,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 90.21,
+    "usage": 92.93,
     "baseline": false
   },
   {
@@ -18625,8 +18657,8 @@
   },
   {
     "id": "mdn-api.HTMLSourceElement",
-    "name": "HTMLSourceElement",
-    "description": "",
+    "name": "<source>",
+    "description": "The <source> element sets a media resource for the <picture>, <video>, and <audio> elements.",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -18637,7 +18669,7 @@
       "an_chr": "y"
     },
     "usage": 95.75,
-    "baseline": false
+    "baseline": "high"
   },
   {
     "id": "mdn-api.HTMLSpanElement",
@@ -19904,358 +19936,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.MLContext.createConstantTensor",
-    "name": "MLContext.createConstantTensor",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLContext.createTensor",
-    "name": "MLContext.createTensor",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLContext.destroy",
-    "name": "MLContext.destroy",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLContext.lost",
-    "name": "MLContext.lost",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLContext.readTensor",
-    "name": "MLContext.readTensor",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLContext.writeTensor",
-    "name": "MLContext.writeTensor",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLGraph.destroy",
-    "name": "MLGraph.destroy",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLGraphBuilder.gelu",
-    "name": "MLGraphBuilder.gelu",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLGraphBuilder.isInfinite",
-    "name": "MLGraphBuilder.isInfinite",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLGraphBuilder.isNaN",
-    "name": "MLGraphBuilder.isNaN",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLGraphBuilder.notEqual",
-    "name": "MLGraphBuilder.notEqual",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLGraphBuilder.reverse",
-    "name": "MLGraphBuilder.reverse",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLGraphBuilder.roundEven",
-    "name": "MLGraphBuilder.roundEven",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLOperand.dataType",
-    "name": "MLOperand.dataType",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLOperand.shape",
-    "name": "MLOperand.shape",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLTensor",
-    "name": "MLTensor",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLTensor.constant",
-    "name": "MLTensor.constant",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLTensor.dataType",
-    "name": "MLTensor.dataType",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLTensor.destroy",
-    "name": "MLTensor.destroy",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLTensor.readable",
-    "name": "MLTensor.readable",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLTensor.shape",
-    "name": "MLTensor.shape",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MLTensor.writable",
-    "name": "MLTensor.writable",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.Magnetometer.Magnetometer",
     "name": "`Magnetometer()` constructor",
     "description": "`Magnetometer()` constructor",
@@ -20413,262 +20093,6 @@
       "an_chr": "a"
     },
     "usage": 68.46,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MediaDevices.getSupportedConstraints.return_object_property_aspectRatio",
-    "name": "`aspectRatio` property in returned object",
-    "description": "`aspectRatio` property in returned object",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 90.68,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MediaDevices.getSupportedConstraints.return_object_property_autoGainControl",
-    "name": "`autoGainControl` property in returned object",
-    "description": "`autoGainControl` property in returned object",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 75.74,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MediaDevices.getSupportedConstraints.return_object_property_channelCount",
-    "name": "`channelCount` property in returned object",
-    "description": "`channelCount` property in returned object",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 75.75,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MediaDevices.getSupportedConstraints.return_object_property_deviceId",
-    "name": "`deviceId` property in returned object",
-    "description": "`deviceId` property in returned object",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.4,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MediaDevices.getSupportedConstraints.return_object_property_echoCancellation",
-    "name": "`echoCancellation` property in returned object",
-    "description": "`echoCancellation` property in returned object",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.33,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MediaDevices.getSupportedConstraints.return_object_property_facingMode",
-    "name": "`facingMode` property in returned object",
-    "description": "`facingMode` property in returned object",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.4,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MediaDevices.getSupportedConstraints.return_object_property_frameRate",
-    "name": "`frameRate` property in returned object",
-    "description": "`frameRate` property in returned object",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.4,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MediaDevices.getSupportedConstraints.return_object_property_groupId",
-    "name": "`groupId` property in returned object",
-    "description": "`groupId` property in returned object",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 90.14,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MediaDevices.getSupportedConstraints.return_object_property_height",
-    "name": "`height` property in returned object",
-    "description": "`height` property in returned object",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.4,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MediaDevices.getSupportedConstraints.return_object_property_latency",
-    "name": "`latency` property in returned object",
-    "description": "`latency` property in returned object",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.04,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MediaDevices.getSupportedConstraints.return_object_property_noiseSuppression",
-    "name": "`noiseSuppression` property in returned object",
-    "description": "`noiseSuppression` property in returned object",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 75.74,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MediaDevices.getSupportedConstraints.return_object_property_resizeMode",
-    "name": "`resizeMode` property in returned object",
-    "description": "`resizeMode` property in returned object",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 75.06,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MediaDevices.getSupportedConstraints.return_object_property_sampleRate",
-    "name": "`sampleRate` property in returned object",
-    "description": "`sampleRate` property in returned object",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 87.43,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MediaDevices.getSupportedConstraints.return_object_property_sampleSize",
-    "name": "`sampleSize` property in returned object",
-    "description": "`sampleSize` property in returned object",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 87.43,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MediaDevices.getSupportedConstraints.return_object_property_width",
-    "name": "`width` property in returned object",
-    "description": "`width` property in returned object",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.4,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MediaDevices.getUserMedia.constraints_resizeMode_parameter",
-    "name": "`constraints.resizeMode` parameter",
-    "description": "`constraints.resizeMode` parameter",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 75.06,
     "baseline": false
   },
   {
@@ -21554,38 +20978,6 @@
   {
     "id": "mdn-api.MouseEvent.initMouseEvent",
     "name": "MouseEvent.initMouseEvent",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.75,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MouseEvent.layerX",
-    "name": "MouseEvent.layerX",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.75,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.MouseEvent.layerY",
-    "name": "MouseEvent.layerY",
     "description": "",
     "category": "JS API",
     "support": {
@@ -23120,6 +22512,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.PaymentRequest.show.returns_OperationError",
+    "name": "Internal payment app errors surfaced as `OperationError`",
+    "description": "Internal payment app errors surfaced as `OperationError`",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 66.93,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.Performance.interactionCount",
     "name": "Performance.interactionCount",
     "description": "",
@@ -23629,6 +23037,22 @@
       "an_chr": "y"
     },
     "usage": 73.03,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Permissions.permission_idle-detection",
+    "name": "`idle-detection` permission",
+    "description": "`idle-detection` permission",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 72.94,
     "baseline": false
   },
   {
@@ -24896,6 +24320,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.RTCEncodedVideoFrame.getMetadata.return_object_property_height",
+    "name": "`height` property in returned object",
+    "description": "`height` property in returned object",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 85.21,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.RTCEncodedVideoFrame.getMetadata.return_object_property_spatialIndex",
     "name": "`spatialIndex` property in returned object",
     "description": "`spatialIndex` property in returned object",
@@ -24915,6 +24355,22 @@
     "id": "mdn-api.RTCEncodedVideoFrame.getMetadata.return_object_property_temporalIndex",
     "name": "`temporalIndex` property in returned object",
     "description": "`temporalIndex` property in returned object",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 85.21,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.RTCEncodedVideoFrame.getMetadata.return_object_property_width",
+    "name": "`width` property in returned object",
+    "description": "`width` property in returned object",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -25085,6 +24541,22 @@
       "an_chr": "y"
     },
     "usage": 95.48,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.RTCPeerConnection.cancelDiagnosticLogging_static",
+    "name": "`cancelDiagnosticLogging()` static method",
+    "description": "`cancelDiagnosticLogging()` static method",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 42.79,
     "baseline": false
   },
   {
@@ -25261,6 +24733,38 @@
       "an_chr": "n"
     },
     "usage": 8.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.RTCPeerConnection.startDiagnosticLogging_static",
+    "name": "`startDiagnosticLogging()` static method",
+    "description": "`startDiagnosticLogging()` static method",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 42.79,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.RTCPeerConnection.stopDiagnosticLogging_static",
+    "name": "`stopDiagnosticLogging()` static method",
+    "description": "`stopDiagnosticLogging()` static method",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 42.79,
     "baseline": false
   },
   {
@@ -25782,13 +25286,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 72.72,
+    "usage": 75.44,
     "baseline": false
   },
   {
@@ -25798,13 +25302,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 72.72,
+    "usage": 75.44,
     "baseline": false
   },
   {
@@ -27904,6 +27408,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.WGSLLanguageFeatures.extension_immediate_address_space",
+    "name": "`immediate_address_space` extension",
+    "description": "`immediate_address_space` extension",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 66.66,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.WGSLLanguageFeatures.extension_linear_indexing",
     "name": "`linear_indexing` extension",
     "description": "`linear_indexing` extension",
@@ -28261,14 +27781,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 17.64,
+    "usage": 87.1,
     "baseline": false
   },
   {
@@ -30128,6 +29648,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.console.context_static",
+    "name": "`context()` static method",
+    "description": "`context()` static method",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 73.03,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.console.dir_static.options_colors_parameter",
     "name": "`options.colors` parameter",
     "description": "`options.colors` parameter",
@@ -31888,22 +31424,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.align-content.center",
-    "name": "align-content: Center",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.73,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.align-content.context_block",
     "name": "Supported in block layout",
     "description": "Supported in block layout",
@@ -31968,38 +31488,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.align-content.space-around",
-    "name": "align-content: space-around",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.align-content.space-between",
-    "name": "align-content: space-between",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.align-items.flex-end",
     "name": "align-items: flex-end",
     "description": "",
@@ -32018,86 +31506,6 @@
   {
     "id": "mdn-css.properties.align-items.flex-start",
     "name": "align-items: flex-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.73,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.align-items.normal",
-    "name": "align-items: Normal",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.52,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.align-items.self-end",
-    "name": "align-items: self-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.18,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.align-items.self-start",
-    "name": "align-items: self-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.18,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.align-items.stretch",
-    "name": "align-items: Stretch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.align-self.center",
-    "name": "align-self: Center",
     "description": "",
     "category": "CSS",
     "support": {
@@ -32157,38 +31565,6 @@
       "an_chr": "y"
     },
     "usage": 95.73,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.align-self.self-end",
-    "name": "align-self: self-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.18,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.align-self.self-start",
-    "name": "align-self: self-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.18,
     "baseline": false
   },
   {
@@ -32253,38 +31629,6 @@
       "an_chr": "y"
     },
     "usage": 68.8,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.animation.paused",
-    "name": "animation: Paused",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.animation.running",
-    "name": "animation: Running",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
     "baseline": false
   },
   {
@@ -32430,38 +31774,6 @@
     },
     "usage": 93.21,
     "baseline": "high"
-  },
-  {
-    "id": "mdn-css.properties.backface-visibility.hidden",
-    "name": "backface-visibility: Hidden",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.52,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.backface-visibility.visible",
-    "name": "backface-visibility: Visible",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.52,
-    "baseline": false
   },
   {
     "id": "mdn-css.properties.background.background-clip",
@@ -33186,6 +32498,22 @@
   {
     "id": "mdn-css.properties.block-ellipsis",
     "name": "`block-ellipsis`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 17.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.block-ellipsis.ellipsis",
+    "name": "block-ellipsis: Ellipsis",
     "description": "",
     "category": "CSS",
     "support": {
@@ -34240,8 +33568,8 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.continue.auto",
-    "name": "continue: Auto",
+    "id": "mdn-css.properties.continue.discard",
+    "name": "continue: Discard",
     "description": "",
     "category": "CSS",
     "support": {
@@ -34256,8 +33584,8 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.continue.discard",
-    "name": "continue: Discard",
+    "id": "mdn-css.properties.continue.normal",
+    "name": "continue: Normal",
     "description": "",
     "category": "CSS",
     "support": {
@@ -36546,7 +35874,7 @@
   {
     "id": "mdn-css.properties.font-variant.common-ligatures",
     "name": "font-variant: common-ligatures",
-    "description": "",
+    "description": "The font-variant-ligatures CSS property sets how characters can be visually combined for readability or stylistic reason",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -36557,55 +35885,7 @@
       "an_chr": "y"
     },
     "usage": 93.41,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.contextual",
-    "name": "font-variant: Contextual",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.41,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.diagonal-fractions",
-    "name": "font-variant: diagonal-fractions",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.discretionary-ligatures",
-    "name": "font-variant: discretionary-ligatures",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.41,
-    "baseline": false
+    "baseline": "high"
   },
   {
     "id": "mdn-css.properties.font-variant.emoji",
@@ -36626,7 +35906,7 @@
   {
     "id": "mdn-css.properties.font-variant.full-width",
     "name": "font-variant: full-width",
-    "description": "",
+    "description": "The font-variant-east-asian CSS property controls glyph substitution and sizing in East Asian text.",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -36637,199 +35917,7 @@
       "an_chr": "y"
     },
     "usage": 93.38,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.historical-ligatures",
-    "name": "font-variant: historical-ligatures",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.41,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.jis04",
-    "name": "font-variant: Jis04",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.38,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.jis78",
-    "name": "font-variant: Jis78",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.38,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.jis83",
-    "name": "font-variant: Jis83",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.38,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.jis90",
-    "name": "font-variant: Jis90",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.38,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.lining-nums",
-    "name": "font-variant: lining-nums",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.no-common-ligatures",
-    "name": "font-variant: no-common-ligatures",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.41,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.no-contextual",
-    "name": "font-variant: no-contextual",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.41,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.no-discretionary-ligatures",
-    "name": "font-variant: no-discretionary-ligatures",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.41,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.no-historical-ligatures",
-    "name": "font-variant: no-historical-ligatures",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.41,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.oldstyle-nums",
-    "name": "font-variant: oldstyle-nums",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.ordinal",
-    "name": "font-variant: Ordinal",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
+    "baseline": "high"
   },
   {
     "id": "mdn-css.properties.font-variant.petite-caps",
@@ -36848,120 +35936,8 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.font-variant.proportional-nums",
-    "name": "font-variant: proportional-nums",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.proportional-width",
-    "name": "font-variant: proportional-width",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.38,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.ruby",
-    "name": "font-variant: Ruby",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.38,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.simplified",
-    "name": "font-variant: Simplified",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.38,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.slashed-zero",
-    "name": "font-variant: slashed-zero",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.font-variant.small-caps",
     "name": "font-variant: small-caps",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.stacked-fractions",
-    "name": "font-variant: stacked-fractions",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.tabular-nums",
-    "name": "font-variant: tabular-nums",
     "description": "",
     "category": "CSS",
     "support": {
@@ -37005,22 +35981,6 @@
       "an_chr": "y"
     },
     "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant.traditional",
-    "name": "font-variant: Traditional",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.38,
     "baseline": false
   },
   {
@@ -37072,22 +36032,6 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-css.properties.font-variant-east-asian",
-    "name": "font-variant-east-asian",
-    "description": "The font-variant-east-asian CSS property controls glyph substitution and sizing in East Asian text.",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.38,
-    "baseline": "high"
-  },
-  {
     "id": "mdn-css.properties.font-variant-emoji.unicode",
     "name": "font-variant-emoji: Unicode",
     "description": "The font-variant-emoji CSS property sets the default presentation for emoji characters.",
@@ -37102,22 +36046,6 @@
     },
     "usage": 89.39,
     "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.font-variant-ligatures",
-    "name": "font-variant-ligatures",
-    "description": "The font-variant-ligatures CSS property sets how characters can be visually combined for readability or stylistic reason",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.41,
-    "baseline": "high"
   },
   {
     "id": "mdn-css.properties.font-variant-position",
@@ -37856,8 +36784,8 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-css.properties.line-clamp.auto",
-    "name": "line-clamp: Auto",
+    "id": "mdn-css.properties.line-clamp.ellipsis",
+    "name": "line-clamp: Ellipsis",
     "description": "",
     "category": "CSS",
     "support": {
@@ -37943,12 +36871,12 @@
     "support": {
       "chr": "n",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "n",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 2.72,
+    "usage": 20.36,
     "baseline": false
   },
   {
@@ -37975,12 +36903,12 @@
     "support": {
       "chr": "y",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 45.53,
+    "usage": 63.17,
     "baseline": false
   },
   {
@@ -38672,230 +37600,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.mask.add",
-    "name": "mask: Add",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 90.8,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.alpha",
-    "name": "mask: Alpha",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 90.8,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.border-box",
-    "name": "mask: border-box",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.bottom",
-    "name": "mask: Bottom",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.center",
-    "name": "mask: Center",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.content-box",
-    "name": "mask: content-box",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.exclude",
-    "name": "mask: Exclude",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 90.8,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.fill-box",
-    "name": "mask: fill-box",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.intersect",
-    "name": "mask: Intersect",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 90.8,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.left",
-    "name": "mask: Left",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.luminance",
-    "name": "mask: Luminance",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "a",
-      "edg": "y",
-      "ios_saf": "a",
-      "an_chr": "y"
-    },
-    "usage": 90.8,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.match-source",
-    "name": "mask: match-source",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 90.8,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.no-clip",
-    "name": "mask: no-clip",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.no-repeat",
-    "name": "mask: no-repeat",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.mask.none",
     "name": "mask: None",
     "description": "",
@@ -38909,150 +37613,6 @@
       "an_chr": "y"
     },
     "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.padding-box",
-    "name": "mask: padding-box",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.repeat",
-    "name": "mask: Repeat",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.right",
-    "name": "mask: Right",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.round",
-    "name": "mask: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.space",
-    "name": "mask: Space",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.stroke-box",
-    "name": "mask: stroke-box",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.subtract",
-    "name": "mask: Subtract",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 90.8,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.top",
-    "name": "mask: Top",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask.view-box",
-    "name": "mask: view-box",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.31,
     "baseline": false
   },
   {
@@ -39120,87 +37680,7 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.mask-border.none",
-    "name": "mask-border: None",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 92.81,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-border.repeat",
-    "name": "mask-border: Repeat",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 92.81,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-border.round",
-    "name": "mask-border: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 92.81,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-border.space",
-    "name": "mask-border: Space",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 92.81,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-border.stretch",
-    "name": "mask-border: Stretch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 92.81,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-border-outset",
+    "id": "mdn-css.properties.mask-border",
     "name": "mask-border",
     "description": "The mask-border CSS property sets how the edges of an element are masked. It is a shorthand for mask-border-outset, mask",
     "category": "CSS",
@@ -39216,296 +37696,8 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.mask-border-repeat.stretch",
-    "name": "mask-border-repeat: Stretch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 92.81,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-border-source.none",
-    "name": "mask-border-source: None",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 92.81,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-border-width.auto",
-    "name": "mask-border-width: Auto",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 92.81,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-clip.border-box",
-    "name": "mask-clip: border-box",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-clip.content-box",
-    "name": "mask-clip: content-box",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-clip.fill-box",
-    "name": "mask-clip: fill-box",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-clip.no-clip",
-    "name": "mask-clip: no-clip",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-clip.padding-box",
-    "name": "mask-clip: padding-box",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-clip.stroke-box",
-    "name": "mask-clip: stroke-box",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-clip.view-box",
-    "name": "mask-clip: view-box",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.31,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.mask-image.none",
     "name": "mask-image: None",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-origin.border-box",
-    "name": "mask-origin: border-box",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-origin.content-box",
-    "name": "mask-origin: content-box",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-origin.padding-box",
-    "name": "mask-origin: padding-box",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 73.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-position.bottom",
-    "name": "mask-position: Bottom",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-position.center",
-    "name": "mask-position: Center",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-position.left",
-    "name": "mask-position: Left",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-position.right",
-    "name": "mask-position: Right",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-position.top",
-    "name": "mask-position: Top",
     "description": "",
     "category": "CSS",
     "support": {
@@ -39581,118 +37773,6 @@
       "an_chr": "n"
     },
     "usage": 13.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-repeat.no-repeat",
-    "name": "mask-repeat: no-repeat",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-repeat.repeat",
-    "name": "mask-repeat: Repeat",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-repeat.round",
-    "name": "mask-repeat: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-repeat.space",
-    "name": "mask-repeat: Space",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-size.auto",
-    "name": "mask-size: Auto",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-size.contain",
-    "name": "mask-size: Contain",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.mask-size.cover",
-    "name": "mask-size: Cover",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
     "baseline": false
   },
   {
@@ -39840,8 +37920,200 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.max-lines.none",
-    "name": "max-lines: None",
+    "id": "mdn-css.properties.max-lines.auto",
+    "name": "max-lines: Auto",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 17.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.max-size",
+    "name": "`max-size`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 17.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.max-size.fit-content",
+    "name": "max-size: fit-content",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 17.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.max-size.max-content",
+    "name": "max-size: max-content",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 17.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.max-size.min-content",
+    "name": "max-size: min-content",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 17.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.max-size.none",
+    "name": "max-size: None",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 17.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.max-size.stretch",
+    "name": "max-size: Stretch",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 17.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.min-size",
+    "name": "`min-size`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 17.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.min-size.auto",
+    "name": "min-size: Auto",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 17.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.min-size.fit-content",
+    "name": "min-size: fit-content",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 17.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.min-size.max-content",
+    "name": "min-size: max-content",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 17.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.min-size.min-content",
+    "name": "min-size: min-content",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 17.64,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.min-size.stretch",
+    "name": "min-size: Stretch",
     "description": "",
     "category": "CSS",
     "support": {
@@ -41237,14 +39509,14 @@
     "description": "The position-visibility: anchors-valid and position-visibility: anchors-visible CSS declarations are aliases for anchor-",
     "category": "CSS",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 15.19,
+    "usage": 84.65,
     "baseline": false
   },
   {
@@ -41826,70 +40098,6 @@
   {
     "id": "mdn-css.properties.size",
     "name": "`size`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "n"
-    },
-    "usage": 17.64,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.size.auto",
-    "name": "size: Auto",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "n"
-    },
-    "usage": 17.64,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.size.max-content",
-    "name": "size: max-content",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "n"
-    },
-    "usage": 17.64,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.size.min-content",
-    "name": "size: min-content",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "n"
-    },
-    "usage": 17.64,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.size.stretch",
-    "name": "size: Stretch",
     "description": "",
     "category": "CSS",
     "support": {
@@ -42501,14 +40709,14 @@
     "description": "",
     "category": "CSS",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 19.69,
+    "usage": 89.15,
     "baseline": false
   },
   {
@@ -43024,102 +41232,6 @@
     "baseline": "low"
   },
   {
-    "id": "mdn-css.properties.timeline-trigger",
-    "name": "`timeline-trigger`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 67.68,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.timeline-trigger-activation-range",
-    "name": "`timeline-trigger-activation-range`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 67.68,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.timeline-trigger-active-range",
-    "name": "`timeline-trigger-active-range`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 67.68,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.timeline-trigger-name.none",
-    "name": "timeline-trigger-name: None",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 67.68,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.timeline-trigger-source.auto",
-    "name": "timeline-trigger-source: Auto",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 67.68,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.timeline-trigger-source.none",
-    "name": "timeline-trigger-source: None",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 67.68,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.transform-box",
     "name": "transform-box",
     "description": "The transform-box CSS property sets the position and dimensions of the reference box relative to which an element's tran",
@@ -43134,38 +41246,6 @@
     },
     "usage": 93.36,
     "baseline": "low"
-  },
-  {
-    "id": "mdn-css.properties.transform-style.flat",
-    "name": "transform-style: Flat",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.52,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.transform-style.preserve-3d",
-    "name": "transform-style: preserve-3d",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.52,
-    "baseline": false
   },
   {
     "id": "mdn-css.properties.transition.allow-discrete",
@@ -43248,22 +41328,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.trigger-scope",
-    "name": "`trigger-scope`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 67.68,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.user-modify",
     "name": "`user-modify`",
     "description": "",
@@ -43293,22 +41357,6 @@
       "an_chr": "y"
     },
     "usage": 92.81,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.vector-effect.none",
-    "name": "vector-effect: None",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
     "baseline": false
   },
   {
@@ -44480,6 +42528,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-css.selectors.field-content",
+    "name": "`::field-content`",
+    "description": "`::field-content`",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 0.02,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.selectors.file-selector-button",
     "name": "::file-selector-button",
     "description": "`::file-selector-button`",
@@ -45164,7 +43228,7 @@
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 68.42,
+    "usage": 65.31,
     "baseline": "low"
   },
   {
@@ -45232,22 +43296,6 @@
     "baseline": "low"
   },
   {
-    "id": "mdn-css.types.color.currentcolor",
-    "name": "`currentcolor` keyword",
-    "description": "`currentcolor` keyword",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.75,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.types.color.from_currentcolor",
     "name": "`from currentColor` relative color syntax",
     "description": "`from currentColor` relative color syntax",
@@ -45261,6 +43309,22 @@
       "an_chr": "y"
     },
     "usage": 87.81,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.types.color.hsla",
+    "name": "`hsla()` (HSL color model)",
+    "description": "`hsla()` (HSL color model)",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.53,
     "baseline": false
   },
   {
@@ -45553,8 +43617,8 @@
   },
   {
     "id": "mdn-css.types.global_keywords.revert-rule",
-    "name": "`revert-rule`",
-    "description": "",
+    "name": "revert-rule",
+    "description": "The revert-rule CSS keyword resets a property to its previous value in the cascade, as if the current style rule had not",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -45565,7 +43629,7 @@
       "an_chr": "y"
     },
     "usage": 69.99,
-    "baseline": false
+    "baseline": "low"
   },
   {
     "id": "mdn-css.types.gradient",
@@ -45744,22 +43808,6 @@
     "baseline": "low"
   },
   {
-    "id": "mdn-css.types.line-width",
-    "name": "`&lt;line-width&gt;`",
-    "description": "`&lt;line-width&gt;`",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.75,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.types.mod",
     "name": "round(), mod(), and rem()",
     "description": "`mod()`",
@@ -45885,6 +43933,22 @@
       "an_chr": "y"
     },
     "usage": 58.66,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.types.random-item",
+    "name": "`random-item()`",
+    "description": "`random-item()`",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 17.64,
     "baseline": false
   },
   {
@@ -47824,22 +45888,6 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-html.elements.source",
-    "name": "<source>",
-    "description": "The <source> element sets a media resource for the <picture>, <video>, and <audio> elements.",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.75,
-    "baseline": "high"
-  },
-  {
     "id": "mdn-html.elements.strike",
     "name": "`<strike>`",
     "description": "",
@@ -47901,38 +45949,6 @@
       "an_chr": "y"
     },
     "usage": 83.77,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.textarea.wrap.off",
-    "name": "`off` value",
-    "description": "`off` value",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.73,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.elements.textarea.wrap.soft",
-    "name": "`soft` value",
-    "description": "`soft` value",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.73,
     "baseline": false
   },
   {
@@ -48083,22 +46099,6 @@
     "id": "mdn-html.global_attributes.data_attributes",
     "name": "`data-*` attributes",
     "description": "`data-*` attributes",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.74,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.global_attributes.draggable",
-    "name": "`draggable`",
-    "description": "",
     "category": "HTML5",
     "support": {
       "chr": "y",
@@ -48560,22 +46560,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-http.headers.Content-Security-Policy.script-src.trusted-types-eval",
-    "name": "`trusted-types-eval` source expression",
-    "description": "`trusted-types-eval` source expression",
-    "category": "Other",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 83.17,
-    "baseline": false
-  },
-  {
     "id": "mdn-http.headers.Critical-CH",
     "name": "Critical-CH",
     "description": "",
@@ -48845,22 +46829,6 @@
       "an_chr": "y"
     },
     "usage": 69.79,
-    "baseline": false
-  },
-  {
-    "id": "mdn-http.headers.Permissions-Policy.aria-notify",
-    "name": "`aria-notify`",
-    "description": "",
-    "category": "Other",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.46,
     "baseline": false
   },
   {
@@ -50231,12 +48199,12 @@
     "support": {
       "chr": "y",
       "ffx": "y",
-      "saf": "a",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "a",
+      "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 86.93,
+    "usage": 89.05,
     "baseline": false
   },
   {
@@ -50558,86 +48526,6 @@
     },
     "usage": 92.71,
     "baseline": "low"
-  },
-  {
-    "id": "mdn-javascript.builtins.Intl.supportedValuesOf.key_parameter_calendar",
-    "name": "`\"calendar\"`",
-    "description": "`\"calendar\"`",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.16,
-    "baseline": false
-  },
-  {
-    "id": "mdn-javascript.builtins.Intl.supportedValuesOf.key_parameter_collation",
-    "name": "`\"collation\"`",
-    "description": "`\"collation\"`",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.16,
-    "baseline": false
-  },
-  {
-    "id": "mdn-javascript.builtins.Intl.supportedValuesOf.key_parameter_currency",
-    "name": "`\"currency\"`",
-    "description": "`\"currency\"`",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.16,
-    "baseline": false
-  },
-  {
-    "id": "mdn-javascript.builtins.Intl.supportedValuesOf.key_parameter_numberingSystem",
-    "name": "`\"numberingSystem\"`",
-    "description": "`\"numberingSystem\"`",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.16,
-    "baseline": false
-  },
-  {
-    "id": "mdn-javascript.builtins.Intl.supportedValuesOf.key_parameter_timeZone",
-    "name": "`\"timeZone\"`",
-    "description": "`\"timeZone\"`",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.16,
-    "baseline": false
   },
   {
     "id": "mdn-javascript.builtins.Intl.supportedValuesOf.key_parameter_timeZone.includes_UTC",
@@ -52382,6 +50270,22 @@
     },
     "usage": 95.53,
     "baseline": "high"
+  },
+  {
+    "id": "wf-system-color-accentcolor",
+    "name": "AccentColor and AccentColorText",
+    "description": "The AccentColor and AccentColorText CSS system color values are the background color and text color of accented user int",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 86.04,
+    "baseline": false
   },
   {
     "id": "wf-target-within",

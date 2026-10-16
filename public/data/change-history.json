@@ -1,6 +1,243 @@
 {
-  "lastUpdated": "2026-10-13T09:32:17.747Z",
+  "lastUpdated": "2026-10-16T07:18:05.014Z",
   "entries": [
+    {
+      "timestamp": "2026-10-16T07:18:05.014Z",
+      "previousCommit": "210b19a4abec18d90a8cd35d41d7ff8a0732d08f",
+      "currentCommit": "pending",
+      "totalChanges": 14,
+      "changes": [
+        {
+          "featureId": "mdn-api.EXT_texture_norm16",
+          "changes": {
+            "usage": {
+              "old": 90.21,
+              "new": 92.93,
+              "delta": 2.720000000000013
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.HTMLSourceElement",
+          "changes": {
+            "baseline": {
+              "old": false,
+              "new": "high"
+            }
+          }
+        },
+        {
+          "featureId": "mdn-api.Request.Request.options_parameter.body.accepts_readablestream",
+          "changes": {
+            "usage": {
+              "old": 72.72,
+              "new": 75.44,
+              "delta": 2.719999999999999
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.Request.Request.options_parameter.duplex",
+          "changes": {
+            "usage": {
+              "old": 72.72,
+              "new": 75.44,
+              "delta": 2.719999999999999
+            },
+            "support": [
+              {
+                "browser": "ffx",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-api.WebTransport.responseHeaders",
+          "changes": {
+            "usage": {
+              "old": 17.64,
+              "new": 87.1,
+              "delta": 69.46
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.font-variant.common-ligatures",
+          "changes": {
+            "baseline": {
+              "old": false,
+              "new": "high"
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.font-variant.full-width",
+          "changes": {
+            "baseline": {
+              "old": false,
+              "new": "high"
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.link-parameters",
+          "changes": {
+            "usage": {
+              "old": 2.72,
+              "new": 20.36,
+              "delta": 17.64
+            },
+            "support": [
+              {
+                "browser": "saf",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "ios_saf",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.list-style.symbols",
+          "changes": {
+            "usage": {
+              "old": 45.53,
+              "new": 63.17,
+              "delta": 17.64
+            },
+            "support": [
+              {
+                "browser": "saf",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "ios_saf",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.position-visibility.anchors-valid",
+          "changes": {
+            "usage": {
+              "old": 15.19,
+              "new": 84.65,
+              "delta": 69.46000000000001
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.properties.text-decoration-inset",
+          "changes": {
+            "usage": {
+              "old": 19.69,
+              "new": 89.15,
+              "delta": 69.46000000000001
+            },
+            "support": [
+              {
+                "browser": "chr",
+                "old": "n",
+                "new": "y"
+              },
+              {
+                "browser": "an_chr",
+                "old": "n",
+                "new": "y"
+              }
+            ]
+          }
+        },
+        {
+          "featureId": "mdn-css.types.color.alpha",
+          "changes": {
+            "usage": {
+              "old": 68.42,
+              "new": 65.31,
+              "delta": -3.1099999999999994
+            }
+          }
+        },
+        {
+          "featureId": "mdn-css.types.global_keywords.revert-rule",
+          "changes": {
+            "baseline": {
+              "old": false,
+              "new": "low"
+            }
+          }
+        },
+        {
+          "featureId": "mdn-javascript.builtins.Error.isError",
+          "changes": {
+            "usage": {
+              "old": 86.93,
+              "new": 89.05,
+              "delta": 2.1199999999999903
+            },
+            "support": [
+              {
+                "browser": "saf",
+                "old": "a",
+                "new": "y"
+              },
+              {
+                "browser": "ios_saf",
+                "old": "a",
+                "new": "y"
+              }
+            ]
+          }
+        }
+      ]
+    },
     {
       "timestamp": "2026-10-13T09:32:17.747Z",
       "previousCommit": "27cb01849dca2838bdbf0ab5025f23df5c7ef7ea",

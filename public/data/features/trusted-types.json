@@ -88,7 +88,37 @@
     "supplementary": [
       {
         "source": "mdnbcd",
+        "id": "api.DOMParser.parseFromString.enforces_trusted_types",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Document.parseHTMLUnsafe_static.enforces_trusted_types",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
         "id": "api.Element.innerHTML.enforces_trusted_types",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.insertAdjacentHTML.enforces_trusted_types",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.outerHTML.enforces_trusted_types",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Element.setHTMLUnsafe.enforces_trusted_types",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.HTMLIFrameElement.srcdoc.enforces_trusted_types",
         "matched": "via-webfeatures"
       },
       {
@@ -113,7 +143,17 @@
       },
       {
         "source": "mdnbcd",
+        "id": "api.Range.createContextualFragment.enforces_trusted_types",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
         "id": "api.ShadowRoot.innerHTML.enforces_trusted_types",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.ShadowRoot.setHTMLUnsafe.enforces_trusted_types",
         "matched": "via-webfeatures"
       },
       {
@@ -254,6 +294,11 @@
       {
         "source": "mdnbcd",
         "id": "http.headers.Content-Security-Policy.require-trusted-types-for",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Content-Security-Policy.script-src.trusted-types-eval",
         "matched": "via-webfeatures"
       },
       {
