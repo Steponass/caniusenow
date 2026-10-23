@@ -4,6 +4,7 @@
   "name": "`local-network` permission",
   "description": "`local-network` permission",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Permissions-Policy/local-network-access",
   "links": [],
   "support": {
     "chr": {
@@ -71,7 +72,38 @@
       "source": "mdnbcd",
       "id": "api.Permissions.permission_local-network"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Permissions.permission_local-network-access",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Request.Request.options_parameter.targetAddressSpace",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.fetch.options_parameter.targetAddressSpace",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.local-network",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Permissions-Policy.local-network-access",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "local-network-access",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=%60local-network%60%20permission"
 }

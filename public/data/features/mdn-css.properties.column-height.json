@@ -1,10 +1,10 @@
 {
   "id": "mdn-css.properties.column-height",
   "source": "mdnbcd",
-  "name": "`column-height`",
-  "description": "",
+  "name": "column-wrap",
+  "description": "The column-wrap and column-height CSS properties control when columns in a multicolumn layout wrap or overflow. You can use this to constrain the height of columns within a taller box or to create two-dimensional column layouts.",
   "category": "CSS",
-  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/column-height",
+  "mdn": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/column-wrap",
   "links": [],
   "support": {
     "chr": {
@@ -73,8 +73,23 @@
         "source": "mdnbcd",
         "id": "css.properties.column-height.auto",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.column-wrap",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.properties.columns.column-height",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "column-wrap",
+        "matched": "exact"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=%60column-height%60"
+  "caniuseUrl": "https://caniuse.com/?search=column-wrap"
 }

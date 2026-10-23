@@ -4,7 +4,7 @@
   "name": "Cross-Origin-Embedder-Policy",
   "description": "",
   "category": "Other",
-  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy",
+  "mdn": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy-Report-Only",
   "links": [],
   "support": {
     "chr": {
@@ -76,7 +76,13 @@
       "source": "mdnbcd",
       "id": "http.headers.Cross-Origin-Embedder-Policy"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "http.headers.Cross-Origin-Embedder-Policy-Report-Only",
+        "matched": "via-webfeatures"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=Cross-Origin-Embedder-Policy"
 }
