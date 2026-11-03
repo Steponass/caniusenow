@@ -1,9 +1,10 @@
 {
   "id": "mdn-api.Window.maximize",
   "source": "mdnbcd",
-  "name": "Window.maximize",
-  "description": "",
+  "name": "Window resizing",
+  "description": "The window.minimize(), window.maximize(), window.restore(), and window.setResizable() methods control the size of a window and whether users may resize it.",
   "category": "JS API",
+  "mdn": "https://developer.mozilla.org/docs/Web/API/Window/setResizable",
   "links": [],
   "support": {
     "chr": {
@@ -55,7 +56,28 @@
       "source": "mdnbcd",
       "id": "api.Window.maximize"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.minimize",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.restore",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "api.Window.setResizable",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "window-management-resizing",
+        "matched": "exact"
+      }
+    ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=Window.maximize"
+  "caniuseUrl": "https://caniuse.com/?search=Window%20resizing"
 }

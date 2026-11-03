@@ -2,7 +2,7 @@
   "id": "mdn-http.headers.Document-Isolation-Policy",
   "source": "mdnbcd",
   "name": "Document-Isolation-Policy",
-  "description": "",
+  "description": "The Document-Isolation-Policy HTTP header makes a document cross-origin isolated, giving it access to APIs such as SharedArrayBuffer, without requiring the document or those it embeds to send Cross-Origin-Opener-Policy or Cross-Origin-Embedder-Policy headers.",
   "category": "Other",
   "links": [],
   "support": {
@@ -67,7 +67,13 @@
       "source": "mdnbcd",
       "id": "http.headers.Document-Isolation-Policy"
     },
-    "supplementary": []
+    "supplementary": [
+      {
+        "source": "webfeatures",
+        "id": "document-isolation-policy",
+        "matched": "exact"
+      }
+    ]
   },
   "caniuseUrl": "https://caniuse.com/?search=Document-Isolation-Policy"
 }

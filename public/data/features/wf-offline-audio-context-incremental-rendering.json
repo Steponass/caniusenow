@@ -1,0 +1,61 @@
+{
+  "id": "wf-offline-audio-context-incremental-rendering",
+  "source": "webfeatures",
+  "name": "OfflineAudioContext incremental rendering",
+  "description": "The startRendering() method of the OfflineAudioContext API accepts an optional chunk size argument, which sets the number of sample frames to render in an AudioBuffer. You can use this to process audio incrementally, reducing the memory required to process high amounts of data.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "chr": {
+      "current": "n"
+    },
+    "ffx": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "n"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 0,
+      "partial": 0,
+      "total": 0
+    },
+    "byBrowser": {
+      "desktop": {},
+      "mobile": {}
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "offline-audio-context-incremental-rendering"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=OfflineAudioContext%20incremental%20rendering"
+}

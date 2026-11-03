@@ -9088,6 +9088,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.AudioContext.AudioContext.options_renderSizeHint_parameter",
+    "name": "`options.renderSizeHint` parameter",
+    "description": "`options.renderSizeHint` parameter",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 53.52,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.AudioContext.playbackStats",
     "name": "AudioContext.playbackStats",
     "description": "",
@@ -9528,27 +9544,11 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 50.55,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.BaseAudioContext.state.interrupted",
-    "name": "`interrupted` value",
-    "description": "`interrupted` value",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 86.76,
+    "usage": 53.52,
     "baseline": false
   },
   {
@@ -10561,40 +10561,8 @@
   },
   {
     "id": "mdn-api.CanvasPaintEvent",
-    "name": "CanvasPaintEvent",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.CanvasPaintEvent.CanvasPaintEvent",
-    "name": "`CanvasPaintEvent()` constructor",
-    "description": "`CanvasPaintEvent()` constructor",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.CanvasPaintEvent.changedElements",
-    "name": "CanvasPaintEvent.changedElements",
-    "description": "",
+    "name": "HTML-in-canvas",
+    "description": "A <canvas> HTML element with the content=\"drawable\" attribute can draw descendant elements in its rendering context. You",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -10622,22 +10590,6 @@
     },
     "usage": 92.96,
     "baseline": "high"
-  },
-  {
-    "id": "mdn-api.CanvasRenderingContext2D.drawElementImage",
-    "name": "CanvasRenderingContext2D.drawElementImage",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
-    "baseline": false
   },
   {
     "id": "mdn-api.CanvasRenderingContext2D.isContextLost",
@@ -11357,7 +11309,7 @@
       "an_chr": "y"
     },
     "usage": 81.47,
-    "baseline": false
+    "baseline": "low"
   },
   {
     "id": "mdn-api.CustomElementRegistry.builtin_element_support",
@@ -12912,6 +12864,38 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.EXT_clip_control",
+    "name": "EXT_clip_control",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 86.96,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.EXT_clip_control.clipControlEXT",
+    "name": "EXT_clip_control.clipControlEXT",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 86.96,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.EXT_color_buffer_float",
     "name": "EXT_color_buffer_float WebGL extension",
     "description": "The EXT_color_buffer_float extension for WebGL 2.0 contexts adds color-renderable floating point formats to renderbuffer",
@@ -13120,6 +13104,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.EXT_texture_mirror_clamp_to_edge",
+    "name": "EXT_texture_mirror_clamp_to_edge",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 86.37,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.EXT_texture_norm16",
     "name": "EXT_texture_norm16 WebGL extension",
     "description": "The EXT_texture_norm16 extension to WebGL 2.0 contexts adds 16 bit signed normalized and unsigned normalized fixed-point",
@@ -13133,7 +13133,7 @@
       "an_chr": "y"
     },
     "usage": 90.63,
-    "baseline": false
+    "baseline": "low"
   },
   {
     "id": "mdn-api.Element.DOMActivate_event",
@@ -13965,54 +13965,6 @@
       "an_chr": "y"
     },
     "usage": 93.62,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.ElementGeometryUpdateEvent",
-    "name": "ElementGeometryUpdateEvent",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.ElementImage",
-    "name": "ElementImage",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.ElementImage.worker_support",
-    "name": "Available in workers",
-    "description": "Available in workers",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
     "baseline": false
   },
   {
@@ -15152,22 +15104,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.GPUDevice.createPipelineLayout.descriptor_immediateSize_parameter",
-    "name": "`immediateSize` setting",
-    "description": "`immediateSize` setting",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.66,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.GPUDevice.createRenderPipeline.vertex_1-component",
     "name": "One-component vertex formats",
     "description": "One-component vertex formats",
@@ -15229,22 +15165,6 @@
       "an_chr": "y"
     },
     "usage": 67.68,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.GPUQueue.drawElementImageToTexture",
-    "name": "GPUQueue.drawElementImageToTexture",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
     "baseline": false
   },
   {
@@ -15325,22 +15245,6 @@
       "an_chr": "y"
     },
     "usage": 68.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.GPUSupportedFeatures.feature_subgroup-size-control",
-    "name": "`subgroup-size-control` feature",
-    "description": "`subgroup-size-control` feature",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 62.82,
     "baseline": false
   },
   {
@@ -16336,38 +16240,6 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-api.HTMLCanvasElement.captureElementImage",
-    "name": "HTMLCanvasElement.captureElementImage",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.HTMLCanvasElement.clearElementGeometry",
-    "name": "HTMLCanvasElement.clearElementGeometry",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.HTMLCanvasElement.getContext.2d_context.options_alpha_parameter",
     "name": "`options.alpha` parameter",
     "description": "`options.alpha` parameter",
@@ -16464,38 +16336,6 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-api.HTMLCanvasElement.getElementImageDefaultSize",
-    "name": "HTMLCanvasElement.getElementImageDefaultSize",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.HTMLCanvasElement.getElementTransform",
-    "name": "HTMLCanvasElement.getElementTransform",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.HTMLCanvasElement.mozOpaque",
     "name": "HTMLCanvasElement.mozOpaque",
     "description": "",
@@ -16525,38 +16365,6 @@
       "an_chr": "n"
     },
     "usage": 2.72,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.HTMLCanvasElement.paint_event",
-    "name": "`paint` event",
-    "description": "`paint` event",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.HTMLCanvasElement.requestPaint",
-    "name": "HTMLCanvasElement.requestPaint",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
     "baseline": false
   },
   {
@@ -16605,22 +16413,6 @@
       "an_chr": "y"
     },
     "usage": 75.74,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.HTMLCanvasElement.updateElementGeometry",
-    "name": "HTMLCanvasElement.updateElementGeometry",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
     "baseline": false
   },
   {
@@ -16897,8 +16689,8 @@
   },
   {
     "id": "mdn-api.HTMLElement.focusGroup",
-    "name": "HTMLElement.focusGroup",
-    "description": "",
+    "name": "focusgroup",
+    "description": "The focusgroup global HTML attribute combines descendant elements into a single tab stop, with arrow-key navigation betw",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -22320,40 +22112,8 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-api.OffscreenCanvas.clearElementGeometry",
-    "name": "OffscreenCanvas.clearElementGeometry",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.OffscreenCanvas.getElementImageDefaultSize",
-    "name": "OffscreenCanvas.getElementImageDefaultSize",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.OffscreenCanvas.updateElementGeometry",
-    "name": "OffscreenCanvas.updateElementGeometry",
+    "id": "mdn-api.OfflineAudioContext.close",
+    "name": "OfflineAudioContext.close",
     "description": "",
     "category": "JS API",
     "support": {
@@ -23181,6 +22941,38 @@
       "an_chr": "y"
     },
     "usage": 69.35,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.PerformanceScriptTiming.forcedLayoutDuration",
+    "name": "PerformanceScriptTiming.forcedLayoutDuration",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 42.79,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.PerformanceScriptTiming.forcedStyleDuration",
+    "name": "PerformanceScriptTiming.forcedStyleDuration",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 42.79,
     "baseline": false
   },
   {
@@ -24656,6 +24448,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.RTCError.worker_support",
+    "name": "Available in workers",
+    "description": "Available in workers",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 1.72,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.RTCIceCandidatePair",
     "name": "RTCIceCandidatePair",
     "description": "",
@@ -25872,22 +25680,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.SVGElement.focusGroup",
-    "name": "SVGElement.focusGroup",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.66,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.SVGGraphicsElement.getBBox.options_parameter.options_clipped_parameter",
     "name": "`options.clipped` parameter",
     "description": "`options.clipped` parameter",
@@ -26005,14 +25797,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 1.99,
+    "usage": 44.78,
     "baseline": false
   },
   {
@@ -26269,7 +26061,7 @@
       "an_chr": "y"
     },
     "usage": 85.28,
-    "baseline": false
+    "baseline": "low"
   },
   {
     "id": "mdn-api.Selection.addRange.multiple_ranges",
@@ -26614,13 +26406,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 75.12,
+    "usage": 75.53,
     "baseline": false
   },
   {
@@ -26630,13 +26422,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "n",
       "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 75.12,
+    "usage": 75.53,
     "baseline": false
   },
   {
@@ -26652,7 +26444,7 @@
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 71.36,
+    "usage": 69.06,
     "baseline": false
   },
   {
@@ -26668,7 +26460,7 @@
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 71.36,
+    "usage": 69.06,
     "baseline": false
   },
   {
@@ -26684,7 +26476,7 @@
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 71.36,
+    "usage": 69.06,
     "baseline": false
   },
   {
@@ -26716,7 +26508,7 @@
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 71.36,
+    "usage": 69.06,
     "baseline": false
   },
   {
@@ -26732,7 +26524,7 @@
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 71.09,
+    "usage": 68.78,
     "baseline": false
   },
   {
@@ -26748,23 +26540,7 @@
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 71.36,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.SpeechRecognition.start.audioTrack",
-    "name": "`audioTrack` parameter",
-    "description": "`audioTrack` parameter",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 69.2,
+    "usage": 69.06,
     "baseline": false
   },
   {
@@ -26780,55 +26556,7 @@
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 68.64,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.SpeechRecognitionPhrase.SpeechRecognitionPhrase",
-    "name": "`SpeechRecognitionPhrase()` constructor",
-    "description": "`SpeechRecognitionPhrase()` constructor",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 71.09,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.SpeechRecognitionPhrase.boost",
-    "name": "SpeechRecognitionPhrase.boost",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 71.09,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.SpeechRecognitionPhrase.phrase",
-    "name": "SpeechRecognitionPhrase.phrase",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 71.09,
+    "usage": 66.33,
     "baseline": false
   },
   {
@@ -27197,22 +26925,6 @@
       "an_chr": "y"
     },
     "usage": 68.72,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.TrustedTypePolicy.createParserOptions",
-    "name": "TrustedTypePolicy.createParserOptions",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
     "baseline": false
   },
   {
@@ -27856,22 +27568,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.WebGL2RenderingContext.texElementSubImage2D",
-    "name": "WebGL2RenderingContext.texElementSubImage2D",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.WebGLRenderingContext.drawingBufferColorSpace",
     "name": "Color management for WebGL",
     "description": "The drawingBufferColorSpace and unpackColorSpace properties of WebGLRenderingContext sets the color representation for t",
@@ -27886,22 +27582,6 @@
     },
     "usage": 92.06,
     "baseline": "low"
-  },
-  {
-    "id": "mdn-api.WebGLRenderingContext.texElementSubImage2D",
-    "name": "WebGLRenderingContext.texElementSubImage2D",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
-    "baseline": false
   },
   {
     "id": "mdn-api.WebKitPoint",
@@ -28005,14 +27685,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 12.49,
+    "usage": 55.28,
     "baseline": false
   },
   {
@@ -28021,14 +27701,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 12.49,
+    "usage": 55.28,
     "baseline": false
   },
   {
@@ -28053,14 +27733,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 14.21,
+    "usage": 57,
     "baseline": false
   },
   {
@@ -28102,13 +27782,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 60.43,
+    "usage": 60.84,
     "baseline": false
   },
   {
@@ -28166,13 +27846,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 83.56,
+    "usage": 83.97,
     "baseline": false
   },
   {
@@ -28198,13 +27878,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 83.56,
+    "usage": 83.97,
     "baseline": false
   },
   {
@@ -28561,24 +28241,8 @@
   },
   {
     "id": "mdn-api.Window.maximize",
-    "name": "Window.maximize",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Window.minimize",
-    "name": "Window.minimize",
-    "description": "",
+    "name": "Window resizing",
+    "description": "The window.minimize(), window.maximize(), window.restore(), and window.setResizable() methods control the size of a wind",
     "category": "JS API",
     "support": {
       "chr": "n",
@@ -28784,22 +28448,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.Window.restore",
-    "name": "Window.restore",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.Window.scrollByLines",
     "name": "Window.scrollByLines",
     "description": "",
@@ -28877,22 +28525,6 @@
       "an_chr": "n"
     },
     "usage": 5.92,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.Window.setResizable",
-    "name": "Window.setResizable",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "a",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 2.72,
     "baseline": false
   },
   {
@@ -30416,22 +30048,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.at-rules.container.scroll-state_queries.scrolled",
-    "name": "`@container: Scrolled`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.01,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.at-rules.container.style_queries_for_custom_properties.range_syntax",
     "name": "Range syntax",
     "description": "Range syntax",
@@ -30658,7 +30274,7 @@
   {
     "id": "mdn-css.at-rules.media.display-state",
     "name": "`@media: display-state`",
-    "description": "",
+    "description": "A display-state media query sets styles based on whether the window is normal, minimized, maximized, or fullscreen.",
     "category": "CSS",
     "support": {
       "chr": "n",
@@ -30818,7 +30434,7 @@
   {
     "id": "mdn-css.at-rules.media.resizable",
     "name": "`@media: Resizable`",
-    "description": "",
+    "description": "A resizable media query sets styles based on whether the user may resize the window.",
     "category": "CSS",
     "support": {
       "chr": "n",
@@ -31888,6 +31504,38 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.align-items.flow-end",
+    "name": "align-items: flow-end",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 42.79,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.align-items.flow-start",
+    "name": "align-items: flow-start",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 42.79,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.align-self.context_position_absolute",
     "name": "Supported in absolutely-positioned boxes",
     "description": "Supported in absolutely-positioned boxes",
@@ -31902,6 +31550,38 @@
     },
     "usage": 85.6,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-css.properties.align-self.flow-end",
+    "name": "align-self: flow-end",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 42.79,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.align-self.flow-start",
+    "name": "align-self: flow-start",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 42.79,
+    "baseline": false
   },
   {
     "id": "mdn-css.properties.alignment-baseline",
@@ -33523,38 +33203,6 @@
     "id": "mdn-css.properties.column-rule-break",
     "name": "Gap decorations",
     "description": "The column-rule and row-rule CSS properties display decorative lines between columns and rows of a flex, grid, or multi-",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.93,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.column-rule-color.multiple_colors",
-    "name": "Multiple color values",
-    "description": "Multiple color values",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.93,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.column-rule-color.repeat",
-    "name": "`repeat()`",
-    "description": "`repeat()`",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -35776,22 +35424,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.flex.content",
-    "name": "flex: Content",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.2,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.flex.max-content",
     "name": "flex: max-content",
     "description": "",
@@ -36896,70 +36528,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.interest-delay",
-    "name": "`interest-delay`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.interest-delay.normal",
-    "name": "interest-delay: Normal",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.interest-delay-end.normal",
-    "name": "interest-delay-end: Normal",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.interest-delay-start.normal",
-    "name": "interest-delay-start: Normal",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.37,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.interpolate-size",
     "name": "interpolate-size",
     "description": "The interpolate-size CSS property sets whether animations and transitions interpolate between a numeric value and a keyw",
@@ -37024,355 +36592,67 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.justify-content.center",
-    "name": "justify-content: Center",
+    "id": "mdn-css.properties.justify-items.flow-end",
+    "name": "justify-items: flow-end",
     "description": "",
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "y",
-      "saf": "y",
+      "ffx": "n",
+      "saf": "n",
       "edg": "y",
-      "ios_saf": "y",
+      "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 95.73,
+    "usage": 42.79,
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.justify-content.flex-end",
-    "name": "justify-content: flex-end",
+    "id": "mdn-css.properties.justify-items.flow-start",
+    "name": "justify-items: flow-start",
     "description": "",
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "y",
-      "saf": "y",
+      "ffx": "n",
+      "saf": "n",
       "edg": "y",
-      "ios_saf": "y",
+      "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 95.73,
+    "usage": 42.79,
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.justify-content.flex-start",
-    "name": "justify-content: flex-start",
+    "id": "mdn-css.properties.justify-self.flow-end",
+    "name": "justify-self: flow-end",
     "description": "",
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "y",
-      "saf": "y",
+      "ffx": "n",
+      "saf": "n",
       "edg": "y",
-      "ios_saf": "y",
+      "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 95.73,
+    "usage": 42.79,
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.justify-content.space-around",
-    "name": "justify-content: space-around",
+    "id": "mdn-css.properties.justify-self.flow-start",
+    "name": "justify-self: flow-start",
     "description": "",
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "y",
-      "saf": "y",
+      "ffx": "n",
+      "saf": "n",
       "edg": "y",
-      "ios_saf": "y",
+      "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-content.space-between",
-    "name": "justify-content: space-between",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-items.baseline",
-    "name": "justify-items: Baseline",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.6,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-items.end",
-    "name": "justify-items: End",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-items.flex-end",
-    "name": "justify-items: flex-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.6,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-items.flex-start",
-    "name": "justify-items: flex-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.6,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-items.normal",
-    "name": "justify-items: Normal",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.6,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-items.self-end",
-    "name": "justify-items: self-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.18,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-items.self-start",
-    "name": "justify-items: self-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.18,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-items.start",
-    "name": "justify-items: Start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-items.stretch",
-    "name": "justify-items: Stretch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-self.baseline",
-    "name": "justify-self: Baseline",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-self.center",
-    "name": "justify-self: Center",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.6,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-self.end",
-    "name": "justify-self: End",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-self.flex-end",
-    "name": "justify-self: flex-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-self.flex-start",
-    "name": "justify-self: flex-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-self.self-end",
-    "name": "justify-self: self-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-self.self-start",
-    "name": "justify-self: self-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-self.start",
-    "name": "justify-self: Start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
+    "usage": 42.79,
     "baseline": false
   },
   {
@@ -40016,515 +39296,67 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.place-content.baseline",
-    "name": "place-content: Baseline",
+    "id": "mdn-css.properties.place-items.flow-end",
+    "name": "place-items: flow-end",
     "description": "",
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "y",
-      "saf": "y",
+      "ffx": "n",
+      "saf": "n",
       "edg": "y",
-      "ios_saf": "y",
+      "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 93.39,
+    "usage": 42.79,
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.place-content.center",
-    "name": "place-content: Center",
+    "id": "mdn-css.properties.place-items.flow-start",
+    "name": "place-items: flow-start",
     "description": "",
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "y",
-      "saf": "y",
+      "ffx": "n",
+      "saf": "n",
       "edg": "y",
-      "ios_saf": "y",
+      "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 93.39,
+    "usage": 42.79,
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.place-content.end",
-    "name": "place-content: End",
+    "id": "mdn-css.properties.place-self.flow-end",
+    "name": "place-self: flow-end",
     "description": "",
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "y",
-      "saf": "y",
+      "ffx": "n",
+      "saf": "n",
       "edg": "y",
-      "ios_saf": "y",
+      "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 93.18,
+    "usage": 42.79,
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.place-content.flex-end",
-    "name": "place-content: flex-end",
+    "id": "mdn-css.properties.place-self.flow-start",
+    "name": "place-self: flow-start",
     "description": "",
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "y",
-      "saf": "y",
+      "ffx": "n",
+      "saf": "n",
       "edg": "y",
-      "ios_saf": "y",
+      "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-content.flex-start",
-    "name": "place-content: flex-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-content.normal",
-    "name": "place-content: Normal",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-content.space-around",
-    "name": "place-content: space-around",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-content.space-between",
-    "name": "place-content: space-between",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-content.space-evenly",
-    "name": "place-content: space-evenly",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-content.start",
-    "name": "place-content: Start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.18,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-content.stretch",
-    "name": "place-content: Stretch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.39,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-items.baseline",
-    "name": "place-items: Baseline",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-items.center",
-    "name": "place-items: Center",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-items.end",
-    "name": "place-items: End",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.18,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-items.flex-end",
-    "name": "place-items: flex-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-items.flex-start",
-    "name": "place-items: flex-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-items.normal",
-    "name": "place-items: Normal",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-items.self-end",
-    "name": "place-items: self-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.18,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-items.self-start",
-    "name": "place-items: self-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.18,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-items.start",
-    "name": "place-items: Start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.18,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-items.stretch",
-    "name": "place-items: Stretch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-self.auto",
-    "name": "place-self: Auto",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-self.baseline",
-    "name": "place-self: Baseline",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-self.center",
-    "name": "place-self: Center",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-self.end",
-    "name": "place-self: End",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.18,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-self.flex-end",
-    "name": "place-self: flex-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-self.flex-start",
-    "name": "place-self: flex-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-self.normal",
-    "name": "place-self: Normal",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-self.self-end",
-    "name": "place-self: self-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.18,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-self.self-start",
-    "name": "place-self: self-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.18,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-self.start",
-    "name": "place-self: Start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.18,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-self.stretch",
-    "name": "place-self: Stretch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.37,
+    "usage": 42.79,
     "baseline": false
   },
   {
@@ -43589,14 +42421,14 @@
     "description": "`:buffering`",
     "category": "CSS",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 19.52,
+    "usage": 62.31,
     "baseline": false
   },
   {
@@ -43837,22 +42669,6 @@
       "an_chr": "y"
     },
     "usage": 73.03,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.selectors.interest-button",
-    "name": "`::interest-button`",
-    "description": "`::interest-button`",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.93,
     "baseline": false
   },
   {
@@ -45040,102 +43856,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.types.random.auto",
-    "name": "Auto",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 85.33,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.types.random.dashed-ident",
-    "name": "`&lt;dashed-ident&gt;`",
-    "description": "`&lt;dashed-ident&gt;`",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 58.66,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.types.random.element-scoped",
-    "name": "`element-scoped`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 85.33,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.types.random.fixed",
-    "name": "`fixed &lt;number&gt;`",
-    "description": "`fixed &lt;number&gt;`",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "n"
-    },
-    "usage": 15.87,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.types.random.property-index-scoped",
-    "name": "`property-index-scoped`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 89.82,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.types.random.property-scoped",
-    "name": "`property-scoped`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 89.82,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.types.random.step",
     "name": "Step",
     "description": "",
@@ -45488,19 +44208,19 @@
     "baseline": false
   },
   {
-    "id": "mdn-html.elements.canvas.content",
+    "id": "mdn-html.elements.canvas.moz-opaque",
     "name": "`<canvas>`",
     "description": "",
     "category": "HTML5",
     "support": {
-      "chr": "y",
-      "ffx": "n",
+      "chr": "n",
+      "ffx": "y",
       "saf": "n",
-      "edg": "y",
+      "edg": "n",
       "ios_saf": "n",
-      "an_chr": "y"
+      "an_chr": "n"
     },
-    "usage": 42.79,
+    "usage": 2.72,
     "baseline": false
   },
   {
@@ -47328,22 +46048,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-html.global_attributes.drawable",
-    "name": "drawable",
-    "description": "",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 42.79,
-    "baseline": false
-  },
-  {
     "id": "mdn-html.global_attributes.elementtiming",
     "name": "elementtiming",
     "description": "",
@@ -47357,134 +46061,6 @@
       "an_chr": "y"
     },
     "usage": 73.01,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.global_attributes.focusgroup",
-    "name": "focusgroup",
-    "description": "The focusgroup global HTML attribute combines descendant elements into a single tab stop, with arrow-key navigation betw",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.66,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.global_attributes.focusgroup.behavior_listbox",
-    "name": "`listbox` behavior",
-    "description": "`listbox` behavior",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.66,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.global_attributes.focusgroup.behavior_menu",
-    "name": "`menu` behavior",
-    "description": "`menu` behavior",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.66,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.global_attributes.focusgroup.behavior_menubar",
-    "name": "`menubar` behavior",
-    "description": "`menubar` behavior",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.66,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.global_attributes.focusgroup.behavior_radiogroup",
-    "name": "`radiogroup` behavior",
-    "description": "`radiogroup` behavior",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.66,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.global_attributes.focusgroup.behavior_tablist",
-    "name": "`tablist` behavior",
-    "description": "`tablist` behavior",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.66,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.global_attributes.focusgroup.behavior_toolbar",
-    "name": "`toolbar` behavior",
-    "description": "`toolbar` behavior",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.66,
-    "baseline": false
-  },
-  {
-    "id": "mdn-html.global_attributes.focusgroupstart",
-    "name": "focusgroupstart",
-    "description": "",
-    "category": "HTML5",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.66,
     "baseline": false
   },
   {
@@ -48050,7 +46626,7 @@
   {
     "id": "mdn-http.headers.Document-Isolation-Policy",
     "name": "Document-Isolation-Policy",
-    "description": "",
+    "description": "The Document-Isolation-Policy HTTP header makes a document cross-origin isolated, giving it access to APIs such as Share",
     "category": "Other",
     "support": {
       "chr": "y",
@@ -48301,22 +46877,6 @@
       "an_chr": "y"
     },
     "usage": 67.76,
-    "baseline": false
-  },
-  {
-    "id": "mdn-http.headers.Permissions-Policy.on-device-speech-recognition",
-    "name": "`on-device-speech-recognition`",
-    "description": "",
-    "category": "Other",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 68.37,
     "baseline": false
   },
   {
@@ -51040,118 +49600,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-svg.elements.circle.pathLength",
-    "name": "`<circle> (SVG)`",
-    "description": "",
-    "category": "SVG",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-svg.elements.ellipse.pathLength",
-    "name": "`<ellipse> (SVG)`",
-    "description": "",
-    "category": "SVG",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-svg.elements.line.pathLength",
-    "name": "`<line> (SVG)`",
-    "description": "",
-    "category": "SVG",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-svg.elements.path.pathLength",
-    "name": "`<path> (SVG)`",
-    "description": "",
-    "category": "SVG",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-svg.elements.polygon.pathLength",
-    "name": "`<polygon> (SVG)`",
-    "description": "",
-    "category": "SVG",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-svg.elements.polyline.pathLength",
-    "name": "`<polyline> (SVG)`",
-    "description": "",
-    "category": "SVG",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.3,
-    "baseline": false
-  },
-  {
-    "id": "mdn-svg.elements.rect.pathLength",
-    "name": "`<rect> (SVG)`",
-    "description": "",
-    "category": "SVG",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.3,
-    "baseline": false
-  },
-  {
     "id": "mdn-svg.elements.textPath.method",
     "name": "`<textPath> (SVG)`",
     "description": "",
@@ -51165,134 +49613,6 @@
       "an_chr": "y"
     },
     "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-svg.elements.view.svgView",
-    "name": "`svgView()` fragment identifier",
-    "description": "`svgView()` fragment identifier",
-    "category": "SVG",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-svg.elements.view.svgView.preserveAspectRatio_parameter",
-    "name": "`preserveAspectRatio()` parameter",
-    "description": "`preserveAspectRatio()` parameter",
-    "category": "SVG",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-svg.elements.view.svgView.transform_parameter",
-    "name": "`transform()` parameter",
-    "description": "`transform()` parameter",
-    "category": "SVG",
-    "support": {
-      "chr": "y",
-      "ffx": "a",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-svg.elements.view.svgView.viewBox_parameter",
-    "name": "`viewBox()` parameter",
-    "description": "`viewBox()` parameter",
-    "category": "SVG",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.53,
-    "baseline": false
-  },
-  {
-    "id": "mdn-svg.global_attributes.focusgroup.inline",
-    "name": "Inline",
-    "description": "",
-    "category": "SVG",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.66,
-    "baseline": false
-  },
-  {
-    "id": "mdn-svg.global_attributes.focusgroup.nomemory",
-    "name": "Nomemory",
-    "description": "",
-    "category": "SVG",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.66,
-    "baseline": false
-  },
-  {
-    "id": "mdn-svg.global_attributes.focusgroup.nowrap",
-    "name": "Nowrap",
-    "description": "",
-    "category": "SVG",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.66,
-    "baseline": false
-  },
-  {
-    "id": "mdn-svg.global_attributes.focusgroup.wrap",
-    "name": "Wrap",
-    "description": "",
-    "category": "SVG",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 66.66,
     "baseline": false
   },
   {
@@ -51438,22 +49758,6 @@
     },
     "usage": 95.53,
     "baseline": "high"
-  },
-  {
-    "id": "wf-canvas-html",
-    "name": "HTML in canvas",
-    "description": "A <canvas> HTML element with the layoutsubtree attribute can draw descendant elements in its rendering context. You can ",
-    "category": "Other",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
   },
   {
     "id": "wf-color-contrast",
@@ -51710,6 +50014,22 @@
     },
     "usage": 95.31,
     "baseline": "high"
+  },
+  {
+    "id": "wf-offline-audio-context-incremental-rendering",
+    "name": "OfflineAudioContext incremental rendering",
+    "description": "The startRendering() method of the OfflineAudioContext API accepts an optional chunk size argument, which sets the numbe",
+    "category": "Other",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
   },
   {
     "id": "wf-opaquerange",
