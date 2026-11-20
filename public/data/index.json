@@ -3037,7 +3037,7 @@
       "an_chr": "y"
     },
     "usage": 97.11,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "css3-attr",
@@ -10224,6 +10224,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.CSSMixinRule",
+    "name": "CSSMixinRule",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.CSSPositionValue",
     "name": "CSSPositionValue",
     "description": "",
@@ -11200,6 +11216,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.CredentialsContainer.create.password_option",
+    "name": "`password` option",
+    "description": "`password` option",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 74.95,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.CredentialsContainer.create.publicKey_option.extensions.payment",
     "name": "`payment` extension",
     "description": "`payment` extension",
@@ -11405,7 +11437,7 @@
       "an_chr": "y"
     },
     "usage": 91.76,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-api.DOMError",
@@ -12944,6 +12976,38 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.EXT_conservative_depth",
+    "name": "EXT_conservative_depth",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 87.17,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.EXT_depth_clamp",
+    "name": "EXT_depth_clamp",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 89.33,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.EXT_disjoint_timer_query",
     "name": "EXT_disjoint_timer_query WebGL extension",
     "description": "The EXT_disjoint_timer_query extension for WebGL 1.0 contexts measures the duration of a set of GL commands, without sta",
@@ -13037,6 +13101,22 @@
       "an_chr": "y"
     },
     "usage": 88.31,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.EXT_render_snorm",
+    "name": "EXT_render_snorm",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 86.42,
     "baseline": false
   },
   {
@@ -13374,6 +13454,22 @@
     },
     "usage": 91.95,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.Element.contextmenu_event.light_dismisses_popover",
+    "name": "`contextmenu` event listeners light dismiss popovers",
+    "description": "`contextmenu` event listeners light dismiss popovers",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.61,
+    "baseline": false
   },
   {
     "id": "mdn-api.Element.elementTiming",
@@ -15553,8 +15649,8 @@
   },
   {
     "id": "mdn-api.Gamepad.hapticActuators",
-    "name": "Gamepad haptic feedback",
-    "description": "The gamepad.vibrationActuator property represents a gamepad's haptics hardware, which allows you to control the vibratio",
+    "name": "Gamepad.hapticActuators",
+    "description": "",
     "category": "JS API",
     "support": {
       "chr": "n",
@@ -15565,6 +15661,22 @@
       "an_chr": "n"
     },
     "usage": 7.55,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.Gamepad.vibrationActuator",
+    "name": "Gamepad haptic feedback",
+    "description": "The gamepad.vibrationActuator property represents a gamepad's haptics hardware, which allows you to control the vibratio",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.39,
     "baseline": false
   },
   {
@@ -15597,6 +15709,22 @@
       "an_chr": "n"
     },
     "usage": 15.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.GamepadHapticActuator.pulse",
+    "name": "GamepadHapticActuator.pulse",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 7.55,
     "baseline": false
   },
   {
@@ -21024,6 +21152,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.NV_shader_noperspective_interpolation",
+    "name": "NV_shader_noperspective_interpolation",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 87.17,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.NavigateEvent",
     "name": "Navigation API",
     "description": "The navigation API initiates, intercepts, or modifies browser navigation actions. Not to be confused with the navigator ",
@@ -22048,6 +22192,38 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.OES_sample_variables",
+    "name": "OES_sample_variables",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 86.42,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.OES_shader_multisample_interpolation",
+    "name": "OES_shader_multisample_interpolation",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 86.42,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.OES_standard_derivatives",
     "name": "OES_standard_derivatives WebGL extension",
     "description": "The OES_standard_derivatives extension for WebGL 1.0 contexts adds the GLSL derivative functions dFdx, dFdy, and fwidth.",
@@ -22199,12 +22375,12 @@
     "support": {
       "chr": "y",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 73.24,
+    "usage": 89.14,
     "baseline": false
   },
   {
@@ -25008,6 +25184,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.RTCRtpSender.setParameters.setParameterOptions_encodingOptions_parameter",
+    "name": "`setParameterOptions.encodingOptions` parameter",
+    "description": "`setParameterOptions.encodingOptions` parameter",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 72.82,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.RTCRtpTransceiver.stopped",
     "name": "RTCRtpTransceiver.stopped",
     "description": "",
@@ -26464,22 +26656,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.SpeechGrammar.SpeechGrammar",
-    "name": "`SpeechGrammar()` constructor",
-    "description": "`SpeechGrammar()` constructor",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 77.24,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.SpeechRecognition.available_static",
     "name": "`available()` static method",
     "description": "`available()` static method",
@@ -27456,6 +27632,70 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.WEBGL_polygon_mode",
+    "name": "WEBGL_polygon_mode",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 87.29,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.WEBGL_polygon_mode.polygonModeWEBGL",
+    "name": "WEBGL_polygon_mode.polygonModeWEBGL",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 87.29,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.WEBGL_render_shared_exponent",
+    "name": "WEBGL_render_shared_exponent",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 86.56,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.WEBGL_stencil_texturing",
+    "name": "WEBGL_stencil_texturing",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 86.56,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.WGSLLanguageFeatures.extension_immediate_address_space",
     "name": "`immediate_address_space` extension",
     "description": "`immediate_address_space` extension",
@@ -27495,12 +27735,12 @@
     "support": {
       "chr": "y",
       "ffx": "n",
-      "saf": "n",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 72.36,
+    "usage": 84.38,
     "baseline": false
   },
   {
@@ -27744,22 +27984,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-api.WebTransport.WebTransport.options_protocols_parameter",
-    "name": "`options.protocols` parameter",
-    "description": "`options.protocols` parameter",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 83.26,
-    "baseline": false
-  },
-  {
     "id": "mdn-api.WebTransport.anticipatedConcurrentIncomingBidirectionalStreams",
     "name": "WebTransport.anticipatedConcurrentIncomingBidirectionalStreams",
     "description": "",
@@ -27853,22 +28077,6 @@
       "an_chr": "n"
     },
     "usage": 0.38,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.WebTransport.protocol",
-    "name": "WebTransport.protocol",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 83.26,
     "baseline": false
   },
   {
@@ -30080,6 +30288,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-css.at-rules.apply",
+    "name": "`@apply`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.at-rules.charset",
     "name": "@charset",
     "description": "`@charset`",
@@ -30157,6 +30381,22 @@
       "an_chr": "y"
     },
     "usage": 72.41,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.at-rules.contents",
+    "name": "`@contents`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
     "baseline": false
   },
   {
@@ -30592,6 +30832,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-css.at-rules.mixin",
+    "name": "@mixin",
+    "description": "The @mixin and @apply CSS at-rules define reusable style declaration fragments and apply them inside rules, optionally p",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.at-rules.page.page-margin-safety",
     "name": "`page-margin-safety` descriptor",
     "description": "`page-margin-safety` descriptor",
@@ -30653,6 +30909,22 @@
       "an_chr": "y"
     },
     "usage": 79.38,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.at-rules.private",
+    "name": "`@private`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0,
     "baseline": false
   },
   {
@@ -31053,22 +31325,6 @@
       "an_chr": "y"
     },
     "usage": 87.75,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.-webkit-hyphenate-limit-lines",
-    "name": "`-webkit-hyphenate-limit-lines`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 87.74,
     "baseline": false
   },
   {
@@ -31600,6 +31856,38 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-css.properties.align-content.flow-end",
+    "name": "align-content: flow-end",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 55.73,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.align-content.flow-start",
+    "name": "align-content: flow-start",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 55.73,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.align-items.flex-end",
     "name": "align-items: flex-end",
     "description": "",
@@ -31741,22 +32029,6 @@
       "an_chr": "n"
     },
     "usage": 1.85,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.alt",
-    "name": "`alt`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "n"
-    },
-    "usage": 15.9,
     "baseline": false
   },
   {
@@ -32208,102 +32480,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.background-blend-mode.color-burn",
-    "name": "background-blend-mode: color-burn",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.36,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.background-blend-mode.color-dodge",
-    "name": "background-blend-mode: color-dodge",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.36,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.background-blend-mode.difference",
-    "name": "background-blend-mode: Difference",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.36,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.background-blend-mode.exclusion",
-    "name": "background-blend-mode: Exclusion",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.36,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.background-blend-mode.hard-light",
-    "name": "background-blend-mode: hard-light",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.36,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.background-blend-mode.luminosity",
-    "name": "background-blend-mode: Luminosity",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.36,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.background-blend-mode.plus-lighter",
     "name": "background-blend-mode: plus-lighter",
     "description": "",
@@ -32317,38 +32493,6 @@
       "an_chr": "n"
     },
     "usage": 2.5,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.background-blend-mode.saturation",
-    "name": "background-blend-mode: Saturation",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.36,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.background-blend-mode.soft-light",
-    "name": "background-blend-mode: soft-light",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 93.36,
     "baseline": false
   },
   {
@@ -33728,38 +33872,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.container-type.weak_containment",
-    "name": "Applies style and size containment, but no layout containment.",
-    "description": "Applies style and size containment, but no layout containment.",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 87.97,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.content",
-    "name": "Content",
-    "description": "The content CSS property sets the content inside of an element or pseudo-element, replacing the current value. It's ofte",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.48,
-    "baseline": "high"
-  },
-  {
     "id": "mdn-css.properties.content.alt_text",
     "name": "Alternative text after `/`",
     "description": "Alternative text after `/`",
@@ -33790,6 +33902,22 @@
     },
     "usage": 76.41,
     "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.content.close-quote",
+    "name": "content: close-quote",
+    "description": "The content CSS property sets the content inside of an element or pseudo-element, replacing the current value. It's ofte",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.31,
+    "baseline": "high"
   },
   {
     "id": "mdn-css.properties.content-visibility.is_animatable",
@@ -33891,1542 +34019,6 @@
     "id": "mdn-css.properties.corner-block-end-shape",
     "name": "corner-shape",
     "description": "The corner-shape CSS property sets the shape of an element's corners when using border-radius, allowing for shapes other",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-block-start-shape.bevel",
-    "name": "corner-block-start-shape: Bevel",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-block-start-shape.notch",
-    "name": "corner-block-start-shape: Notch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-block-start-shape.round",
-    "name": "corner-block-start-shape: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-block-start-shape.scoop",
-    "name": "corner-block-start-shape: Scoop",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-block-start-shape.square",
-    "name": "corner-block-start-shape: Square",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-block-start-shape.squircle",
-    "name": "corner-block-start-shape: Squircle",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-bottom-left-shape.bevel",
-    "name": "corner-bottom-left-shape: Bevel",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-bottom-left-shape.notch",
-    "name": "corner-bottom-left-shape: Notch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-bottom-left-shape.round",
-    "name": "corner-bottom-left-shape: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-bottom-left-shape.scoop",
-    "name": "corner-bottom-left-shape: Scoop",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-bottom-left-shape.square",
-    "name": "corner-bottom-left-shape: Square",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-bottom-left-shape.squircle",
-    "name": "corner-bottom-left-shape: Squircle",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-bottom-right-shape.bevel",
-    "name": "corner-bottom-right-shape: Bevel",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-bottom-right-shape.notch",
-    "name": "corner-bottom-right-shape: Notch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-bottom-right-shape.round",
-    "name": "corner-bottom-right-shape: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-bottom-right-shape.scoop",
-    "name": "corner-bottom-right-shape: Scoop",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-bottom-right-shape.square",
-    "name": "corner-bottom-right-shape: Square",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-bottom-right-shape.squircle",
-    "name": "corner-bottom-right-shape: Squircle",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-bottom-shape.bevel",
-    "name": "corner-bottom-shape: Bevel",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-bottom-shape.notch",
-    "name": "corner-bottom-shape: Notch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-bottom-shape.round",
-    "name": "corner-bottom-shape: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-bottom-shape.scoop",
-    "name": "corner-bottom-shape: Scoop",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-bottom-shape.square",
-    "name": "corner-bottom-shape: Square",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-bottom-shape.squircle",
-    "name": "corner-bottom-shape: Squircle",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-end-end-shape.bevel",
-    "name": "corner-end-end-shape: Bevel",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-end-end-shape.notch",
-    "name": "corner-end-end-shape: Notch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-end-end-shape.round",
-    "name": "corner-end-end-shape: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-end-end-shape.scoop",
-    "name": "corner-end-end-shape: Scoop",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-end-end-shape.square",
-    "name": "corner-end-end-shape: Square",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-end-end-shape.squircle",
-    "name": "corner-end-end-shape: Squircle",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-end-start-shape.bevel",
-    "name": "corner-end-start-shape: Bevel",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-end-start-shape.notch",
-    "name": "corner-end-start-shape: Notch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-end-start-shape.round",
-    "name": "corner-end-start-shape: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-end-start-shape.scoop",
-    "name": "corner-end-start-shape: Scoop",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-end-start-shape.square",
-    "name": "corner-end-start-shape: Square",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-end-start-shape.squircle",
-    "name": "corner-end-start-shape: Squircle",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-inline-end-shape.bevel",
-    "name": "corner-inline-end-shape: Bevel",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-inline-end-shape.notch",
-    "name": "corner-inline-end-shape: Notch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-inline-end-shape.round",
-    "name": "corner-inline-end-shape: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-inline-end-shape.scoop",
-    "name": "corner-inline-end-shape: Scoop",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-inline-end-shape.square",
-    "name": "corner-inline-end-shape: Square",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-inline-end-shape.squircle",
-    "name": "corner-inline-end-shape: Squircle",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-inline-start-shape.bevel",
-    "name": "corner-inline-start-shape: Bevel",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-inline-start-shape.notch",
-    "name": "corner-inline-start-shape: Notch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-inline-start-shape.round",
-    "name": "corner-inline-start-shape: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-inline-start-shape.scoop",
-    "name": "corner-inline-start-shape: Scoop",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-inline-start-shape.square",
-    "name": "corner-inline-start-shape: Square",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-inline-start-shape.squircle",
-    "name": "corner-inline-start-shape: Squircle",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-left-shape.bevel",
-    "name": "corner-left-shape: Bevel",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-left-shape.notch",
-    "name": "corner-left-shape: Notch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-left-shape.round",
-    "name": "corner-left-shape: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-left-shape.scoop",
-    "name": "corner-left-shape: Scoop",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-left-shape.square",
-    "name": "corner-left-shape: Square",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-left-shape.squircle",
-    "name": "corner-left-shape: Squircle",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-right-shape.bevel",
-    "name": "corner-right-shape: Bevel",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-right-shape.notch",
-    "name": "corner-right-shape: Notch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-right-shape.round",
-    "name": "corner-right-shape: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-right-shape.scoop",
-    "name": "corner-right-shape: Scoop",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-right-shape.square",
-    "name": "corner-right-shape: Square",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-right-shape.squircle",
-    "name": "corner-right-shape: Squircle",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-shape.bevel",
-    "name": "corner-shape: Bevel",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-shape.notch",
-    "name": "corner-shape: Notch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-shape.round",
-    "name": "corner-shape: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-shape.scoop",
-    "name": "corner-shape: Scoop",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-shape.square",
-    "name": "corner-shape: Square",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-shape.squircle",
-    "name": "corner-shape: Squircle",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-start-end-shape.bevel",
-    "name": "corner-start-end-shape: Bevel",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-start-end-shape.notch",
-    "name": "corner-start-end-shape: Notch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-start-end-shape.round",
-    "name": "corner-start-end-shape: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-start-end-shape.scoop",
-    "name": "corner-start-end-shape: Scoop",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-start-end-shape.square",
-    "name": "corner-start-end-shape: Square",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-start-end-shape.squircle",
-    "name": "corner-start-end-shape: Squircle",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-start-start-shape.bevel",
-    "name": "corner-start-start-shape: Bevel",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-start-start-shape.notch",
-    "name": "corner-start-start-shape: Notch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-start-start-shape.round",
-    "name": "corner-start-start-shape: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-start-start-shape.scoop",
-    "name": "corner-start-start-shape: Scoop",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-start-start-shape.square",
-    "name": "corner-start-start-shape: Square",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-start-start-shape.squircle",
-    "name": "corner-start-start-shape: Squircle",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-top-left-shape.bevel",
-    "name": "corner-top-left-shape: Bevel",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-top-left-shape.notch",
-    "name": "corner-top-left-shape: Notch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-top-left-shape.round",
-    "name": "corner-top-left-shape: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-top-left-shape.scoop",
-    "name": "corner-top-left-shape: Scoop",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-top-left-shape.square",
-    "name": "corner-top-left-shape: Square",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-top-left-shape.squircle",
-    "name": "corner-top-left-shape: Squircle",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-top-right-shape.bevel",
-    "name": "corner-top-right-shape: Bevel",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-top-right-shape.notch",
-    "name": "corner-top-right-shape: Notch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-top-right-shape.round",
-    "name": "corner-top-right-shape: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-top-right-shape.scoop",
-    "name": "corner-top-right-shape: Scoop",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-top-right-shape.square",
-    "name": "corner-top-right-shape: Square",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-top-right-shape.squircle",
-    "name": "corner-top-right-shape: Squircle",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-top-shape.bevel",
-    "name": "corner-top-shape: Bevel",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-top-shape.notch",
-    "name": "corner-top-shape: Notch",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-top-shape.round",
-    "name": "corner-top-shape: Round",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-top-shape.scoop",
-    "name": "corner-top-shape: Scoop",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-top-shape.square",
-    "name": "corner-top-shape: Square",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 73.37,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.corner-top-shape.squircle",
-    "name": "corner-top-shape: Squircle",
-    "description": "",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -36208,19 +34800,19 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.hyphenate-limit-lines.no-limit",
-    "name": "hyphenate-limit-lines: no-limit",
-    "description": "",
+    "id": "mdn-css.properties.hyphenate-limit-lines",
+    "name": "hyphenate-limit-lines",
+    "description": "The hyphenate-limit-lines CSS property sets the maximum number of consecutive hyphenated lines in a block of text.",
     "category": "CSS",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 0,
+    "usage": 71.84,
     "baseline": false
   },
   {
@@ -36445,6 +35037,38 @@
       "an_chr": "y"
     },
     "usage": 93.36,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.justify-content.flow-end",
+    "name": "justify-content: flow-end",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 55.73,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.justify-content.flow-start",
+    "name": "justify-content: flow-start",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 55.73,
     "baseline": false
   },
   {
@@ -38641,8 +37265,8 @@
   },
   {
     "id": "mdn-css.properties.outline-offset.inset",
-    "name": "`inset` keyword value",
-    "description": "`inset` keyword value",
+    "name": "outline-offset: Inset",
+    "description": "",
     "category": "CSS",
     "support": {
       "chr": "n",
@@ -38652,7 +37276,7 @@
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 15.9,
+    "usage": 0,
     "baseline": false
   },
   {
@@ -38896,6 +37520,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.overflow-x.overlay",
+    "name": "overflow-x: Overlay",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.28,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.overflow-x.replaced_elements",
     "name": "`overflow-x` applies to replaced elements.",
     "description": "`overflow-x` applies to replaced elements.",
@@ -38909,6 +37549,22 @@
       "an_chr": "y"
     },
     "usage": 76.31,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.overflow-y.overlay",
+    "name": "overflow-y: Overlay",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.28,
     "baseline": false
   },
   {
@@ -39168,6 +37824,38 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.place-content.flow-end",
+    "name": "place-content: flow-end",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 55.73,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.place-content.flow-start",
+    "name": "place-content: flow-start",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 55.73,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.properties.place-items.flow-end",
     "name": "place-items: flow-end",
     "description": "",
@@ -39374,6 +38062,22 @@
     },
     "usage": 95.46,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-css.properties.quotes.match-parent",
+    "name": "quotes: match-parent",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 2.5,
+    "baseline": false
   },
   {
     "id": "mdn-css.properties.reading-flow",
@@ -40577,8 +39281,8 @@
   },
   {
     "id": "mdn-css.properties.text-decoration-inset",
-    "name": "`text-decoration-inset`",
-    "description": "",
+    "name": "text-decoration-inset",
+    "description": "The text-decoration-inset CSS property offsets the start and end point of a text decoration. You can use this to shorten",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -41101,7 +39805,7 @@
       "an_chr": "y"
     },
     "usage": 88.89,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-css.properties.transform-box",
@@ -41570,55 +40274,7 @@
   {
     "id": "mdn-css.properties.white-space-trim.discard-after",
     "name": "white-space-trim: discard-after",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.white-space-trim.discard-before",
-    "name": "white-space-trim: discard-before",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.white-space-trim.discard-inner",
-    "name": "white-space-trim: discard-inner",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.white-space-trim.none",
-    "name": "white-space-trim: None",
-    "description": "",
+    "description": "The white-space-trim CSS property removes white space around the element or its contents.",
     "category": "CSS",
     "support": {
       "chr": "n",
@@ -41697,24 +40353,8 @@
   },
   {
     "id": "mdn-css.properties.wrap-inside",
-    "name": "`wrap-inside`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.wrap-inside.avoid",
-    "name": "wrap-inside: Avoid",
-    "description": "",
+    "name": "wrap-inside",
+    "description": "The wrap-inside CSS property controls how freely lines may be broken inside an inline box.",
     "category": "CSS",
     "support": {
       "chr": "n",
@@ -41741,6 +40381,22 @@
       "an_chr": "y"
     },
     "usage": 93.53,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.writing-mode.vertical_oriented_table_cells",
+    "name": "Vertically-oriented table cells",
+    "description": "Vertically-oriented table cells",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 90.32,
     "baseline": false
   },
   {
@@ -42401,7 +41057,7 @@
   },
   {
     "id": "mdn-css.selectors.field-content",
-    "name": "`::field-content`",
+    "name": "::field-content",
     "description": "`::field-content`",
     "category": "CSS",
     "support": {
@@ -42919,9 +41575,9 @@
     "support": {
       "chr": "n",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "n",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "n"
     },
     "usage": 1.76,
@@ -43072,6 +41728,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-css.types.calc-mix",
+    "name": "`calc-mix()`",
+    "description": "`calc-mix()`",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.types.calc-size",
     "name": "calc-size()",
     "description": "`calc-size()`",
@@ -43213,7 +41885,7 @@
       "an_chr": "y"
     },
     "usage": 89.44,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-css.types.color.light-dark.image_value",
@@ -43520,6 +42192,22 @@
     "baseline": "low"
   },
   {
+    "id": "mdn-css.types.ident",
+    "name": "`ident()`",
+    "description": "`ident()`",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 0,
+    "baseline": false
+  },
+  {
     "id": "mdn-css.types.if",
     "name": "if()",
     "description": "`if()`",
@@ -43543,12 +42231,28 @@
     "support": {
       "chr": "y",
       "ffx": "n",
-      "saf": "n",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "y"
     },
     "usage": 71.14,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.types.inherit",
+    "name": "`inherit()`",
+    "description": "`inherit()`",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 0,
     "baseline": false
   },
   {
@@ -43677,7 +42381,7 @@
       "an_chr": "y"
     },
     "usage": 90.33,
-    "baseline": "low"
+    "baseline": "high"
   },
   {
     "id": "mdn-css.types.param",
@@ -43761,7 +42465,7 @@
   },
   {
     "id": "mdn-css.types.random-item",
-    "name": "`random-item()`",
+    "name": "random-item()",
     "description": "`random-item()`",
     "category": "CSS",
     "support": {
@@ -44950,13 +43654,13 @@
     "category": "HTML5",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 86.45,
+    "usage": 88.95,
     "baseline": false
   },
   {
@@ -46515,38 +45219,6 @@
     "id": "mdn-http.headers.Document-Isolation-Policy",
     "name": "Document-Isolation-Policy",
     "description": "The Document-Isolation-Policy HTTP header makes a document cross-origin isolated, giving it access to APIs such as Share",
-    "category": "Other",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 71.14,
-    "baseline": false
-  },
-  {
-    "id": "mdn-http.headers.Document-Isolation-Policy.isolate-and-credentialless",
-    "name": "`isolate-and-credentialless`",
-    "description": "",
-    "category": "Other",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 71.14,
-    "baseline": false
-  },
-  {
-    "id": "mdn-http.headers.Document-Isolation-Policy.isolate-and-require-corp",
-    "name": "`isolate-and-require-corp`",
-    "description": "",
     "category": "Other",
     "support": {
       "chr": "y",
@@ -49888,22 +48560,6 @@
     "baseline": false
   },
   {
-    "id": "wf-mixin",
-    "name": "@mixin",
-    "description": "The @mixin and @apply CSS at-rules define reusable style declaration fragments and apply them inside rules, optionally p",
-    "category": "Other",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
     "id": "wf-navigator-install",
     "name": "navigator.install()",
     "description": "The navigator.install() method triggers a request to install a progressive web app.",
@@ -50302,6 +48958,22 @@
     },
     "usage": 89.58,
     "baseline": "low"
+  },
+  {
+    "id": "wf-wasm-wide-arithmetic",
+    "name": "Wide arithmetic (WebAssembly)",
+    "description": "Wide 128-bit integer arithmetic instructions operate on larger-than-64-bit numbers with results represented by two 64-bi",
+    "category": "Other",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 1.76,
+    "baseline": false
   },
   {
     "id": "wf-webdriver-bidi",

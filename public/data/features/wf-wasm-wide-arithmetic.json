@@ -1,0 +1,67 @@
+{
+  "id": "wf-wasm-wide-arithmetic",
+  "source": "webfeatures",
+  "name": "Wide arithmetic (WebAssembly)",
+  "description": "Wide 128-bit integer arithmetic instructions operate on larger-than-64-bit numbers with results represented by two 64-bit integers. You can use these instructions to improve performance for some use cases, such as arbitrary precision math.",
+  "category": "Other",
+  "links": [],
+  "support": {
+    "ffx": {
+      "current": "y",
+      "firstFull": "155"
+    },
+    "chr": {
+      "current": "n"
+    },
+    "saf": {
+      "current": "n"
+    },
+    "edg": {
+      "current": "n"
+    },
+    "opr": {
+      "current": "n"
+    },
+    "ie": {
+      "current": "n"
+    },
+    "ios_saf": {
+      "current": "n"
+    },
+    "an_chr": {
+      "current": "n"
+    },
+    "smsg": {
+      "current": "n"
+    },
+    "an_ff": {
+      "current": "y",
+      "firstFull": "155"
+    }
+  },
+  "usage": {
+    "global": {
+      "full": 1.76,
+      "partial": 0,
+      "total": 1.76
+    },
+    "byBrowser": {
+      "desktop": {
+        "ffx": 1.38
+      },
+      "mobile": {
+        "an_ff": 0.38
+      }
+    },
+    "type": "estimated"
+  },
+  "baseline": false,
+  "sourceData": {
+    "primary": {
+      "source": "webfeatures",
+      "id": "wasm-wide-arithmetic"
+    },
+    "supplementary": []
+  },
+  "caniuseUrl": "https://caniuse.com/?search=Wide%20arithmetic%20(WebAssembly)"
+}
