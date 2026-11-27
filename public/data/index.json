@@ -3373,7 +3373,7 @@
       "an_chr": "y"
     },
     "usage": 97.57,
-    "baseline": false
+    "baseline": "low"
   },
   {
     "id": "dialog",
@@ -9852,8 +9852,8 @@
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 92.89,
-    "baseline": false
+    "usage": 90.77,
+    "baseline": "low"
   },
   {
     "id": "mdn-api.CSS.escape_static",
@@ -10188,8 +10188,8 @@
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 92.89,
-    "baseline": false
+    "usage": 90.77,
+    "baseline": "low"
   },
   {
     "id": "mdn-api.CSSImportRule",
@@ -10225,8 +10225,8 @@
   },
   {
     "id": "mdn-api.CSSMixinRule",
-    "name": "CSSMixinRule",
-    "description": "",
+    "name": "@mixin",
+    "description": "The @mixin and @apply CSS at-rules define reusable style declaration fragments and apply them inside rules, optionally p",
     "category": "JS API",
     "support": {
       "chr": "n",
@@ -10956,7 +10956,7 @@
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 77.23,
+    "usage": 75.11,
     "baseline": false
   },
   {
@@ -11779,22 +11779,6 @@
     "id": "mdn-api.DelegatedInkTrailPresenter",
     "name": "Ink",
     "description": "The navigator.ink API uses the system compositor to draw to a <canvas> element ahead of pointer events, reducing the del",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 74.89,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.DelegatedInkTrailPresenter.expectedImprovement",
-    "name": "DelegatedInkTrailPresenter.expectedImprovement",
-    "description": "",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -14976,6 +14960,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.FontFace.width",
+    "name": "FontFace.width",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 78.59,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.FontFaceSet.FontFaceSet",
     "name": "`FontFaceSet()` constructor",
     "description": "`FontFaceSet()` constructor",
@@ -16048,6 +16048,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLAnchorElement.HTMLAnchorElement",
+    "name": "`HTMLAnchorElement()` constructor",
+    "description": "`HTMLAnchorElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLAnchorElement.attributionSourceId",
     "name": "Private click measurement",
     "description": "The attributionsourceid and attributiondestination attributes for <a> elements measure clicks across websites without as",
@@ -16128,6 +16144,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLAreaElement.HTMLAreaElement",
+    "name": "`HTMLAreaElement()` constructor",
+    "description": "`HTMLAreaElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLAreaElement.hreflang",
     "name": "HTMLAreaElement.hreflang",
     "description": "",
@@ -16141,6 +16173,22 @@
       "an_chr": "n"
     },
     "usage": 1.81,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLAudioElement.HTMLAudioElement",
+    "name": "`HTMLAudioElement()` constructor",
+    "description": "`HTMLAudioElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
     "baseline": false
   },
   {
@@ -16160,6 +16208,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLBRElement.HTMLBRElement",
+    "name": "`HTMLBRElement()` constructor",
+    "description": "`HTMLBRElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLBaseElement",
     "name": "<base>",
     "description": "The <base> element sets the base URL (the URL that relative URLs are relative to) for all relative URLs in the document.",
@@ -16174,6 +16238,22 @@
     },
     "usage": 95.48,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.HTMLBaseElement.HTMLBaseElement",
+    "name": "`HTMLBaseElement()` constructor",
+    "description": "`HTMLBaseElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
   },
   {
     "id": "mdn-api.HTMLBaseElement.href.forbid_data_javascript_urls",
@@ -16222,6 +16302,22 @@
     },
     "usage": 95.48,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.HTMLBodyElement.HTMLBodyElement",
+    "name": "`HTMLBodyElement()` constructor",
+    "description": "`HTMLBodyElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
   },
   {
     "id": "mdn-api.HTMLBodyElement.background",
@@ -16286,6 +16382,22 @@
     },
     "usage": 95.48,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.HTMLButtonElement.HTMLButtonElement",
+    "name": "`HTMLButtonElement()` constructor",
+    "description": "`HTMLButtonElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
   },
   {
     "id": "mdn-api.HTMLButtonElement.command.request-close",
@@ -16398,6 +16510,22 @@
     },
     "usage": 95.48,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.HTMLCanvasElement.HTMLCanvasElement",
+    "name": "`HTMLCanvasElement()` constructor",
+    "description": "`HTMLCanvasElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
   },
   {
     "id": "mdn-api.HTMLCanvasElement.getContext.2d_context.options_alpha_parameter",
@@ -16592,6 +16720,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLDListElement.HTMLDListElement",
+    "name": "`HTMLDListElement()` constructor",
+    "description": "`HTMLDListElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLDListElement.compact",
     "name": "HTMLDListElement.compact",
     "description": "",
@@ -16624,6 +16768,54 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLDataElement.HTMLDataElement",
+    "name": "`HTMLDataElement()` constructor",
+    "description": "`HTMLDataElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLDataListElement.HTMLDataListElement",
+    "name": "`HTMLDataListElement()` constructor",
+    "description": "`HTMLDataListElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLDetailsElement.HTMLDetailsElement",
+    "name": "`HTMLDetailsElement()` constructor",
+    "description": "`HTMLDetailsElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLDetailsElement.name",
     "name": "Mutually exclusive <details> elements",
     "description": "Multiple <details> elements which use the same name attribute are mutually exclusive. When one member of the group is op",
@@ -16638,6 +16830,22 @@
     },
     "usage": 89.74,
     "baseline": "low"
+  },
+  {
+    "id": "mdn-api.HTMLDialogElement.HTMLDialogElement",
+    "name": "`HTMLDialogElement()` constructor",
+    "description": "`HTMLDialogElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.43,
+    "baseline": false
   },
   {
     "id": "mdn-api.HTMLDialogElement.closedBy",
@@ -16688,6 +16896,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.HTMLDirectoryElement.HTMLDirectoryElement",
+    "name": "`HTMLDirectoryElement()` constructor",
+    "description": "`HTMLDirectoryElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLDivElement",
     "name": "<div>",
     "description": "The <div> HTML element is the generic container for content.",
@@ -16702,6 +16926,38 @@
     },
     "usage": 95.48,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.HTMLDivElement.HTMLDivElement",
+    "name": "`HTMLDivElement()` constructor",
+    "description": "`HTMLDivElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLElement.HTMLElement",
+    "name": "`HTMLElement()` constructor",
+    "description": "`HTMLElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
   },
   {
     "id": "mdn-api.HTMLElement.accessKey",
@@ -16870,13 +17126,13 @@
     "category": "JS API",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 0,
+    "usage": 0.38,
     "baseline": false
   },
   {
@@ -17072,6 +17328,38 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLEmbedElement.HTMLEmbedElement",
+    "name": "`HTMLEmbedElement()` constructor",
+    "description": "`HTMLEmbedElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLFencedFrameElement.HTMLFencedFrameElement",
+    "name": "`HTMLFencedFrameElement()` constructor",
+    "description": "`HTMLFencedFrameElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 72.16,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLFieldSetElement",
     "name": "<fieldset> and <legend>",
     "description": "The <fieldset> and <legend> elements group several form control elements within a web form.",
@@ -17086,6 +17374,22 @@
     },
     "usage": 95.48,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.HTMLFieldSetElement.HTMLFieldSetElement",
+    "name": "`HTMLFieldSetElement()` constructor",
+    "description": "`HTMLFieldSetElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
   },
   {
     "id": "mdn-api.HTMLFontElement",
@@ -17104,6 +17408,38 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.HTMLFontElement.HTMLFontElement",
+    "name": "`HTMLFontElement()` constructor",
+    "description": "`HTMLFontElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLFormElement.HTMLFormElement",
+    "name": "`HTMLFormElement()` constructor",
+    "description": "`HTMLFormElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLFrameElement",
     "name": "HTMLFrameElement",
     "description": "",
@@ -17117,6 +17453,22 @@
       "an_chr": "y"
     },
     "usage": 95.48,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLFrameElement.HTMLFrameElement",
+    "name": "`HTMLFrameElement()` constructor",
+    "description": "`HTMLFrameElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
     "baseline": false
   },
   {
@@ -17264,9 +17616,41 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.HTMLFrameSetElement.HTMLFrameSetElement",
+    "name": "`HTMLFrameSetElement()` constructor",
+    "description": "`HTMLFrameSetElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLGeolocationElement",
     "name": "<geolocation>",
     "description": "The <geolocation> HTML element represents a button that, upon activation, prompts the user to choose whether to grant th",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 70.15,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLGeolocationElement.HTMLGeolocationElement",
+    "name": "`HTMLGeolocationElement()` constructor",
+    "description": "`HTMLGeolocationElement()` constructor",
     "category": "JS API",
     "support": {
       "chr": "y",
@@ -17312,6 +17696,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLHRElement.HTMLHRElement",
+    "name": "`HTMLHRElement()` constructor",
+    "description": "`HTMLHRElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLHRElement.noShade",
     "name": "HTMLHRElement.noShade",
     "description": "",
@@ -17344,6 +17744,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLHeadElement.HTMLHeadElement",
+    "name": "`HTMLHeadElement()` constructor",
+    "description": "`HTMLHeadElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLHeadingElement",
     "name": "<h1> through <h6>",
     "description": "The <h1> through <h6> HTML elements represent six levels of section headings, in order of decreasing importance.",
@@ -17358,6 +17774,22 @@
     },
     "usage": 95.48,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.HTMLHeadingElement.HTMLHeadingElement",
+    "name": "`HTMLHeadingElement()` constructor",
+    "description": "`HTMLHeadingElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
   },
   {
     "id": "mdn-api.HTMLHtmlElement",
@@ -17406,6 +17838,22 @@
     },
     "usage": 95.48,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.HTMLIFrameElement.HTMLIFrameElement",
+    "name": "`HTMLIFrameElement()` constructor",
+    "description": "`HTMLIFrameElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
   },
   {
     "id": "mdn-api.HTMLIFrameElement.adAuctionHeaders",
@@ -17584,6 +18032,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLImageElement.HTMLImageElement",
+    "name": "`HTMLImageElement()` constructor",
+    "description": "`HTMLImageElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLImageElement.currentSrc",
     "name": "HTMLImageElement.currentSrc",
     "description": "",
@@ -17662,6 +18126,22 @@
     },
     "usage": 95.48,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.HTMLInputElement.HTMLInputElement",
+    "name": "`HTMLInputElement()` constructor",
+    "description": "`HTMLInputElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
   },
   {
     "id": "mdn-api.HTMLInputElement.colorSpace",
@@ -17765,6 +18245,22 @@
     "description": "",
     "category": "JS API",
     "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.03,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLInstallElement.HTMLInstallElement",
+    "name": "`HTMLInstallElement()` constructor",
+    "description": "`HTMLInstallElement()` constructor",
+    "category": "JS API",
+    "support": {
       "chr": "n",
       "ffx": "n",
       "saf": "n",
@@ -17781,14 +18277,14 @@
     "description": "`installresult` event",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 0,
+    "usage": 44.03,
     "baseline": false
   },
   {
@@ -17797,14 +18293,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 0,
+    "usage": 44.03,
     "baseline": false
   },
   {
@@ -17813,14 +18309,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 0,
+    "usage": 44.03,
     "baseline": false
   },
   {
@@ -17829,14 +18325,14 @@
     "description": "`validationstatuschange` event",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 0,
+    "usage": 44.03,
     "baseline": false
   },
   {
@@ -17856,6 +18352,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLLIElement.HTMLLIElement",
+    "name": "`HTMLLIElement()` constructor",
+    "description": "`HTMLLIElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLLabelElement",
     "name": "<label>",
     "description": "The <label> HTML element represents a caption for a form field.",
@@ -17870,6 +18382,38 @@
     },
     "usage": 95.48,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.HTMLLabelElement.HTMLLabelElement",
+    "name": "`HTMLLabelElement()` constructor",
+    "description": "`HTMLLabelElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLLegendElement.HTMLLegendElement",
+    "name": "`HTMLLegendElement()` constructor",
+    "description": "`HTMLLegendElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
   },
   {
     "id": "mdn-api.HTMLLegendElement.align",
@@ -17904,6 +18448,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLLinkElement.HTMLLinkElement",
+    "name": "`HTMLLinkElement()` constructor",
+    "description": "`HTMLLinkElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLLinkElement.blocking",
     "name": "blocking=\"render\"",
     "description": "The blocking=\"render\" attribute for <link>, <script>, and <style> elements blocks rendering until the external script or",
@@ -17916,7 +18476,7 @@
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 91.31,
+    "usage": 89.19,
     "baseline": false
   },
   {
@@ -17952,6 +18512,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLMapElement.HTMLMapElement",
+    "name": "`HTMLMapElement()` constructor",
+    "description": "`HTMLMapElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLMarqueeElement",
     "name": "HTMLMarqueeElement",
     "description": "",
@@ -17965,6 +18541,22 @@
       "an_chr": "y"
     },
     "usage": 95.47,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLMarqueeElement.HTMLMarqueeElement",
+    "name": "`HTMLMarqueeElement()` constructor",
+    "description": "`HTMLMarqueeElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
     "baseline": false
   },
   {
@@ -18320,6 +18912,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLMenuElement.HTMLMenuElement",
+    "name": "`HTMLMenuElement()` constructor",
+    "description": "`HTMLMenuElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLMenuElement.compact",
     "name": "HTMLMenuElement.compact",
     "description": "",
@@ -18350,6 +18958,38 @@
     },
     "usage": 95.48,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.HTMLMetaElement.HTMLMetaElement",
+    "name": "`HTMLMetaElement()` constructor",
+    "description": "`HTMLMetaElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLMeterElement.HTMLMeterElement",
+    "name": "`HTMLMeterElement()` constructor",
+    "description": "`HTMLMeterElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
   },
   {
     "id": "mdn-api.HTMLMicrophoneElement",
@@ -18398,6 +19038,22 @@
     },
     "usage": 95.48,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.HTMLModElement.HTMLModElement",
+    "name": "`HTMLModElement()` constructor",
+    "description": "`HTMLModElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
   },
   {
     "id": "mdn-api.HTMLModelElement",
@@ -18496,6 +19152,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.HTMLOListElement.HTMLOListElement",
+    "name": "`HTMLOListElement()` constructor",
+    "description": "`HTMLOListElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLOListElement.compact",
     "name": "HTMLOListElement.compact",
     "description": "",
@@ -18526,6 +19198,22 @@
     },
     "usage": 95.48,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.HTMLObjectElement.HTMLObjectElement",
+    "name": "`HTMLObjectElement()` constructor",
+    "description": "`HTMLObjectElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
   },
   {
     "id": "mdn-api.HTMLObjectElement.codeBase",
@@ -18576,6 +19264,38 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLOptGroupElement.HTMLOptGroupElement",
+    "name": "`HTMLOptGroupElement()` constructor",
+    "description": "`HTMLOptGroupElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLOptionElement.HTMLOptionElement",
+    "name": "`HTMLOptionElement()` constructor",
+    "description": "`HTMLOptionElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLOutputElement",
     "name": "<output>",
     "description": "The <output> element represents the result of a calculation, user action, or form entry.",
@@ -18590,6 +19310,22 @@
     },
     "usage": 95.3,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.HTMLOutputElement.HTMLOutputElement",
+    "name": "`HTMLOutputElement()` constructor",
+    "description": "`HTMLOutputElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
   },
   {
     "id": "mdn-api.HTMLParagraphElement",
@@ -18608,6 +19344,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLParagraphElement.HTMLParagraphElement",
+    "name": "`HTMLParagraphElement()` constructor",
+    "description": "`HTMLParagraphElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLParamElement",
     "name": "HTMLParamElement",
     "description": "",
@@ -18621,6 +19373,22 @@
       "an_chr": "y"
     },
     "usage": 95.48,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLParamElement.HTMLParamElement",
+    "name": "`HTMLParamElement()` constructor",
+    "description": "`HTMLParamElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
     "baseline": false
   },
   {
@@ -18640,6 +19408,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.HTMLPictureElement.HTMLPictureElement",
+    "name": "`HTMLPictureElement()` constructor",
+    "description": "`HTMLPictureElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLPreElement",
     "name": "<pre>",
     "description": "The <pre> element represents a block element of preformatted text that is presented exactly as written, including all wh",
@@ -18654,6 +19438,38 @@
     },
     "usage": 95.48,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.HTMLPreElement.HTMLPreElement",
+    "name": "`HTMLPreElement()` constructor",
+    "description": "`HTMLPreElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLProgressElement.HTMLProgressElement",
+    "name": "`HTMLProgressElement()` constructor",
+    "description": "`HTMLProgressElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
   },
   {
     "id": "mdn-api.HTMLQuoteElement",
@@ -18672,6 +19488,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLQuoteElement.HTMLQuoteElement",
+    "name": "`HTMLQuoteElement()` constructor",
+    "description": "`HTMLQuoteElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLScriptElement",
     "name": "<script> and <noscript>",
     "description": "The <script> element contains or loads data or executable code. This is typically used to load JavaScript code. The <nos",
@@ -18688,6 +19520,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLScriptElement.HTMLScriptElement",
+    "name": "`HTMLScriptElement()` constructor",
+    "description": "`HTMLScriptElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLScriptElement.noModule",
     "name": "HTMLScriptElement.noModule",
     "description": "",
@@ -18701,6 +19549,22 @@
       "an_chr": "y"
     },
     "usage": 93.33,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLSelectElement.HTMLSelectElement",
+    "name": "`HTMLSelectElement()` constructor",
+    "description": "`HTMLSelectElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
     "baseline": false
   },
   {
@@ -18736,6 +19600,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.HTMLSlotElement.HTMLSlotElement",
+    "name": "`HTMLSlotElement()` constructor",
+    "description": "`HTMLSlotElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLSlotElement.assign",
     "name": "Imperative slot assignment",
     "description": "The assign() method for <slot> elements assigns nodes to the slot, as an alternative to using the slot and name HTML att",
@@ -18768,6 +19648,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLSourceElement.HTMLSourceElement",
+    "name": "`HTMLSourceElement()` constructor",
+    "description": "`HTMLSourceElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLSpanElement",
     "name": "<span>",
     "description": "The <span> HTML element is the generic inline container for content.",
@@ -18782,6 +19678,22 @@
     },
     "usage": 95.47,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.HTMLSpanElement.HTMLSpanElement",
+    "name": "`HTMLSpanElement()` constructor",
+    "description": "`HTMLSpanElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
   },
   {
     "id": "mdn-api.HTMLStyleElement",
@@ -18800,6 +19712,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLStyleElement.HTMLStyleElement",
+    "name": "`HTMLStyleElement()` constructor",
+    "description": "`HTMLStyleElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLTableCaptionElement",
     "name": "Tables",
     "description": "The <table> HTML element, with several related elements, represents tabular data in rows and columns of cells.",
@@ -18816,6 +19744,38 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLTableCaptionElement.HTMLTableCaptionElement",
+    "name": "`HTMLTableCaptionElement()` constructor",
+    "description": "`HTMLTableCaptionElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLTableCellElement.HTMLTableCellElement",
+    "name": "`HTMLTableCellElement()` constructor",
+    "description": "`HTMLTableCellElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLTableCellElement.align",
     "name": "Table styling",
     "description": "Attributes and properties of table elements, such as align, vAlign, noWrap, bgcolor, or char set various visual presenta",
@@ -18829,6 +19789,86 @@
       "an_chr": "y"
     },
     "usage": 95.48,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLTableColElement.HTMLTableColElement",
+    "name": "`HTMLTableColElement()` constructor",
+    "description": "`HTMLTableColElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLTableElement.HTMLTableElement",
+    "name": "`HTMLTableElement()` constructor",
+    "description": "`HTMLTableElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLTableRowElement.HTMLTableRowElement",
+    "name": "`HTMLTableRowElement()` constructor",
+    "description": "`HTMLTableRowElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLTableSectionElement.HTMLTableSectionElement",
+    "name": "`HTMLTableSectionElement()` constructor",
+    "description": "`HTMLTableSectionElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLTemplateElement.HTMLTemplateElement",
+    "name": "`HTMLTemplateElement()` constructor",
+    "description": "`HTMLTemplateElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
     "baseline": false
   },
   {
@@ -18864,6 +19904,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLTextAreaElement.HTMLTextAreaElement",
+    "name": "`HTMLTextAreaElement()` constructor",
+    "description": "`HTMLTextAreaElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLTimeElement",
     "name": "<time>",
     "description": "The <time> HTML element represents a time, such as a calendar date, clock time, or duration. It may include the datetime",
@@ -18880,6 +19936,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.HTMLTimeElement.HTMLTimeElement",
+    "name": "`HTMLTimeElement()` constructor",
+    "description": "`HTMLTimeElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.HTMLTitleElement",
     "name": "<title>",
     "description": "The <title> element sets the title of the document and exposes it to users via the UI of the browser or app they're usin",
@@ -18894,6 +19966,54 @@
     },
     "usage": 95.48,
     "baseline": "high"
+  },
+  {
+    "id": "mdn-api.HTMLTitleElement.HTMLTitleElement",
+    "name": "`HTMLTitleElement()` constructor",
+    "description": "`HTMLTitleElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLTrackElement.HTMLTrackElement",
+    "name": "`HTMLTrackElement()` constructor",
+    "description": "`HTMLTrackElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLUListElement.HTMLUListElement",
+    "name": "`HTMLUListElement()` constructor",
+    "description": "`HTMLUListElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
+    "baseline": false
   },
   {
     "id": "mdn-api.HTMLUListElement.compact",
@@ -18989,6 +20109,22 @@
       "an_chr": "y"
     },
     "usage": 66.95,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.HTMLVideoElement.HTMLVideoElement",
+    "name": "`HTMLVideoElement()` constructor",
+    "description": "`HTMLVideoElement()` constructor",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 77.44,
     "baseline": false
   },
   {
@@ -19133,22 +20269,6 @@
       "an_chr": "y"
     },
     "usage": 72.61,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.History.pushState.unused_parameter",
-    "name": "Whether the `unused` parameter is used",
-    "description": "Whether the `unused` parameter is used",
-    "category": "JS API",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "y",
-      "edg": "n",
-      "ios_saf": "y",
-      "an_chr": "n"
-    },
-    "usage": 15.9,
     "baseline": false
   },
   {
@@ -19717,14 +20837,14 @@
     "description": "`InstallResultEvent()` constructor",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 0,
+    "usage": 44.03,
     "baseline": false
   },
   {
@@ -20397,6 +21517,22 @@
       "an_chr": "y"
     },
     "usage": 95.24,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.MediaStreamTrack.applyConstraints.backgroundBlur_constraint",
+    "name": "`backgroundBlur` constraint",
+    "description": "`backgroundBlur` constraint",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 14.27,
     "baseline": false
   },
   {
@@ -21104,6 +22240,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.MouseEvent.mozInputSource",
+    "name": "MouseEvent.mozInputSource",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 2.5,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.MouseEvent.relatedTarget.drag_events",
     "name": "Available on `DragEvent`",
     "description": "Available on `DragEvent`",
@@ -21117,6 +22269,22 @@
       "an_chr": "y"
     },
     "usage": 77.6,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.MouseEvent.webkitForce",
+    "name": "MouseEvent.webkitForce",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "n",
+      "ios_saf": "y",
+      "an_chr": "n"
+    },
+    "usage": 15.9,
     "baseline": false
   },
   {
@@ -21477,14 +22645,14 @@
     "description": "The Sec-GPC request header indicates that the user does not consent to a website or service selling or sharing their per",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 2.36,
+    "usage": 46.38,
     "baseline": false
   },
   {
@@ -21493,14 +22661,14 @@
     "description": "`install()` method",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 0,
+    "usage": 44.03,
     "baseline": false
   },
   {
@@ -23109,14 +24277,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 2.75,
+    "usage": 46.77,
     "baseline": false
   },
   {
@@ -23125,14 +24293,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 2.75,
+    "usage": 46.77,
     "baseline": false
   },
   {
@@ -23965,22 +25133,6 @@
       "an_chr": "y"
     },
     "usage": 77.47,
-    "baseline": false
-  },
-  {
-    "id": "mdn-api.PushSubscription.subscriptionId",
-    "name": "PushSubscription.subscriptionId",
-    "description": "",
-    "category": "JS API",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 74.97,
     "baseline": false
   },
   {
@@ -25703,12 +26855,12 @@
     "support": {
       "chr": "n",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "n",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 1.76,
+    "usage": 17.66,
     "baseline": false
   },
   {
@@ -25719,12 +26871,12 @@
     "support": {
       "chr": "n",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "n",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 1.76,
+    "usage": 17.66,
     "baseline": false
   },
   {
@@ -25735,12 +26887,12 @@
     "support": {
       "chr": "n",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "n",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 1.76,
+    "usage": 17.66,
     "baseline": false
   },
   {
@@ -25751,12 +26903,12 @@
     "support": {
       "chr": "n",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "n",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 1.76,
+    "usage": 17.66,
     "baseline": false
   },
   {
@@ -25767,12 +26919,12 @@
     "support": {
       "chr": "n",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "n",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 1.76,
+    "usage": 17.66,
     "baseline": false
   },
   {
@@ -25783,12 +26935,12 @@
     "support": {
       "chr": "n",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "n",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 1.76,
+    "usage": 17.66,
     "baseline": false
   },
   {
@@ -25799,12 +26951,12 @@
     "support": {
       "chr": "n",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "n",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 1.76,
+    "usage": 17.66,
     "baseline": false
   },
   {
@@ -25815,12 +26967,12 @@
     "support": {
       "chr": "n",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "n",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 1.76,
+    "usage": 17.66,
     "baseline": false
   },
   {
@@ -25831,12 +26983,12 @@
     "support": {
       "chr": "n",
       "ffx": "y",
-      "saf": "n",
+      "saf": "y",
       "edg": "n",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 1.76,
+    "usage": 17.66,
     "baseline": false
   },
   {
@@ -25904,6 +27056,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.SVGFEImageElement.referrerPolicy",
+    "name": "SVGFEImageElement.referrerPolicy",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0.38,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.SVGGraphicsElement.getBBox.options_parameter.options_clipped_parameter",
     "name": "`options.clipped` parameter",
     "description": "`options.clipped` parameter",
@@ -25965,6 +27133,22 @@
       "an_chr": "n"
     },
     "usage": 1.76,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.SVGImageElement.referrerPolicy",
+    "name": "SVGImageElement.referrerPolicy",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0.38,
     "baseline": false
   },
   {
@@ -26085,14 +27269,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 1.06,
+    "usage": 45.09,
     "baseline": false
   },
   {
@@ -26557,6 +27741,38 @@
       "an_chr": "y"
     },
     "usage": 93.34,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.ShadowRoot.slotAssignment.manual",
+    "name": "ShadowRoot.slotAssignment: Manual",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 92.86,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.ShadowRoot.slotAssignment.named",
+    "name": "ShadowRoot.slotAssignment: Named",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 92.8,
     "baseline": false
   },
   {
@@ -27456,6 +28672,22 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-api.WEBGL_blend_func_extended",
+    "name": "WEBGL_blend_func_extended",
+    "description": "",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 86.71,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.WEBGL_color_buffer_float",
     "name": "WEBGL_color_buffer_float WebGL extension",
     "description": "The WEBGL_color_buffer_float extension for WebGL 1.0 contexts adds the 32-bit floating-point type RGBA32F as a color-ren",
@@ -27696,6 +28928,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.WGSLLanguageFeatures.extension_buffer_view",
+    "name": "`buffer_view` extension",
+    "description": "`buffer_view` extension",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 64.15,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.WGSLLanguageFeatures.extension_immediate_address_space",
     "name": "`immediate_address_space` extension",
     "description": "`immediate_address_space` extension",
@@ -27734,13 +28982,13 @@
     "category": "JS API",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "a",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 84.38,
+    "usage": 86.28,
     "baseline": false
   },
   {
@@ -27776,6 +29024,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-api.WGSLLanguageFeatures.extension_swizzle_assignment",
+    "name": "`swizzle_assignment` extension",
+    "description": "`swizzle_assignment` extension",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 63.05,
+    "baseline": false
+  },
+  {
     "id": "mdn-api.WGSLLanguageFeatures.extension_texture_and_sampler_let",
     "name": "`texture_and_sampler_let` extension",
     "description": "`texture_and_sampler_let` extension",
@@ -27789,6 +29053,22 @@
       "an_chr": "y"
     },
     "usage": 69.62,
+    "baseline": false
+  },
+  {
+    "id": "mdn-api.WGSLLanguageFeatures.extension_texture_formats_tier1",
+    "name": "`texture_formats_tier1` extension",
+    "description": "`texture_formats_tier1` extension",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 75.45,
     "baseline": false
   },
   {
@@ -28021,14 +29301,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 13.06,
+    "usage": 57.08,
     "baseline": false
   },
   {
@@ -28053,14 +29333,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 1.76,
+    "usage": 45.78,
     "baseline": false
   },
   {
@@ -28117,14 +29397,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 13.06,
+    "usage": 57.08,
     "baseline": false
   },
   {
@@ -28213,14 +29493,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 13.06,
+    "usage": 57.08,
     "baseline": false
   },
   {
@@ -28229,14 +29509,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 13.06,
+    "usage": 57.08,
     "baseline": false
   },
   {
@@ -28245,14 +29525,14 @@
     "description": "",
     "category": "JS API",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "y",
       "saf": "y",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "y",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 13.06,
+    "usage": 57.08,
     "baseline": false
   },
   {
@@ -28662,13 +29942,13 @@
     "category": "JS API",
     "support": {
       "chr": "n",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "n",
       "ios_saf": "y",
       "an_chr": "n"
     },
-    "usage": 13.89,
+    "usage": 14.27,
     "baseline": false
   },
   {
@@ -30288,22 +31568,6 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-css.at-rules.apply",
-    "name": "`@apply`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.at-rules.charset",
     "name": "@charset",
     "description": "`@charset`",
@@ -30381,22 +31645,6 @@
       "an_chr": "y"
     },
     "usage": 72.41,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.at-rules.contents",
-    "name": "`@contents`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
     "baseline": false
   },
   {
@@ -30832,22 +32080,6 @@
     "baseline": "high"
   },
   {
-    "id": "mdn-css.at-rules.mixin",
-    "name": "@mixin",
-    "description": "The @mixin and @apply CSS at-rules define reusable style declaration fragments and apply them inside rules, optionally p",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.at-rules.page.page-margin-safety",
     "name": "`page-margin-safety` descriptor",
     "description": "`page-margin-safety` descriptor",
@@ -30909,22 +32141,6 @@
       "an_chr": "y"
     },
     "usage": 79.38,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.at-rules.private",
-    "name": "`@private`",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "n",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "n",
-      "ios_saf": "n",
-      "an_chr": "n"
-    },
-    "usage": 0,
     "baseline": false
   },
   {
@@ -31004,7 +32220,7 @@
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 88.81,
+    "usage": 86.68,
     "baseline": false
   },
   {
@@ -31020,7 +32236,7 @@
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 88.81,
+    "usage": 86.68,
     "baseline": false
   },
   {
@@ -31655,12 +32871,12 @@
     "support": {
       "chr": "y",
       "ffx": "n",
-      "saf": "n",
+      "saf": "y",
       "edg": "y",
-      "ios_saf": "n",
+      "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 76.9,
+    "usage": 92.8,
     "baseline": false
   },
   {
@@ -31858,23 +33074,7 @@
   {
     "id": "mdn-css.properties.align-content.flow-end",
     "name": "align-content: flow-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 55.73,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.align-content.flow-start",
-    "name": "align-content: flow-start",
-    "description": "",
+    "description": "The flow-start and flow-end CSS alignment values (as in justify-items: flow-start or align-self: flow-end) align items t",
     "category": "CSS",
     "support": {
       "chr": "y",
@@ -31920,38 +33120,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.align-items.flow-end",
-    "name": "align-items: flow-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 44.03,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.align-items.flow-start",
-    "name": "align-items: flow-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 44.03,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.align-self.context_position_absolute",
     "name": "Supported in absolutely-positioned boxes",
     "description": "Supported in absolutely-positioned boxes",
@@ -31966,38 +33134,6 @@
     },
     "usage": 86.48,
     "baseline": "high"
-  },
-  {
-    "id": "mdn-css.properties.align-self.flow-end",
-    "name": "align-self: flow-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 44.03,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.align-self.flow-start",
-    "name": "align-self: flow-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 44.03,
-    "baseline": false
   },
   {
     "id": "mdn-css.properties.alignment-baseline",
@@ -32246,13 +33382,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 81.46,
+    "usage": 81.84,
     "baseline": false
   },
   {
@@ -32502,13 +33638,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 81.46,
+    "usage": 81.84,
     "baseline": false
   },
   {
@@ -33872,6 +35008,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-css.properties.content",
+    "name": "Content",
+    "description": "The content CSS property sets the content inside of an element or pseudo-element, replacing the current value. It's ofte",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.48,
+    "baseline": "high"
+  },
+  {
     "id": "mdn-css.properties.content.alt_text",
     "name": "Alternative text after `/`",
     "description": "Alternative text after `/`",
@@ -33902,22 +35054,6 @@
     },
     "usage": 76.41,
     "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.content.close-quote",
-    "name": "content: close-quote",
-    "description": "The content CSS property sets the content inside of an element or pseudo-element, replacing the current value. It's ofte",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.31,
-    "baseline": "high"
   },
   {
     "id": "mdn-css.properties.content-visibility.is_animatable",
@@ -34016,8 +35152,168 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.corner-block-end-shape",
-    "name": "corner-shape",
+    "id": "mdn-css.properties.corner",
+    "name": "`corner`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner.bevel",
+    "name": "corner: Bevel",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner.notch",
+    "name": "corner: Notch",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner.round",
+    "name": "corner: Round",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner.scoop",
+    "name": "corner: Scoop",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner.square",
+    "name": "corner: Square",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner.squircle",
+    "name": "corner: Squircle",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-block-end",
+    "name": "`corner-block-end`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-block-end.square",
+    "name": "corner-block-end: Square",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-block-end.squircle",
+    "name": "corner-block-end: Squircle",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-block-end-shape.bevel",
+    "name": "corner-block-end-shape: Bevel",
     "description": "The corner-shape CSS property sets the shape of an element's corners when using border-radius, allowing for shapes other",
     "category": "CSS",
     "support": {
@@ -34029,6 +35325,950 @@
       "an_chr": "y"
     },
     "usage": 73.37,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-block-start",
+    "name": "`corner-block-start`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-block-start.squircle",
+    "name": "corner-block-start: Squircle",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-bottom",
+    "name": "`corner-bottom`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-bottom.square",
+    "name": "corner-bottom: Square",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-bottom.squircle",
+    "name": "corner-bottom: Squircle",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-bottom-left.bevel",
+    "name": "corner-bottom-left: Bevel",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-bottom-left.notch",
+    "name": "corner-bottom-left: Notch",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-bottom-left.round",
+    "name": "corner-bottom-left: Round",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-bottom-left.scoop",
+    "name": "corner-bottom-left: Scoop",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-bottom-left.square",
+    "name": "corner-bottom-left: Square",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-bottom-left.squircle",
+    "name": "corner-bottom-left: Squircle",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-bottom-right.bevel",
+    "name": "corner-bottom-right: Bevel",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-bottom-right.notch",
+    "name": "corner-bottom-right: Notch",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-bottom-right.round",
+    "name": "corner-bottom-right: Round",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-bottom-right.scoop",
+    "name": "corner-bottom-right: Scoop",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-bottom-right.square",
+    "name": "corner-bottom-right: Square",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-bottom-right.squircle",
+    "name": "corner-bottom-right: Squircle",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-end-end",
+    "name": "`corner-end-end`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-end-end.square",
+    "name": "corner-end-end: Square",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-end-end.squircle",
+    "name": "corner-end-end: Squircle",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-end-start",
+    "name": "`corner-end-start`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-end-start.square",
+    "name": "corner-end-start: Square",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-end-start.squircle",
+    "name": "corner-end-start: Squircle",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-inline-end",
+    "name": "`corner-inline-end`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-inline-end.squircle",
+    "name": "corner-inline-end: Squircle",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-inline-start",
+    "name": "`corner-inline-start`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-inline-start.squircle",
+    "name": "corner-inline-start: Squircle",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-left",
+    "name": "`corner-left`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-left.bevel",
+    "name": "corner-left: Bevel",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-left.notch",
+    "name": "corner-left: Notch",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-left.round",
+    "name": "corner-left: Round",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-left.scoop",
+    "name": "corner-left: Scoop",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-left.square",
+    "name": "corner-left: Square",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-left.squircle",
+    "name": "corner-left: Squircle",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-right",
+    "name": "`corner-right`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-right.bevel",
+    "name": "corner-right: Bevel",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-right.notch",
+    "name": "corner-right: Notch",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-right.round",
+    "name": "corner-right: Round",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-right.scoop",
+    "name": "corner-right: Scoop",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-right.square",
+    "name": "corner-right: Square",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-right.squircle",
+    "name": "corner-right: Squircle",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-start-end",
+    "name": "`corner-start-end`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-start-end.square",
+    "name": "corner-start-end: Square",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-start-end.squircle",
+    "name": "corner-start-end: Squircle",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-start-start",
+    "name": "`corner-start-start`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-start-start.squircle",
+    "name": "corner-start-start: Squircle",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-top",
+    "name": "`corner-top`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-top.bevel",
+    "name": "corner-top: Bevel",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-top.notch",
+    "name": "corner-top: Notch",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-top.round",
+    "name": "corner-top: Round",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-top.scoop",
+    "name": "corner-top: Scoop",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-top.square",
+    "name": "corner-top: Square",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-top.squircle",
+    "name": "corner-top: Squircle",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-top-left",
+    "name": "`corner-top-left`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-top-left.square",
+    "name": "corner-top-left: Square",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-top-left.squircle",
+    "name": "corner-top-left: Squircle",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-top-right",
+    "name": "`corner-top-right`",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-top-right.square",
+    "name": "corner-top-right: Square",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.properties.corner-top-right.squircle",
+    "name": "corner-top-right: Squircle",
+    "description": "",
+    "category": "CSS",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 71.85,
     "baseline": false
   },
   {
@@ -35040,102 +37280,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.justify-content.flow-end",
-    "name": "justify-content: flow-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 55.73,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-content.flow-start",
-    "name": "justify-content: flow-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 55.73,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-items.flow-end",
-    "name": "justify-items: flow-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 44.03,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-items.flow-start",
-    "name": "justify-items: flow-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 44.03,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-self.flow-end",
-    "name": "justify-self: flow-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 44.03,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.justify-self.flow-start",
-    "name": "justify-self: flow-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 44.03,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.letter-spacing.percentages",
     "name": "`&lt;percentage&gt;` values",
     "description": "`&lt;percentage&gt;` values",
@@ -35974,13 +38118,13 @@
     "category": "CSS",
     "support": {
       "chr": "y",
-      "ffx": "n",
+      "ffx": "y",
       "saf": "y",
       "edg": "y",
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 71.17,
+    "usage": 73.68,
     "baseline": false
   },
   {
@@ -37520,22 +39664,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.overflow-x.overlay",
-    "name": "overflow-x: Overlay",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.28,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.overflow-x.replaced_elements",
     "name": "`overflow-x` applies to replaced elements.",
     "description": "`overflow-x` applies to replaced elements.",
@@ -37549,22 +39677,6 @@
       "an_chr": "y"
     },
     "usage": 76.31,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.overflow-y.overlay",
-    "name": "overflow-y: Overlay",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 95.28,
     "baseline": false
   },
   {
@@ -37821,102 +39933,6 @@
       "an_chr": "n"
     },
     "usage": 12.03,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-content.flow-end",
-    "name": "place-content: flow-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 55.73,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-content.flow-start",
-    "name": "place-content: flow-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 55.73,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-items.flow-end",
-    "name": "place-items: flow-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 44.03,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-items.flow-start",
-    "name": "place-items: flow-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 44.03,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-self.flow-end",
-    "name": "place-self: flow-end",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 44.03,
-    "baseline": false
-  },
-  {
-    "id": "mdn-css.properties.place-self.flow-start",
-    "name": "place-self: flow-start",
-    "description": "",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "n",
-      "saf": "n",
-      "edg": "y",
-      "ios_saf": "n",
-      "an_chr": "y"
-    },
-    "usage": 44.03,
     "baseline": false
   },
   {
@@ -38312,11 +40328,11 @@
       "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
       "an_chr": "y"
     },
-    "usage": 59.68,
+    "usage": 64.15,
     "baseline": false
   },
   {
@@ -40384,22 +42400,6 @@
     "baseline": false
   },
   {
-    "id": "mdn-css.properties.writing-mode.vertical_oriented_table_cells",
-    "name": "Vertically-oriented table cells",
-    "description": "Vertically-oriented table cells",
-    "category": "CSS",
-    "support": {
-      "chr": "y",
-      "ffx": "y",
-      "saf": "y",
-      "edg": "y",
-      "ios_saf": "y",
-      "an_chr": "y"
-    },
-    "usage": 90.32,
-    "baseline": false
-  },
-  {
     "id": "mdn-css.properties.z-index",
     "name": "z-index",
     "description": "The z-index CSS property orders overlapping elements, with higher values appearing in front of or on top of lower values",
@@ -40499,6 +42499,22 @@
     "id": "mdn-css.selectors.-moz-list-number",
     "name": "`::-moz-list-number`",
     "description": "`::-moz-list-number`",
+    "category": "CSS",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 2.5,
+    "baseline": false
+  },
+  {
+    "id": "mdn-css.selectors.-moz-meter-bar",
+    "name": "`::-moz-meter-bar`",
+    "description": "`::-moz-meter-bar`",
     "category": "CSS",
     "support": {
       "chr": "n",
@@ -40989,7 +43005,7 @@
       "an_chr": "y"
     },
     "usage": 61.66,
-    "baseline": false
+    "baseline": "low"
   },
   {
     "id": "mdn-css.selectors.checked",
@@ -43541,14 +45557,14 @@
     "description": "The <install> HTML element represents a button that, upon activation, prompts the user to choose whether to install a pr",
     "category": "HTML5",
     "support": {
-      "chr": "n",
+      "chr": "y",
       "ffx": "n",
       "saf": "n",
-      "edg": "n",
+      "edg": "y",
       "ios_saf": "n",
-      "an_chr": "n"
+      "an_chr": "y"
     },
-    "usage": 0,
+    "usage": 44.03,
     "baseline": false
   },
   {
@@ -43660,7 +45676,7 @@
       "ios_saf": "y",
       "an_chr": "y"
     },
-    "usage": 88.95,
+    "usage": 86.82,
     "baseline": false
   },
   {
@@ -44976,6 +46992,22 @@
     "baseline": false
   },
   {
+    "id": "mdn-http.headers.Content-Encoding.gzip",
+    "name": "Gzip",
+    "description": "",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 95.48,
+    "baseline": false
+  },
+  {
     "id": "mdn-http.headers.Content-Length.cors_response_safelist",
     "name": "CORS-safelisted response header",
     "description": "CORS-safelisted response header",
@@ -45421,6 +47453,22 @@
       "an_chr": "y"
     },
     "usage": 74.93,
+    "baseline": false
+  },
+  {
+    "id": "mdn-http.headers.Permissions-Policy.focus-without-user-activation",
+    "name": "`focus-without-user-activation`",
+    "description": "",
+    "category": "Other",
+    "support": {
+      "chr": "y",
+      "ffx": "n",
+      "saf": "n",
+      "edg": "y",
+      "ios_saf": "n",
+      "an_chr": "y"
+    },
+    "usage": 44.03,
     "baseline": false
   },
   {
@@ -46976,6 +49024,38 @@
     "baseline": "high"
   },
   {
+    "id": "mdn-javascript.builtins.Intl.PluralRules.PluralRules.options_parameter.options_compactDisplay_parameter",
+    "name": "`options.compactDisplay` parameter",
+    "description": "`options.compactDisplay` parameter",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 74.8,
+    "baseline": false
+  },
+  {
+    "id": "mdn-javascript.builtins.Intl.PluralRules.PluralRules.options_parameter.options_notation_parameter",
+    "name": "`options.notation` parameter",
+    "description": "`options.notation` parameter",
+    "category": "JS API",
+    "support": {
+      "chr": "y",
+      "ffx": "y",
+      "saf": "y",
+      "edg": "y",
+      "ios_saf": "y",
+      "an_chr": "y"
+    },
+    "usage": 84.08,
+    "baseline": false
+  },
+  {
     "id": "mdn-javascript.builtins.Intl.RelativeTimeFormat",
     "name": "Intl.RelativeTimeFormat",
     "description": "The Intl.RelativeTimeFormat API creates a locale-aware formatter that turns an object representing a relative time (such",
@@ -48189,6 +50269,86 @@
       "an_chr": "y"
     },
     "usage": 74.78,
+    "baseline": false
+  },
+  {
+    "id": "mdn-svg.elements.feImage.referrerpolicy",
+    "name": "`<feImage> (SVG)`",
+    "description": "",
+    "category": "SVG",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0.38,
+    "baseline": false
+  },
+  {
+    "id": "mdn-svg.elements.feImage.referrerpolicy.no-referrer-when-downgrade",
+    "name": "`no-referrer-when-downgrade`",
+    "description": "no-referrer-when-downgrade",
+    "category": "SVG",
+    "support": {
+      "chr": "n",
+      "ffx": "a",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0.38,
+    "baseline": false
+  },
+  {
+    "id": "mdn-svg.elements.feImage.referrerpolicy.origin-when-cross-origin",
+    "name": "`origin-when-cross-origin`",
+    "description": "origin-when-cross-origin",
+    "category": "SVG",
+    "support": {
+      "chr": "n",
+      "ffx": "a",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0.38,
+    "baseline": false
+  },
+  {
+    "id": "mdn-svg.elements.feImage.referrerpolicy.unsafe-url",
+    "name": "`unsafe-url`",
+    "description": "unsafe-url",
+    "category": "SVG",
+    "support": {
+      "chr": "n",
+      "ffx": "a",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0.38,
+    "baseline": false
+  },
+  {
+    "id": "mdn-svg.elements.script.referrerpolicy",
+    "name": "`<script> (SVG)`",
+    "description": "",
+    "category": "SVG",
+    "support": {
+      "chr": "n",
+      "ffx": "y",
+      "saf": "n",
+      "edg": "n",
+      "ios_saf": "n",
+      "an_chr": "n"
+    },
+    "usage": 0.38,
     "baseline": false
   },
   {

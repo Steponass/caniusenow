@@ -1,8 +1,8 @@
 {
   "id": "mdn-api.CSSMixinRule",
   "source": "mdnbcd",
-  "name": "CSSMixinRule",
-  "description": "",
+  "name": "@mixin",
+  "description": "The @mixin and @apply CSS at-rules define reusable style declaration fragments and apply them inside rules, optionally passing arguments.",
   "category": "JS API",
   "links": [],
   "support": {
@@ -60,8 +60,33 @@
         "source": "mdnbcd",
         "id": "api.CSSMixinRule.name",
         "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.apply",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.contents",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.mixin",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "mdnbcd",
+        "id": "css.at-rules.private",
+        "matched": "via-webfeatures"
+      },
+      {
+        "source": "webfeatures",
+        "id": "mixin",
+        "matched": "exact"
       }
     ]
   },
-  "caniuseUrl": "https://caniuse.com/?search=CSSMixinRule"
+  "caniuseUrl": "https://caniuse.com/?search=%40mixin"
 }
